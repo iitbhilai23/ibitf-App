@@ -9,7 +9,7 @@ const Team = () => {
    <>
    <GoverningHub />
    <BoardMembersCard/>
-   <OurTeam />
+   {/* <OurTeam /> */}
    </>
 
   );
