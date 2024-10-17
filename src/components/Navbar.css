@@ -1,0 +1,173 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 280px;
+  height: 70px;
+  border-radius: 8px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.menu li {
+  position: relative;
+  padding: 10px 0;
+  display: block;
+}
+
+.menu li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+}
+
+/* Submenu container */
+.has-submenu {
+  position: relative;
+}
+
+/* Submenu */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); /* Centering the submenu */
+  background-color: var(--primary-color);
+  padding: 10px;
+  list-style: none;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.has-submenu.open .mega-menu {
+  display: block;
+}
+
+.mega-menu li {
+  padding: 8px 0;
+  text-align: left;
+}
+
+.mega-menu li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.2rem; /* Ensure font size is the same as main menu */
+}
+
+/* Improved hover effect */
+.mega-menu li a:hover {
+  color: #fff;
+  background-color: var(--secondary-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.menu li a,
+.menu li span {
+  font-size: 1.2rem; /* Use the same size for all menu items and submenu labels */
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: block;
+
+}
+
+/* Mobile-specific styling */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu.active li {
+  margin: 0px 0;
+  display: block;
+  width: 100%;
+}
+
+.menu.active li.has-submenu {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu.active li.has-submenu .mega-menu {
+  position: relative;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.menu.active li.has-submenu .mega-menu li {
+  padding: 8px 0;
+  text-align: center;
+}
+
+
+
+
+/* Toggle menu icon display for mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mega-menu {
+    width: 100%;
+  }
+}
+
+/* Custom spacing adjustment */
+.menu.active li a {
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.menu.active li.has-submenu.open .mega-menu {
+  display: block;
+}
+
+.menu li a:hover,
+.menu.active li a:hover {
+  color: #007bff;
+}
