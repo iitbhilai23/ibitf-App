@@ -9,7 +9,7 @@ export const siteContent = {
         label: 'Services',
         submenu: ['Web Development', 'App Development', 'SEO', 'Consulting'],
       },
-      'Team','Career','Contact'],
+      'Team','Projects-list','Contact'],
   },
   footer: {
     text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
@@ -49,10 +49,23 @@ export const siteContent = {
     title: 'Join Our Team',
     description: 'Be a part of a dynamic team shaping the future...',
   },
+
+
   contact: {
-    title: 'Contact Us',
-    description: 'Reach out to us for business inquiries or support...',
+    title: 'Get in Touch',
+    description: 'Feel free to drop us a line below!',
   },
+  contactDetails: {
+    title: 'Contact Us',
+    address: 'IIT Bhilai Innovation and Technology Foundation (IBITF), IIT Bhilai Permanent Campus, Kutelabhata, Khapari, District-Durg, Chhattisgarh-491001',
+    email: 'tih@iitbhilai.ac.in',
+    phone: '+91*******7181',
+    fax: '+3356 1589 2100',
+  },
+
+
+
+
 board_team:{
   title:'Board of Directors of the IBITF',
   members: [
@@ -85,7 +98,41 @@ board_team:{
       name: 'Dr. Barun Gorain',
       designation: 'Assistant Professor,  Dept. of EECS IIT Bhilai',
       image: require('../assets/Barun.jpg'),
+    },
+    {
+      name: 'Mr. Gautam Ramani',
+      designation: 'Deputy Registrar (F and A), IIT Bhilai',
+      image: require('../assets/Gautam.jpg'),
+    },
+    {
+      name: 'Mr. S Mukopadhyay',
+      designation: 'ED (Projects), Bhilai Steel Plant(BSP), Sail',
+      image: require('../assets/Mukopadhyay.jpeg'),
+    },
+    {
+      name: 'Padma Shri Phoolbasan Bai Yadav',
+      designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
+      image: require('../assets/Poolbusan.png'),
     }
+    ,
+    {
+      name: 'Shri. Manish Gupta',
+      designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
+      image: require('../assets/ManishGupta.jpeg'),
+    }
+    ,
+    {
+      name: 'Shri. Naresh Kumar',
+      designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
+      image: require('../assets/NareshKumar.jpeg'),
+    }
+    ,
+    {
+      name: 'Shri. Somesh Sharma',
+      designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
+      image: require('../assets/SomeshSharma.jpeg'),
+    }
+
   ]
 },
 governing_team:{
@@ -121,6 +168,34 @@ governing_team:{
       name: 'Dr. Ekta Kapoor',
       designation: 'Mission Director of NM-ICPS & DST, Member',
       image: require('../assets/Ekta.jpg'),
+    },
+    {
+      name: 'Mr. Prashant Mathur',
+      designation: 'Chief Executive Officer, IBITF',
+      image: require('../assets/ceo.jpeg'),
+    },
+    {
+      name: 'Padma Shri Phoolbasan Bai Yadav',
+      designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
+      image: require('../assets/Poolbusan.png'),
+    }
+    ,
+    {
+      name: 'Shri. Manish Gupta',
+      designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
+      image: require('../assets/ManishGupta.jpeg'),
+    }
+    ,
+    {
+      name: 'Shri. Naresh Kumar',
+      designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
+      image: require('../assets/NareshKumar.jpeg'),
+    }
+    ,
+    {
+      name: 'Shri. Somesh Sharma',
+      designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
+      image: require('../assets/SomeshSharma.jpeg'),
     }
 
   ]
