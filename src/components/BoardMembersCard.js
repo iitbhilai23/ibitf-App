@@ -12,7 +12,7 @@ const BoardMembersCard = () => {
       <h1>{title}</h1>
       <div className="team-members">
         {members.map((member, index) => (
-          <AnimatedCard key={index} {...member} Qualification={member.Qualification}/>
+          <AnimatedCard key={index} {...member} />
         ))}
       </div>
     </div>
