@@ -1,13 +1,26 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { pagesConfig } from '../constants/pagesConfig';
-import { Tabs, Tab, Box, Grid, MenuItem, Select, Typography, Paper, Card } from '@mui/material';
+import { Tabs, Tab, Box, Grid, MenuItem, Select, Typography, Paper, Card, TextField } from '@mui/material';
 import CountCard from '../components/CountCard';
 
 const ProjectsList = () => {
-  const [activeTab, setActiveTab] = useState('project');
-  const [selectedSubCategory, setSelectedSubCategory] = useState('');
+  const location = useLocation();
+  const navigate = useNavigate();
 
+  const queryParams = new URLSearchParams(location.search);
+  const initialTab = queryParams.get('tab') || 'project';
+
+  const [activeTab, setActiveTab] = useState(initialTab);
+  const [selectedSubCategory, setSelectedSubCategory] = useState('');
+  const [searchTerm, setSearchTerm] = useState(''); // State for search term
+
+  useEffect(() => {
+    // Update URL query params when the active tab changes
+    const params = new URLSearchParams();
+    params.set('tab', activeTab);
+    navigate({ search: params.toString() });
+  }, [activeTab, navigate]);
 
   const handleTabChange = (event, newTab) => {
     setActiveTab(newTab);
@@ -18,10 +31,17 @@ const ProjectsList = () => {
     setSelectedSubCategory(event.target.value);
   };
 
-  const filteredProjects = pagesConfig.filter(
-    ({ category, subCategory }) =>
-      category === activeTab && (selectedSubCategory === '' || subCategory === selectedSubCategory)
-  );
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value.toLowerCase());
+  };
+
+  const filteredProjects = pagesConfig
+    .filter(
+      ({ category, subCategory, title }) =>
+        category === activeTab &&
+        (selectedSubCategory === '' || subCategory === selectedSubCategory) &&
+        title.toLowerCase().includes(searchTerm) // Filter based on search term
+    );
 
   const subCategories = [...new Set(pagesConfig
     .filter(({ category }) => category === activeTab)
@@ -53,26 +73,41 @@ const ProjectsList = () => {
           </Tabs>
         </Box>
 
-        {subCategories.length > 0 && (
-          <Box sx={styles.dropdownContainer}>
-            <Select
-              value={selectedSubCategory}
-              onChange={handleSubCategoryChange}
-              displayEmpty
-              variant="outlined"
-              sx={styles.dropdown}
-            >
-              <MenuItem value="">
-                <em>ALL</em>
-              </MenuItem>
-              {subCategories.map((subCat, index) => (
-                <MenuItem key={index} value={subCat}>
-                  {subCat?.toUpperCase()}
+        <Box sx={styles.search}>
+          <TextField
+            variant="outlined"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={handleSearchChange}
+            sx={styles.searchField}
+          />
+          {subCategories.length > 0 && (
+            <Box sx={styles.dropdownContainer}>
+
+              <Select
+                value={selectedSubCategory}
+                onChange={handleSubCategoryChange}
+                displayEmpty
+                variant="outlined"
+                sx={styles.dropdown}
+              >
+                <MenuItem value="" sx={{ fontWeight: '400', fontFamily: 'Roboto, sans-serif' }}>
+                  <em>ALL</em>
                 </MenuItem>
-              ))}
-            </Select>
-          </Box>
-        )}
+                {subCategories.map((subCat, index) => (
+                  <MenuItem key={index} value={subCat} sx={{ fontWeight: '300', fontFamily: 'Roboto, sans-serif' }}>
+                    {subCat?.toUpperCase()}
+                  </MenuItem>
+                ))}
+              </Select>
+            </Box>
+          )}
+        </Box>
+
+        {/* Search Panel */}
+        <Box sx={styles.searchContainer}>
+
+        </Box>
         <div className='card-cnt-list' style={styles.cardCnt}>
           <Grid container spacing={3} sx={styles.gridContainer}>
             {filteredProjects.map(({ title, path, description, id }, index) => (
@@ -80,7 +115,6 @@ const ProjectsList = () => {
                 <Link to={path} style={styles.cardLink}>
                   <CountCard
                     title={title}
-                    // isActive={index === 0}      
                     onClick={() => console.log(`Clicked on ${title}`)}
                     height="170px"
                     color_num={(index % 4) + 1}
@@ -97,6 +131,10 @@ const ProjectsList = () => {
 
 // Define the styles using MUI's sx prop and custom styles
 const styles = {
+  search: {
+    display: "flex",
+    justifyContent: 'space-between',
+  },
   container: {
     padding: '20px 20px',
     margin: '0 auto',
@@ -134,14 +172,45 @@ const styles = {
   },
   dropdown: {
     width: '250px',
+    height: '50px',
     backgroundColor: '#fff',
     borderRadius: '8px',
     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
   },
+  searchContainer: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    marginBottom: '20px',
+  },
+  searchField: {
+    width: '280px',
+    height: '50px',
+    borderRadius: '10px',
+    marginLeft: '20px',
+    backgroundColor: '#fff', // Light background for contrast
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Subtle shadow
+    // padding: '10px', // Add padding inside the input
+    border: '1px solid #ccc', // Light border
+    fontSize: '16px', // Increase font size for readability
+    outline: 'none', // Remove the default outline
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        border: 'none', // Remove the default border
+      },
+    },
+    '& .MuiInputBase-input': {
+      paddingLeft: '10px', // Add padding inside the input
+    },
+    '&:focus-within': {
+      backgroundColor: '#fff', // White background when focused
+      border: '1px solid #3f51b5', // Blue border on focus for visibility
+      boxShadow: '0px 0px 10px rgba(63, 81, 181, 0.2)', // Glow effect on focus
+    },
+  },
   gridContainer: {
     paddingLeft: '20px',
     paddingRight: '20px',
-    marginTop:"5px"
+    marginTop: "5px"
   },
   cardLink: {
     textDecoration: 'none',

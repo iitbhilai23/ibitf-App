@@ -1,4 +1,5 @@
 export const pagesConfig = [
+    // --------------------------------------------------------------workshops-----------------------------------
   {
     title: "VIDYA SAMKISHA KENDRA",
     path: "/vsk",
@@ -24,8 +25,8 @@ export const pagesConfig = [
       "assets/StaticImages/Workshop/smartcard2.png",
       "assets/StaticImages/Workshop/smartcard3.png",
     ],
-    category: "project",
-    subCategory: "IB",
+    category: "event",
+    subCategory: "workshop",
   },
   {
     title: "Three Days National Workshop on Financial Engineering",
@@ -37,8 +38,8 @@ export const pagesConfig = [
       "assets/StaticImages/Workshop/Financial_eng1.png",
       "assets/StaticImages/Workshop/Financial_eng.png",
     ],
-    category: "project",
-    subCategory: "ST",
+    category: "event",
+    subCategory: "workshop",
   },
   {
     title: "Bapi Na Uwat",
@@ -50,8 +51,10 @@ export const pagesConfig = [
       "assets/StaticImages/Workshop/BapiNaUwat.png",
       "assets/StaticImages/Workshop/BapiNaUwat1.png",
     ],
+    category: "event",
+    subCategory: "workshop",
   },
-  // --------------------------------------------------------------workshops--------------------------
+
   {
     title: "Fintech Ignite",
     path: "/FintechIgnite",
@@ -370,44 +373,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
     ],
   },
 
-  {
-    title: "Smart ID Card",
-    path: "/SmartCard",
-    component: "SmartCard",
-    description:
-      "The Smart ID Card revolutionizes campus interactions by offering advanced features for a seamless and secure experience. Recently inaugurated by Shri Krishnamurthi Venkataramanan, Chairman of the Board of Governors at IIT Bhilai, this innovative system is already in use across the main campus, enhancing the overall experience for students and faculty. ",
-    images: [
-      "assets/StaticImages/smartcard1.png",
-      "assets/StaticImages/smartcard2.png",
-      "assets/StaticImages/smartcard3.png",
-    ],
-    category: "event",
-  },
-  {
-    title: "Three Days National Workshop on Financial Engineering",
-    path: "/Financial-Engineering",
-    component: "Financial-Engineering",
-    description:
-      "3-day workshop, IBITF aims to empower project owners with knowledge about how emerging technologies like AI/ML, Blockchain, IoT, and e-payments can revolutionize fintech, address local challenges, and uplift the ST population by promoting financial literacy, skill development, and entrepreneurship,  This workshop aims to bridge academia and industry, empowering the participants with knowledge to drive fintech innovation and positive change",
-    images: [
-      "assets/StaticImages/Financial_eng1.png",
-      "assets/StaticImages/Financial_eng1.png",
-      "assets/StaticImages/Financial_eng.png",
-    ],
-    category: "event",
-  },
-  {
-    title: "Bapi Na Uwat",
-    path: "/BapiNaUwat",
-    component: "BapiNaUwat",
-    description:
-      'BITF and IIT Bhilai, in collaboration with the Dantewada District Administration, hosted a two-day youth leadership workshop, "Bapi Na Uwat," at IIT Bhilai,The event empowered young leaders through discussions, interactive sessions, and team-building activities, fostering skills for community impact.',
-    images: [
-      "assets/StaticImages/BapiNaUwat.png",
-      "assets/StaticImages/BapiNaUwat1.png",
-    ],
-    category: "event",
-  },
+  // ------------------------------------------------MOU---------------------------------------------------------------
 
   {
     title:
@@ -458,6 +424,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       "Shri Shankaracharya Technical Campus (SSTC), the first autonomous college in Central India named after Adi Shri Shankaracharya, has signed an MoU with the IBITF to promote collaboration and knowledge advancement. The partnership will focus on exchanging intellectual know-how and resources, fostering innovation and entrepreneurship, sharing scientific and technical networks and infrastructure, and collaborating on consulting, research, and R&D projects across various science and technology fields. These initiatives will be governed by the rules and regulations of the respective institutions and will operate on principles of reciprocity, mutual benefit, and frequent interaction.",
     images: ["assets/StaticImages/mou/sstc.png"],
     category: "event",
+    subCategory: 'MOU'
   },
   {
     title: "IBITF and Indo ural medicine",
