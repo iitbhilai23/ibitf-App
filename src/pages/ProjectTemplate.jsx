@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { pagesConfig } from '../constants/pagesConfig';
+import './ProjectTemplate.css'
 
 const ProjectTemplate = () => {
   const location = useLocation();
@@ -13,7 +14,7 @@ const ProjectTemplate = () => {
   const renderDescription = (description) => {
     // If description is a string, split by newline and return lines with <br />
     if (typeof description === 'string') {
-      return description.split('\n').map((line, index) => (
+      return description.split('/n').map((line, index) => (
         <React.Fragment key={index}>
           {line}
           <br />
@@ -42,10 +43,17 @@ const ProjectTemplate = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>{currentPage.title}</h1>
+      <div style={styles.title}>{currentPage.title}</div>
       <div style={styles.divider}></div>
-
-      <div className="contents" style={{ display: "flex", flexDirection: "column" }}>
+      <div className='sub-text-title'>
+        <span className='pi-name'>{currentPage.piName}</span>
+        <div className='dates-subTxt'>
+          <span className='date'>{currentPage.date}</span>
+          <span className='date'><strong>Project Duration : </strong>{currentPage.duration}</span>
+        </div>
+      </div>
+      {/* Image Gallery */}
+      <div className='contents' style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
         <div style={styles.imageContainer}>
           {currentPage.images.length > 0 ? (
             currentPage.images.map((image, index) => (
@@ -66,9 +74,83 @@ const ProjectTemplate = () => {
             <p style={styles.noImages}>No images available for this event.</p>
           )}
         </div>
-
-        {/* Render description with line breaks */}
-        <div style={styles.singleDescription}>{renderDescription(currentPage.description)}</div>
+        <div className='obj-cls'>Project Objectives
+          <div style={styles.divider}></div>
+        </div>
+        <div className='obj-container'>
+          <span style={styles.description}>{currentPage.description}</span>
+          <div className='obj-img'>
+            <img
+              src={require(`../${currentPage.objImg}`)}
+              alt="project objective logo"
+              style={styles.image}
+            />
+          </div>
+        </div>
+        {currentPage.workshop !== "" &&
+          <>
+            <div className='obj-cls'>Work Shop Details
+              <div style={styles.divider}></div>
+            </div>
+            <div className='obj-container'>
+              {/* <div className='obj-img'>
+            <img
+              src={require(`../${currentPage.objImg}`)}
+              alt="project objective logo"
+              style={styles.image}
+            />
+          </div> */}
+              <span style={styles.description}>{currentPage.workshop}</span>
+            </div>
+          </>
+        }
+        {currentPage.technicalDetails !== "" &&
+          <>
+            <div className='obj-cls'>Technical Progress
+              <div style={styles.divider}></div>
+            </div>
+            <div className='obj-container'>
+              <span style={styles.description}>{currentPage.technicalDetails}</span>
+              {/* <div className='obj-img'>
+            <img
+              src={require(`../${currentPage.objImg}`)}
+              alt="project objective logo"
+              style={styles.image}
+            />
+          </div> */}
+            </div>
+          </>
+        }
+        {currentPage.publications !== "" &&
+          <>
+            <div className='obj-cls'>Publications
+              <div style={styles.divider}></div>
+            </div>
+            <div className='obj-container'>
+              <span style={styles.description}>{currentPage.publications}</span>
+            </div>
+          </>
+        }
+        {currentPage.achievements !== "" &&
+          <>
+            <div className='obj-cls'>Achievements
+              <div style={styles.divider}></div>
+            </div>
+            <div className='obj-container'>
+              <span style={styles.description}>{currentPage.achievements}</span>
+            </div>
+          </>
+        }
+        {currentPage.startupName !== "" &&
+          <>
+            <div className='obj-cls'>Startup Name
+              <div style={styles.divider}></div>
+            </div>
+            <div className='startUp-text'>
+              <span>{currentPage.startupName}</span>
+            </div>
+          </>
+        }
       </div>
     </div>
   );
@@ -85,10 +167,9 @@ const styles = {
     backgroundColor: '#ffffff',
   },
   title: {
-    fontSize: '2em',
-    fontWeight: 'bold',
-    color: '#2c3e50',
-    marginBottom: '10px',
+    fontWeight: 600,
+    fontSize: "45px",
+    color: "#374557"
   },
   divider: {
     width: '50%',
@@ -96,6 +177,12 @@ const styles = {
     backgroundColor: '#6a0dad',
     margin: '15px auto',
     borderRadius: '4px',
+  },
+  description: {
+    fontSize: '1.12em',
+    color: '#7f8c8d',
+    lineHeight: '1.5',
+    width: "70%"
   },
   imageContainer: {
     display: 'flex',
@@ -106,7 +193,7 @@ const styles = {
   },
   imageWrapper: {
     width: '300px',
-    height: '400px',
+    height: "300px",
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
     borderRadius: '15px',
     overflow: 'hidden',
@@ -116,31 +203,8 @@ const styles = {
   image: {
     width: '100%',
     height: '100%',
-    objectFit: 'contain',
-  },
-  noImages: {
-    fontSize: '1.2em',
-    color: '#7f8c8d',
-    marginTop: '20px',
-  },
-  section: {
-    marginTop: '20px',
-  },
-  sectionHeading: {
-    fontSize: '1.5em',
-    fontWeight: 'bold',
-    color: '#34495e',
-  },
-  sectionDescription: {
-    fontSize: '1.12em',
-    color: '#7f8c8d',
-    lineHeight: '1.8',
-  },
-  singleDescription: {
-    fontSize: '1.12em',
-    color: '#7f8c8d',
-    lineHeight: '1.8',
-    marginTop: '20px',
+    objectFit: "contain"
+    // display: 'block',
   },
   notFound: {
     fontSize: '1.5em',

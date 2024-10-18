@@ -1,10 +1,10 @@
 export const pagesConfig = [
-    // --------------------------------------------------------------workshops-----------------------------------
+  // --------------------------------------------------------------workshops-----------------------------------
   {
     title: "VIDYA SAMKISHA KENDRA",
     path: "/vsk",
     component: "VSK",
-    description:"Vidya Samiksha Kendra in Chhattisgarh is a centralized hub dedicated to monitoring and improving the state's education system. Formerly known as the Command and Control Centre for Schools, it plays a crucial role in gathering, analyzing, and utilizing data to enhance educational outcomes. The center provides real-time insights into various aspects of the education sector, including school performance, infrastructure, and student demographics. By leveraging advanced data analytics, Vidya Samiksha Kendra supports evidence-based decision-making, ensuring efficient resource allocation, targeted interventions, and continuous monitoring. This will cover data of more than 56551 thousand schools, 180790 Lakh teachers and 5728401 lakhs students and them meaningfully using big data analysis, artificial intelligence and machine learning in order to enhance the overall monitoring of the education system and there by improving learning outcomes. Its objective is to monitor the real-time status of various projects/activities under the ambit of Samagra Shiksha.",
+    description: "Vidya Samiksha Kendra in Chhattisgarh is a centralized hub dedicated to monitoring and improving the state's education system. Formerly known as the Command and Control Centre for Schools, it plays a crucial role in gathering, analyzing, and utilizing data to enhance educational outcomes. The center provides real-time insights into various aspects of the education sector, including school performance, infrastructure, and student demographics. By leveraging advanced data analytics, Vidya Samiksha Kendra supports evidence-based decision-making, ensuring efficient resource allocation, targeted interventions, and continuous monitoring. This will cover data of more than 56551 thousand schools, 180790 Lakh teachers and 5728401 lakhs students and them meaningfully using big data analysis, artificial intelligence and machine learning in order to enhance the overall monitoring of the education system and there by improving learning outcomes. Its objective is to monitor the real-time status of various projects/activities under the ambit of Samagra Shiksha.",
     images: [
       "assets/ProjectImages/vsk/05.jpeg",
       "assets/ProjectImages/vsk/02.jpeg",
@@ -12,7 +12,36 @@ export const pagesConfig = [
       "assets/ProjectImages/vsk/01.jpeg",
     ],
     category: "project",
-    subCategory: "IB",
+    subCategory: "vsk",
+    piName: "Dr. Santosh Biswas",
+    date: "From :- 01/05/2022  -  To :- 25/04/2025 ",
+    duration:"1 Year",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Collaborative learning for Early Detection of Frauds in Fintech",
+    path: "/fintech",
+    component: "fintech",
+    description:"The objective of this project is to develop a robust, privacy-preserving collaborative learning framework for financial fraud detection by training an intelligent machine learning model. This will involve collaborating with merchants, banks, companies, and end users to utilize real-time data while ensuring the security and privacy of all participants. Key deliverables include a collaborative learning framework, an analysis of its security and privacy measures, and an interactive dashboard that visualizes transaction summaries for effective monitoring and fraud detection.",
+    images: [
+      
+    ],
+    duration:"3 Year",
+    category: "project",
+    subCategory: "EIR",
+    piName: "Dr. Somanath Tripathy",
+    date: "From :- 28/3/2022  -  To :- 27/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "Dashboard Design (completed with the following) Designed dashboard that will collect/display transaction information. /n Designed dashboard that will collect/display transaction information. /n Analyse transaction data to support on real-time fraud detection. /n Continuously update and train models based on new data. /n Notify users and issuer bank of suspected fraudulent activities.",
+    publications: "",
+    achievements: "",
+    startupName: "Whitenet Explorer Pvt Ltd",
   },
   {
     title: "Smart ID Card",
