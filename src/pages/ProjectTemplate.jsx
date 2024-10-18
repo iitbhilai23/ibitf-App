@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { pagesConfig } from '../constants/pagesConfig';
-import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 
 const ProjectTemplate = () => {
   const location = useLocation();
@@ -18,34 +16,50 @@ const ProjectTemplate = () => {
       <div style={styles.divider}></div>
 
       {/* Image Gallery */}
-      <div className='contents' style={{display:"flex",flexDirection:"row-reverse",}}>
-
+      <div className="contents" style={{ display: "flex", flexDirection: "column" }}>
         <div style={styles.imageContainer}>
-          {currentPage.images.map((image, index) => (
-            <div
-              key={index}
-              style={styles.imageWrapper}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-              onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-            >
-              <img
-                src={require(`../${image}`)}
-                alt={`${currentPage.title} image ${index + 1}`}
-                style={styles.image}
-              />
-            </div>
-          ))}
+          {currentPage.images.length > 0 ? (
+            currentPage.images.map((image, index) => (
+              <div
+                key={index}
+                style={styles.imageWrapper}
+                onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+                onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+              >
+                <img
+                  src={require(`../${image}`)}
+                  alt={`${currentPage.title} image ${index + 1}`}
+                  style={styles.image}
+                />
+              </div>
+            ))
+          ) : (
+            <p style={styles.noImages}>No images available for this event.</p>
+          )}
         </div>
-        <p style={styles.description}>{currentPage.description}</p>
+
+        {/* Description Section */}
+        <div>
+          {/* Check if description is a string or an array */}
+          {Array.isArray(currentPage.description) ? (
+            currentPage.description.map((section, index) => (
+              <div key={index} style={styles.section}>
+                <h2 style={styles.sectionHeading}>{section.heading}</h2>
+                <p style={styles.sectionDescription}>{section.description}</p>
+              </div>
+            ))
+          ) : (
+            <p style={styles.singleDescription}>{currentPage.description}</p>
+          )}
+        </div>
       </div>
     </div>
   );
 };
 
-// Inline styles for page Desgin
+// Inline styles for page design
 const styles = {
   container: {
-    // maxWidth: '900px',
     margin: '40px 40px',
     padding: '30px',  
     textAlign: 'center',
@@ -66,13 +80,6 @@ const styles = {
     margin: '15px auto',
     borderRadius: '4px',
   },
-  description: {
-    fontSize: '1.12em',
-    color: '#7f8c8d',
-    lineHeight: '1.8',
-    maxWidth: '750px',
-    margin: '20px auto',
-  },
   imageContainer: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -82,7 +89,7 @@ const styles = {
   },
   imageWrapper: {
     width: '300px',
-    height:"400px",
+    height: '400px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
     borderRadius: '15px',
     overflow: 'hidden',
@@ -92,8 +99,31 @@ const styles = {
   image: {
     width: '100%',
     height: '100%',
-    objectFit:"contain"
-    // display: 'block',
+    objectFit: 'contain',
+  },
+  noImages: {
+    fontSize: '1.2em',
+    color: '#7f8c8d',
+    marginTop: '20px',
+  },
+  section: {
+    marginTop: '20px',
+  },
+  sectionHeading: {
+    fontSize: '1.5em',
+    fontWeight: 'bold',
+    color: '#34495e',
+  },
+  sectionDescription: {
+    fontSize: '1.12em',
+    color: '#7f8c8d',
+    lineHeight: '1.8',
+  },
+  singleDescription: {
+    fontSize: '1.12em',
+    color: '#7f8c8d',
+    lineHeight: '1.8',
+    marginTop: '20px',
   },
   notFound: {
     fontSize: '1.5em',
