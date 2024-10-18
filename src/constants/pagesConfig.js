@@ -1,6 +1,20 @@
 export const pagesConfig = [
     // --------------------------------------------------------------workshops-----------------------------------
   {
+    title: "VIDYA SAMKISHA KENDRA",
+    path: "/vsk",
+    component: "VSK",
+    description:"Vidya Samiksha Kendra in Chhattisgarh is a centralized hub dedicated to monitoring and improving the state's education system. Formerly known as the Command and Control Centre for Schools, it plays a crucial role in gathering, analyzing, and utilizing data to enhance educational outcomes. The center provides real-time insights into various aspects of the education sector, including school performance, infrastructure, and student demographics. By leveraging advanced data analytics, Vidya Samiksha Kendra supports evidence-based decision-making, ensuring efficient resource allocation, targeted interventions, and continuous monitoring. This will cover data of more than 56551 thousand schools, 180790 Lakh teachers and 5728401 lakhs students and them meaningfully using big data analysis, artificial intelligence and machine learning in order to enhance the overall monitoring of the education system and there by improving learning outcomes. Its objective is to monitor the real-time status of various projects/activities under the ambit of Samagra Shiksha.",
+    images: [
+      "assets/ProjectImages/vsk/05.jpeg",
+      "assets/ProjectImages/vsk/02.jpeg",
+      "assets/ProjectImages/vsk/04.jpeg",
+      "assets/ProjectImages/vsk/01.jpeg",
+    ],
+    category: "project",
+    subCategory: "IB",
+  },
+  {
     title: "Smart ID Card",
     path: "/SmartCard",
     component: "SmartCard",
@@ -21,7 +35,6 @@ export const pagesConfig = [
     description:
       "3-day workshop, IBITF aims to empower project owners with knowledge about how emerging technologies like AI/ML, Blockchain, IoT, and e-payments can revolutionize fintech, address local challenges, and uplift the ST population by promoting financial literacy, skill development, and entrepreneurship,  This workshop aims to bridge academia and industry, empowering the participants with knowledge to drive fintech innovation and positive change",
     images: [
-      "assets/StaticImages/Workshop/Financial_eng1.png",
       "assets/StaticImages/Workshop/Financial_eng1.png",
       "assets/StaticImages/Workshop/Financial_eng.png",
     ],
