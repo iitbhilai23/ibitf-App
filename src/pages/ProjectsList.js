@@ -139,7 +139,8 @@ const styles = {
     padding: '20px 20px',
     margin: '0 auto',
     height: "100%",
-    overflowY: "auto"
+    overflowY: "auto",
+    maxWidth: "1200px"
   },
   title: {
     fontWeight: 'bold',
