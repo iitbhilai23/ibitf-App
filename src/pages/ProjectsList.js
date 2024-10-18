@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { pagesConfig } from '../constants/pagesConfig';
-import { Tabs, Tab, Box, Grid, MenuItem, Select, Typography, Paper } from '@mui/material';
+import { Tabs, Tab, Box, Grid, MenuItem, Select, Typography, Paper, Card } from '@mui/material';
 
 const ProjectsList = () => {
   const [activeTab, setActiveTab] = useState('project');
@@ -35,62 +35,64 @@ const ProjectsList = () => {
       <Typography variant="h4" sx={styles.title}>
         Explore Projects, Workshops, and Events
       </Typography>
-
-      {/* Tabs for Categories */}
-      <Box sx={styles.tabsContainer}>
-        <Tabs
-          value={activeTab}
-          onChange={handleTabChange}
-          aria-label="Project categories"
-          variant="fullWidth"
-          textColor="primary"
-          indicatorColor="primary"
-        >
-          <Tab label="Projects" value="project" sx={styles.tab} />
-          {/* <Tab label="Workshops" value="workshop" sx={styles.tab} /> */}
-          <Tab label="Events" value="event" sx={styles.tab} />
-        </Tabs>
-      </Box>
-
-      {/* SubCategory Dropdown */}
-      {subCategories.length > 0 && (
-        <Box sx={styles.dropdownContainer}>
-          <Select
-            value={selectedSubCategory}
-            onChange={handleSubCategoryChange}
-            displayEmpty
-            variant="outlined"
-            sx={styles.dropdown}
+      <Card elevation={2} sx={{padding:"20px"}}>
+        {/* Tabs for Categories */}
+        <Box sx={styles.tabsContainer}>
+          <Tabs
+            value={activeTab}
+            onChange={handleTabChange}
+            aria-label="Project categories"
+            variant="fullWidth"
+            textColor="primary"
+            indicatorColor="primary"
+            sx={{background:"#ffffff"}}
           >
-            <MenuItem value="">
-              <em>All Subcategories</em>
-            </MenuItem>
-            {subCategories.map((subCat, index) => (
-              <MenuItem key={index} value={subCat}>
-                {subCat}
-              </MenuItem>
-            ))}
-          </Select>
+            <Tab label="Projects" value="project" sx={styles.tab} />
+            {/* <Tab label="Workshops" value="workshop" sx={styles.tab} /> */}
+            <Tab label="Events" value="event" sx={styles.tab} />
+          </Tabs>
         </Box>
-      )}
 
-      {/* Display Filtered Projects */}
-      <Grid container spacing={3} sx={styles.gridContainer}>
-        {filteredProjects.map(({ title, path, description, id }, index) => (
-          <Grid item xs={12} sm={6} md={4} key={id}>
-            <Link to={path} style={styles.cardLink}>
-              <Paper elevation={3} sx={styles.card}>
-                <Typography variant="h6" sx={styles.cardTitle}>
-                  {title}
-                </Typography>
-                <Typography variant="body2" sx={styles.cardDescription}>
-                  {description.slice(0, 100)}...
-                </Typography>
-              </Paper>
-            </Link>
-          </Grid>
-        ))}
-      </Grid>
+        {/* SubCategory Dropdown */}
+        {subCategories.length > 0 && (
+          <Box sx={styles.dropdownContainer}>
+            <Select
+              value={selectedSubCategory}
+              onChange={handleSubCategoryChange}
+              displayEmpty
+              variant="outlined"
+              sx={styles.dropdown}
+            >
+              <MenuItem value="">
+                <em>All Subcategories</em>
+              </MenuItem>
+              {subCategories.map((subCat, index) => (
+                <MenuItem key={index} value={subCat}>
+                  {subCat}
+                </MenuItem>
+              ))}
+            </Select>
+          </Box>
+        )}
+
+        {/* Display Filtered Projects */}
+        <Grid container spacing={3} sx={styles.gridContainer}>
+          {filteredProjects.map(({ title, path, description, id }, index) => (
+            <Grid item xs={12} sm={6} md={4} key={id}>
+              <Link to={path} style={styles.cardLink}>
+                <Paper elevation={3} sx={styles.card}>
+                  <Typography variant="h6" sx={styles.cardTitle}>
+                    {title}
+                  </Typography>
+                  <Typography variant="body2" sx={styles.cardDescription}>
+                    {description.slice(0, 100)}...
+                  </Typography>
+                </Paper>
+              </Link>
+            </Grid>
+          ))}
+        </Grid>
+      </Card>
     </Box>
   );
 };
@@ -112,7 +114,7 @@ const styles = {
     marginBottom: '30px',
     backgroundColor: '#f5f5f5',
     borderRadius: '8px',
-    boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+    // boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
   },
   tab: {
     fontWeight: 'bold',
