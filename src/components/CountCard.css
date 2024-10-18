@@ -1,20 +1,24 @@
 .countcard {
     transition: background-color 0.3s;
-    cursor:pointer;
-    border:none;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.1s linear, transform 0.15s ease-out;
+    cursor: pointer;
+    border: none;
+    box-shadow:
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 2px 1px -1px rgba(0, 0, 0, 0.12),
+        0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    transition:
+        box-shadow 0.1s linear,
+        transform 0.15s ease-out;
 }
 
 .countcard:hover {
-    /* background: rgba(98, 158, 255, 0.2);
-    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 40px;
-    cursor:pointer;  
-    */
     transform: scale(1.01);
     background: rgba(98, 158, 255, 0.2);
-    /* transform: translateY(-5px); */
-  box-shadow: 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 12px 17px 2px rgba(0, 0, 0, 0.14),
+        0 5px 22px 4px rgba(0, 0, 0, 0.12),
+        0 7px 8px -4px rgba(0, 0, 0, 0.2);
+        border: 1px solid #1976d2;
 }
 
 .countcard.active {
@@ -22,9 +26,9 @@
     background: #f3f6ff;
     transform: translateY(-5px);
     color: #3498db;
-    cursor:pointer;
+    cursor: pointer;
     box-shadow: none;
-    border:#3498db 1px solid;
+    border: #3498db 1px solid;
 }
 
 .value {
