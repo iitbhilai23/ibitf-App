@@ -10,12 +10,41 @@ const ProjectTemplate = () => {
     return <div style={styles.notFound}>Page not found</div>;
   }
 
+  const renderDescription = (description) => {
+    // If description is a string, split by newline and return lines with <br />
+    if (typeof description === 'string') {
+      return description.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ));
+    }
+
+    // If description is an array, map through it
+    if (Array.isArray(description)) {
+      return description.map((section, index) => (
+        <div key={index} style={styles.section}>
+          <h2 style={styles.sectionHeading}>{section.heading}</h2>
+          <p style={styles.sectionDescription}>
+            {section.description.split('\n').map((line, idx) => (
+              <React.Fragment key={idx}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
+        </div>
+      ));
+    }
+    return null;
+  };
+
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>{currentPage.title}</h1>
       <div style={styles.divider}></div>
 
-      {/* Image Gallery */}
       <div className="contents" style={{ display: "flex", flexDirection: "column" }}>
         <div style={styles.imageContainer}>
           {currentPage.images.length > 0 ? (
@@ -38,30 +67,18 @@ const ProjectTemplate = () => {
           )}
         </div>
 
-        {/* Description Section */}
-        <div>
-          {/* Check if description is a string or an array */}
-          {Array.isArray(currentPage.description) ? (
-            currentPage.description.map((section, index) => (
-              <div key={index} style={styles.section}>
-                <h2 style={styles.sectionHeading}>{section.heading}</h2>
-                <p style={styles.sectionDescription}>{section.description}</p>
-              </div>
-            ))
-          ) : (
-            <p style={styles.singleDescription}>{currentPage.description}</p>
-          )}
-        </div>
+        {/* Render description with line breaks */}
+        <div style={styles.singleDescription}>{renderDescription(currentPage.description)}</div>
       </div>
     </div>
   );
 };
 
-// Inline styles for page design
+// Inline styles
 const styles = {
   container: {
     margin: '40px 40px',
-    padding: '30px',  
+    padding: '30px',
     textAlign: 'center',
     boxShadow: '0 6px 18px rgba(0, 0, 0, 0.1)',
     borderRadius: '12px',
