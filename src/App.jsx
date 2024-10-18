@@ -1,5 +1,9 @@
-import React, { Suspense, lazy } from 'react';
+
+
+
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -8,10 +12,11 @@ import Services from './pages/Services';
 import Career from './pages/Career';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
-import ProjectsList from './pages/ProjectsList'; 
-import ProjectTemplate from './pages/ProjectTemplate'; 
-import { pagesConfig } from './constants/pagesConfig'; 
+import ProjectsList from './pages/ProjectsList';
+import { pagesConfig } from './constants/pagesConfig';
 import './components/Navbar.css';
+const ProjectTemplate = lazy(() => import('./pages/ProjectTemplate'))
+// const ProjectsList = lazy(() => import('./pages/ProjectsList'))
 
 const App = () => {
   return (
@@ -33,7 +38,7 @@ const App = () => {
             key={index}
             path={path}
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Component is Loading...</div>}>
                 <ProjectTemplate />
               </Suspense>
             }
