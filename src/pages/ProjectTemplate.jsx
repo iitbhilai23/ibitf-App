@@ -2,6 +2,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { pagesConfig } from '../constants/pagesConfig';
+import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 
 const ProjectTemplate = () => {
   const location = useLocation();
@@ -15,25 +16,28 @@ const ProjectTemplate = () => {
     <div style={styles.container}>
       <h1 style={styles.title}>{currentPage.title}</h1>
       <div style={styles.divider}></div>
-      
+
       {/* Image Gallery */}
-      <div style={styles.imageContainer}>
-        {currentPage.images.map((image, index) => (
-          <div 
-            key={index} 
-            style={styles.imageWrapper}
-            onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-            onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-          >
-            <img
-              src={require(`../${image}`)}
-              alt={`${currentPage.title} image ${index + 1}`}
-              style={styles.image}
-            />
-          </div>
-        ))}
+      <div className='contents' style={{display:"flex",flexDirection:"row-reverse",}}>
+
+        <div style={styles.imageContainer}>
+          {currentPage.images.map((image, index) => (
+            <div
+              key={index}
+              style={styles.imageWrapper}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <img
+                src={require(`../${image}`)}
+                alt={`${currentPage.title} image ${index + 1}`}
+                style={styles.image}
+              />
+            </div>
+          ))}
+        </div>
+        <p style={styles.description}>{currentPage.description}</p>
       </div>
-      <p style={styles.description}>{currentPage.description}</p>
     </div>
   );
 };
@@ -41,9 +45,9 @@ const ProjectTemplate = () => {
 // Inline styles for page Desgin
 const styles = {
   container: {
-    maxWidth: '900px',
-    margin: '40px auto',
-    padding: '30px',
+    // maxWidth: '900px',
+    margin: '40px 40px',
+    padding: '30px',  
     textAlign: 'center',
     boxShadow: '0 6px 18px rgba(0, 0, 0, 0.1)',
     borderRadius: '12px',
@@ -78,16 +82,18 @@ const styles = {
   },
   imageWrapper: {
     width: '300px',
+    height:"400px",
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
     borderRadius: '15px',
     overflow: 'hidden',
     transition: 'transform 0.3s ease',
-    border: '1px solid #6a0dad', 
+    border: '1px solid #6a0dad',
   },
   image: {
     width: '100%',
-    height: 'auto',
-    display: 'block',
+    height: '100%',
+    objectFit:"contain"
+    // display: 'block',
   },
   notFound: {
     fontSize: '1.5em',

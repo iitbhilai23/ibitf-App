@@ -70,7 +70,8 @@ export default function CountCard({ title, isActive, onClick, height, enabled = 
                 '&:hover': {
                     backgroundColor: !isActive && enabled ? '#FFFFFF' : hoverColor,
                     color: !isActive && enabled ? hoverColor : '#FFFFFF',
-                }
+                },
+                borderRadius:"10px"
             }}
         >
             <Tooltip title={title} placement="top-start" arrow>
