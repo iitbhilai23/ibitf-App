@@ -18,8 +18,7 @@ const ProjectTemplate = () => {
       <div style={styles.divider}></div>
 
       {/* Image Gallery */}
-      <div className='contents' style={{display:"flex",flexDirection:"row-reverse",}}>
-
+      <div className='contents' style={{ display: "flex", flexDirection: "column", }}>        
         <div style={styles.imageContainer}>
           {currentPage.images.map((image, index) => (
             <div
@@ -36,7 +35,7 @@ const ProjectTemplate = () => {
             </div>
           ))}
         </div>
-        <p style={styles.description}>{currentPage.description}</p>
+        <span style={styles.description}>{currentPage.description}</span>
       </div>
     </div>
   );
@@ -70,8 +69,6 @@ const styles = {
     fontSize: '1.12em',
     color: '#7f8c8d',
     lineHeight: '1.8',
-    maxWidth: '750px',
-    margin: '20px auto',
   },
   imageContainer: {
     display: 'flex',
