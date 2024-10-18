@@ -59,7 +59,7 @@ const ProjectsList = () => {
             sx={styles.dropdown}
           >
             <MenuItem value="">
-              <em>All Subcategories</em>
+              <em>ALL</em>
             </MenuItem>
             {subCategories.map((subCat, index) => (
               <MenuItem key={index} value={subCat}>
@@ -78,7 +78,7 @@ const ProjectsList = () => {
                 title={title}              
                 // isActive={index === 0}      
                 onClick={() => console.log(`Clicked on ${title}`)}  
-                height="200px"              
+                height="170px"              
                 color_num={(index % 4) + 1} 
               />
             </Link>
