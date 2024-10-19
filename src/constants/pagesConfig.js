@@ -111,7 +111,7 @@ export const pagesConfig = [
     component: "SmartCleaner",
     description:
       "The main aim is to achieve maximal code coverage ( 100% ) of smart contracts. This can be achieved by removal of dead code present in the contracts. This is a fact that a smart contract is prepared by several users at different timestamps. These changes in the contracts may lead to problems such as existence of dead code. Also, it may attract several bugs. Our purpose is to test the smart contract wrt to achieve code coverage and bug detection. Finally, automatically repair the contract so that it is having maximal code coverage and with no bugs. /n To implement a test case generator for Smart Contracts. /n To detect the bugs present in Smart Contracts. /n To measure Code Coverage of Smart Contracts. /n To compute Gas Consumption of Smart Contracts. /n To Automatically Repair the Smart Contracts. /n To Commercialize the product Smart Cleaner.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/Dr.Sanghartna.png", "assets/ProjectImages/pi_imagess/Sanghartna Godboley,.png"],
     duration: "3 Year",
     category: "project",
     subCategory: "PRAYAS",
@@ -154,7 +154,7 @@ export const pagesConfig = [
     component: "alfalgo",
     description:
       "The aim of this project is to build a state of the art no-code platform for retail traders to create, back-test and deploy algorithmic trading bots for the retail traders in the segment of Indian equities and derivatives (futures and options) Our startup will make a SaaS product which will enable traders translate their trading strategy into a trading bot using our no-code tools/coding terminal, in accordance to their preference. They will be able to simulate their logic on historical data which we will store after cleaning and pre-processing it (a huge pain point that they face). They will then be able to take this bot live to the market by connecting with their broker's API. Finally, we will create a marketplace for them to give their strategy to others and earn by copy-trading. We have devised a flexible and customizable no-code platform where traders can build any custom strategy they want without disrupting their present learning curve about our product. Our prototype is even live at alfalgo.com, and we have received amazing responses from our early adopters.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/alfalgo.jpeg"],
     duration: "2 Year",
     category: "project",
     subCategory: "PRAYAS",
@@ -354,7 +354,7 @@ export const pagesConfig = [
     component: "emergencyCare",
     description:
       "This project aims to develop a user-friendly interface with AI-integrated support for healthcare providers in remote areas, specifically targeting timely management of emergencies like heart attacks. It includes setting up 24/7 tele-access to emergency experts, optimizing digital tools for patient assessments and communication, and enhancing STEMI patient care through real-time consultations. Additionally, it focuses on informing patients about affordable medications and insurance options while facilitating knowledge transfer among healthcare professionals.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/Dr.Devendra.png"],
     duration: "2 Year",
     category: "project",
     subCategory: "PRAYAS",
@@ -492,10 +492,9 @@ export const pagesConfig = [
       "AI based geo-enabled crop insurance and farm equipment renting solutions under BhoomiCam Pvt. Ltd. Startup",
     path: "/BhoomiCam",
     component: "BhoomiCam",
-    description: "• To develop bilingual Android application platform to provide agri-drone spray services to farmers. /n • To develop web and android platform to provide geo-enabled solutions based on AI and satellite data to generate crop insurance advisories to addressing problems associated farmer bank/insurance relationships. ",
-    images: [
-      "assets/ProjectImages/pi_imagess/26.jpg",
-    ],
+    description:
+      "• To develop bilingual Android application platform to provide agri-drone spray services to farmers. /n • To develop web and android platform to provide geo-enabled solutions based on AI and satellite data to generate crop insurance advisories to addressing problems associated farmer bank/insurance relationships. ",
+    images: ["assets/ProjectImages/pi_imagess/26.jpg","assets/ProjectImages/pi_imagess/Siddhartha Khare.png"],
     duration: "2 Year",
     category: "project",
     subCategory: "TBI",
