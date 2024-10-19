@@ -13,6 +13,8 @@ import ProjectsList from './pages/ProjectsList';
 import ProjectTemplate from './pages/ProjectTemplate'; 
 import { pagesConfig } from './constants/pagesConfig'; 
 import './components/Navbar.css';
+import AboutIBITF from './pages/AboutIBITF';
+import OrgStructure from './pages/OrgStructure';
 
 const App = () => {
   return (
@@ -21,11 +23,14 @@ const App = () => {
       <Routes>
         {/* Static Routes */}
         <Route path="/*" element={<Home />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/Projects-list" element={<ProjectsList />} />
-        {/* <Route path="/career" element={<Career />} /> */}
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/about us" element={<About />} /> */}
+        <Route path="/about-ibitf" element={<AboutIBITF />} />Organizational Structure
+        <Route path="/organizational-structure" element={<OrgStructure />} />
+
+        <Route path="/services" element={<Services />} /> 
+        <Route path="/Projects" element={<ProjectsList />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/contact-us" element={<Contact />} />
         <Route path="/team" element={<Team />} />
 
         {/* Dynamic Routes for each page based on pagesConfig */}

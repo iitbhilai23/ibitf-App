@@ -200,7 +200,7 @@ body {
 
 .contact-card {
   width: 360px; 
-  padding: 2.5rem;
+  padding: 3.5rem;
   background-color: #6a0dad; 
   color: #fff;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
@@ -291,6 +291,291 @@ body {
  
 }
 
+
+
+
+/* for career page design  */
+
+.career-page {
+  margin: 0 auto;
+  padding: 25px 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.career-page h2 {
+  text-align: center;
+  color: #4d3e90;
+  margin-bottom: 20px;
+}
+
+.career-page p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0f0f0f;
+  margin-bottom: 40px;
+}
+
+.career-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.career-table th {
+  background-color: #6a0dad;
+  color: white;
+  font-size: 0.9rem;
+  padding: 14px 15px;
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: 0.6px;
+}
+
+.career-table td {
+  padding: 8px 15px;
+  text-align: left;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.career-table tr:nth-child(even) td {
+  background-color: #f3f3f3;
+}
+
+.career-table tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+.career-table tr:hover td {
+  background-color: #e6e6e6;
+}
+
+.apply-link, .download-link {
+  color: #e63946;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.apply-link:hover, .download-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* AboutIIT Page design */
+
+/* General Styling */
+.about-ibitf-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.about-hero {
+  background-color: #f3f4f6;  /* Light grey background for contrast */
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  color: #4d3e90;  /* Purple to match the theme */
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about-details, .nodal-center, .about-vision {
+  background-color: #fff;  /* White background for content sections */
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.about-details h2, .nodal-center h2, .about-vision h2 {
+  font-size: 1.8rem;
+  color: #4d3e90;
+  margin-bottom: 15px;
+}
+
+/* Vision Section */
+.about-vision ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-vision ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Nodal Center Section */
+.nodal-center p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Media Queries to Ensure Responsiveness */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-details h2, .nodal-center h2, .about-vision h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* For OrgStucture Page design */
+
+/* Container and layout styling */
+.org-structure {
+  padding: 20px;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+.org-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #444;
+}
+
+/* Box container and individual boxes */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Specific Section Colors */
+.bog .box {
+  background-color: #ffcc80; /* Orange for BoG */
+}
+
+.coordination .box {
+  background-color: #bbdefb; /* Light Blue for Project Coordination */
+}
+
+.prsg .box {
+  background-color: #ffe082; /* Yellow for PRSG */
+}
+
+.startup .box {
+  background-color: #ffccbc; /* Light Orange for Startup Coordination */
+}
+
+.tih-office .box {
+  background-color: #c8e6c9; /* Light Green for TIH Office Administration */
+}
+
+/* Section-specific styling */
+.section {
+  margin-bottom: 30px;
+}
+
+.sub-section-title {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Layout for TIH Office Administration in rows */
+.row-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.office-staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 30%; /* Adjust width for each sub-section */
+}
+
+.staff-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .row-layout {
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+
+  .office-staff {
+    width: 100%; /* Full width on small screens */
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .contact-page {
@@ -339,6 +624,9 @@ body {
       width: 100%;
   }
 }
+
+
+
 
 
 
