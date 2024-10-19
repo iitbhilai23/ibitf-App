@@ -22,7 +22,8 @@ const styles = {
     boxSizing: 'border-box',       
     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',  
     backgroundColor: '#fff', 
-    borderRadius: '10px',       
+    borderRadius: '10px', 
+    margin:'0px 10px 20px 0px '      
   },
   iframe: {
     width: 'calc(100% - 0px)',   
