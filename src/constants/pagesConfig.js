@@ -937,9 +937,7 @@ export const pagesConfig = [
     path: "/BlockchainProtectingTribalLand",
     component: "BlockchainProtectingTribalLand",
     description: "Develop a blockchain system for scheduled tribal land records in Andhra Pradesh and Telangana.Ensure secure enrollment and verification of tribal members using blockchain technology.Store authenticated land property records securely with blockchain and IPFS.Create a user-friendly Web Portal and Mobile App for tribal members, offering timely alerts for land document verification and validation.",
-    images: [
-
-    ],
+    images: ["assets/ProjectImages/pi_imagess/Dr.E Suresh.png"],
     category: "project",
     subCategory: "ST",
     piName: "Dr. E. Suresh Babu",
@@ -1322,7 +1320,7 @@ export const pagesConfig = [
     component: "livelihoods",
     description:
       "To identify products in Chhattisgarh across all defined categories which may benefit from a GI tag. To examine the existing status of GI in Chhattisgarh from a livelihood perspective. Technology interventions to make manufacture and dissemination of GI tag products more efficient.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/Dr.Anubhav.png"],
     duration: "2 Year",
     category: "project",
     subCategory: "TBI",
@@ -1448,7 +1446,7 @@ export const pagesConfig = [
     component: "encyposition",
     description:
       "The objective of this project is to develop a secure searchable encryption scheme that enables efficient analysis and modeling of sensitive financial data stored on resource-constrained edge nodes, such as drones, in a semi-trusted environment. This scheme aims to balance robust security measures with performance efficiency, allowing authorized users to perform searches over encrypted data without exposing it in its raw form. By facilitating secure access to financial information, the project will support critical activities such as monitoring financial health, devising market strategies, and predicting return on investment, while ensuring compliance with stringent security protocols to protect sensitive data from unauthorized access.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/Dr.Dhiman.jpg"],
     duration: "2 Year",
     category: "project",
     subCategory: "TD",
@@ -1547,7 +1545,7 @@ export const pagesConfig = [
     component: "Healthcare",
     description:
       "Develop a secure and efficient system that enables hospitals to generate bills and instantly share them with both insurance companies and patients' families. Implement a real-time evaluation mechanism that checks each bill against predefined insurance policies, providing immediate feedback on coverage eligibility. Implement Ciphertext-Policy Attribute-Based Encryption (CP-ABE) to secure the patient's health data in the billing process. The project proposal aims to enhance the healthcare journey by providing immediate clarity on insurance coverage eligibility, ultimately improving patient satisfaction and reducing financial stress during medical treatment.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/Dr.Sanjay.png"],
     duration: "1 Year",
     category: "project",
     subCategory: "ST",
@@ -1568,7 +1566,7 @@ export const pagesConfig = [
     component: "mHealth",
     description:
       "Mobile Healthcare Services: Using mobile devices for healthcare services enhances accessibility and communication between patients and providers. Real-Time Health Monitoring: IoT sensors offer immediate health data, empowering individuals for informed decision-making about their health. Geographical Reach: Mobile health projects overcome geographical barriers, providing healthcare services to remote and underserved areas. Health Education through Apps: Mobile apps deliver health education, promoting preventive care and healthier lifestyles. Empowering Community Health Workers: Equipping community health workers with mobile tools extends healthcare services and education within communities, strengthening the healthcare workforce.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/42.png"],
     duration: "2 Year",
     category: "project",
     subCategory: "ST",
@@ -1794,7 +1792,7 @@ export const pagesConfig = [
     component: "Sustainable",
     description:
       "The objective of this project is to enhance parking management for owners and improve accessibility for the general public, particularly benefiting the Scheduled Tribe (ST) population in Mizoram. By implementing an online pre-booking system, the project aims to optimize the management of parking spaces through accurate usage data, allowing owners to plan more efficiently. Simultaneously, it will enable users, especially from the ST community, to secure parking in advance, significantly reducing the time and resources spent searching for available spots. This technological intervention seeks to promote user-friendly parking solutions, decrease urban traffic congestion, and empower the local community by improving their mobility and overall quality of life.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/53.png"],
     duration: "1 Year",
     category: "project",
     subCategory: "ST",
@@ -1878,7 +1876,7 @@ export const pagesConfig = [
     component: "Empowerment",
     description:
       "Facilitate Seamless Transactions: Develop a user-friendly e-marketplace supporting Khasi, Garo, and English, ensuring artisans and buyers can communicate and transact effortlessly, fostering a vibrant online marketplace for indigenous crafts. Ensure Trust and Authenticity: Implement a robust seller verification system to establish transaction trust, safeguarding both sellers and buyers, thereby boosting confidence in the platform and promoting secure online transactions. Enhance Product Discovery: Integrate an efficient search and recommendation engine to broaden artisans' market reach, enabling buyers to discover diverse indigenous products easily, thereby fostering a thriving ecosystem for local craftsmanship. Promote Cultural Sustainability: Collaborate with local authorities and cultural institutions to document, preserve, and promote Meghalaya's rich cultural heritage, ensuring the long-term sustainability of indigenous crafts and traditions.",
-    images: [],
+    images: ["assets/ProjectImages/pi_imagess/Dr.Basil N.png"],
     duration: "2 Year",
     category: "project",
     subCategory: "ST",
