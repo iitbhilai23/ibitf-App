@@ -1,8 +1,8 @@
 export const defaultColors = {
-    darkCyan: { base: "#4d908e", lighter: "#04cc9e", darker: "#2b6d76", },
-    paynesGray: { base: "#577590", lighter: "#00c0f3", darker: "#385157", },
-    cerulean: { base: "#277da1", lighter: "#d19191", darker: "#1c5b78", },
-    imperialRed: { base: "#f94144", lighter: "#fbc2c3", darker: "#d83437", },
+    darkCyan: { base: "#45beff", lighter: "#45beff", darker: "#45beff", },
+    paynesGray: { base: "#45beff", lighter: "#45beff", darker: "#385157", },
+    cerulean: { base: "#45beff", lighter: "#d19191", darker: "#1c5b78", },
+    imperialRed: { base: "#45beff", lighter: "#fbc2c3", darker: "#45beff;", },
     orangeCrayola: { base: "#f3722c", lighter: "#f78c49", darker: "#622c17", },
     carrotOrange: { base: "#acba37", lighter: "#fabb7e", darker: "#7f8103", },
     coral: { base: "#f9844a", lighter: "#fba75e", darker: "#d65e29", },
