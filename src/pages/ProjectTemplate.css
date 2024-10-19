@@ -16,7 +16,7 @@
     color: #667085;
     text-align: center;
 }
-.dates-subTxt{
+.dates-subTxt {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,6 +40,10 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.obj-container-event {
+    flex-direction: column !important;
 }
 
 .startUp-text {

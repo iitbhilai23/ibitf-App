@@ -7,6 +7,8 @@ const ProjectTemplate = () => {
   const location = useLocation();
   const currentPage = pagesConfig.find(page => page.path === location.pathname);
 
+  console.log(currentPage.category);
+
   if (!currentPage) {
     return <div style={styles.notFound}>Page not found</div>;
   }
@@ -49,7 +51,7 @@ const ProjectTemplate = () => {
         <span className='pi-name'>{currentPage.piName}</span>
         <div className='dates-subTxt'>
           <span className='date'>{currentPage.date}</span>
-          <span className='date'><strong>Project Duration : </strong>{currentPage.duration}</span>
+          {currentPage.category !== "event" && <span className='date'><strong>Project Duration : </strong>{currentPage.duration}</span>}
         </div>
       </div>
       {/* Image Gallery */}
@@ -74,20 +76,32 @@ const ProjectTemplate = () => {
             <p style={styles.noImages}>No images available for this event.</p>
           )}
         </div>
-        <div className='obj-cls'>Project Objectives
-          <div style={styles.divider}></div>
-        </div>
-        <div className='obj-container'>
-          <span style={styles.description}>{currentPage.description}</span>
-          <div className='obj-img'>
+        {currentPage.category !== "event" &&
+          <div className='obj-cls'>Project Objectives
+            <div style={styles.divider}></div>
+          </div>
+        }
+        <div className={currentPage.category !== "event" ? "obj-container" : "obj-container-event"}>
+          {Array.isArray(currentPage.description) ? (
+            currentPage.description.map((section, index) => (
+              <div key={index} style={styles.section}>
+                <h2 style={styles.sectionHeading}>{section.heading}</h2>
+                <p style={styles.sectionDescription}>{section.description}</p>
+              </div>
+            ))
+          ) : (
+            <span style={styles.description}>{renderDescription(currentPage.description)}</span>
+          )}
+          {currentPage.category !== "event" && <div className='obj-img'>
             <img
-              src={require(`../${currentPage.objImg}`)}
+              src={require(`../${currentPage?.objImg || ''}`)}
               alt="project objective logo"
               style={styles.image}
             />
           </div>
+          }
         </div>
-        {currentPage.workshop !== "" &&
+        {(currentPage.workshop !== "" && currentPage.category !== "event") &&
           <>
             <div className='obj-cls'>Work Shop Details
               <div style={styles.divider}></div>
@@ -104,7 +118,7 @@ const ProjectTemplate = () => {
             </div>
           </>
         }
-        {currentPage.technicalDetails !== "" &&
+        {(currentPage.technicalDetails !== "" && currentPage.category !== "event") &&
           <>
             <div className='obj-cls'>Technical Progress
               <div style={styles.divider}></div>
@@ -121,7 +135,7 @@ const ProjectTemplate = () => {
             </div>
           </>
         }
-        {currentPage.publications !== "" &&
+        {(currentPage.publications !== "" && currentPage.category !== "event") &&
           <>
             <div className='obj-cls'>Publications
               <div style={styles.divider}></div>
@@ -131,7 +145,7 @@ const ProjectTemplate = () => {
             </div>
           </>
         }
-        {currentPage.achievements !== "" &&
+        {(currentPage.achievements !== "" && currentPage.category !== "event") &&
           <>
             <div className='obj-cls'>Achievements
               <div style={styles.divider}></div>
@@ -141,7 +155,7 @@ const ProjectTemplate = () => {
             </div>
           </>
         }
-        {currentPage.startupName !== "" &&
+        {(currentPage.startupName !== "" && currentPage.category !== "event") &&
           <>
             <div className='obj-cls'>Startup Name
               <div style={styles.divider}></div>
@@ -211,6 +225,16 @@ const styles = {
     color: '#e74c3c',
     textAlign: 'center',
     marginTop: '20px',
+  },
+  sectionHeading: {
+    fontSize: '1.5em',
+    fontWeight: 'bold',
+    color: '#7f8c8d',
+  },
+  sectionDescription: {
+    fontSize: '1.12em',
+    color: '#7f8c8d',
+    lineHeight: '1.8',
   },
 };
 
