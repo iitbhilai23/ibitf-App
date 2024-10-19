@@ -1,0 +1,55 @@
+.sub-text-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pi-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #667085;
+}
+
+.date {
+    font-weight: 500;
+    font-size: 16px;
+    color: #667085;
+    text-align: center;
+}
+.dates-subTxt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.obj-cls {
+    font-weight: 600;
+    font-size: 30px;
+    color: #667085;
+    margin-top: 5px;
+}
+.obj-img {
+    height: 14em;
+    width: 50em;
+    border-radius: 10px;
+    border: "1px solid #6a0dad";
+}
+.obj-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.obj-container-event {
+    flex-direction: column !important;
+}
+
+.startUp-text {
+    font-size: 45px;
+    background: -webkit-linear-gradient(40deg, #6a0dad, #fff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

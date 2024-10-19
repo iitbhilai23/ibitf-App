@@ -1,4 +1,1901 @@
 export const pagesConfig = [
+  // --------------------------------------------------------------workshops-----------------------------------
+  {
+    title: "VIDYA SAMKISHA KENDRA",
+    path: "/vsk",
+    component: "VSK",
+    description:
+      "Vidya Samiksha Kendra in Chhattisgarh is a centralized hub dedicated to monitoring and improving the state's education system. Formerly known as the Command and Control Centre for Schools, it plays a crucial role in gathering, analyzing, and utilizing data to enhance educational outcomes. The center provides real-time insights into various aspects of the education sector, including school performance, infrastructure, and student demographics. By leveraging advanced data analytics, Vidya Samiksha Kendra supports evidence-based decision-making, ensuring efficient resource allocation, targeted interventions, and continuous monitoring. This will cover data of more than 56551 thousand schools, 180790 Lakh teachers and 5728401 lakhs students and them meaningfully using big data analysis, artificial intelligence and machine learning in order to enhance the overall monitoring of the education system and there by improving learning outcomes. Its objective is to monitor the real-time status of various projects/activities under the ambit of Samagra Shiksha.",
+    images: [
+      "assets/ProjectImages/vsk/05.jpeg",
+      "assets/ProjectImages/vsk/02.jpeg",
+      "assets/ProjectImages/vsk/04.jpeg",
+      "assets/ProjectImages/vsk/01.jpeg",
+    ],
+    category: "project",
+    subCategory: "vsk",
+    piName: "Dr. Santosh Biswas",
+    date: "From :- 01/05/2022  -  To :- 25/04/2025 ",
+    duration: "1 Year",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Collaborative learning for Early Detection of Frauds in Fintech",
+    path: "/fintech",
+    component: "fintech",
+    description:
+      "The objective of this project is to develop a robust, privacy-preserving collaborative learning framework for financial fraud detection by training an intelligent machine learning model. This will involve collaborating with merchants, banks, companies, and end users to utilize real-time data while ensuring the security and privacy of all participants. Key deliverables include a collaborative learning framework, an analysis of its security and privacy measures, and an interactive dashboard that visualizes transaction summaries for effective monitoring and fraud detection.",
+    images: [],
+    duration: "3 Year",
+    category: "project",
+    subCategory: "EIR",
+    piName: "Dr. Somanath Tripathy",
+    date: "From :- 28/3/2022  -  To :- 27/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails:
+      "Dashboard Design (completed with the following) Designed dashboard that will collect/display transaction information. /n Designed dashboard that will collect/display transaction information. /n Analyse transaction data to support on real-time fraud detection. /n Continuously update and train models based on new data. /n Notify users and issuer bank of suspected fraudulent activities.",
+    publications: "",
+    achievements: "",
+    startupName: "Whitenet Explorer Pvt Ltd",
+  },
+  {
+    title:
+      "Design and Implementation of Authentication and Searchable Encryption for Blockchain based fintech application",
+    path: "/fintechBlockchain",
+    component: "fintech",
+    description:
+      "Internet-of-Things based Smart Agriculture: An intelligent precision agricultural system should first be based on an Internet-of-Things architecture using clustered networks of sensors communicating through the Internet. User Authentication: Authenticate the involved traders (farmers and firms) to ensure the trading takes place between the right trading partners. Mutual Authentication: Authentication between the sensor devices placed in the farm fields, the farmers’ devices, and the firms’ devices. Session Management with Key: For every transaction, a specific session is created between the two entities currently trading such that all information is secured using a session key. Blockchain Security: After a transaction is completely committed, it is secured in a blockchain-based cloud system that prevents any kind of tampering on the transaction data",
+    images: [],
+    duration: "3 Year",
+    category: "project",
+    subCategory: "EIR",
+    piName: "Dr. Ashok Kumar Das",
+    date: "From :- 28/3/2022  -  To :- 27/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails:
+      "Dashboard Design (completed with the following) Designed dashboard that will collect/display transaction information. /n Designed dashboard that will collect/display transaction information. /n Analyse transaction data to support on real-time fraud detection. /n Continuously update and train models based on new data. /n Notify users and issuer bank of suspected fraudulent activities.",
+    publications:
+      "1) Anusha Vangala, Ashok Kumar Das, Ankush Mitra, Sajal K. Das, and YoungHo Park. Blockchain Enabled Authenticated Key Agreement Scheme for Mobile Vehicles-Assisted Precision Agricultural IoT Networks, inIEEE Transactions on Information Forensics and Security,Vol. 18, pp. 904-919, 2023, DOI: 10.1109/TIFS.2022.3231121. [This article is one of the top 50 most frequently accessed documents for Popular Articles (February 2023)] /n 2) Anusha Vangala, Ashok Kumar Das, Vinay Chamola, Valery Korotaev, and Joel J. P. C. Rodrigues. Security in IoT-enabled Smart Agriculture: Architecture, Security Solutions and Challenges, in Cluster Computing (Springer),Vol. 26, No. 2, pp. 879-902, 2023,DOI: 10.1007/s10586-022-03566-7 /n  Basudeb Bera, Anusha Vangala, Ashok Kumar Das, Pascal Lorenz, and Muhammad Khurram Khan. Private blockchain-envisioned drones-assisted authentication scheme in IoT-enabled agricultural environment, in Computer Standards & Interfaces (Elsevier), Vol. 80, Article No. 103567, pp. 1-18, 2022, DOI: 10.1016/j.csi.2021.103567 /n 4) Anusha Vangala, Ashok Kumar Das, and Jong-Hyouk Lee. Provably secure signature based ‐ anonymous user authentication protocol in an Internet of Things enabled intelligent precision ‐ agricultural environment, in Concurrency and Computation: Practice and Experience (Wiley), Vol. 35, No. 16, pp. e6187, 2023. DOI: 10.1002/cpe.6187.(2020 SCI Impact Factor: 1.536) /n 5) Anusha Vangala, Ashok Kumar Das, Neeraj Kumar, and Mamoun Alazab. Smart Secure Sensing for IoT-Based Agriculture: Blockchain Perspective, in IEEE Sensors Journal, Vol. 21, No. 16, pp. 17591-17607, August 2021, DOI: 10.1109/JSEN.2020.3009382. 6) Anusha Vangala, Sandip Roy, and Ashok Kumar Das. Blockchain-Based Lightweight Authentication Protocol for IoT-Enabled Smart Agriculture, inIEEE International Conference on Cyber-physical Social Intelligence (ICCSI 2022), Nanjing, China, 21-24 October, 2022, pp. 110-115, DOI:10.1109/ICCSI55536.2022.9970603.",
+    achievements: "",
+    startupName: "Blocfare Solutions Pvt.Ltd",
+  },
+  {
+    title: "Dhanvantari: Emergency Ambulance Service Management Software",
+    path: "/Dhanvantari",
+    component: "Dhanvantari",
+    description:
+      "The proposed software aims to revolutionize the ambulance service industry by leveraging technology to streamline operations, ensure transparency, and enhance coordination between patients, ambulance services, and hospitals. The business model is structured around a subscription-based platform offering various tiers: Basic for essential services like real-time ambulance tracking and automated dispatching, Premium for advanced functionalities such as predictive analytics and hospital integration, and Enterprise for comprehensive, customizable solutions with dedicated support. Revenue streams include subscription fees, additional service charges, and data services. The technology includes a mobile app for patients, a web portal for service providers, and API integration with hospital systems. Key partnerships with healthcare providers, insurance companies, and government agencies enhance the overall emergency response infrastructure. The value proposition offers faster response times and increased transparency for patients, improved operational efficiency for ambulance services, and seamless coordination for hospitals. The business aims for scalability through local, regional, and eventually international expansion, creating a more connected, efficient, and responsive emergency medical service ecosystem to save lives and improve healthcare outcomes.",
+    images: [],
+    duration: "6 month",
+    category: "project",
+    subCategory: "EIR",
+    piName: "Dr. Barun Gorain",
+    date: "From :- 09/8/2024  -  To :- 08/2/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Blockchain-Enabled Digital Identity and Authentication for Dynamic KYC",
+    path: "/DynamicKYC",
+    component: "DynamicKYC",
+    description:
+      "Decentralized Storage model for customer information Data and Customer Verifications using 3-Level Authentication  Access and Control of data is provided to customer Standardization and automation of policy and operations  Smart contracts to execute KYC operations and control processes (3-Level Authentication)  Achieve higher security and control by reducing regulatory risk  Reduce fraud risk and the scope for human errors Dynamic Distributed Ledger operations using QLDB (Quantum Ledger Database)",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Balaprakasa Rao Killi",
+    date: "From :- 28/3/2022  -  To :- 08/3/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "Vishwa Prayag Technology Pvt. Ltd",
+  },
+  {
+    title: "Smart Cleaner: Automatic Clean the Smart Contract",
+    path: "/SmartCleaner",
+    component: "SmartCleaner",
+    description:
+      "The main aim is to achieve maximal code coverage ( 100% ) of smart contracts. This can be achieved by removal of dead code present in the contracts. This is a fact that a smart contract is prepared by several users at different timestamps. These changes in the contracts may lead to problems such as existence of dead code. Also, it may attract several bugs. Our purpose is to test the smart contract wrt to achieve code coverage and bug detection. Finally, automatically repair the contract so that it is having maximal code coverage and with no bugs. /n To implement a test case generator for Smart Contracts. /n To detect the bugs present in Smart Contracts. /n To measure Code Coverage of Smart Contracts. /n To compute Gas Consumption of Smart Contracts. /n To Automatically Repair the Smart Contracts. /n To Commercialize the product Smart Cleaner.",
+    images: ["assets/ProjectImages/pi_imagess/Dr.Sanghartna.png", "assets/ProjectImages/pi_imagess/Sanghartna Godboley,.png"],
+    duration: "3 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr.Sanghartna Godboley",
+    date: "From :- -7/4/2022  -  To :- 06/4/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails:
+      "We have developed a prototype named Condition Coverage for Condition Coverage Analysis for Smart Contracts using Solidity Bounded Model Checker (CC-SolBMC). We demonstrate an approach for generating test cases to satisfy the condition coverage of smart contracts using a solidity-bounded model checker (an open source). We show the annotation of the original smart contract as per the condition coverage specification and drive the bounded model checker to prove the feasibility of the asserted properties. Finally, we collect all feasible targets and show the condition coverage score. Also, the proposed approach generates test input values for each feasible atomic condition. The approach presented has been tested with 70 real-time smart contracts available online, resulting in 57.14% of contracts with good condition coverage scores. CC-SolBMC certifies any smart contract to check whether Optimal or Maximum condition coverage is achieved. /n 2) Cyclo-Sol We have developed another product, the Cyclomatic Complexity Analyser of Solidity Smart Contract (Cyclo-Sol). As a first step, we propose using Control Flow Graph to measure the Cyclomatic Complexity of smart contracts. The motive of this product is to use the EthiIR* tool (an open source) to create a CFG from an Ethereum Virtual Machine smart contract. We modified the tool for our purpose, i.e. to investigate Cyclomatic Complexity. Furthermore, we used our prototype tool to analyse various smart contracts and found a suitable outcome. /n 3) Smart-MuV erf /n We have developed another product named Mutatnt Verification for Smart Contract (Smart-MuVerf). The main objective of this work is to verify the created mutants for the smart contract. It is very important to test smart contract by looking at the critical business in the blockchain. If an incorrect contract or bug in the contract exists, then there is a high chance of losing the expensive assets. In this paper, we proposed a novel approach to compute mutation score for a smart contract using a solidity compiler with a bounded model checker. We propose to use mutation verification in industry which replaces the traditional mutation testing methodology. /n 4) VeriSol-MCE /n We present a new tool to measure condition coverage criterion for smart contracts using Solidity-based model checkers. We demonstrate the process of annotating the original smart contract by the condition coverage properties and employ the model checker to validate the feasibility of the specified properties. Further, we assess the properties instrumented to compute the condition coverage score. We conducted experiments on 70 smart contracts, employing both the Bounded Model Checker (BMC) and Constrained Horn Clauses (CHC). Our findings demonstrate BMC’s superior performance compared to CHC. The tool we propose assists smart contract developers in verifying their code through condition coverage analysis. Utilizing both model checkers in tandem contributes to enhancing the quality of smart contracts, as the outcome may vary, and either of the checkers might yield superior condition coverage. /n Sol-Slicer /n CC-SolSym /n Smart contract verification is essential before deployment due to its immutability criteria. The condition coverage of a smart contract code refers to the accessibility of the blocks of code affected by any conditional statement, such as if-else, for loop, and while loop. Existing approaches for the verification of Smart Contracts are time-consuming, as the execution time increases with the number of variables. In this paper, we propose a program-slicing approach for fast and efficient conditional coverage analysis of Solidity Smart Contracts and tested with test cases generated by Model Checker Engines. We generate a Smart Contract Interconnection Map for the smart contract and slice the graph by considering each conditional statement as a seed. We introduce the notion of a slice sub-graph and slicing criteria to expand the slice region, covering the nodes that are reachable from the seed based on the dependencies. We also present algorithms for smart contract slicing. Our experimental results on 50 smart contracts demonstrate a significant reduction in the time required for conditional coverage analysis. The presented approach guarantees the reachability of every piece of code and detects dead code segments, thereby improving the confidence of the concerned parties in the Smart Contract. We propose a new technique to measure condition coverage criterion for smart contracts using a dynamic symbolic execution tool, i.e. Oyente. Typical execution may be a program examination which can be successfully utilised for the mechanised era of test inputs and for coordinating the finding of abandons in professional grams. The objective of typical execution is to execute those programs differently after standard execution for concrete inputs. We conducted experiments on 70 smart contracts using our developed Annotator with Oyente. Our finding shows that our tool performs better than Bounded Model Checker (BMC) and Constrained Horn Clauses (CHC) in covering condition edges. The tool we propose assists smart contract developers in verifying their code through condition coverage analysis. Using a combination of assertion annotation, symbolic execution, and post-analysis of assertion violations, it advances the security and reliability of smart contracts. Sol-Repairer The popularity of smart contracts has cemented their place in the Blockchain Ecosystem. This is because of the immense number of use cases smart contracts provide. They have become the go-to solution for improving transparency and security for all parties involved in the transaction. Furthermore, a smart contract is immutable after it is deployed. Thus optimization of the smart contract is very important before deployment. Sol-Repairer is a tool that provides the implementation for identifying dead code segments from solidity-written smart contracts and then repairing them. Ex-tensive experiments show that Sol-Repairer optimizes dead code better than the solidity compiler. The study also demonstrates that optimizing dead code reduces gas consumption significantly for smart contract.",
+    publications:
+      "1. Sangharatna Godboley - An Extensive Investigation of Condition Reachability using CBMC:Study on Negative Results, IEEE 20th India Council International Conference (INDICON),2023. /n 2. Sangharatna Godboley, Radha Krishna Pisipati, Gaurav Raj - Study on Unknown Bugs for Smart Contracts using Echidna, IEEE 20th India Council International Conference (INDICON),2023. /n 3. Sangharatna Godboley, Radha Krishna Pisipati, Sai Naik T. Venkat, Lakshita Choudhary - An Efficient Energy Consumption of a Miner Node in a Local Blockchain Network, IEEE 20th India Council International Conference (INDICON), 2023. /n 4. Sangharatna Godboley, Monika Rani Golla, P. Radha Krishna - SC-MCC: A Stronger Code Coverage Criterion, 23rd IEEE International Conference on Software Quality, Reliability, and Security (QRS 2023), Chiang Mai, Thailand, 2023.(Core-C) /n 5. Sangharatna Godboley, P. Radha Krishna, Aditya Joshi, Ishita Gupta, Rahul Khatav - Smart /n Contract Test Case Prioritization based on Frequency and Gas Consumption, 23rd IEEE International Conference on Software Quality, Reliability, and Security (QRS 2023), Chiang Mai, Thailand, 2023. (Core-C) /n 6.Sangharatna Godboley - VeriCombTest: Automated Test Case Generation Technique Using a Combination of Verification and Combinatorial Testing, Proceedings of the 18th International Conference on Evaluation of Novel Approaches to Software Engineering, Prague, Czech Republic, 2023. (Core-B) /n 7.Sangharatna Godboley, G. Rani, S. Nenavath - Carbon-Box Testing, Proceedings of the 18th International Conference on Evaluation of Novel Approaches to Software Engineering, Prague, Czech Republic, 2023.(Core-B) /n 8.Sangharatna Godboley, P. Radha Krishna - SmartMuVerf: A Mutant Verifier for Smart Contracts, 18th International conference on Evaluation of Novel Approaches to Software Engineering (ENASE 2023), Prague, Czech Republic, 2023.(Core-B) /n 9.Monika Rani Golla, Sangharatna Godboley - GMutant: A gCov based Mutation Testing Analyser, Proceedings of the 16th Innovations in Software Engineering Conference (ISEC '23), Association for Computing Machinery, 2023. /n 10. Sangharatna Godboley, Shantanu Agarwal, P. Radha Krishna - Cyclomatic Complexity Analyst for Smart Contract Using Control Flow Graph, International Conference on Computing, Communication and Learning (COCOLE), 2022.",
+    achievements:
+      "Dr. Sangharatna Godboley, Assistant Professor, Department of Computer Science and Engineering, NIT Warangal, Chairman and Director, NITMINER Tech. Pvt. Ltd. has been awarded RECOGNITION award in the Research Excellence (Teaching Faculty-National) category, by IEI NMLC FCRIT Excellence Awards 2023, Institution of Engineers (India) [IEI].",
+    startupName: "Vocab.ai Pvt Ltd.",
+  },
+  {
+    title:
+      "Artificial Intelligence (Efficient AI Models for Fintech Applications)",
+    path: "/aiFintech",
+    component: "aiFintech",
+    description:
+      "Develop the speech and text analytics module for limited vocabulary in Indian English and Hindi for a specific business use case. Creation of Indian English and Hindi speech / text database for Automatic Speech Recognition / natural language processing (NLP) for a specific business use case. ASR / NLP framework using open source speech recognition / NLP engines. ASR / NLP in Indian English and Hindi languages for a specific business use case. Non verbal / textual cues from speech / text signal. A prototype development using ASR / NLP to derive speech / text analytics and demonstrate the use in a specific business use case.",
+    images: [],
+    duration: "3 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. K. T. Deepak",
+    date: "From :- 28/3/2022  -  To :- 27/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications:
+      "IBITF Web Dashboard Project Details 100% M9 publications, patents, IPR, e Language Models areng, Profanity Detection, speech Quality, and Speaking Rate. nkar, Nalini C. Iyer, K. T. Deepak; F0  publications, patents, IPR, e Language Models areng, Profanity Detection, speech Quality, and Speaking Rate. nkar, Nalini C. Iyer, K. T. Deepak; F0 Turn on screen reader support To enable screen reader support, press Ctrl+Alt+Z To learn about keyboard shortcuts, press Ctrl+slashAman Choudhary has joined the document.",
+    achievements: "",
+    startupName: "NITMINER Tech Pvt.Ltd",
+  },
+  {
+    title: "Alfalgo",
+    path: "/alfalgo",
+    component: "alfalgo",
+    description:
+      "The aim of this project is to build a state of the art no-code platform for retail traders to create, back-test and deploy algorithmic trading bots for the retail traders in the segment of Indian equities and derivatives (futures and options) Our startup will make a SaaS product which will enable traders translate their trading strategy into a trading bot using our no-code tools/coding terminal, in accordance to their preference. They will be able to simulate their logic on historical data which we will store after cleaning and pre-processing it (a huge pain point that they face). They will then be able to take this bot live to the market by connecting with their broker's API. Finally, we will create a marketplace for them to give their strategy to others and earn by copy-trading. We have devised a flexible and customizable no-code platform where traders can build any custom strategy they want without disrupting their present learning curve about our product. Our prototype is even live at alfalgo.com, and we have received amazing responses from our early adopters.",
+    images: ["assets/ProjectImages/pi_imagess/alfalgo.jpeg"],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Prof. Richa Agrawal",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "Alfalgo Technologies Private Limited",
+  },
+  {
+    title:
+      "Digital Twin and Degradation Prognostics of Energy Storage Systems for Actuarial Analysis",
+    path: "/actuarialAnalysis",
+    component: "actuarialAnalysis",
+    description:
+      "Creation of Digital twin of the ESS through data analytics and its tools Health diagnostics and prognostics of ESS (Energy Storage Systems) for various applications and devices such as EVs and HEVs  Combination of AI/ML methods with physical mechanisms for the degradation analysis of ESS Induction of factors from the aging and degradation mechanisms in the digital twin of ESS for better practical applicability and standardization  Establishment of aging and other degradation mechanisms of ESS through battery post-mortem analysis and studies. Establishing various factors that cause damage to battery life and overcoming them through BMS using the protocols of AI/ML.",
+    images: [],
+    duration: "3 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Raghavender Medishetty , Dr. Shailendra",
+    date: "From :- 22/3/2023  -  To :- 21/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications:
+      "1] Pavan Prakash Gupta, R. K. Tripathi and Shailendra Kumar, “Improved vμ-LMS-Controlled Single-Phase Grid Tied PV Powered Electric Vehicle Battery System with High Gain DC-DC Converter and Power Management” Electric Power Components and Systems, Accepted for the Publications, 2023. /n [2] K. Srivastava, Shailendra Kumar, and R. Maurya, “A Robust BCNMCC Based Variance Smoothing Approach for SPV Based Grid Integrated EV Battery Charging System” Journal of Energy Storage, Early Access, 2023. /n [3] Shailendra Kumar, Tapesh Upadhyay and O. H. Gupta “Power Quality Improvement and Signal Conditioning of PV Array and Grid Interfaced Off-board Charger for EVs with V2G and G2V Capabilities. Accepted for the Publications in IEEE Chinese Journal of Elect. Engineering.",
+    achievements: "",
+    startupName: "Mindmateria Private Limited",
+  },
+  {
+    title: "Design and Implementation of P2P Online Artwork Marketplace",
+    path: "/P2P",
+    component: "P2P",
+    description:
+      "Create a platform that allows transactions of artworks (both, physical and digital) between buyers and sellers, over blockchain, through credible guidance on valuations during transactions. Following are the objectives of this project:- /n • To increase the exposure of remote and undervalued artworks. /n • To reduce the chance of duplicity during art transactions. To build a conscious towards arts, making art accessible and understandable by all. /n • To make digitized artworks an accepted format for achieving the objective of art. /n To increase the value of Indian Art and Indian artists. Overall, the rationale is that the PI wants to bring a much-needed art revolution, breaking the dominance of select individuals, and giving rise to a democratic method of buying and selling art. ",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr.Souradyuti Paul",
+    date: "From :- 23/3/2023  -  To :- 22/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements:
+      "Rs 2.5 crores worth of artworks received /n Blockchain team created, technology design done /n Government of India support received /n Domain Expert team created, led by Prashant /n Nikam, former IRAS office",
+    startupName: "",
+  },
+  {
+    title: "HaJo",
+    path: "/HaJo",
+    component: "HaJo",
+    description:
+      "The objective of this project is to develop an innovative travel app that enhances the user experience by planning personalized trips based on individual interests—such as temples, beaches, hill stations, historical sites, honeymoon destinations, adventure trips, museums, parks, and galleries. The app will provide tailored recommendations considering various factors like operating hours, nearby hotels, and restaurants to save users time and money, ultimately making their journeys hassle-free and stress-free. Additionally, it will monitor the user's trip, suggesting new recommendations and providing routine reminders to help them stay on track with their plans. The app will also facilitate connections between small travel businesses and customers seeking vehicle rentals, promoting local tourism and enhancing the overall travel experience.",
+    images: [],
+    duration: "6 month",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Gagan Raj Gupta",
+    date: "From :- 22/3/2023  -  To :- 21/9/2023 ",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "Hajo Trips Pvt Ltd.",
+  },
+  {
+    title:
+      "Wearable Solutions for Heart Stress: A Case Study to Analyse Health and Finacial Impacts of Wearable Solutions for farmers in Chhattisgarh",
+    path: "/heartStress",
+    component: "heartStress",
+    description:
+      "This project aims to build a database from human trials for model development and create a non-invasive core temperature estimation model. It will design a low-cost wearable device for this purpose and optimize cooling vests for farmers. A case study in Chhattisgarh will assess the benefits of these wearables, followed by analyzing their impact on work schedules and productivity in different Indian climates.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Udayraj",
+    date: "From :- 10/1/2024  -  To :- 09/1/2026 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications:
+      "B Choudhary, Udayraj. Effectiveness of air ventilation clothing in hot and humid environment for decreasing and intermittent activity scenarios. Building and Environment, 239, 110436, 1-16, 2023. /n • B Choudhary, Udayraj. Local and overall convective heat transfer coefficients for human body with air ventilation clothing: Parametric study and correlations. Building and Environment, 229, 109953, 1-19, 2023. /n • B Choudhary, Udayraj. Validity of the JOS-3 model for male tropical population and analysis of their thermal comfort. Sādhanā, 2023 (Accepted). /n • B Choudhary, Udayraj. A coupled CFD-thermoregulation model for air ventilation clothing. Energy and Buildings, 268, 112206, 1-18, 2022. /n • M Zhao, J Yang, F Wang, Udayraj, W C Chan. The cooling performance of forced air ventilation garments in a warm environment: the effect of clothing eyelet designs. The Journal of The Textile Institute, 1-16, 2022 (Accepted). /n • P Xu, Z Kang, F Wang, Udayraj. A numerical analysis of the cooling performance of a hybrid personal cooling system (HPCS): Effects of ambient temperature and relative humidity. International Journal of Environmental Research and Public Health, 17, 4995, 2020. /n • F Wang, Y Ke, Udayraj, B Yang, P Xu, N Noor. Effect of cooling strategies on overall performance of a hybrid personal cooling system incorporated with phase change materials (PCMs) and electric fans. Journal of Thermal Biology, 92, 102655, 2020. /n • J Yang, F Wang, G Song, R Li, Udayraj. Effects of clothing size and air ventilation rate on cooling performance of air ventilation clothing in a warm condition. International Journal of Occupational Safety and Ergonomics, 28 (1), 354-363, 2020. /n • B Choudhary, Udayraj, F Wang, Y Ke, J Yang. Development and experimental validation of a 3D numerical model based on CFD of the human torso wearing air ventilation clothing. International Journal of Heat and Mass Transfer, 147, 2020. /n • Udayraj, F Wang, W Song, Y Ke, P Xu, C S W Chow, N Noor. Performance enhancement of hybrid personal cooling clothing in a hot environment: PCM cooling energy management with additional insulation. Ergonomics, 62 (7), 928-939, 2019. /n • Z Kang, Udayraj, X Wan, F Wang. A new hybrid personal cooling system (HPCS) incorporating insulation pads for thermal comfort management: Experimental validation and parametric study. Building and Environment, 145, 276-289, 2018. /n • Udayraj, Z Li, Y Ke, F Wang, B Yang. Personal cooling strategies to improve thermal comfort in warm indoor environments: comparison of a conventional desk fan and air ventilation clothing. Energy and Buildings, 174, 439-451, 2018. /n • X Wan, F Wang, Udayraj. Numerical analysis of cooling effect of hybrid cooling clothing incorporated with phase change material (PCM) packs and air ventilation fans. International Journal of Heat and Mass Transfer, 126, 636-648, 2018.",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Design and Development of Fast and Secure Blockchain Enable Cross Border Transaction in Fintech",
+    path: "/crossBorder",
+    component: "crossBorder",
+    description:
+      "This project aims to create a blockchain infrastructure for FinTech applications, emphasizing speed and security. It includes developing a secure protocol for cross-border transactions, ensuring low latency, scalability, and high throughput. Verification and validation will be conducted to assess its effectiveness.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Debasis Das",
+    date: "From :- 22/2/2024  -  To :- 21/2/2026 ",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Deep Learning Enabled Multimodal Biometric Payment Solution with Template Protection for Differently Abled People",
+    path: "/abledpeople",
+    component: "abledpeople",
+    description:
+      "This project aims to implement cancelable multimodal template protection mechanisms for Aadhaar-enabled payments. It also explores homomorphic encryption for template protection. Using deep convolutional neural networks, it transforms and fuses biometric data for secure authentication. Additionally, dimensionality reduction techniques are applied to minimize feature vector size. Lastly, the project develops mobile and web applications tailored for differently abled individuals to initiate payments securely.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Mulagala Sandhya",
+    date: "From :- 22/2/2024  -  To :- 21/2/2026 ",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Development of remote controlled/autonomous agro-bot for fertilizer dispensing and crop condition monitoring",
+    path: "/conditionmonitoring",
+    component: "conditionmonitoring",
+    description:
+      "This project aims to develop portable sensors for disease detection and weed identification in vertical farms, integrated onto a wheeled cart for real-time action. It will further enhance the cart with soil nutrient and moisture sensors, automated fertilizer dispensing, and irrigation systems, all controlled by an AI module. Extensive data collection will enable the creation of crop-specific smart agriculture models.",
+    images: [],
+    duration: "1 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Purnendu Das",
+    date: "From :- 30/3/2024  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Capacity Building of Tribal Population in Agriculture and allied sectors",
+    path: "/alliedsectors",
+    component: "alliedsectors",
+    description:
+      "The objectives of this pilot project aim to uplift tribal populations in India by enhancing their skills, fostering entrepreneurship, and promoting sustainable development in agriculture and allied sectors, thereby contributing to their socio-economic empowerment and overall well-being.",
+    images: [],
+    duration: "6 months",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Purnendu Das",
+    date: "From :- 30/3/2024  -  To :- 29/9/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Formulation of a framework for sustainable rural development with an integral approach",
+    path: "/formulation",
+    component: "formulation",
+    description:
+      "This project aims to foster sustainable economic models in rural Chhattisgarh, promote personal hygiene practices, and encourage the use of eco-friendly table utensils. Additionally, it seeks to empower women through small-scale cooperative societies, establish community crèches for monitoring child wellbeing and education, and advocate for smokeless cooking methods. Furthermore, it endeavors to transform entire villages into model communities, innovate scalable rural development strategies, and establish an International Centre for Rural Development and Training to facilitate knowledge exchange and collaboration.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Dr. Kaushik Bandyopadhyay",
+    date: "From :- 29/3/2024  -  To :- 27/3/2026 ",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "SMART-ER: Strengthening the Emergency Care Systems in Chhattisgarh",
+    path: "/emergencyCare",
+    component: "emergencyCare",
+    description:
+      "This project aims to develop a user-friendly interface with AI-integrated support for healthcare providers in remote areas, specifically targeting timely management of emergencies like heart attacks. It includes setting up 24/7 tele-access to emergency experts, optimizing digital tools for patient assessments and communication, and enhancing STEMI patient care through real-time consultations. Additionally, it focuses on informing patients about affordable medications and insurance options while facilitating knowledge transfer among healthcare professionals.",
+    images: ["assets/ProjectImages/pi_imagess/Dr.Devendra.png"],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "PRAYAS",
+    piName: "Prof (Dr) Debendra K Tripathy",
+    date: "From :- 22/2/2024  -  To :- 21/2/2026 ",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Blockchain and ML powered unified video KYC frame work",
+    path: "/videoKYC",
+    component: "videoKYC",
+    description:
+      "Objective of the project is to develop a unified video KYC framework for the entire financial sector of the country using blockchain and machine learning based technologies.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Dr. Rajarshree Pal",
+    date: "From :- 29/3/2022  -  To :- 28/3/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Blockchain-based P2P energy trading platform for rooftop solar PU users",
+    path: "/solarPUusers",
+    component: "solarPUusers",
+    description:
+      "Build and demonstrate the operation of a blockchain-based peer-to-peer trading platform for electricity from rooftop solar PV systems, Demonstrate how such a P2P mechanism can bring higher value proposition for rooftop solar PV system owners, Demonstrate the advantages for the DISCOM in terms of wheeling/ service charges and delayed investments in distribution system expansion. Study the possible attacks on the energy trading platform and identify mitigation techniques that will be applied during the project implementation.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Dr. Rhythm Singh",
+    date: "From :- 29/3/2022  -  To :- 28/3/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Accessible banking functionalities for Divyang (Visually Impaired) using smart ATM.",
+    path: "/smartATM",
+    component: "smartATM",
+    description:
+      "The fellowship aims to provide an AI based ATM solution for the visually impaired. This project is currently under the mentorship of Dr. Santosh Biswas along with the mentorship of TIH. It is currently a team of 4students which includes me, Satvik Vemuganti, Aditya Sankhla and Tushar Bansal. This ATM solution will single-handedly let blind people access ATMs without any help from others. This will also include various levels of security checks like face recognition, Geotagging and voice recognition.The solution includes the interface to be used in the ATM, a mobile app to be used by the user. The ATM software is built using Java while the app is built using Flutter. Other technologies like CNN and Geotagging are used for various features that are included in the system.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName:
+      "Prof. Santosh Biswas , Mr. Rudra Dutta Tiwari ,Mr. Arif khan, Mr. Pankaj Kumar",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "A Smart revenue optimization framework for on-demand scheduling & routing of heterogeneous EVs.",
+    path: "/heterogeneousEVs",
+    component: "heterogeneousEVs",
+    description:
+      "• Development of a software platform called 'Smart-EV-Logistics' that will enable logistics service providers having heterogeneous vehicle fleets, to provide reliable on-time door-to-door delivery of enterprise shipments. Taking on-demand customer requests as input, the tool will provide smart solutions in two broad dimensions - one for the customers and the other for the logistics company. • The tool will provide the estimated cost for shipment and time of delivery/pick-up to the customers and deliver a detailed plan concerning shipment to vehicle and/or warehouse allocation, driver-to-vehicle mapping, vehicle route planning, and charge scheduling, etc., such that operator revenues are optimized while adhering to carbon-footprint caps. This tool will take care of a mix of traditional and electric vehicles. A necessary analysis will be performed to understand the impact of traditional and electric vehicles on the supply chain management process. • Design of new exact, heuristic, meta-heuristic, and deep reinforcement learning algorithms for heterogeneous vehicle fleet routing and scheduling, estimating EV fleet size, recharge station, warehouse placement, etc. • Through the technologies and the software product developed as part of this project, we would like to initiate a start-up called 'Smart-EV-Logistics'. ",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Arijit Mondal , Arnab Sarkar ,Samrat Mondal",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Seamless integration of payment and activities in an educational campus through smart card and behavioral analysis of collected data.",
+    path: "/seamlessintegration",
+    component: "seamlessintegration",
+    description:
+      "The objective of this proposal is to implement a secure smart card system that facilitates seamless payments and various activities within the campus, enhancing operational efficiency and user convenience. This will be achieved through two key components: first, the deployment of smart cards and associated devices to support payment transactions, library operations, attendance marking, and access control; second, the introduction of an advanced payment system for the food court, utilizing image processing to assess the contents of a student's plate and biometric facial recognition for secure payment. To ensure the integrity of the system, we will prioritize high-level security measures for data management and transmission, alongside active fraud detection mechanisms to safeguard against unauthorized usage of the smart card.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Dr. Amit Dhar",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Design and development of a ‘Shramik Bhugtan Seva Kendra(SBSK)’ for timely payment to the beneficiaries residing in far-flung areas under various government scheme ",
+    path: "/SBSK",
+    component: "SBSK",
+    description:
+      "Design and development of a 'Shramik Bhugtan Sewa Kendra (SBSK)' for Timely Payment to The Beneficiaries Residing in Far-Flung Areas Under Various Government Schemes To develop a decentralized registration system for MNREGA workers using Aadhaar-based / biometric authentication and also decentralized unit for wage/pension payment to rural beneficiaries. To create a transparent and secure payment system for MNREGA workers, reducing inefficiencies and corruptions. To extend the reach of the system to remote areas with limited internet connectivity using wireless internet dish antennas. To improve the accuracy of payments and prevent fraud by implementing a biometric authentication system. To provide real-time short message service (SMS) confirmations to nodal officers and other relevant stakeholders, workers. To reduce the travelling effort to the workers. ",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Dr. Nikhil Chander,  Shravan Kumar Singh, Md. Arif Khan ",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "AI based geo-enabled crop insurance and farm equipment renting solutions under BhoomiCam Pvt. Ltd. Startup",
+    path: "/BhoomiCam",
+    component: "BhoomiCam",
+    description:
+      "• To develop bilingual Android application platform to provide agri-drone spray services to farmers. /n • To develop web and android platform to provide geo-enabled solutions based on AI and satellite data to generate crop insurance advisories to addressing problems associated farmer bank/insurance relationships. ",
+    images: ["assets/ProjectImages/pi_imagess/26.jpg","assets/ProjectImages/pi_imagess/Siddhartha Khare.png"],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Siddhartha Khare",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements:
+      "Selected among the top 5 startups in the Indian Geospatial Industry under the esteemed GW Startup Catalyst program. /n • Won first prize of AABTonics 2022 /n • Bronze award winner for ICON-ISRS Contest 2022 held at HICC Hyderabad during GeoSmart India conference. Award received from former ISRO chairman Dr. A.S. Kiran Kumar. /n • Workshop conducted in collaboration with Cognizance, IIT Roorkee on Application of GIS. A hands-on introductory training for those who are new to GIS and want to use QGIS and other plugins for GIS related work. /n • Bhoomicam and BhoomiFresh Application live on playstore. /n • Webtool now available at sense.bhoomicam.com /n • Successfully launched Bhoomicam application in Drone Seva Launch event in IIT Roorkee conducted by Bhoomicam. /n • Using Sentinel hub API for Webtool.",
+    startupName: "",
+  },
+  {
+    title: "Vibration Analysis of motors using machine learning",
+    path: "/vibrationAnalysis",
+    component: "vibrationAnalysis",
+    description:
+      "The objective of the proposal is to develop a recommendation system using advanced machine learning techniques such as Random Forest, Gradient boost, Support vector machine for vibration analysis so that the faults in the motor can be predicted before they could damage the motor ensuring the safe and reliable operation of motor. The performance of the proposed method depends on the quality and quantity of data collected including various test cases under which motor is operated. State-of-the-art methods use conversion of time domain vibration signal into frequency domain using transformation technique such as Fourier transform.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Prof. Trapti Jain",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Blockchain based Seed Traceability along with IoT enabled Precision Agriculture and AI Powred Lending/Renting of Farm Implements",
+    path: "/seedTraceability",
+    component: "seedTraceability",
+    description:
+      "The objective of the project is to develop a blockchain-based system for seed traceability. To develop object detection CNN-based system for farm implement renting and lending. To develop IoT enabled precision agriculture to provide real time data and analysis to farmers to make informed decisions about when to plant, irrigate, fertilize, and harvest crops. Overall, the objective of the project is to leverage emerging technologies to address critical challenges in the agriculture sector, promote sustainable agriculture practices, enhance food security, and support economic development in rural communities. ",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Dr. Ravi Saxena , Mr. Abhijeet Kaushik,  Ms. Kalpana Banjare",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails:
+      "Technology application and /or Concept formulated Mobile app for renting and lending of  farm implement is tested Developed Prototype of IoT Enabled  System to monitor different parameters of Soil (NPK, EC, pH, Soil temperature and moisture at various depth and Environmental parameter leading to precision agriculture is installed at KVK for testing. Website “PlantChain”  for   Blockchain enabled Seed / Agri Inputs Traceability System is under process",
+    publications:
+      "Blockchain & Fintech in Agriculture – Unlocking efficiency and Transparency” (2023) Compendium of e-governance initiative, published by DARPG, Govt of India .",
+    achievements:
+      "National e Governance “Gold Award” 2023 for Innovative and Smart Farming Solutions by GOI Most Innovative App “Crop Doctor” by Govt. of Chhattisgarh Association with IIT Roorkee for Implementation of developed solution.*  Association with National Informatics Centre, Raipur for technical help.  * Application for Copyright has already been submitted through CGCOST",
+    startupName: "",
+  },
+  {
+    title:
+      "Application of thermal radiography and AI for detection of surface defects in blooms/ billets during continues casting process",
+    path: "/billets",
+    component: "billets",
+    description:
+      "• Development of image processing technique to identify surface defects of blooms and billets /n • Online monitoring of surface temperature and correlating with the thermal gradient within the billets /n • Development of a relationship between temperature and surface/sub-surface defect /n • Cost-benefit analysis of the current practice of defect identification with proposed online monitoring",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName: "Dr. Rahul Jain, Dr. Soumya ",
+    date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails:
+      "Bhilai Steel plant produces cast steel blooms and billets through continuous casting. These blooms/billets may have surface and sub-surface defects (center hole, pinhole, porosity, bed cut, cracks, shrinkage, cavity and surface impression, etc), which is challenging to identify by visual inspection. The model for the offline defect detection using image processing convolution neural network has been completed. The advanced YOLO version of the object detection model has been employed to predict defects' macro (mm) and micro (μm) levels. The offline defect detection using image processing is completed. Currently, we are conducting a cost-benefit analysis for the steel industry to understand the financial benefits of the proposed method. Current ongoing work: Attempts are being made to predict the sub-surface defect during the continuous casting process.",
+    publications:
+      "Blockchain & Fintech in Agriculture – Unlocking efficiency and Transparency” (2023) Compendium of e-governance initiative, published by DARPG, Govt of India .",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Development of the Online Mithun Trading Platform for Arunachal Pradesh",
+    path: "/mithun",
+    component: "mithun",
+    description:
+      "Develop an online marketplace for Mithun trading to broaden market access.Implement a secure registration and verification process for farmers to ensure authenticity.Provide detailed listings of Mithun, offering comprehensive information to potential buyers.Establish transparent pricing mechanisms to build trust and facilitate fair transactions.Integrate multimedia support, negotiation, bidding features, and digital payment options to enhance the overall trading experience for both buyers and sellers.",
+    images: ["assets/StaticImages/project/mithun1.jpg"],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Marpe Sora",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "Arbobine Pvt. Ltd.",
+  },
+  {
+    title:
+      "Integrating Khasi Language into Fintech Technologies through Speech Translation",
+    path: "/khasilanguage",
+    component: "KhasiLanguage",
+    description:
+      "Develop an inclusive Application Programming Interface (API) featuring the Khasi Language to bridge communication gaps between online financial service providers and rural communities.Implement digital literacy initiatives, expanding service offerings, and establishing a feedback mechanism to enhance accessibility and understanding of online financial services.Ensure long-term sustainability by adopting a comprehensive strategy that empowers the Khasi-speaking community in navigating and benefiting from the evolving digital landscape.",
+    images: [],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Ms. Fidalizia Pyrtuh,",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Empowering Northeastern Artisans and Farmers: A Blockchain-Powered Marketplace",
+    path: "/artisans",
+    component: "Artisans",
+    description:
+      "Develop an e-commerce mobile application to eliminate middlemen issues by enabling direct product listings from sellers, featuring secure QR-based information and payment mechanisms.Conduct workshops and awareness programs to enhance technology awareness, training local youths for effective product listings and creating a sustainable business model within the ST community.Integrate a blockchain-based solution into the mobile application for product authentication, ensuring a trustworthy relationship between sellers and buyers while addressing issues such as fraud and product duplication.Empower artisans and farmers through workshops on packaging and product display, enhancing their market presence and competitiveness within the digital landscape.",
+    images: ["assets/StaticImages/project/Blockchain.png"],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: " Dr. Phrangboklang Lyngton Thangkhiew",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Enhancing Agriculture Practices in Mizoram Towards Sustainable Development Using Machine Learning and Deep Learning",
+    path: "/enhancing-agriculture",
+    component: "EnhancingAgriculture",
+    description:
+      "Develop tailored ML weather models for accurate forecasts in Mizoram, aiding farmers in planning.Implement ML/DL for early pest and disease detection, reducing pesticide use and enhancing crop yield.Create a user-friendly platform for personalized farming recommendations, optimizing practices for farmers.Contribute to Mizoram's vision of sustainable agriculture, aligning with local needs and technological advancements.",
+    images: [],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr.V.D.Ambeth Kumar",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Empowering Meghalaya's Tribal Artisans and Farmers with a Secure Blockchain-Fintech Solution",
+    path: "/meghalaya",
+    component: "EmpoweringMeghalaya",
+    description:
+      "Implement a blockchain solution for Meghalaya's indigenous products, ensuring authenticity and traceability through unique QR codes or RFID tags.Enable consumers to access product information via a mobile app, detailing the origin and production process.Develop a fintech feature for secure digital payments, fostering equitable transactions and accountability within the supply chains.Enhance market access for indigenous products by addressing authenticity and quality concerns through integrated blockchain and fintech solutions.",
+    images: ["assets/StaticImages/project/Meghalaya.png"],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr Sainkupar Mn Mawiong,",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "“Traditional knowledge of medicinal plants consumed by primitive tribes of Bastar Chhattisgarh: Development of database and strategy for value addition and sustainable livelihood via Fin-tech” under the Tribal Area Sub plan (TSP)",
+    path: "/plants",
+    component: "MedicinalPlants",
+    description:
+      "The project will help preserve the rich traditional knowledge regarding medicinal plants of the Bastar community.The user-friendly web portal will provide valuable information for the local community of Bastar and other end users to enhance their health and well-being with promotion of rational use of medicinal plants.Sustainable cultivation practices will contribute to environmental conservation and plant species preservation.Wider accessibility: The inclusion of languages like Hindi and English will ensure accessibility to a wider audience, including local community, researchers and conservationists.",
+    images: [],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Nagendra Kumar Chandrawanshi",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Design And Development of IoT Accessed Secure E-Finance Platform for Managing Severe Acute Malnutrition among Vulnerable Tribes Population in Chhattisgarh",
+    path: "/e-finance",
+    component: "E-Finance",
+    description:
+      "Design and Development of IoT- Accessed Secure E-Finance Platform for Managing Severe Acute Malnutrition Among Vulnerable Tribes Population in Chhattisgarh.Design and develop an E-platform which will help in the management of SAM children by connecting all the Anganwadi centers located at interior/ remote places with Community Management centers.Develop a Secure payment gateway for the financial transactions of medicine and food supplies for Anganwadi centers using Blockchain Technology.To develop a system which keeps track record of the number of SAM children in Anganwadi and provide them proper nourishment and care.To develop a user-friendly interactive mobile APP interface which will act as a link between the community center, Anganwadi center and the SAM child’s caretaker. It will help in collecting the data and will guide the caretaker timely to help in keeping the track record of the child.To provide valuable assistance to the health workers by organizing training sessions /workshops to make them understand the developed application for Management of Anganwadi.  ",
+    images: [],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Chandrashekar Jatoth",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "AI-Driven Financial Empowerment: FinTech for All: Improving Financial Literacy & Inclusion in the Scheduled Tribe Community and Development of an AI-Based Mobile Application",
+    path: "/financialLiteracy",
+    component: "FinancialLiteracy",
+    description:
+      "Help beneficiaries from ST community to obtain relevant financial suggestions like basic saving options, investment portfolio for low to mid-low-income groups, micro-financing, micro-insurance, availing government promotional schemes.Connect with the trusted financial institute to associate with for microloans, investments, micro-insurance etc.Spread financial literacy on the basic banking and financial services which will be used by these target beneficiaries on a day-to-day basis.Developed in the local/regional language for ease of usage by the ST community.Understand the local requirements and integrate tailored community-based solutions.",
+    images: ["assets/StaticImages/project/sunilKumar.jpg"],
+    duration: "1 year",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Sunil Kumar Kumeti",
+    date: "From :- 15/11/2023  -  To :- 11/14/2024",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Development of a software platform to connect housemaids to the prospective employers",
+    path: "/softwareplatform",
+    component: "SoftwarePlatform",
+    description:
+      "Enable detailed profiles for service providers and clients, enhancing efficient matchmaking based on skills, work history, and reviews.Offer a multilingual interface (Khasi or English) for diverse linguistic preferences of users.Implement rigorous skill verification processes for service providers, ensuring trust and qualification.Provide transparent pricing guidelines to minimize disputes and assist in determining fair rates.Incorporate a rating system, escrow payment, and dedicated customer support for enhanced trust, security, and quality assurance throughout the platform",
+    images: [],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: " Dr. Davidson Pyngrope",
+    date: "From :- 15/11/2023  -  To :- 14/11/2025",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "A Platform For Cost-Efficient Public Health Service Delivery in Mizoram",
+    path: "/publicHealth",
+    component: "PublicHealth",
+    description:
+      "Develop a mobile application with an AI/ML recommendation system, allowing users to securely manage health profiles and describe ailments in Mizo or English.Provide AI-driven recommendations for matching doctors, hospitals, and pharmacies, including details such as estimated costs, services, distance, and reviews.Enable users to search for healthcare services, book appointments, or consultations, with seamless transactions facilitated by an E-payment system.Support the Mizo language in the user interface for enhanced accessibility and share aggregated citizen health data trends with government agencies to inform health policy formulation.",
+    images: [
+      "assets/StaticImages/project/publicHealth.png",
+      "assets/StaticImages/project/PublicHealth2.png",
+    ],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. K Vanlalawmpuia,Dr. Lalhruaizela",
+    date: "From :- 19/12/2023  -  To :- 18/12/2025",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "NE-Finance: Empowering the North-East through P2P Lending",
+    path: "/nefinance",
+    component: "NE-Finance",
+    description:
+      "Develop NE-Finance,a user-friendly P2P lending platform with advanced machine learning for precise credit assessment.Introduce financial literacy programs within the app to empower users with essential financial knowledge.ransform NE-Finance into a catalyst for economic growth, anticipating increased investments in education, healthcare, entrepreneurship, and agriculture.Ensure a holistic approach for sustainable socio-economic development, incorporating smart contracts for trust and security.",
+    images: [],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Juwesh Binong",
+    date: "From :- 19/12/2023  -  To :- 18/12/2025",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title: "Model Digital Training Center for Women",
+    path: "/training",
+    component: "DigitalTraining",
+    description:
+      "Imparting proper practical knowledge of computer system operation and hands-on training for desktop applications and tools like MS-Word, Excel, Powerpoint etc.Imparting hands-on training for Internet usage – searching, e-mailing, booking tickets etc.Imparting awareness and usage of E-commerce and Digital Marketing. Implementing mini-projects where they can advertise and sell their native products like handloom or handicrafts.Imparting financial literacy regarding banking, digital payments, UPI payment, etc.",
+    images: [],
+    duration: "1 year",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Thounaojam Rupachandra Singh",
+    date: "From :- 19/12/2023  -  To :- 18/12/2024",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "IoT & AI Based Cost Benefit Analysis Platform for Sustainable Agriculture in Mizoram",
+    path: "/sustinableAgriculture",
+    component: "SustainableAgriculture",
+    description:
+      "Enhance Farmer Decision-Making: Implement real-time soil monitoring to empower farmers with instant data on soil conditions, enabling informed decisions on irrigation and fertilization.Timely Threat Identification: Integrate AI alerts to swiftly notify farmers of potential threats like drought or soil acidity, enabling proactive measures and minimizing crop damage.Optimize Resource Usage: Develop a centralized AI system for data analysis, predicting crop yields and soil health deterioration, facilitating resource-efficient farming practices.Promote Sustainable Agriculture: Introduce precision irrigation, training sessions, and AI-driven crop management to encourage sustainable farming practices and ensure long-term economic stability for Mizoram's agricultural sector.",
+    images: [],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. R. Chawngsangpuii",
+    date: "From :- 19/12/2023  -  To :- 18/12/2025",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "A Fintech Application for Cost Benefit Portfolio Suggestion Regarding Locally Available Aggregate by Quality Assessment and Modified Concrete Made of Recycled Waste and Bamboo as Partial Replacements Versus Traditional Concrete",
+    path: "/fintechApplication",
+    component: "FintechApplication",
+    description:
+      "Enable users to assess and report construction material quality in real-time.Optimize supply chain relationships for efficient procurement of sustainable resources.Facilitate secure mobile payments for raw materials, supporting small-scale enterprises.Establish a marketplace for the sale of recycled waste and other sustainable resources, simplifying sourcing for producers.",
+    images: ["assets/StaticImages/project/fintech.png"],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Ricky Lalthazuala",
+    date: "From :- 19/12/2023  -  To :- 18/12/2025",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "AI assisted end to end Fintech assistance solutions for farming system for oil seeds (mustard, sunflower, etc.) cultivation in Mizoram",
+    path: "/fintechApplication",
+    component: "FintechApplication",
+    description:
+      "Develop fintech solutions for smart farming in Mizoram, covering land info, seed details, loans, and market data.Integrate real-time sensors for environment and field conditions in a cost-effective manner.Test prototype, calibrate sensors, and explore solar-powered charging.Establish wireless communication links for data collection, focusing on oilseed cultivation in Aizawl.",
+    images: [],
+    duration: "2 years",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Chaitali Koley, Dr. Sushanta Bordoloi",
+    date: "From :- 19/12/2023  -  To :- 18/12/2025",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Development of a Deep Learning Model for Diabetic Retinopathy Detection in Mizoram",
+    path: "/retinopathy",
+    component: "Retinopathy",
+    description:
+      "Collect diabetic patient data and retinal images in Aizawl and Lunglei.Integrate existing data for comprehensive monitoring and research.Develop a specialized deep learning model for automated DR detection.Conduct workshops for healthcare professionals to enhance awareness and establish a sustainable, data-driven DR management framework in Mizoram.",
+    images: [],
+    duration: "6 months",
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Lalhmingliana",
+    date: "From :- 19/12/2023  -  To :- 18/06/2024",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "“Mao language Automatic speech recognition (ASR)” under the Tribal Area Sub Plan (TSP)",
+    path: "/MaoSpeechRecognition",
+    component: "MaoSpeechRecognition",
+    description:
+      "Develop an ASR system for Mao language, ensuring accurate transcription into English text.Create a mapping mechanism to convert Mao text to English, enhancing translation quality through natural language processing.Extend mapping capabilities to additional languages, starting with Hindi, for cross-lingual communication.Integrate ASR, English mapping, and multi-language mapping into a unified system, optimizing for real-time use, scalability, and adaptability to new languages.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Sinawon Raiping , Dr. Yambem Jina Chanu",
+    date: "From :- 19/12/2023  -  To :- 18/12/2025 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "“UAV Assisted Emergency Resource Allocation for Remote Tribal People in Disaster for Bastar areas of Chhattisgarh” under the Tribal Area Sub Plan (TSP)",
+    path: "/UAVAssistedEmergencyResource",
+    component: "UAVAssistedEmergencyResource",
+    description:
+      "Develop an ASR system for Mao language, ensuring accurate transcription into English text.Create a mapping mechanism to convert Mao text to English, enhancing translation quality through natural language processing.Extend mapping capabilities to additional languages, starting with Hindi, for cross-lingual communication.Integrate ASR, English mapping, and multi-language mapping into a unified system, optimizing for real-time use, scalability, and adaptability to new languages.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Mou Dasgupta",
+    date: "From :- 19/12/2023  -  To :- 18/12/2025 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Design and Development of Blockchain System for Monitoring and Protecting of Scheduled Tribal Land Records of Srikakulam, Visakhapatnam, Adilabad, Mahbubnagar regions of Andhra Pradesh and Telangana",
+    path: "/BlockchainProtectingTribalLand",
+    component: "BlockchainProtectingTribalLand",
+    description:
+      "Develop a blockchain system for scheduled tribal land records in Andhra Pradesh and Telangana.Ensure secure enrollment and verification of tribal members using blockchain technology.Store authenticated land property records securely with blockchain and IPFS.Create a user-friendly Web Portal and Mobile App for tribal members, offering timely alerts for land document verification and validation.",
+    images: ["assets/ProjectImages/pi_imagess/Dr.E Suresh.png"],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. E. Suresh Babu",
+    date: "From :- 19/12/2023  -  To :- 18/12/2025 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Development of cost analysis-based tools for enhancing the accessibility of medicine in the tribal population of Chhattisgarh",
+    path: "/CostAnlysisTools",
+    component: "CostAnlysisTools",
+    description:
+      " Develop a secure and efficient system that enables hospitals to generate bills and instantly share them with both insurance companies and patients' families.Implement a real-time evaluation mechanism that checks each bill against predefined insurance policies, providing immediate feedback on coverage eligibility.Implement Ciphertext-Policy Attribute-Based Encryption (CP-ABE) to secure the patient's health data in the billing process.The project proposal aims to enhance the healthcare journey by providing immediate clarity on insurance coverage eligibility, ultimately improving patient satisfaction and reducing financial stress during medical treatment.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Rakesh Tirkey",
+    date: "From :- 19/12/2023  -  To :- 18/12/2024 ",
+    duration: "1 Year",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Development of Rongmei/Kabui, English and Manipuri Multilingual Electronic Dictionary",
+    path: "/RongmeiKabui",
+    component: "RongmeiKabui",
+    description:
+      "To expose the richness of Kabui Language.One of the tools (alternative to Manipuri language) to remove the language barrier between Kabui speaking tribes and other communities around the Kabui dominated area.Availability of Multilingual e-dictionary of Kabui, Manipuri and English on the internet to enable a person to get access to the dictionary.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Raju Rajkumar",
+    date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Development of IoT based Smart Compact Energy Meter (ISCEM) for Monitoring and Controlling the Power Quality Issues in a Smart Building",
+    path: "/SmartCompactEnergyMeter",
+    component: "SmartCompactEnergyMeter",
+    description:
+      "Optimize Energy Usage: Improve energy efficiency by analyzing real-time power data and identifying consumption patterns.Remote Load Control: Enable users to manage primary and secondary loads remotely through an authenticated consumer app.Demand-Side Management: Introduce IoT for strategic use of secondary loads, reducing peak electric demand.Ensure Power Quality: Compare phase voltages and currents against standards, promptly identify and communicate power quality issues to consumers.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: " Dr. Pradeep Kumar",
+    date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Economic Upliftment of the Tribes Residing in Balrampur District Through their Cultural Heritage",
+    path: "/EconomicUpliftmentCulturalHeritage",
+    component: "EconomicUpliftmentCulturalHeritage",
+    description:
+      "Enhance tribal livelihoods through tourism in Balrampur district.Document and preserve unique tribal culture and traditions.Connect tribal communities to tourism jobs for economic growth.Utilize natural beauty for economic empowerment and conservation.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Nitesh Kumar Mishra",
+    date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Adaptation of Indigenous and Local Knowledge Systems and Fintech Solutions for Comprehensive Tribal Development in Chhattisgarh State",
+    path: "/IndigenousLocalKnowledge",
+    component: "IndigenousLocalKnowledge",
+    description:
+      "Chhattisgarh Tribal’s Carbon Project through Sustainable Agriculture Land Management(SALFM), holistic and focused farm enterprise extension approach and by supporting farmer groups to establish village savings and loan associations using FintechExploring the marketing and fair price mechanisms and applications of fintech solutions in improving livelihood, income and employment.Documentation and database creation of the community’s Indigenous and Local Knowledge along with the development of an App through linguistic research support. ",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Prof. Harshit Sosan Lakra",
+    date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "“Novel Strategies to Tackle Water and Soil Contamination by Health Hazardous Pollutants using Computational Tools a Small Steps Towards Sustainable Agricultural Practices” under the Tribal Area Sub plan (TSP)",
+    path: "/TackleWaterSoil",
+    component: "TackleWaterSoil",
+    description:
+      "Understand pollutant interactions using molecular dynamics for predictive modeling.Develop precise quantification methods for real-time pollutant detection with spectroscopy.Investigate pollutant transport patterns in water systems for predicting spread.Assess and optimize water treatment methods using molecular dynamics and spectroscopy.",
+    images: ["assets/ProjectImages/pi_imagess/Dr. Hemanta.png"],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Hemanta Kumar Kisan",
+    date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "“Digital Agri Village - Advancing the Digital Transformation of Agriculture in Tribal Dominating Areas of Chhattisgarh” under the Tribal Area Sub plan (TSP)",
+    path: "/DigitalAgriVillage",
+    component: "DigitalAgriVillage",
+    description:
+      "Digitize farms with Geo-tagged ERP for optimized management.Establish collaborative platforms for knowledge-sharing.Empower SHGs and farmers through interactive engagement.Deploy AI/ML for pest management and IoT for smart irrigation.Implement transparent supply chain solutions for fair transactions.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: " Dr. D. P. Singh , Dr. Ravi R Saxena",
+    date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "“Healthcare and Community Medicine Empowerment of Underprivileged Tribal-Population: Biological Validation of Cancer and Sickle Cell Anemia” under the Tribal Area Sub plan (TSP)",
+    path: "/CommunityMedicineEmpowerment",
+    component: "CommunityMedicineEmpowerment",
+    description:
+      "Assess the health status in tribal regions, propose interventions, and empower through health education.Conduct training for healthcare personnel to enhance services in tribal areas.Advise state and central governments on additional health education needs.Develop a mobile app to enhance access and quality of health services for tribal communities, with a focus on maternal health, adolescent well-being, sickle cell, and cancer awareness.",
+    images: ["assets/ProjectImages/pi_imagess/Dr.  Ramasamy.png"],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Ramasamy Mayilmurugan",
+    date: "From :- 07/03/2024  -  To :- 06/03/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Development of a Platform for Tripura’s Handicraft Empowerment using Ensemble Technologies",
+    path: "/TripuraHandicraftEmpowerment",
+    component: "TripuraHandicraftEmpowerment",
+    description:
+      "Facilitate direct connections between Tripura artisans and consumers via a blockchain-based marketplace, ensuring fair compensation and eliminating intermediaries.Establish transparency and traceability in the supply chain to verify product authenticity and promote ethical practices.Automate fair payment practices using smart contracts, guaranteeing timely and equitable compensation for artisans.Enhance artisans' visibility and credibility through a blockchain-based digital identity system, while incentivizing skill development among the youth.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: " Dr. Somen Debnath,Dr. Abhishek Majumder",
+    date: "From :- 15/03/2024  -  To :- 14/03/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Large Language Model (LLM) for Disease Management and Improved Healthcare Services for Bhartiya Adivasi Communities",
+    path: "/LLMDiseaseManagement",
+    component: "LLMDiseaseManagement",
+    description:
+      "Improve Adivasi healthcare access.Utilize advanced language models for insights.Implement holistic healthcare strategies.Tailor policies to diverse Adivasi needs.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: " Prof. Nitin Kumar",
+    date: "From :- 11/03/2024  -  To :- 10/03/2025 ",
+    duration: "1 Year",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Economic Feasibility Study and Process Parameter optimization for Mahua flower-based Ethanol production for the Upliftment of Tribals of Chhattisgarh” under the Tribal Area Sub plan (TSP)",
+    path: "/MahuaBasedEthanol",
+    component: "MahuaBasedEthanol",
+    description:
+      "Conduct a detailed field survey in Kabirdham district to assess the potential and production capacity of Mahua tree-based products among the tribal population.Perform an economic feasibility study to evaluate the viability of ethanol production from Mahua flowers, considering supply chain costs and revenue generation.Optimize process parameters for ethanol production from Mahua flowers at a lab scale to obtain crucial design parameters for large-scale production.Establish an ecosystem and develop a business model for Mahua-based products to maximize benefits for tribal populations, including technical training and workshops to promote commercialization.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Chetankumar Pratapbhai Patel",
+    date: "From :- 11/03/2024  -  To :- 10/03/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj4.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "Development of an Intelligent System for Weather Forecasting, Smart Farming And Information Dissemination for the Scheduled Tribe Community of Barak River Basin using Satellite Image Processing, ML and IoT” under the Tribal Area Sub plan (TSP)",
+    path: "/SmartFarmingAndInformation",
+    component: "SmartFarmingAndInformation",
+    description:
+      "High resolution PAN and multispectral/ hyper spectral images. Image Segmentation Algorithm Feature selectionImage Classification Algorithm Land use and land cover (LULC) detection and prediction (temporal images)River course detection and predictionAccess the economy of the basin based on night illumination using Satellite Images.Detecting unplanned urbanization, deforestation, soil erosion, bank erosion, etc.Geographical Information SystemDrones and Remote Sensing based aerial monitoringSensors coupled with the Internet of Things (IoT) for agriculture.Inclusion of ST community in Agritech, Fintech and JAM Trinity.App development for the farmers in the Barak River Basin.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Dr. Somanth Mukhopadhyay",
+    date: "From :- 15/03/2024  -  To :- 14/03/2026 ",
+    duration: "2 Year",
+    objImg: "assets/ProjectImages/objectives/obj5.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "“Understanding Fintech and training Based intervention to develop Financial Inclusiveness among Scheduled Tribe population of Mohla-Manpur-Ambagarh Chowki District” under the Tribal Area Sub plan (TSP)",
+    path: "/FinancialInclusiveness",
+    component: "FinancialInclusiveness",
+    description:
+      "The objective of the Project is to improve financial inclusiveness among the tribal population of the district.This Project aims to introduce tribal farmers, household industries and forest gathers with Fintech.The objective of this Project is to give training of applications on various Fintech platforms.The Project tries to equip various Fintech platforms to the target population for better and secure financial management.To explore the tribal knowledge system.Inform and educate the tribal people about various E-commerce platforms and the process of using and selling products online.",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: "Mr. Om Prakash Rana",
+    date: "From :- 15/03/2024  -  To :- 14/03/2025 ",
+    duration: "1 Year",
+    objImg: "assets/ProjectImages/objectives/obj1.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title:
+      "“Training and Skilling Manpower for Smart Solid Waste Management in Urban Hilly Areas” under the Tribal Area Sub plan (TSP)",
+    path: "/SkillingManpower",
+    component: "SkillingManpower",
+    description:
+      "Organizing an interactive workshop between multiple stakeholders (residents, municipal authorities, waste collection staff, recycling related industries and businesses and scientific experts) to understand the challenges in solid waste management specific to hilly areas.Conducting a comprehensive multi-seasonal scientific study to determine the detailed physicochemical characteristics and composition of the waste in the city. The multi-seasonal analysis is considering the varying moisture contents of the waste and other lifestyle variations.Exploring the potential for fintech driven opportunities for ST population in the region in the domain of solid waste management",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: " Dr. H.Lalhminsanga",
+    date: "From :- 20/03/2024  -  To :- 19/03/2025 ",
+    duration: "1 Year",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop:
+      "Organizing an interactive workshopbetween multiple stakeholdersConducting a comprehensive multi-seasonal compositional andcharacterization study",
+    technicalDetails:
+      "Organized a multistakeholder interactive workshop involving students,municipal authorities, business personnel, industry personnel, and scientific experts fromacademia and industry. This workshop titled “ Navigating the terrain: Exploringchallenges and fintech opportunities of solid waste management in urban hilly Areas wasorganized from July 29 th to August 2 nd , 2024.",
+    publications: "",
+    achievements:
+      "Through the workshop the following outcomes were determined: Promotion of Waste Management Startups: The workshop highlighted opportunitiesfor startups in waste-to-energy, recycling, and bioplastic production, encouragingentrepreneurship in sustainable waste management. Fintech Solutions for Enhanced Operations: Fintech tools like mobile payments,microfinancing, and blockchain were identified as key enablers for improving efficiencyand transparency in waste management businesses. Capacity Building for Aspiring Entrepreneurs: Emphasis was placed on skilldevelopment and training in business modeling, finance, and regulatory compliance toempower local entrepreneurs in the waste management sector. Integration of Smart Technologies: The use of IoT, sensors, and data analytics waspromoted as a way for startups to develop smart waste management solutions,optimizing collection and processing systems. Policy and Multi-Stakeholder Collaboration: Recommendations included policysupport for startups, such as tax incentives and streamlined regulations, alongsidefostering collaborations between government, private sector, and NGOs to supportentrepreneurial ventures.",
+    startupName: "",
+  },
+
+  {
+    title:
+      "“Empowering Indigenous Bastar Art for Socio-economic Upliftment of ST Communities of Chhattisgarh” under the Tribal Area Sub plan (TSP)",
+    path: "/BastarArt",
+    component: "BastarArt",
+    description:
+      "This project helps in development of Dhokra and Wrought Iron art Enterprise business model. This will help to create a successful and sustainable venture that not only showcase the beauty of Dhokra and Wrought Iron art but also contributes to the economic and cultural development of the community and the nation",
+    images: [],
+    category: "project",
+    subCategory: "ST",
+    piName: " Dr. Shailesh Mani Pandey",
+    date: "From :- 15/03/2024  -  To :- 14/09/2024 ",
+    duration: "6 month",
+    objImg: "assets/ProjectImages/objectives/obj3.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
+  {
+    title: "Augmenting Livelihoods through GI: A case study on Chhattisgarh",
+    path: "/livelihoods",
+    component: "livelihoods",
+    description:
+      "To identify products in Chhattisgarh across all defined categories which may benefit from a GI tag. To examine the existing status of GI in Chhattisgarh from a livelihood perspective. Technology interventions to make manufacture and dissemination of GI tag products more efficient.",
+    images: ["assets/ProjectImages/pi_imagess/Dr.Anubhav.png"],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName:
+      "PI: Dr. Anubhav Pradhan,PI: Sonal Jha ,PI: Dr. Anindita Ghosh,CO-PI: S. Paul",
+    date: "From :- 30/03/2023  -  To :- 29/03/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Blockchain based healthcare funding and Seamless Medical Claim Settlements and Reimbursement through Data Locker",
+    path: "/datalocker",
+    component: "datalocker",
+    description:
+      "Develop a blockchain-based credit-worthiness rating system for individuals in lower economic strata, using automated medical records linked to national identification numbers instead of traditional asset-based methods.",
+    images: [],
+    duration: "1 Year",
+    category: "project",
+    subCategory: "TBI",
+    piName:
+      "PI: Dr. D R Ramesh Babu, Co-PI: Milind Madhukar Deore (Star Knowledge)",
+    date: "From :- 15/09/2023  -  To :- 14/09/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails:
+      "The backend development for our project is complete, aligning with our current objectives. Concurrently, we're conducting comprehensive code reviews for both the frontend and backend components to ensure high code quality and adherence to best practices. Our application development, using Kotlin for the Android platform, has made significant progress. We're actively testing screens and other features to guarantee a seamless user experience. Moreover, we've successfully integrated the blockchain component into our platform, bolstering security and functionality. In tandem, we're finalizing the development of a web portal for onboarding stakeholders, such as banks and insurance operators. This portal is in its final stages, poised to seamlessly integrate stakeholders into our platform upon completion. Looking forward, deployment of the applications will commence once all components undergo testing, ensuring a smooth rollout to end-users. Overall, the project is progressing steadily, with each component reaching significant milestones.",
+    publications:
+      "1. Patent-1 (filling in progress): The problem statement: Detecting Liveliness of the person on the edge devices without internet, that means all the AI model runs on the edge and the user credentials (Ex: biometric data), never leave their personal device. As the cloud is vulnerable and hence edge-based authentication is required. This method is native to the device without the need of the internet and the processing time within 20ms. We are in the process of prototyping it and collecting empirical data. This idea includes an AI pipeline with multiple AI models running in tandem. Next month we will fill the patent. 2. Potential Patent-2 (Drafting): This is w.r.t to Creditworthiness of a person, we anticipate we can file another important patent in this space, as we have found something novel. But this would take some time before we can announce the outcome. 3. Publication: a. Title: Bridging the Credit Gap: Digital Personas - the Key to Financial Inclusion in India: (Survey paper draft is ready and under review.) b. Title: An Alternate Credit Scoring System for Extremely Low-Income Groups – (Detailed paper on credit scoring system.)",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Co-lending platform for meeting the priority sector goals of India",
+    path: "/prioritysector",
+    component: "prioritysector",
+    description:
+      "To build a blockchain technology based platform that enables large banks to collaborate with small banks and NBFCs and address the priority sector lending problems. To build and improve the credit history quality of the unbanked or poor in India and provide a level playing field for them for better and cheaper financial access. To provide a collaborative ecosystems that are truly decentralized and democratized.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TD",
+    piName: "PI: Dr. Vijaya Bhaskar Marisetty ISB ",
+    date: "From :- 15/09/2023  -  To :- 14/09/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Medical Insurance claim settlement using Blockchain Technology(MRU Harayana)",
+    path: "/medicalInsurence",
+    component: "medicalInsurence",
+    description:
+      "To Develop and design an efficient medical insurance claims settlement model through Blockchain and Artificial Intelligence. To develop a decentralised end to end application for all the stakeholders involved in Medical Insurance claim settlement. Providing automated information to the insurance company to reduce turnaround time, manpower as well as cost.",
+    images: [],
+    duration: "18 month",
+    category: "project",
+    subCategory: "TD",
+    piName: "Dr. Mrinal Pandey, Dr. Shradhha Arora",
+    date: "From :- 09/12/2022  -  To :- 08/06/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications:
+      "“Digitization of health insurance documents for the cashless claim settlement using Intelligent Document Management System”, accepted for publication in Procedia Computer Science Journal, Elsevier “AI-based Integrated Approach for the Development of Intelligent Document Management System (IDMS)” accepted and presented in International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN 2023). the paper will be published in Procedia Computer Science Journal, Elsevier",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Detection of financial frauds in taxation banking and in stock market",
+    path: "/financial-fraud",
+    component: "financial-fraud",
+    description:
+      "Creating deep learning algorithms for graph embedding and clustering to detect circular trading and fraud in stock markets and GST transactions.Detection of Money laundering. Detection of circular trading and price manipulation in the stock market. Detection of circular trading in GST. Detection of fraudulent GST returns.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TD",
+    piName: "Dr. Subidh Ali, Dr. Sobhan Babu",
+    date: "From :- 15/12/2022  -  To :- 14/12/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails:
+      "Significant progress has been made in our document management and verification system. AWS and ML APIs are effectively utilised to extract and securely store data in smart contracts on Blockchain, enhancing security against cyber-attacks. By redesigning and optimising our application have streamlined and improved our document management and verification system. Integration of additional document types, like claim forms, through built API&#39;s enriched our application&#39;s functionality. These advancements collectively strengthen security, improve efficiency, and broaden the scope of document handling capabilities, positioning our system as a robust solution for various needs. Also, team is working for the development of hand written medical prescription model.",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Metasurance : Blockchain based insurance administration system with ML driven dynamic prising for new metaverse",
+    path: "/insurance",
+    component: "insurance",
+    description:
+      "The objective of this proposal is to present Metasurance, an offering that leverages blockchain contracts to enable insurance organizations to launch the following Metaverse related insurance products: Virtual Lands, NFTs, Gadgets, and Avatars, and to integrate with a dynamic pricing model which ensures optimized quote management, policy management, claims management with auditability and real time status updates. To summarize, the main objectives of the proposal are: • To develop a blockchain-based insurance management platform in metaverse, considering the following digital assets: Virtual Lands, NFTs, Gadgets, and Avatars. • Modeling dynamic pricing of the above- mentioned metaverse assets in order to assist an optimal insurance management by employing predictive time-series analysis considering the impact of different factors affecting the demand and supply dynamics.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TD",
+    piName: "Dr. Raju Halder",
+    date: "From :- 12/12/2022  -  To :- 11/12/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails:
+      "Our proposed work is intended to develop an intelligent framework to manage scheduling and routing of heterogeneous vehicles that include EVs. The work is divided in two broad threads. In one thread we are developing the frontend of the tool through which users will interact. For this both web and mobile apps are planned. A preliminary version of these is ready. Mobile App for EV Owners: We are working on the development of a mobile app that can help EV owners obtain time-efficient routes. Based on the current battery charge, the app finds the routes that will take less time by considering factors such as the charging time, waiting time, and charging station availability. For this work, the initial prototype of the mobile app is prepared. Based on the current charge it can find the route the EV owner needs to follow. A web server handles the routing requests from multiple EV owners and updates the availability status of the charging station. Accordingly, if any EV owner finds that the nearby charging station is not available then an alternate route is searched that requires the least time to reach the destination considering the charging time. A Mongo DB is used to store the user trips, and charging details for each charging station. This data may be used for further analysis by the charging station to make an effective scheduling strategy when the cost factors are considered. On the other thread, for the backend, efficient algorithms are planned to be developed. Currently we are experimenting with a few algorithms. As it is well known that most of the vehicle routing problems are NP-Hard, we are exploring with meta-heuristic and heuristic methods. We will explore online versions of these to handle online scheduling and routing of vehicles.",
+    publications:
+      "Oindrila Bhadra, Swagatika Sahoo, Chandra Mohan Kumar, and Raju Halder. Decentralized Insurance Subrogation Using Blockchain. Proc. of the 5th International Conference on Blockchain Technology and Applications (ICBTA '22), Pages 1-9. Xi'an, China, 16-18 Dec 2022. ACM Press. Moreover, currently we are in the process of writing a manuscript based on our created decentralnd dataset. We hope that by mid-December 2023, we would be able to submit it for publication. To summarize, we have already completed task-1 which involves Procurement, Manpower Hiring, and Literature Survey. We are now almost at the end of Phase-2 (by group-1) and Phase-3 (by group-2), which involve (1) Phase-2: Identification of various stake-holders, system functionalities, decentralized storage requirement, smart contract- based algorithms developments, (2) Phase-3: Data readiness and ML-model development, respectively.",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "HideAndSeek: Searchable Encryption on Secure Financial Databases",
+    path: "/encyposition",
+    component: "encyposition",
+    description:
+      "The objective of this project is to develop a secure searchable encryption scheme that enables efficient analysis and modeling of sensitive financial data stored on resource-constrained edge nodes, such as drones, in a semi-trusted environment. This scheme aims to balance robust security measures with performance efficiency, allowing authorized users to perform searches over encrypted data without exposing it in its raw form. By facilitating secure access to financial information, the project will support critical activities such as monitoring financial health, devising market strategies, and predicting return on investment, while ensuring compliance with stringent security protocols to protect sensitive data from unauthorized access.",
+    images: ["assets/ProjectImages/pi_imagess/Dr.Dhiman.jpg"],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TD",
+    piName: "Dr. Dhiman Saha",
+    date: "From :- 15/12/2022  -  To :- 14/12/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Improving Financial Condition of farmers Through Real-Time Precision Agriculture : Plant Disease Detection.",
+    path: "/farmers",
+    component: "farmers",
+    description:
+      "This project aims to develop a POC on AI/ML models to identify diseses in target crops, namely chickpeas and POC demonstration on online datasets.",
+    images: [],
+    duration: "1 Year",
+    category: "project",
+    subCategory: "TD",
+    piName: "Dr.Subhajit Sidhanta",
+    date: "From :- 22/03/2024  -  To :- 21/03/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails:
+      "1. Literature review 1. SSEs are categorized in two types: a) DSSE and b) Static SSE 2. DSSE are recommended from our side. 3. DSSE are further classified in different-2 schemes based on types of queries for e.g., single key-word search query, multi-key word search query, range-queries, boolean-queries, etc. 4. Since DSSE-Range queries are aligned with our interest, we will be using them only. 5. Survey of suitable DSSE range query schemes. (on-going) 2. Recommendation for a suitable SSE scheme: (on-going) 3. Implementation on fin-data: We tested a 2020's DSSE scheme 'Forward Private Searchable Symmetric Encryption with Optimized I/O Efficiency', known as FAST. This implementation needs to be scaled up to get a final framework of implementation. 4. Testing and comparison of the system: Yet to be done.",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Blockchain-Based Framework for Insurance Sector",
+    path: "/InsuranceSector",
+    component: "InsuranceSector",
+    description:
+      "Develop a scheme for the InsureTech companies to make trust between client and insurer with blockchain technology and decentralized client-centric transparent ledger. Develop a blockchain system to protect privacy of client and their data with the legal regulations including minimization of use of personal data. Develop a model to solve legal disputes between client and insurer, insurer and other legal agencies using blockchain and FinTech with smart contracts. Develop a model to minimizing the cost of policy maintained and enhance transparency, security and integrity of client-company data using the distributed ledger technology. Prototype development to solve legal issue with insurance disputes and their solutions using FinTech and Blockchain technology and making improvements of interplanetary storage with FinTech.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TD",
+    piName: "Dr. Preeti Chandrakar",
+    date: "From :- 22/03/2024  -  To :- 21/03/2026 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Development of Secured Voice based  AI-enabled Digital Payment Application  for Indian Regional Languages.",
+    path: "/DigitalPayment",
+    component: "DigitalPayment",
+    description:
+      "This project aims to develop an end-to-end secure voice-based payment application with multilingual support, facilitating day-to-day banking activities. It also focuses on providing a user-friendly interface and voice assistance for guiding illiterate and physically impaired users through digital transactions. Additionally, the project aims to create a robust regional language-based voice assistant warning system integrated with visual platforms to prevent e-frauds. Moreover, it aims to develop alternative authentication methods to OTP for ensuring secure online banking transactions.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "TD",
+    piName: "Dr.Nenavath Srinivas Naik, Dr.Anurag singh",
+    date: "From :- 11/03/2024  -  To :- 10/03/2026 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "A Regularization Factor Based Noval Framework For Anomaly Detection Using Artificial Intelligence",
+    path: "/AnomalyDetection",
+    component: "AnomalyDetection",
+    description:
+      "This project aims to introduce a novel framework for detecting anomalies from diverse data types such as images, tabular, and sequential data. Traditional anomaly detection methods often struggle with retaining pre-trained features, particularly when employing transfer learning techniques. The proposed research addresses these challenges by developing a regularization-based framework that ensures continuous learning and effectively detects anomalies using Artificial Intelligence. By tackling issues like model stagnation and feature loss, this framework aims to enhance anomaly detection accuracy and applicability across various datasets.",
+    images: [],
+    duration: "1 Year",
+    category: "project",
+    subCategory: "TD",
+    piName: "Dr. D.K Yadav",
+    date: "From :- 11/03/2024  -  To :- 10/03/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Healthcare Empowerment through Real-time Insurance Assessment",
+    path: "/Healthcare",
+    component: "Healthcare",
+    description:
+      "Develop a secure and efficient system that enables hospitals to generate bills and instantly share them with both insurance companies and patients' families. Implement a real-time evaluation mechanism that checks each bill against predefined insurance policies, providing immediate feedback on coverage eligibility. Implement Ciphertext-Policy Attribute-Based Encryption (CP-ABE) to secure the patient's health data in the billing process. The project proposal aims to enhance the healthcare journey by providing immediate clarity on insurance coverage eligibility, ultimately improving patient satisfaction and reducing financial stress during medical treatment.",
+    images: ["assets/ProjectImages/pi_imagess/Dr.Sanjay.png"],
+    duration: "1 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Sanjay Moulik, Assistant Professor, Department of Computer Science Engineering, IIIT Guwahati",
+    date: "From :- 14/11/2023  -  To :- 13/11/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Development of mHealth Solution in Remote Tribal Areas of Manipur through a Customized Mobile Solution",
+    path: "/mHealth",
+    component: "mHealth",
+    description:
+      "Mobile Healthcare Services: Using mobile devices for healthcare services enhances accessibility and communication between patients and providers. Real-Time Health Monitoring: IoT sensors offer immediate health data, empowering individuals for informed decision-making about their health. Geographical Reach: Mobile health projects overcome geographical barriers, providing healthcare services to remote and underserved areas. Health Education through Apps: Mobile apps deliver health education, promoting preventive care and healthier lifestyles. Empowering Community Health Workers: Equipping community health workers with mobile tools extends healthcare services and education within communities, strengthening the healthcare workforce.",
+    images: ["assets/ProjectImages/pi_imagess/42.png"],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Benjamin Shimray, Assistant Professor, Department of Electrical Engineering, NIT Manipur",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Smart Health Solutions for Cattle",
+    path: "/SmartHealth",
+    component: "SmartHealth",
+    description:
+      "Establish an IoT-based livestock monitoring system for early disease detection and prompt intervention, ensuring optimal cattle health. Foster collaboration among farmers, veterinarians, financial institutions, and government departments, enabling knowledge exchange and empowering farmers with expert advice and sustainable farming practices. Simplify financial assistance processes, aiding farmers in acquiring necessary resources, and integrate livestock insurance options to mitigate financial risks and secure investments. Promote inclusivity by bridging rural-urban gaps, extending veterinary expertise to remote areas, and encouraging sustainable farming practices for resource efficiency and environmental conservation.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Mr. Golmei Shaheamlung, Assistant Professor, Department of Computer Science and Engineering, Manipur Technical University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Indigenous Medicines of the North Eastern India: From Traditional Knowledge Transfer(T-KT) to the Sustainable Livelihoods Among Schedule Tribes (ST) Communities of Assam and Meghalaya via Fintech",
+    path: "/Medicines",
+    component: "Medicines",
+    description:
+      "Promote Sustainable Livelihoods: Facilitate the transfer of indigenous medicine knowledge from ST communities to PMAM and Gram-Sabhas, creating employment opportunities. Digital Integration and Certification: Digitally convert traditional knowledge and integrate it into TCAM's database, ensuring certified medicines are available for consumers. Financial Inclusion through Fintech: Utilize mobile money platforms and microbanking via Gram-Sabhas to enable safe, direct payments to ST suppliers, enhancing their financial stability. Preserve Ecosystem and Biodiversity: Implement feedback mechanisms to prevent unnecessary killing of animal species, contributing to conservation efforts and sustainable production practices.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Mr. N K Kaphungkui, Assistant Professor, Department of Electronics and Communication Engineering, Dibrugarh University Institute of Engineering and Technology",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Development of an UPI Integrated Mechanism to Increase GST Compliance",
+    path: "/UPI",
+    component: "UPI",
+    description:
+      "Boost GST Compliance: Integrate UPI apps to register all transactions with businesses under their GST numbers. Empower Customer Validation: Allow customers to verify transactions; input GSTIN for unregistered businesses. Combat Tax Evasion: Prevent misuse of multiple VPAs by enabling customers to link transactions to specific GST numbers, reducing tax evasion risks. Streamline Cash Transactions: Develop an app like 'Mera Bill Mera Adhikar' to register and track cash transactions, enhancing overall transparency.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Rantu Hazarika, Assistant Professor, Department of Economics, Dibrugarh University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "A Blockchain Based Rating Framework For Transparency and Credibility of Financial Transactions in Self Help Groups(SHGs)",
+    path: "/Financial",
+    component: "Financial",
+    description:
+      "Streamline Financial Processes: Implement a mobile accounting solution to replace manual accounting, enhancing efficiency and accuracy in record-keeping. Enhance Borrower Tracking: Develop a system to track borrower profiles and repayment histories, improving transparency and trust within lending communities. Ensure Member Verification: Introduce a profile checking mechanism for new members, ensuring credibility and reducing the risk of defaults in lending groups. Promote Financial Inclusion: Provide mobile banking and financial solutions in local languages, making banking services accessible and user-friendly for all community members, regardless of literacy levels.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Mr. Melur Phangcho, Assistant Professor, Department of Computer Science and Information Technology, Cotton University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Monitoring Pineapple Cultivation and Harvesting using Drone",
+    path: "/Pineapple",
+    component: "Pineapple",
+    description:
+      "Precision Harvesting Prediction: Develop a model utilizing drone-captured images and gas sensor data to accurately predict the optimal time for harvesting pineapples based on shape, color, and size, ensuring high-quality produce. Ethylene Concentration Detection: Implement gas sensors to measure ethylene concentration in pineapple fields, enabling real-time detection of ripeness levels and enhancing harvesting efficiency. Crop Monitoring and Automation: Utilize drone technology for comprehensive crop monitoring, reducing labor-intensive tasks such as seed planting, weed management, and irrigation scheduling, leading to improved crop health management. Labor and Time Efficiency: Minimize manual labor and time-intensive processes in agriculture by integrating AI-driven predictions and drone-assisted monitoring, optimizing resource utilization and enhancing overall agricultural productivity.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Lithungo K Murry, Assistant Professor, Department of Computer Science and Engineering, National Institute of Technology, Nagaland",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Supply Chain Management for Agricultural Products of Mizo Farmers using Blockchain and Machine Learning",
+    path: "/AgriculturalProducts",
+    component: "AgriculturalProducts",
+    description:
+      "Facilitate efficient communication between producers and buyers through a user-friendly local dialect software, addressing supply-demand challenges. Minimize time and effort wastage by enabling direct negotiations on vegetable types, prices, and quality between dealing parties. Resolve payment and trust issues using an e-payment system, ensuring transparent and tamper-proof transactions through blockchain technology. Enhance reliability of vendors and producers by implementing a rating system with feedback in local language, incorporating sentiment analysis for accurate evaluations. Automatically record data on vegetable production, consumption, quality, and seasonal variations, providing policymakers with a comprehensive dataset for informed policy formulation.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. R . Lalchhanhima, Assistant Professor, Department of Information Technology,Mizoram University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Design and Develop of AI-based Applications for Medicinal Plant consumed by Bodo Community Residing in BTR Assam used in Daily Basis",
+    path: "/MedicinalPlant",
+    component: "MedicinalPlant",
+    description:
+      "Create a user-friendly web portal with comprehensive information on medicinal plants, including Bodo and English names, properties, uses, and cultivation methods. Preserve and document Bodo community's traditional knowledge on medicinal plants for future generations. Promote sustainable practices in cultivating and harvesting medicinal plants to support conservation efforts. Develop a bilingual portal in both Bodo and English for wider accessibility and reach.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Mr.Rinku Basumatary, Assistant Professor, Department of Computer Science and Technology, Bodoland University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "An application platform for cold storage service of perishable food items for the rural street vendors of Guwahati, Assam",
+    path: "/coldstorage",
+    component: "coldstorage",
+    description:
+      "Establish a point-based cold storage system for perishable food items of rural street vendors, ensuring freshness and quality preservation. Minimize wastage of perishable food items by implementing effective storage and distribution methods. Increase income for rural street vendors by enabling them to sell more items without financial loss, enhancing their overall livelihood and financial stability.",
+    images: [],
+    duration: "1 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Debojit Boro, Associate Professor, Department of Computer Science and Engineering, Tezpur University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Smart Task Management for the unorganized workers in Mizoram",
+    path: "/SmartTask",
+    component: "SmartTask",
+    description:
+      "Integration of blockchain technology: Blockchain technology will be used for recording live transactions so that no one denies their actions, and it will be tamper-proof. Machine learning and AI: A machine learning and AI algorithm will be implemented to capture the details, such as analyzing demand, ratings, and feedback. This module will also predict the requirements based on daily, monthly, and yearly inorder to help frame policies. E- Payment System: For ease and transparency e-payment based transaction facilities will be used in the platform. App development: The application server will be deployed as a server. This server will be providing service to mobile phone applications in real time. The application will also keep track of all transactions, all deals, etc.",
+    images: [],
+    duration: "1 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Mrs. Vanlalmuansangi Khenglawt, Assistant Professor, Department of Information Technology, Mizoram University",
+    date: "14/11/2023  -  To :- 13/11/2024",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Scalable, Indigenous and Driver-Friendly Ride-Hailing Application",
+    path: "/Driver-Friendly",
+    component: "Driver-Friendly",
+    description:
+      "Develop an improved Android ride-sharing application catering to Clients, Private drivers, and Public transport users. Enable Clients to request rides, providing options for different vehicle types, pricing details, and public transport routes. Allow Private drivers to set ride prices, specify additional charges for certain destinations, and choose preferred regions for service. Facilitate Public drivers to share their routes, enabling clients to locate public transport vehicles easily. Implement a location-sharing feature, enabling seamless connection between clients and drivers, enhancing accessibility. Explore sustainable revenue models, such as subscription-based pricing or pay-as-you-use schemes, ensuring the application's self-sufficiency.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Sijousa Basumatary, Assistant Professor, Department of  Economics, Bodoland University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title: "Sustainable Smart Parking Solution for Aizawl City",
+    path: "/Sustainable",
+    component: "Sustainable",
+    description:
+      "The objective of this project is to enhance parking management for owners and improve accessibility for the general public, particularly benefiting the Scheduled Tribe (ST) population in Mizoram. By implementing an online pre-booking system, the project aims to optimize the management of parking spaces through accurate usage data, allowing owners to plan more efficiently. Simultaneously, it will enable users, especially from the ST community, to secure parking in advance, significantly reducing the time and resources spent searching for available spots. This technological intervention seeks to promote user-friendly parking solutions, decrease urban traffic congestion, and empower the local community by improving their mobility and overall quality of life.",
+    images: ["assets/ProjectImages/pi_imagess/53.png"],
+    duration: "1 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Morrel V L Nunsanga, Assistant Professor, Department of  Information Technology, Mizoram University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2024 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Leveraging AI/ML for Customized Credit Assessment of the Bodo Tribe in the Bodoland Territorial Region",
+    path: "/Bodoland",
+    component: "Bodoland",
+    description:
+      "Develop a machine learning-driven credit scoring system tailored for the Bodo tribes of BTR, incorporating factors like education, skills, character references, psychometric tests, and cash flow analysis. Collect and preprocess relevant data through surveys, interviews, and online platforms, ensuring accuracy and completeness for analysis. Implement AI/ML techniques for predicting credit scores, utilizing regression models, feature engineering, and interpretability methods to optimize model accuracy and relevance. Design and deploy a user-friendly web application in the Bodo language, integrating AI/ML models for real-time credit assessment, and providing customized financial literacy content based on user inputs.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Mr. Raju Narzary, Assistant Professor, Department of  Computer Science and Technology, Bodoland University Mr. Deepak Hajoary, Assistant Professor, Department of Management Studies, Bodoland University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Modelling and Visualising Bodo Tourism and Marketing Bodo Souvenirs with Fintech-Based Solutions Using AR and VR Technology in the Bodoland Territorial Region(BTR)",
+    path: "/Tourism",
+    component: "Tourism",
+    description:
+      "Provide Fintech and digital marketing training to local businesses, enhancing financial transparency and online presence. Develop an AR software enabling tourists to browse and purchase local mementos digitally, bridging physical and digital markets. Launch an integrated E-commerce platform with AR and fintech payment systems, expanding market reach and boosting sales of regional mementos. Create immersive VR experiences showcasing local landmarks and customs, offering tourists booking and payment options for enhanced engagement. Establish long-term cultural preservation efforts through virtual museums, implement blockchain-powered supply chains for souvenir authenticity, and ensure sustainable economic growth in BTR while exploring expansion opportunities.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Yachang Omo, Assistant Professor, Department of Civil Engineering, Central Institute of Technology Kokrajhar",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Inclusive Fintech- Bridging The Gap in Communities through Order Financing",
+    path: "/Bridging",
+    component: "Bridging",
+    description:
+      "Enable MFIs to integrate alternate data sources like digital transactions and social media data for comprehensive credit assessments of businesses. Develop a mobile-based platform for businesses, allowing convenient access to credit services via smartphones, and offering flexible repayment options tailored to individual needs. Implement AI, ML, and data analytics to automate processes, enhance accuracy, and optimize working capital management for businesses, improving efficiency and cash flow. Adopt cloud-based solutions to enable seamless data access, scalability, and real-time collaboration, ensuring secure and efficient working capital management solutions for businesses.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Deboraj Muchahary, Assistant Professor (Gr - II), Department of Electronics & Telecom. Engineering, National Institute of Technology Raipur",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Financial Empowerment in Meghalaya: AI-Powered Multilingual E-Marketplace for Tribes",
+    path: "/Empowerment",
+    component: "Empowerment",
+    description:
+      "Facilitate Seamless Transactions: Develop a user-friendly e-marketplace supporting Khasi, Garo, and English, ensuring artisans and buyers can communicate and transact effortlessly, fostering a vibrant online marketplace for indigenous crafts. Ensure Trust and Authenticity: Implement a robust seller verification system to establish transaction trust, safeguarding both sellers and buyers, thereby boosting confidence in the platform and promoting secure online transactions. Enhance Product Discovery: Integrate an efficient search and recommendation engine to broaden artisans' market reach, enabling buyers to discover diverse indigenous products easily, thereby fostering a thriving ecosystem for local craftsmanship. Promote Cultural Sustainability: Collaborate with local authorities and cultural institutions to document, preserve, and promote Meghalaya's rich cultural heritage, ensuring the long-term sustainability of indigenous crafts and traditions.",
+    images: ["assets/ProjectImages/pi_imagess/Dr.Basil N.png"],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Basil N. Darlong Diengdoh, Assistant Professor, Department of Law and Language, National Law University Meghalaya",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "Economic Optimization Platform for Public Transport System of Mizoram ",
+    path: "/TransportSystem",
+    component: "TransportSystem",
+    description:
+      "Develop a user-friendly app for seamless public transport access, integrating real-time updates and specific taxi requests. Enhance safety with MIRSAC data, IoT monitoring, and user-driven real-time updates, incentivizing users for timely information. Enable secure electronic payments, promoting cashless transactions for public transport fares. Provide local language support in Mizo, ensuring inclusivity and cultural sensitivity for diverse users. Utilize data insights for intelligent recommendations, optimizing routes and deployments in collaboration with government agencies.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Dr. Lalhruaizela, Assistant Professor, Department of Computer Science and Engineering, National Institute of Technology Mizoram",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+  {
+    title:
+      "NagaConnect: Integrated Common Application Platform for Boosting Employment and Business Opportunities in Nagaland",
+    path: "/BoostingEmployment",
+    component: "BoostingEmployment",
+    description:
+      "Develop a mobile application facilitating job seekers and employers in Nagaland, supporting both English and Nagamese languages. Enable employers to list job details, required skills, payment terms, and durations, fostering a comprehensive platform for job matching. Establish a trust-building mechanism by verifying profiles of both job seekers and employers on the platform. Provide accessibility to job information for feature phone users through SMS, allowing them to specify skills and location for job searches.",
+    images: [],
+    duration: "2 Year",
+    category: "project",
+    subCategory: "ST",
+    piName:
+      "Mr. Chenlep Yakha Konyak, Assistant Professor, Department of Computer Science and Engineering, Nagaland University",
+    date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
+    objImg: "assets/ProjectImages/objectives/obj2.png",
+    workshop: "",
+    technicalDetails: "",
+    publications: "",
+    achievements: "",
+    startupName: "",
+  },
+
   {
     title: "Smart ID Card",
     path: "/SmartCard",
@@ -10,8 +1907,8 @@ export const pagesConfig = [
       "assets/StaticImages/Workshop/smartcard2.png",
       "assets/StaticImages/Workshop/smartcard3.png",
     ],
-    category: "project",
-    subCategory: "IB",
+    category: "event",
+    subCategory: "workshop",
   },
   {
     title: "Three Days National Workshop on Financial Engineering",
@@ -21,11 +1918,10 @@ export const pagesConfig = [
       "3-day workshop, IBITF aims to empower project owners with knowledge about how emerging technologies like AI/ML, Blockchain, IoT, and e-payments can revolutionize fintech, address local challenges, and uplift the ST population by promoting financial literacy, skill development, and entrepreneurship,  This workshop aims to bridge academia and industry, empowering the participants with knowledge to drive fintech innovation and positive change",
     images: [
       "assets/StaticImages/Workshop/Financial_eng1.png",
-      "assets/StaticImages/Workshop/Financial_eng1.png",
       "assets/StaticImages/Workshop/Financial_eng.png",
     ],
-    category: "project",
-    subCategory: "ST",
+    category: "event",
+    subCategory: "workshop",
   },
   {
     title: "Bapi Na Uwat",
@@ -37,8 +1933,10 @@ export const pagesConfig = [
       "assets/StaticImages/Workshop/BapiNaUwat.png",
       "assets/StaticImages/Workshop/BapiNaUwat1.png",
     ],
+    category: "event",
+    subCategory: "workshop",
   },
-  // --------------------------------------------------------------workshops--------------------------
+
   {
     title: "Fintech Ignite",
     path: "/FintechIgnite",
@@ -357,44 +2255,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
     ],
   },
 
-  {
-    title: "Smart ID Card",
-    path: "/SmartCard",
-    component: "SmartCard",
-    description:
-      "The Smart ID Card revolutionizes campus interactions by offering advanced features for a seamless and secure experience. Recently inaugurated by Shri Krishnamurthi Venkataramanan, Chairman of the Board of Governors at IIT Bhilai, this innovative system is already in use across the main campus, enhancing the overall experience for students and faculty. ",
-    images: [
-      "assets/StaticImages/smartcard1.png",
-      "assets/StaticImages/smartcard2.png",
-      "assets/StaticImages/smartcard3.png",
-    ],
-    category: "event",
-  },
-  {
-    title: "Three Days National Workshop on Financial Engineering",
-    path: "/Financial-Engineering",
-    component: "Financial-Engineering",
-    description:
-      "3-day workshop, IBITF aims to empower project owners with knowledge about how emerging technologies like AI/ML, Blockchain, IoT, and e-payments can revolutionize fintech, address local challenges, and uplift the ST population by promoting financial literacy, skill development, and entrepreneurship,  This workshop aims to bridge academia and industry, empowering the participants with knowledge to drive fintech innovation and positive change",
-    images: [
-      "assets/StaticImages/Financial_eng1.png",
-      "assets/StaticImages/Financial_eng1.png",
-      "assets/StaticImages/Financial_eng.png",
-    ],
-    category: "event",
-  },
-  {
-    title: "Bapi Na Uwat",
-    path: "/BapiNaUwat",
-    component: "BapiNaUwat",
-    description:
-      'BITF and IIT Bhilai, in collaboration with the Dantewada District Administration, hosted a two-day youth leadership workshop, "Bapi Na Uwat," at IIT Bhilai,The event empowered young leaders through discussions, interactive sessions, and team-building activities, fostering skills for community impact.',
-    images: [
-      "assets/StaticImages/BapiNaUwat.png",
-      "assets/StaticImages/BapiNaUwat1.png",
-    ],
-    category: "event",
-  },
+  // ------------------------------------------------MOU---------------------------------------------------------------
 
   {
     title:
@@ -445,6 +2306,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       "Shri Shankaracharya Technical Campus (SSTC), the first autonomous college in Central India named after Adi Shri Shankaracharya, has signed an MoU with the IBITF to promote collaboration and knowledge advancement. The partnership will focus on exchanging intellectual know-how and resources, fostering innovation and entrepreneurship, sharing scientific and technical networks and infrastructure, and collaborating on consulting, research, and R&D projects across various science and technology fields. These initiatives will be governed by the rules and regulations of the respective institutions and will operate on principles of reciprocity, mutual benefit, and frequent interaction.",
     images: ["assets/StaticImages/mou/sstc.png"],
     category: "event",
+    subCategory: "MOU",
   },
   {
     title: "IBITF and Indo ural medicine",
@@ -485,5 +2347,517 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
     images: [],
     category: "event",
     subCategory: "MOU",
+  },
+
+  // ----------------------------------------------success story ------------------------------------------
+  {
+    title:
+      "Bhoomicam: Pioneering Innovation in AgriTech with Geospatial Technology",
+    path: "/Bhoomicam",
+    component: "Bhoomicam",
+    description: [
+      {
+        heading: "",
+        description:
+          "Bhoomicam, a groundbreaking AgriTech startup incubated at the IIT Bhilai Innovation and Technology Foundation (IBITF), has rapidly emerged as a leader in the Indian agricultural sector. Combining cutting-edge artificial intelligence with geospatial technology, Bhoomicam is transforming how farmers approach precision farming. Through their innovative solutions, farmers are empowered with real-time, data-driven insights that enhance crop yield, optimize resource allocation, and contribute to sustainable agricultural practices. Over the years, Bhoomicam has made significant strides in AgriTech and has garnered prestigious awards, and has formed impactful partnerships that reflect its outstanding journey from a research project to an award-winning startup.",
+      },
+      {
+        heading: "Awards and Recognition",
+        description:
+          "Bhoomicam’s founder, Prof. Siddhartha Khare, has been honored with two prestigious awards: the National Geospatial Emerging Faculty Fellow Award and the National Geospatial Startup Award. These accolades underscore his significant contributions to the field of geospatial technology and highlight Bhoomicam’s leadership in this domain. These awards recognize the startup’s innovative integration of AI and geospatial data to empower Indian farmers, demonstrating its deep impact on the agricultural sector.In addition, Bhoomicam was recognized with the 'Making India Employable Rising Star Award 2024,' a prestigious accolade shared with two other startups incubated at IBITF. This award celebrates Bhoomicam’s commitment to technological advancement and generating employment opportunities in rural India. Bhoomicam contributes to the country’s growth and employment landscape by enhancing farmers' livelihoods and productivity through innovative geospatial solutions.",
+      },
+      {
+        heading: "Participation in Prestigious Events",
+        description:
+          "A defining moment for Bhoomicam was its participation in the AgriFundX Summit in Mumbai, where the startup showcased its revolutionary AI-driven geospatial product. As one of the select few startups chosen to present their innovations, Bhoomicam gained significant attention from investors, industry experts, and stakeholders. The exposure helped position Bhoomicam as a serious player in the AgriTech ecosystem, with its solutions striking a chord with both large agribusinesses and small-scale farmers. By leveraging artificial intelligence, satellite imagery, and data analytics, Bhoomicam’s solution enables farmers to monitor crop health, predict yields, and make data-driven decisions that mitigate risks. The product's showcase at AgriFundX solidified Bhoomicam's reputation as a trailblazer in revolutionizing agricultural practices across India, further contributing to the growth of precision farming.",
+      },
+
+      {
+        heading: "Strategic Collaborations and MoU Signing",
+        description:
+          "Bhoomicam’s success is also attributed to its strategic collaborations, which have played a crucial role in the startup’s expansion and growth. One such significant partnership was formed with Campus Angels Network Pvt Ltd (CAN), with the signing of a Memorandum of Understanding (MoU). Facilitated through IBITF, this collaboration aims to provide Bhoomicam with the necessary resources, mentorship, and funding to scale its operations. This MoU is a pivotal step in Bhoomicam’s journey to make geospatial technology accessible to farmers across India, ensuring that technological advancements reach those most need them.Additionally, Bhoomicam operates within the FOSSEE (GIS) project at IIT Bombay, aligning with the National Mission on Education through ICT (NMEICT), supported by the Ministry of Education, Government of India. This collaboration reflects the synergy between research, education, and entrepreneurship that IBITF fosters, further strengthening Bhoomicam’s foundation in the geospatial and Agri-tech space.",
+      },
+
+      {
+        heading: "A Vision for the Future",
+        description:
+          "Bhoomicam’s journey is far from over. With plans to expand its services to new regions and develop more farmer-friendly features, the startup is poised to play an even more prominent role in shaping the future of agriculture in India. The recognition and accolades from industry bodies and strategic collaborations are a testament to Bhoomicam’s innovative approach and commitment to transforming Indian agriculture.IBITF’s incubation program has been instrumental in Bhoomicam’s success, providing the startup with comprehensive support through funding, mentorship, and access to strategic alliances. This nurturing environment has helped Bhoomicam navigate challenges, innovate continuously, and scale its operations to become a leading name in the AgriTech ecosystem.",
+      },
+    ],
+    images: [
+      "assets/StaticImages/sucessstory/bhoomicam1.png",
+      "assets/StaticImages/sucessstory/bhoomicam2.png",
+    ],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   two
+
+  {
+    title: "Tadoba Solution Pvt.Ltd",
+    path: "/Tadoba",
+    component: "Tadoba",
+    description: [
+      {
+        heading: "",
+        description:
+          "Tadoba, an innovative startup incubated at the IIT Bhilai Innovation and Technology Foundation (IBITF), is making waves in the Indian sustainability sector with its forward-thinking solutions to balance economic growth and environmental conservation. Focused on empowering rural communities through sustainable practices, Tadoba’s journey from inception to recognition has been marked by remarkable achievements, culminating in winning the prestigious 'Making India Employable Rising Star Award 2024.' Tadoba’s story is a testament to the power of innovation, sustainability, and rural empowerment, as the startup strives to impact India’s employment landscape while promoting eco-friendly solutions significantly.",
+      },
+      {
+        heading: "A Vision for Sustainable Empowerment",
+        description:
+          "At its core, Tadoba is driven by the mission to foster environmental sustainability while creating employment opportunities in rural regions of India. Tadoba’s approach promotes sustainable practices such as eco-friendly packaging, organic farming, and renewable energy solutions. The startup works closely with rural communities, providing them with the skills and resources to adopt sustainable methods, thereby enabling economic growth and environmental stewardship.The startup’s flagship product line, which includes biodegradable packaging solutions made from agricultural waste, has been a game-changer for industries looking to reduce their environmental footprint. Tadoba’s eco-friendly products have been adopted by various sectors, ranging from agriculture to retail, and have positioned the startup as a leader in the sustainability domain.",
+      },
+      {
+        heading: "Awards and Accolades",
+        description:
+          "Tadoba’s efforts were recognized nationally when it was honored with the 'Making India Employable Rising Star Award 2024,' an accolade that celebrates innovative startups that contribute to creating employment opportunities in India. This award highlights Tadoba’s commitment to fostering employability through sustainable practices and empowering rural communities with the skills needed to thrive in the green economy.The award validates Tadoba’s work in training and employing rural artisans and farmers, giving them access to sustainable livelihoods while promoting eco-consciousness. Tadoba’s holistic approach to integrating sustainability with economic growth has resonated with policymakers, industry experts, and investors alike, further solidifying its role as a rising star in the green economy.",
+      },
+
+      {
+        heading: "Strategic Partnerships and Collaborations",
+        description:
+          "Tadoba’s journey has been propelled by strategic collaborations that have enabled the startup to expand its reach and impact. One of the key milestones in its growth was signing a Memorandum of Understanding (MoU) with Campus Angels Network Pvt Ltd (CAN), a renowned entity in supporting innovative early-stage startups. This partnership has provided Tadoba with the necessary funding and helped create a robust business model that aligns with its vision of sustainable development.The MoU with CAN, facilitated through IBITF, has been a crucial step in Tadoba’s expansion strategy, enabling it to scale its operations and explore new markets. With the support of CAN, Tadoba has been able to enhance its product offerings and invest in research and development to introduce more eco-friendly solutions that cater to both urban and rural needs.",
+      },
+    ],
+    images: ["assets/StaticImages/sucessstory/Tadoba.png"],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   three
+
+  {
+    title:
+      'Recogx Pvt. Ltd. - Honored with the "Making India Employable Rising Star Award 2024"',
+    path: "/Recogx",
+    component: "Recogx",
+    description: [
+      {
+        heading: "",
+        description: `Recogx Pvt. Ltd., an innovative startup incubated at IIT Bhilai Innovation and Technology Foundation (IBITF), has been awarded the prestigious "Making India Employable Rising Star Award 2024". This recognition underscores Recogx's remarkable achievements in creating cutting-edge solutions that bridge the gap between technology and employment.`,
+      },
+      {
+        heading: "About Recogx Pvt. Ltd.",
+        description:
+          "Recogx is a dynamic tech company specializing in artificial intelligence (AI) and machine learning to revolutionize talent acquisition and workforce development. By harnessing advanced AI algorithms, Recogx has developed a platform that helps employers and job seekers connect more effectively, ensuring the right talent matches the right opportunities. Their technology is geared toward enhancing employability, especially in underserved sectors.",
+      },
+      {
+        heading: "Path to Success",
+        description: `From its inception at IBITF, Recogx has grown rapidly, leveraging the foundation’s mentorship, resources, and strategic support to refine its innovative solutions. Through their continuous research and development, Recogx has developed an AI-driven platform that matches candidates with job opportunities and provides training modules to upskill and empower the workforce.The recognition with the "Making India Employable Rising Star Award 2024" reflects Recogx’s commitment to enhancing employability and contributing to the socio-economic development of India. Their approach addresses real-world challenges in workforce management, making them a pivotal player in India’s employment ecosystem.`,
+      },
+
+      {
+        heading: "IBITF’s Role in Recogx’s Growth",
+        description:
+          "IBITF has played a crucial role in Recogx's journey by offering incubation support, including funding, networking opportunities, and strategic partnerships. The nurturing environment provided by IBITF helped Recogx evolve from an early-stage idea into a leading player in the employability and workforce technology space.",
+      },
+
+      {
+        heading: "Looking Ahead",
+        description: `With the support of IBITF and the "Making India Employable Rising Star Award 2024", Recogx is poised to scale its impact further. The startup plans to expand its services, enhance its platform, and continue driving innovation in employability solutions, ensuring India’s workforce is well-equipped for the future.Recogx’s story is a testament to the power of innovation and strategic support in creating real-world solutions that positively impact society and the economy.`,
+      },
+    ],
+    images: ["assets/StaticImages/sucessstory/Recogx1.png"],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   four
+
+  {
+    title:
+      "Empowering Mithun Herders: A Collaborative Success Story in Arunachal Pradesh",
+    path: "/EmpoweringMithun",
+    component: "EmpoweringMithun",
+    description: [
+      {
+        heading: "",
+        description:
+          "On 9th March 2024, a significant step was taken towards improving the livelihoods of Mithun herders in the village of Balisori, Lower Siang District, Arunachal Pradesh. An interaction session was conducted with the local herders as part of a project funded by the IIT Bhilai Innovation and Technology Foundation (IBITF). This initiative aimed to understand the traditional practices, challenges, and unique needs of the Mithun herders and to explore potential technological interventions that could enhance their productivity and livelihoods.",
+      },
+      {
+        heading: "Engaging with the Community",
+        description:
+          "The Mithun, a semi-domesticated bovine species indigenous to the northeastern region of India, plays a critical role in the socio-economic fabric of the local communities in Arunachal Pradesh. The interaction session, organized by IBITF, was designed to directly engage with the herders, who have relied on traditional herding methods for generations. This session created an open platform for the herders to share their experiences, challenges, and insights, making it an invaluable learning experience for the herders and the project team.Through the dialogue, the herders expressed their deep connection with their livestock and the Mithun's critical role in their daily lives and economy. However, they also highlighted various challenges, including limited access to veterinary care, concerns over disease management, and the absence of modern technologies to monitor and manage livestock efficiently.",
+      },
+      {
+        heading: "Exploring Technological Solutions",
+        description:
+          "The project, under the guidance of IBITF, is focused on integrating technological innovations that can address the challenges faced by the Mithun herders. The interaction session provided essential insights into the herders' needs, informing the development of tailored solutions to improve herd management, disease prevention, and productivity.Potential solutions discussed during the session include using geospatial technology for tracking the movement and health of Mithun herds, AI-based monitoring systems for disease prediction, and the introduction of mobile-based applications to offer real-time support and guidance to herders. These solutions could give the herders valuable tools to manage their herds more effectively while preserving traditional practices.",
+      },
+
+      {
+        heading: "A Collaborative Future",
+        description:
+          "The success of this session was evident in the strong relationship built between the project team and the herding community. The herders were receptive to using technology to support their traditional methods, and the project team gained a deeper understanding of the local practices that need to be respected and integrated into any potential interventions. This collaboration between IBITF and the Mithun herders lays the foundation for future interventions that are community-driven and culturally sensitive.The session was more than just a dialogue—it began a collaborative partnership to empower the Mithun herders by blending their invaluable traditional knowledge with modern technological solutions. This partnership underscores IBITF's commitment to sustainable development and community engagement, ensuring that innovation reaches the most remote and underserved areas.",
+      },
+
+      {
+        heading: "Looking Ahead",
+        description:
+          "The insights gathered during the interaction session will inform the project's next steps, including the development and testing of technological solutions tailored to the needs of the Mithun herders. In collaboration with IBITF, the project team will continue to work closely with the herders, ensuring that the interventions are effective and sustainable.Through this initiative, IBITF reaffirms its dedication to driving meaningful change in rural and remote communities, ensuring that technology is a tool for empowerment and economic development. The successful session with the Mithun herders of Balisori village is just the beginning of a long-term partnership aimed at improving livelihoods while preserving cultural heritage.This project not only holds promise for the Mithun herders of Arunachal Pradesh but also sets an example of how technology can be leveraged to solve localized challenges and create sustainable, community-centered solutions.",
+      },
+    ],
+    images: [
+      "assets/StaticImages/sucessstory/mithun1.jpg",
+      "assets/StaticImages/sucessstory/mithun2.png",
+      "assets/StaticImages/sucessstory/mithun3.png",
+    ],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   five
+
+  {
+    title: "Indian Knowledge Systems Workshop at IIT Bhilai",
+    path: "/IndianKnowledge",
+    component: "IndianKnowledge",
+    description: [
+      {
+        heading: "",
+        description:
+          "On December 29th and 30th, 2023, IIT Bhilai, in collaboration with the IIT Bhilai Innovation and Technology Foundation (IBITF), organized a two-day workshop focusing on the invaluable contributions of Indian Knowledge Systems (IKS) and their relevance in contemporary times. This workshop was a significant initiative to bring together scholars, academicians, and experts to explore the depth of India’s intellectual traditions across various domains, including philosophy, science, technology, and the arts.The workshop sought to bridge the gap between ancient Indian knowledge and modern academic and research practices, fostering interdisciplinary learning and collaboration.",
+      },
+      {
+        heading: "A Collaborative Endeavor: Signing of the MoU",
+        description:
+          "One of the major milestones of the workshop was the signing of a Memorandum of Understanding (MoU) between IIT Bhilai, the Central Institute of Petrochemicals Engineering & Technology (CIPET), and IIT Roorkee. The MoU formalized a collaborative partnership across academic, technical, and research domains, focusing on enriching Indian Knowledge Systems through joint efforts. This partnership opens new avenues for innovation, research, and knowledge exchange between the three institutions, combining modern scientific advances with the rich intellectual traditions of India.Through this collaboration, IIT Bhilai and its partners are committed to promoting cutting-edge research that integrates traditional knowledge systems into contemporary technological practices. The MoU also paves the way for the development of new educational programs and research projects that aim to explore the intersections of modern science and ancient wisdom.",
+      },
+      {
+        heading: "Exploring the Depths of Indian Knowledge",
+        description:
+          "The workshop featured an impressive lineup of renowned experts, scholars, and academicians who shared their profound insights on Indian philosophies, sciences, technologies, and arts. The discussions revolved around the significance of Indian Knowledge Systems in today’s world and how they can be integrated into modern education and research.Key topics included the relevance of Ayurveda and ancient Indian medical systems in addressing current health challenges, the role of traditional ecological practices in promoting sustainable development, and the application of ancient mathematical and scientific principles in contemporary engineering and technology. Scholars emphasized the importance of interdisciplinary research that merges the scientific rigor of modern times with the holistic, integrative approach of Indian Knowledge Systems.The workshop deepened the understanding of India’s intellectual heritage. It encouraged participants to think about how these traditional knowledge systems could address global challenges, such as climate change, public health, and education.",
+      },
+
+      {
+        heading: "A Platform for Innovation and Knowledge Exchange",
+        description:
+          "The two-day workshop fostered a dynamic exchange of ideas and collaboration among participants. Several interactive sessions were held, encouraging scholars and experts to discuss the potential applications of traditional knowledge in modern-day research and innovation. The workshop also provided a platform for students and researchers to interact with thought leaders and comprehensively understand India’s rich intellectual traditions.This event was more than just a gathering of experts; it served as a launchpad for future research initiatives that aim to explore the untapped potential of Indian Knowledge Systems. The collaboration established through the MoU ensures that IIT Bhilai, CIPET, and IIT Roorkee will continue working together to advance this study area and contribute to India’s growing knowledge economy.",
+      },
+
+      {
+        heading: "Looking Ahead: A Commitment to Indian Knowledge Systems",
+        description:
+          "The success of the Indian Knowledge Systems Workshop underscores IIT Bhilai’s commitment to fostering interdisciplinary research and preserving India’s intellectual heritage. By bringing together leading institutions and experts, IIT Bhilai has positioned itself at the forefront of promoting and integrating ancient Indian knowledge into modern educational and research frameworks.As the MoU between IIT Bhilai, CIPET, and IIT Roorkee comes into effect, the institutions will explore joint research opportunities, knowledge exchange programs, and the creation of new educational modules that emphasize Indian Knowledge Systems. This collaborative effort is a significant step towards revitalizing traditional knowledge and ensuring its relevance in addressing contemporary challenges.The workshop on Indian Knowledge Systems marks a new chapter in IIT Bhilai’s journey toward reviving India’s intellectual heritage and leveraging it for the betterment of society. Through initiatives like this, IIT Bhilai is creating a platform for future generations to draw inspiration from the past while developing solutions for the future.This success story is not just about the knowledge shared but also about the partnerships formed and the long-lasting impact these collaborations will have on research, innovation, and education in India and beyond.",
+      },
+    ],
+    images: [
+      "assets/StaticImages/sucessstory/iks1.jpg",
+      "assets/StaticImages/sucessstory/iks2.jpg",
+      "assets/StaticImages/sucessstory/iks3.jpg",
+      "assets/StaticImages/sucessstory/iks4.jpg",
+    ],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   six
+
+  {
+    title: "Empowering Youth through Financial Literacy and FinTech",
+    path: "/EmpoweringYouth",
+    component: "EmpoweringYouth",
+    description: [
+      {
+        heading: "",
+        description:
+          "The need for financial literacy has never been greater in a rapidly evolving financial world. With this in mind, IIT Bhilai Innovation and Technology Foundation (IBITF) recently organized a three-day workshop designed to empower young minds with the knowledge and skills needed to navigate the complexities of the financial landscape through the innovative lens of financial technology (FinTech).The workshop was a significant success, aimed at equipping participants with a foundational understanding of core financial concepts like budgeting, saving, investing, and debt management. Focusing on practical, real-world applications, the event brought together financial experts, technologists, and industry professionals to create an engaging and highly interactive experience.",
+      },
+      {
+        heading: "Learning Through Technology: AI-Powered Personalization",
+        description:
+          "One of the standout features of this workshop was its innovative use of Artificial Intelligence (AI) to personalize the learning experience for each participant. Understanding that everyone has unique financial goals and needs, the workshop employed AI algorithms to tailor sessions and activities based on the participants' financial profiles. This ensured that each attendee received personalized guidance on budgeting strategies, investment plans, and debt management techniques, making the learning process more impactful and relevant.This AI-powered customization was a game-changer in helping participants understand their financial situations and set realistic, achievable financial goals. Whether they were learning how to manage student loans or planning long-term investments, the workshop catered to a wide range of financial objectives, thanks to the power of AI-driven insights.",
+      },
+      {
+        heading: "Interactive Learning with FinTech Tools",
+        description:
+          "The workshop was designed to go beyond theory, emphasizing hands-on learning through FinTech tools and applications. Participants explored various digital platforms for managing finances, including apps that help with budgeting, mobile banking, robo-advisors for investments, and AI-driven financial planning tools.Interactive sessions and gamified activities allowed participants to experiment with these FinTech tools, enabling them to make informed financial decisions in a safe, simulated environment. For instance, a virtual stock market game allowed attendees to practice investing strategies without the risk of losing real money, helping them gain confidence in their decision-making abilities.Through these activities, participants learned about traditional financial concepts and discovered how emerging FinTech solutions are transforming how people manage money. This exposure to FinTech opened their eyes to new possibilities for achieving financial independence and success in the digital era.",
+      },
+
+      {
+        heading: "Building Financial Confidence",
+        description:
+          "The core objective of the workshop was to build financial confidence among the youth. The engaging format and interactive sessions ensured that participants left the workshop with a solid understanding of making smart financial decisions. The workshop broke down complex financial concepts into easy-to-understand modules, focusing on empowering young people to take control of their financial futures.Participants learned how to create and manage a budget, effectively save and invest for the future, and handle debt responsibly. They also explored more advanced topics like cryptocurrency, peer-to-peer lending, and the potential of blockchain in transforming the financial world.",
+      },
+
+      {
+        heading: "A Path to Financial Independence",
+        description:
+          "By the end of the three-day event, participants were equipped with the theoretical knowledge and practical skills needed to manage their finances effectively. The workshop provided them with the tools and insights to set and achieve financial goals, navigate the complex world of FinTech, and harness technology to improve their financial well-being.Participants also gained valuable networking opportunities, interacting with financial professionals, FinTech innovators, and fellow attendees. These connections are expected to further explore FinTech careers and entrepreneurial ventures within the financial technology space.",
+      },
+      {
+        heading: "Looking Ahead: The Future of Financial Literacy",
+        description:
+          "The success of this workshop represents an important step toward promoting financial literacy among youth, a critical need in today’s fast-paced, technology-driven world. As FinTech continues to reshape how people interact with money, initiatives like this one will play a vital role in helping the next generation make informed, empowered financial decisions.This workshop is part of a broader effort by IIT Bhilai Innovation and Technology Foundation (IBITF) to foster financial literacy and technological fluency among young people. With plans for future workshops that will delve deeper into advanced FinTech topics and AI-driven financial planning, IBITF remains committed to ensuring that today’s youth are equipped with the knowledge, skills, and tools necessary to thrive in the digital economy.The success of this workshop underscores the importance of merging education, technology, and finance to create a financially empowered generation ready to take control of their financial futures and positively impact the global economy",
+      },
+    ],
+    images: ["assets/StaticImages/sucessstory/FinTech.jpg"],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   seven
+
+  {
+    title:
+      "Empowering Farmers through Smart Farming and FinTech Innovation in Chhattisgarh",
+    path: "/EmpoweringFarmers",
+    component: "EmpoweringFarmers",
+    description: [
+      {
+        heading: "",
+        description:
+          "In a groundbreaking initiative under the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS), the Department of Science and Technology (DST) has provided funding to IIT Bhilai to establish a Technology Innovation Hub (TIH) focused on Financial Technologies (FinTech). This initiative marks a significant milestone in integrating cutting-edge technology with financial solutions to promote inclusive growth in underserved sectors, particularly agriculture.On February 2, 2024, a transformative workshop was conducted at the Krishi Vigyan Kendra (KVK), Kondagaon, Chhattisgarh. The workshop brought together 81 participants, including scientists, farmers, and agriculture officers from the Government of Chhattisgarh, to explore the intersection of smart farming and smart finance. This event was a crucial step in integrating advanced farming techniques with innovative financial tools to empower the Scheduled Tribe (ST) farmers in the region.",
+      },
+      {
+        heading: "Objective of the Workshop: Bridging Agriculture and FinTech",
+        description:
+          "The workshop aimed to address the unique challenges faced by ST farmers in Chhattisgarh by offering innovative solutions that combine agricultural technologies with financial technologies. These solutions were designed to enhance farm productivity and improve access to financial resources for small-scale farmers. Through a series of interactive sessions and practical demonstrations, the workshop provided valuable insights into:Smart Farming Techniques: Farmers were introduced to precision farming, leveraging technology to monitor crop health, optimize irrigation, and predict yields more accurately. These techniques aim to reduce costs and improve farm productivity.Smart Finance Solutions: The workshop demonstrated how FinTech innovations, such as mobile banking, micro-finance platforms, and digital payment solutions, can provide rural farmers easier access to financial services. The goal was to empower farmers with tools to manage their finances, access credit, and invest in technology that boosts productivity.",
+      },
+      {
+        heading: "Collaboration and Knowledge Exchange",
+        description:
+          "The event also created a platform for collaboration and knowledge exchange between stakeholders from various sectors, including government agencies, agricultural scientists, and the local farming community. This interaction allowed participants to share their experiences, challenges, and best practices in leveraging technology to improve agricultural productivity.The engagement of farmers, scientists, and government officers facilitated open discussions on how to tailor technology solutions to the specific needs of farmers in Chhattisgarh, ensuring that interventions were contextually relevant and accessible to all, especially the marginalized communities.",
+      },
+
+      {
+        heading: "Fostering Inclusive Growth",
+        description:
+          "The workshop’s emphasis on integrating smart farming with financial technology provided a pathway for inclusive growth in Chhattisgarh’s agricultural sector. The workshop fostered a sense of empowerment by providing farmers with access to advanced agricultural techniques and innovative financial tools. Farmers could now see the potential for increased yield and profitability while accessing financial support for their ventures.Moreover, the event sparked discussions on how technology-driven solutions can drive sustainable agricultural practices and contribute to long-term prosperity for rural communities in the region",
+      },
+
+      {
+        heading: "A Step Towards a Technology-Driven Future",
+        description:
+          "This workshop is part of IIT Bhilai’s broader initiative to create a Technology Innovation Hub focused on FinTech within the NM-ICPS framework. Through this hub, IIT Bhilai aims to provide innovative technological solutions in financial inclusion, digital payments, blockchain, and more, contributing to the digital transformation of underserved agricultural sectors.The workshop's success highlights the importance of combining technology and finance to create lasting impact and inclusive growth in rural areas. The Krishi Vigyan Kendra in Kondagaon served as the perfect venue for the session, bringing together the right mix of knowledge, resources, and participants to make a significant difference in Chhattisgarh's agricultural and financial landscape.",
+      },
+      {
+        heading: "Looking Ahead",
+        description:
+          "As the Technology Innovation Hub (TIH) continues to grow, it will be crucial in supporting future initiatives that enhance financial literacy and agricultural technology adoption. The collaborative efforts between IIT Bhilai, KVK Kondagaon, and the Government of Chhattisgarh will lead to more such workshops to empower farmers with the tools needed to thrive in a technology-driven world.This workshop, funded by the Department of Science and Technology, is a testament to the transformative power of technology and innovation in shaping the future of agriculture and finance, especially for those who need it the most. The collaborative approach paves the way for sustainable, inclusive growth, enabling farmers to benefit from more thoughtful agricultural practices and advanced financial solutions.",
+      },
+    ],
+    images: ["assets/StaticImages/sucessstory/Farmers.png"],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   eight
+
+  {
+    title: "Empowering Agriculture with Fintech in Bastar Zone, Chhattisgarh",
+    path: "/EmpoweringAgricultureBastar",
+    component: "EmpoweringAgricultureBastar",
+    description: [
+      {
+        heading: "",
+        description:
+          'In a significant move to integrate Financial Technologies (FinTech) with agriculture, the Department of Science and Technology (DST), under its National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS), has funded IIT Bhilai to host the Technology Innovation Hub (TIH) focused on FinTech. This initiative seeks to explore innovative financial solutions that can empower sectors like agriculture, particularly in rural regions.On February 16, 2024, the Krishi Vigyan Kendra (KVK) in Dantewada, Chhattisgarh, hosted a transformative workshop titled "Empowering Agriculture with Fintech". The event was attended by 108 participants, including scientists, farmers, and agriculture officers from the Government of Chhattisgarh, all coming together to explore how financial technologies can advance the agricultural landscape in the Bastar Zone.',
+      },
+      {
+        heading: "Workshop Objective: Empowering Farmers through FinTech",
+        description:
+          "The primary objective of this workshop was to explore innovative fintech solutions that can enhance agricultural practices in Bastar Zone, an area that faces unique challenges in terms of agricultural productivity, financial inclusion, and access to technology. By combining financial technology with smart farming techniques, the workshop aimed to identify strategies for promoting sustainable farming, improving access to credit, and facilitating financial literacy among local farmers.",
+      },
+      {
+        heading: "Interactive Sessions and Practical Demonstrations",
+        description:
+          "The event featured a mix of presentations, interactive sessions, and practical demonstrations designed to engage participants and facilitate a hands-on approach to learning. These sessions covered a wide range of topics, including:FinTech Solutions for Agriculture: How digital payments, micro-financing, and blockchain-based credit systems can provide farmers with easy access to financial resources, enabling them to invest in better farming techniques, inputs, and tools.Smart Agriculture Tools: Introduction of data-driven tools and mobile-based platforms that help farmers make informed decisions regarding crop management, resource optimization, and market access.Financial Literacy for Farmers: Practical demonstrations on how farmers can use digital wallets, mobile banking, and e-KYC processes to access government subsidies, insurance, and loans more effectively.",
+      },
+
+      {
+        heading: "Collaboration and Knowledge Exchange",
+        description:
+          "One of the most significant outcomes of the workshop was the fostering of collaboration and knowledge exchange between stakeholders from various sectors, including government, agriculture, and financial institutions. By providing a platform for farmers, scientists, and policymakers to discuss the unique challenges faced by the Bastar Zone, the workshop paved the way for actionable strategies to improve agricultural productivity and financial inclusion.The workshop also identified several actionable strategies to integrate fintech with agriculture, such as promoting digital financial services among rural farmers, introducing crop insurance based on satellite data, and exploring digitally-enabled farmer cooperatives to facilitate bulk buying and selling.",
+      },
+
+      {
+        heading: "Driving Inclusive Growth",
+        description:
+          "The workshop’s emphasis on inclusive growth was evident in the discussions about the need to bridge the gap between financial technology and farmers in rural Chhattisgarh. By introducing these technologies in a region that heavily depends on agriculture, the workshop aimed to empower local farmers to manage their financial challenges, access timely credit, and optimize their agricultural practices for better yields and sustainable livelihoods.",
+      },
+      {
+        heading: "The Role of IIT Bhilai and the TIH Initiative",
+        description:
+          "The workshop at KVK Dantewada is part of IIT Bhilai’s ongoing efforts to harness financial technology for the advancement of key sectors like agriculture. The Technology Innovation Hub (TIH), funded by NM-ICPS, is a dedicated space for exploring fintech solutions in sectors like agriculture, rural development, and more. Through this hub, IIT Bhilai is actively working on collaborative solutions that combine technology with practical applications to address the needs of rural farmers.The TIH for FinTech is focused on providing innovative financial tools that help farmers, agriculture officers, and other stakeholders streamline financial management in agriculture, making it easier for them to access credit, insurance, and government schemes.",
+      },
+
+      {
+        heading: "Impact and Looking Forward",
+        description:
+          "The workshop has had a lasting impact on the participants, with many leaving the event inspired by the possibilities that fintech solutions offer for the agriculture sector. The knowledge shared during the workshop not only empowered farmers with new tools but also highlighted the importance of technology in creating sustainable financial ecosystems for agriculture.Looking ahead, IIT Bhilai, under the Technology Innovation Hub (TIH), will continue to work closely with stakeholders from the Government of Chhattisgarh, financial institutions, and local farming communities to implement the strategies discussed in the workshop. This collaborative approach will drive inclusive growth, promote sustainable agriculture, and ultimately contribute to economic prosperity in the Bastar region and beyond.The workshop was a significant step toward the digital transformation of agriculture in the region, and it is expected to lay the foundation for future initiatives that will empower farmers through the combination of financial technology and agricultural innovation.",
+      },
+    ],
+    images: ["assets/StaticImages/sucessstory/Bastar.png"],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   nine
+
+  {
+    title: "Empowering Agriculture with FinTech in Kanker, Chhattisgarh",
+    path: "/EmpoweringAgricultureKanker",
+    component: "EmpoweringAgricultureKanker",
+    description: [
+      {
+        heading: "",
+        description:
+          "Under the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS), funded by the Department of Science and Technology (DST), IIT Bhilai has been entrusted with hosting the Technology Innovation Hub (TIH) in the area of Financial Technologies (FinTech). This initiative aims to integrate FinTech with key sectors such as agriculture, particularly in rural regions, to promote sustainable development and economic empowerment.On February 16, 2024, the Krishi Vigyan Kendra (KVK) in Kanker, Chhattisgarh, conducted a transformative training program that brought together 88 participants, including scientists, farmers, and agriculture officers from the Government of Chhattisgarh. This workshop was focused on integrating agricultural science with financial technology, aiming to enhance the efficiency and productivity of farming practices in the region.",
+      },
+      {
+        heading:
+          "Training Program Objectives: Bridging Agriculture and FinTech",
+        description:
+          "The primary goal of this training program was to equip farmers and agriculture professionals with the necessary skills and knowledge to embrace modern digital tools and fintech solutions for agriculture. By introducing them to technology-driven approaches, the training aimed to address key agricultural challenges such as financial inclusion, resource management, and access to credit.",
+      },
+      {
+        heading: "Interactive Sessions and Hands-On Demonstrations",
+        description:
+          "The program offered theoretical sessions and hands-on demonstrations, enabling participants to engage deeply with the content. The sessions covered a wide range of topics such as:Digital Solutions for Agricultural Finance: Introduction to digital banking, e-wallets, and blockchain-based credit systems that could help farmers access loans, subsidies, and insurance more efficiently.Smart Farming Tools: Demonstrate data-driven tools, mobile apps, and IoT-based platforms that enable farmers to monitor crop health, optimize water usage, and increase yield through precise farming practices.Financial Literacy for Farmers: Empowering participants with the knowledge and skills to better manage their finances through mobile banking, digital wallets, and online platforms that facilitate easy transactions and quick access to government schemes.",
+      },
+
+      {
+        heading:
+          "Fostering Technological Adaptation for Sustainable Agriculture",
+        description:
+          "The training program placed a significant emphasis on the need for technology adoption in agriculture. By integrating FinTech solutions with modern farming practices, the program aimed to create sustainable development pathways for farmers in Kanker and beyond. The use of digital equipment and fintech tools is intended to drive greater efficiency, enhance financial inclusion, and create opportunities for economic empowerment within the agricultural sector.",
+      },
+
+      {
+        heading: "Impact on Farmers and Agriculture Professionals",
+        description:
+          "One of the key takeaways from the training program was the recognition of the importance of embracing technology to address the challenges faced by the agriculture sector in Chhattisgarh. The participants, including local farmers, agriculture officers, and scientists, expressed enthusiasm about integrating FinTech solutions into their daily farming activities.Farmers were particularly encouraged by the possibility of accessing financial services through digital platforms, enabling them to avail themselves of credit facilities, insurance products, and government subsidies more conveniently. This would help mitigate financial risks and improve the livelihoods of farming communities in the region.",
+      },
+      {
+        heading: "Promoting Economic Empowerment and Growth",
+        description:
+          "The program lays the foundation for sustainable agriculture in Kanker by empowering farmers with technology-driven financial solutions. The integration of FinTech is expected to boost productivity, provide better access to financial services, and improve the overall economic conditions of local farmers. The knowledge gained from this training will be instrumental in driving inclusive growth for individual farmers and the agriculture sector in Chhattisgarh.",
+      },
+
+      {
+        heading: "The Role of IIT Bhilai and the TIH Initiative",
+        description:
+          "The Technology Innovation Hub (TIH) at IIT Bhilai is at the forefront of the FinTech agricultural revolution, working to integrate technology into farmers' daily practices. Focusing on sustainable agriculture and financial technology, IIT Bhilai's TIH provides cutting-edge solutions for sectors that need modern technological interventions.Through this initiative, IIT Bhilai is actively transforming the agricultural landscape in Chhattisgarh by making fintech tools accessible to rural farmers, fostering a more digitally empowered and financially inclusive farming community.",
+      },
+      {
+        heading: "Looking Forward: A Future of Tech-Enabled Agriculture",
+        description:
+          "This training program in Kanker has set the stage for the widespread adoption of FinTech in agriculture. With the growing interest from participants and the positive response from the agricultural community, the Krishi Vigyan Kendra (KVK) and IIT Bhilai are committed to holding more such training sessions across other districts of Chhattisgarh.The next phase will focus on expanding the use of digital tools and fintech applications to empower more farmers, ensuring that the transformative potential of technology and financial inclusion continues to create sustainable livelihoods in the region.In summary, the training program at Krishi Vigyan Kendra, Kanker, is a critical step towards a digitally inclusive and economically empowered agricultural sector in Chhattisgarh, making it an exemplary model for the rest of the country.",
+      },
+    ],
+    images: ["assets/StaticImages/sucessstory/Kanker.png"],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   ten
+
+  {
+    title:
+      "SMART-ER and AI-Integrated Clinical Decision Support System (CDSS) at AIIMS Raipur",
+    path: "/SMARTERAI",
+    component: "SMARTERAI",
+    description: [
+      {
+        heading: "",
+        description:
+          "On a momentous day, IIT Bhilai and AIIMS Raipur jointly launched the SMART-ER system—an AI-assisted hybrid digital healthcare solution designed to strengthen emergency care systems in remote and resource-limited settings. The launch event marked a significant milestone in the evolution of healthcare technology, with the go-live of the ST-elevation myocardial infarction (STEMI) detection system powered by an AI-integrated Clinical Decision Support System (CDSS) at AIIMS Raipur's Emergency and Trauma department.",
+      },
+      {
+        heading: "SMART-ER: Revolutionizing Emergency Healthcare",
+        description:
+          "The SMART-ER project, spearheaded by IIT Bhilai and AIIMS Raipur through a collaboration under the IIT Bhilai Innovation and Technology Foundation (IBITF), is a transformative effort aimed at enhancing emergency healthcare systems in India. It brings Artificial Intelligence (AI) into the heart of emergency care, especially in remote areas where healthcare facilities are often limited. By leveraging the power of AI and digital tools, SMART-ER aims to provide real-time, accurate diagnostics and clinical decision-making, which is crucial in life-threatening conditions like heart attacks and other emergencies.The first of its kind, the AI-integrated Clinical Decision Support System (CDSS) is designed to diagnose STEMI (heart attack) efficiently and quickly, offering AI-based predictions that assist doctors in making critical decisions during emergency care.",
+      },
+      {
+        heading: "A Landmark Event",
+        description:
+          "The launch event, held at AIIMS Raipur, was graced by key figures from both institutions. Prof. Rajiv Prakash, Director of IIT Bhilai, and Dr. Ashok Jindal, Director of AIIMS Raipur, addressed the attendees, congratulating the team on the successful implementation of the SMART-ER solution. They expressed their satisfaction and pride in seeing this cutting-edge solution go live in under a year.Prof. Prakash acknowledged the team’s hard work and dedication to bringing this AI-assisted system to life, emphasizing the broader impact this solution will have in transforming emergency care in rural and underserved regions of India. Dr. Jindal highlighted the importance of technology in modern medicine and the potential of SMART-ER in revolutionizing patient care in emergency departments, especially where expert medical personnel are not always available",
+      },
+
+      {
+        heading: "Impact on Emergency Care Systems",
+        description:
+          "The SMART-ER system leverages AI to provide faster, more accurate diagnostics in emergency scenarios, which can be the difference between life and death. The go-live at AIIMS Raipur is a pioneering step forward in utilizing AI for real-time medical diagnostics in emergency care. This system aids doctors by providing clinical insights and predictive analysis, helping them make quick, informed decisions.The launch event demonstrated how the CDSS works in real-time, giving medical staff a powerful tool to improve patient outcomes during critical heart attacks. The successful implementation of this system will not only save lives but also bridge the gap in healthcare access in remote areas, where time and resources are often limited",
+      },
+
+      {
+        heading: "Scaling Up through Startups",
+        description:
+          "The SMART-ER solution will be scaled up to remote Primary Health Centres (PHCs), making it accessible to even more patients in rural areas. This scaling-up initiative is part of a larger strategy to collaborate with startups, who will help in extending this solution to various PHCs across India.Startups will play a key role in rolling out this system to underdeveloped and underserved regions, ensuring that emergency care becomes accessible even in the most isolated locations. The startups will be instrumental in customizing and localizing the technology for different regions, enabling the AI-powered system to work seamlessly in diverse healthcare settings.",
+      },
+      {
+        heading: "Collaboration Between IIT Bhilai and AIIMS Raipur",
+        description:
+          "The collaborative efforts between IIT Bhilai and AIIMS Raipur, facilitated by IBITF, are setting a new precedent for how academic institutions and healthcare organizations can come together to solve real-world problems. The development of SMART-ER is a testament to the power of interdisciplinary collaboration, where cutting-edge technology meets practical healthcare solutions.IIT Bhilai’s expertise in artificial intelligence and digital healthcare combined with AIIMS Raipur’s experience in clinical practice has resulted in an innovative solution that addresses one of the most critical needs in the healthcare system—timely emergency car",
+      },
+
+      {
+        heading: "The Path Ahead: A Digital Revolution in Healthcare",
+        description:
+          "As SMART-ER begins its journey towards scaling up, it has the potential to transform emergency healthcare systems across India. By combining AI with clinical expertise, this solution promises to bring life-saving diagnostics to even the most underserved areas of the country. The focus on remote areas and resource-limited settings ensures that this project has a far-reaching impact, helping countless patients receive timely care when they need it most.The go-live of this system at AIIMS Raipur marks a significant step forward in the use of AI-powered healthcare solutions. This is just the beginning, and with plans for further scaling, the future of emergency care in India looks bright.SMART-ER is set to revolutionize healthcare delivery and emergency care systems not only in Chhattisgarh but across the country, making it a pioneering project with immense potential to save lives and improve healthcare quality in rural and remote areas.",
+      },
+    ],
+    images: [
+      "assets/StaticImages/sucessstory/aiims1.png",
+      "assets/StaticImages/sucessstory/aiims2.png",
+    ],
+    category: "event",
+    subCategory: "Success Story",
+  },
+
+  //   11
+
+  {
+    title: "Empowering Agriculture: Fintech, Crop Doctor & Data Analytics",
+    path: "/EmpoweringAgricultureAnalytics",
+    component: "EmpoweringAgricultureAnalytics",
+    description: [
+      {
+        heading: "",
+        description:
+          "From March 16th to 18th, 2024, a transformative workshop was held at the College of Agriculture & Research Station Katghora, Korba, in collaboration with Indira Gandhi Krishi Vishwavidyalaya-NIC. This pioneering workshop, aimed at empowering agriculture through financial technology (FinTech), brought together a diverse group of farmers, researchers, and agricultural professionals to explore the integration of FinTech, Crop Doctor, and data analytics into agricultural practices.This event, hosted under the framework of the Technology Innovation Hub (TIH) for Financial Technologies (FinTech) at IIT Bhilai, funded by the Department of Science and Technology (DST) under the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS), aimed to demonstrate how FinTech solutions can drive efficiency, transparency, and sustainability in the agriculture sector.",
+      },
+      {
+        heading:
+          "Workshop Highlights: A Deep Dive into FinTech for Agriculture",
+        description:
+          "The workshop saw the enthusiastic participation of 32 attendees, comprising local farmers, researchers, and agriculture professionals who gathered to discuss the integration of FinTech and Crop Doctor, a mobile app designed to provide agricultural solutions. The workshop provided an opportunity for participants to gain a hands-on understanding of how data analytics and blockchain technology can revolutionize agricultural practices, making them smarter and more efficient.The event focused on addressing key challenges faced by farmers in the region, such as access to financial services, efficient crop management, and the importance of real-time data in decision-making. By introducing Crop Doctor, an innovative app developed to provide farmers with quick diagnoses and solutions for their crop-related issues, the workshop demonstrated how FinTech could be a game-changer in precision farming",
+      },
+      {
+        heading: "Key Takeaways: Empowering Farmers with Digital Tools",
+        description:
+          "Participants were introduced to the core components of blockchain technology and FinTech and how these tools can enhance transparency and efficiency in agriculture. The workshop also demonstrated how digital tools can streamline crop management, improve financial inclusion, and help farmers make data-driven decisions.One of the most significant achievements of the workshop was the recognition of Crop Doctor, which has garnered significant attention due to its ability to diagnose crop diseases and suggest timely interventions. This mobile app, which was recently awarded the Most Innovative App by the Government of Chhattisgarh, is proving to be an indispensable tool for farmers in the region.",
+      },
+
+      {
+        heading: "Awards and Accolades",
+        description:
+          "The workshop and the project were recognized with several prestigious awards, underlining the innovative nature of the solutions being presented:National e-Governance “Gold Award” 2023 for Innovative and Smart Farming Solutions awarded by the Government of India. This prestigious award highlights the transformative impact of integrating FinTech and blockchain technology into agriculture.Most Innovative App – Crop Doctor, awarded by the Government of Chhattisgarh, which acknowledges the app’s role in improving the agricultural landscape by offering real-time crop diagnostics and solutions.",
+      },
+
+      {
+        heading: "Publications and Recognition: A Nationwide Impact",
+        description:
+          "The workshop was aligned with national initiatives aimed at promoting digital agriculture. The Compendium of e-Governance Initiatives, published by the Department of Administrative Reforms and Public Grievances (DARPG), included a publication titled “Blockchain & FinTech in Agriculture – Unlocking Efficiency and Transparency”, which highlights how FinTech is transforming the agricultural landscape.",
+      },
+      {
+        heading: "Partnerships and Future Collaboration",
+        description:
+          "The success of the workshop also led to the strengthening of partnerships between key stakeholders. IIT Bhilai has partnered with IIT Roorkee for further development and implementation of the Crop Doctor solution, aiming to refine the app's capabilities and expand its reach. Additionally, the National Informatics Centre (NIC), Raipur, has been instrumental in providing the technical support required for this initiative.The workshop also focused on intellectual property protection, with an application for copyright already submitted through CGCOST (Chhattisgarh Council of Science and Technology), ensuring that the innovative solutions developed during the workshop are legally protected and recognized.",
+      },
+
+      {
+        heading: "The Road Ahead: Scaling Up and Sustainable Growth",
+        description:
+          "The integration of FinTech and Crop Doctor marks just the beginning of a larger effort to revolutionize agriculture in Chhattisgarh and beyond. With the support of the Technology Innovation Hub (TIH) under IIT Bhilai, the vision is to scale up the use of blockchain technology, FinTech, and data analytics to further enhance the financial inclusion of farmers and improve crop management efficiency.This workshop is part of a larger project funded by the Department of Science and Technology, which continues to drive innovation in agriculture through the use of digital solutions. The participants left the workshop with renewed optimism and a greater understanding of how technology can transform their farming practices and improve their livelihoods.The workshop at Korba stands as a testament to the power of collaboration between academic institutions, government bodies, and farmers, which will continue to pave the way for sustainable agriculture and financial empowerment in rural India.",
+      },
+    ],
+    images: [],
+    category: "event",
+    subCategory: "Success Story",
   },
 ];

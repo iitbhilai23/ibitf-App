@@ -53,6 +53,7 @@ export default function CountCard({ title, isActive, onClick, height, enabled = 
     return (
         <Card
             onClick={onClick}
+            elevation={3}
             className={enabled ? `countcard ${isActive ? 'active' : ''}` : ``}
             sx={{
                 p: 1,
@@ -64,8 +65,7 @@ export default function CountCard({ title, isActive, onClick, height, enabled = 
                 justifyContent:'center',
                 alignContent: 'center',
                 alignItems:"center",
-                background: backgroundColor,
-                color: textColor,
+                background: "#ffffff",
                 transition: 'background-color 0.3s, color 0.3s',
                 '&:hover': {
                     backgroundColor: !isActive && enabled ? '#FFFFFF' : hoverColor,
