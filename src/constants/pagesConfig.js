@@ -588,7 +588,6 @@ export const pagesConfig = [
     component: "KhasiLanguage",
     description: "Develop an inclusive Application Programming Interface (API) featuring the Khasi Language to bridge communication gaps between online financial service providers and rural communities.Implement digital literacy initiatives, expanding service offerings, and establishing a feedback mechanism to enhance accessibility and understanding of online financial services.Ensure long-term sustainability by adopting a comprehensive strategy that empowers the Khasi-speaking community in navigating and benefiting from the evolving digital landscape.",
     images: [
-      "assets/StaticImages/project/mithun1.jpg"
     ],
     duration: "2 years",
     category: "project",
@@ -743,12 +742,13 @@ export const pagesConfig = [
     startupName: "",
   },
   {
-    title: "A Platform For Cost-Efficient Public Health Service Delivery in Mizoram(Converted in Startup)",
+    title: "A Platform For Cost-Efficient Public Health Service Delivery in Mizoram",
     path: "/publicHealth",
     component: "PublicHealth",
     description: "Develop a mobile application with an AI/ML recommendation system, allowing users to securely manage health profiles and describe ailments in Mizo or English.Provide AI-driven recommendations for matching doctors, hospitals, and pharmacies, including details such as estimated costs, services, distance, and reviews.Enable users to search for healthcare services, book appointments, or consultations, with seamless transactions facilitated by an E-payment system.Support the Mizo language in the user interface for enhanced accessibility and share aggregated citizen health data trends with government agencies to inform health policy formulation.",
     images: [
-      "assets/StaticImages/project/publicHealth.png"
+      "assets/StaticImages/project/publicHealth.png",
+      "assets/StaticImages/project/PublicHealth2.png"
     ],
     duration: "2 years",
     category: "project",
@@ -937,7 +937,9 @@ export const pagesConfig = [
     path: "/BlockchainProtectingTribalLand",
     component: "BlockchainProtectingTribalLand",
     description: "Develop a blockchain system for scheduled tribal land records in Andhra Pradesh and Telangana.Ensure secure enrollment and verification of tribal members using blockchain technology.Store authenticated land property records securely with blockchain and IPFS.Create a user-friendly Web Portal and Mobile App for tribal members, offering timely alerts for land document verification and validation.",
-    images: ["assets/ProjectImages/pi_imagess/Dr.E Suresh.png"],
+    images: [
+    "assets/ProjectImages/pi_imagess/Dr.E Suresh.png"
+    ],
     category: "project",
     subCategory: "ST",
     piName: "Dr. E. Suresh Babu",
@@ -1085,7 +1087,7 @@ export const pagesConfig = [
     component: "TackleWaterSoil",
     description: "Understand pollutant interactions using molecular dynamics for predictive modeling.Develop precise quantification methods for real-time pollutant detection with spectroscopy.Investigate pollutant transport patterns in water systems for predicting spread.Assess and optimize water treatment methods using molecular dynamics and spectroscopy.",
     images: [
-
+      "assets/ProjectImages/pi_imagess/Dr. Hemanta.png"
     ],
     category: "project",
     subCategory: "ST",
@@ -1131,7 +1133,7 @@ export const pagesConfig = [
     component: "CommunityMedicineEmpowerment",
     description: "Assess the health status in tribal regions, propose interventions, and empower through health education.Conduct training for healthcare personnel to enhance services in tribal areas.Advise state and central governments on additional health education needs.Develop a mobile app to enhance access and quality of health services for tribal communities, with a focus on maternal health, adolescent well-being, sickle cell, and cancer awareness.",
     images: [
-
+         "assets/ProjectImages/pi_imagess/Dr.  Ramasamy.png"
     ],
     category: "project",
     subCategory: "ST",
@@ -1892,7 +1894,7 @@ export const pagesConfig = [
   },
   {
     title:
-      "Economic Optimization Platform for Public Transport System of Mizoram (Converted in Startup)",
+      "Economic Optimization Platform for Public Transport System of Mizoram ",
     path: "/TransportSystem",
     component: "TransportSystem",
     description:
