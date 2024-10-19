@@ -15,7 +15,7 @@ export const pagesConfig = [
     subCategory: "vsk",
     piName: "Dr. Santosh Biswas",
     date: "From :- 01/05/2022  -  To :- 25/04/2025 ",
-    duration:"1 Year",
+    duration: "1 Year",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
     technicalDetails: "",
@@ -27,11 +27,11 @@ export const pagesConfig = [
     title: "Collaborative learning for Early Detection of Frauds in Fintech",
     path: "/fintech",
     component: "fintech",
-    description:"The objective of this project is to develop a robust, privacy-preserving collaborative learning framework for financial fraud detection by training an intelligent machine learning model. This will involve collaborating with merchants, banks, companies, and end users to utilize real-time data while ensuring the security and privacy of all participants. Key deliverables include a collaborative learning framework, an analysis of its security and privacy measures, and an interactive dashboard that visualizes transaction summaries for effective monitoring and fraud detection.",
+    description: "The objective of this project is to develop a robust, privacy-preserving collaborative learning framework for financial fraud detection by training an intelligent machine learning model. This will involve collaborating with merchants, banks, companies, and end users to utilize real-time data while ensuring the security and privacy of all participants. Key deliverables include a collaborative learning framework, an analysis of its security and privacy measures, and an interactive dashboard that visualizes transaction summaries for effective monitoring and fraud detection.",
     images: [
-      
+
     ],
-    duration:"3 Year",
+    duration: "3 Year",
     category: "project",
     subCategory: "EIR",
     piName: "Dr. Somanath Tripathy",
@@ -43,332 +43,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "Whitenet Explorer Pvt Ltd",
   },
-  {
-    title: "Development of the Online Mithun Trading Platform for Arunachal Pradesh",
-    path: "/mithun",
-    component: "mithun",
-    description:"Develop an online marketplace for Mithun trading to broaden market access.Implement a secure registration and verification process for farmers to ensure authenticity.Provide detailed listings of Mithun, offering comprehensive information to potential buyers.Establish transparent pricing mechanisms to build trust and facilitate fair transactions.Integrate multimedia support, negotiation, bidding features, and digital payment options to enhance the overall trading experience for both buyers and sellers.",
-    images: [
-       "assets/StaticImages/project/mithun1.jpg"
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Marpe Sora",
-    date: "From :- 14/11/2023  -  To :- 13/11/2025",
-    objImg: "assets/ProjectImages/objectives/obj4.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "Arbobine Pvt. Ltd.",
-  },
-  {
-    title: "Integrating Khasi Language into Fintech Technologies through Speech Translation",
-    path: "/khasilanguage",
-    component: "KhasiLanguage",
-    description:"Develop an inclusive Application Programming Interface (API) featuring the Khasi Language to bridge communication gaps between online financial service providers and rural communities.Implement digital literacy initiatives, expanding service offerings, and establishing a feedback mechanism to enhance accessibility and understanding of online financial services.Ensure long-term sustainability by adopting a comprehensive strategy that empowers the Khasi-speaking community in navigating and benefiting from the evolving digital landscape.",
-    images: [
-       "assets/StaticImages/project/mithun1.jpg"
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Ms. Fidalizia Pyrtuh,",
-    date: "From :- 14/11/2023  -  To :- 13/11/2025",
-    objImg: "assets/ProjectImages/objectives/obj5.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "Empowering Northeastern Artisans and Farmers: A Blockchain-Powered Marketplace",
-    path: "/artisans",
-    component: "Artisans",
-    description:"Develop an e-commerce mobile application to eliminate middlemen issues by enabling direct product listings from sellers, featuring secure QR-based information and payment mechanisms.Conduct workshops and awareness programs to enhance technology awareness, training local youths for effective product listings and creating a sustainable business model within the ST community.Integrate a blockchain-based solution into the mobile application for product authentication, ensuring a trustworthy relationship between sellers and buyers while addressing issues such as fraud and product duplication.Empower artisans and farmers through workshops on packaging and product display, enhancing their market presence and competitiveness within the digital landscape.",
-    images: [
-          "assets/StaticImages/project/Blockchain.png"
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: " Dr. Phrangboklang Lyngton Thangkhiew",
-    date: "From :- 14/11/2023  -  To :- 13/11/2025",
-    objImg: "assets/ProjectImages/objectives/obj1.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "Enhancing Agriculture Practices in Mizoram Towards Sustainable Development Using Machine Learning and Deep Learning",
-    path: "/enhancing-agriculture",
-    component: "EnhancingAgriculture",
-    description:"Develop tailored ML weather models for accurate forecasts in Mizoram, aiding farmers in planning.Implement ML/DL for early pest and disease detection, reducing pesticide use and enhancing crop yield.Create a user-friendly platform for personalized farming recommendations, optimizing practices for farmers.Contribute to Mizoram's vision of sustainable agriculture, aligning with local needs and technological advancements.",
-    images: [
-      
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr.V.D.Ambeth Kumar",
-    date: "From :- 14/11/2023  -  To :- 13/11/2025",
-    objImg: "assets/ProjectImages/objectives/obj2.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "Empowering Meghalaya's Tribal Artisans and Farmers with a Secure Blockchain-Fintech Solution",
-    path: "/meghalaya",
-    component: "EmpoweringMeghalaya",
-    description:"Implement a blockchain solution for Meghalaya's indigenous products, ensuring authenticity and traceability through unique QR codes or RFID tags.Enable consumers to access product information via a mobile app, detailing the origin and production process.Develop a fintech feature for secure digital payments, fostering equitable transactions and accountability within the supply chains.Enhance market access for indigenous products by addressing authenticity and quality concerns through integrated blockchain and fintech solutions.",
-    images: [
-      "assets/StaticImages/project/Meghalaya.png"
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr Sainkupar Mn Mawiong,",
-    date: "From :- 14/11/2023  -  To :- 13/11/2025",
-    objImg: "assets/ProjectImages/objectives/obj3.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "“Traditional knowledge of medicinal plants consumed by primitive tribes of Bastar Chhattisgarh: Development of database and strategy for value addition and sustainable livelihood via Fin-tech” under the Tribal Area Sub plan (TSP)",
-    path: "/plants",
-    component: "MedicinalPlants",
-    description:"The project will help preserve the rich traditional knowledge regarding medicinal plants of the Bastar community.The user-friendly web portal will provide valuable information for the local community of Bastar and other end users to enhance their health and well-being with promotion of rational use of medicinal plants.Sustainable cultivation practices will contribute to environmental conservation and plant species preservation.Wider accessibility: The inclusion of languages like Hindi and English will ensure accessibility to a wider audience, including local community, researchers and conservationists.",
-    images: [
-      
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Nagendra Kumar Chandrawanshi",
-    date: "From :- 14/11/2023  -  To :- 13/11/2025",
-    objImg: "assets/ProjectImages/objectives/obj4.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "Design And Development of IoT Accessed Secure E-Finance Platform for Managing Severe Acute Malnutrition among Vulnerable Tribes Population in Chhattisgarh",
-    path: "/e-finance",
-    component: "E-Finance",
-    description:"Design and Development of IoT- Accessed Secure E-Finance Platform for Managing Severe Acute Malnutrition Among Vulnerable Tribes Population in Chhattisgarh.Design and develop an E-platform which will help in the management of SAM children by connecting all the Anganwadi centers located at interior/ remote places with Community Management centers.Develop a Secure payment gateway for the financial transactions of medicine and food supplies for Anganwadi centers using Blockchain Technology.To develop a system which keeps track record of the number of SAM children in Anganwadi and provide them proper nourishment and care.To develop a user-friendly interactive mobile APP interface which will act as a link between the community center, Anganwadi center and the SAM child’s caretaker. It will help in collecting the data and will guide the caretaker timely to help in keeping the track record of the child.To provide valuable assistance to the health workers by organizing training sessions /workshops to make them understand the developed application for Management of Anganwadi.  ",
-    images: [
-      
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Chandrashekar Jatoth",
-    date: "From :- 14/11/2023  -  To :- 13/11/2025",
-    objImg: "assets/ProjectImages/objectives/obj5.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "AI-Driven Financial Empowerment: FinTech for All: Improving Financial Literacy & Inclusion in the Scheduled Tribe Community and Development of an AI-Based Mobile Application",
-    path: "/financialLiteracy",
-    component:"FinancialLiteracy",
-    description:"Help beneficiaries from ST community to obtain relevant financial suggestions like basic saving options, investment portfolio for low to mid-low-income groups, micro-financing, micro-insurance, availing government promotional schemes.Connect with the trusted financial institute to associate with for microloans, investments, micro-insurance etc.Spread financial literacy on the basic banking and financial services which will be used by these target beneficiaries on a day-to-day basis.Developed in the local/regional language for ease of usage by the ST community.Understand the local requirements and integrate tailored community-based solutions.",
-    images: [
-        "assets/StaticImages/project/sunilKumar.jpg"
-    ],
-    duration:"1 year",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Sunil Kumar Kumeti",
-    date: "From :- 15/11/2023  -  To :- 11/14/2024",
-    objImg: "assets/ProjectImages/objectives/obj1.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "Development of a software platform to connect housemaids to the prospective employers",
-    path: "/softwareplatform",
-    component:"SoftwarePlatform",
-    description:"Enable detailed profiles for service providers and clients, enhancing efficient matchmaking based on skills, work history, and reviews.Offer a multilingual interface (Khasi or English) for diverse linguistic preferences of users.Implement rigorous skill verification processes for service providers, ensuring trust and qualification.Provide transparent pricing guidelines to minimize disputes and assist in determining fair rates.Incorporate a rating system, escrow payment, and dedicated customer support for enhanced trust, security, and quality assurance throughout the platform",
-    images: [
-      
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: " Dr. Davidson Pyngrope",
-    date: "From :- 15/11/2023  -  To :- 14/11/2025",
-    objImg: "assets/ProjectImages/objectives/obj2.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "A Platform For Cost-Efficient Public Health Service Delivery in Mizoram(Converted in Startup)",
-    path: "/publicHealth",
-    component:"PublicHealth",
-    description:"Develop a mobile application with an AI/ML recommendation system, allowing users to securely manage health profiles and describe ailments in Mizo or English.Provide AI-driven recommendations for matching doctors, hospitals, and pharmacies, including details such as estimated costs, services, distance, and reviews.Enable users to search for healthcare services, book appointments, or consultations, with seamless transactions facilitated by an E-payment system.Support the Mizo language in the user interface for enhanced accessibility and share aggregated citizen health data trends with government agencies to inform health policy formulation.",
-    images: [
-        "assets/StaticImages/project/publicHealth.png"
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. K Vanlalawmpuia,Dr. Lalhruaizela",
-    date: "From :- 19/12/2023  -  To :- 18/12/2025",
-    objImg: "assets/ProjectImages/objectives/obj3.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "NE-Finance: Empowering the North-East through P2P Lending",
-    path: "/nefinance",
-    component:"NE-Finance",
-    description:"Develop NE-Finance,a user-friendly P2P lending platform with advanced machine learning for precise credit assessment.Introduce financial literacy programs within the app to empower users with essential financial knowledge.ransform NE-Finance into a catalyst for economic growth, anticipating increased investments in education, healthcare, entrepreneurship, and agriculture.Ensure a holistic approach for sustainable socio-economic development, incorporating smart contracts for trust and security.",
-    images: [
-      
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Juwesh Binong",
-    date: "From :- 19/12/2023  -  To :- 18/12/2025",
-    objImg: "assets/ProjectImages/objectives/obj4.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "Model Digital Training Center for Women",
-    path: "/training",
-    component:"DigitalTraining",
-    description:"Imparting proper practical knowledge of computer system operation and hands-on training for desktop applications and tools like MS-Word, Excel, Powerpoint etc.Imparting hands-on training for Internet usage – searching, e-mailing, booking tickets etc.Imparting awareness and usage of E-commerce and Digital Marketing. Implementing mini-projects where they can advertise and sell their native products like handloom or handicrafts.Imparting financial literacy regarding banking, digital payments, UPI payment, etc.",
-    images: [
-      
-    ],
-    duration:"1 year",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Thounaojam Rupachandra Singh",
-    date: "From :- 19/12/2023  -  To :- 18/12/2024",
-    objImg: "assets/ProjectImages/objectives/obj5.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "IoT & AI Based Cost Benefit Analysis Platform for Sustainable Agriculture in Mizoram",
-    path: "/sustinableAgriculture",
-    component:"SustainableAgriculture",
-    description:"Enhance Farmer Decision-Making: Implement real-time soil monitoring to empower farmers with instant data on soil conditions, enabling informed decisions on irrigation and fertilization.Timely Threat Identification: Integrate AI alerts to swiftly notify farmers of potential threats like drought or soil acidity, enabling proactive measures and minimizing crop damage.Optimize Resource Usage: Develop a centralized AI system for data analysis, predicting crop yields and soil health deterioration, facilitating resource-efficient farming practices.Promote Sustainable Agriculture: Introduce precision irrigation, training sessions, and AI-driven crop management to encourage sustainable farming practices and ensure long-term economic stability for Mizoram's agricultural sector.",
-    images: [
-      
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. R. Chawngsangpuii",
-    date: "From :- 19/12/2023  -  To :- 18/12/2025",
-    objImg: "assets/ProjectImages/objectives/obj1.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "A Fintech Application for Cost Benefit Portfolio Suggestion Regarding Locally Available Aggregate by Quality Assessment and Modified Concrete Made of Recycled Waste and Bamboo as Partial Replacements Versus Traditional Concrete",
-    path: "/fintechApplication",
-    component:"FintechApplication",
-    description:"Enable users to assess and report construction material quality in real-time.Optimize supply chain relationships for efficient procurement of sustainable resources.Facilitate secure mobile payments for raw materials, supporting small-scale enterprises.Establish a marketplace for the sale of recycled waste and other sustainable resources, simplifying sourcing for producers.",
-    images: [
-      "assets/StaticImages/project/fintech.png"
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Ricky Lalthazuala",
-    date: "From :- 19/12/2023  -  To :- 18/12/2025",
-    objImg: "assets/ProjectImages/objectives/obj2.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  
-  {
-    title: "AI assisted end to end Fintech assistance solutions for farming system for oil seeds (mustard, sunflower, etc.) cultivation in Mizoram",
-    path: "/fintechApplication",
-    component:"FintechApplication",
-    description:"Develop fintech solutions for smart farming in Mizoram, covering land info, seed details, loans, and market data.Integrate real-time sensors for environment and field conditions in a cost-effective manner.Test prototype, calibrate sensors, and explore solar-powered charging.Establish wireless communication links for data collection, focusing on oilseed cultivation in Aizawl.",
-    images: [
-      
-    ],
-    duration:"2 years",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Chaitali Koley, Dr. Sushanta Bordoloi",
-    date: "From :- 19/12/2023  -  To :- 18/12/2025",
-    objImg: "assets/ProjectImages/objectives/obj3.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-  {
-    title: "Development of a Deep Learning Model for Diabetic Retinopathy Detection in Mizoram",
-    path: "/retinopathy",
-    component:"Retinopathy",
-    description:"Collect diabetic patient data and retinal images in Aizawl and Lunglei.Integrate existing data for comprehensive monitoring and research.Develop a specialized deep learning model for automated DR detection.Conduct workshops for healthcare professionals to enhance awareness and establish a sustainable, data-driven DR management framework in Mizoram.",
-    images: [
-      
-    ],
-    duration:"6 months",
-    category: "project",
-    subCategory: "ST",
-    piName: "Dr. Lalhmingliana",
-    date: "From :- 19/12/2023  -  To :- 18/06/2024",
-    objImg: "assets/ProjectImages/objectives/obj4.png",
-    workshop: "",
-    technicalDetails: "",
-    publications: "",
-    achievements: "",
-    startupName: "",
-  },
-
-
-
-  /*-------------------------------------------------------------------------------------------------------------------------------*/
-
   {
     title: "Smart ID Card",
     path: "/SmartCard",
@@ -859,7 +533,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           "Bhoomicam’s journey is far from over. With plans to expand its services to new regions and develop more farmer-friendly features, the startup is poised to play an even more prominent role in shaping the future of agriculture in India. The recognition and accolades from industry bodies and strategic collaborations are a testament to Bhoomicam’s innovative approach and commitment to transforming Indian agriculture.IBITF’s incubation program has been instrumental in Bhoomicam’s success, providing the startup with comprehensive support through funding, mentorship, and access to strategic alliances. This nurturing environment has helped Bhoomicam navigate challenges, innovate continuously, and scale its operations to become a leading name in the AgriTech ecosystem.",
       },
     ],
-    images: ["assets/StaticImages/sucessstory/bhoomicam1.png","assets/StaticImages/sucessstory/bhoomicam2.png"],
+    images: ["assets/StaticImages/sucessstory/bhoomicam1.png", "assets/StaticImages/sucessstory/bhoomicam2.png"],
     category: "event",
     subCategory: "Success Story",
   },
@@ -878,7 +552,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "A Vision for Sustainable Empowerment",
-        description:"At its core, Tadoba is driven by the mission to foster environmental sustainability while creating employment opportunities in rural regions of India. Tadoba’s approach promotes sustainable practices such as eco-friendly packaging, organic farming, and renewable energy solutions. The startup works closely with rural communities, providing them with the skills and resources to adopt sustainable methods, thereby enabling economic growth and environmental stewardship.The startup’s flagship product line, which includes biodegradable packaging solutions made from agricultural waste, has been a game-changer for industries looking to reduce their environmental footprint. Tadoba’s eco-friendly products have been adopted by various sectors, ranging from agriculture to retail, and have positioned the startup as a leader in the sustainability domain.",
+        description: "At its core, Tadoba is driven by the mission to foster environmental sustainability while creating employment opportunities in rural regions of India. Tadoba’s approach promotes sustainable practices such as eco-friendly packaging, organic farming, and renewable energy solutions. The startup works closely with rural communities, providing them with the skills and resources to adopt sustainable methods, thereby enabling economic growth and environmental stewardship.The startup’s flagship product line, which includes biodegradable packaging solutions made from agricultural waste, has been a game-changer for industries looking to reduce their environmental footprint. Tadoba’s eco-friendly products have been adopted by various sectors, ranging from agriculture to retail, and have positioned the startup as a leader in the sustainability domain.",
       },
       {
         heading: "Awards and Accolades",
@@ -892,7 +566,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           "Tadoba’s journey has been propelled by strategic collaborations that have enabled the startup to expand its reach and impact. One of the key milestones in its growth was signing a Memorandum of Understanding (MoU) with Campus Angels Network Pvt Ltd (CAN), a renowned entity in supporting innovative early-stage startups. This partnership has provided Tadoba with the necessary funding and helped create a robust business model that aligns with its vision of sustainable development.The MoU with CAN, facilitated through IBITF, has been a crucial step in Tadoba’s expansion strategy, enabling it to scale its operations and explore new markets. With the support of CAN, Tadoba has been able to enhance its product offerings and invest in research and development to introduce more eco-friendly solutions that cater to both urban and rural needs.",
       },
 
-      
+
     ],
     images: ["assets/StaticImages/sucessstory/Tadoba.png"],
     category: "event",
@@ -902,10 +576,10 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
 
 
 
-//   three 
+  //   three 
 
 
-{
+  {
     title: 'Recogx Pvt. Ltd. - Honored with the "Making India Employable Rising Star Award 2024"',
     path: "/Recogx",
     component: "Recogx",
@@ -917,7 +591,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "About Recogx Pvt. Ltd.",
-        description:"Recogx is a dynamic tech company specializing in artificial intelligence (AI) and machine learning to revolutionize talent acquisition and workforce development. By harnessing advanced AI algorithms, Recogx has developed a platform that helps employers and job seekers connect more effectively, ensuring the right talent matches the right opportunities. Their technology is geared toward enhancing employability, especially in underserved sectors.",
+        description: "Recogx is a dynamic tech company specializing in artificial intelligence (AI) and machine learning to revolutionize talent acquisition and workforce development. By harnessing advanced AI algorithms, Recogx has developed a platform that helps employers and job seekers connect more effectively, ensuring the right talent matches the right opportunities. Their technology is geared toward enhancing employability, especially in underserved sectors.",
       },
       {
         heading: "Path to Success",
@@ -937,7 +611,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           `With the support of IBITF and the "Making India Employable Rising Star Award 2024", Recogx is poised to scale its impact further. The startup plans to expand its services, enhance its platform, and continue driving innovation in employability solutions, ensuring India’s workforce is well-equipped for the future.Recogx’s story is a testament to the power of innovation and strategic support in creating real-world solutions that positively impact society and the economy.`,
       },
 
-      
+
     ],
     images: ["assets/StaticImages/sucessstory/Recogx1.png"],
     category: "event",
@@ -947,10 +621,10 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
 
 
 
-//   four
+  //   four
 
 
-{
+  {
     title: "Empowering Mithun Herders: A Collaborative Success Story in Arunachal Pradesh",
     path: "/EmpoweringMithun",
     component: "EmpoweringMithun",
@@ -962,7 +636,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "Engaging with the Community",
-        description:"The Mithun, a semi-domesticated bovine species indigenous to the northeastern region of India, plays a critical role in the socio-economic fabric of the local communities in Arunachal Pradesh. The interaction session, organized by IBITF, was designed to directly engage with the herders, who have relied on traditional herding methods for generations. This session created an open platform for the herders to share their experiences, challenges, and insights, making it an invaluable learning experience for the herders and the project team.Through the dialogue, the herders expressed their deep connection with their livestock and the Mithun's critical role in their daily lives and economy. However, they also highlighted various challenges, including limited access to veterinary care, concerns over disease management, and the absence of modern technologies to monitor and manage livestock efficiently.",
+        description: "The Mithun, a semi-domesticated bovine species indigenous to the northeastern region of India, plays a critical role in the socio-economic fabric of the local communities in Arunachal Pradesh. The interaction session, organized by IBITF, was designed to directly engage with the herders, who have relied on traditional herding methods for generations. This session created an open platform for the herders to share their experiences, challenges, and insights, making it an invaluable learning experience for the herders and the project team.Through the dialogue, the herders expressed their deep connection with their livestock and the Mithun's critical role in their daily lives and economy. However, they also highlighted various challenges, including limited access to veterinary care, concerns over disease management, and the absence of modern technologies to monitor and manage livestock efficiently.",
       },
       {
         heading: "Exploring Technological Solutions",
@@ -982,17 +656,17 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           "The insights gathered during the interaction session will inform the project's next steps, including the development and testing of technological solutions tailored to the needs of the Mithun herders. In collaboration with IBITF, the project team will continue to work closely with the herders, ensuring that the interventions are effective and sustainable.Through this initiative, IBITF reaffirms its dedication to driving meaningful change in rural and remote communities, ensuring that technology is a tool for empowerment and economic development. The successful session with the Mithun herders of Balisori village is just the beginning of a long-term partnership aimed at improving livelihoods while preserving cultural heritage.This project not only holds promise for the Mithun herders of Arunachal Pradesh but also sets an example of how technology can be leveraged to solve localized challenges and create sustainable, community-centered solutions.",
       },
 
-      
+
     ],
-    images: ["assets/StaticImages/sucessstory/mithun1.jpg","assets/StaticImages/sucessstory/mithun2.png","assets/StaticImages/sucessstory/mithun3.png"],
+    images: ["assets/StaticImages/sucessstory/mithun1.jpg", "assets/StaticImages/sucessstory/mithun2.png", "assets/StaticImages/sucessstory/mithun3.png"],
     category: "event",
     subCategory: "Success Story",
   },
 
 
-//   five
+  //   five
 
-{
+  {
     title: "Indian Knowledge Systems Workshop at IIT Bhilai",
     path: "/IndianKnowledge",
     component: "IndianKnowledge",
@@ -1004,7 +678,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "A Collaborative Endeavor: Signing of the MoU",
-        description:"One of the major milestones of the workshop was the signing of a Memorandum of Understanding (MoU) between IIT Bhilai, the Central Institute of Petrochemicals Engineering & Technology (CIPET), and IIT Roorkee. The MoU formalized a collaborative partnership across academic, technical, and research domains, focusing on enriching Indian Knowledge Systems through joint efforts. This partnership opens new avenues for innovation, research, and knowledge exchange between the three institutions, combining modern scientific advances with the rich intellectual traditions of India.Through this collaboration, IIT Bhilai and its partners are committed to promoting cutting-edge research that integrates traditional knowledge systems into contemporary technological practices. The MoU also paves the way for the development of new educational programs and research projects that aim to explore the intersections of modern science and ancient wisdom.",
+        description: "One of the major milestones of the workshop was the signing of a Memorandum of Understanding (MoU) between IIT Bhilai, the Central Institute of Petrochemicals Engineering & Technology (CIPET), and IIT Roorkee. The MoU formalized a collaborative partnership across academic, technical, and research domains, focusing on enriching Indian Knowledge Systems through joint efforts. This partnership opens new avenues for innovation, research, and knowledge exchange between the three institutions, combining modern scientific advances with the rich intellectual traditions of India.Through this collaboration, IIT Bhilai and its partners are committed to promoting cutting-edge research that integrates traditional knowledge systems into contemporary technological practices. The MoU also paves the way for the development of new educational programs and research projects that aim to explore the intersections of modern science and ancient wisdom.",
       },
       {
         heading: "Exploring the Depths of Indian Knowledge",
@@ -1024,20 +698,20 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           "The success of the Indian Knowledge Systems Workshop underscores IIT Bhilai’s commitment to fostering interdisciplinary research and preserving India’s intellectual heritage. By bringing together leading institutions and experts, IIT Bhilai has positioned itself at the forefront of promoting and integrating ancient Indian knowledge into modern educational and research frameworks.As the MoU between IIT Bhilai, CIPET, and IIT Roorkee comes into effect, the institutions will explore joint research opportunities, knowledge exchange programs, and the creation of new educational modules that emphasize Indian Knowledge Systems. This collaborative effort is a significant step towards revitalizing traditional knowledge and ensuring its relevance in addressing contemporary challenges.The workshop on Indian Knowledge Systems marks a new chapter in IIT Bhilai’s journey toward reviving India’s intellectual heritage and leveraging it for the betterment of society. Through initiatives like this, IIT Bhilai is creating a platform for future generations to draw inspiration from the past while developing solutions for the future.This success story is not just about the knowledge shared but also about the partnerships formed and the long-lasting impact these collaborations will have on research, innovation, and education in India and beyond.",
       },
 
-      
+
     ],
-    images: ["assets/StaticImages/sucessstory/iks1.jpg","assets/StaticImages/sucessstory/iks2.jpg","assets/StaticImages/sucessstory/iks3.jpg","assets/StaticImages/sucessstory/iks4.jpg"],
+    images: ["assets/StaticImages/sucessstory/iks1.jpg", "assets/StaticImages/sucessstory/iks2.jpg", "assets/StaticImages/sucessstory/iks3.jpg", "assets/StaticImages/sucessstory/iks4.jpg"],
     category: "event",
     subCategory: "Success Story",
   },
 
 
-//   six 
+  //   six 
 
 
 
 
-{
+  {
     title: "Empowering Youth through Financial Literacy and FinTech",
     path: "/EmpoweringYouth",
     component: "EmpoweringYouth",
@@ -1049,7 +723,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "Learning Through Technology: AI-Powered Personalization",
-        description:"One of the standout features of this workshop was its innovative use of Artificial Intelligence (AI) to personalize the learning experience for each participant. Understanding that everyone has unique financial goals and needs, the workshop employed AI algorithms to tailor sessions and activities based on the participants' financial profiles. This ensured that each attendee received personalized guidance on budgeting strategies, investment plans, and debt management techniques, making the learning process more impactful and relevant.This AI-powered customization was a game-changer in helping participants understand their financial situations and set realistic, achievable financial goals. Whether they were learning how to manage student loans or planning long-term investments, the workshop catered to a wide range of financial objectives, thanks to the power of AI-driven insights.",
+        description: "One of the standout features of this workshop was its innovative use of Artificial Intelligence (AI) to personalize the learning experience for each participant. Understanding that everyone has unique financial goals and needs, the workshop employed AI algorithms to tailor sessions and activities based on the participants' financial profiles. This ensured that each attendee received personalized guidance on budgeting strategies, investment plans, and debt management techniques, making the learning process more impactful and relevant.This AI-powered customization was a game-changer in helping participants understand their financial situations and set realistic, achievable financial goals. Whether they were learning how to manage student loans or planning long-term investments, the workshop catered to a wide range of financial objectives, thanks to the power of AI-driven insights.",
       },
       {
         heading: "Interactive Learning with FinTech Tools",
@@ -1074,7 +748,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           "The success of this workshop represents an important step toward promoting financial literacy among youth, a critical need in today’s fast-paced, technology-driven world. As FinTech continues to reshape how people interact with money, initiatives like this one will play a vital role in helping the next generation make informed, empowered financial decisions.This workshop is part of a broader effort by IIT Bhilai Innovation and Technology Foundation (IBITF) to foster financial literacy and technological fluency among young people. With plans for future workshops that will delve deeper into advanced FinTech topics and AI-driven financial planning, IBITF remains committed to ensuring that today’s youth are equipped with the knowledge, skills, and tools necessary to thrive in the digital economy.The success of this workshop underscores the importance of merging education, technology, and finance to create a financially empowered generation ready to take control of their financial futures and positively impact the global economy",
       },
 
-      
+
     ],
     images: ["assets/StaticImages/sucessstory/FinTech.jpg"],
     category: "event",
@@ -1082,9 +756,9 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
   },
 
 
-//   seven 
+  //   seven 
 
-{
+  {
     title: "Empowering Farmers through Smart Farming and FinTech Innovation in Chhattisgarh",
     path: "/EmpoweringFarmers",
     component: "EmpoweringFarmers",
@@ -1096,7 +770,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "Objective of the Workshop: Bridging Agriculture and FinTech",
-        description:"The workshop aimed to address the unique challenges faced by ST farmers in Chhattisgarh by offering innovative solutions that combine agricultural technologies with financial technologies. These solutions were designed to enhance farm productivity and improve access to financial resources for small-scale farmers. Through a series of interactive sessions and practical demonstrations, the workshop provided valuable insights into:Smart Farming Techniques: Farmers were introduced to precision farming, leveraging technology to monitor crop health, optimize irrigation, and predict yields more accurately. These techniques aim to reduce costs and improve farm productivity.Smart Finance Solutions: The workshop demonstrated how FinTech innovations, such as mobile banking, micro-finance platforms, and digital payment solutions, can provide rural farmers easier access to financial services. The goal was to empower farmers with tools to manage their finances, access credit, and invest in technology that boosts productivity.",
+        description: "The workshop aimed to address the unique challenges faced by ST farmers in Chhattisgarh by offering innovative solutions that combine agricultural technologies with financial technologies. These solutions were designed to enhance farm productivity and improve access to financial resources for small-scale farmers. Through a series of interactive sessions and practical demonstrations, the workshop provided valuable insights into:Smart Farming Techniques: Farmers were introduced to precision farming, leveraging technology to monitor crop health, optimize irrigation, and predict yields more accurately. These techniques aim to reduce costs and improve farm productivity.Smart Finance Solutions: The workshop demonstrated how FinTech innovations, such as mobile banking, micro-finance platforms, and digital payment solutions, can provide rural farmers easier access to financial services. The goal was to empower farmers with tools to manage their finances, access credit, and invest in technology that boosts productivity.",
       },
       {
         heading: "Collaboration and Knowledge Exchange",
@@ -1121,7 +795,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           "As the Technology Innovation Hub (TIH) continues to grow, it will be crucial in supporting future initiatives that enhance financial literacy and agricultural technology adoption. The collaborative efforts between IIT Bhilai, KVK Kondagaon, and the Government of Chhattisgarh will lead to more such workshops to empower farmers with the tools needed to thrive in a technology-driven world.This workshop, funded by the Department of Science and Technology, is a testament to the transformative power of technology and innovation in shaping the future of agriculture and finance, especially for those who need it the most. The collaborative approach paves the way for sustainable, inclusive growth, enabling farmers to benefit from more thoughtful agricultural practices and advanced financial solutions.",
       },
 
-      
+
     ],
     images: ["assets/StaticImages/sucessstory/Farmers.png"],
     category: "event",
@@ -1129,10 +803,10 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
   },
 
 
-//   eight
+  //   eight
 
 
-{
+  {
     title: "Empowering Agriculture with Fintech in Bastar Zone, Chhattisgarh",
     path: "/EmpoweringAgricultureBastar",
     component: "EmpoweringAgricultureBastar",
@@ -1144,7 +818,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "Workshop Objective: Empowering Farmers through FinTech",
-        description:"The primary objective of this workshop was to explore innovative fintech solutions that can enhance agricultural practices in Bastar Zone, an area that faces unique challenges in terms of agricultural productivity, financial inclusion, and access to technology. By combining financial technology with smart farming techniques, the workshop aimed to identify strategies for promoting sustainable farming, improving access to credit, and facilitating financial literacy among local farmers.",
+        description: "The primary objective of this workshop was to explore innovative fintech solutions that can enhance agricultural practices in Bastar Zone, an area that faces unique challenges in terms of agricultural productivity, financial inclusion, and access to technology. By combining financial technology with smart farming techniques, the workshop aimed to identify strategies for promoting sustainable farming, improving access to credit, and facilitating financial literacy among local farmers.",
       },
       {
         heading: "Interactive Sessions and Practical Demonstrations",
@@ -1175,7 +849,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           "The workshop has had a lasting impact on the participants, with many leaving the event inspired by the possibilities that fintech solutions offer for the agriculture sector. The knowledge shared during the workshop not only empowered farmers with new tools but also highlighted the importance of technology in creating sustainable financial ecosystems for agriculture.Looking ahead, IIT Bhilai, under the Technology Innovation Hub (TIH), will continue to work closely with stakeholders from the Government of Chhattisgarh, financial institutions, and local farming communities to implement the strategies discussed in the workshop. This collaborative approach will drive inclusive growth, promote sustainable agriculture, and ultimately contribute to economic prosperity in the Bastar region and beyond.The workshop was a significant step toward the digital transformation of agriculture in the region, and it is expected to lay the foundation for future initiatives that will empower farmers through the combination of financial technology and agricultural innovation.",
       }
 
-      
+
     ],
     images: ["assets/StaticImages/sucessstory/Bastar.png"],
     category: "event",
@@ -1184,10 +858,10 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
 
 
 
-//   nine 
+  //   nine 
 
 
-{
+  {
     title: "Empowering Agriculture with FinTech in Kanker, Chhattisgarh",
     path: "/EmpoweringAgricultureKanker",
     component: "EmpoweringAgricultureKanker",
@@ -1199,7 +873,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "Training Program Objectives: Bridging Agriculture and FinTech",
-        description:"The primary goal of this training program was to equip farmers and agriculture professionals with the necessary skills and knowledge to embrace modern digital tools and fintech solutions for agriculture. By introducing them to technology-driven approaches, the training aimed to address key agricultural challenges such as financial inclusion, resource management, and access to credit.",
+        description: "The primary goal of this training program was to equip farmers and agriculture professionals with the necessary skills and knowledge to embrace modern digital tools and fintech solutions for agriculture. By introducing them to technology-driven approaches, the training aimed to address key agricultural challenges such as financial inclusion, resource management, and access to credit.",
       },
       {
         heading: "Interactive Sessions and Hands-On Demonstrations",
@@ -1235,7 +909,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
           "This training program in Kanker has set the stage for the widespread adoption of FinTech in agriculture. With the growing interest from participants and the positive response from the agricultural community, the Krishi Vigyan Kendra (KVK) and IIT Bhilai are committed to holding more such training sessions across other districts of Chhattisgarh.The next phase will focus on expanding the use of digital tools and fintech applications to empower more farmers, ensuring that the transformative potential of technology and financial inclusion continues to create sustainable livelihoods in the region.In summary, the training program at Krishi Vigyan Kendra, Kanker, is a critical step towards a digitally inclusive and economically empowered agricultural sector in Chhattisgarh, making it an exemplary model for the rest of the country.",
       }
 
-      
+
     ],
     images: ["assets/StaticImages/sucessstory/Kanker.png"],
     category: "event",
@@ -1243,9 +917,9 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
   },
 
 
-//   ten 
+  //   ten 
 
-{
+  {
     title: "SMART-ER and AI-Integrated Clinical Decision Support System (CDSS) at AIIMS Raipur",
     path: "/SMARTERAI ",
     component: "SMARTERAI",
@@ -1257,7 +931,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "SMART-ER: Revolutionizing Emergency Healthcare",
-        description:"The SMART-ER project, spearheaded by IIT Bhilai and AIIMS Raipur through a collaboration under the IIT Bhilai Innovation and Technology Foundation (IBITF), is a transformative effort aimed at enhancing emergency healthcare systems in India. It brings Artificial Intelligence (AI) into the heart of emergency care, especially in remote areas where healthcare facilities are often limited. By leveraging the power of AI and digital tools, SMART-ER aims to provide real-time, accurate diagnostics and clinical decision-making, which is crucial in life-threatening conditions like heart attacks and other emergencies.The first of its kind, the AI-integrated Clinical Decision Support System (CDSS) is designed to diagnose STEMI (heart attack) efficiently and quickly, offering AI-based predictions that assist doctors in making critical decisions during emergency care.",
+        description: "The SMART-ER project, spearheaded by IIT Bhilai and AIIMS Raipur through a collaboration under the IIT Bhilai Innovation and Technology Foundation (IBITF), is a transformative effort aimed at enhancing emergency healthcare systems in India. It brings Artificial Intelligence (AI) into the heart of emergency care, especially in remote areas where healthcare facilities are often limited. By leveraging the power of AI and digital tools, SMART-ER aims to provide real-time, accurate diagnostics and clinical decision-making, which is crucial in life-threatening conditions like heart attacks and other emergencies.The first of its kind, the AI-integrated Clinical Decision Support System (CDSS) is designed to diagnose STEMI (heart attack) efficiently and quickly, offering AI-based predictions that assist doctors in making critical decisions during emergency care.",
       },
       {
         heading: "A Landmark Event",
@@ -1287,20 +961,20 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
         description:
           "As SMART-ER begins its journey towards scaling up, it has the potential to transform emergency healthcare systems across India. By combining AI with clinical expertise, this solution promises to bring life-saving diagnostics to even the most underserved areas of the country. The focus on remote areas and resource-limited settings ensures that this project has a far-reaching impact, helping countless patients receive timely care when they need it most.The go-live of this system at AIIMS Raipur marks a significant step forward in the use of AI-powered healthcare solutions. This is just the beginning, and with plans for further scaling, the future of emergency care in India looks bright.SMART-ER is set to revolutionize healthcare delivery and emergency care systems not only in Chhattisgarh but across the country, making it a pioneering project with immense potential to save lives and improve healthcare quality in rural and remote areas.",
       },
- 
 
-      
+
+
     ],
-    images: ["assets/StaticImages/sucessstory/aiims1.png","assets/StaticImages/sucessstory/aiims2"],
+    images: ["assets/StaticImages/sucessstory/aiims1.png", "assets/StaticImages/sucessstory/aiims2"],
     category: "event",
     subCategory: "Success Story",
   },
 
 
-//   11
+  //   11
 
 
-{
+  {
     title: "Empowering Agriculture: Fintech, Crop Doctor & Data Analytics",
     path: "/EmpoweringAgricultureAnalytics",
     component: "EmpoweringAgricultureAnalytics",
@@ -1312,7 +986,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
       },
       {
         heading: "Workshop Highlights: A Deep Dive into FinTech for Agriculture",
-        description:"The workshop saw the enthusiastic participation of 32 attendees, comprising local farmers, researchers, and agriculture professionals who gathered to discuss the integration of FinTech and Crop Doctor, a mobile app designed to provide agricultural solutions. The workshop provided an opportunity for participants to gain a hands-on understanding of how data analytics and blockchain technology can revolutionize agricultural practices, making them smarter and more efficient.The event focused on addressing key challenges faced by farmers in the region, such as access to financial services, efficient crop management, and the importance of real-time data in decision-making. By introducing Crop Doctor, an innovative app developed to provide farmers with quick diagnoses and solutions for their crop-related issues, the workshop demonstrated how FinTech could be a game-changer in precision farming",
+        description: "The workshop saw the enthusiastic participation of 32 attendees, comprising local farmers, researchers, and agriculture professionals who gathered to discuss the integration of FinTech and Crop Doctor, a mobile app designed to provide agricultural solutions. The workshop provided an opportunity for participants to gain a hands-on understanding of how data analytics and blockchain technology can revolutionize agricultural practices, making them smarter and more efficient.The event focused on addressing key challenges faced by farmers in the region, such as access to financial services, efficient crop management, and the importance of real-time data in decision-making. By introducing Crop Doctor, an innovative app developed to provide farmers with quick diagnoses and solutions for their crop-related issues, the workshop demonstrated how FinTech could be a game-changer in precision farming",
       },
       {
         heading: "Key Takeaways: Empowering Farmers with Digital Tools",
@@ -1342,13 +1016,13 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
         description:
           "The integration of FinTech and Crop Doctor marks just the beginning of a larger effort to revolutionize agriculture in Chhattisgarh and beyond. With the support of the Technology Innovation Hub (TIH) under IIT Bhilai, the vision is to scale up the use of blockchain technology, FinTech, and data analytics to further enhance the financial inclusion of farmers and improve crop management efficiency.This workshop is part of a larger project funded by the Department of Science and Technology, which continues to drive innovation in agriculture through the use of digital solutions. The participants left the workshop with renewed optimism and a greater understanding of how technology can transform their farming practices and improve their livelihoods.The workshop at Korba stands as a testament to the power of collaboration between academic institutions, government bodies, and farmers, which will continue to pave the way for sustainable agriculture and financial empowerment in rural India.",
       },
- 
 
-      
+
+
     ],
     images: [],
     category: "event",
     subCategory: "Success Story",
   },
-  ];
-  
+];
+
