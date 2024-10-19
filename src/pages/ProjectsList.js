@@ -15,6 +15,7 @@ const ProjectsList = () => {
   const [selectedSubCategory, setSelectedSubCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState(''); // State for search term
 
+  
   useEffect(() => {
     // Update URL query params when the active tab changes
     const params = new URLSearchParams();
