@@ -1,9 +1,6 @@
 
-
-
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -12,11 +9,12 @@ import Services from './pages/Services';
 import Career from './pages/Career';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
-import ProjectsList from './pages/ProjectsList';
-import { pagesConfig } from './constants/pagesConfig';
+import ProjectsList from './pages/ProjectsList'; 
+import ProjectTemplate from './pages/ProjectTemplate'; 
+import { pagesConfig } from './constants/pagesConfig'; 
 import './components/Navbar.css';
-const ProjectTemplate = lazy(() => import('./pages/ProjectTemplate'))
-// const ProjectsList = lazy(() => import('./pages/ProjectsList'))
+import AboutIBITF from './pages/AboutIBITF';
+import OrgStructure from './pages/OrgStructure';
 
 const App = () => {
   return (
@@ -25,11 +23,14 @@ const App = () => {
       <Routes>
         {/* Static Routes */}
         <Route path="/*" element={<Home />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/Projects-list" element={<ProjectsList />} />
-        {/* <Route path="/career" element={<Career />} /> */}
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/about us" element={<About />} /> */}
+        <Route path="/about-ibitf" element={<AboutIBITF />} />Organizational Structure
+        <Route path="/organizational-structure" element={<OrgStructure />} />
+
+        <Route path="/services" element={<Services />} /> 
+        <Route path="/Projects" element={<ProjectsList />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/contact-us" element={<Contact />} />
         <Route path="/team" element={<Team />} />
 
         {/* Dynamic Routes for each page based on pagesConfig */}
@@ -38,7 +39,7 @@ const App = () => {
             key={index}
             path={path}
             element={
-              <Suspense fallback={<div>Component is Loading...</div>}>
+              <Suspense fallback={<div>Loading...</div>}>
                 <ProjectTemplate />
               </Suspense>
             }
