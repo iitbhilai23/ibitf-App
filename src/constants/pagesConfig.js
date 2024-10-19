@@ -489,7 +489,7 @@ export const pagesConfig = [
     component: "BhoomiCam",
     description: "• To develop bilingual Android application platform to provide agri-drone spray services to farmers. /n • To develop web and android platform to provide geo-enabled solutions based on AI and satellite data to generate crop insurance advisories to addressing problems associated farmer bank/insurance relationships. ",
     images: [
-
+      "assets/ProjectImages/pi_imagess/26.jpg",
     ],
     duration: "2 Year",
     category: "project",
