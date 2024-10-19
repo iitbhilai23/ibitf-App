@@ -144,24 +144,30 @@ export const siteContent = {
     text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
   },
   home: {
-    heroTitle: 'Innovating the Future with Technology',
-    heroSubtitle: 'Empowering Solutions for Tomorrow',
+    heroTitle: 'Welcome to TIH at IIT Bhilai',
+    heroSubtitle: `The Technology Innovation Hub (TIH) at IIT Bhilai is one of the 25 hubs setup under the National Mission of Interdisciplinary Cyber-Physical Systems (NM-ICPS) program of the Department of Science and Technology`,
+    heroSubtitle1: `The TIH at IIT Bhilai is the nodal centre for spearheading Entrepreneurship, Research and Development, HRD and Skill development and collaboration related activities in the area of Financial Technologies`,
+
+
+    heroTitle1: 'IBITF: Section 8 company for TIH at IIT Bhilai',
+    heroSubtitle2: `IIT BHILAI INNOVATION AND TECHNOLOGY FOUNDATION (IBITF) is a Section 8 company responsible for executing the activities of TIH.`,
+    heroSubtitle3: `Rs 55 crore is sanctioned by DST for the period of five years to the company which will focus on projects in arena of Financial Technologies`,
     cards: [
       {
         title: 'Cloud Solutions',
         description: 'Scalable cloud services for your business.',
         // image: 'assets/service1.jpg',
-        // image: require('../assets/CloudServer.png'),
+        image: require('../assets/Cloud1.jpg'),
       },
       {
         title: 'AI-Driven Analytics',
         description: 'Harness the power of AI for insights.',
-        image: 'assets/service2.jpg',
+        image: require('../assets/AI.jpg'),
       },
       {
         title: 'Cybersecurity',
         description: 'Protect your business with top security solutions.',
-        image: 'assets/service3.jpg',
+        image: require('../assets/Cloud1.jpg'),
       },
     
     ],
