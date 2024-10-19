@@ -938,7 +938,7 @@ export const pagesConfig = [
     component: "BlockchainProtectingTribalLand",
     description: "Develop a blockchain system for scheduled tribal land records in Andhra Pradesh and Telangana.Ensure secure enrollment and verification of tribal members using blockchain technology.Store authenticated land property records securely with blockchain and IPFS.Create a user-friendly Web Portal and Mobile App for tribal members, offering timely alerts for land document verification and validation.",
     images: [
-
+    "assets/ProjectImages/pi_imagess/Dr.E Suresh.png"
     ],
     category: "project",
     subCategory: "ST",
@@ -1087,7 +1087,7 @@ export const pagesConfig = [
     component: "TackleWaterSoil",
     description: "Understand pollutant interactions using molecular dynamics for predictive modeling.Develop precise quantification methods for real-time pollutant detection with spectroscopy.Investigate pollutant transport patterns in water systems for predicting spread.Assess and optimize water treatment methods using molecular dynamics and spectroscopy.",
     images: [
-
+      "assets/ProjectImages/pi_imagess/Dr. Hemanta.png"
     ],
     category: "project",
     subCategory: "ST",
@@ -1133,7 +1133,7 @@ export const pagesConfig = [
     component: "CommunityMedicineEmpowerment",
     description: "Assess the health status in tribal regions, propose interventions, and empower through health education.Conduct training for healthcare personnel to enhance services in tribal areas.Advise state and central governments on additional health education needs.Develop a mobile app to enhance access and quality of health services for tribal communities, with a focus on maternal health, adolescent well-being, sickle cell, and cancer awareness.",
     images: [
-
+         "assets/ProjectImages/pi_imagess/Dr.  Ramasamy.png"
     ],
     category: "project",
     subCategory: "ST",
