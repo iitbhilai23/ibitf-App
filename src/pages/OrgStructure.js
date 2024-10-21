@@ -57,23 +57,21 @@ function OrgStructure() {
         </div>
       </div>
 
-      {/* TIH Office Administration */}
-      <h2 className="section-title">TIH Office Administration</h2>
-      <div className="section tih-office">
-        <div className="row-layout">
-          {governanceStructure.sections[4].subSections.map((subSection, subIndex) => (
-            <div key={subIndex} className="office-staff">
-              <h3 className="sub-section-title">{subSection.category}</h3>
-              <div className="staff-members">
-                {subSection.members.map((member, memberIndex) => (
-                  <div key={memberIndex} className="box">
-                    {member}
-                  </div>
-                ))}
-              </div>
+    {/* TIH Office Administration */}
+    <h2 className="section-title">TIH Office Administration</h2>
+      <div className="tih-admin-layout">
+        {governanceStructure.sections[4].subSections.map((subSection, subIndex) => (
+          <div key={subIndex} className="sub-section">
+            <h3 className="sub-section-title">{subSection.category}</h3>
+            <div className="staff-container">
+              {subSection.members.map((member, memberIndex) => (
+                <div key={memberIndex} className="staff-box">
+                  {member}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
