@@ -2,7 +2,7 @@
 export const siteContent = {
   navbar: {
     // logo: 'assets/iit.png',ti
-    logo: require('../assets/iit.png'),
+    logo: require('../assets/iit@.png'),
     menuItems: ['Home',
       {
         label:'About Us',

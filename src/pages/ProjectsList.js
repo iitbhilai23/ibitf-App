@@ -47,14 +47,58 @@ const ProjectsList = () => {
     .filter(({ category }) => category === activeTab)
     .map(({ subCategory }) => subCategory))];
 
+
+  const subCategoryDetails = {
+    PRAYAS: {
+      title: 'Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS)',
+      description: 'At an early stage, a gap exists for young entrepreneurs to build a working prototype from their ideas before progressing to the next level. There are many challenges that are faced by entrepreneurs in preparing the first working prototype. PRAYAS would be filling this gap by providing funding and guidance at this stage to help entrepreneurs and allow a large number of potential ideas into incubation programs. Specifically, PRAYAS aims at the following.',
+      bulletPoints: [
+        'Enable translation of ideas into prototypes',
+        'Attract a large number of youth with innovative ideas for different types of problems.',
+        'Provide a platform for faster experimentation and modify approach from idea to prototype.',
+        'Provide a platform to test ideas.'
+      ],
+    },
+    EIR: {
+      title: 'Entrepreneur in Residence (EIR)',
+      description: 'The EIR program is envisaged to inspire best talents among PG and PhD graduates and provide ample support to minimize risk in pursuing start-ups. The program would provide enormous opportunity for innovative entrepreneurs to expand network and get critical feedback to promote their entrepreneurial goals and aspirations.',
+      bulletPoints: [
+        'Encourage students to take up entrepreneurship by providing fellowship',
+        'Provide prestigious forum for deserving entrepreneurs to pursue their ideas without additional risks',
+        'To make entrepreneurship related to financial technology an attractive option among available career options.',
+        'Enable creation of new start-ups and allow them to make significant progress towards raising funding and investment.'
+      ],
+    },
+    TBI: {
+      title: 'Technology Business Incubators (TBI)',
+      description: 'The Technology Business Incubator will be primarily established with some academic, technical or management institution to bring in the innovations and technologies for venture creation by utilizing expertise and infrastructure already available with the host institution. The TBI initiative of the TIH will protect the institute to be funded, from the high risk involved in high growth ventures, to enhance the prospects of their success. The basic objectives of TBI involve,',
+      bulletPoints: [
+        'Job creation, prototype and product design, businesses etc. aligned with national priorities.',
+        'To facilitate start-ups with cutting edge research mentorship, lab facility etc.',
+        'To provide a platform for speedy commercialization of technologies developed by the host institution or the stakeholders associated with the institute.',
+        'To build a vibrant network of start-up ecosystems facilitating mentorship, technical and R&D related suggestions, financial support etc., by establishing a network between academia and industries, mainly involving the collaborators of the IBITF.'
+      ],
+    },
+    TSP: {
+      title: 'Tribal Area Sub Plan (TSP)',
+      description: 'The primary objective of the Tribal Area Sub-Plan (TSP) is to significantly enhance the livelihoods of Scheduled Tribe (ST) communities by integrating advanced financial technologies. This initiative aims to address the specific challenges faced by these communities through the strategic deployment of cutting-edge technologies such as Artificial Intelligence/Machine Learning (AI/ML), Internet of Things (IoT), Blockchain, and E-Payments. ',
+    },
+    TD: {
+      title: 'Technology Development (TD)',
+      description: 'Our Technology Development projects focus on fostering cutting-edge solutions that shape the future of industries and society. We aim to push the boundaries of what is possible by creating efficient, scalable, and impactful technological innovations that meet the needs of modern challenges',
+    },
+  };
+
   return (
     <Box sx={styles.container}>
-      {/* Page Title */}
 
       <Card elevation={2} sx={{ padding: "20px", borderRadius: "10px" }}>
         <Typography variant="h4" sx={styles.title}>
-          Explore Projects, Workshops, and Events
+          {activeTab === 'project'
+            ? 'Dive into a World of Innovative and Impactful Projects'
+            : 'Immerse Yourself in Events, Workshops, and Inspiring Success Stories'}
         </Typography>
+
         <div style={styles.divider}></div>
 
         {/* Tabs for Categories */}
@@ -103,6 +147,27 @@ const ProjectsList = () => {
             </Box>
           )}
         </Box>
+
+        {selectedSubCategory && subCategoryDetails[selectedSubCategory] && (
+          <Paper elevation={3} sx={styles.fullWidthCard}>
+            <Typography variant="h6" sx={styles.fullWidthCardTitle}>
+              {subCategoryDetails[selectedSubCategory]?.title}
+            </Typography>
+            <Typography variant="body1" sx={styles.fullWidthCardText}>
+              {subCategoryDetails[selectedSubCategory]?.description}
+            </Typography>
+            {/* Display bullet points if they exist */}
+            {subCategoryDetails[selectedSubCategory]?.bulletPoints && (
+              <ul style={styles.bulletPointsList}>
+                {subCategoryDetails[selectedSubCategory]?.bulletPoints.map((point, index) => (
+                  <li key={index} style={styles.bulletPoint}>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Paper>
+        )}
 
         {/* Search Panel */}
         <Box sx={styles.searchContainer}>
@@ -177,6 +242,7 @@ const styles = {
     backgroundColor: '#fff',
     borderRadius: '8px',
     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+    marginRight: '20px',
   },
   searchContainer: {
     display: 'flex',
@@ -220,7 +286,30 @@ const styles = {
     height: "50vh",
     overflowY: "auto"
 
-  }
+  },
+  fullWidthCard: {
+    padding: '30px',
+    backgroundColor: '#f5f5f5',
+    borderRadius: '8px',
+    margin: "0 20px",
+
+  },
+  fullWidthCardTitle: {
+    fontWeight: 'bold',
+    marginBottom: '10px',
+  },
+  fullWidthCardText: {
+    color: '#555',
+  },
+  bulletPointsList: {
+    listStyleType: 'disc',
+    paddingLeft: '20px',
+    marginTop: '10px',
+  },
+  bulletPoint: {
+    color: '#555',
+    marginBottom: '5px',
+  },
 };
 
 export default ProjectsList;
