@@ -9,7 +9,7 @@ const ProjectTemplate = () => {
     (page) => page.path === location.pathname
   );
 
-  console.log(currentPage.category);
+
 
   if (!currentPage) {
     return <div style={styles.notFound}>Page not found</div>;
@@ -220,7 +220,7 @@ const styles = {
   },
   title: {
     fontWeight: 600,
-    fontSize: "45px",
+    fontSize: "25px",
     color: "#374557",
   },
   divider: {
