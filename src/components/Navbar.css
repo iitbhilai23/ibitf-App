@@ -6,7 +6,9 @@
   padding: 4px 20px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  position: relative;
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

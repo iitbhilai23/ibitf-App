@@ -1,35 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { siteContent } from '../constants/content';
-import { Link, useLocation } from 'react-router-dom'; // Import useLocation
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css'; 
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState(null);
+  const [isSticky, setIsSticky] = useState(false);
+   // State to track if navbar is sticky
 
   const { logo, menuItems } = siteContent.navbar;
-
-  const location = useLocation(); // Get current location (route)
+  const location = useLocation();
 
   const toggleSubmenu = (index) => {
     setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
   };
 
-  // Function to generate paths for menu items
   const generatePath = (item) => {
     if (item.toLowerCase() === 'contact us') {
-      return '/contact-us'; // Explicit path for "Contact Us"
+      return '/contact-us';
     }
     return `/${item.toLowerCase().replace(/\s+/g, '-')}`;
   };
 
   // Close submenu whenever the route changes
-  React.useEffect(() => {
-    setOpenSubmenuIndex(null); // Close any open submenu when route changes
+  useEffect(() => {
+    setOpenSubmenuIndex(null);
   }, [location]);
 
+  // Function to handle sticky navbar on scroll
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  // Add scroll event listener
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
       <img src={logo} alt="Company Logo" className="logo" />
 
       <div className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
@@ -41,8 +58,8 @@ const Navbar = () => {
           typeof item === 'string' ? (
             <li key={index}>
               <Link
-                to={generatePath(item)}  // Use the generatePath function to get the correct route
-                onClick={() => setIsMobile(false)} // Close mobile menu after click
+                to={generatePath(item)}
+                onClick={() => setIsMobile(false)}
               >
                 {item}
               </Link>
@@ -64,8 +81,8 @@ const Navbar = () => {
                       <Link
                         to={`/${submenuItem.toLowerCase().replace(/\s+/g, '-')}`}
                         onClick={() => {
-                          setIsMobile(false); // Close mobile menu after click
-                          setOpenSubmenuIndex(null); // Close submenu after clicking
+                          setIsMobile(false);
+                          setOpenSubmenuIndex(null);
                         }}
                       >
                         {submenuItem}

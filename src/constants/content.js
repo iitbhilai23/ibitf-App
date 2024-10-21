@@ -5,17 +5,14 @@ export const siteContent = {
     logo: require('../assets/iit@.png'),
     menuItems: ['Home',
       {
-        label:'About Us',
+        label: 'About Us',
         submenu: ['About IBITF', 'Organizational Structure'],
       },
-      
-      
-      
       {
         label: 'Programs & Initiatives',
         submenu: ['Thematic Areas', 'Schemes', 'Call for Proposals', 'Blogs'],
       },
-      'Projects','Team','Career','Contact Us'],
+      'Projects', 'Team', 'Career', 'Contact Us'],
   },
 
 
@@ -139,7 +136,7 @@ export const siteContent = {
       },
     ],
   },
-  
+
   footer: {
     text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
   },
@@ -169,7 +166,7 @@ export const siteContent = {
         description: 'Protect your business with top security solutions.',
         image: require('../assets/Cloud1.jpg'),
       },
-    
+
     ],
   },
   about: {
@@ -201,140 +198,140 @@ export const siteContent = {
 
 
 
-board_team:{
-  title:'Board of Directors of the IBITF',
-  members: [
-    {
-      name: 'Prof. Rajiv Prakash',
+  board_team: {
+    title: 'Board of Directors of the IBITF',
+    members: [
+      {
+        name: 'Prof. Rajiv Prakash',
         designation: 'Director IIT Bhilai & Chariman',
         image: require('../assets/director.png'),
-    },
-    {
-      name: 'Dr. Rajeev Shorey',
+      },
+      {
+        name: 'Dr. Rajeev Shorey',
         designation: 'Chief Executive Officer & University of Queensland - IIT Delhi Academy of Research (UQIDAR)',
         image: require('../assets/RajeevShoury.jpg'),
-    },
-    {
-      name: 'Prof. Sumeet Gupta',
+      },
+      {
+        name: 'Prof. Sumeet Gupta',
         designation: 'Professor, IIM Raipur',
         image: require('../assets/SumitGupta.jpg'),
-    },
-    {
-      name: 'Prof. Santosh Biswas',
-      designation: 'Dean of R&D, Project Director (IBITF)',
-      image: require('../assets/santosh.jpeg'),
-    },
-    {
-      name: 'Dr. Souradyuti Paul',
-      designation: 'Associate professor,  Dept. of EECS IIT Bhilai',
-      image: require('../assets/PaulSir.jpeg'),
-    },
-    {
-      name: 'Dr. Barun Gorain',
-      designation: 'Assistant Professor,  Dept. of EECS IIT Bhilai',
-      image: require('../assets/Barun.jpg'),
-    },
-    {
-      name: 'Mr. Gautam Ramani',
-      designation: 'Deputy Registrar (F and A), IIT Bhilai',
-      image: require('../assets/Gautam.jpg'),
-    },
-    {
-      name: 'Mr. S Mukopadhyay',
-      designation: 'ED (Projects), Bhilai Steel Plant(BSP), Sail',
-      image: require('../assets/Mukopadhyay.jpeg'),
-    },
-    {
-      name: 'Padma Shri Phoolbasan Bai Yadav',
-      designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
-      image: require('../assets/Poolbusan.png'),
-    }
-    ,
-    {
-      name: 'Shri. Manish Gupta',
-      designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
-      image: require('../assets/ManishGupta.jpeg'),
-    }
-    ,
-    {
-      name: 'Shri. Naresh Kumar',
-      designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
-      image: require('../assets/NareshKumar.jpeg'),
-    }
-    ,
-    {
-      name: 'Shri. Somesh Sharma',
-      designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
-      image: require('../assets/SomeshSharma.jpeg'),
-    }
+      },
+      {
+        name: 'Prof. Santosh Biswas',
+        designation: 'Dean of R&D, Project Director (IBITF)',
+        image: require('../assets/santosh.jpeg'),
+      },
+      {
+        name: 'Dr. Souradyuti Paul',
+        designation: 'Associate professor,  Dept. of EECS IIT Bhilai',
+        image: require('../assets/PaulSir.jpeg'),
+      },
+      {
+        name: 'Dr. Barun Gorain',
+        designation: 'Assistant Professor,  Dept. of EECS IIT Bhilai',
+        image: require('../assets/Barun.jpg'),
+      },
+      {
+        name: 'Mr. Gautam Ramani',
+        designation: 'Deputy Registrar (F and A), IIT Bhilai',
+        image: require('../assets/Gautam.jpg'),
+      },
+      {
+        name: 'Mr. S Mukopadhyay',
+        designation: 'ED (Projects), Bhilai Steel Plant(BSP), Sail',
+        image: require('../assets/Mukopadhyay.jpeg'),
+      },
+      {
+        name: 'Padma Shri Phoolbasan Bai Yadav',
+        designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
+        image: require('../assets/Poolbusan.png'),
+      }
+      ,
+      {
+        name: 'Shri. Manish Gupta',
+        designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
+        image: require('../assets/ManishGupta.jpeg'),
+      }
+      ,
+      {
+        name: 'Shri. Naresh Kumar',
+        designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
+        image: require('../assets/NareshKumar.jpeg'),
+      }
+      ,
+      {
+        name: 'Shri. Somesh Sharma',
+        designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
+        image: require('../assets/SomeshSharma.jpeg'),
+      }
 
-  ]
-},
-governing_team:{
-  title:'Hub Governing Body (HGB)',
-  members: [
-    
-    {
-      name: 'Prof. Rajiv Prakash',
+    ]
+  },
+  governing_team: {
+    title: 'Hub Governing Body (HGB)',
+    members: [
+
+      {
+        name: 'Prof. Rajiv Prakash',
         designation: 'Director IIT Bhilai & Chariman',
         image: require('../assets/director.png'),
-    },
-    {
-      name: 'Prof. D. Janakiram',
-      designation: 'Academic Representative, Member',
-      image: require('../assets/jankiram.jpg'),
-    },
-    {
-      name: 'Prof. G. Sivakumar',
-      designation: 'Academic Representative, Member',
-      image: require('../assets/shivkumar.jpg'),
-    },
-    {
-      name: 'Mr. Rama Iyer',
-      designation: 'Industry Representative, Member',
-      image: require('../assets/ramalyer.jpg'),
-    },
-    {
-      name: 'Mr. J A Chowdary',
-      designation: 'Industry Representative, Member',
-      image: require('../assets/JAChoudary.jpg'),
-    },
-    {
-      name: 'Dr. Ekta Kapoor',
-      designation: 'Mission Director of NM-ICPS & DST, Member',
-      image: require('../assets/Ekta.jpg'),
-    },
-    {
-      name: 'Mr. Prashant Mathur',
-      designation: 'Chief Executive Officer, IBITF',
-      image: require('../assets/ceo.jpeg'),
-    },
-    {
-      name: 'Padma Shri Phoolbasan Bai Yadav',
-      designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
-      image: require('../assets/Poolbusan.png'),
-    }
-    ,
-    {
-      name: 'Shri. Manish Gupta',
-      designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
-      image: require('../assets/ManishGupta.jpeg'),
-    }
-    ,
-    {
-      name: 'Shri. Naresh Kumar',
-      designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
-      image: require('../assets/NareshKumar.jpeg'),
-    }
-    ,
-    {
-      name: 'Shri. Somesh Sharma',
-      designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
-      image: require('../assets/SomeshSharma.jpeg'),
-    }
+      },
+      {
+        name: 'Prof. D. Janakiram',
+        designation: 'Academic Representative, Member',
+        image: require('../assets/jankiram.jpg'),
+      },
+      {
+        name: 'Prof. G. Sivakumar',
+        designation: 'Academic Representative, Member',
+        image: require('../assets/shivkumar.jpg'),
+      },
+      {
+        name: 'Mr. Rama Iyer',
+        designation: 'Industry Representative, Member',
+        image: require('../assets/ramalyer.jpg'),
+      },
+      {
+        name: 'Mr. J A Chowdary',
+        designation: 'Industry Representative, Member',
+        image: require('../assets/JAChoudary.jpg'),
+      },
+      {
+        name: 'Dr. Ekta Kapoor',
+        designation: 'Mission Director of NM-ICPS & DST, Member',
+        image: require('../assets/Ekta.jpg'),
+      },
+      {
+        name: 'Mr. Prashant Mathur',
+        designation: 'Chief Executive Officer, IBITF',
+        image: require('../assets/ceo.jpeg'),
+      },
+      {
+        name: 'Padma Shri Phoolbasan Bai Yadav',
+        designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
+        image: require('../assets/Poolbusan.png'),
+      }
+      ,
+      {
+        name: 'Shri. Manish Gupta',
+        designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
+        image: require('../assets/ManishGupta.jpeg'),
+      }
+      ,
+      {
+        name: 'Shri. Naresh Kumar',
+        designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
+        image: require('../assets/NareshKumar.jpeg'),
+      }
+      ,
+      {
+        name: 'Shri. Somesh Sharma',
+        designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
+        image: require('../assets/SomeshSharma.jpeg'),
+      }
 
-  ]
-},
+    ]
+  },
   team: {
     title: 'Meet Our Team',
     members: [
@@ -357,7 +354,7 @@ governing_team:{
         name: 'Mrs. Pratibha Dongre',
         designation: 'Project Associate, IBITF',
         image: require('../assets/pratibha.jpg'),
-      },{
+      }, {
         name: 'Mrs. Preeti Tiwari',
         designation: 'Project Associate, IBITF',
         image: require('../assets/preeti.png'),
