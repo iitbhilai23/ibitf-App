@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 4px 20px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   position: relative;
@@ -11,9 +11,9 @@
 }
 
 .logo {
-  width: 280px;
-  height: 70px;
-  border-radius: 8px;
+  width: 300px;
+  height: 62px;
+  border-radius: 5px;
 }
 
 .menu {
@@ -46,9 +46,8 @@
 .mega-menu {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%); /* Centering the submenu */
+  top: 100%; /* Position the submenu directly below the parent */
+  left: 0; /* Align with the parent item */
   background-color: var(--primary-color);
   padding: 10px;
   list-style: none;
@@ -58,34 +57,42 @@
 
 .has-submenu.open .mega-menu {
   display: block;
+  width: max-content;
+}
+.has-submenu.open .mega-menu ul{
+  width: 100%;
+  display: contents;
 }
 
 .mega-menu li {
-  padding: 8px 0;
+  padding: 8px 15px;
   text-align: left;
 }
 
 .mega-menu li a {
   color: var(--secondary-color);
   text-decoration: none;
-  font-size: 1.2rem; /* Ensure font size is the same as main menu */
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px 12px;
+  transition: background-color 0.3s ease;
 }
 
 /* Improved hover effect */
 .mega-menu li a:hover {
   color: #fff;
   background-color: var(--secondary-color);
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   border-radius: 4px;
 }
 
+/* Menu item spacing */
 .menu li a,
 .menu li span {
-  font-size: 1.2rem; /* Use the same size for all menu items and submenu labels */
+  font-size: 1.2rem;
   color: var(--secondary-color);
   text-decoration: none;
   display: block;
-
 }
 
 /* Mobile-specific styling */
@@ -96,6 +103,7 @@
   cursor: pointer;
 }
 
+/* Mobile menu styling */
 .menu.active {
   display: flex;
   flex-direction: column;
@@ -133,9 +141,6 @@
   padding: 8px 0;
   text-align: center;
 }
-
-
-
 
 /* Toggle menu icon display for mobile */
 @media (max-width: 768px) {

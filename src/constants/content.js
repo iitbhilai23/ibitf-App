@@ -2,37 +2,172 @@
 export const siteContent = {
   navbar: {
     // logo: 'assets/iit.png',ti
-    logo: require('../assets/iit.png'),
-    menuItems: ['Home', 'About-Us',
+    logo: require('../assets/iit@.png'),
+    menuItems: ['Home',
+      {
+        label:'About Us',
+        submenu: ['About IBITF', 'Organizational Structure'],
+      },
+      
+      
       
       {
-        label: 'Services',
-        submenu: ['Web Development', 'App Development', 'SEO', 'Consulting'],
+        label: 'Programs & Initiatives',
+        submenu: ['Thematic Areas', 'Schemes', 'Call for Proposals', 'Blogs'],
       },
-      'Team','Projects-list','Contact'],
+      'Projects','Team','Career','Contact Us'],
   },
+
+
+  aboutPage: {   // This is the section for the About IBITF content
+    title: 'IIT Bhilai Innovation and Technology Foundation (IBITF)',
+    description: 'Department of Science and Technology, under its National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) has funded IIT Bhilai to host the Technology Innovation Hub (TIH) for Financial Technologies (FINTECH) area. The TIH at IIT Bhilai is one of the 25 hubs setup under the NM-ICPS program. IIT BHILAI INNOVATION AND TECHNOLOGY FOUNDATION (IBITF), a Section 8 Company, has been established by IIT Bhilai to host this TIH. IBITF is the nodal centre for spearheading Entrepreneurship, Research and Development, HRD and Skill development and Collaboration related activities in the area of Financial Technologies. 55 crore INR has been sanctioned by for this initiative by DST for the period of five years.',
+    nodalCenter: {
+      title: 'IBITF: Nodal Center for Financial Technologies',
+      description: `Financial technologies have emerged as one of the most thriving sectors in terms of business growth, adoption among the customers, 
+      employment generation etc. As per the reports of KPMG India and NASSCOM, 
+      in the global parlance, 
+      India has emerged as the worlds second-largest financial technology hub (trailing just after the US) reaching about USD 2.4 billion in 2020.
+       Driven by factors like innovation-based start-ups, large market base,
+        along with favourable regulatory policies and government-led initiatives, 
+        India is witnessing more than 2000 start-ups operating in the space of financial technologies. 
+        The digital payments or e-payments have proven to be rewarding for both at the individual level and for businesses, including the self-employed, rural entrepreneurs, small borrowers, SMEs and MSMEs.
+        
+        Financial technology companies, in a word,
+         are those that facilitate all forms of financial services--consumer and enterprise by utilizing software and hardware technologies running on a broad range of electronic devices ranging from a simple desktop application to a smartphone,
+          even to an advanced smart watch. The usage of various IoT devices for mobile banking, 
+          and for lending and borrowing of services and goods, 
+          are a few examples where cutting-edge technologies are being put to use to make financial services more accessible to the general public.
+           More examples of new-age technologies being increasingly used by Fintech applications are IoT,
+            AI, Blockchain, data science, etc.
+             The ultimate goal is to augment or replace the traditional functioning of the financial sectors,
+              in order to improve user experience, and to make transactions better in terms of security, 
+              accessibility, speed and efficiency 
+
+
+
+
+              Entrepreneurs are key to develop important innovative solutions for complex societal challenges.
+               Entrepreneurship and innovation are relevant in many different sustainable business contexts,
+               specifically in emerging technical fields like Fintech. 
+               Entrepreneurs need a strong support and advisory system in order to turn their start-up ideas into valuable businesses. As a part of the activities at IBITF, one of the ambitions is to establish a strong support system for entrepreneurship and start-ups in the Fintech arena.
+        `,
+    },
+    vision: {
+      title: 'Our Vision',
+      points: [
+        'Cutting-edge research and development in financial technologies.',
+        'Scouting for young professionals and nurturing entrepreneurial skills.',
+        'Building a robust innovation ecosystem with a focus on entrepreneurship.',
+        'Supporting start-ups in financial technology.',
+      ],
+    },
+  },
+
+
+  governanceStructure: {
+    title: 'Governance Structure of the IBITF',
+    sections: [
+      {
+        level: 'BoG of IBITF',
+        members: [
+          'Director IIT Bhilai',
+          'CEO, TIH',
+          'Institute Coordinator TIH',
+          'Dean R & D, IIT Bhilai',
+          'Faculty Member IIT Bhilai (rotation)',
+          'DR (F & A) IIT Bhilai',
+          'External Industry',
+          'External Academia'
+        ],
+      },
+      {
+        level: 'Project Co-ordination Group',
+        members: [
+          'Institute Coordinator of the TIH',
+          'Two Faculty Members IIT Bhilai (rotation)',
+          'Two Faculty Members from Collaborators (rotation)',
+          'Two Experts from Collaborating Industry (rotation)',
+          'Representatives from GoI Agencies',
+        ],
+      },
+      {
+        level: 'Project Selection Group PRSG',
+        members: [
+          'Chairman',
+          'One Faculty Member',
+          'One Expert from Industry',
+          'One Expert from Startup Company',
+        ],
+      },
+      {
+        level: 'Start-up Coordination Team',
+        members: [
+          'Two Faculty Members from Collaborators (rotation)',
+          'Four Industry Experts (rotation)',
+          'Five Representatives from Startups',
+        ],
+      },
+      {
+        level: 'TIH Office Administration',
+        subSections: [
+          {
+            category: 'Academic Programs',
+            members: [
+              'Project Assistant (2)',
+            ],
+          },
+          {
+            category: 'Specialized TIH Programs',
+            members: [
+              'Project Manager (2)',
+              'Project Associate (2)',
+              'Project Assistant (2)',
+            ],
+          },
+          {
+            category: 'HR, Finance, Legal and Others',
+            members: [
+              'Accountants (1 Project Associate and 1 Project Assistant)',
+              'Admin (2 Project Associate and 2 Project Assistant)',
+              'IP Lawyer / Legal Executive (Project Consultant)',
+              'Attendant (2)',
+              'House Keeping (1)',
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  
   footer: {
     text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
   },
   home: {
-    heroTitle: 'Innovating the Future with Technology',
-    heroSubtitle: 'Empowering Solutions for Tomorrow',
+    heroTitle: 'Welcome to TIH at IIT Bhilai',
+    heroSubtitle: `The Technology Innovation Hub (TIH) at IIT Bhilai is one of the 25 hubs setup under the National Mission of Interdisciplinary Cyber-Physical Systems (NM-ICPS) program of the Department of Science and Technology`,
+    heroSubtitle1: `The TIH at IIT Bhilai is the nodal centre for spearheading Entrepreneurship, Research and Development, HRD and Skill development and collaboration related activities in the area of Financial Technologies`,
+
+
+    heroTitle1: 'IBITF: Section 8 company for TIH at IIT Bhilai',
+    heroSubtitle2: `IIT BHILAI INNOVATION AND TECHNOLOGY FOUNDATION (IBITF) is a Section 8 company responsible for executing the activities of TIH.`,
+    heroSubtitle3: `Rs 55 crore is sanctioned by DST for the period of five years to the company which will focus on projects in arena of Financial Technologies`,
     cards: [
       {
         title: 'Cloud Solutions',
         description: 'Scalable cloud services for your business.',
         // image: 'assets/service1.jpg',
-        // image: require('../assets/CloudServer.png'),
+        image: require('../assets/Cloud1.jpg'),
       },
       {
         title: 'AI-Driven Analytics',
         description: 'Harness the power of AI for insights.',
-        image: 'assets/service2.jpg',
+        image: require('../assets/AI.jpg'),
       },
       {
         title: 'Cybersecurity',
         description: 'Protect your business with top security solutions.',
-        image: 'assets/service3.jpg',
+        image: require('../assets/Cloud1.jpg'),
       },
     
     ],
@@ -51,7 +186,7 @@ export const siteContent = {
   },
 
 
-  contact: {
+  ContactForm: {
     title: 'Get in Touch',
     description: 'Feel free to drop us a line below!',
   },

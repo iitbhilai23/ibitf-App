@@ -53,6 +53,7 @@ export default function CountCard({ title, isActive, onClick, height, enabled = 
     return (
         <Card
             onClick={onClick}
+            elevation={3}
             className={enabled ? `countcard ${isActive ? 'active' : ''}` : ``}
             sx={{
                 p: 1,
@@ -63,13 +64,17 @@ export default function CountCard({ title, isActive, onClick, height, enabled = 
                 flexDirection:"column",
                 justifyContent:'center',
                 alignContent: 'center',
+                transition: 'all 0.5s ease',
+                position: 'relative',
                 alignItems:"center",
-                background: backgroundColor,
-                color: textColor,
-                transition: 'background-color 0.3s, color 0.3s',
+                background: "#6a0dad",
+                color: "#ffffff",
+                // transition: 'background-color 0.7s, color 0.3s',
                 '&:hover': {
-                    backgroundColor: !isActive && enabled ? '#FFFFFF' : hoverColor,
-                    color: !isActive && enabled ? hoverColor : '#FFFFFF',
+                    backgroundColor: "#6a0dad",
+                    transform: 'scale(1.02)',
+                    color: "#6a0dad",
+                    border: "1px solid"
                 },
                 borderRadius:"10px"
             }}
