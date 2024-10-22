@@ -6,7 +6,9 @@
   padding: 4px 20px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  position: relative;
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -33,7 +35,7 @@
 .menu li a {
   color: var(--secondary-color);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: block;
 }
 
@@ -72,7 +74,7 @@
 .mega-menu li a {
   color: var(--secondary-color);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: block;
   padding: 10px 12px;
   transition: background-color 0.3s ease;
@@ -89,7 +91,7 @@
 /* Menu item spacing */
 .menu li a,
 .menu li span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--secondary-color);
   text-decoration: none;
   display: block;
