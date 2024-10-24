@@ -87,7 +87,7 @@ const ProjectTemplate = () => {
               </div>
             ))
           ) : (
-            <p style={styles.noImages}>No images available for this event.</p>
+            <p style={styles.noImages}>No images available for this {currentPage.category}.</p>
           )}
         </div>
         {currentPage.category !== "event" && (
@@ -266,11 +266,14 @@ const styles = {
   },
   sectionHeading: {
     fontSize: "1.5em",
+    textAlign: "start",
     fontWeight: "bold",
-    color: "#7f8c8d",
+    color: "#6a0dad",
+    // textDecoration: "underline",
   },
   sectionDescription: {
-    fontSize: "1.12em",
+    textAlign: "start",
+    fontSize: "1em",
     color: "#7f8c8d",
     lineHeight: "1.8",
   },

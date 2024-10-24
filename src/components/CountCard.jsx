@@ -52,49 +52,59 @@ export default function CountCard({ title, isActive, onClick, height, enabled = 
     }
     return (
         <Card
-            onClick={onClick}
-            elevation={3}
-            className={enabled ? `countcard ${isActive ? 'active' : ''}` : ``}
-            sx={{
-                p: 1,
-                width: "100%",
-                textAlign: 'center',
-                height: height,
-                display: "flex",
-                flexDirection:"column",
-                justifyContent:'center',
-                alignContent: 'center',
-                transition: 'all 0.5s ease',
-                position: 'relative',
-                alignItems:"center",
-                background: "#6a0dad",
-                color: "#ffffff",
-                // transition: 'background-color 0.7s, color 0.3s',
-                '&:hover': {
-                    backgroundColor: "#6a0dad",
-                    transform: 'scale(1.02)',
-                    color: "#6a0dad",
-                    border: "1px solid"
-                },
-                borderRadius:"10px"
-            }}
-        >
-            <Tooltip title={title} placement="top-start" arrow>
-                <>
-                    <Typography
-                        className={isActive ? 'active' : ''}
-                        variant="subtitle2"
-                        sx={{ fontWeight: 'bold', whiteSpace: 'wrap' }}
-                    >
-                        {title}
-                    </Typography>
-                    {loading ? (
-                        <GradientCircularProgress />
-                    ) : (
-                        <></>
-                    )}
-                </>
-            </Tooltip>
-        </Card>
+  onClick={onClick}
+  elevation={3}
+  className={enabled ? `countcard ${isActive ? 'active' : ''}` : ``}
+  sx={{
+    p: 1,
+    width: "100%",
+    textAlign: 'center',
+    height: height,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: 'center',
+    alignContent: 'center',
+    transition: 'all 0.5s ease',
+    position: 'relative',
+    alignItems: "center",
+    background: 'linear-gradient(135deg, #6a0dad 30%, #8a2be2 100%)', // Gradient for modern feel
+    color: "#ffffff",
+    boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.4)', // Subtle shadow for depth
+    '&:hover': {
+      backgroundColor: 'linear-gradient(135deg, #8a2be2 30%, #6a0dad 100%)', // Inverted gradient on hover
+      transform: 'scale(1.03)', // Slightly larger on hover
+      boxShadow: '0px 12px 24px rgba(0, 0, 0, 0.7)', // More pronounced shadow on hover
+      color: "#6a0dad",
+    },
+    borderRadius: "16px", // Rounded corners for modern look
+    overflow: 'hidden',
+    border: isActive ? '2px solid #ffffff' : 'none', // Border for active state
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s',
+  }}
+>
+  <Tooltip title={title} placement="top-start" arrow>
+    <>
+      <Typography
+        className={isActive ? 'active' : ''}
+        variant="subtitle2"
+        sx={{
+        //   fontWeight: 'bold',
+          whiteSpace: 'wrap',
+          fontSize: '11px', // Increased font size for better readability
+        //   textTransform: 'uppercase', // Modern text style
+          letterSpacing: '1px', // Adds spacing for modern look
+        }}
+      >
+        {title}
+      </Typography>
+      {loading ? (
+        <GradientCircularProgress />
+      ) : (
+        <></>
+      )}
+    </>
+  </Tooltip>
+</Card>
+
     );
 }
