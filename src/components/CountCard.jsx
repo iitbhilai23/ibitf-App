@@ -68,6 +68,8 @@ export default function CountCard({ title, isActive, onClick, height, enabled = 
     position: 'relative',
     alignItems: "center",
     background: 'linear-gradient(135deg, #6a0dad 30%, #8a2be2 100%)', // Gradient for modern feel
+    // backgroundColor: 'rgba(58, 16, 120, 0.8)',
+    // backgroundImage: "linear-gradient(135deg, rgba(58, 16, 120, 0.8) 30%, rgba(255, 64, 129, 0.7) 100%)",
     color: "#ffffff",
     boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.4)', // Subtle shadow for depth
     '&:hover': {

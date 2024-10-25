@@ -2,6 +2,12 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { pagesConfig } from "../constants/pagesConfig";
 import "./ProjectTemplate.css";
+import objectiveLogo from '../assets/vector image/objective.svg';
+import workshopLogo from '../assets/vector image/workshop.svg';
+import progressLogo from '../assets/vector image/progress.svg';
+import publicationLogo from '../assets/vector image/publication.svg';
+import AchievementLogo from '../assets/vector image/Achievement.svg';
+import { Box } from "@mui/material";
 
 const ProjectTemplate = () => {
   const location = useLocation();
@@ -50,15 +56,19 @@ const ProjectTemplate = () => {
       <div style={styles.title}>{currentPage.title}</div>
       <div style={styles.divider}></div>
       <div className="sub-text-title">
-        <span className="pi-name">{currentPage.piName}</span>
+        <div className={currentPage.category !== "event" ? "pi-section" : ""}>
+        <span className="pi-name">=&gt; {currentPage.piName}</span>
+        </div>
+        <div  className={currentPage.category !== "event" ? "duration-section" : ""}>
         <div className="dates-subTxt">
           <span className="date">{currentPage.date}</span>
           {currentPage.category !== "event" && (
             <span className="date">
-              <strong>Project Duration : </strong>
-              {currentPage.duration}
+              Project Duration :&nbsp;
+              <strong>{currentPage.duration}</strong>
             </span>
           )}
+        </div>
         </div>
       </div>
       {/* Image Gallery */}
@@ -90,11 +100,27 @@ const ProjectTemplate = () => {
             <p style={styles.noImages}>No images available for this {currentPage.category}.</p>
           )}
         </div>
+        <Box 
+          sx={{
+            backgroundColor: 'rgba(58, 16, 120, 0.8)', // Reduced opacity
+            // height: "50vh",
+            borderRadius: "20px",
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+            padding: "30px", // Add padding for content
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            backgroundImage: "linear-gradient(135deg, rgba(58, 16, 120, 0.8), rgba(255, 64, 129, 0.7))", // Subtle gradient for modern look
+            color: "#fff", // White text color for contrast
+          }}
+        >
         {currentPage.category !== "event" && (
-          <div className="obj-cls">
+          <Box sx={{fontSize: "30px", textTransform: 'uppercase'}}>
             Project Objectives
             <div style={styles.divider}></div>
-          </div>
+            </Box>
         )}
         <div
           className={
@@ -111,41 +137,67 @@ const ProjectTemplate = () => {
               </div>
             ))
           ) : (
-            <span style={styles.description}>
+            <span style={styles.boxDescription}>
               {renderDescription(currentPage.description)}
             </span>
           )}
           {currentPage.category !== "event" && (
             <div className="obj-img">
               <img
-                src={require(`../${currentPage?.objImg || ""}`)}
+                src={objectiveLogo}
                 alt="project objective logo"
                 style={styles.image}
               />
             </div>
           )}
         </div>
+        </Box>
         {currentPage.workshop !== "" && currentPage.category !== "event" && (
           <>
+          <Box sx={{
+            // height: "50vh",
+            borderRadius: "20px",
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+            padding: "30px", // Add padding for content
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "start",
+        
+          }}>
             <div className="obj-cls">
               Work Shop Details
               <div style={styles.divider}></div>
             </div>
             <div className="obj-container">
-              {/* <div className='obj-img'>
-            <img
-              src={require(`../${currentPage.objImg}`)}
-              alt="project objective logo"
-              style={styles.image}
-            />
-          </div> */}
+            <div className="obj-img">
+              <img
+                src={workshopLogo}
+                alt="project objective logo"
+                style={styles.image}
+              />
+            </div>
               <span style={styles.description}>{currentPage.workshop}</span>
             </div>
+            </Box>
           </>
         )}
         {currentPage.technicalDetails !== "" &&
           currentPage.category !== "event" && (
             <>
+            <Box sx={{
+            // height: "50vh",
+            borderRadius: "20px",
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+            padding: "30px", // Add padding for content
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "start",
+        
+          }}>
               <div className="obj-cls">
                 Technical Progress
                 <div style={styles.divider}></div>
@@ -154,53 +206,107 @@ const ProjectTemplate = () => {
                 <span style={styles.description}>
                   {currentPage.technicalDetails}
                 </span>
-                {/* <div className='obj-img'>
-            <img
-              src={require(`../${currentPage.objImg}`)}
-              alt="project objective logo"
-              style={styles.image}
-            />
-          </div> */}
+                <div className="obj-img">
+              <img
+                src={progressLogo}
+                alt="project objective logo"
+                style={styles.image}
+              />
+            </div>
               </div>
+              </Box>
             </>
           )}
         {currentPage.publications !== "" &&
           currentPage.category !== "event" && (
             <>
+            <Box sx={{
+            // height: "50vh",
+            borderRadius: "20px",
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+            padding: "30px", // Add padding for content
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "start",
+        
+          }}>
               <div className="obj-cls">
                 Publications
                 <div style={styles.divider}></div>
               </div>
               <div className="obj-container">
+              <div className="obj-img">
+              <img
+                src={publicationLogo}
+                alt="project objective logo"
+                style={styles.image}
+              />
+            </div>
                 <span style={styles.description}>
                   {currentPage.publications}
                 </span>
               </div>
+              </Box>
             </>
           )}
         {currentPage.achievements !== "" &&
           currentPage.category !== "event" && (
             <>
+            <Box sx={{
+            // height: "50vh",
+            borderRadius: "20px",
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+            padding: "30px", // Add padding for content
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "start",
+        
+          }}>
               <div className="obj-cls">
                 Achievements
                 <div style={styles.divider}></div>
               </div>
               <div className="obj-container">
+              <div className="obj-img">
+              <img
+                src={AchievementLogo}
+                alt="project objective logo"
+                style={styles.image}
+              />
+            </div>
                 <span style={styles.description}>
                   {currentPage.achievements}
                 </span>
               </div>
+              </Box>
             </>
           )}
         {currentPage.startupName !== "" && currentPage.category !== "event" && (
           <>
+          <Box sx={{
+            // height: "50vh",
+            borderRadius: "20px",
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+            padding: "30px", // Add padding for content
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+        
+          }}>
             <div className="obj-cls">
               Startup Name
-              <div style={styles.divider}></div>
+              {/* <div style={styles.divider}></div> */}
             </div>
             <div className="startUp-text">
               <span>{currentPage.startupName}</span>
             </div>
+            </Box>
           </>
         )}
       </div>
@@ -220,8 +326,9 @@ const styles = {
   },
   title: {
     fontWeight: 600,
-    fontSize: "25px",
+    fontSize: "22px",
     color: "#374557",
+    // textTransform: "uppercase"
   },
   divider: {
     width: "50%",
@@ -235,6 +342,13 @@ const styles = {
     color: "#7f8c8d",
     lineHeight: "1.5",
     width: "70%",
+  },
+  boxDescription: {
+    fontSize: "1.12em",
+    color: "#fff",
+    lineHeight: "1.5",
+    width: "70%",
+    textAlign: "start"
   },
   imageContainer: {
     display: "flex",
@@ -251,11 +365,13 @@ const styles = {
     overflow: "hidden",
     transition: "transform 0.3s ease",
     border: "1px solid #6a0dad",
+    backgroundColor: "rgba(58, 16, 120, 0.2)",
   },
   image: {
     width: "100%",
     height: "100%",
     objectFit: "contain",
+    borderRadius: '20px'
     // display: 'block',
   },
   notFound: {
