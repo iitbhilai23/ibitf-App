@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -87,8 +87,8 @@ body {
 }
 
 .animated-card:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .team-image {
@@ -96,7 +96,7 @@ body {
   height: 150px;
   border-radius: 50%;
   object-fit: fill;
-  transition: transform 0.6s ease; 
+  transition: transform 0.6s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -108,13 +108,13 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .team-members {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .animated-card {
-      width: 80%;
-      margin-bottom: 20px;
+    width: 80%;
+    margin-bottom: 20px;
   }
 }
 
@@ -185,33 +185,27 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
-
-
 .contact-page {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0rem 1rem;
- 
-  height: 85vh; 
-  flex-wrap: wrap; 
+
+  height: 85vh;
+  flex-wrap: wrap;
 }
 
 .contact-card {
-  width: 360px; 
+  width: 360px;
   padding: 3.5rem;
-  background-color: #6a0dad; 
+  background-color: #6a0dad;
   color: #fff;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   z-index: 2;
   position: relative;
-  margin-right: -20px; 
-  margin-bottom: 20px; 
+  margin-right: -20px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -245,7 +239,7 @@ body {
 }
 
 .contact-form-wrapper h1 {
-  font-size: 2rem; 
+  font-size: 2rem;
   color: #2a2a2a;
   margin-bottom: 0.8rem;
 }
@@ -278,7 +272,7 @@ body {
 
 .contact-form button {
   padding: 1rem;
-  background-color:#6a0dad;
+  background-color: #6a0dad;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -289,13 +283,9 @@ body {
 }
 
 .contact-form button:hover {
-  background-color:#6a0dad;
+  background-color: #6a0dad;
   color: orange;
- 
 }
-
-
-
 
 /* for career page design  */
 
@@ -324,7 +314,6 @@ body {
   border-collapse: collapse;
   margin-bottom: 50px;
   box-shadow: 2px 4px 5px 0px lightgray;
-  
 }
 
 .career-table th {
@@ -357,17 +346,17 @@ body {
   background-color: #e6e6e6;
 }
 
-.apply-link, .download-link {
+.apply-link,
+.download-link {
   color: #e63946;
   font-weight: bold;
   text-decoration: none;
 }
 
-.apply-link:hover, .download-link:hover {
+.apply-link:hover,
+.download-link:hover {
   text-decoration: underline;
 }
-
-
 
 /* AboutIIT Page design */
 
@@ -376,14 +365,14 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
   line-height: 1.6;
 }
 
 /* Hero Section */
 .about-hero {
-  background-color: #f3f4f6;  /* Light grey background for contrast */
+  background-color: #f3f4f6; /* Light grey background for contrast */
   padding: 40px 20px;
   text-align: center;
   margin-bottom: 40px;
@@ -392,7 +381,7 @@ body {
 
 .about-hero h1 {
   font-size: 2.5rem;
-  color: #4d3e90;  /* Purple to match the theme */
+  color: #4d3e90; /* Purple to match the theme */
   margin-bottom: 20px;
 }
 
@@ -404,15 +393,19 @@ body {
 }
 
 /* About Section */
-.about-details, .nodal-center, .about-vision {
-  background-color: #fff;  /* White background for content sections */
+.about-details,
+.nodal-center,
+.about-vision {
+  background-color: #fff; /* White background for content sections */
   border-radius: 8px;
   padding: 20px 30px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.about-details h2, .nodal-center h2, .about-vision h2 {
+.about-details h2,
+.nodal-center h2,
+.about-vision h2 {
   font-size: 1.8rem;
   color: #4d3e90;
   margin-bottom: 15px;
@@ -446,12 +439,12 @@ body {
     font-size: 1rem;
   }
 
-  .about-details h2, .nodal-center h2, .about-vision h2 {
+  .about-details h2,
+  .nodal-center h2,
+  .about-vision h2 {
     font-size: 1.5rem;
   }
 }
-
-
 
 /* For OrgStucture Page design */
 
@@ -460,7 +453,7 @@ body {
   padding: 15px 20px;
   background-color: #f9f9fc; /* Light background for contrast */
   text-align: center;
-  font-family: 'Poppins', sans-serif; /* Modern font */
+  font-family: "Poppins", sans-serif; /* Modern font */
 }
 
 /* Title and Section Title Styling */
@@ -470,9 +463,9 @@ body {
   color: #2c3e50;
   padding: 10px 0px;
   width: 40%;
- margin: 0 auto;
- border-radius: 10px;
-margin-bottom: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .section-title {
@@ -483,9 +476,9 @@ margin-bottom: 20px;
   text-transform: capitalize;
   padding: 5px 0px;
   width: 40%;
- margin: 0 auto;
- border-radius: 10px;
- border: 2px solid #6a0dad;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #6a0dad;
 }
 
 /* Card Container Styling */
@@ -517,16 +510,12 @@ margin-bottom: 20px;
   background-color: #f1f1f1; /* Slight color change on hover */
 }
 
-
-
 /* Enhanced TIH Office Administration Layout */
 .tih-admin-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2px;
-
-  
 }
 
 .sub-section {
@@ -555,9 +544,8 @@ margin-bottom: 20px;
 /* Enhanced Staff Boxes */
 .staff-box {
   /* background-color: #e8f5e9; */
-  background-color:  #80c483;
+  background-color: #80c483;
 
- 
   border-radius: 8px;
   padding: 15px;
   width: 170px;
@@ -620,9 +608,6 @@ margin-bottom: 20px;
   border-bottom: 2px solid #ddd; /* Section separator */
 }
 
-
-
-
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
   .row-layout {
@@ -635,25 +620,16 @@ margin-bottom: 20px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .contact-page {
-    flex-direction: column; 
+    flex-direction: column;
     padding: 2rem;
-    height: auto;  }
+    height: auto;
+  }
 
   .contact-card {
-    margin: 0 auto 1rem auto; 
+    margin: 0 auto 1rem auto;
     position: relative;
     top: 0;
     left: 0;
@@ -662,7 +638,7 @@ margin-bottom: 20px;
 
   .contact-form-wrapper {
     margin: 0 auto;
-    width: 90%; 
+    width: 90%;
     position: relative;
     top: 0;
     left: 0;
@@ -670,34 +646,71 @@ margin-bottom: 20px;
   }
 }
 
- 
-
 /* for mobile responsive */
 @media (max-width: 768px) {
   .service-list {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .service-item {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .career-opportunities ul li {
-      font-size: 1rem;
-      padding: 15px;
+    font-size: 1rem;
+    padding: 15px;
   }
 
   .contact-form input,
   .contact-form textarea {
-      width: 100%;
+    width: 100%;
   }
 }
 
+/*Schemes*/
 
+.card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  gap: 20px;
+}
 
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 43%;
+  box-shadow: #6a0dad 0px 1px 1px 0.2px;
+}
 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
+.card-title {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #6a0dad;
+}
 
+.card-description {
+  margin: 15px 10px;
+  text-align: left;
+  font-size: 14px;
+}
 
+.card-objectives {
+  padding-left: 20px;
+}
 
+.objective-item {
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 14px;
+}
