@@ -15,11 +15,18 @@ body {
 
 
 
+/* for Home page design */
+
 .hero {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   color: var(--secondary-color);
   padding: 100px 20px;
   text-align: center;
+  background-image: url('../assets/AI@.jpg');
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
 }
 
 .cards {
