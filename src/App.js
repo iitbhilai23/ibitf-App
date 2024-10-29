@@ -16,6 +16,7 @@ import './components/Navbar.css';
 import AboutIBITF from './pages/AboutIBITF';
 import OrgStructure from './pages/OrgStructure';
 import Thematic from './pages/Thematic';
+import Blogs from './pages/Blogs';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/team" element={<Team />} />
         <Route path="/thematic-areas" element={<Thematic />} />
+        <Route path="/blogs" element={<Blogs/>}/>
         {/* Dynamic Routes for each page based on pagesConfig */}
         {pagesConfig.map(({ path }, index) => (
           <Route
