@@ -338,7 +338,7 @@ const styles = {
     borderRadius: "4px",
   },
   description: {
-    fontSize: "1.12em",
+    fontSize: "1em",
     color: "#7f8c8d",
     lineHeight: "1.5",
     width: "70%",
@@ -384,13 +384,13 @@ const styles = {
     fontSize: "1.5em",
     textAlign: "start",
     fontWeight: "bold",
-    color: "#6a0dad",
+    color: "#EBD3F8",
     // textDecoration: "underline",
   },
   sectionDescription: {
     textAlign: "start",
     fontSize: "1em",
-    color: "#7f8c8d",
+    color: "#fff",
     lineHeight: "1.8",
   },
 };
