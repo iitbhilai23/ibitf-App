@@ -5,17 +5,14 @@ export const siteContent = {
     logo: require('../assets/iit@.png'),
     menuItems: ['Home',
       {
-        label:'About Us',
+        label: 'About Us',
         submenu: ['About IBITF', 'Organizational Structure'],
       },
-      
-      
-      
       {
         label: 'Programs & Initiatives',
         submenu: ['Thematic Areas', 'Schemes', 'Call for Proposals', 'Blogs'],
       },
-      'Projects','Team','Career','Contact Us'],
+      'Projects', 'Team', 'Career', 'Contact Us'],
   },
 
 
@@ -139,7 +136,7 @@ export const siteContent = {
       },
     ],
   },
-  
+
   footer: {
     text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
   },
@@ -169,7 +166,7 @@ export const siteContent = {
         description: 'Protect your business with top security solutions.',
         image: require('../assets/Cloud1.jpg'),
       },
-    
+
     ],
   },
   about: {
@@ -201,140 +198,140 @@ export const siteContent = {
 
 
 
-board_team:{
-  title:'Board of Directors of the IBITF',
-  members: [
-    {
-      name: 'Prof. Rajiv Prakash',
+  board_team: {
+    title: 'Board of Directors of the IBITF',
+    members: [
+      {
+        name: 'Prof. Rajiv Prakash',
         designation: 'Director IIT Bhilai & Chariman',
         image: require('../assets/director.png'),
-    },
-    {
-      name: 'Dr. Rajeev Shorey',
+      },
+      {
+        name: 'Dr. Rajeev Shorey',
         designation: 'Chief Executive Officer & University of Queensland - IIT Delhi Academy of Research (UQIDAR)',
         image: require('../assets/RajeevShoury.jpg'),
-    },
-    {
-      name: 'Prof. Sumeet Gupta',
+      },
+      {
+        name: 'Prof. Sumeet Gupta',
         designation: 'Professor, IIM Raipur',
         image: require('../assets/SumitGupta.jpg'),
-    },
-    {
-      name: 'Prof. Santosh Biswas',
-      designation: 'Dean of R&D, Project Director (IBITF)',
-      image: require('../assets/santosh.jpeg'),
-    },
-    {
-      name: 'Dr. Souradyuti Paul',
-      designation: 'Associate professor,  Dept. of EECS IIT Bhilai',
-      image: require('../assets/PaulSir.jpeg'),
-    },
-    {
-      name: 'Dr. Barun Gorain',
-      designation: 'Assistant Professor,  Dept. of EECS IIT Bhilai',
-      image: require('../assets/Barun.jpg'),
-    },
-    {
-      name: 'Mr. Gautam Ramani',
-      designation: 'Deputy Registrar (F and A), IIT Bhilai',
-      image: require('../assets/Gautam.jpg'),
-    },
-    {
-      name: 'Mr. S Mukopadhyay',
-      designation: 'ED (Projects), Bhilai Steel Plant(BSP), Sail',
-      image: require('../assets/Mukopadhyay.jpeg'),
-    },
-    {
-      name: 'Padma Shri Phoolbasan Bai Yadav',
-      designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
-      image: require('../assets/Poolbusan.png'),
-    }
-    ,
-    {
-      name: 'Shri. Manish Gupta',
-      designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
-      image: require('../assets/ManishGupta.jpeg'),
-    }
-    ,
-    {
-      name: 'Shri. Naresh Kumar',
-      designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
-      image: require('../assets/NareshKumar.jpeg'),
-    }
-    ,
-    {
-      name: 'Shri. Somesh Sharma',
-      designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
-      image: require('../assets/SomeshSharma.jpeg'),
-    }
+      },
+      {
+        name: 'Prof. Santosh Biswas',
+        designation: 'Dean of R&D, Project Director (IBITF)',
+        image: require('../assets/santosh.jpeg'),
+      },
+      {
+        name: 'Dr. Souradyuti Paul',
+        designation: 'Associate professor,  Dept. of EECS IIT Bhilai',
+        image: require('../assets/PaulSir.jpeg'),
+      },
+      {
+        name: 'Dr. Barun Gorain',
+        designation: 'Assistant Professor,  Dept. of EECS IIT Bhilai',
+        image: require('../assets/Barun.jpg'),
+      },
+      {
+        name: 'Mr. Gautam Ramani',
+        designation: 'Deputy Registrar (F and A), IIT Bhilai',
+        image: require('../assets/Gautam.jpg'),
+      },
+      {
+        name: 'Mr. S Mukopadhyay',
+        designation: 'ED (Projects), Bhilai Steel Plant(BSP), Sail',
+        image: require('../assets/Mukopadhyay.jpeg'),
+      },
+      {
+        name: 'Padma Shri Phoolbasan Bai Yadav',
+        designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
+        image: require('../assets/Poolbusan.png'),
+      }
+      ,
+      {
+        name: 'Shri. Manish Gupta',
+        designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
+        image: require('../assets/ManishGupta.jpeg'),
+      }
+      ,
+      {
+        name: 'Shri. Naresh Kumar',
+        designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
+        image: require('../assets/NareshKumar.jpeg'),
+      }
+      ,
+      {
+        name: 'Shri. Somesh Sharma',
+        designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
+        image: require('../assets/SomeshSharma.jpeg'),
+      }
 
-  ]
-},
-governing_team:{
-  title:'Hub Governing Body (HGB)',
-  members: [
-    
-    {
-      name: 'Prof. Rajiv Prakash',
+    ]
+  },
+  governing_team: {
+    title: 'Hub Governing Body (HGB)',
+    members: [
+
+      {
+        name: 'Prof. Rajiv Prakash',
         designation: 'Director IIT Bhilai & Chariman',
         image: require('../assets/director.png'),
-    },
-    {
-      name: 'Prof. D. Janakiram',
-      designation: 'Academic Representative, Member',
-      image: require('../assets/jankiram.jpg'),
-    },
-    {
-      name: 'Prof. G. Sivakumar',
-      designation: 'Academic Representative, Member',
-      image: require('../assets/shivkumar.jpg'),
-    },
-    {
-      name: 'Mr. Rama Iyer',
-      designation: 'Industry Representative, Member',
-      image: require('../assets/ramalyer.jpg'),
-    },
-    {
-      name: 'Mr. J A Chowdary',
-      designation: 'Industry Representative, Member',
-      image: require('../assets/JAChoudary.jpg'),
-    },
-    {
-      name: 'Dr. Ekta Kapoor',
-      designation: 'Mission Director of NM-ICPS & DST, Member',
-      image: require('../assets/Ekta.jpg'),
-    },
-    {
-      name: 'Mr. Prashant Mathur',
-      designation: 'Chief Executive Officer, IBITF',
-      image: require('../assets/ceo.jpeg'),
-    },
-    {
-      name: 'Padma Shri Phoolbasan Bai Yadav',
-      designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
-      image: require('../assets/Poolbusan.png'),
-    }
-    ,
-    {
-      name: 'Shri. Manish Gupta',
-      designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
-      image: require('../assets/ManishGupta.jpeg'),
-    }
-    ,
-    {
-      name: 'Shri. Naresh Kumar',
-      designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
-      image: require('../assets/NareshKumar.jpeg'),
-    }
-    ,
-    {
-      name: 'Shri. Somesh Sharma',
-      designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
-      image: require('../assets/SomeshSharma.jpeg'),
-    }
+      },
+      {
+        name: 'Prof. D. Janakiram',
+        designation: 'Academic Representative, Member',
+        image: require('../assets/jankiram.jpg'),
+      },
+      {
+        name: 'Prof. G. Sivakumar',
+        designation: 'Academic Representative, Member',
+        image: require('../assets/shivkumar.jpg'),
+      },
+      {
+        name: 'Mr. Rama Iyer',
+        designation: 'Industry Representative, Member',
+        image: require('../assets/ramalyer.jpg'),
+      },
+      {
+        name: 'Mr. J A Chowdary',
+        designation: 'Industry Representative, Member',
+        image: require('../assets/JAChoudary.jpg'),
+      },
+      {
+        name: 'Dr. Ekta Kapoor',
+        designation: 'Mission Director of NM-ICPS & DST, Member',
+        image: require('../assets/Ekta.jpg'),
+      },
+      {
+        name: 'Mr. Prashant Mathur',
+        designation: 'Chief Executive Officer, IBITF',
+        image: require('../assets/ceo.jpeg'),
+      },
+      {
+        name: 'Padma Shri Phoolbasan Bai Yadav',
+        designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
+        image: require('../assets/Poolbusan.png'),
+      }
+      ,
+      {
+        name: 'Shri. Manish Gupta',
+        designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
+        image: require('../assets/ManishGupta.jpeg'),
+      }
+      ,
+      {
+        name: 'Shri. Naresh Kumar',
+        designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
+        image: require('../assets/NareshKumar.jpeg'),
+      }
+      ,
+      {
+        name: 'Shri. Somesh Sharma',
+        designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
+        image: require('../assets/SomeshSharma.jpeg'),
+      }
 
-  ]
-},
+    ]
+  },
   team: {
     title: 'Meet Our Team',
     members: [
@@ -357,7 +354,7 @@ governing_team:{
         name: 'Mrs. Pratibha Dongre',
         designation: 'Project Associate, IBITF',
         image: require('../assets/pratibha.jpg'),
-      },{
+      }, {
         name: 'Mrs. Preeti Tiwari',
         designation: 'Project Associate, IBITF',
         image: require('../assets/preeti.png'),
@@ -406,14 +403,14 @@ governing_team:{
   },
   thematic:{
     card:[{img:require('../assets/thematic/payment.png'),head:"E-Payment Systems",desc:"E-payment system (or online payment system) is one of the fundamental components underpinning any Fintech application. An e-payment system allows financial transactions or payments for goods or services to happen through the electronic medium, without the use of physical cheques or currencies."},
-      {img:require('../assets/thematic/blockchain-rb.png'),head:"Blockchain Technology",desc:"Blockchain is a powerful and fascinating technology emerged in recent times which is perceived to have the potential to bring radical changes to the ways our financial systems (e.g. lending, mortgage, retail payments, stock exchange, leverage, risk assessment and underwriting, etc.) work."},
+      {img:require('../assets/thematic/blockchain.png'),head:"Blockchain Technology",desc:"Blockchain is a powerful and fascinating technology emerged in recent times which is perceived to have the potential to bring radical changes to the ways our financial systems (e.g. lending, mortgage, retail payments, stock exchange, leverage, risk assessment and underwriting, etc.) work."},
       {img:require('../assets/thematic/ai.png'),head:"Artificial Intelligence",desc:"Application of AI techniques to the Fintech arena facilitate predicting market trends, customized financial advices to enrich user experience, enhancing security, credit risk assessment, valuation modeling etc."},
       {img:require('../assets/thematic/iot.png'),head:"Internet of Things",desc:"With the advent of IoT paradigm, the financial sector is also witnessing the enormous impact of the technology in terms of features like immediate support and personalization of service, smart bank branches and ATMs, improved spending visibility, enhanced security, risk assessment for insurance and loan etc."}
     ],
-    description:[{title:"E-Payment Systems",desc:["User friendly e-payment systems","Popularizing e-payments","e-payment system for utility services"],img:require('../assets/thematic/payment.png'),descImg:require('../assets/thematic/e-payment-desc.png')},
-    {title:"Blockchain Technology",desc:["Design and analysis of structural components of Blockchain for Fintech","Applications of Blockchain for Fintech products",],img:require('../assets/thematic/blockchain-rb.png'),descImg:require('../assets/thematic/blockchainsjpg-desc.png')},
-    {title:"Artificail Intelligence",desc:["Efficient AI and ML based models for Fintech applications","Process automation, improving user experience and security solutions for Fintech applications"],img:require('../assets/thematic/ai.png'),descImg:require('../assets/thematic/AI-desc.png')} ,
-    {title:"Internet of Things",desc:["Security of IoT framework for Finetch solutions","IoT based Fintech products","Testing and improving reliability of IoT framework"],img:require('../assets/thematic/iot.png'),descImg:require('../assets/thematic/IOT-desc.png')},
+    description:[{title:"E-Payment Systems",desc:"E-payment system (or online payment system) is one of the fundamental components underpinning any Fintech application. An e-payment system allows financial transactions or payments for goods or services to happen through the electronic medium, without the use of physical cheques or currencies.",subdescription:[{subTitle:"User friendly e-payment systems",subDesc:["Minimal human intervention","Unified payment system","Low cost platforms"]},{subTitle:"Popularizing e-payments",subDesc:["Rural applications","Urban applications","Small retailers"]},{subTitle:"e-payment systems for utility services",subDesc:["Public Transport","Utility supply payments"]}],img:require('../assets/thematic/payment.png')},
+    {title:"Blockchain Technology",desc:"Blockchain is a powerful and fascinating technology emerged in recent times which is perceived to have the potential to bring radical changes to the ways our financial systems (e.g. lending, mortgage, retail payments, stock exchange, leverage, risk assessment and underwriting, etc.) work.",subdescription:[{subTitle:"Design and analysis of structural components of Blockchain for Fintech",subDesc:["Consensus algorithms","Smart contracts","Hybrid Platforms","Searchable encryption"]},{subTitle:"Secure digital identity management",subDesc:["Risk analysis and assessment","Micro-loans","Energy trading","Intelligent Agriculture"]}],img:require('../assets/thematic/blockchain.png')},
+    {title:"Artificail Intelligence",desc:"Application of AI techniques to the Fintech arena facilitate predicting market trends, customized financial advices to enrich user experience, enhancing security, credit risk assessment, valuation modeling etc.",subdescription:[{subTitle:"Efficient AI models for Fintech applications",subDesc:["Feature selection and ranking","Prediction models","Handling dynamic data","Handling unstructured data"]},{subTitle:"Process automation and improving user experience",subDesc:["Portfolio management","Recommender System"]},{subTitle:"Security",subDesc:["Anomaly detection systems","Efficient classifiers"]}],img:require('../assets/thematic/ai.png')} ,
+    {title:"Internet of Things",desc:"With the advent of IoT paradigm, the financial sector is also witnessing the enormous impact of the technology in terms of features like immediate support and personalization of service, smart bank branches and ATMs, improved spending visibility, enhanced security, risk assessment for insurance and loan etc.",subdescription:[{subTitle:"Standardization of Cyber Security for IoT devices",subDesc:["Access Control","Lightweight cryptography","Secured data collection"]},{subTitle:"IoT-based Fintech Products",subDesc:["Biometric authentication systems","Smart ATMs","Wearable devices"]},{subTitle:"Testing and Validation of the IoT framework",subDesc:["Hardware-Software embedded testing","Compatibility testing","Data integrity testing"]}],img:require('../assets/thematic/iot.png'),descImg:require('../assets/thematic/IOT-desc.png')},
     
     ]
   }
