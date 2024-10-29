@@ -3,19 +3,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 20px;
+  padding: 4px 56px;
   background-color: var(--primary-color);
+
   color: var(--secondary-color);
-  position: sticky; 
-  top: 0; 
-  z-index: 1000; 
+
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  width: 300px;
+  /* width: 300px; */
   height: 62px;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -48,8 +52,10 @@
 .mega-menu {
   display: none;
   position: absolute;
-  top: 100%; /* Position the submenu directly below the parent */
-  left: 0; /* Align with the parent item */
+  top: 100%;
+  /* Position the submenu directly below the parent */
+  left: 0;
+  /* Align with the parent item */
   background-color: var(--primary-color);
   padding: 10px;
   list-style: none;
@@ -61,7 +67,8 @@
   display: block;
   width: max-content;
 }
-.has-submenu.open .mega-menu ul{
+
+.has-submenu.open .mega-menu ul {
   width: 100%;
   display: contents;
 }
