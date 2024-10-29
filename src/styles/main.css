@@ -624,6 +624,56 @@ margin-bottom: 20px;
 
 
 
+/* schemes */
+.card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 43%;
+  box-shadow: #6a0dad 0px 1px 1px 0.2px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #6a0dad;
+}
+
+.card-description {
+  margin: 15px 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.card-objectives {
+  padding-left: 20px;
+}
+
+.objective-item {
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+
+
+
+
 
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
