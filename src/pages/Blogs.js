@@ -36,14 +36,16 @@ const Blogs = () => {
           margin: "20px auto",
         }}
       >
-        <Grid item md={6} sx={{ display: "flex", justifyContent: "center",  width: "300px",
-    height: "330px",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-    borderRadius: "25px",
-    overflow: "hidden",
-    transition: "transform 0.3s ease",
-    // border: "1px solid #6a0dad",
-    backgroundColor: "rgba(58, 16, 120, 0.1)",}}>
+        <Grid item md={6} sx={{
+          display: "flex", justifyContent: "center", width: "300px",
+          height: "330px",
+          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+          borderRadius: "25px",
+          overflow: "hidden",
+          transition: "transform 0.3s ease",
+          // border: "1px solid #6a0dad",
+          backgroundColor: "rgba(58, 16, 120, 0.1)",
+        }}>
           <img
             src={BlogLogo}
             alt="Blog logo"
@@ -84,14 +86,14 @@ const Blogs = () => {
             key={index}
             sx={{
               width: 400,
-            //   height: 280,
+              //   height: 280,
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
               boxShadow: "0px 10px 25px rgba(0,0,0,0.1)",
               borderRadius: 3,
-            //   backgroundImage: "linear-gradient(135deg, #f3e7ff, #e2d1ff)",
-            // backgroundColor: "rgba(58, 16, 120, 0.1)",
+              //   backgroundImage: "linear-gradient(135deg, #f3e7ff, #e2d1ff)",
+              // backgroundColor: "rgba(58, 16, 120, 0.1)",
               boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
               transition: "transform 0.4s, box-shadow 0.4s",
               "&:hover": {
