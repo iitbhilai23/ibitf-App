@@ -841,7 +841,7 @@ export const pagesConfig = [
     component: "FintechApplication",
     description:
       "Enable users to assess and report construction material quality in real-time.Optimize supply chain relationships for efficient procurement of sustainable resources.Facilitate secure mobile payments for raw materials, supporting small-scale enterprises.Establish a marketplace for the sale of recycled waste and other sustainable resources, simplifying sourcing for producers.",
-    images: ["assets/StaticImages/project/fintech.png"],
+    images: ["assets/StaticImages/project/fintech01.png"],
     duration: "2 years",
     category: "project",
     subCategory: "TSP",
