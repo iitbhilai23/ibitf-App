@@ -18,6 +18,7 @@ import OrgStructure from './pages/OrgStructure';
 import Thematic from './pages/Thematic';
 import Schemes from './pages/Schemes';
 import Blogs from './pages/Blogs';
+import CallForProposals from './pages/CallForProposal';
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/team" element={<Team />} />
         <Route path="/thematic-areas" element={<Thematic />} />
+        <Route path="/call-for-proposals" element={<CallForProposals />} />
         <Route path="/blogs" element={<Blogs/>}/>
         {/* Dynamic Routes for each page based on pagesConfig */}
         {pagesConfig.map(({ path }, index) => (
