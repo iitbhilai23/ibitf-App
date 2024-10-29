@@ -9,7 +9,7 @@ const Schemes = () => {
   return (
     <div className="card-stack1">
       {cardDetail.map((card, index) => (
-        <div className="card" key={index}>
+        <div className="card-scheme" key={index}>
           <h3 className="card-title">{card.title}</h3>
           <p className="card-description">{card.description}</p>
           {card.objectives.length > 0 && (

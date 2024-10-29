@@ -21,37 +21,86 @@ body {
 
 
 
+/* for home page design code here */
+
 .hero {
-  background-color: var(--primary-color);
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  /* Adjust height as needed */
+  background-image: linear-gradient(to bottom, rgba(132, 130, 132, 0.9), rgba(106, 13, 173, 0.5)), url('../assets/home_bg.jpg');
+  background-size: cover;
+  /* Ensures image covers the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Prevents image repetition */
   color: var(--secondary-color);
   padding: 100px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  /* Optional: dark overlay for better contrast */
+  z-index: -1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+  margin: 10px 0;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* Space between cards */
   padding: 50px;
 }
 
 .card {
   background-color: var(--secondary-color);
   padding: 20px;
-  width: 300px;
+  width: 280px;
+  /* Adjust width as needed */
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-image {
-  width: 300px;
-  /* height: 100px; */
+  width: 100%;
+  height: 0 auto;
+  object-fit: cover;
+  /* Ensures image covers the full width and height */
+  border-radius: 8px 8px 0 0;
 }
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 .footer {
   background-color: var(--primary-color);
@@ -664,7 +713,7 @@ body {
   gap: 20px;
 }
 
-.card {
+.card-scheme {
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
