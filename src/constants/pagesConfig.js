@@ -1288,7 +1288,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TBI",
     piName:
-      "PI: Dr. Anubhav Pradhan,PI: Sonal Jha ,PI: Dr. Anindita Ghosh,CO-PI: S. Paul",
+      "Dr. Anubhav Pradhan,Sonal Jha , Dr. Anindita Ghosh,CO-PI: S. Paul",
     date: "From :- 30/03/2023  -  To :- 29/03/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1309,7 +1309,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TBI",
     piName:
-      "PI: Dr. D R Ramesh Babu, Co-PI: Milind Madhukar Deore (Star Knowledge)",
+      "Dr. D R Ramesh Babu, Co-PI: Milind Madhukar Deore",
     date: "From :- 15/09/2023  -  To :- 14/09/2024 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1330,7 +1330,7 @@ export const pagesConfig = [
     duration: "2 Year",
     category: "project",
     subCategory: "TD",
-    piName: "PI: Dr. Vijaya Bhaskar Marisetty ISB ",
+    piName: "Dr. Vijaya Bhaskar Marisetty ISB ",
     date: "From :- 15/09/2023  -  To :- 14/09/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1513,7 +1513,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Sanjay Moulik, Assistant Professor, Department of Computer Science Engineering, IIIT Guwahati",
+      "Dr. Sanjay Moulik",
     date: "From :- 14/11/2023  -  To :- 13/11/2024 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1534,7 +1534,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Benjamin Shimray, Assistant Professor, Department of Electrical Engineering, NIT Manipur",
+      "Dr. Benjamin Shimray",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1554,7 +1554,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Mr. Golmei Shaheamlung, Assistant Professor, Department of Computer Science and Engineering, Manipur Technical University",
+      "Mr. Golmei Shaheamlung",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1575,7 +1575,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Mr. N K Kaphungkui, Assistant Professor, Department of Electronics and Communication Engineering, Dibrugarh University Institute of Engineering and Technology",
+      "Mr. N K Kaphungkui",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1596,7 +1596,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Rantu Hazarika, Assistant Professor, Department of Economics, Dibrugarh University",
+      "Dr. Rantu Hazarika",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1617,7 +1617,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Mr. Melur Phangcho, Assistant Professor, Department of Computer Science and Information Technology, Cotton University",
+      "Mr. Melur Phangcho",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1637,7 +1637,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Lithungo K Murry, Assistant Professor, Department of Computer Science and Engineering, National Institute of Technology, Nagaland",
+      "Dr. Lithungo K Murry",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1658,7 +1658,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. R . Lalchhanhima, Assistant Professor, Department of Information Technology,Mizoram University",
+      "Dr. R . Lalchhanhima",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1679,7 +1679,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Mr.Rinku Basumatary, Assistant Professor, Department of Computer Science and Technology, Bodoland University",
+      "Mr.Rinku Basumatary",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1700,7 +1700,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Debojit Boro, Associate Professor, Department of Computer Science and Engineering, Tezpur University",
+      "Dr. Debojit Boro",
     date: "From :- 14/11/2023  -  To :- 13/11/2024 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1720,7 +1720,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Mrs. Vanlalmuansangi Khenglawt, Assistant Professor, Department of Information Technology, Mizoram University",
+      "Mrs. Vanlalmuansangi Khenglawt",
     date: "14/11/2023  -  To :- 13/11/2024",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1740,7 +1740,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Sijousa Basumatary, Assistant Professor, Department of  Economics, Bodoland University",
+      "Dr. Sijousa Basumatary",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1760,7 +1760,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Morrel V L Nunsanga, Assistant Professor, Department of  Information Technology, Mizoram University",
+      "Dr. Morrel V L Nunsanga",
     date: "From :- 14/11/2023  -  To :- 13/11/2024 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1781,7 +1781,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Mr. Raju Narzary, Assistant Professor, Department of  Computer Science and Technology, Bodoland University Mr. Deepak Hajoary, Assistant Professor, Department of Management Studies, Bodoland University",
+      "Mr. Raju Narzary",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1802,7 +1802,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Yachang Omo, Assistant Professor, Department of Civil Engineering, Central Institute of Technology Kokrajhar",
+      "Dr. Yachang Omo",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1823,7 +1823,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Deboraj Muchahary, Assistant Professor (Gr - II), Department of Electronics & Telecom. Engineering, National Institute of Technology Raipur",
+      "Dr. Deboraj Muchahary",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1844,7 +1844,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Basil N. Darlong Diengdoh, Assistant Professor, Department of Law and Language, National Law University Meghalaya",
+      "Dr. Basil N. Darlong Diengdoh",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1865,7 +1865,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Dr. Lalhruaizela, Assistant Professor, Department of Computer Science and Engineering, National Institute of Technology Mizoram",
+      "Dr. Lalhruaizela",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -1886,7 +1886,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName:
-      "Mr. Chenlep Yakha Konyak, Assistant Professor, Department of Computer Science and Engineering, Nagaland University",
+      "Mr. Chenlep Yakha Konyak",
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",

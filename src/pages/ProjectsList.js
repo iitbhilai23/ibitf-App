@@ -110,7 +110,15 @@ const ProjectsList = () => {
             variant="fullWidth"
             textColor="primary"
             indicatorColor="primary"
-            sx={{ backgroundColor: "background.paper" }}
+            sx={{ 
+              backgroundColor: "background.paper",
+              "& .MuiTab-root": {
+                color: "#6a0dad", 
+              },
+              "& .MuiTabs-indicator": {
+                backgroundColor: "#6a0dad",
+              }
+            }}
           >
             <Tab label="Projects" value="project" sx={styles.tab} />
             <Tab label="Events" value="event" sx={styles.tab} />
@@ -176,12 +184,12 @@ const ProjectsList = () => {
         <div className='card-cnt-list' style={styles.cardCnt}>
           <Grid container spacing={3} sx={styles.gridContainer}>
             {filteredProjects.map(({ title, path, description, id }, index) => (
-              <Grid item xs={12} sm={6} md={3} key={id}>
+              <Grid item xs={12} sm={6} md={2.4} key={id}>
                 <Link to={path} style={styles.cardLink}>
                   <CountCard
                     title={title}
                     onClick={() => console.log(`Clicked on ${title}`)}
-                    height="170px"
+                    height="130px"
                     color_num={(index % 4) + 1}
                   />
                 </Link>
@@ -205,9 +213,11 @@ const styles = {
     margin: '0 auto',
     height: "100%",
     overflowY: "auto",
-    maxWidth: "1200px"
+    // maxWidth: "1200px"
   },
   title: {
+    fontSize: '26px',
+    textTransform: 'uppercase',
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: '20px',
@@ -222,12 +232,13 @@ const styles = {
   tab: {
     fontWeight: 'bold',
     textTransform: 'none',
-    fontSize: '18px',
+    fontSize: '14px',
+    color: '#6a0dad'
   },
   dropdownContainer: {
     display: 'flex',
     justifyContent: 'flex-end',
-    marginBottom: '20px',
+    marginBottom: '10px',
   },
   divider: {
     width: '50%',
@@ -238,7 +249,7 @@ const styles = {
   },
   dropdown: {
     width: '250px',
-    height: '50px',
+    height: '40px',
     backgroundColor: '#fff',
     borderRadius: '8px',
     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
@@ -251,12 +262,12 @@ const styles = {
   },
   searchField: {
     width: '280px',
-    height: '50px',
+    height: '40px', // Reduced height
     borderRadius: '10px',
     marginLeft: '20px',
-    backgroundColor: '#fff', // Light background for contrast
-    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Subtle shadow
-    // padding: '10px', // Add padding inside the input
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', 
     border: '1px solid #ccc', // Light border
     fontSize: '16px', // Increase font size for readability
     outline: 'none', // Remove the default outline
@@ -267,6 +278,7 @@ const styles = {
     },
     '& .MuiInputBase-input': {
       paddingLeft: '10px', // Add padding inside the input
+      height: '100%', // Ensure input height fills the field
     },
     '&:focus-within': {
       backgroundColor: '#fff', // White background when focused
@@ -274,6 +286,7 @@ const styles = {
       boxShadow: '0px 0px 10px rgba(63, 81, 181, 0.2)', // Glow effect on focus
     },
   },
+  
   gridContainer: {
     paddingLeft: '20px',
     paddingRight: '20px',
@@ -283,7 +296,7 @@ const styles = {
     textDecoration: 'none',
   },
   cardCnt: {
-    height: "50vh",
+    height: "70vh",
     overflowY: "auto"
 
   },
