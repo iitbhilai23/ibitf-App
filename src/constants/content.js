@@ -165,9 +165,34 @@ export const siteContent = {
     ],
   },
 
-  footer: {
-    text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
+  // footer: {
+  //   text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
+  // },
+
+
+// this is footer page content
+
+footer: {
+  footerlogo: require('../assets/logo/iit@.png'),
+  text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
+  about: {
+    title: 'IIT Bhilai Innovation Technologies and Foundation',
+    description: 'Dedicated to technological advancements and empowering the future with cutting-edge innovations.',
   },
+  socials: [
+    { name: 'Facebook', url: 'https://facebook.com' },
+    { name: 'Twitter', url: 'https://twitter.com' },
+    { name: 'Instagram', url: 'https://instagram.com' },
+    { name: 'LinkedIn', url: 'https://linkedin.com' }
+  ],
+  links: ['About Us', 'Blog posts', 'Services', 'Contact us'],
+  services: ['Web Design', 'Development', 'Marketing Plans', 'Digital Services'],
+  info: ['Offline SEO', 'Development', 'Growth Hacking', 'Branding'],
+  support: ['FAQ', 'Help', 'Privacy Policy', 'Terms']
+},
+
+//  this is home page content 
+
   home: {
     heroTitle: 'Welcome to TIH at IIT Bhilai',
     heroSubtitle: `The Technology Innovation Hub (TIH) at IIT Bhilai is one of the 25 hubs setup under the National Mission of Interdisciplinary Cyber-Physical Systems (NM-ICPS) program of the Department of Science and Technology`,
@@ -179,20 +204,20 @@ export const siteContent = {
     heroSubtitle3: `Rs 55 crore is sanctioned by DST for the period of five years to the company which will focus on projects in arena of Financial Technologies`,
     cards: [
       {
-        title: 'Cloud Solutions',
+        title: 'Fintech Solutions',
         description: 'Scalable cloud services for your business.',
         // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/Cloud1.jpg'),
+        image: require('../assets/Vector IMG/fintech.jpg'),
       },
       {
-        title: 'AI-Driven Analytics',
+        title: 'Agritech Solutions',
         description: 'Harness the power of AI for insights.',
-        image: require('../assets/Vector IMG/AI.jpg'),
+        image: require('../assets/Vector IMG/agritech.jpg'),
       },
       {
-        title: 'Cybersecurity',
+        title: 'Meditech Solutions',
         description: 'Protect your business with top security solutions.',
-        image: require('../assets/Vector IMG/Cloud1.jpg'),
+        image: require('../assets/Vector IMG/meditech.jpg'),
       },
 
     ],
@@ -217,9 +242,9 @@ export const siteContent = {
   },
   contactDetails: {
     title: 'Contact Us',
-    address: 'IIT Bhilai Innovation and Technology Foundation (IBITF), IIT Bhilai Permanent Campus, Kutelabhata, Khapari, District-Durg, Chhattisgarh-491001',
+    address: 'IIT Bhilai Innovation and Technology Foundation (IBITF), TIH Office, Level - 4, LDC Building, Kutelabhata, Durg, Chhattisgarh,491002 ',
     email: 'tih@iitbhilai.ac.in',
-    phone: '+91*******7181',
+    phone: '+917587738819',
     fax: '+3356 1589 2100',
   },
 

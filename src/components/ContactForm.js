@@ -72,8 +72,10 @@
 import React, { useState } from 'react';
 import { siteContent } from '../constants/content';
 
+
 const ContactForm = () => {
   const { ContactForm: formContent } = siteContent;
+
 
   const [formData, setFormData] = useState({
     name: '',
@@ -97,8 +99,17 @@ const ContactForm = () => {
   return (
     <div style={styles.container}>
       <h3 style={styles.subtitle}>Write Us</h3>
-      <h1 style={styles.title}>{formContent.title}</h1>
-      <p style={styles.description}>{formContent.description}</p>
+      <h1 style={styles.title}>
+        {/* {formContent.title} */}
+        Contact Us        
+        </h1>
+      <p style={styles.description}>
+        
+      Don't hesitate to contact us
+      anytime with questions
+        {/* {formContent.description} */}
+        
+        </p>
       <form onSubmit={handleSubmit} style={styles.form}>
         <div style={styles.inputRow}>
           <input
@@ -141,13 +152,14 @@ const ContactForm = () => {
 
 const styles = {
   container: {
-    maxWidth: '700px',
+    maxWidth: '1300px',
     margin: '0 auto',
     padding: '40px',
-    backgroundColor: '#f8f9fc',
+    // backgroundColor: '#f8f9fc',
     borderRadius: '10px',
     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
+    margin:'5px auto 20px'
   },
   subtitle: {
     fontSize: '14px',
@@ -197,7 +209,7 @@ const styles = {
     padding: '12px 20px',
     fontSize: '18px',
     color: '#fff',
-    backgroundColor: '#007bff',
+    backgroundColor: '#6a0dad',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
