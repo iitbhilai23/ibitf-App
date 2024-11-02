@@ -1,20 +1,9 @@
-// import React from 'react';
-// import { siteContent } from '../constants/content';
 
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <p>{siteContent.footer.text}</p>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
 
 
 import React from 'react';
 import { siteContent } from '../constants/content';
-import './Footer.css';
+import '../styles/main.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {

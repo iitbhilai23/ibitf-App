@@ -17,6 +17,7 @@ body {
 :root {
   --primary-color: #6a0dad;
   --secondary-color: #fff;
+  --third-color:#0d031b;
 }
 
 
@@ -69,16 +70,151 @@ body {
 
 
 
+/* For Footer page design  */
+
+
 .footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 20px;
-  /* position: fixed;
-  bottom: 0; */
-  width: 100%;
-  box-shadow: 0px -1px 6px -2px black;
+  background-color: #111; /* Dark background */
+  padding: 40px 0;
+  color: #ffffff;
+
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-section h2 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d0d0d0;
+}
+
+.footer-button {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #6a0dad;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #272627;
+  color: #d0d0d0;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #a133bc;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+  background-color: #333333;
+  transform: scale(1.1);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #d0d0d0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  width: 80%;
+  border-top: 1px solid #efeded;
+  margin: 20px auto 0px;
+}
+
+.footerlogo {
+  width: 190px;
+  height: auto;
+  /* margin-right: 10px; */
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .footer-button {
+    margin: 20px auto;
+  }
+}
+
+
 
 /* for Team Page */
 .team-page {
