@@ -77,7 +77,7 @@ const IITMap = () => {
       </div>
       <div style={styles.mapContainer}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10888.570414986738!2d81.31500266159561!3d21.24940379250635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28db65364103d5%3A0x9ca0815dc09dac5f!2sIndian%20Institute%20of%20Technology%20Bhilai!5e0!3m2!1sen!2sin!4v1729273642920!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d952065.281735698!2d81.27452548722947!3d21.23165005210205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293d6791e5f399%3A0xfb39e72b5f4501f5!2sIndian%20Institute%20of%20Technology%20Bhilai!5e0!3m2!1sen!2sin!4v1730553001222!5m2!1sen!2sin"
           style={styles.iframe}
           allowFullScreen="10"
           loading="lazy"
@@ -88,6 +88,8 @@ const IITMap = () => {
     </div >
   );
 };
+
+
 
 const styles = {
   container: {
