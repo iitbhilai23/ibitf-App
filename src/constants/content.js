@@ -754,16 +754,6 @@ CollaborationBy: {
 },
 
 
-// for slider page design
-
-sliderImages: [
-  { url: require('../assets/slider/1.jpg'), title: 'Image 1 Title' },
-  { url: require('../assets/slider/2.jpg'), title: 'Image 2 Title' },
-  { url: require('../assets/slider/3.jpg'), title: 'Image 3 Title' },
-  { url: require('../assets/slider/4.jpg'), title: 'Image 4 Title' },
-  // { url: require('../assets/slider/image5.jpg'), title: 'Image 5 Title' },
-],
-
 
 // Aboutsection content page 
 

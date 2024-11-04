@@ -39,7 +39,7 @@ const FeaturedProjects = () => {
                             >
                                 {featuredProjects.slice(index, index + 2).map((project, idx) => (
                                     <div className="project-card" key={idx}>
-                                        <div className='img-parent'>
+                                        <div className='img-parent-features'>
                                             <img  className="project-image" src={project.image} alt={project.title} />
                                         </div>
                                         <div className="project-content">
