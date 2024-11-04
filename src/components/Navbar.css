@@ -242,6 +242,10 @@
 
 /* Toggle menu icon display for mobile */
 @media (max-width: 768px) {
+
+  .navbar{
+    width: 100%;
+  }
   .menu {
     display: none;
     flex-direction: column;
