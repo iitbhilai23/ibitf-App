@@ -1,3 +1,8 @@
+import SpecialCall from "../assets/PDF/proposal/SpecialCallForProposalforScheduledTribes.pdf";
+import card2pdf from "../assets/PDF/proposal/card2.pdf";
+import tbiScheme from "../assets/PDF/proposal/tbiScheme.pdf";
+import chairProfessor from '../assets/PDF/proposal/chairProfessor.pdf';
+
 
 export const siteContent = {
   navbar: {
@@ -20,20 +25,20 @@ export const siteContent = {
         word: "Finance and Human History",
         date: "Oct. 06, 2021",
          buttonText: "Learn More",
-        pdfUrl:require("../assets/pdf/ondc.pdf")
+        pdfUrl:require("../assets/PDF/Blogs/Fintech.pdf")
     },
   
     {
       word: "Legalities of Bitcoin and other Virtual Assets",
       date: "Oct. 06, 2021",
       buttonText: "Learn More",
-      pdfUrl:require("../assets/pdf/cryptocurrency.pdf")
+      pdfUrl:require("../assets/PDF/Blogs/Cryptocurrency.pdf")
   },
   {
       word: "The ONDC: Why Everyone is Talking About it?",
       date: "June 05, 2023",
       buttonText: "Learn More",
-      pdfUrl:require("../assets/pdf/fintech.pdf")
+      pdfUrl:require("../assets/PDF/Blogs/ondc.pdf")
   },
     ],
   },
@@ -512,5 +517,116 @@ export const siteContent = {
             "To build a vibrant network of start-up ecosystems facilitating mentorship, technical and R&D related suggestions, financial support etc., by establishing a network between academia and industries, mainly involving the collaborators of the IBITF."
         ]
     },
+],
+cardDataForCFP: [
+  {
+    id: 1,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposals: Social Impact Startups/Projects",
+    description: "",
+    lastDate: "Last Date for Submission: December 10, 2023",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action1",
+        pdfLink:  SpecialCall ,
+      },
+      {
+        text: "Submit your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Application Submission",
+        body: "Please find my application attached.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    mainHeading: "Special Call for Proposals for Scheduled Tribes (ST)",
+    subHeading: "",
+    description:
+      "IBITF invites applications for conducting training programmes, workshops, conferences under Scheduled Tribe in Fintech Area.",
+    lastDate: "Last Date for Submission for this cohort: September 16, 2023",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: card2pdf ,
+      },
+      {
+        text: "Education Institution",
+        action: "email",
+        email: "info@example.com",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+        pdfLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
+      },
+      {
+        text: "International Organization",
+        pdfLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
+      },
+      {
+        text: "Govt.Organization/Department/Line Ministry",
+        pdfLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
+      },
+      {
+        text: "Private Organization/NGOs/Others",
+        pdfLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
+      },
+      {
+        text: "Fintech Startups",
+        pdfLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
+      },
+    ],
+  },
+  {
+    id: 3,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposals for TBI Scheme",
+    description:
+      "Proposals are invited by IBITF under the Technology Business Incubator schemes.",
+    lastDate: "Last Date for Submission for this cohort: March 20,2023",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: tbiScheme,
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "info@example.com",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposals for Chair Professor",
+    description: "Proposals are invited by IBITF to join as Chair Professor.",
+    lastDate: "",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: chairProfessor
+         
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "info@example.com",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
 ],
 };
