@@ -24,7 +24,7 @@ import ScrollToTop from './components/ScrollToTop';
 const App = () => {
   return (
     <Router>
-     <ScrollToTop/>
+     <ScrollToTop/> 
       <Navbar />
       <Routes>
         {/* Static Routes */}
