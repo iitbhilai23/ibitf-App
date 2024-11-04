@@ -11,6 +11,7 @@ import ImageSlider from '../components/ImageSlider';
 import TechnologiesDevelopment from '../components/TechnologiesDevelopment';
 import OurAwards from '../components/OurAwards';
 import FeaturedProjects from '../components/FeaturedProjects';
+import CollaborationSlider from '../components/Slider/Slider';
 
 
 
@@ -35,6 +36,7 @@ const Home = () => {
       
       {/* <AboutSection /> */}
       <SupportBy />
+      <CollaborationSlider />
     </>
 
   )
