@@ -797,8 +797,9 @@ cardDataForCFP: [
         subject: "Inquiry About Proposal",
         body: "I have some questions regarding the proposal.",
       },
-s    ],
+   ],
   },
+],
 
 
 CollaborationBy: {
