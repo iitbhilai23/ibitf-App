@@ -2,11 +2,11 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { pagesConfig } from "../constants/pagesConfig";
 import "./ProjectTemplate.css";
-import objectiveLogo from '../assets/vector image/objective.svg';
-import workshopLogo from '../assets/vector image/workshop.svg';
-import progressLogo from '../assets/vector image/progress.svg';
-import publicationLogo from '../assets/vector image/publication.svg';
-import AchievementLogo from '../assets/vector image/Achievement.svg';
+import objectiveLogo from '../assets/VectorIMG/objective.svg';
+import workshopLogo from '../assets/VectorIMG/workshop1.svg';
+import progressLogo from '../assets/VectorIMG/progress.svg';
+import publicationLogo from '../assets/VectorIMG/publication.svg';
+import AchievementLogo from '../assets/VectorIMG/Achievement.svg';
 import { Box } from "@mui/material";
 
 const ProjectTemplate = () => {

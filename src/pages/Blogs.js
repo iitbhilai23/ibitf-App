@@ -1,6 +1,6 @@
 import React from "react";
 import { siteContent } from "../constants/content";
-import BlogLogo from "../assets/vector image/Blog.svg";
+import BlogLogo from "../assets/VectorIMG/Blog.svg";
 import "../styles/main.css";
 
 const Blogs = () => {

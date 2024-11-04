@@ -1192,3 +1192,22 @@ body {
   background-color: #5B0DA0;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
+
+
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color:#6a0dad;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #9c51c0;
+}
