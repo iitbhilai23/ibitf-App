@@ -218,35 +218,35 @@ heroSubcontent:'The areas of focus are in various Major  Technologies like Big 
         title: 'Fintech Solutions',
         description: 'Facilitates quick, secure, and convenient online financial transactions online or via mobile devices, enhancing access to banking services.',
         // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/fintech.jpg'),
+        image: require('../assets/VectorIMG/fintech.jpg'),
       },
       {
         title: 'Agritech Solutions',
         description: 'Driving fintech innovation through smart agriculture, entrepreneurship, and sustainable ecosystem focusing on increasing farmers income.',
-        image: require('../assets/Vector IMG/agritech.jpg'),
+        image: require('../assets/VectorIMG/agritech.jpg'),
       },
       {
         title: 'Meditech Solutions',
         description: 'Fintech augmentation with medical applications  like insurance, e-market place etc. Digitization of traditional knowledge of medicinal plants, their clinical study and standardization.',
-        image: require('../assets/Vector IMG/meditech.jpg'),
+        image: require('../assets/VectorIMG/meditech.jpg'),
       },
       {
         title: 'AI/ML (Artificial Intelligence/Machine Learning)',
         description: 'Uses data and algorithms to make smart decisions and predictions, optimizing processes and providing personalized solutions.',
         // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/ai-image.jpg'),
+        image: require('../assets/VectorIMG/ai-image.jpg'),
       },
       {
         title: 'IoT (Internet of Things)',
         description: 'Connects devices and sensors to the Internet, enabling real-time data collection and smarter management of resources and services.',
         // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/iot.jpg'),
+        image: require('../assets/VectorIMG/iot.jpg'),
       },
       {
         title: 'Blockchain',
         description: 'Ensures secure, transparent, and tamper-proof transactions through a decentralized digital ledger.',
         // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/blockchain.jpg'),
+        image: require('../assets/VectorIMG/blockchain.jpg'),
       },
 
     ],
@@ -286,65 +286,65 @@ heroSubcontent:'The areas of focus are in various Major  Technologies like Big 
       {
         name: 'Prof. Rajiv Prakash',
         designation: 'Director IIT Bhilai & Chariman',
-        image: require('../assets/Team IMG/director.png'),
+        image: require('../assets/TeamImg/director.png'),
       },
       {
         name: 'Dr. Rajeev Shorey',
         designation: 'Chief Executive Officer & University of Queensland - IIT Delhi Academy of Research (UQIDAR)',
-        image: require('../assets/Team IMG/RajeevShoury.jpg'),
+        image: require('../assets/TeamImg/RajeevShoury.jpg'),
       },
       {
         name: 'Prof. Sumeet Gupta',
         designation: 'Professor, IIM Raipur',
-        image: require('../assets/Team IMG/SumitGupta.jpg'),
+        image: require('../assets/TeamImg/SumitGupta.jpg'),
       },
       {
         name: 'Prof. Santosh Biswas',
         designation: 'Dean of R&D, Project Director (IBITF)',
-        image: require('../assets/Team IMG/santosh.jpeg'),
+        image: require('../assets/TeamImg/santosh.jpeg'),
       },
       {
         name: 'Dr. Souradyuti Paul',
         designation: 'Associate professor,  Dept. of EECS IIT Bhilai',
-        image: require('../assets/Team IMG/PaulSir.jpeg'),
+        image: require('../assets/TeamImg/PaulSir.jpeg'),
       },
       {
         name: 'Dr. Barun Gorain',
         designation: 'Assistant Professor,  Dept. of EECS IIT Bhilai',
-        image: require('../assets/Team IMG/Barun.jpg'),
+        image: require('../assets/TeamImg/Barun.jpg'),
       },
       {
         name: 'Mr. Gautam Ramani',
         designation: 'Deputy Registrar (F and A), IIT Bhilai',
-        image: require('../assets/Team IMG/Gautam.jpg'),
+        image: require('../assets/TeamImg/Gautam.jpg'),
       },
       {
         name: 'Mr. S Mukopadhyay',
         designation: 'ED (Projects), Bhilai Steel Plant(BSP), Sail',
-        image: require('../assets/Team IMG/Mukopadhyay.jpeg'),
+        image: require('../assets/TeamImg/Mukopadhyay.jpeg'),
       },
       {
         name: 'Padma Shri Phoolbasan Bai Yadav',
         designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
-        image: require('../assets/Team IMG/Poolbusan.png'),
+        image: require('../assets/TeamImg/Poolbusan.png'),
       }
       ,
       {
         name: 'Shri. Manish Gupta',
         designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
-        image: require('../assets/Team IMG/ManishGupta.jpeg'),
+        image: require('../assets/TeamImg/ManishGupta.jpeg'),
       }
       ,
       {
         name: 'Shri. Naresh Kumar',
         designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
-        image: require('../assets/Team IMG/NareshKumar.jpeg'),
+        image: require('../assets/TeamImg/NareshKumar.jpeg'),
       }
       ,
       {
         name: 'Shri. Somesh Sharma',
         designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
-        image: require('../assets/Team IMG/SomeshSharma.jpeg'),
+        image: require('../assets/TeamImg/SomeshSharma.jpeg'),
       }
 
     ]
@@ -356,60 +356,60 @@ heroSubcontent:'The areas of focus are in various Major  Technologies like Big 
       {
         name: 'Prof. Rajiv Prakash',
         designation: 'Director IIT Bhilai & Chariman',
-        image: require('../assets/Team IMG/director.png'),
+        image: require('../assets/TeamImg/director.png'),
       },
       {
         name: 'Prof. D. Janakiram',
         designation: 'Academic Representative, Member',
-        image: require('../assets/Team IMG/jankiram.jpg'),
+        image: require('../assets/TeamImg/jankiram.jpg'),
       },
       {
         name: 'Prof. G. Sivakumar',
         designation: 'Academic Representative, Member',
-        image: require('../assets/Team IMG/shivkumar.jpg'),
+        image: require('../assets/TeamImg/shivkumar.jpg'),
       },
       {
         name: 'Mr. Rama Iyer',
         designation: 'Industry Representative, Member',
-        image: require('../assets/Team IMG/ramalyer.jpg'),
+        image: require('../assets/TeamImg/ramalyer.jpg'),
       },
       {
         name: 'Mr. J A Chowdary',
         designation: 'Industry Representative, Member',
-        image: require('../assets/Team IMG/JAChoudary.jpg'),
+        image: require('../assets/TeamImg/JAChoudary.jpg'),
       },
       {
         name: 'Dr. Ekta Kapoor',
         designation: 'Mission Director of NM-ICPS & DST, Member',
-        image: require('../assets/Team IMG/Ekta.jpg'),
+        image: require('../assets/TeamImg/Ekta.jpg'),
       },
       {
         name: 'Mr. Prashant Mathur',
         designation: 'Chief Executive Officer, IBITF',
-        image: require('../assets/Team IMG/ceo.jpeg'),
+        image: require('../assets/TeamImg/ceo.jpeg'),
       },
       {
         name: 'Padma Shri Phoolbasan Bai Yadav',
         designation: 'Founder, Maa Bamleshwari Janhit Kare Samiti',
-        image: require('../assets/Team IMG/Poolbusan.png'),
+        image: require('../assets/TeamImg/Poolbusan.png'),
       }
       ,
       {
         name: 'Shri. Manish Gupta',
         designation: 'Director, Beekay Engineering Corporation Pvt. Ltd',
-        image: require('../assets/Team IMG/ManishGupta.jpeg'),
+        image: require('../assets/TeamImg/ManishGupta.jpeg'),
       }
       ,
       {
         name: 'Shri. Naresh Kumar',
         designation: 'CTO, India and EMEA Region, Tektronix Pvt. Ltd',
-        image: require('../assets/Team IMG/NareshKumar.jpeg'),
+        image: require('../assets/TeamImg/NareshKumar.jpeg'),
       }
       ,
       {
         name: 'Shri. Somesh Sharma',
         designation: 'Co-Founder and COO, Augtech NextWealth IT Services Pvt. Ltd',
-        image: require('../assets/Team IMG/SomeshSharma.jpeg'),
+        image: require('../assets/TeamImg/SomeshSharma.jpeg'),
       }
 
     ]
@@ -420,66 +420,66 @@ heroSubcontent:'The areas of focus are in various Major  Technologies like Big 
       {
         name: 'Mr. Prashant Mathur',
         designation: 'Chief Executive Officer, IBITF',
-        image: require('../assets/Team IMG/ceo.jpeg'),
+        image: require('../assets/TeamImg/ceo.jpeg'),
       },
       {
         name: 'Prof. Santosh Biswas',
         designation: 'Dean of R&D, Project Director (IBITF)',
-        image: require('../assets/Team IMG/santosh.jpeg'),
+        image: require('../assets/TeamImg/santosh.jpeg'),
       },
       {
         name: 'Mr. Vishnu Vaibhav Dwivedi',
         designation: 'Chief Technology Officer, (IBITF)',
-        image: require('../assets/Team IMG/cto.png'),
+        image: require('../assets/TeamImg/cto.png'),
       },
       {
         name: 'Mrs. Pratibha Dongre',
         designation: 'Project Associate, IBITF',
-        image: require('../assets/Team IMG/pratibha.jpg'),
+        image: require('../assets/TeamImg/pratibha.jpg'),
       }, {
         name: 'Mrs. Preeti Tiwari',
         designation: 'Project Associate, IBITF',
-        image: require('../assets/Team IMG/preeti.png'),
+        image: require('../assets/TeamImg/preeti.png'),
       },
       {
         name: 'Mrs. Nidhi Trivedi',
         designation: 'Project Associate, IBITF',
-        image: require('../assets/Team IMG/nidhi.png'),
+        image: require('../assets/TeamImg/nidhi.png'),
       },
       {
         name: 'Mrs. K Sujata',
         designation: 'Project Associate, IBITF',
-        image: require('../assets/Team IMG/sujata.png'),
+        image: require('../assets/TeamImg/sujata.png'),
       },
       {
         name: 'Ms. Richa Bhoi',
         designation: 'Project Assistant, IBITF',
-        image: require('../assets/Team IMG/Richa.jpeg'),
+        image: require('../assets/TeamImg/Richa.jpeg'),
       },
       {
         name: 'Ms. Aanchal Sahu',
         designation: 'Project Assistant, IBITF',
-        image: require('../assets/Team IMG/Aanchal_sahu.jpeg'),
+        image: require('../assets/TeamImg/Aanchal_sahu.jpeg'),
       },
       {
         name: 'Ms. Sonali Patle',
         designation: 'Project Assistant, IBITF',
-        image: require('../assets/Team IMG/sonali.jpg'),
+        image: require('../assets/TeamImg/sonali.jpg'),
       },
       {
         name: 'Mr. Lala Ram',
         designation: 'Project Assistant, IBITF',
-        image: require('../assets/Team IMG/Lalaram.jpg'),
+        image: require('../assets/TeamImg/Lalaram.jpg'),
       },
       {
         name: 'Ms. Aanchal Barchhiha',
         designation: 'Project Assistant, IBITF',
-        image: require('../assets/Team IMG/AnchalBarchhiha.jpg'),
+        image: require('../assets/TeamImg/AnchalBarchhiha.jpg'),
       },
       {
         name: 'Mr. Domeshwar',
         designation: 'Project Attendent, IBITF',
-        image: require('../assets/Team IMG/domesh24.jpeg'),
+        image: require('../assets/TeamImg/domesh24.jpeg'),
       },
     ],
   },
