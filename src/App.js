@@ -19,10 +19,12 @@ import Thematic from './pages/Thematic';
 import Schemes from './pages/Schemes';
 import Blogs from './pages/Blogs';
 import CallForProposals from './pages/CallForProposal';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <Router>
+     <ScrollToTop/> 
       <Navbar />
       <Routes>
         {/* Static Routes */}

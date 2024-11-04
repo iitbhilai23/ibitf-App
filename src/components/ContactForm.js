@@ -1,74 +1,4 @@
 
-// import React, { useState } from 'react';
-// import { siteContent } from '../constants/content';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faMapMarkerAlt, faEnvelope, faPhone, faFax } from '@fortawesome/free-solid-svg-icons';
-
-
-// const ContactForm = () => {
-//   const { ContactForm, contactDetails } = siteContent;
-
-//   const [formData, setFormData] = useState({
-//     name: '',
-//     email: '',
-//     message: '',
-//   });
-
-//   const handleChange = (e) => {
-//     setFormData({
-//       ...formData,
-//       [e.target.name]: e.target.value,
-//     });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     alert(`Thank you for contacting us, ${formData.name}!`);
-//   };
-
-//   return (
-
-
-
-//     <div className="contact-page">
-
-
-//       <div className="contact-form-wrapper">
-//         <h1>{ContactForm.title}</h1>
-//         <p>{ContactForm.description}</p>
-//         <form onSubmit={handleSubmit} className="contact-form">
-//           <input
-//             type="text"
-//             name="name"
-//             placeholder="Your Name"
-//             value={formData.name}
-//             onChange={handleChange}
-//           />
-//           <input
-//             type="email"
-//             name="email"
-//             placeholder="Your Email"
-//             value={formData.email}
-//             onChange={handleChange}
-//           />
-//           <textarea
-//             name="message"
-//             placeholder="Your Message"
-//             value={formData.message}
-//             onChange={handleChange}
-//           />
-//           <button type="submit">Send Message</button>
-//         </form>
-
-//       </div>
-
-//     </div>
-
-//   );
-// };
-
-// export default ContactForm;
-
 import React, { useState } from 'react';
 import { siteContent } from '../constants/content';
 
@@ -93,23 +23,45 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const emailValid = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+    if (!formData?.name || formData.name.length <= 3) {
+      alert(`Please Enter your Name`)
+      return
+    }
+    else if (!emailValid.test(formData?.email) && !formData?.email) {
+      alert(`Please Enter Valid  Email`)
+      return
+    }
+    else if (!formData?.subject || formData.subject.length <= 3) {
+      alert(`Please Enter Subject`)
+      return
+    }
+    else if (!formData?.message || formData.message.length <= 3) {
+      alert(`Please Enter Message`)
+      return
+    }
     alert(`Thank you for contacting us, ${formData.name}!`);
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    })
   };
 
   return (
     <div style={styles.container}>
-      <h3 style={styles.subtitle}>Write Us</h3>
-      <h1 style={styles.title}>
-        {/* {formContent.title} */}
+      <h3 style={styles.subtitle}> Contact Us</h3>
+      {/* <h1 style={styles.title}>
         Contact Us        
-        </h1>
-      <p style={styles.description}>
+        </h1> */}
+      {/* <p style={styles.description}>
         
       Don't hesitate to contact us
       anytime with questions
-        {/* {formContent.description} */}
         
-        </p>
+        </p> */}
       <form onSubmit={handleSubmit} style={styles.form}>
         <div style={styles.inputRow}>
           <input
@@ -154,17 +106,17 @@ const styles = {
   container: {
     maxWidth: '1300px',
     margin: '0 auto',
-    padding: '40px',
+    padding: '20px 40px',
     // backgroundColor: '#f8f9fc',
     borderRadius: '10px',
     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
-    margin:'5px auto 20px'
+    margin: '5px auto 20px'
   },
   subtitle: {
-    fontSize: '14px',
+    fontSize: '18px',
     color: '#6c757d',
-    marginBottom: '8px',
+    lineHeight: '30px',
     textTransform: 'uppercase',
   },
   title: {
@@ -204,6 +156,7 @@ const styles = {
     border: '1px solid #ddd',
     height: '120px',
     resize: 'none',
+    fontFamily: 'Poppins',
   },
   button: {
     padding: '12px 20px',
