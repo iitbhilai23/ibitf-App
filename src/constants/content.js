@@ -725,7 +725,29 @@ SupportBy: {
     require('../assets/Images/DST.png'), // Image 1
     require('../assets/Images/NMICPS.png'), // Image 1
     // require('../assets/Images/DST.png'), 
-    require('../assets/Images/ibitf.jpg'), // Image 1
+    require('../assets/Images/ibitf.png'), // Image 1
+  ],
+},
+CollaborationBy: {
+  title: "Supported By",
+  logos: [
+    require('../assets/logo/collaboration/1.png'),
+    require('../assets/logo/collaboration/3.png'),
+    require('../assets/logo/collaboration/4.png'),
+    require('../assets/logo/collaboration/5.png'),
+    require('../assets/logo/collaboration/6.png'),
+    require('../assets/logo/collaboration/7.png'),
+    require('../assets/logo/collaboration/2.png'),
+    require('../assets/logo/collaboration/8.png'),
+    require('../assets/logo/collaboration/9.png'),
+    require('../assets/logo/collaboration/10.png'),
+    require('../assets/logo/collaboration/11.png'),
+    require('../assets/logo/collaboration/12.png'),
+    require('../assets/logo/collaboration/13.png'),
+    require('../assets/logo/collaboration/14.png'),
+    require('../assets/logo/collaboration/15.png'),
+    require('../assets/logo/collaboration/16.png'),
+    require('../assets/logo/collaboration/17.png'),
   ],
 },
 
