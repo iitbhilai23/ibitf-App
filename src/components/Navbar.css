@@ -4,11 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 4px 56px;
-  background-color: var(--primary-color);
-
-  color: var(--secondary-color);
-
-
+  background-color: var(--secondary-color);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -16,10 +12,21 @@
 }
 
 .logo {
-  /* width: 300px; */
   height: 62px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: height 0.3s ease;
+}
+
+/* Adjust logo size for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 20px; /* Reduce padding for smaller screens */
+  }
+
+  .logo {
+    height: 50px; /* Adjust logo height for mobile */
+  }
 }
 
 .menu {
@@ -33,14 +40,32 @@
 .menu li {
   position: relative;
   padding: 10px 0;
-  display: block;
 }
 
 .menu li a {
-  color: var(--secondary-color);
+  color: var(--primary-color) !important;
   text-decoration: none;
   font-size: 1rem;
   display: block;
+}
+
+.menu li a:hover,
+.menu.active li a:hover {
+  color: var(--primary-color) !important; /* Consistent hover color */
+}
+
+/* Styling for the active menu item */
+.menu li.active a,
+.menu.active li.active a {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 2px;
+}
+
+/* Styling for submenu active items */
+.mega-menu li.active a {
+  color: #4b0082;
+  border-bottom: 2px solid #4b0082;
 }
 
 /* Submenu container */
@@ -53,11 +78,10 @@
   display: none;
   position: absolute;
   top: 100%;
-  /* Position the submenu directly below the parent */
   left: 0;
-  /* Align with the parent item */
+  right: 10px;
   background-color: var(--primary-color);
-  padding: 10px;
+  padding: 10px 0px;
   list-style: none;
   z-index: 100;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,32 +90,37 @@
 .has-submenu.open .mega-menu {
   display: block;
   width: max-content;
+  background-color: var(--secondary-color);
+
 }
 
 .has-submenu.open .mega-menu ul {
   width: 100%;
   display: contents;
+
 }
 
 .mega-menu li {
-  padding: 8px 15px;
+  padding: 4px 16px;
   text-align: left;
+  list-style-type: none;
+ 
 }
 
 .mega-menu li a {
-  color: var(--secondary-color);
   text-decoration: none;
+
   font-size: 1rem;
   display: block;
-  padding: 10px 12px;
+  padding: 6px 12px;
   transition: background-color 0.3s ease;
+  border-radius: 4px;
 }
 
 /* Improved hover effect */
 .mega-menu li a:hover {
-  color: #fff;
-  background-color: var(--secondary-color);
-  /* padding: 5px 10px; */
+  color: #fff !important;
+  background-color: var(--primary-color);
   border-radius: 4px;
 }
 
@@ -99,57 +128,117 @@
 .menu li a,
 .menu li span {
   font-size: 1rem;
-  color: var(--secondary-color);
+  color: var(--primary-color) !important;
   text-decoration: none;
   display: block;
 }
 
-/* Mobile-specific styling */
+
+
+/* Mobile Menu Icon */
 .mobile-menu-icon {
   display: none;
-  font-size: 1.5rem;
-  color: var(--secondary-color);
-  cursor: pointer;
+  font-size: 1rem; /* Larger icon for better visibility */
+  color: var(--primary-color);
+  cursor: pointer; 
+ 
+  
 }
 
 /* Mobile menu styling */
 .menu.active {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background-color: var(--primary-color);
-  width: 100%;
-  height: 100vh;
+  position: fixed;
+  top: 50px;  
+  left: 0;
+  background-color: #000; /* Darker background color for better contrast */
+
+  
+  /* Full width to cover the screen */
+  
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 10px 0px 20px 40px !important;
+  z-index: 1000;
+
 }
 
 .menu.active li {
-  margin: 0px 0;
   display: block;
   width: 100%;
+  padding: 5px 0;
+
+   /* Add spacing for better readability */
 }
 
+.menu.active li a {
+  color: #e6e6fa; /* Light lavender color for readability */
+  font-size: clamp(1rem, 4vw, 1rem); /* Responsive font size */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 100%;
+  padding: 5px 0;
+  text-align: left;
+  background-color: transparent;
+}
+
+/* Active and Hover Styling for Mobile Menu */
+.menu.active li a:hover,
+.menu.active li.active a {
+  color:var(--secondary-color) !important; /* Gold color for hover and active state */
+  width: 85%;
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 4px;
+}
+
+/* Remove gaps on right side */
+.menu.active li a {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Submenu styling for mobile */
 .menu.active li.has-submenu {
   display: inline-block;
   text-align: center;
+  width: 100%;
+ 
+  text-align: left;
+ 
 }
 
 .menu.active li.has-submenu .mega-menu {
   position: relative;
   left: 0;
+
+  background-color:transparent;
   top: 10px;
-  width: 100%;
-  padding: 5px 0;
+  width: 85%;
+  padding: 10px 0;
 }
 
 .menu.active li.has-submenu .mega-menu li {
-  padding: 8px 0;
+  padding:5px 0px 5px 20px;
+  font-size: 1.8rem;
   text-align: center;
+  
 }
+
+/* Menu item spacing */
+.menu li a,
+.menu li span {
+  font-size: clamp(1rem, 4vw, 1rem); 
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ 
+}
+
 
 /* Toggle menu icon display for mobile */
 @media (max-width: 768px) {
@@ -166,26 +255,10 @@
 
   .mobile-menu-icon {
     display: block;
+    font-size: 1.8rem;
   }
 
   .mega-menu {
     width: 100%;
   }
-}
-
-/* Custom spacing adjustment */
-.menu.active li a {
-  padding: 10px 0;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.menu.active li.has-submenu.open .mega-menu {
-  display: block;
-}
-
-.menu li a:hover,
-.menu.active li a:hover {
-  color: #007bff;
 }

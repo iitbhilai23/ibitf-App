@@ -165,34 +165,88 @@ export const siteContent = {
     ],
   },
 
-  footer: {
-    text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
+  // footer: {
+  //   text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
+  // },
+
+
+// this is footer page content
+
+footer: {
+  footerlogo: require('../assets/logo/iit@.png'),
+  text: '© 2024 IIT Bhilai Innovation Technologies and Foundation. All rights reserved.',
+  about: {
+    title: 'IIT Bhilai Innovation Technologies and Foundation',
+    description: 'Dedicated to technological advancements and empowering the future with cutting-edge innovations.',
   },
+  socials: [
+    { name: 'Facebook', url: 'https://facebook.com' },
+    { name: 'Twitter', url: 'https://twitter.com' },
+    { name: 'Instagram', url: 'https://instagram.com' },
+    { name: 'LinkedIn', url: 'https://linkedin.com' }
+  ],
+  links: ['About Us', 'Blog posts', 'Services', 'Contact us'],
+  services: ['Web Design', 'Development', 'Marketing Plans', 'Digital Services'],
+  info: ['Offline SEO', 'Development', 'Growth Hacking', 'Branding'],
+  support: ['FAQ', 'Help', 'Privacy Policy', 'Terms']
+},
+
+//  this is home page content 
+
   home: {
-    heroTitle: 'Welcome to TIH at IIT Bhilai',
-    heroSubtitle: `The Technology Innovation Hub (TIH) at IIT Bhilai is one of the 25 hubs setup under the National Mission of Interdisciplinary Cyber-Physical Systems (NM-ICPS) program of the Department of Science and Technology`,
-    heroSubtitle1: `The TIH at IIT Bhilai is the nodal centre for spearheading Entrepreneurship, Research and Development, HRD and Skill development and collaboration related activities in the area of Financial Technologies`,
+    heroTitle: 'Here You are at FinTech Hub IIT Bhilai Innovation and Technology Foundation (IBITF)',
+    heroSubtitle: `The Technology Innovation Hub (TIH) at IIT Bhilai is setup under the National Mission of Interdisciplinary Cyber-Physical Systems (NM-ICPS) program of the Department of Science and Technology (DST). IIT Bhilai Innovation and Technology Foundation, a sec 8 company of DST under the patronage of IIT Bhilai invite you to join this endeavor.
+`,
+    heroSubtitle1: `IIT Bhilai Innovation and Technology Foundation is the nodal centre for spearheading Entrepreneurship, Research and Development, HRD and Skill development and collaboration related activities in the area of Financial Technologies`,
+    heroSubcontent: `Government focus on converting functional research into transitional research in technical institutions of repute so that commercial products and businesses (startups) can be created for socio economic benefit or the public in large. IBITF leverage within Science, Engineering, Technology and Liberal Art. The focus area is FinTech, AgriTech, HealthTech, Logistics, Industry 4.0 and other emerging needs using futuristic Technologies like AI, ML, AR, VR, IoT, LLM, Deep Analysis and many more in bringing innovative and novel products.
+`,
+heroSubcontent1: `IBITF is associated with IIT Bhilai and work on FinTech, AgriTech and HealthTech concentrating emerging Technologies in creating smart products and industry alignment for the delivery of socio economic  benefits and employment through deep Technologies.
+`,
 
-
-    heroTitle1: 'IBITF: Section 8 company for TIH at IIT Bhilai',
-    heroSubtitle2: `IIT BHILAI INNOVATION AND TECHNOLOGY FOUNDATION (IBITF) is a Section 8 company responsible for executing the activities of TIH.`,
-    heroSubtitle3: `Rs 55 crore is sanctioned by DST for the period of five years to the company which will focus on projects in arena of Financial Technologies`,
+    heroTitle1: 'National Mission on Interdisciplinary Cyber Physical Systems',
+    heroSubtitle2: `NM-ICPS (National Mission on Interdisciplinary Cyber Physical Systems) is a comprehensive Mission aimed at complete convergence with all stakeholders by establishing strong linkages between academia, industry, Government and International Organizations. The Mission was approved by the Union Cabinet at a total outlay of Rs. 3660 Crores for a period of five years.
+`,
+    heroSubtitle3: `NMICPS is turning the new technological evolution into a huge opportunity by research, training and skilling in robotics, artificial intelligence, digital manufacturing, big data analysis, deep learning, quantum communication and Internet-of-Things. The mission is into developing and exploiting these technologies in services and manufacturing sectors; in agriculture, water, energy & traffic management; health, environment, infrastructure and Geo-Information Systems; security; financial systems and in combating crime.
+`,
+heroSubcontent:'The areas of focus are in various Major  Technologies like Big Data, Manufacturing, and Quantum Communication. One of the mandates is towards training youth at all levels, developing Incubators and start-ups in these areas.',
     cards: [
+      
+  
+   
+
       {
-        title: 'Cloud Solutions',
-        description: 'Scalable cloud services for your business.',
+        title: 'Fintech Solutions',
+        description: 'Facilitates quick, secure, and convenient online financial transactions online or via mobile devices, enhancing access to banking services.',
         // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/Cloud1.jpg'),
+        image: require('../assets/Vector IMG/fintech.jpg'),
       },
       {
-        title: 'AI-Driven Analytics',
-        description: 'Harness the power of AI for insights.',
-        image: require('../assets/Vector IMG/AI.jpg'),
+        title: 'Agritech Solutions',
+        description: 'Driving fintech innovation through smart agriculture, entrepreneurship, and sustainable ecosystem focusing on increasing farmers income.',
+        image: require('../assets/Vector IMG/agritech.jpg'),
       },
       {
-        title: 'Cybersecurity',
-        description: 'Protect your business with top security solutions.',
-        image: require('../assets/Vector IMG/Cloud1.jpg'),
+        title: 'Meditech Solutions',
+        description: 'Fintech augmentation with medical applications  like insurance, e-market place etc. Digitization of traditional knowledge of medicinal plants, their clinical study and standardization.',
+        image: require('../assets/Vector IMG/meditech.jpg'),
+      },
+      {
+        title: 'AI/ML (Artificial Intelligence/Machine Learning)',
+        description: 'Uses data and algorithms to make smart decisions and predictions, optimizing processes and providing personalized solutions.',
+        // image: 'assets/service1.jpg',
+        image: require('../assets/Vector IMG/ai-image.jpg'),
+      },
+      {
+        title: 'IoT (Internet of Things)',
+        description: 'Connects devices and sensors to the Internet, enabling real-time data collection and smarter management of resources and services.',
+        // image: 'assets/service1.jpg',
+        image: require('../assets/Vector IMG/iot.jpg'),
+      },
+      {
+        title: 'Blockchain',
+        description: 'Ensures secure, transparent, and tamper-proof transactions through a decentralized digital ledger.',
+        // image: 'assets/service1.jpg',
+        image: require('../assets/Vector IMG/blockchain.jpg'),
       },
 
     ],
@@ -217,9 +271,9 @@ export const siteContent = {
   },
   contactDetails: {
     title: 'Contact Us',
-    address: 'IIT Bhilai Innovation and Technology Foundation (IBITF), IIT Bhilai Permanent Campus, Kutelabhata, Khapari, District-Durg, Chhattisgarh-491001',
+    address: 'IIT Bhilai Innovation and Technology Foundation (IBITF), TIH Office, Level - 4, LDC Building, Kutelabhata, Durg, Chhattisgarh,491002 ',
     email: 'tih@iitbhilai.ac.in',
-    phone: '+91*******7181',
+    phone: '+917587738819',
     fax: '+3356 1589 2100',
   },
 
@@ -628,5 +682,133 @@ cardDataForCFP: [
       },
     ],
   },
+
 ],
+TribalAreaPlan: {
+  title: "Background of Tribal Area Sub Plan",
+  description:
+    "The primary objective of the Tribal Area Sub-Plan (TSP) is to significantly enhance the livelihoods of Scheduled Tribe (ST) communities by integrating advanced financial, agricultural and medical technologies. This initiative aims to address the specific challenges faced by these communities through the strategic deployment of cutting-edge technologies such as Artificial Intelligence/Machine Learning (AI/ML), Internet of Things (IoT), Blockchain, and E-Payments. ",
+    subtitle:'By focusing on critical areas including FinTech, HealthTech and AgirTech, the scheme aims to accomplish the following:',
+  features: [
+    {
+      image: "/images/economic-stability.png", // Add your custom image path
+      title: "Economic Stability",
+      description:
+        "Utilize fintech solutions to promote sustainable economic development, increase financial inclusion, and provide support for microenterprises and small-scale agriculture.",
+    },
+    {
+      image: "/images/access-services.png",
+      title: "Access to Services",
+      description:
+        "Enhance the accessibility and quality of essential services such as healthcare, education, and energy, by leveraging digital tools and technologies.",
+    },
+    {
+      image: "/images/quality-life.png",
+      title: "Quality of Life",
+      description:
+        "Improve overall living conditions by integrating innovative technologies to create lasting positive change, ensuring that the stakeholders from ST community experience a higher standard of living and greater opportunities for growth.",
+    },
+    {
+      image: "/images/empower-communities.png",
+      title: "Empower Communities",
+      description:
+        "Build the capacity and resilience of ST communities through comprehensive training programs and skill development to foster self-sufficiency and sustainable growth.",
+    },
+  ],
+},
+SupportBy: {
+  title: "Supported By",
+  logos: [
+    require('../assets/Images/iitbhilai.png'), // Image 1
+    require('../assets/Images/DST.png'), // Image 1
+    require('../assets/Images/NMICPS.png'), // Image 1
+    // require('../assets/Images/DST.png'), 
+    require('../assets/Images/ibitf.jpg'), // Image 1
+  ],
+},
+
+
+// for slider page design
+
+sliderImages: [
+  { url: require('../assets/slider/1.jpg'), title: 'Image 1 Title' },
+  { url: require('../assets/slider/2.jpg'), title: 'Image 2 Title' },
+  { url: require('../assets/slider/3.jpg'), title: 'Image 3 Title' },
+  { url: require('../assets/slider/4.jpg'), title: 'Image 4 Title' },
+  // { url: require('../assets/slider/image5.jpg'), title: 'Image 5 Title' },
+],
+
+
+// Aboutsection content page 
+
+AboutSection: {
+  title: "IIT Bhilai Innovation and Technology Foundation (IBITF)",
+  highlight: "IIT Bhilai",
+  description: "IIT Bhilai has been entrusted with establishing a Technology Innovation Hub (TIH) under the NM-ICPS, focusing on financial technologies (FinTech) with significant emphasis on Agritech and Healthtech. As a Section-8 Company, IBITF oversees the TIH’s operations, ensuring alignment with the mission and vision of NMICPS.",
+  buttonText: "Read More",
+  image: require('../assets/AI@.jpg'), // Path to your image
+},
+
+
+// Awards component contents
+awards: [
+  {
+    image: require('../assets/AI@.jpg'), // Replace with actual paths
+    title: 'Project Title 1',
+    description: 'National e-Governance “Gold Award” by Department of  Administrative Reforms Public  Grievance, Government of India, to the project entitled, “ Blochchain based IoT enabled Precision agriculture” and the Mobile App Crop doctor 2.0.',
+  },
+  {
+    image: require('../assets/AI@.jpg'),
+    title: 'Project Title 2',
+    description: 'Project titled, “Intelligent Emergency Care System (iECS) through Digital Hybrid Healthcare” is awarded the Dr. Keshav Baliram Hedgewar Arogya Shri Award (2024) at the Future of Healthcare Forum 2024, held at New Delhi.',
+  },
+  {
+    image: require('../assets/AI@.jpg'),
+    title: 'Project Title 3',
+    description: 'Project entitled, “Smart Cleaner: Automatic Clean the Smart Contract” has been awarded by The Institution of Engineers (India), Mumbai for  Research Excellence in 2023.',
+  },
+  {
+    image: require('../assets/AI@.jpg'),
+    title: 'Project Title 4',
+    description: 'Project titled, “AI based geo-enabled crop insurance” under BhoomiCam Pvt. Ltd. Start-up has been honored with the prestigious Best Geospatial Stratup Award at the National Geospatial awards 2024, organized by FOSSEE (GIS), held in VMCC, IIT Bombay under the aegies of the National Mission on Education, Government of India.',
+  },
+ 
+],
+
+
+// featuredProjects component content
+featuredProjects: [
+  {
+      image:  require('../assets/AI@.jpg'),
+      title: 'Divyang ATM',
+      description: 'Divyang ATM: Divyang ATM, “An Accessible Banking Solution for All,” represents an innovative approach to banking designed to make financial services more accessible, especially for visually Divyang persons. This innovative system integrates an Android application with cutting-edge features to ensure a secure and convenient banking experience.',
+  },
+  {
+      image:  require('../assets/AI@.jpg'),
+      title: 'Bhoomicam',
+      description: 'Revolutionising Agriculture with AI and Satellite Technology: Bhoomicam: A versatile smartphone app ‘Bhoomicam,’ that empowers farmers to input crop information, creating a digital database linking land parcels and satellite imagery. The tool aims to geo-enable farms, integrate AI with satellite data for crop monitoring, and offer personalized recommendations for increasing the quality and quantity of crop production.',
+  },
+  {
+    image:  require('../assets/AI@.jpg'),
+    title: 'Intelligent Emergency Care System (iECS)',
+    description: 'Intelligent Emergency Care System (iECS) Strengthening the Emergency Care Systems in Chhattisgarh through Digital Hybrid Healthcare - An AI-driven platform for doctors in remote areas to manage emergencies, offer 24x7 tele-access to emergency experts, standardize patient assessment, and provide patients with information on affordable medicines, alternative treatments, and insurance options.',
+},
+{
+  image:  require('../assets/AI@.jpg'),
+  title: 'Digital AgriVillage',
+  description: 'Revolutionising Agriculture with AI and Satellite Technology: Bhoomicam: A versatile smartphone app ‘Bhoomicam,’ that empowers farmers to input crop information, creating a digital database linking land parcels and satellite imagery. The tool aims to geo-enable farms, integrate AI with satellite data for crop monitoring, and offer personalized recommendations for increasing the quality and quantity of crop production.',
+},
+{
+  image:  require('../assets/AI@.jpg'),
+  title: 'Vidya samiksha kendra',
+  description: 'Revolutionising Agriculture with AI and Satellite Technology: Bhoomicam: A versatile smartphone app ‘Bhoomicam,’ that empowers farmers to input crop information, creating a digital database linking land parcels and satellite imagery. The tool aims to geo-enable farms, integrate AI with satellite data for crop monitoring, and offer personalized recommendations for increasing the quality and quantity of crop production.',
+},
+{
+  image:  require('../assets/AI@.jpg'),
+  title: 'Video KYC',
+  description: 'Revolutionising Agriculture with AI and Satellite Technology: Bhoomicam: A versatile smartphone app ‘Bhoomicam,’ that empowers farmers to input crop information, creating a digital database linking land parcels and satellite imagery. The tool aims to geo-enable farms, integrate AI with satellite data for crop monitoring, and offer personalized recommendations for increasing the quality and quantity of crop production.',
+},
+  // Add more projects as needed
+],
+
 };

@@ -10,6 +10,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 /* For dynamic theme color */
@@ -17,6 +18,7 @@ body {
 :root {
   --primary-color: #6a0dad;
   --secondary-color: #fff;
+  --third-color:#0d031b;
 }
 
 
@@ -24,94 +26,198 @@ body {
 /* for home page design code here */
 
 .hero {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  /* Adjust height as needed */
-  background-image: linear-gradient(to bottom, rgba(132, 130, 132, 0.9), rgba(106, 13, 173, 0.5)), url('../assets/home_bg.jpg');
-  background-size: cover;
-  /* Ensures image covers the entire container */
-  background-position: center;
-  background-repeat: no-repeat;
-  /* Prevents image repetition */
+  /* background-color: var(--primary-color); */
+  background-image: linear-gradient(rgba(30, 30, 26, 0.7), rgba(33, 29, 29, 0.9), rgba(27, 26, 27, 0.7)), url('../assets/bg.jpeg');
   color: var(--secondary-color);
-  padding: 100px 20px;
+
+
+  padding: 100px 80px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  /* Optional: dark overlay for better contrast */
-  z-index: -1;
-}
 
-.hero h1,
-.hero p {
-  position: relative;
-  z-index: 2;
-  margin: 10px 0;
 }
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  /* Space between cards */
-  padding: 50px;
+.hero, p {
+  font-size: 13px;
 }
-
-.card {
-  background-color: var(--secondary-color);
-  padding: 20px;
-  width: 280px;
-  /* Adjust width as needed */
-  text-align: center;
+.readmore {
+  padding: 18px 72px;
+  margin-top: 30px;
+  /* background-color: var(--primary-color); */
+  background-color: #fff;
+  /* color: var(--secondary-color); */
+  color:var(--primary-color);
+  /* border: 2px solid var(--secondary-color); */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
 }
-
-.card-image {
-  width: 100%;
-  height: 0 auto;
-  object-fit: cover;
-  /* Ensures image covers the full width and height */
-  border-radius: 8px 8px 0 0;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.readmore:hover{
+  background-color: #0d031b;
+  color: #FFF;
+  border: 1.5px solid var(--secondary-color);
+  
 }
 
 
+
+
+
+
+/* For Footer page design  */
 
 
 .footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 20px;
-  /* position: fixed;
-  bottom: 0; */
-  width: 100%;
-  box-shadow: 0px -1px 6px -2px black;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(165, 164, 164) 0%, rgb(61, 56, 62) 15.9%, rgb(18, 18, 18) 15.9%, rgb(112, 61, 114) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+
+  /* background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%); */
+  /* background-color: #111;  */
+  padding: 40px 0;
+  color: #ffffff;
+  box-shadow: 2px -6px 18px 1px rgba(157, 157, 157, 0.2);
+
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-section h2 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d0d0d0;
+}
+
+.footer-button {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #6a0dad;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #272627;
+  color: #d0d0d0;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #a133bc;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+  background-color: #333333;
+  transform: scale(1.1);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #d0d0d0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  width: 80%;
+  border-top: 1px solid #efeded;
+  margin: 20px auto 0px;
+}
+
+.footerlogo {
+  width: 190px;
+  height: auto;
+  /* margin-right: 10px; */
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .footer-button {
+    margin: 20px auto;
+  }
+}
+
+
 
 /* for Team Page */
 .team-page {
@@ -212,43 +318,12 @@ body {
   transform: scale(1.05);
 }
 
-/*for career page */
-.career-page {
-  padding: 50px;
-  text-align: center;
-}
-
-.career-page h1 {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-}
-
-.career-opportunities {
-  margin-top: 30px;
-}
-
-.career-opportunities h2 {
-  color: var(--primary-color);
-}
-
-.career-opportunities ul {
-  list-style-type: none;
-}
-
-.career-opportunities ul li {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  padding: 10px;
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 
 
 
 
-
+/* contact page code here  */
 
 .contact-page {
   display: flex;
@@ -361,7 +436,7 @@ body {
 .career-page {
   margin: 0 auto;
   padding: 25px 40px;
-  font-family: Arial, sans-serif;
+
   background-color: #f9f9f9;
 }
 
@@ -1005,4 +1080,115 @@ body {
     width: 650px;
     height: 320px;
   }
+}
+
+
+/* Blogs Section page code here */
+.blogs-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.blogs-title {
+  color: #6A0DAD;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Introductory Card */
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.blog-intro-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.blog-image {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding: 8px 30px;
+}
+
+.blog-intro-text {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.blog-image:hover {
+  transform: scale(1.05);
+}
+
+/* Blog Cards */
+.blog-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-date {
+  color: #999;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.blog-title {
+  font-weight: bold;
+  color: #4A148C;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6A0DAD;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #5B0DA0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
