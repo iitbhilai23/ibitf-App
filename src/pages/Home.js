@@ -3,36 +3,41 @@ import { siteContent } from '../constants/content';
 
 import Card from '../components/Card';
 
+import Achievements from '../components/Achievements';
+import AboutSection from '../components/AboutSection';
+import TribalAreaPlan from '../components/TribalAreaPlan';
+import SupportBy from '../components/SupportBy';
+import ImageSlider from '../components/ImageSlider';
+import TechnologiesDevelopment from '../components/TechnologiesDevelopment';
+import OurAwards from '../components/OurAwards';
+import FeaturedProjects from '../components/FeaturedProjects';
+
+
+
 
 const Home = () => {
-  const { heroTitle, heroSubtitle, heroSubtitle1, cards,heroTitle1,heroSubtitle2,heroSubtitle3 } = siteContent.home;
+ 
 
   return (
 
-
-    <div className="home">
-  
-      <section className="hero">
+    <>
     
-        <h1>{heroTitle}</h1>
-        <p>{heroSubtitle}</p>
-        <p>{heroSubtitle1}</p>
+    <ImageSlider images={siteContent.sliderImages} />
 
-        <br/>
-        <h1>{heroTitle1}</h1>
-        <p>{heroSubtitle2}</p>
-        <p>{heroSubtitle3}</p>
+      <AboutSection />
+      
+      {/* <HeroSection /> */}
+      {/* <TribalAreaPlan /> */}
+      <FeaturedProjects />
+    \<OurAwards />
+    <TechnologiesDevelopment />
+      <Achievements />
+      
+      {/* <AboutSection /> */}
+      <SupportBy />
+    </>
 
-
-        
-      </section>
-      <section className="cards">
-        {cards.map((card, index) => (
-          <Card key={index} {...card} />
-        ))}
-      </section>
-    </div>
-  );
+  )
 };
 
 export default Home;

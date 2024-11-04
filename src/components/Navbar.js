@@ -7,7 +7,6 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
-   // State to track if navbar is sticky
 
   const { logo, menuItems } = siteContent.navbar;
   const location = useLocation();
@@ -23,21 +22,28 @@ const Navbar = () => {
     return `/${item.toLowerCase().replace(/\s+/g, '-')}`;
   };
 
-  // Close submenu whenever the route changes
   useEffect(() => {
     setOpenSubmenuIndex(null);
   }, [location]);
 
-  // Function to handle sticky navbar on scroll
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
+    setIsSticky(window.scrollY > 50);
   };
 
-  // Add scroll event listener
+  // Close mobile menu if switching to desktop view
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMobile(false); // Close mobile menu on desktop
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -56,7 +62,7 @@ const Navbar = () => {
       <ul className={isMobile ? 'menu active' : 'menu'}>
         {menuItems.map((item, index) => (
           typeof item === 'string' ? (
-            <li key={index}>
+            <li key={index} className={location.pathname === generatePath(item) ? 'active' : ''}>
               <Link
                 to={generatePath(item)}
                 onClick={() => setIsMobile(false)}
@@ -77,7 +83,7 @@ const Navbar = () => {
               <div className={`mega-menu ${openSubmenuIndex === index ? 'active' : ''}`}>
                 <ul>
                   {item.submenu.map((submenuItem, subIndex) => (
-                    <li key={subIndex}>
+                    <li key={subIndex} className={location.pathname === `/${submenuItem.toLowerCase().replace(/\s+/g, '-')}` ? 'active' : ''}>
                       <Link
                         to={`/${submenuItem.toLowerCase().replace(/\s+/g, '-')}`}
                         onClick={() => {
