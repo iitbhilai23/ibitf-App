@@ -1,109 +1,26 @@
-import React from 'react'
-import './Slider.css'
-import img1 from '../../assets/logos/Aadhaar_Logo.png'
-import img2 from '../../assets/logos/NIC-Logo.png'
-import img3 from '../../assets/logos/NPCI-Logo.png'
-import img4 from '../../assets/logos/cdac.jpg'
-import img5 from '../../assets/logos/ibrta.png'
-import img6 from '../../assets/logos/img1.png'
-import img7 from '../../assets/logos/pngwing.png'
+import React from 'react';
+import { siteContent } from '../../constants/content';
+import './Slider.css';
 
-const Slider = () => {
-
-    const sliderImages = [
-        {
-            images: img1
-        },
-        {
-            images: img2
-        },
-        {
-            images: img3
-        },
-        {
-            images: img4
-        },
-        {
-            images: img5
-        },
-        {
-            images: img6
-        },
-        {
-            images: img7
-        }
-    ]
+const CollaborationSlider = () => {
+    const { title, logos } = siteContent.CollaborationBy;
 
     return (
         <div className='main-slide-cnt'>
             <div className='slider-parent'>
-                <h3>Government collaborators</h3>
+                <h3 className='slider-heading'>Collaborations</h3>
                 <div className='slider-collab'>
-                    {sliderImages.map((items, index) => (
-                        <div className='slide-track' key={index}>
-                            <div className='img-parent'>
-                                <img className='slide-img' src={items.images} />
+                    <div className='slide-track'>
+                        {logos.concat(logos).map((logo, index) => (
+                            <div className='img-parent' key={index}>
+                                <img className='slide-img' src={logo} alt={`Logo ${index}`} />
                             </div>
-                        </div>
-                    ))}
-                    {/* <div className='img-parent'>
-                        <img className='slide-img' src={img2} />
+                        ))}
                     </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img3} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img4} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img5} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img6} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img7} />
-                    </div>
-
-                </div> */}
-                    {/* <div className='slide-track'>
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img1} />
-                    </div>
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img2} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img3} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img4} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img5} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img6} />
-                    </div>
-
-                    <div className='img-parent'>
-                        <img className='slide-img' src={img7} />
-                    </div>
-
-                </div> */}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Slider
+export default CollaborationSlider;
