@@ -214,32 +214,25 @@ heroSubcontent:'The areas of focus are in various Major  Technologies like Big 
       {
         title: 'Fintech Solutions',
         description: 'Facilitates quick, secure, and convenient online financial transactions online or via mobile devices, enhancing access to banking services.',
-        // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/fintech.jpg'),
         route:"/FintechIgnite",
-        
         image: require('../assets/VectorIMG/fintech.jpg'),
       },
       {
         title: 'Agritech Solutions',
         description: 'Driving fintech innovation through smart agriculture, entrepreneurship, and sustainable ecosystem focusing on increasing farmers income.',
-        image: require('../assets/Vector IMG/agritech.jpg'),
         route:"/DigitalAgriVillage",
-       
         image: require('../assets/VectorIMG/agritech.jpg'),
       },
       {
         title: 'Meditech Solutions',
         description: 'Fintech augmentation with medical applications  like insurance, e-market place etc. Digitization of traditional knowledge of medicinal plants, their clinical study and standardization.',
-        image: require('../assets/Vector IMG/meditech.jpg'),
         route:"/IndigenousMedicinalPlants",
         image: require('../assets/VectorIMG/meditech.jpg'),
       },
       {
         title: 'AI/ML (Artificial Intelligence/Machine Learning)',
         description: 'Uses data and algorithms to make smart decisions and predictions, optimizing processes and providing personalized solutions.',
-        // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/ai-image.jpg'),
+        // image: 'assets/service1.jpg'
         route:"/aiFintech",
         image: require('../assets/VectorIMG/ai-image.jpg'),
       },
@@ -247,7 +240,6 @@ heroSubcontent:'The areas of focus are in various Major  Technologies like Big 
         title: 'IoT (Internet of Things)',
         description: 'Connects devices and sensors to the Internet, enabling real-time data collection and smarter management of resources and services.',
         // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/iot.jpg'),
         route:"/sustinableAgriculture",
         image: require('../assets/VectorIMG/iot.jpg'),
       },
@@ -255,7 +247,6 @@ heroSubcontent:'The areas of focus are in various Major  Technologies like Big 
         title: 'Blockchain',
         description: 'Ensures secure, transparent, and tamper-proof transactions through a decentralized digital ledger.',
         // image: 'assets/service1.jpg',
-        image: require('../assets/Vector IMG/blockchain.jpg'),
         route:"/datalocker",
         image: require('../assets/VectorIMG/blockchain.jpg'),
       },
