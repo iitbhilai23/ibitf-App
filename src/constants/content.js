@@ -42,7 +42,7 @@ export const siteContent = {
   },
     ],
   },
-
+ 
 
   aboutPage: {   // This is the section for the About IBITF content
     title: 'IIT Bhilai Innovation and Technology Foundation (IBITF)',
@@ -210,42 +210,44 @@ heroSubcontent1: `IBITF is associated with IIT Bhilai and work on FinTech, AgriT
 `,
 heroSubcontent:'The areas of focus are in various Major  Technologies like Big Data, Manufacturing, and Quantum Communication. One of the mandates is towards training youth at all levels, developing Incubators and start-ups in these areas.',
     cards: [
-      
-  
-   
 
       {
         title: 'Fintech Solutions',
         description: 'Facilitates quick, secure, and convenient online financial transactions online or via mobile devices, enhancing access to banking services.',
-        // image: 'assets/service1.jpg',
+        route:"/FintechIgnite",
         image: require('../assets/VectorIMG/fintech.jpg'),
       },
       {
         title: 'Agritech Solutions',
         description: 'Driving fintech innovation through smart agriculture, entrepreneurship, and sustainable ecosystem focusing on increasing farmers income.',
+        route:"/DigitalAgriVillage",
         image: require('../assets/VectorIMG/agritech.jpg'),
       },
       {
-        title: 'Meditech Solutions',
+        title: 'Healthtech Solutions',
         description: 'Fintech augmentation with medical applications  like insurance, e-market place etc. Digitization of traditional knowledge of medicinal plants, their clinical study and standardization.',
+        route:"/IndigenousMedicinalPlants",
         image: require('../assets/VectorIMG/meditech.jpg'),
       },
       {
         title: 'AI/ML (Artificial Intelligence/Machine Learning)',
         description: 'Uses data and algorithms to make smart decisions and predictions, optimizing processes and providing personalized solutions.',
-        // image: 'assets/service1.jpg',
+        // image: 'assets/service1.jpg'
+        route:"/aiFintech",
         image: require('../assets/VectorIMG/ai-image.jpg'),
       },
       {
         title: 'IoT (Internet of Things)',
         description: 'Connects devices and sensors to the Internet, enabling real-time data collection and smarter management of resources and services.',
         // image: 'assets/service1.jpg',
+        route:"/sustinableAgriculture",
         image: require('../assets/VectorIMG/iot.jpg'),
       },
       {
         title: 'Blockchain',
         description: 'Ensures secure, transparent, and tamper-proof transactions through a decentralized digital ledger.',
         // image: 'assets/service1.jpg',
+        route:"/datalocker",
         image: require('../assets/VectorIMG/blockchain.jpg'),
       },
 
@@ -723,7 +725,29 @@ SupportBy: {
     require('../assets/Images/DST.png'), // Image 1
     require('../assets/Images/NMICPS.png'), // Image 1
     // require('../assets/Images/DST.png'), 
-    require('../assets/Images/ibitf.jpg'), // Image 1
+    require('../assets/Images/ibitf.png'), // Image 1
+  ],
+},
+CollaborationBy: {
+  title: "Supported By",
+  logos: [
+    require('../assets/logo/collaboration/1.png'),
+    require('../assets/logo/collaboration/3.png'),
+    require('../assets/logo/collaboration/4.png'),
+    require('../assets/logo/collaboration/5.png'),
+    require('../assets/logo/collaboration/6.png'),
+    require('../assets/logo/collaboration/7.png'),
+    require('../assets/logo/collaboration/2.png'),
+    require('../assets/logo/collaboration/8.png'),
+    require('../assets/logo/collaboration/9.png'),
+    require('../assets/logo/collaboration/10.png'),
+    require('../assets/logo/collaboration/11.png'),
+    require('../assets/logo/collaboration/12.png'),
+    require('../assets/logo/collaboration/13.png'),
+    require('../assets/logo/collaboration/14.png'),
+    require('../assets/logo/collaboration/15.png'),
+    require('../assets/logo/collaboration/16.png'),
+    require('../assets/logo/collaboration/17.png'),
   ],
 },
 
