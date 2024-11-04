@@ -110,10 +110,13 @@ const ProjectsList = () => {
             variant="fullWidth"
             textColor="primary"
             indicatorColor="primary"
-            sx={{ 
+            sx={{
               backgroundColor: "background.paper",
-              "& .MuiTab-root": {
-                color: "#6a0dad", 
+              "& .MuiTab-root.Mui-selected": {
+                color: "#6a0dad",
+                // background:"#d0d0d0;"
+                background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)"
+                // background:"#f0f8ff"
               },
               "& .MuiTabs-indicator": {
                 backgroundColor: "#6a0dad",
@@ -267,7 +270,7 @@ const styles = {
     marginLeft: '20px',
     justifyContent: 'center',
     backgroundColor: '#fff',
-    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', 
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
     border: '1px solid #ccc', // Light border
     fontSize: '16px', // Increase font size for readability
     outline: 'none', // Remove the default outline
@@ -286,7 +289,7 @@ const styles = {
       boxShadow: '0px 0px 10px rgba(63, 81, 181, 0.2)', // Glow effect on focus
     },
   },
-  
+
   gridContainer: {
     paddingLeft: '20px',
     paddingRight: '20px',
