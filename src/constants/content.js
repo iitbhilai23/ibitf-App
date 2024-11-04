@@ -42,7 +42,7 @@ export const siteContent = {
   },
     ],
   },
-
+ 
 
   aboutPage: {   // This is the section for the About IBITF content
     title: 'IIT Bhilai Innovation and Technology Foundation (IBITF)',
