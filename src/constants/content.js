@@ -837,7 +837,7 @@ featuredProjects: [
 ],
 
 videoPage: {
-  title: "Amazing Video Title",
+  title: "President Applauds IIT Bhilai Innovation",
   description: "The President of India appreciates IIT Bhilai Innovation and Technology Foundation for its impactful work in Fintech, Agritech, and Healtech.",
   videoThumbnail: require('../assets/AI@.jpg'),  // Update with the actual path to the thumbnail
   videoUrl: "https://www.youtube.com/watch?v=uW1wla5z6vc" // YouTube video URL
