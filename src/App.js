@@ -16,6 +16,7 @@ import './components/Navbar.css';
 import AboutIBITF from './pages/AboutIBITF';
 import OrgStructure from './pages/OrgStructure';
 import Thematic from './pages/Thematic';
+import Schemes from './pages/Schemes';
 import Blogs from './pages/Blogs';
 
 const App = () => {
@@ -28,7 +29,7 @@ const App = () => {
         {/* <Route path="/about us" element={<About />} /> */}
         <Route path="/about-ibitf" element={<AboutIBITF />} />Organizational Structure
         <Route path="/organizational-structure" element={<OrgStructure />} />
-
+        <Route path="/schemes" element={<Schemes />} />
         <Route path="/services" element={<Services />} /> 
         <Route path="/Projects" element={<ProjectsList />} />
         <Route path="/career" element={<Career />} />
