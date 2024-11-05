@@ -2,7 +2,12 @@ import SpecialCall from "../assets/PDF/proposal/SpecialCallForProposalforSchedul
 import card2pdf from "../assets/PDF/proposal/card2.pdf";
 import tbiScheme from "../assets/PDF/proposal/tbiScheme.pdf";
 import chairProfessor from '../assets/PDF/proposal/chairProfessor.pdf';
-
+import fellowship from '../assets/PDF/proposal/Faculty_Fellowship4.pdf';
+import doctoralFellowship from '../assets/PDF/proposal/doctrolFellowship6.pdf';
+import Project7 from '../assets/PDF/proposal/Project7.pdf';
+import Project8 from '../assets/PDF/proposal/Project8.pdf';
+import Project9 from '../assets/PDF/proposal/Project9.pdf';
+import Project10 from '../assets/PDF/proposal/Project10.pdf';
 
 export const siteContent = {
   navbar: {
@@ -575,12 +580,124 @@ heroSubcontent:'The areas of focus are in various Major  Technologies like Big 
     },
 ],
 cardDataForCFP: [
+ 
+  {
+    id: 2,
+    mainHeading: "Special Call for Proposals for Scheduled Tribes (ST)",
+    subHeading: "Special Call for Proposals for Scheduled Tribes (ST)",
+    description:
+      "IBITF invites applications for conducting training programmes, workshops, conferences under Scheduled Tribe in Fintech Area.",
+    lastDate: "This is a rolling advertisement",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: card2pdf ,
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposals for TBI Scheme",
+    description:
+      "Proposals are invited by IBITF under the Technology Business Incubator schemes.",
+    lastDate: "This is a rolling advertisement",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: tbiScheme,
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
+ 
+  {
+    id: 4,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposals for Faculty Fellowship",
+    description: "Proposals are invited by IBITF under the faculty fellowship scheme.",
+    lastDate: "",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: fellowship
+         
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposals for Chair Professor",
+    description: "Proposals are invited by IBITF to join as Chair Professor.",
+    lastDate: "",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: chairProfessor
+         
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
+  {
+    id: 6,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
+    description: "Proposals are invited by IBITF under the Post Doctoral Fellowship schemes.",
+    lastDate: "This is a rolling advertisement",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: doctoralFellowship
+         
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
   {
     id: 1,
     mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
     subHeading: "Call for Proposals: Social Impact Startups/Projects",
     description: "",
-    lastDate: "Last Date for Submission: December 10, 2023",
+    lastDate: "This is a rolling advertisement",
     buttons: [
       {
         text: "Detailed Call for Proposal",
@@ -597,88 +714,86 @@ cardDataForCFP: [
     ],
   },
   {
-    id: 2,
-    mainHeading: "Special Call for Proposals for Scheduled Tribes (ST)",
-    subHeading: "",
-    description:
-      "IBITF invites applications for conducting training programmes, workshops, conferences under Scheduled Tribe in Fintech Area.",
-    lastDate: "Last Date for Submission for this cohort: September 16, 2023",
-    buttons: [
-      {
-        text: "Detailed Call for Proposal",
-        action: "action3",
-        pdfLink: card2pdf ,
-      },
-      {
-        text: "Education Institution",
-        action: "email",
-        email: "info@example.com",
-        subject: "Inquiry About Proposal",
-        body: "I have some questions regarding the proposal.",
-        pdfLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
-      },
-      {
-        text: "International Organization",
-        pdfLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
-      },
-      {
-        text: "Govt.Organization/Department/Line Ministry",
-        pdfLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
-      },
-      {
-        text: "Private Organization/NGOs/Others",
-        pdfLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
-      },
-      {
-        text: "Fintech Startups",
-        pdfLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSc1bpSdc-Y4xTalOvly6cJ6a3Lx_cktBvZB8dt8jfn71gDqAg/viewform?pli=1",
-      },
-    ],
-  },
-  {
-    id: 3,
+    id: 7,
     mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-    subHeading: "Call for Proposals for TBI Scheme",
-    description:
-      "Proposals are invited by IBITF under the Technology Business Incubator schemes.",
-    lastDate: "Last Date for Submission for this cohort: March 20,2023",
+    subHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
+    description: "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
+    lastDate: "This is a rolling advertisement",
     buttons: [
       {
         text: "Detailed Call for Proposal",
         action: "action3",
-        pdfLink: tbiScheme,
-      },
-      {
-        text: "Submit Your Proposal",
-        action: "email",
-        email: "info@example.com",
-        subject: "Inquiry About Proposal",
-        body: "I have some questions regarding the proposal.",
-      },
-    ],
-  },
-  {
-    id: 4,
-    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-    subHeading: "Call for Proposals for Chair Professor",
-    description: "Proposals are invited by IBITF to join as Chair Professor.",
-    lastDate: "",
-    buttons: [
-      {
-        text: "Detailed Call for Proposal",
-        action: "action3",
-        pdfLink: chairProfessor
+        pdfLink: Project7
          
       },
       {
         text: "Submit Your Proposal",
         action: "email",
-        email: "info@example.com",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
+  {
+    id: 8,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposal for Fellowships",
+    description: "Proposals are invited by IBITF for BTech, MTech & PhD Fellowships.",
+    lastDate: "This is a rolling advertisement",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: Project8    
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
+  {
+    id: 9,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call for Proposal under Virtual Incubation (VI)",
+    description: "Eligibility criteria : All start-ups operating in the FinTech area, incorporated by January 2022, and incubated in TIHs/Incubation Centres/Startup Hubs located in Institutes of Higher Learning/Established by State/Central Government.IBITF could offer up to INR 50 lakhs in funding support (in exceptional cases the support could be up to INR 1.0 cr depending on the DPR) over two years based on the business model and project proposal in the area of FinTech.",
+    lastDate: "",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: Project9
+         
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
+        subject: "Inquiry About Proposal",
+        body: "I have some questions regarding the proposal.",
+      },
+    ],
+  },
+  {
+    id: 10,
+    mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
+    subHeading: "Call For Proposals for Technology Development in FinTech",
+    description: "Inviting Researchers from the institutions of Higher Learning (Centrally/state Funded Institutions of higher learning or NAAC Accredited Institution with Grade A).",
+    lastDate: "",
+    buttons: [
+      {
+        text: "Detailed Call for Proposal",
+        action: "action3",
+        pdfLink: Project10  
+      },
+      {
+        text: "Submit Your Proposal",
+        action: "email",
+        email: "tih@iitbhilai.ac.in",
         subject: "Inquiry About Proposal",
         body: "I have some questions regarding the proposal.",
       },
@@ -837,10 +952,10 @@ featuredProjects: [
 ],
 
 videoPage: {
-  title: "Amazing Video Title",
-  description: "This is a captivating description for the video. Learn more about this topic as you watch the video.",
+  title: "President Applauds IIT Bhilai Innovation",
+  description: "The President of India appreciates IIT Bhilai Innovation and Technology Foundation for its impactful work in Fintech, Agritech, and Healtech.",
   videoThumbnail: require('../assets/AI@.jpg'),  // Update with the actual path to the thumbnail
-  videoUrl: "https://www.youtube.com/watch?v=uW1wla5z6vc" // YouTube video URL
+  videoUrl: "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1" // YouTube video URL
 }
 
 };
