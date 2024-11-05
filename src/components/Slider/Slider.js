@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { siteContent } from '../../constants/content';
 import './Slider.css';
 
-const CollaborationSlider = () => {
+const CollaborationSlider = memo(() => {
     const { title, logos } = siteContent.CollaborationBy;
 
     return (
@@ -13,7 +13,7 @@ const CollaborationSlider = () => {
                     <div className='slide-track'>
                         {logos.concat(logos).map((logo, index) => (
                             <div className='img-parent' key={index}>
-                                <img className='slide-img' src={logo} alt={`Logo ${index}`} />
+                                <img className='slide-img' src={logo} alt={`Logo ${index}`} loading="lazy" />
                             </div>
                         ))}
                     </div>
@@ -21,6 +21,6 @@ const CollaborationSlider = () => {
             </div>
         </div>
     );
-};
+});
 
 export default CollaborationSlider;

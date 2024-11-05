@@ -9,6 +9,9 @@ import publicationLogo from '../assets/VectorIMG/publication.svg';
 import AchievementLogo from '../assets/VectorIMG/Achievement.svg';
 import { Box } from "@mui/material";
 
+
+
+
 const ProjectTemplate = () => {
   const location = useLocation();
   const currentPage = pagesConfig.find(
@@ -26,8 +29,7 @@ const ProjectTemplate = () => {
     if (typeof description === "string") {
       return description.split("/n").map((line, index) => (
         <React.Fragment key={index}>
-          {line}
-          <br />
+          <span style={{ display: 'block', marginBottom: '8px' }}>{line}</span>
         </React.Fragment>
       ));
     }
@@ -57,9 +59,11 @@ const ProjectTemplate = () => {
       <div style={styles.divider}></div>
       <div className="sub-text-title">
         <div className={currentPage.category !== "event" ? "pi-section" : ""}>
-        <span className="pi-name">=&gt; {currentPage.piName}</span>
+        <span className="pi-name">PI : {currentPage.piName}</span>
+        <br />
+        <span className="pi-name">{currentPage?.piInstitute}</span>
         </div>
-        <div  className={currentPage.category !== "event" ? "duration-section" : ""}>
+        {/* <div  className={currentPage.category !== "event" ? "duration-section" : ""}>
         <div className="dates-subTxt">
           <span className="date">{currentPage.date}</span>
           {currentPage.category !== "event" && (
@@ -69,13 +73,65 @@ const ProjectTemplate = () => {
             </span>
           )}
         </div>
-        </div>
+        </div> */}
       </div>
       {/* Image Gallery */}
       <div
         className="contents"
         style={{ display: "flex", flexDirection: "column", gap: "20px" }}
       >
+        <Box 
+          sx={{
+            backgroundColor: '#EEEDEB', // Reduced opacity
+            // height: "50vh",
+            borderRadius: "20px",
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+            padding: "30px", // Add padding for content
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            // backgroundImage: "linear-gradient(135deg, rgba(58, 16, 120, 0.8), rgba(255, 64, 129, 0.7))", // Subtle gradient for modern look
+            color: "#333", // White text color for contrast
+          }}
+        >
+        {currentPage.category !== "event" && (
+          <Box sx={{fontSize: "30px", textTransform: 'uppercase', fontWeight: 600}}>
+            Project Objectives
+            <div style={styles.divider}></div>
+            </Box>
+        )}
+        <div
+          className={
+            currentPage.category !== "event"
+              ? "obj-container"
+              : "obj-container-event"
+          }
+        >
+          {Array.isArray(currentPage.description) ? (
+            currentPage.description.map((section, index) => (
+              <div key={index} style={styles.section}>
+                <h2 style={styles.sectionHeading}>{section.heading}</h2>
+                <p style={styles.sectionDescription}>{section.description}</p>
+              </div>
+            ))
+          ) : (
+            <span style={styles.boxDescription}>
+              {renderDescription(currentPage.description)}
+            </span>
+          )}
+          {/* {currentPage.category !== "event" && (
+            <div className="obj-img">
+              <img
+                src={objectiveLogo}
+                alt="project objective logo"
+                style={styles.image}
+              />
+            </div>
+          )} */}
+        </div>
+        </Box>
         <div style={styles.imageContainer}>
           {currentPage.images.length > 0 ? (
             currentPage.images.map((image, index) => (
@@ -100,58 +156,7 @@ const ProjectTemplate = () => {
             <p style={styles.noImages}>No images available for this {currentPage.category}.</p>
           )}
         </div>
-        <Box 
-          sx={{
-            backgroundColor: 'rgba(58, 16, 120, 0.8)', // Reduced opacity
-            // height: "50vh",
-            borderRadius: "20px",
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
-            padding: "30px", // Add padding for content
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            backgroundImage: "linear-gradient(135deg, rgba(58, 16, 120, 0.8), rgba(255, 64, 129, 0.7))", // Subtle gradient for modern look
-            color: "#fff", // White text color for contrast
-          }}
-        >
-        {currentPage.category !== "event" && (
-          <Box sx={{fontSize: "30px", textTransform: 'uppercase'}}>
-            Project Objectives
-            <div style={styles.divider}></div>
-            </Box>
-        )}
-        <div
-          className={
-            currentPage.category !== "event"
-              ? "obj-container"
-              : "obj-container-event"
-          }
-        >
-          {Array.isArray(currentPage.description) ? (
-            currentPage.description.map((section, index) => (
-              <div key={index} style={styles.section}>
-                <h2 style={styles.sectionHeading}>{section.heading}</h2>
-                <p style={styles.sectionDescription}>{section.description}</p>
-              </div>
-            ))
-          ) : (
-            <span style={styles.boxDescription}>
-              {renderDescription(currentPage.description)}
-            </span>
-          )}
-          {currentPage.category !== "event" && (
-            <div className="obj-img">
-              <img
-                src={objectiveLogo}
-                alt="project objective logo"
-                style={styles.image}
-              />
-            </div>
-          )}
-        </div>
-        </Box>
+        
         {currentPage.workshop !== "" && currentPage.category !== "event" && (
           <>
           <Box sx={{
@@ -204,7 +209,7 @@ const ProjectTemplate = () => {
               </div>
               <div className="obj-container">
                 <span style={styles.description}>
-                  {currentPage.technicalDetails}
+                  {renderDescription(currentPage.technicalDetails)}
                 </span>
                 <div className="obj-img">
               <img
@@ -245,7 +250,8 @@ const ProjectTemplate = () => {
               />
             </div>
                 <span style={styles.description}>
-                  {currentPage.publications}
+                  {renderDescription(currentPage.publications)}
+                  
                 </span>
               </div>
               </Box>
@@ -344,10 +350,10 @@ const styles = {
     width: "70%",
   },
   boxDescription: {
-    fontSize: "1.12em",
-    color: "#fff",
+    fontSize: "1em",
+    color: "#7f8c8d",
     lineHeight: "1.5",
-    width: "70%",
+    width: "90%",
     textAlign: "start"
   },
   imageContainer: {
