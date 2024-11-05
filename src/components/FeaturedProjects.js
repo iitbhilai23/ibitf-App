@@ -35,7 +35,7 @@ const FeaturedProjects = () => {
                                 animate={{ opacity: 1, x: 0 }}
                                 // exit={{ opacity: 0, x: -300 }}     // Exit to the left
                                 transition={{ duration: 1 }}
-                                style={{ display: 'flex', gap: '24px' }}
+                                style={{ display: 'flex', gap: '24px', height:"350px" }}
                             >
                                 {featuredProjects.slice(index, index + 2).map((project, idx) => (
                                     <div className="project-card" key={idx}>
