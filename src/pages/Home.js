@@ -31,7 +31,7 @@ const Home = () => {
       {/* <HeroSection /> */}
       {/* <TribalAreaPlan /> */}
       <FeaturedProjects />
-    \<OurAwards />
+    <OurAwards />
     <TechnologiesDevelopment />
       <Achievements />
       

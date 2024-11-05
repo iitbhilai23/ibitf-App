@@ -15,6 +15,10 @@ export const pagesConfig = [
     category: "project",
     subCategory: "vsk",
     piName: "Dr. Santosh Biswas",
+    piInstitute: "Indian Institute of Technology Bhilai",
+    InstituteLogo: [
+      "assets/Images/iitbhilai.png"
+    ],
     date: "From :- 01/05/2022  -  To :- 25/04/2025 ",
     duration: "1 Year",
     objImg: "assets/ProjectImages/objectives/obj3.png",

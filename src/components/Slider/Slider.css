@@ -1,7 +1,7 @@
 .main-slide-cnt {
     position: relative;
     background: linear-gradient(135deg, #f3f8ff, #ffffff);
-    padding: 40px 0;
+    padding: 20px 0;
     width: 100%;
     overflow: hidden;
 }
@@ -32,6 +32,7 @@
     gap: 24px;
     animation: slide 40s linear infinite;
     white-space: nowrap;
+    will-change: transform;
 }
 
 @keyframes slide {
