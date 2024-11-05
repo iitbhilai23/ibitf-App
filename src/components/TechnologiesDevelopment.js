@@ -11,7 +11,7 @@ const TechnologiesDevelopment = () => {
   const handleReadMore = (path) => {
     navigate(path);
 
-  };
+  }; 
 
   return (
     <>
