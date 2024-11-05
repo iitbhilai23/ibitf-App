@@ -583,7 +583,13 @@ export const pagesConfig = [
     path: "/mithun",
     component: "mithun",
     description:
-      "Develop an online marketplace for Mithun trading to broaden market access.Implement a secure registration and verification process for farmers to ensure authenticity.Provide detailed listings of Mithun, offering comprehensive information to potential buyers.Establish transparent pricing mechanisms to build trust and facilitate fair transactions.Integrate multimedia support, negotiation, bidding features, and digital payment options to enhance the overall trading experience for both buyers and sellers.",
+    [
+      "An online marketplace for Mithun trading to broaden market access.",
+      "A secure registration and verification process for farmers to ensure authenticity.",
+      "Provide detailed listings of Mithun, offering comprehensive information to potential buyers.",
+      "Transparent pricing mechanisms to build trust and facilitate fair transactions.",
+      "Integrate multimedia support, negotiation, bidding features, and digital payment options to enhance the overall trading experience for both buyers and sellers."
+  ],
     images: ["assets/StaticImages/project/mithun1.jpg"],
     duration: "2 years",
     category: "project",
@@ -592,7 +598,11 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj4.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The online Mithun trading marketplace reflects significant strides in establishing a robust platform for trading of Mithuns. With company registration, trademark protection, website development, user registration, and essential marketplace features underway, the project is well-positioned to advance further in its development phases.",
+      "Beta Version Launched: The website, arupet.com, is currently launched in the beta phase, with core functionalities being tested for usability, performance, and adaptability among the stakeholders.",
+      "50 manpower trained in the workshop, 'Meeting with Mithun’s Farmers.'"
+  ],
     publications: "",
     achievements: "",
     startupName: "Arbobine Pvt. Ltd.",
@@ -603,7 +613,12 @@ export const pagesConfig = [
     path: "/khasilanguage",
     component: "KhasiLanguage",
     description:
-      "Develop an inclusive Application Programming Interface (API) featuring the Khasi Language to bridge communication gaps between online financial service providers and rural communities.Implement digital literacy initiatives, expanding service offerings, and establishing a feedback mechanism to enhance accessibility and understanding of online financial services.Ensure long-term sustainability by adopting a comprehensive strategy that empowers the Khasi-speaking community in navigating and benefiting from the evolving digital landscape.",
+    [
+      "Collect and create a bilingual parallel corpus dataset for English and Khasi, to ease the development of neural machine translation for Khasi.",
+      "Creating and improving deep learning models for the efficient translation of Khasi to other languages using the above-mentioned dataset.",
+      "Integrate the models for speech-to-speech translation, to make it more accessible to people.",
+      "Ease of accessing fintech services and help in bringing economic inclusivity."
+  ],
     images: [],
     duration: "2 years",
     category: "project",
@@ -612,7 +627,7 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: ["Developed a deep learning model for the translation of English to Khasi", "Created parallel corpora for English to Khasi with 31,000 bilingual translated pairs through web scraping and cleaning each data set accordingly", ""],
     publications: "",
     achievements: "",
     startupName: "",
@@ -663,7 +678,12 @@ export const pagesConfig = [
     path: "/meghalaya",
     component: "EmpoweringMeghalaya",
     description:
-      "Implement a blockchain solution for Meghalaya's indigenous products, ensuring authenticity and traceability through unique QR codes or RFID tags.Enable consumers to access product information via a mobile app, detailing the origin and production process.Develop a fintech feature for secure digital payments, fostering equitable transactions and accountability within the supply chains.Enhance market access for indigenous products by addressing authenticity and quality concerns through integrated blockchain and fintech solutions.",
+    [
+      "A blockchain solution for Meghalaya's indigenous products, ensuring authenticity and traceability by means of unique QR codes or RFID tags.",
+      "Enable consumers to access product information via web and mobile applications, detailing the origin and production process.",
+      "A fintech feature for secure digital payments, fostering equitable transactions and accountability within the supply chains.",
+      "Enhance market access for indigenous products by addressing authenticity and quality concerns through integrated blockchain and fintech solutions."
+  ],
     images: ["assets/StaticImages/project/Meghalaya.png"],
     duration: "2 years",
     category: "project",
@@ -672,7 +692,11 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The Hyperledger Fabric-based blockchain network for the Proof of Concept (PoC) has been successfully set up to ensure traceability and authenticity for e-commerce, using 'Lakadong Turmeric' as a simulated asset.",
+      "The network is configured with multiple peer nodes, orderers, and certificate authorities, ensuring all components are functioning properly. A custom Smart Contract (chaincode) was developed in Golang to manage the lifecycle of turmeric assets.",
+      "PoC demonstrated the technical feasibility of leveraging Hyperledger Fabric to enhance product traceability and authenticity in an e-commerce setting. All functionalities are operational, laying the groundwork for future integration with front-end systems and scalability testing for real-world deployment."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1057,7 +1081,12 @@ export const pagesConfig = [
     path: "/SmartCompactEnergyMeter",
     component: "SmartCompactEnergyMeter",
     description:
-      "Optimize Energy Usage: Improve energy efficiency by analyzing real-time power data and identifying consumption patterns.Remote Load Control: Enable users to manage primary and secondary loads remotely through an authenticated consumer app.Demand-Side Management: Introduce IoT for strategic use of secondary loads, reducing peak electric demand.Ensure Power Quality: Compare phase voltages and currents against standards, promptly identify and communicate power quality issues to consumers.",
+    [
+      "Optimize Energy Usage: Improve energy efficiency by analyzing real-time power data and identifying consumption patterns.",
+      "Remote Load Control: Enable users to manage primary and secondary loads remotely through an authenticated consumer app.",
+      "Demand Side Management: Introduce IoT for strategic use of secondary load, reducing peak electric demand.",
+      "Ensure Power Quality: Compare phase voltages and currents against standards, and promptly identify and communicate power quality issues to consumers."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1066,7 +1095,12 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Designed an IoT-based smart compact energy meter (ISCEM) and mobile app / web interface.",
+      "A prototype of the ISCEM model has been developed.",
+      "Identifying peak hours power fluctuation and power consumption for any building.",
+      "PoC deployment of the system and mobile app / web interface for monitoring Power / Electricity consumption and Power quality issues."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1077,8 +1111,18 @@ export const pagesConfig = [
       "Economic Upliftment of the Tribes Residing in Balrampur District Through their Cultural Heritage",
     path: "/EconomicUpliftmentCulturalHeritage",
     component: "EconomicUpliftmentCulturalHeritage",
-    description:
-      "Enhance tribal livelihoods through tourism in Balrampur district.Document and preserve unique tribal culture and traditions.Connect tribal communities to tourism jobs for economic growth.Utilize natural beauty for economic empowerment and conservation.",
+    description:[
+      "Create new employment opportunities for tribal communities.",
+      "Preserve tribal cultures by fostering economic upliftment.",
+      "Provide market access for tribal arts, crafts, and skills.",
+      "Increase tribal participation in rural tourism.",
+      "Offer international recognition to the northern Sarguja division of Chhattisgarh.",
+      "Inform and train tribes about new tourist sites and connect them to employment opportunities.",
+      "Address issues of migration, drug addiction, and unemployment by promoting sustainable livelihoods.",
+      "Enhance tribal arts and skills by integrating traditional industries with modern technology.",
+      "Coordinate traditional industries with modern marketing strategies.",
+      "Raise awareness about government schemes, policies, and initiatives related to arts, crafts, and employment."
+  ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1087,7 +1131,14 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Skill Development in Iron Craft: Agariya tribe members received training in advanced techniques like welding, cutter machine usage, and grinder tools, shifting from traditional methods.",
+      "They were taught to create diverse iron crafts, including animal figures, human portraits, and balancing toys.",
+      "Workshop and Training Impact: A 15-day workshop was organized, training 51 participants with hands-on sessions for manufacturing iron products aligned with market demand.",
+      "Participants created intricate crafts like lamp stands and mementos, showcasing these products during the closing exhibition.",
+      "Economic Empowerment and Future Plans: The Agariya tribe is forming a committee of trained artists to scale production, sale, and marketing efforts, aiming to preserve their art and generate employment.",
+      "Some participants have already begun financially benefiting from the skills learned during the training."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1099,7 +1150,11 @@ export const pagesConfig = [
     path: "/IndigenousLocalKnowledge",
     component: "IndigenousLocalKnowledge",
     description:
-      "Chhattisgarh Tribal’s Carbon Project through Sustainable Agriculture Land Management(SALFM), holistic and focused farm enterprise extension approach and by supporting farmer groups to establish village savings and loan associations using FintechExploring the marketing and fair price mechanisms and applications of fintech solutions in improving livelihood, income and employment.Documentation and database creation of the community’s Indigenous and Local Knowledge along with the development of an App through linguistic research support. ",
+    [
+      "Develop frameworks for sustainable land and forest management.",
+      "Explore carbon credit systems integrated with Fintech solutions for tribal empowerment.",
+      "Promote financial inclusion among tribal communities using modern financial tools and platforms."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1108,7 +1163,18 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Completed literature and field-based baseline assessments for carbon credit measurement.",
+      "Conducted workshops at district and village levels to engage stakeholders and promote awareness.",
+      "Initiated GIS-based open mapping for the community and pilot Fintech platform design.",
+      "Demonstration projects for sustainable agricultural practices like alternate wetting and drying (AWD) in paddy fields.",
+      "Organized 12 workshops, field visits, and training programs involving government officials, farmers, and tribal fellows.",
+      "Trained 18 tribal fellows, initiated translation and preservation efforts for indigenous languages, and conducted communication skills workshops.",
+      "Finalized frameworks for carbon credit markets and agroforestry practices aligned with sustainable forest management.",
+      "GIS and remote sensing tools to enhance community decision-making.",
+      "Developed multimedia dictionaries, publish teaching materials on Kurux grammar, and provide skill development for educators.",
+      "Collaborations with content creators for storytelling, folklore documentation, and digital resource creation."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1141,7 +1207,13 @@ export const pagesConfig = [
     path: "/DigitalAgriVillage",
     component: "DigitalAgriVillage",
     description:
-      "Digitize farms with Geo-tagged ERP for optimized management.Establish collaborative platforms for knowledge-sharing.Empower SHGs and farmers through interactive engagement.Deploy AI/ML for pest management and IoT for smart irrigation.Implement transparent supply chain solutions for fair transactions.",
+    [
+      "Digitize farms with Geo-tagged ERP for optimized management.",
+      "Establish collaborative platforms for knowledge-sharing.",
+      "Empower SHGs and farmers through interactive engagement.",
+      "Deploy AI/ML for pest management and IoT for smart irrigation.",
+      "Implement transparent supply chain solutions for fair transactions."
+  ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1150,7 +1222,11 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "This technology helps to reduce the time and cost of acquiring farm implements, improve resource utilization, and promote sustainable farming practices.",
+      "It enhances transparency, efficiency, and trust in the seed supply chain by providing real-time visibility into the journey of each batch of seeds.",
+      "Integration of machine learning algorithms with IoT data enables predictive analytics, aiding farmers in proactive decision-making for optimal crop management."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1162,7 +1238,14 @@ export const pagesConfig = [
     path: "/CommunityMedicineEmpowerment",
     component: "CommunityMedicineEmpowerment",
     description:
-      "Assess the health status in tribal regions, propose interventions, and empower through health education.Conduct training for healthcare personnel to enhance services in tribal areas.Advise state and central governments on additional health education needs.Develop a mobile app to enhance access and quality of health services for tribal communities, with a focus on maternal health, adolescent well-being, sickle cell, and cancer awareness.",
+    [
+      "Review the existing health situation in tribal areas, suggest interventions, formulate strategic guidelines, and empower the tribals via health education.",
+      "Training programs for the healthcare workers.",
+      "To make recommendations on the requirement of additional health education to state and central governments.",
+      "A mobile-based 'App' to improve the appropriateness, access, content, quality, and utilization of health services among the tribal population, particularly those living in marginal areas.",
+      "Awareness on maternal health, education of adolescent well-being, sickle cell, and cancer.",
+      "Identify sickle cell and cancer patients in the tribal population and validate the disease level by biochemical and imaging analysis."
+  ],
     images: ["assets/ProjectImages/pi_imagess/Dr.  Ramasamy.png"],
     category: "project",
     subCategory: "TSP",
@@ -1171,7 +1254,14 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Launched a mobile app to facilitate real-time communication between beneficiaries, academia, and healthcare partners, as well as disseminate health-related information to the community.",
+      "The app empowers healthcare workers to communicate in the Dantewada region seamlessly. The idea is to sensitize healthcare workers so that they can translate medical advice to the remote population.",
+      "To execute the plan at the grassroots level, a close network is formed among the Tribal population, academia, and the Cancer Foundation.",
+      "Initiated the work plan to be followed with the Nirmayah Cancer Foundation, Raipur, established in 2022. The foundation has been supporting marginalized cancer patients, empowering rural communities, and aiming to foster a future where every cancer-affected individual can live a dignified life.",
+      "A special 'Gynecologic Cancer Awareness' lecture was organized on September 19th, 2024, at IIT Bhilai to celebrate International Gynecologic Cancer Awareness Month. The talk was delivered by Ms. Sudeshna Ruhhaan, the founder of Nirmayah Cancer Foundation.",
+      "Two-day workshop on 'Community Health Care Awareness and Empowerment at Dantewada' was conducted in Samlur village in the Dantewada district on 30th Sept and 1st Oct 2024."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1235,7 +1325,12 @@ export const pagesConfig = [
     path: "/MahuaBasedEthanol",
     component: "MahuaBasedEthanol",
     description:
-      "Conduct a detailed field survey in Kabirdham district to assess the potential and production capacity of Mahua tree-based products among the tribal population.Perform an economic feasibility study to evaluate the viability of ethanol production from Mahua flowers, considering supply chain costs and revenue generation.Optimize process parameters for ethanol production from Mahua flowers at a lab scale to obtain crucial design parameters for large-scale production.Establish an ecosystem and develop a business model for Mahua-based products to maximize benefits for tribal populations, including technical training and workshops to promote commercialization.",
+    [
+      "Field survey in Kabirdham district to assess the potential and production capacity of Mahua tree-based products among the tribal population.",
+      "Economic feasibility study to evaluate the viability of ethanol production from Mahua Flowers, considering supply chain costs and revenue generation.",
+      "Optimize process parameters for ethanol production from Mahua flowers at a lab scale to obtain crucial design parameters for large-scale production.",
+      "Establish an ecosystem and develop a business model for Mahua-based products to maximize benefits for tribal populations, including technical training and workshops to promote commercialization."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1244,7 +1339,14 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj4.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails:  [
+      "A field survey in Gidhali Village, Chhattisgarh, was undertaken to evaluate Mahua flower production capacity for ethanol production.",
+      "The survey provided critical insights into local collection practices, storage techniques, and challenges faced by farmers.",
+      "Mahua flowers bloom from February to May, with a collection peak lasting about a week.",
+      "Farmers demonstrated knowledge of traditional methods but highlighted challenges, including insect damage, storage limitations, and market exploitation.",
+      "Explored the social and economic significance of Mahua products in tribal communities, revealing opportunities for improved income generation through direct sale and value-added processing.",
+      "A preliminary economic feasibility study has been conducted to assess the total supply chain, capital, and operational costs for Mahua-based ethanol production."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1277,7 +1379,12 @@ export const pagesConfig = [
     path: "/FinancialInclusiveness",
     component: "FinancialInclusiveness",
     description:
-      "The objective of the Project is to improve financial inclusiveness among the tribal population of the district.This Project aims to introduce tribal farmers, household industries and forest gathers with Fintech.The objective of this Project is to give training of applications on various Fintech platforms.The Project tries to equip various Fintech platforms to the target population for better and secure financial management.To explore the tribal knowledge system.Inform and educate the tribal people about various E-commerce platforms and the process of using and selling products online.",
+    [
+      "Improve financial inclusiveness among the tribal population of the district.",
+      "Training on applications for various Fintech platforms.",
+      "Equip various Fintech platforms to the target population with low literacy for better and secure financial management.",
+      "Explore the tribal knowledge system."
+  ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1286,7 +1393,12 @@ export const pagesConfig = [
     duration: "1 Year",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The first training program was conducted over three days for the Scheduled Tribe (ST) population of Manpur Cluster. This training aimed to promote financial inclusion by improving participants' understanding of saving, budgeting, and investing.",
+      "During the survey analysis conducted in the area, millet production was identified as a significant opportunity and 180 participants were trained.",
+      "The second training program was similarly held over three days for the ST population of Chilhati Cluster.",
+      "A total of 184 participants completed the training, gaining a better understanding of financial concepts and learning practical ways to apply them in their agricultural ventures."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1334,7 +1446,13 @@ export const pagesConfig = [
     path: "/BastarArt",
     component: "BastarArt",
     description:
-      "This project helps in development of Dhokra and Wrought Iron art Enterprise business model. This will help to create a successful and sustainable venture that not only showcase the beauty of Dhokra and Wrought Iron art but also contributes to the economic and cultural development of the community and the nation",
+    [
+      "Study of Bell Metal/Dhokra and Wrought Iron Craft through traditional processing method.",
+      "Preservation of the Traditional Craftsmanship and Diversification of Designs.",
+      "Access to global market and Skill Enhancement through Training.",
+      "Increase the efficiency of Production.",
+      "Focus on Customization and Personalization with Financial Inclusion."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1343,7 +1461,14 @@ export const pagesConfig = [
     duration: "6 month",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "A detailed study of Bell Metal/Dhokra and Wrought Iron Craft was conducted, identifying various challenges associated with these traditional crafts.",
+      "Trained 15 artisans through a workshop titled 'Bastar Art Revival: A Pathway to Sustainable Livelihoods for Indigenous Communities'.",
+      "Initiated a collaborative framework with local authorities, signing an MOU with the Kondagaon district administration through discussions with key stakeholders, including the District Magistrate and District Management Officer.",
+      "Streamlined permits and approvals for art-related activities.",
+      "An in-depth analysis of the Bell Metal/Dhokra and Wrought Iron crafts highlighted gaps in traditional processes, marketing inefficiencies, and the need for innovation and modern tools to uplift the artisans economically and culturally."
+    ],
+    
     publications: "",
     achievements: "",
     startupName: "",
@@ -1600,7 +1725,13 @@ export const pagesConfig = [
     path: "/mHealth",
     component: "mHealth",
     description:
-      "Mobile Healthcare Services: Using mobile devices for healthcare services enhances accessibility and communication between patients and providers. Real-Time Health Monitoring: IoT sensors offer immediate health data, empowering individuals for informed decision-making about their health. Geographical Reach: Mobile health projects overcome geographical barriers, providing healthcare services to remote and underserved areas. Health Education through Apps: Mobile apps deliver health education, promoting preventive care and healthier lifestyles. Empowering Community Health Workers: Equipping community health workers with mobile tools extends healthcare services and education within communities, strengthening the healthcare workforce.",
+    [
+      "Mobile Healthcare Services: Using mobile devices for healthcare services enhances accessibility and communication between patients and health service providers.",
+      "Real-Time Health Monitoring: IoT sensors offer immediate health data, empowering individuals for informed decision-making about their health.",
+      "Geographical Reach: Mobile health projects overcome geographical barriers, providing healthcare services to remote and underserved areas.",
+      "Health Education through Apps: Mobile apps deliver health education, promoting preventive care and healthier lifestyles.",
+      "Empowering Community Health Workers: Equipping community health workers with mobile tools extends healthcare services and education within communities, strengthening the healthcare workforce."
+    ],
     images: ["assets/ProjectImages/pi_imagess/42.png"],
     duration: "2 Year",
     category: "project",
@@ -1610,7 +1741,15 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Conducted surveys in Manipur's villages, gathered insights from ASHA workers and doctors to address health challenges, particularly on the persepective of large distance from healthcare facilities. Based on this feedback, the team has developed an app that prioritizes user accessibility.",
+      "Pharmacy Access: Lists pharmacies available near surveyed areas, facilitating easier access to medicines.",
+      "Health Awareness: Includes educational videos to promote health education among users.",
+      "Data Subscription: Working on subscribing to real-time sensor data within the app using AWS Amplify PubSub, aiming to display this data using circle charts for intuitive visualization.",
+      "Doctor Platform: Developing a platform for doctors to view patient data and write prescriptions.",
+      "Pharmacy Integration: Integrating prescription data into the pharmacy module to allow patients to order medicines directly through the app.",
+      "IoT Core to App: Integrating sensor data from IoT Core into the React Native App."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1620,7 +1759,12 @@ export const pagesConfig = [
     path: "/SmartHealth",
     component: "SmartHealth",
     description:
-      "Establish an IoT-based livestock monitoring system for early disease detection and prompt intervention, ensuring optimal cattle health. Foster collaboration among farmers, veterinarians, financial institutions, and government departments, enabling knowledge exchange and empowering farmers with expert advice and sustainable farming practices. Simplify financial assistance processes, aiding farmers in acquiring necessary resources, and integrate livestock insurance options to mitigate financial risks and secure investments. Promote inclusivity by bridging rural-urban gaps, extending veterinary expertise to remote areas, and encouraging sustainable farming practices for resource efficiency and environmental conservation.",
+    [
+      "Establish an IoT-based livestock monitoring system for early disease detection and prompt intervention, ensuring optimal cattle health.",
+      "Foster collaboration among farmers, veterinarians, financial institutions, and government departments to enable knowledge exchange and empower farmers with expert advice and sustainable farming practices.",
+      "Simplify financial assistance processes, aiding farmers in acquiring necessary resources and integrating livestock insurance options to mitigate financial risks and secure investments.",
+      "Promote inclusivity by bridging rural-urban gaps, extending veterinary expertise to remote areas, and encouraging sustainable farming practices for resource efficiency and environmental conservation."
+    ],
     images: [],
     duration: "2 Year",
     category: "project",
@@ -1630,7 +1774,14 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The app is focused on enhancing the monitoring and management of cattle health using IoT-based technology. The app serves as a central hub for collecting and displaying data from IoT devices that monitor key health parameters such as temperature, heart rate, and motion. These metrics will be displayed in real-time on a user-friendly dashboard, allowing veterinary doctors and farmers to track the health status of multiple cattle simultaneously.",
+      "Automated Decision-Making: IoT devices will autonomously manage feeding, milking, and climate controls, reducing human intervention and errors.",
+      "Integration with Smart Ecosystems: Cattle health monitoring will connect with smart farming systems (e.g., irrigation, soil monitoring) for a holistic farming approach.",
+      "Cost Reduction & Scalability: Lowering IoT costs will make solutions accessible to small farms, with a focus on scalable and easy-to-use systems.",
+      "Enhanced Animal Welfare: Real-time data will help detect stress, discomfort, or injury early, ensuring better animal care and prompt interventions.",
+      "Remote Veterinary Services: IoT framework will enable remote diagnosis and veterinary recommendations, reducing the need for on-site visits and saving resources."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1662,7 +1813,12 @@ export const pagesConfig = [
     path: "/UPI",
     component: "UPI",
     description:
-      "Boost GST Compliance: Integrate UPI apps to register all transactions with businesses under their GST numbers. Empower Customer Validation: Allow customers to verify transactions; input GSTIN for unregistered businesses. Combat Tax Evasion: Prevent misuse of multiple VPAs by enabling customers to link transactions to specific GST numbers, reducing tax evasion risks. Streamline Cash Transactions: Develop an app like 'Mera Bill Mera Adhikar' to register and track cash transactions, enhancing overall transparency.",
+    [
+      "Boost GST Compliance: Integrate UPI apps to register all transactions with businesses under their GST numbers.",
+      "Empower Customer Validation: Allow customers to verify transactions; input GSTIN for unregistered businesses.",
+      "Combat Tax Evasion: Prevent misuse of multiple VPAs by enabling customers to link transactions to specific GST numbers, reducing tax evasion risks.",
+      "Streamline Cash Transactions: Develop an app like 'Mera Bill Mera Adhikar' to register and track cash transactions, enhancing overall transparency."
+    ],
     images: [],
     duration: "2 Year",
     category: "project",
@@ -1672,7 +1828,15 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails:  [
+      "Developed an application that enables customers to verify payments made to businesses by integrating the GSTIN (Goods and Service Tax Identification Number) into QR codes.",
+      "The application interacts with the GST network to validate the QR codes associated with businesses, ensuring the authenticity of payments.",
+      "Users can manually verify the QR by entering the GSTIN as input for further validation.",
+      "The application is being built using Kotlin for Android development, with Node.js managing the backend logic and API services.",
+      "Amazon AWS is utilized for hosting, security, and API gateway management to ensure scalability and reliability.",
+      "Firebase serves as the primary database, offering real-time data synchronization.",
+      "Open API standards are used for API development to ensure smooth interoperability."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1724,7 +1888,13 @@ export const pagesConfig = [
     path: "/AgriculturalProducts",
     component: "AgriculturalProducts",
     description:
-      "Facilitate efficient communication between producers and buyers through a user-friendly local dialect software, addressing supply-demand challenges. Minimize time and effort wastage by enabling direct negotiations on vegetable types, prices, and quality between dealing parties. Resolve payment and trust issues using an e-payment system, ensuring transparent and tamper-proof transactions through blockchain technology. Enhance reliability of vendors and producers by implementing a rating system with feedback in local language, incorporating sentiment analysis for accurate evaluations. Automatically record data on vegetable production, consumption, quality, and seasonal variations, providing policymakers with a comprehensive dataset for informed policy formulation.",
+    [
+      "Facilitate efficient communication between producers and buyers through a user-friendly local dialect software, addressing supply-demand challenges.",
+      "Minimize time and effort wastage by enabling direct negotiations on vegetable types, prices, and quality between dealing parties.",
+      "Resolve payment and trust issues using an e-payment system, ensuring transparent and tamper-proof transactions through blockchain technology.",
+      "Enhance reliability of vendors and producers by implementing a rating system with feedback in local language, incorporating sentiment analysis for accurate evaluations.",
+      "Automatically record data on vegetable production, consumption, quality, and seasonal variations, providing policymakers with a comprehensive dataset for informed policy formulation."
+    ],
     images: [],
     duration: "2 Year",
     category: "project",
@@ -1734,7 +1904,18 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Tlaizawng Infotech Pvt. Ltd. is actively working on developing an innovative application aimed at transforming the agricultural supply chain for Mizo farmers through blockchain and machine learning technologies. The project focuses on building a transparent, reliable, and efficient digital ecosystem for producers and buyers.",
+      "User-Friendly Interface: Developed in local dialects to ease communication between farmers and buyers.",
+      "E-Payment System: Ensures tamper-proof transactions using blockchain technology.",
+      "Direct Negotiations: Allows parties to discuss pricing and quality of vegetables directly, reducing miscommunication.",
+      "Vendor and Producer Ratings: Implemented a feedback system with sentiment analysis to enhance trust and reliability.",
+      "Data Recording Tools: Automatically tracks vegetable production, consumption patterns, and seasonal variations to assist policymakers.",
+      "Essential Commodity Tracking: An application to monitor goods entering the state has been implemented.",
+  "Pilot Vegetable Supply Chain Application: Ongoing work on an experimental app connecting farmers and buyers, with training and engagement initiatives.",
+  "Blockchain Integration: Token-based system to ensure secure transactions and demand prediction tools for better decision-making.",
+  "Workshop and Awareness Programs: A sensitization workshop for farmers was organized on September 12-13, 2024, preparing them for the system’s rollout and encouraging participation in the pilot phase.",  
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -2001,8 +2182,11 @@ export const pagesConfig = [
     path: "/BoostingEmployment",
     component: "BoostingEmployment",
     description:
-      "Develop a mobile application facilitating job seekers and employers in Nagaland, supporting both English and Nagamese languages. Enable employers to list job details, required skills, payment terms, and durations, fostering a comprehensive platform for job matching. Establish a trust-building mechanism by verifying profiles of both job seekers and employers on the platform. Provide accessibility to job information for feature phone users through SMS, allowing them to specify skills and location for job searches.",
-    images: [],
+    [
+      "Facilitate employment opportunities, especially in the unorganized and semi-organized sectors.",
+      "Boost business opportunities by increasing their sales and revenue through advertising strategies."
+    ],
+    images:[],
     duration: "2 Year",
     category: "project",
     subCategory: "TSP",
@@ -2011,7 +2195,14 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Developed a platform for job seekers and providers in Dimapur that allows job seekers and providers to register using phone numbers and OTP authentication.",
+      "Job providers can post, edit, and delete job listings and connect with seekers based on relevant preferences.",
+      "Job seekers can search for jobs by location or expertise and promote their skills for better opportunities.",
+      "Offers a feature for businesses to advertise their profiles and products to increase visibility and revenue.",
+      "The initial rollout covers nine major locations in Dimapur as reference points for job posting and search, ensuring easy navigation for users.",
+      "These developments position the platform to bridge the gap between job seekers, providers, and businesses in the region effectively."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
