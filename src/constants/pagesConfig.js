@@ -1116,7 +1116,11 @@ export const pagesConfig = [
     path: "/IndigenousLocalKnowledge",
     component: "IndigenousLocalKnowledge",
     description:
-      "Chhattisgarh Tribal’s Carbon Project through Sustainable Agriculture Land Management(SALFM), holistic and focused farm enterprise extension approach and by supporting farmer groups to establish village savings and loan associations using FintechExploring the marketing and fair price mechanisms and applications of fintech solutions in improving livelihood, income and employment.Documentation and database creation of the community’s Indigenous and Local Knowledge along with the development of an App through linguistic research support. ",
+    [
+      "Develop frameworks for sustainable land and forest management.",
+      "Explore carbon credit systems integrated with Fintech solutions for tribal empowerment.",
+      "Promote financial inclusion among tribal communities using modern financial tools and platforms."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1125,7 +1129,18 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Completed literature and field-based baseline assessments for carbon credit measurement.",
+      "Conducted workshops at district and village levels to engage stakeholders and promote awareness.",
+      "Initiated GIS-based open mapping for the community and pilot Fintech platform design.",
+      "Demonstration projects for sustainable agricultural practices like alternate wetting and drying (AWD) in paddy fields.",
+      "Organized 12 workshops, field visits, and training programs involving government officials, farmers, and tribal fellows.",
+      "Trained 18 tribal fellows, initiated translation and preservation efforts for indigenous languages, and conducted communication skills workshops.",
+      "Finalized frameworks for carbon credit markets and agroforestry practices aligned with sustainable forest management.",
+      "GIS and remote sensing tools to enhance community decision-making.",
+      "Developed multimedia dictionaries, publish teaching materials on Kurux grammar, and provide skill development for educators.",
+      "Collaborations with content creators for storytelling, folklore documentation, and digital resource creation."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1266,7 +1281,12 @@ export const pagesConfig = [
     path: "/MahuaBasedEthanol",
     component: "MahuaBasedEthanol",
     description:
-      "Conduct a detailed field survey in Kabirdham district to assess the potential and production capacity of Mahua tree-based products among the tribal population.Perform an economic feasibility study to evaluate the viability of ethanol production from Mahua flowers, considering supply chain costs and revenue generation.Optimize process parameters for ethanol production from Mahua flowers at a lab scale to obtain crucial design parameters for large-scale production.Establish an ecosystem and develop a business model for Mahua-based products to maximize benefits for tribal populations, including technical training and workshops to promote commercialization.",
+    [
+      "Field survey in Kabirdham district to assess the potential and production capacity of Mahua tree-based products among the tribal population.",
+      "Economic feasibility study to evaluate the viability of ethanol production from Mahua Flowers, considering supply chain costs and revenue generation.",
+      "Optimize process parameters for ethanol production from Mahua flowers at a lab scale to obtain crucial design parameters for large-scale production.",
+      "Establish an ecosystem and develop a business model for Mahua-based products to maximize benefits for tribal populations, including technical training and workshops to promote commercialization."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1275,7 +1295,14 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj4.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails:  [
+      "A field survey in Gidhali Village, Chhattisgarh, was undertaken to evaluate Mahua flower production capacity for ethanol production.",
+      "The survey provided critical insights into local collection practices, storage techniques, and challenges faced by farmers.",
+      "Mahua flowers bloom from February to May, with a collection peak lasting about a week.",
+      "Farmers demonstrated knowledge of traditional methods but highlighted challenges, including insect damage, storage limitations, and market exploitation.",
+      "Explored the social and economic significance of Mahua products in tribal communities, revealing opportunities for improved income generation through direct sale and value-added processing.",
+      "A preliminary economic feasibility study has been conducted to assess the total supply chain, capital, and operational costs for Mahua-based ethanol production."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1642,7 +1669,13 @@ export const pagesConfig = [
     path: "/mHealth",
     component: "mHealth",
     description:
-      "Mobile Healthcare Services: Using mobile devices for healthcare services enhances accessibility and communication between patients and providers. Real-Time Health Monitoring: IoT sensors offer immediate health data, empowering individuals for informed decision-making about their health. Geographical Reach: Mobile health projects overcome geographical barriers, providing healthcare services to remote and underserved areas. Health Education through Apps: Mobile apps deliver health education, promoting preventive care and healthier lifestyles. Empowering Community Health Workers: Equipping community health workers with mobile tools extends healthcare services and education within communities, strengthening the healthcare workforce.",
+    [
+      "Mobile Healthcare Services: Using mobile devices for healthcare services enhances accessibility and communication between patients and health service providers.",
+      "Real-Time Health Monitoring: IoT sensors offer immediate health data, empowering individuals for informed decision-making about their health.",
+      "Geographical Reach: Mobile health projects overcome geographical barriers, providing healthcare services to remote and underserved areas.",
+      "Health Education through Apps: Mobile apps deliver health education, promoting preventive care and healthier lifestyles.",
+      "Empowering Community Health Workers: Equipping community health workers with mobile tools extends healthcare services and education within communities, strengthening the healthcare workforce."
+    ],
     images: ["assets/ProjectImages/pi_imagess/42.png"],
     duration: "2 Year",
     category: "project",
@@ -1652,7 +1685,15 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Conducted surveys in Manipur's villages, gathered insights from ASHA workers and doctors to address health challenges, particularly on the persepective of large distance from healthcare facilities. Based on this feedback, the team has developed an app that prioritizes user accessibility.",
+      "Pharmacy Access: Lists pharmacies available near surveyed areas, facilitating easier access to medicines.",
+      "Health Awareness: Includes educational videos to promote health education among users.",
+      "Data Subscription: Working on subscribing to real-time sensor data within the app using AWS Amplify PubSub, aiming to display this data using circle charts for intuitive visualization.",
+      "Doctor Platform: Developing a platform for doctors to view patient data and write prescriptions.",
+      "Pharmacy Integration: Integrating prescription data into the pharmacy module to allow patients to order medicines directly through the app.",
+      "IoT Core to App: Integrating sensor data from IoT Core into the React Native App."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1662,7 +1703,12 @@ export const pagesConfig = [
     path: "/SmartHealth",
     component: "SmartHealth",
     description:
-      "Establish an IoT-based livestock monitoring system for early disease detection and prompt intervention, ensuring optimal cattle health. Foster collaboration among farmers, veterinarians, financial institutions, and government departments, enabling knowledge exchange and empowering farmers with expert advice and sustainable farming practices. Simplify financial assistance processes, aiding farmers in acquiring necessary resources, and integrate livestock insurance options to mitigate financial risks and secure investments. Promote inclusivity by bridging rural-urban gaps, extending veterinary expertise to remote areas, and encouraging sustainable farming practices for resource efficiency and environmental conservation.",
+    [
+      "Establish an IoT-based livestock monitoring system for early disease detection and prompt intervention, ensuring optimal cattle health.",
+      "Foster collaboration among farmers, veterinarians, financial institutions, and government departments to enable knowledge exchange and empower farmers with expert advice and sustainable farming practices.",
+      "Simplify financial assistance processes, aiding farmers in acquiring necessary resources and integrating livestock insurance options to mitigate financial risks and secure investments.",
+      "Promote inclusivity by bridging rural-urban gaps, extending veterinary expertise to remote areas, and encouraging sustainable farming practices for resource efficiency and environmental conservation."
+    ],
     images: [],
     duration: "2 Year",
     category: "project",
@@ -1672,7 +1718,14 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The app is focused on enhancing the monitoring and management of cattle health using IoT-based technology. The app serves as a central hub for collecting and displaying data from IoT devices that monitor key health parameters such as temperature, heart rate, and motion. These metrics will be displayed in real-time on a user-friendly dashboard, allowing veterinary doctors and farmers to track the health status of multiple cattle simultaneously.",
+      "Automated Decision-Making: IoT devices will autonomously manage feeding, milking, and climate controls, reducing human intervention and errors.",
+      "Integration with Smart Ecosystems: Cattle health monitoring will connect with smart farming systems (e.g., irrigation, soil monitoring) for a holistic farming approach.",
+      "Cost Reduction & Scalability: Lowering IoT costs will make solutions accessible to small farms, with a focus on scalable and easy-to-use systems.",
+      "Enhanced Animal Welfare: Real-time data will help detect stress, discomfort, or injury early, ensuring better animal care and prompt interventions.",
+      "Remote Veterinary Services: IoT framework will enable remote diagnosis and veterinary recommendations, reducing the need for on-site visits and saving resources."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1779,7 +1832,13 @@ export const pagesConfig = [
     path: "/AgriculturalProducts",
     component: "AgriculturalProducts",
     description:
-      "Facilitate efficient communication between producers and buyers through a user-friendly local dialect software, addressing supply-demand challenges. Minimize time and effort wastage by enabling direct negotiations on vegetable types, prices, and quality between dealing parties. Resolve payment and trust issues using an e-payment system, ensuring transparent and tamper-proof transactions through blockchain technology. Enhance reliability of vendors and producers by implementing a rating system with feedback in local language, incorporating sentiment analysis for accurate evaluations. Automatically record data on vegetable production, consumption, quality, and seasonal variations, providing policymakers with a comprehensive dataset for informed policy formulation.",
+    [
+      "Facilitate efficient communication between producers and buyers through a user-friendly local dialect software, addressing supply-demand challenges.",
+      "Minimize time and effort wastage by enabling direct negotiations on vegetable types, prices, and quality between dealing parties.",
+      "Resolve payment and trust issues using an e-payment system, ensuring transparent and tamper-proof transactions through blockchain technology.",
+      "Enhance reliability of vendors and producers by implementing a rating system with feedback in local language, incorporating sentiment analysis for accurate evaluations.",
+      "Automatically record data on vegetable production, consumption, quality, and seasonal variations, providing policymakers with a comprehensive dataset for informed policy formulation."
+    ],
     images: [],
     duration: "2 Year",
     category: "project",
@@ -1789,7 +1848,18 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Tlaizawng Infotech Pvt. Ltd. is actively working on developing an innovative application aimed at transforming the agricultural supply chain for Mizo farmers through blockchain and machine learning technologies. The project focuses on building a transparent, reliable, and efficient digital ecosystem for producers and buyers.",
+      "User-Friendly Interface: Developed in local dialects to ease communication between farmers and buyers.",
+      "E-Payment System: Ensures tamper-proof transactions using blockchain technology.",
+      "Direct Negotiations: Allows parties to discuss pricing and quality of vegetables directly, reducing miscommunication.",
+      "Vendor and Producer Ratings: Implemented a feedback system with sentiment analysis to enhance trust and reliability.",
+      "Data Recording Tools: Automatically tracks vegetable production, consumption patterns, and seasonal variations to assist policymakers.",
+      "Essential Commodity Tracking: An application to monitor goods entering the state has been implemented.",
+  "Pilot Vegetable Supply Chain Application: Ongoing work on an experimental app connecting farmers and buyers, with training and engagement initiatives.",
+  "Blockchain Integration: Token-based system to ensure secure transactions and demand prediction tools for better decision-making.",
+  "Workshop and Awareness Programs: A sensitization workshop for farmers was organized on September 12-13, 2024, preparing them for the system’s rollout and encouraging participation in the pilot phase.",  
+    ],
     publications: "",
     achievements: "",
     startupName: "",
