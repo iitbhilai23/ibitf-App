@@ -214,7 +214,7 @@ export const siteContent = {
     heroSubtitle3: `NMICPS is turning the new technological evolution into a huge opportunity by research, training and skilling in robotics, artificial intelligence, digital manufacturing, big data analysis, deep learning, quantum communication and Internet-of-Things. The mission is into developing and exploiting these technologies in services and manufacturing sectors; in agriculture, water, energy & traffic management; health, environment, infrastructure and Geo-Information Systems; security; financial systems and in combating crime.
 `,
     heroSubcontent: 'The areas of focus are in various Major  Technologies like Big Data, Manufacturing, and Quantum Communication. One of the mandates is towards training youth at all levels, developing Incubators and start-ups in these areas.',
-    cards: [
+    ThemeticArea: [
 
       {
         title: 'Fintech Solutions',
@@ -233,6 +233,17 @@ export const siteContent = {
         description: 'Fintech augmentation with medical applications  like insurance, e-market place etc. Digitization of traditional knowledge of medicinal plants, their clinical study and standardization.',
         route:"/IndigenousMedicinalPlants",
         image: require('../assets/VectorIMG/meditech.jpg'),
+      }
+      
+    ],
+
+    technologiesDomain:[
+      {
+        title: 'E-Payment Systems',
+        description: 'An e-payment system enables financial transactions or payments for goods and services to be made electronically, without the need for physical cheques or cash. It is a key component of any Fintech application.',
+        // image: 'assets/service1.jpg'
+        route:"/aiFintech",
+        image: require('../assets/VectorIMG/E-Payment.jpeg'),
       },
       {
         title: 'AI/ML (Artificial Intelligence/Machine Learning)',
@@ -255,8 +266,7 @@ export const siteContent = {
         route:"/datalocker",
         image: require('../assets/VectorIMG/blockchain.jpg'),
       },
-
-    ],
+    ]
   },
   about: {
     title: 'About Us',
@@ -937,7 +947,8 @@ awards: [
     },
     {
       image: require('../assets/project_features/digital_agrivillage.jpeg'),
-      title: 'DIGITAL AGRI VILLAGE - Advancing the Digital Transformation of Agriculture in Tribal Dominating Areas of Chhattisgarh',
+      // title: 'DIGITAL AGRI VILLAGE - Advancing the Digital Transformation of Agriculture in Tribal Dominating Areas of Chhattisgarh',
+      title: 'Digital Agri Village: Empowering Tribal Farmers in Chhattisgarh',
       description: 'The Concept of Digital Agri-village heralds a new era in agricultural innovation, aiming to transform traditional farming landscapes into technologically advanced, interconnected hubs of sustainable growth and empowerment. At the heart of this initiative lies a comprehensive vision to revolutionize farming practices and empower Self-help groups (SHGs) and farmers through an amalgamation of cutting-edge technologies and collaborative knowledge-sharing platforms.',
     },
     {
@@ -954,7 +965,7 @@ awards: [
   ],
 
 videoPage: {
-  title: "President Applauds IIT Bhilai Innovation",
+  title: "Hon'ble President Applauds IIT Bhilai Innovation",
   description: "The President of India appreciates IIT Bhilai Innovation and Technology Foundation for its impactful work in Fintech, Agritech, and Healtech.",
   videoThumbnail: require('../assets/Images/Video.jpeg'),  // Update with the actual path to the thumbnail
   videoUrl: "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1" // YouTube video URL

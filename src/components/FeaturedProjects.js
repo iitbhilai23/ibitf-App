@@ -1,58 +1,85 @@
-// FeaturedProjects.js
-
 import React, { useEffect, useState } from 'react';
 import { siteContent } from '../constants/content';
 import './FeaturedProjects.css';
-import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom';
+
+const CARD_WIDTH = 200; // Width of each card
+const VISIBLE_CARDS = 4; // Number of cards visible at once
 
 const FeaturedProjects = () => {
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(VISIBLE_CARDS); // Start from the centered set of cards
     const { featuredProjects } = siteContent;
 
+    // If there are only 5 cards, clone enough cards to enable seamless infinite scrolling
+    const clonedProjects = [
+        ...featuredProjects.slice(-VISIBLE_CARDS), // Clone last 4 items at the start
+        ...featuredProjects,
+        ...featuredProjects.slice(0, VISIBLE_CARDS) // Clone first 4 items at the end
+    ];
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setIndex((prevIndex) => (prevIndex + 2) % featuredProjects.length);
-        }, 5000);
+            handleNext();
+        }, 3000); // Adjust the time interval for speed
         return () => clearInterval(interval);
-    }, [featuredProjects.length]);
+    }, [index]);
 
-    const handleNext = () => setIndex((prev) => (prev + 2) % featuredProjects.length);
-    const handlePrev = () => setIndex((prev) => (prev - 2 + featuredProjects.length) % featuredProjects.length);
+    const handleNext = () => {
+        // Move one card forward
+        setIndex((prevIndex) => prevIndex + 1);
+    };
+
+    const handlePrev = () => {
+        // Move one card backward
+        setIndex((prevIndex) => prevIndex - 1);
+    };
+
+    // Handle seamless looping
+    useEffect(() => {
+        if (index === clonedProjects.length - VISIBLE_CARDS) {
+            // Reset index to start after transition ends
+            setTimeout(() => {
+                setIndex(VISIBLE_CARDS);
+            }, 500); // Delay to match transition duration
+        }
+        if (index === 0) {
+            // Jump to the end when scrolling backward from the start
+            setTimeout(() => {
+                setIndex(clonedProjects.length - VISIBLE_CARDS * 2);
+            }, 500);
+        }
+    }, [index, clonedProjects.length]);
 
     return (
         <div className="featured-projects">
             <h2 className="projects-title">Featured Projects</h2>
             <div className="projects-container">
-                <div className="carousel-container">
-                    {/* <button onClick={handlePrev}>Previous</button> */}
-                    <div className="carousel">
-                        <AnimatePresence initial={true}>
-                            <motion.div
-                                key={index}
-                                className="project-cards"
-                                initial={{ opacity: 0, x: 300 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                // exit={{ opacity: 0, x: -300 }}     // Exit to the left
-                                transition={{ duration: 1 }}
-                                style={{ display: 'flex', gap: '24px', height:"350px" }}
-                            >
-                                {featuredProjects.slice(index, index + 2).map((project, idx) => (
-                                    <div className="project-card" key={idx}>
-                                        <div className='img-parent-features'>
-                                            <img  className="project-image" src={project.image} alt={project.title} />
-                                        </div>
-                                        <div className="project-content">
-                                            <h3 className="project-title">{project.title}</h3>
-                                            <p className="project-description">{project.description}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </motion.div>
-                        </AnimatePresence>
-                    </div>
-                    {/* <button onClick={handleNext}>Next</button> */}
+                <button className="nav-button prev" onClick={handlePrev}>&lt;</button>
+                <div
+                    className="carousel"
+                    style={{
+                        transform: `translateX(${-index * CARD_WIDTH}px)`,
+                        transition: index === VISIBLE_CARDS || index >= clonedProjects.length - VISIBLE_CARDS ? "none" : "transform 0.5s ease-in-out",
+                    }}
+                >
+                    {clonedProjects.map((project, i) => (
+                        <div key={i} className="project-card">
+                            <div className="img-parent-features">
+                                <img className="project-image" src={project.image} alt={project.title} />
+                            </div>
+                            <div className="project-content">
+                                <h3 className="project-title">{project.title}</h3>
+                                <p className="project-description">
+                                    {project.description.length > 80 ? `${project.description.slice(0, 80)}...` : project.description}
+                                </p>
+                                <Link to={`/project/${project.id}`} className="read-more-button">
+                                    Read More
+                                </Link>
+                            </div>
+                        </div>
+                    ))}
                 </div>
+                <button className="nav-button next" onClick={handleNext}>&gt;</button>
             </div>
         </div>
     );
