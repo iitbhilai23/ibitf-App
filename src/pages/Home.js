@@ -11,7 +11,7 @@ import ImageSlider from '../components/ImageSlider';
 import TechnologiesDevelopment from '../components/TechnologiesDevelopment';
 import OurAwards from '../components/OurAwards';
 import FeaturedProjects from '../components/FeaturedProjects';
-import CollaborationSlider from '../components/Slider/Slider';
+import CollaborationSlider from '../components/Slider/CollaborationSlider';
 import VideoPage from '../components/VideoPage';
 
 
@@ -28,15 +28,12 @@ const Home = () => {
 
       <AboutSection />
       <VideoPage />
-      {/* <HeroSection /> */}
-      {/* <TribalAreaPlan /> */}
-      <FeaturedProjects />
-    <OurAwards />
-    <TechnologiesDevelopment />
-      <Achievements />
       
-      {/* <AboutSection /> */}
-      <SupportBy />
+    \<OurAwards />
+   
+      <Achievements />
+    
+      {/* <SupportBy /> */}
       <CollaborationSlider />
     </>
 
