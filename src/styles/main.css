@@ -827,7 +827,12 @@ body {
   font-size: 14px;
 }
 
-
+@media (max-width: 768px) {
+  .card-scheme {
+    width: 90%;
+   
+  }
+}
 
 
 /* for Blog page design code here */
@@ -1260,7 +1265,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #9c51c0;
 }
 
-
+/* contact-us */
 @media (max-width: 768px) {
  .iit-contact-container{
   flex-direction: column !important;
@@ -1276,4 +1281,133 @@ body::-webkit-scrollbar-thumb:hover {
  .contact-form-container{
   margin:  20px !important;
  }
+}
+
+/* career-page */
+
+.career-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.career-page h2 {
+  font-size: 2rem;
+}
+
+.career-page p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.career-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.career-table th,
+.career-table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+}
+
+.career-table th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.career-table .download-link,
+.career-table .apply-link {
+  color: #e63946;
+  text-decoration: none;
+}
+.career-table-container{
+  overflow-x: auto;
+}
+@media (max-width: 1024px) {
+  .career-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .career-page p {
+    font-size: 0.9rem;
+  }
+
+  .career-table th, .career-table td {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-page h2 {
+    font-size: 1.6rem;
+  }
+
+  .career-page p {
+    font-size: 0.9rem;
+  }
+
+  .career-table {
+    display: block;
+    font-size: 0.9rem;
+    border: none;
+  }
+
+  .career-table tbody,
+  .career-table tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .career-table th {
+    display: none;
+  }
+
+  .career-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  .career-table td:last-child {
+    border-bottom: none;
+  }
+
+  .career-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+    flex-basis: 50%;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-page h2 {
+    font-size: 1.4rem;
+  }
+
+  .career-page p {
+    font-size: 0.8rem;
+  }
+
+  .career-table td {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .career-table td::before {
+    margin-bottom: 4px;
+  }
 }
