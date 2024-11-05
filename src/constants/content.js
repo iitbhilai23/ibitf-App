@@ -827,14 +827,18 @@ CollaborationBy: {
 
 
 
-// Aboutsection content page 
+// supportby page code here 
 
-AboutSection: {
-  title: "Innovation and Technology Foundation ",
-  highlight: "IIT Bhilai",
-  description: "IIT Bhilai has been entrusted with establishing a Technology Innovation Hub (TIH) under the NM-ICPS, focusing on financial technologies (FinTech) with significant emphasis on Agritech and Healthtech. As a Section-8 Company, IBITF oversees the TIH’s operations, ensuring alignment with the mission and vision of NMICPS.",
-  buttonText: "Read More",
-  image: require('../assets/Images/bg-iit.jpg'), // Path to your image
+
+SupportBy: {
+  title: "Supported By",
+  logos: [
+    require('../assets/Images/iitbhilai.png'), // Image 1
+    require('../assets/Images/DST.png'), // Image 1
+    require('../assets/Images/NMICPS.png'), // Image 1
+    // require('../assets/Images/DST.png'), 
+    require('../assets/Images/ibitf.png'), // Image 1
+  ],
 },
 
 
@@ -869,9 +873,10 @@ awards: [
 
   sliderImages: [
     { url: require('../assets/slider/1.jpg'), title: 'The Divyang ATM has been successfully installed at the National Association For The Blind (Prerna Bhavan), Raipur, C.G., for comprehensive testing and validation.' },
-    { url: require('../assets/slider/2.jpeg'), title: 'Drone Didi Workshop at IIT Bhilai' },
+   
     { url: require('../assets/slider/3.jpeg'), title: 'Ankuran - Innovation Farmers Fair and Exhibhition' },
     { url: require('../assets/slider/4.jpeg'), title: 'Honorable Governor of Mizoram, Dr. Hari Babu Kambhampati, served as the chief guest at the Workshop conducted by IBITF at Mizoram University.' },
+    { url: require('../assets/slider/2.jpeg'), title: 'Drone Didi Workshop at IIT Bhilai' },
     // { url: require('../assets/slider/image5.jpg'), title: 'Image 5 Title' },
   ],
 
@@ -883,33 +888,33 @@ awards: [
     highlight: "IIT Bhilai",
     description: "IIT Bhilai has been entrusted with establishing a Technology Innovation Hub (TIH) under the NM-ICPS, focusing on financial technologies (FinTech) with significant emphasis on Agritech and Healthtech. As a Section-8 Company, IBITF oversees the TIH’s operations, ensuring alignment with the mission and vision of NMICPS.",
     buttonText: "Read More",
-    image: require('../assets/AI@.jpg'), // Path to your image
+    image: require('../assets/Images/bg-iit.jpg'), // Path to your image
   },
 
 
   // Awards component contents
   awards: [
     {
-      image: require('../assets/AI@.jpg'), // Replace with actual paths
-      title: 'Project Title 1',
+      image: require('../assets/Images/19.jpg'), // Replace with actual paths
+      // title: 'Project Title 1',
       description: 'National e-Governance “Gold Award” by Department of  Administrative Reforms Public  Grievance, Government of India, to the project entitled, “ Blochchain based IoT enabled Precision agriculture” and the Mobile App Crop doctor 2.0.',
     },
     {
-      image: require('../assets/AI@.jpg'),
-      title: 'Project Title 2',
+      image: require('../assets/Images/20.jpg'),
+      // title: 'Project Title 2',
       description: 'Project titled, “Intelligent Emergency Care System (iECS) through Digital Hybrid Healthcare” is awarded the Dr. Keshav Baliram Hedgewar Arogya Shri Award (2024) at the Future of Healthcare Forum 2024, held at New Delhi.',
     },
     {
-      image: require('../assets/AI@.jpg'),
-      title: 'Project Title 3',
+      image: require('../assets/Images/21.jpg'),
+      // title: 'Project Title 3',
       description: 'Project entitled, “Smart Cleaner: Automatic Clean the Smart Contract” has been awarded by The Institution of Engineers (India), Mumbai for  Research Excellence in 2023.',
     },
     {
-      image: require('../assets/AI@.jpg'),
-      title: 'Project Title 4',
+      image: require('../assets/Images/22.jpg'),
+      // title: 'Project Title 4',
       description: 'Project titled, “AI based geo-enabled crop insurance” under BhoomiCam Pvt. Ltd. Start-up has been honored with the prestigious Best Geospatial Stratup Award at the National Geospatial awards 2024, organized by FOSSEE (GIS), held in VMCC, IIT Bombay under the aegies of the National Mission on Education, Government of India.',
     },
-
+   
   ],
 
 
@@ -951,7 +956,7 @@ awards: [
 videoPage: {
   title: "President Applauds IIT Bhilai Innovation",
   description: "The President of India appreciates IIT Bhilai Innovation and Technology Foundation for its impactful work in Fintech, Agritech, and Healtech.",
-  videoThumbnail: require('../assets/AI@.jpg'),  // Update with the actual path to the thumbnail
+  videoThumbnail: require('../assets/Images/Video.jpeg'),  // Update with the actual path to the thumbnail
   videoUrl: "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1" // YouTube video URL
 }
 

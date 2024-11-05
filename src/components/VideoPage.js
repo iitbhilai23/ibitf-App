@@ -12,6 +12,7 @@ const VideoPage = () => {
     const closeModal = () => setIsModalOpen(false);
 
     return (
+        <div class="video-outer-container">
         <div className="video-page">
             <div className="video-section">
                 <div className="video-thumbnail-container" onClick={openModal}>
@@ -48,6 +49,7 @@ const VideoPage = () => {
                     </div>
                 </div>
             )}
+        </div>
         </div>
     );
 };

@@ -1,11 +1,19 @@
 /* Container styling */
+
+.about-outer-container {
+  width: 100%;
+  background-color:var(--fouth-color);
+}
+
 .about-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 60px 20px;
     max-width: 1200px;
+
     margin: 0 auto;
+ 
   }
   
   .about-text {

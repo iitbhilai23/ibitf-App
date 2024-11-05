@@ -6,6 +6,7 @@ const OurAwards = () => {
     const { awards } = siteContent; // Assuming awards data is inside siteContent
 
     return (
+        <div className='award-outer-container'>
         <section className="our-awards">
             <h2 className="awards-title">Our Awards</h2>
             <div className="awards-container">
@@ -20,6 +21,7 @@ const OurAwards = () => {
                 ))}
             </div>
         </section>
+        </div>
     );
 };
 
