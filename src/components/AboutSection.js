@@ -13,6 +13,8 @@ const AboutSection = () => {
   };
 
   return (
+  
+    <div className="about-outer-container">
     <div className="about-section">
       <div className="about-text">
         <h2 className="about-title">
@@ -27,6 +29,8 @@ const AboutSection = () => {
         <img src={image} alt="Company" />
       </div>
     </div>
+    </div>
+   
   );
 };
 
