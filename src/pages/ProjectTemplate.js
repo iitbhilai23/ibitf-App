@@ -49,7 +49,7 @@ const ProjectTemplate = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className="project-container">
       <div style={styles.InstituteLogoContainer}>
         {currentPage.InstituteLogo?.map((image, index) => (
           <div
@@ -238,7 +238,7 @@ const ProjectTemplate = () => {
                     style={styles.image}
                   />
                 </div>
-                <span style={styles.description}>{currentPage.workshop}</span>
+                <span style={styles.description} className="project-desc">{currentPage.workshop}</span>
               </div>
             </Box>
           </>
@@ -264,7 +264,7 @@ const ProjectTemplate = () => {
                   <div style={styles.divider}></div>
                 </div>
                 <div className="obj-container">
-                  <span style={styles.description}>
+                  <span style={styles.description}  className="project-desc">
                     {/* {renderDescription(currentPage.technicalDetails)} */}
                     {Array.isArray(currentPage.description) ? (
   typeof currentPage.description[0] === "string" ? (
@@ -331,7 +331,7 @@ const ProjectTemplate = () => {
                       style={styles.image}
                     />
                   </div>
-                  <span style={styles.description}>
+                  <span style={styles.description}  className="project-desc">
                     {renderDescription(currentPage.publications)}
                   </span>
                 </div>
@@ -366,7 +366,7 @@ const ProjectTemplate = () => {
                       style={styles.image}
                     />
                   </div>
-                  <span style={styles.description}>
+                  <span style={styles.description}  className="project-desc">
                     {currentPage.achievements}
                   </span>
                 </div>
@@ -487,10 +487,10 @@ const styles = {
     marginTop: "20px",
   },
   sectionHeading: {
-    fontSize: "1.5em",
+    fontSize: "1.3em",
     textAlign: "start",
-    fontWeight: "bold",
-    color: "#EBD3F8",
+    fontWeight: "600",
+    color: "#000000",
     // textDecoration: "underline",
   },
 
@@ -500,8 +500,8 @@ const styles = {
   sectionDescription: {
     textAlign: "start",
     fontSize: "1em",
-    color: "#fff",
-    lineHeight: "1.8",
+    color: "#7f8c8d",
+    lineHeight: "1.5",
   },
 };
 
