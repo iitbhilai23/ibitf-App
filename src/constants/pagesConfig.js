@@ -1023,7 +1023,12 @@ export const pagesConfig = [
     path: "/SmartCompactEnergyMeter",
     component: "SmartCompactEnergyMeter",
     description:
-      "Optimize Energy Usage: Improve energy efficiency by analyzing real-time power data and identifying consumption patterns.Remote Load Control: Enable users to manage primary and secondary loads remotely through an authenticated consumer app.Demand-Side Management: Introduce IoT for strategic use of secondary loads, reducing peak electric demand.Ensure Power Quality: Compare phase voltages and currents against standards, promptly identify and communicate power quality issues to consumers.",
+    [
+      "Optimize Energy Usage: Improve energy efficiency by analyzing real-time power data and identifying consumption patterns.",
+      "Remote Load Control: Enable users to manage primary and secondary loads remotely through an authenticated consumer app.",
+      "Demand Side Management: Introduce IoT for strategic use of secondary load, reducing peak electric demand.",
+      "Ensure Power Quality: Compare phase voltages and currents against standards, and promptly identify and communicate power quality issues to consumers."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1032,7 +1037,12 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Designed an IoT-based smart compact energy meter (ISCEM) and mobile app / web interface.",
+      "A prototype of the ISCEM model has been developed.",
+      "Identifying peak hours power fluctuation and power consumption for any building.",
+      "PoC deployment of the system and mobile app / web interface for monitoring Power / Electricity consumption and Power quality issues."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1278,7 +1288,13 @@ export const pagesConfig = [
     path: "/BastarArt",
     component: "BastarArt",
     description:
-      "This project helps in development of Dhokra and Wrought Iron art Enterprise business model. This will help to create a successful and sustainable venture that not only showcase the beauty of Dhokra and Wrought Iron art but also contributes to the economic and cultural development of the community and the nation",
+    [
+      "Study of Bell Metal/Dhokra and Wrought Iron Craft through traditional processing method.",
+      "Preservation of the Traditional Craftsmanship and Diversification of Designs.",
+      "Access to global market and Skill Enhancement through Training.",
+      "Increase the efficiency of Production.",
+      "Focus on Customization and Personalization with Financial Inclusion."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1287,7 +1303,14 @@ export const pagesConfig = [
     duration: "6 month",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "A detailed study of Bell Metal/Dhokra and Wrought Iron Craft was conducted, identifying various challenges associated with these traditional crafts.",
+      "Trained 15 artisans through a workshop titled 'Bastar Art Revival: A Pathway to Sustainable Livelihoods for Indigenous Communities'.",
+      "Initiated a collaborative framework with local authorities, signing an MOU with the Kondagaon district administration through discussions with key stakeholders, including the District Magistrate and District Management Officer.",
+      "Streamlined permits and approvals for art-related activities.",
+      "An in-depth analysis of the Bell Metal/Dhokra and Wrought Iron crafts highlighted gaps in traditional processes, marketing inefficiencies, and the need for innovation and modern tools to uplift the artisans economically and culturally."
+    ],
+    
     publications: "",
     achievements: "",
     startupName: "",
@@ -1606,7 +1629,12 @@ export const pagesConfig = [
     path: "/UPI",
     component: "UPI",
     description:
-      "Boost GST Compliance: Integrate UPI apps to register all transactions with businesses under their GST numbers. Empower Customer Validation: Allow customers to verify transactions; input GSTIN for unregistered businesses. Combat Tax Evasion: Prevent misuse of multiple VPAs by enabling customers to link transactions to specific GST numbers, reducing tax evasion risks. Streamline Cash Transactions: Develop an app like 'Mera Bill Mera Adhikar' to register and track cash transactions, enhancing overall transparency.",
+    [
+      "Boost GST Compliance: Integrate UPI apps to register all transactions with businesses under their GST numbers.",
+      "Empower Customer Validation: Allow customers to verify transactions; input GSTIN for unregistered businesses.",
+      "Combat Tax Evasion: Prevent misuse of multiple VPAs by enabling customers to link transactions to specific GST numbers, reducing tax evasion risks.",
+      "Streamline Cash Transactions: Develop an app like 'Mera Bill Mera Adhikar' to register and track cash transactions, enhancing overall transparency."
+    ],
     images: [],
     duration: "2 Year",
     category: "project",
@@ -1616,7 +1644,15 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails:  [
+      "Developed an application that enables customers to verify payments made to businesses by integrating the GSTIN (Goods and Service Tax Identification Number) into QR codes.",
+      "The application interacts with the GST network to validate the QR codes associated with businesses, ensuring the authenticity of payments.",
+      "Users can manually verify the QR by entering the GSTIN as input for further validation.",
+      "The application is being built using Kotlin for Android development, with Node.js managing the backend logic and API services.",
+      "Amazon AWS is utilized for hosting, security, and API gateway management to ensure scalability and reliability.",
+      "Firebase serves as the primary database, offering real-time data synchronization.",
+      "Open API standards are used for API development to ensure smooth interoperability."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1896,8 +1932,11 @@ export const pagesConfig = [
     path: "/BoostingEmployment",
     component: "BoostingEmployment",
     description:
-      "Develop a mobile application facilitating job seekers and employers in Nagaland, supporting both English and Nagamese languages. Enable employers to list job details, required skills, payment terms, and durations, fostering a comprehensive platform for job matching. Establish a trust-building mechanism by verifying profiles of both job seekers and employers on the platform. Provide accessibility to job information for feature phone users through SMS, allowing them to specify skills and location for job searches.",
-    images: [],
+    [
+      "Facilitate employment opportunities, especially in the unorganized and semi-organized sectors.",
+      "Boost business opportunities by increasing their sales and revenue through advertising strategies."
+    ],
+    images:[],
     duration: "2 Year",
     category: "project",
     subCategory: "TSP",
@@ -1906,7 +1945,14 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Developed a platform for job seekers and providers in Dimapur that allows job seekers and providers to register using phone numbers and OTP authentication.",
+      "Job providers can post, edit, and delete job listings and connect with seekers based on relevant preferences.",
+      "Job seekers can search for jobs by location or expertise and promote their skills for better opportunities.",
+      "Offers a feature for businesses to advertise their profiles and products to increase visibility and revenue.",
+      "The initial rollout covers nine major locations in Dimapur as reference points for job posting and search, ensuring easy navigation for users.",
+      "These developments position the platform to bridge the gap between job seekers, providers, and businesses in the region effectively."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
