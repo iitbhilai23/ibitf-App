@@ -1170,6 +1170,19 @@ body {
 .blog-image:hover {
   transform: scale(1.05);
 }
+@media (max-width: 768px) {
+  .blog-intro-card {
+   flex-direction: column;
+  }
+  .blog-image {
+    width: 100%;
+    max-width: 300px;
+  }
+  .blogs-container { 
+   padding:0  30px 30px 30px;
+  }
+  
+}
 
 /* Blog Cards */
 .blog-cards {
@@ -1180,7 +1193,7 @@ body {
 }
 
 .blog-card {
-  width: 350px;
+  max-width: 350px;
   padding: 20px;
   background-color: #fff;
   border-radius: 15px;
@@ -1243,4 +1256,22 @@ body::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-thumb:hover {
   background-color: #9c51c0;
+}
+
+
+@media (max-width: 768px) {
+ .iit-contact-container{
+  flex-direction: column !important;
+  padding:  0 20px !important;
+ }
+ .map-container{
+  margin: 10px !important;
+ }
+ .map-frame{
+  width: 100% !important;
+  aspect-ratio: 0.8;
+ }
+ .contact-form-container{
+  margin:  20px !important;
+ }
 }

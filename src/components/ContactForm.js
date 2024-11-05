@@ -51,7 +51,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className='contact-form-container'>
       <h3 style={styles.subtitle}> Contact Us</h3>
       {/* <h1 style={styles.title}>
         Contact Us        
