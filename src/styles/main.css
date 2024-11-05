@@ -517,7 +517,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  /* font-family: 'Arial', sans-serif; */
   color: #333;
   line-height: 1.6;
 }
@@ -612,7 +612,7 @@ body {
   background-color: #f9f9fc;
   /* Light background for contrast */
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   /* Modern font */
 }
 
