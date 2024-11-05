@@ -432,7 +432,7 @@ const styles = {
     color: "#7f8c8d",
     lineHeight: "1.5",
     width: "70%",
-  },
+  }, 
   boxDescription: {
     fontSize: "1em",
     color: "#7f8c8d",

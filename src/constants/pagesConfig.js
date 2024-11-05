@@ -730,7 +730,7 @@ export const pagesConfig = [
     title:
       "Design And Development of IoT Accessed Secure E-Finance Platform for Managing Severe Acute Malnutrition among Vulnerable Tribes Population in Chhattisgarh",
     path: "/e-finance",
-    component: "E-Finance",
+    component: "E-Finance", 
     description:
       [
         "Design and Development of IoT  Secure E-Finance Platform for Managing Severe Acute Malnutrition Among Tribal Population in Chhattisgarh.",
