@@ -718,7 +718,12 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Developed a User Interface with Tkinter, that utilizes IoT sensors and machine learning to assess SAM, enabling real-time data collection and personalized dietary planning.",
+      "Ultrasonic and load cell sensors measure children’s height and weight accurately, helping compute critical health indicators like WHZ, HAZ, and BMI.",
+      "Camera-based computer vision refines anthropometric measurements, while data normalization and augmentation improve model stability and generalization.",
+      "LoRaWAN ensures efficient data transmission between IoT devices and servers, enhancing reliability with long-range coverage and low power consumption."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
