@@ -6,6 +6,7 @@ const SupportBy = () => {
   const { title, logos } = siteContent.SupportBy;
 
   return (
+
     <section className="support-by-section">
       <h2 className="support-by-title">{title}</h2>
       <div className="support-by-logos">
@@ -14,6 +15,7 @@ const SupportBy = () => {
         ))}
       </div>
     </section>
+
   );
 };
 

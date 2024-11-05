@@ -33,7 +33,7 @@ const Home = () => {
    
       <Achievements />
     
-      {/* <SupportBy /> */}
+      <SupportBy />
       <CollaborationSlider />
     </>
 
