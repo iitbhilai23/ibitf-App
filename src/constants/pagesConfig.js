@@ -583,7 +583,13 @@ export const pagesConfig = [
     path: "/mithun",
     component: "mithun",
     description:
-      "Develop an online marketplace for Mithun trading to broaden market access.Implement a secure registration and verification process for farmers to ensure authenticity.Provide detailed listings of Mithun, offering comprehensive information to potential buyers.Establish transparent pricing mechanisms to build trust and facilitate fair transactions.Integrate multimedia support, negotiation, bidding features, and digital payment options to enhance the overall trading experience for both buyers and sellers.",
+    [
+      "An online marketplace for Mithun trading to broaden market access.",
+      "A secure registration and verification process for farmers to ensure authenticity.",
+      "Provide detailed listings of Mithun, offering comprehensive information to potential buyers.",
+      "Transparent pricing mechanisms to build trust and facilitate fair transactions.",
+      "Integrate multimedia support, negotiation, bidding features, and digital payment options to enhance the overall trading experience for both buyers and sellers."
+  ],
     images: ["assets/StaticImages/project/mithun1.jpg"],
     duration: "2 years",
     category: "project",
@@ -592,7 +598,11 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj4.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The online Mithun trading marketplace reflects significant strides in establishing a robust platform for trading of Mithuns. With company registration, trademark protection, website development, user registration, and essential marketplace features underway, the project is well-positioned to advance further in its development phases.",
+      "Beta Version Launched: The website, arupet.com, is currently launched in the beta phase, with core functionalities being tested for usability, performance, and adaptability among the stakeholders.",
+      "50 manpower trained in the workshop, 'Meeting with Mithun’s Farmers.'"
+  ],
     publications: "",
     achievements: "",
     startupName: "Arbobine Pvt. Ltd.",
@@ -603,7 +613,12 @@ export const pagesConfig = [
     path: "/khasilanguage",
     component: "KhasiLanguage",
     description:
-      "Develop an inclusive Application Programming Interface (API) featuring the Khasi Language to bridge communication gaps between online financial service providers and rural communities.Implement digital literacy initiatives, expanding service offerings, and establishing a feedback mechanism to enhance accessibility and understanding of online financial services.Ensure long-term sustainability by adopting a comprehensive strategy that empowers the Khasi-speaking community in navigating and benefiting from the evolving digital landscape.",
+    [
+      "Collect and create a bilingual parallel corpus dataset for English and Khasi, to ease the development of neural machine translation for Khasi.",
+      "Creating and improving deep learning models for the efficient translation of Khasi to other languages using the above-mentioned dataset.",
+      "Integrate the models for speech-to-speech translation, to make it more accessible to people.",
+      "Ease of accessing fintech services and help in bringing economic inclusivity."
+  ],
     images: [],
     duration: "2 years",
     category: "project",
@@ -612,7 +627,7 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: ["Developed a deep learning model for the translation of English to Khasi", "Created parallel corpora for English to Khasi with 31,000 bilingual translated pairs through web scraping and cleaning each data set accordingly", ""],
     publications: "",
     achievements: "",
     startupName: "",
@@ -663,7 +678,12 @@ export const pagesConfig = [
     path: "/meghalaya",
     component: "EmpoweringMeghalaya",
     description:
-      "Implement a blockchain solution for Meghalaya's indigenous products, ensuring authenticity and traceability through unique QR codes or RFID tags.Enable consumers to access product information via a mobile app, detailing the origin and production process.Develop a fintech feature for secure digital payments, fostering equitable transactions and accountability within the supply chains.Enhance market access for indigenous products by addressing authenticity and quality concerns through integrated blockchain and fintech solutions.",
+    [
+      "A blockchain solution for Meghalaya's indigenous products, ensuring authenticity and traceability by means of unique QR codes or RFID tags.",
+      "Enable consumers to access product information via web and mobile applications, detailing the origin and production process.",
+      "A fintech feature for secure digital payments, fostering equitable transactions and accountability within the supply chains.",
+      "Enhance market access for indigenous products by addressing authenticity and quality concerns through integrated blockchain and fintech solutions."
+  ],
     images: ["assets/StaticImages/project/Meghalaya.png"],
     duration: "2 years",
     category: "project",
@@ -672,7 +692,11 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The Hyperledger Fabric-based blockchain network for the Proof of Concept (PoC) has been successfully set up to ensure traceability and authenticity for e-commerce, using 'Lakadong Turmeric' as a simulated asset.",
+      "The network is configured with multiple peer nodes, orderers, and certificate authorities, ensuring all components are functioning properly. A custom Smart Contract (chaincode) was developed in Golang to manage the lifecycle of turmeric assets.",
+      "PoC demonstrated the technical feasibility of leveraging Hyperledger Fabric to enhance product traceability and authenticity in an e-commerce setting. All functionalities are operational, laying the groundwork for future integration with front-end systems and scalability testing for real-world deployment."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1043,8 +1067,18 @@ export const pagesConfig = [
       "Economic Upliftment of the Tribes Residing in Balrampur District Through their Cultural Heritage",
     path: "/EconomicUpliftmentCulturalHeritage",
     component: "EconomicUpliftmentCulturalHeritage",
-    description:
-      "Enhance tribal livelihoods through tourism in Balrampur district.Document and preserve unique tribal culture and traditions.Connect tribal communities to tourism jobs for economic growth.Utilize natural beauty for economic empowerment and conservation.",
+    description:[
+      "Create new employment opportunities for tribal communities.",
+      "Preserve tribal cultures by fostering economic upliftment.",
+      "Provide market access for tribal arts, crafts, and skills.",
+      "Increase tribal participation in rural tourism.",
+      "Offer international recognition to the northern Sarguja division of Chhattisgarh.",
+      "Inform and train tribes about new tourist sites and connect them to employment opportunities.",
+      "Address issues of migration, drug addiction, and unemployment by promoting sustainable livelihoods.",
+      "Enhance tribal arts and skills by integrating traditional industries with modern technology.",
+      "Coordinate traditional industries with modern marketing strategies.",
+      "Raise awareness about government schemes, policies, and initiatives related to arts, crafts, and employment."
+  ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1053,7 +1087,14 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Skill Development in Iron Craft: Agariya tribe members received training in advanced techniques like welding, cutter machine usage, and grinder tools, shifting from traditional methods.",
+      "They were taught to create diverse iron crafts, including animal figures, human portraits, and balancing toys.",
+      "Workshop and Training Impact: A 15-day workshop was organized, training 51 participants with hands-on sessions for manufacturing iron products aligned with market demand.",
+      "Participants created intricate crafts like lamp stands and mementos, showcasing these products during the closing exhibition.",
+      "Economic Empowerment and Future Plans: The Agariya tribe is forming a committee of trained artists to scale production, sale, and marketing efforts, aiming to preserve their art and generate employment.",
+      "Some participants have already begun financially benefiting from the skills learned during the training."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1107,7 +1148,13 @@ export const pagesConfig = [
     path: "/DigitalAgriVillage",
     component: "DigitalAgriVillage",
     description:
-      "Digitize farms with Geo-tagged ERP for optimized management.Establish collaborative platforms for knowledge-sharing.Empower SHGs and farmers through interactive engagement.Deploy AI/ML for pest management and IoT for smart irrigation.Implement transparent supply chain solutions for fair transactions.",
+    [
+      "Digitize farms with Geo-tagged ERP for optimized management.",
+      "Establish collaborative platforms for knowledge-sharing.",
+      "Empower SHGs and farmers through interactive engagement.",
+      "Deploy AI/ML for pest management and IoT for smart irrigation.",
+      "Implement transparent supply chain solutions for fair transactions."
+  ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1116,7 +1163,11 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "This technology helps to reduce the time and cost of acquiring farm implements, improve resource utilization, and promote sustainable farming practices.",
+      "It enhances transparency, efficiency, and trust in the seed supply chain by providing real-time visibility into the journey of each batch of seeds.",
+      "Integration of machine learning algorithms with IoT data enables predictive analytics, aiding farmers in proactive decision-making for optimal crop management."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1128,7 +1179,14 @@ export const pagesConfig = [
     path: "/CommunityMedicineEmpowerment",
     component: "CommunityMedicineEmpowerment",
     description:
-      "Assess the health status in tribal regions, propose interventions, and empower through health education.Conduct training for healthcare personnel to enhance services in tribal areas.Advise state and central governments on additional health education needs.Develop a mobile app to enhance access and quality of health services for tribal communities, with a focus on maternal health, adolescent well-being, sickle cell, and cancer awareness.",
+    [
+      "Review the existing health situation in tribal areas, suggest interventions, formulate strategic guidelines, and empower the tribals via health education.",
+      "Training programs for the healthcare workers.",
+      "To make recommendations on the requirement of additional health education to state and central governments.",
+      "A mobile-based 'App' to improve the appropriateness, access, content, quality, and utilization of health services among the tribal population, particularly those living in marginal areas.",
+      "Awareness on maternal health, education of adolescent well-being, sickle cell, and cancer.",
+      "Identify sickle cell and cancer patients in the tribal population and validate the disease level by biochemical and imaging analysis."
+  ],
     images: ["assets/ProjectImages/pi_imagess/Dr.  Ramasamy.png"],
     category: "project",
     subCategory: "TSP",
@@ -1137,7 +1195,14 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Launched a mobile app to facilitate real-time communication between beneficiaries, academia, and healthcare partners, as well as disseminate health-related information to the community.",
+      "The app empowers healthcare workers to communicate in the Dantewada region seamlessly. The idea is to sensitize healthcare workers so that they can translate medical advice to the remote population.",
+      "To execute the plan at the grassroots level, a close network is formed among the Tribal population, academia, and the Cancer Foundation.",
+      "Initiated the work plan to be followed with the Nirmayah Cancer Foundation, Raipur, established in 2022. The foundation has been supporting marginalized cancer patients, empowering rural communities, and aiming to foster a future where every cancer-affected individual can live a dignified life.",
+      "A special 'Gynecologic Cancer Awareness' lecture was organized on September 19th, 2024, at IIT Bhilai to celebrate International Gynecologic Cancer Awareness Month. The talk was delivered by Ms. Sudeshna Ruhhaan, the founder of Nirmayah Cancer Foundation.",
+      "Two-day workshop on 'Community Health Care Awareness and Empowerment at Dantewada' was conducted in Samlur village in the Dantewada district on 30th Sept and 1st Oct 2024."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1233,7 +1298,12 @@ export const pagesConfig = [
     path: "/FinancialInclusiveness",
     component: "FinancialInclusiveness",
     description:
-      "The objective of the Project is to improve financial inclusiveness among the tribal population of the district.This Project aims to introduce tribal farmers, household industries and forest gathers with Fintech.The objective of this Project is to give training of applications on various Fintech platforms.The Project tries to equip various Fintech platforms to the target population for better and secure financial management.To explore the tribal knowledge system.Inform and educate the tribal people about various E-commerce platforms and the process of using and selling products online.",
+    [
+      "Improve financial inclusiveness among the tribal population of the district.",
+      "Training on applications for various Fintech platforms.",
+      "Equip various Fintech platforms to the target population with low literacy for better and secure financial management.",
+      "Explore the tribal knowledge system."
+  ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1242,7 +1312,12 @@ export const pagesConfig = [
     duration: "1 Year",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The first training program was conducted over three days for the Scheduled Tribe (ST) population of Manpur Cluster. This training aimed to promote financial inclusion by improving participants' understanding of saving, budgeting, and investing.",
+      "During the survey analysis conducted in the area, millet production was identified as a significant opportunity and 180 participants were trained.",
+      "The second training program was similarly held over three days for the ST population of Chilhati Cluster.",
+      "A total of 184 participants completed the training, gaining a better understanding of financial concepts and learning practical ways to apply them in their agricultural ventures."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1853,8 +1928,13 @@ export const pagesConfig = [
       "Financial Empowerment in Meghalaya: AI-Powered Multilingual E-Marketplace for Tribes",
     path: "/Empowerment",
     component: "Empowerment",
-    description:
-      "Facilitate Seamless Transactions: Develop a user-friendly e-marketplace supporting Khasi, Garo, and English, ensuring artisans and buyers can communicate and transact effortlessly, fostering a vibrant online marketplace for indigenous crafts. Ensure Trust and Authenticity: Implement a robust seller verification system to establish transaction trust, safeguarding both sellers and buyers, thereby boosting confidence in the platform and promoting secure online transactions. Enhance Product Discovery: Integrate an efficient search and recommendation engine to broaden artisans' market reach, enabling buyers to discover diverse indigenous products easily, thereby fostering a thriving ecosystem for local craftsmanship. Promote Cultural Sustainability: Collaborate with local authorities and cultural institutions to document, preserve, and promote Meghalaya's rich cultural heritage, ensuring the long-term sustainability of indigenous crafts and traditions.",
+    description:[
+      "Promote Linguistic Inclusivity: Create a multilingual e-marketplace to provide equitable access for artisans from diverse linguistic backgrounds, ensuring economic inclusion.",
+      "Establish Trust and Security: Implement a robust authentication system to ensure secure transactions, build user trust, and encourage greater engagement.",
+      "Enhance User Experience: Develop advanced search and recommendation tools to simplify product discovery, increase artisan sales, and promote the exploration of traditional crafts.",
+      "Empower Artisans through Capacity Building: Facilitate skill development programs to improve artisans' craftsmanship and equip them to thrive in the digital marketplace.",
+      "Preserve Cultural Heritage: Support the promotion of indigenous crafts to sustain Meghalaya’s cultural identity while fostering socio-economic growth."
+  ],  
     images: ["assets/ProjectImages/pi_imagess/Dr.Basil N.png"],
     duration: "2 Year",
     category: "project",
@@ -1864,7 +1944,12 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Developed a web page and mobile app for the E-marketplace.",
+      "A dataset of 7 lakh parallel corpus from Khasi to English and Garo to English has been created.",
+      "Translational modules with the web app and mobile application have been integrated.",
+      "One-Day Translation Workshop under the Project Financial Empowerment in Meghalaya: AI-Powered Multilingual e-Marketplace for Tribes has been conducted."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
