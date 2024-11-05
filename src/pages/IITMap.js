@@ -1,64 +1,28 @@
-// import React from 'react';
-
-// const IITMap = () => {
-//   return (
-//     <div style={styles.mapContainer}>
-//       <iframe
-//         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10888.570414986738!2d81.31500266159561!3d21.24940379250635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28db65364103d5%3A0x9ca0815dc09dac5f!2sIndian%20Institute%20of%20Technology%20Bhilai!5e0!3m2!1sen!2sin!4v1729273642920!5m2!1sen!2sin"
-//         style={styles.iframe}
-//         allowFullScreen=""
-//         loading="lazy"
-//         referrerPolicy="no-referrer-when-downgrade"
-//         title="IIT Bhilai Location"
-//       ></iframe>
-//     </div>
-//   );
-// };
-
-// const styles = {
-//   mapContainer: {
-//     width: '100%',                
-//     padding: '20px 20px 20px 20px',            
-//     boxSizing: 'border-box',       
-//     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',  
-//     backgroundColor: '#fff', 
-//     borderRadius: '10px', 
-//     margin:'0px 10px 20px 0px '      
-//   },
-//   iframe: {
-//     width: 'calc(100% - 0px)',   
-//     height: '450px',               
-//     border: 'none',  
-//     borderRadius: '10px',                
-//   },
-// };
-
-// export default IITMap;
-
-
-
 import React from 'react';
 import { siteContent } from '../constants/content';
-import { width } from '@fortawesome/free-solid-svg-icons/fa0';
+import { IoIosMail } from 'react-icons/io'
+import { FaLocationDot } from 'react-icons/fa6'
 
 const IITMap = () => {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className='iit-contact-container'>
       <div style={styles.contactInfo}>
         {/* <h3 style={styles.title}>Say Hello</h3> */}
         <h2 style={styles.heading}>{siteContent.ContactForm.title}</h2>
-        <p style={styles.description}>{siteContent.ContactForm.description}</p>
+        {/* <p style={styles.description}>{siteContent.ContactForm.description}</p> */}
         <div style={styles.contactDetails}>
-          <div style={styles.detailItem}>
+          {/* <div style={styles.detailItem}>
             <span style={styles.icon}>📞</span>
             <span>
               <strong style={styles.detailTitle}>Phone number</strong>
               <br />
               {siteContent.contactDetails.phone}
             </span>
-          </div>
+          </div> */}
           <div style={styles.detailItem}>
-            <span style={styles.icon}>✉️</span>
+            <span style={styles.icon}>
+              {/* ✉️ */}
+              <IoIosMail /></span>
             <span>
               <strong style={styles.detailTitle}>Send Email</strong>
               <br />
@@ -66,7 +30,10 @@ const IITMap = () => {
             </span>
           </div>
           <div style={styles.detailItem}>
-            <span style={styles.icon}>📍</span>
+            <span style={styles.icon}>
+              {/* 📍 */}
+              <FaLocationDot />
+            </span>
             <span>
               <strong style={styles.detailTitle}>Office Address</strong>
               <br />
@@ -75,10 +42,11 @@ const IITMap = () => {
           </div>
         </div>
       </div>
-      <div style={styles.mapContainer}>
+      <div style={styles.mapContainer} className='map-container'>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d952065.281735698!2d81.27452548722947!3d21.23165005210205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293d6791e5f399%3A0xfb39e72b5f4501f5!2sIndian%20Institute%20of%20Technology%20Bhilai!5e0!3m2!1sen!2sin!4v1730553001222!5m2!1sen!2sin"
           style={styles.iframe}
+          className='map-frame'
           allowFullScreen="10"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -146,7 +114,7 @@ const styles = {
   },
   icon: {
     fontSize: '24px',
-    color: '#dc3545',
+    // color: '#dc3545',
   },
 
 

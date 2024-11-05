@@ -12,6 +12,7 @@ const VideoPage = () => {
     const closeModal = () => setIsModalOpen(false);
 
     return (
+        <div class="video-outer-container">
         <div className="video-page">
             <div className="video-section">
                 <div className="video-thumbnail-container" onClick={openModal}>
@@ -39,7 +40,7 @@ const VideoPage = () => {
                             className="modal-video"
                             width="100%"
                             height="100%"
-                            src={`${videoUrl}?autoplay=1`}
+                            src={`${videoUrl}`}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -48,6 +49,7 @@ const VideoPage = () => {
                     </div>
                 </div>
             )}
+        </div>
         </div>
     );
 };

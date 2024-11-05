@@ -8,8 +8,8 @@
 }
 
 .pi-name {
-    font-weight: 700; /* Increased font weight for emphasis */
-    font-size: 16px; /* Slightly larger font size */
+    font-weight: 600; /* Increased font weight for emphasis */
+    font-size: 14px; /* Slightly larger font size */
     text-transform: uppercase;
     color: #ffffff;
     letter-spacing: 0.5px; /* Adds modern spacing */
@@ -18,7 +18,7 @@
 .pi-section {
     /* background-color: #cd179d; */
     background: rgba(106, 13, 173, 0.8);
-    padding: 32px 20px;
+    padding: 16px 10px;
     border-radius: 1px 8px 8px 1px;
     margin-left: -30px;
 }
@@ -36,6 +36,28 @@
 .pi-name:hover {
     color: #6a0dad; /* Interactive hover effect */
 }
+
+.piNameSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pi-side {
+    width: 50px;
+    border-right: 1px solid #fff;
+}
+
+.pi {
+    font-weight: 700; /* Increased font weight for emphasis */
+    font-size: 24px; /* Slightly larger font size */
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.5px; /* Adds modern spacing */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
 
 .date {
     font-weight: 500;
@@ -145,4 +167,82 @@
 @keyframes slideIn {
     0% { width: 0; }
     100% { width: 50px; }
+}
+
+
+@media (max-width: 768px) {
+    .sub-text-title {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .pi-name {
+        font-size: 14px;
+    }
+
+    .pi-section, .duration-section {
+        margin: 0 0 15px;
+        padding: 16px;
+        border-radius: 8px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    .obj-cls {
+        font-size: 24px;
+    }
+
+    .obj-img {
+        height: 12em;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .obj-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .startUp-text {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .startUp-text::before, .startUp-text::after {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pi-name {
+        font-size: 13px;
+    }
+
+    .date {
+        font-size: 13px;
+    }
+
+    .obj-cls {
+        font-size: 22px;
+    }
+
+    .obj-img {
+        height: 10em;
+        border-radius: 8px;
+    }
+
+    .startUp-text {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .startUp-text::before, .startUp-text::after {
+        display: none; /* Hide lines for cleaner layout */
+    }
 }

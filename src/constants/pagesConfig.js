@@ -15,6 +15,11 @@ export const pagesConfig = [
     category: "project",
     subCategory: "vsk",
     piName: "Dr. Santosh Biswas",
+    piInstitute: "Indian Institute of Technology Bhilai",
+    InstituteLogo: [
+      "assets/logo/collaboration/1.png",
+      "assets/logo/InstituteLogo/samagra.png",
+    ],
     date: "From :- 01/05/2022  -  To :- 25/04/2025 ",
     duration: "1 Year",
     objImg: "assets/ProjectImages/objectives/obj3.png",
@@ -698,7 +703,13 @@ export const pagesConfig = [
     path: "/e-finance",
     component: "E-Finance",
     description:
-      "Design and Development of IoT- Accessed Secure E-Finance Platform for Managing Severe Acute Malnutrition Among Vulnerable Tribes Population in Chhattisgarh.Design and develop an E-platform which will help in the management of SAM children by connecting all the Anganwadi centers located at interior/ remote places with Community Management centers.Develop a Secure payment gateway for the financial transactions of medicine and food supplies for Anganwadi centers using Blockchain Technology.To develop a system which keeps track record of the number of SAM children in Anganwadi and provide them proper nourishment and care.To develop a user-friendly interactive mobile APP interface which will act as a link between the community center, Anganwadi center and the SAM child’s caretaker. It will help in collecting the data and will guide the caretaker timely to help in keeping the track record of the child.To provide valuable assistance to the health workers by organizing training sessions /workshops to make them understand the developed application for Management of Anganwadi.  ",
+      [
+        "Design and Development of IoT  Secure E-Finance Platform for Managing Severe Acute Malnutrition Among Tribal Population in Chhattisgarh.",
+        "Design and develop an E-platform that will help in the management of SAM children by connecting all the Anganwadi centers located at interior/ remote places with Community Management centers.",
+        "A Secure payment gateway for the financial transactions of medicine and food supplies for Anganwadi centers using Blockchain Technology.",
+        "A system which keeps track record of the number of SAM children in Anganwadi’s and provide them proper nourishment and care.",
+        "A user friendly interactive mobile APP which will act as a link between the community center, anganwadi center and the SAM child’s caretaker. Help in collecting the data and will guide the caretaker timely to help in keeping the track record of the child."
+      ],
     images: [],
     duration: "2 years",
     category: "project",
@@ -707,7 +718,12 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Developed a User Interface with Tkinter, that utilizes IoT sensors and machine learning to assess SAM, enabling real-time data collection and personalized dietary planning.",
+      "Ultrasonic and load cell sensors measure children’s height and weight accurately, helping compute critical health indicators like WHZ, HAZ, and BMI.",
+      "Camera-based computer vision refines anthropometric measurements, while data normalization and augmentation improve model stability and generalization.",
+      "LoRaWAN ensures efficient data transmission between IoT devices and servers, enhancing reliability with long-range coverage and low power consumption."
+  ],
     publications: "",
     achievements: "",
     startupName: "",
