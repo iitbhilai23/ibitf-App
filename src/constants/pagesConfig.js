@@ -774,7 +774,13 @@ export const pagesConfig = [
     path: "/publicHealth",
     component: "PublicHealth",
     description:
-      "Develop a mobile application with an AI/ML recommendation system, allowing users to securely manage health profiles and describe ailments in Mizo or English.Provide AI-driven recommendations for matching doctors, hospitals, and pharmacies, including details such as estimated costs, services, distance, and reviews.Enable users to search for healthcare services, book appointments, or consultations, with seamless transactions facilitated by an E-payment system.Support the Mizo language in the user interface for enhanced accessibility and share aggregated citizen health data trends with government agencies to inform health policy formulation.",
+    [
+      "Application to connect patients to public health services, recommending doctors, hospitals, and pharmacies.",
+      "Search facility for healthcare providers, book appointments, and make online consultations, with payment enabled through an integrated e-payment system.",
+      "AI/ML system to map ailments to severity and matches patients with appropriate doctors and hospitals.",
+      "Access to doctors and hospitals regarding patient symptoms and severity to prioritize care and handle emergency consultations.",
+      "Application supports the Mizo language."
+    ],
     images: [
       "assets/StaticImages/project/publicHealth.png",
       "assets/StaticImages/project/PublicHealth2.png",
@@ -786,7 +792,14 @@ export const pagesConfig = [
     date: "From :- 19/12/2023  -  To :- 18/12/2025",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails:  [
+      "OPD Consultation Booking: Patients can search for doctors by specialty and book consultations, either in-person or via video consultation.",
+      "Emergency Video-Consultation: Patients can access emergency video consultations with partnered hospital emergency centers.",
+      "E-Payment of Fees: Consultation fees can be paid seamlessly using e-payment methods such as Google Pay (GPay) and others.",
+      "Delivery of medicines from pharmacies and hospitals after consultations.",
+      "AI/ML (NLP) based severity classification of symptoms based on ailment description.",
+      "Diagnostic tests recommendation through AI/ML based on ailment description."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -856,7 +869,12 @@ export const pagesConfig = [
     path: "/fintechApplication",
     component: "FintechApplication",
     description:
-      "Enable users to assess and report construction material quality in real-time.Optimize supply chain relationships for efficient procurement of sustainable resources.Facilitate secure mobile payments for raw materials, supporting small-scale enterprises.Establish a marketplace for the sale of recycled waste and other sustainable resources, simplifying sourcing for producers.",
+    [
+      "Enable users to assess and report construction material quality in real-time.",
+      "Optimize supply chain relationships for efficient procurement of sustainable resources.",
+      "Facilitate secure mobile payments for raw materials, supporting small-scale enterprises.",
+      "Establish a marketplace for the sale of recycled waste and other sustainable resources, simplifying sourcing for producers."
+    ],
     images: ["assets/StaticImages/project/fintech01.png"],
     duration: "2 years",
     category: "project",
@@ -865,7 +883,12 @@ export const pagesConfig = [
     date: "From :- 19/12/2023  -  To :- 18/12/2025",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Collaborated with key stakeholders, including AMC and the Horticulture Department, through a workshop to strengthen partnerships.",
+      "Initiated the collection of raw materials for sample preparation and testing.",
+      "Development of digital platforms, including the website and mobile applications.",
+      "Conducted a 5-Days Workshop on 'Economical & Effective Utilisation of Recycled Waste and Bamboo as a Sustainable Material in Construction: A Fintech Application.'"
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -877,7 +900,12 @@ export const pagesConfig = [
     path: "/fintechApplication",
     component: "FintechApplication",
     description:
-      "Develop fintech solutions for smart farming in Mizoram, covering land info, seed details, loans, and market data.Integrate real-time sensors for environment and field conditions in a cost-effective manner.Test prototype, calibrate sensors, and explore solar-powered charging.Establish wireless communication links for data collection, focusing on oilseed cultivation in Aizawl.",
+    [
+      "Fintech solutions for smart farming in Mizoram, covering land info, seed details, loans, and market data.",
+      "Integrate real-time sensors for environment and field conditions in a cost-effective manner.",
+      "Wireless sensor networks for data collection, focusing on oilseed cultivation in Aizawl.",
+      "Solar power for charging the sensor nodes."
+    ],
     images: [],
     duration: "2 years",
     category: "project",
@@ -886,7 +914,13 @@ export const pagesConfig = [
     date: "From :- 19/12/2023  -  To :- 18/12/2025",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Developed a prototype with all relevant real-time sensors for the measurement of environmental and field conditions in a cost-effective manner.",
+      "Tested the prototype with a solar-charging system and power backup. A navigation feature is also added.",
+      "The establishment of wireless communication links for data collection through API. SD card is used for backup purposes in case of network failure in real-time.",
+      "Android app and website developed for smart farming in Mizoram, covering land info, seed details, loans, and market data.",
+      "Collaborated with Krishi Vigyan Kendra (KVK), Aizawl for installation of the prototype and collecting real-time data."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1149,7 +1183,12 @@ export const pagesConfig = [
     path: "/TripuraHandicraftEmpowerment",
     component: "TripuraHandicraftEmpowerment",
     description:
-      "Facilitate direct connections between Tripura artisans and consumers via a blockchain-based marketplace, ensuring fair compensation and eliminating intermediaries.Establish transparency and traceability in the supply chain to verify product authenticity and promote ethical practices.Automate fair payment practices using smart contracts, guaranteeing timely and equitable compensation for artisans.Enhance artisans' visibility and credibility through a blockchain-based digital identity system, while incentivizing skill development among the youth.",
+    [
+      "A decentralized online marketplace for digital identity for artisans.",
+      "A system for the smooth flow of handicraft products amongst the stakeholders.",
+      "Predict demand and plan production accordingly.",
+      "Generate data and information for stakeholders (government, corporations, researchers) for policy making."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1158,7 +1197,12 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails:  [
+      "Blockchain-Based Socio-Economic Online Platform has been developed for empowering Tripura’s handloom and bamboo craft producers.",
+      "Created a secure digital identity system on the blockchain for each artisan, documenting their skills, products, and contributions.",
+      "Microfinancing through blockchain, enabling direct peer-to-peer transactions which provide financial support to artisans who may otherwise face challenges accessing traditional banking systems.",
+      "Study of the handicrafts industry in Tripura, gathering records from 43 artisans and 37 products."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1254,7 +1298,13 @@ export const pagesConfig = [
     path: "/SkillingManpower",
     component: "SkillingManpower",
     description:
-      "Organizing an interactive workshop between multiple stakeholders (residents, municipal authorities, waste collection staff, recycling related industries and businesses and scientific experts) to understand the challenges in solid waste management specific to hilly areas.Conducting a comprehensive multi-seasonal scientific study to determine the detailed physicochemical characteristics and composition of the waste in the city. The multi-seasonal analysis is considering the varying moisture contents of the waste and other lifestyle variations.Exploring the potential for fintech driven opportunities for ST population in the region in the domain of solid waste management",
+    [
+      "Developed a prototype with all relevant real-time sensors for the measurement of environmental and field conditions in a cost-effective manner.",
+      "Tested the prototype with a solar-charging system and power backup. A navigation feature is also added.",
+      "The establishment of wireless communication links for data collection through API. SD card is used for backup purposes in case of network failure in real-time.",
+      "Android app and website developed for smart farming in Mizoram, covering land info, seed details, loans, and market data.",
+      "Collaborated with Krishi Vigyan Kendra (KVK), Aizawl for installation of the prototype and collecting real-time data."
+    ],
     images: [],
     category: "project",
     subCategory: "TSP",
@@ -1265,7 +1315,13 @@ export const pagesConfig = [
     workshop:
       "Organizing an interactive workshopbetween multiple stakeholdersConducting a comprehensive multi-seasonal compositional andcharacterization study",
     technicalDetails:
-      "Organized a multistakeholder interactive workshop involving students,municipal authorities, business personnel, industry personnel, and scientific experts fromacademia and industry. This workshop titled “ Navigating the terrain: Exploringchallenges and fintech opportunities of solid waste management in urban hilly Areas wasorganized from July 29 th to August 2 nd , 2024.",
+    [
+      "Conducted a thorough analysis of the physicochemical and thermal characteristics of various waste samples collected from Turial Dumpsite, Aizawl, Mizoram, across two seasons (Summer and Rainy).",
+      "Performed an economical analysis to assess the potential for fintech-driven opportunities for the Scheduled Tribe (ST) population in the region, specifically in the domain of solid waste management.",
+      "A multistakeholder interactive workshop titled “Navigating the Terrain: Exploring Challenges and Fintech Opportunities of Solid Waste Management in Urban Hilly Areas” was successfully organized from July 29th to August 2nd, 2024.",
+      "The workshop brought together a diverse group of participants, including students, municipal authorities, business personnel, industry experts, and scientific professionals from academia and industry.",
+      "This collaborative event aimed to understand the complexities of solid waste management in urban hilly regions while exploring innovative fintech solutions."
+    ],
     publications: "",
     achievements:
       "Through the workshop the following outcomes were determined: Promotion of Waste Management Startups: The workshop highlighted opportunitiesfor startups in waste-to-energy, recycling, and bioplastic production, encouragingentrepreneurship in sustainable waste management. Fintech Solutions for Enhanced Operations: Fintech tools like mobile payments,microfinancing, and blockchain were identified as key enablers for improving efficiencyand transparency in waste management businesses. Capacity Building for Aspiring Entrepreneurs: Emphasis was placed on skilldevelopment and training in business modeling, finance, and regulatory compliance toempower local entrepreneurs in the waste management sector. Integration of Smart Technologies: The use of IoT, sensors, and data analytics waspromoted as a way for startups to develop smart waste management solutions,optimizing collection and processing systems. Policy and Multi-Stakeholder Collaboration: Recommendations included policysupport for startups, such as tax incentives and streamlined regulations, alongsidefostering collaborations between government, private sector, and NGOs to supportentrepreneurial ventures.",
@@ -1730,7 +1786,12 @@ export const pagesConfig = [
     path: "/SmartTask",
     component: "SmartTask",
     description:
-      "Integration of blockchain technology: Blockchain technology will be used for recording live transactions so that no one denies their actions, and it will be tamper-proof. Machine learning and AI: A machine learning and AI algorithm will be implemented to capture the details, such as analyzing demand, ratings, and feedback. This module will also predict the requirements based on daily, monthly, and yearly inorder to help frame policies. E- Payment System: For ease and transparency e-payment based transaction facilities will be used in the platform. App development: The application server will be deployed as a server. This server will be providing service to mobile phone applications in real time. The application will also keep track of all transactions, all deals, etc.",
+    [
+      "Integration of blockchain technology for recording live transactions and ensuring tamper-proof records, enhancing security and trust in the parking system.",
+      "Implementation of machine learning and AI algorithms to analyze demand, ratings, and feedback, predicting parking requirements based on daily, monthly, and yearly trends to help frame effective policies.",
+      "Seamless and transparent e-payment system facilitating cashless transactions, providing users with a hassle-free payment experience.",
+      "Continuous monitoring and data analysis to improve the overall efficiency of parking management, adapting to user needs and optimizing resource allocation."
+    ],
     images: [],
     duration: "1 Year",
     category: "project",
@@ -1740,7 +1801,15 @@ export const pagesConfig = [
     date: "14/11/2023  -  To :- 13/11/2024",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails:[
+      "Developed a robust web and mobile application offering a user-friendly interface for both workers and job creators, facilitating seamless interaction and engagement.",
+      "Implemented a comprehensive system for collecting and managing detailed data about workers, including their skills, experiences, and preferences, enhancing the matching process.",
+      "Facilitated targeted advertising strategies within the application, allowing job creators to effectively promote their opportunities while providing workers with personalized job alerts and relevant advertisements.",
+      "Integrated blockchain technology to record live transactions and interactions on the platform, ensuring transparency, verifiability, and tamper-proof records of all actions.",
+      "Utilized machine learning and AI algorithms to analyze worker data, predict job market trends, and improve the matching process between workers and job creators based on skills, ratings, and feedback.",
+      "Established an efficient e-payment system to facilitate secure and transparent transactions between workers and job creators, enhancing trust and streamlining payment processes.",
+      "Developed a mobile application that tracks all transactions and deals, ensuring comprehensive visibility and accessibility of information for users."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1770,7 +1839,12 @@ export const pagesConfig = [
     path: "/Sustainable",
     component: "Sustainable",
     description:
-      "The objective of this project is to enhance parking management for owners and improve accessibility for the general public, particularly benefiting the Scheduled Tribe (ST) population in Mizoram. By implementing an online pre-booking system, the project aims to optimize the management of parking spaces through accurate usage data, allowing owners to plan more efficiently. Simultaneously, it will enable users, especially from the ST community, to secure parking in advance, significantly reducing the time and resources spent searching for available spots. This technological intervention seeks to promote user-friendly parking solutions, decrease urban traffic congestion, and empower the local community by improving their mobility and overall quality of life.",
+    [
+      "Develop and implement a sustainable smart parking solution for Aizawl City.",
+      "Address challenges such as parking congestion, inefficient resource utilization, and environmental impacts caused by poor parking management.",
+      "Provide a seamless and efficient parking experience for both vehicle owners and parking facility managers.",
+      "Leverage blockchain, machine learning, and QR-based management to deliver a transformative solution for parking management."
+    ],
     images: ["assets/ProjectImages/pi_imagess/53.png"],
     duration: "1 Year",
     category: "project",
@@ -1780,7 +1854,12 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2024 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Developed a mobile application for Aizawl City that provides real-time parking availability, pre-booking, and secure payments through blockchain. It allows household garages to be rented out by owners when they lend them through the app.",
+      "The application includes monitoring tools, dynamic pricing, and financial transparency, ensuring an efficient parking experience.",
+      "Key technological integrations include GPS navigation, EV charging stations, and automated vehicle identification, which updates parking status in real time.",
+      "Features such as a dashboard displaying real-time parking space availability, zone selection with detailed information, vehicle profile management, and Parkcoin wallet integration for cashless payments enhance user convenience."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1854,7 +1933,13 @@ export const pagesConfig = [
     path: "/Empowerment",
     component: "Empowerment",
     description:
-      "Facilitate Seamless Transactions: Develop a user-friendly e-marketplace supporting Khasi, Garo, and English, ensuring artisans and buyers can communicate and transact effortlessly, fostering a vibrant online marketplace for indigenous crafts. Ensure Trust and Authenticity: Implement a robust seller verification system to establish transaction trust, safeguarding both sellers and buyers, thereby boosting confidence in the platform and promoting secure online transactions. Enhance Product Discovery: Integrate an efficient search and recommendation engine to broaden artisans' market reach, enabling buyers to discover diverse indigenous products easily, thereby fostering a thriving ecosystem for local craftsmanship. Promote Cultural Sustainability: Collaborate with local authorities and cultural institutions to document, preserve, and promote Meghalaya's rich cultural heritage, ensuring the long-term sustainability of indigenous crafts and traditions.",
+    [
+      "Promote Linguistic Inclusivity: Create a multilingual e-marketplace to provide equitable access for artisans from diverse linguistic backgrounds, ensuring economic inclusion.",
+      "Establish Trust and Security: Implement a robust authentication system to ensure secure transactions, build user trust, and encourage greater engagement.",
+      "Enhance User Experience: Develop advanced search and recommendation tools to simplify product discovery, increase artisan sales, and promote the exploration of traditional crafts.",
+      "Empower Artisans through Capacity Building: Facilitate skill development programs to improve artisans' craftsmanship and equip them to thrive in the digital marketplace.",
+      "Preserve Cultural Heritage: Support the promotion of indigenous crafts to sustain Meghalaya’s cultural identity while fostering socio-economic growth."
+    ],
     images: ["assets/ProjectImages/pi_imagess/Dr.Basil N.png"],
     duration: "2 Year",
     category: "project",
@@ -1864,7 +1949,12 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "Developed a web page and mobile app for the E-marketplace.",
+      "A dataset of 7 lakh parallel corpus from Khasi to English and Garo to English has been created.",
+      "Translational modules with the web app and mobile application have been integrated.",
+      "One-Day Translation Workshop under the Project Financial Empowerment in Meghalaya: AI-Powered Multilingual e-Marketplace for Tribes has been conducted."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
@@ -1875,7 +1965,13 @@ export const pagesConfig = [
     path: "/TransportSystem",
     component: "TransportSystem",
     description:
-      "Develop a user-friendly app for seamless public transport access, integrating real-time updates and specific taxi requests. Enhance safety with MIRSAC data, IoT monitoring, and user-driven real-time updates, incentivizing users for timely information. Enable secure electronic payments, promoting cashless transactions for public transport fares. Provide local language support in Mizo, ensuring inclusivity and cultural sensitivity for diverse users. Utilize data insights for intelligent recommendations, optimizing routes and deployments in collaboration with government agencies.",
+    [
+      "A user-friendly app providing seamless access to public transport, integrating real-time updates and specific taxi requests for convenience.",
+      "Enhanced safety measures through collaboration with the Mizoram Remote Sensing Application Center (MIRSAC), IoT monitoring, and user-driven real-time updates, incentivizing users to share timely information.",
+      "Secure electronic payment integration to promote cashless transactions for public transport fares, ensuring convenience and safety for users.",
+      "Local language support in Mizo, fostering inclusivity and cultural sensitivity to accommodate the diverse user base and enhance user experience.",
+      "Data-driven insights for intelligent recommendations, optimizing transport routes and deployments in collaboration with government agencies for improved efficiency."
+    ],
     images: [],
     duration: "2 Year",
     category: "project",
@@ -1885,7 +1981,16 @@ export const pagesConfig = [
     date: "From :- 14/11/2023  -  To :- 13/11/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
-    technicalDetails: "",
+    technicalDetails: [
+      "The passenger mobile app allows users to enter their desired drop location, which then calculates and displays the estimated distance and fare, enabling a streamlined ride request process.",
+      "Taxis can accept or reject incoming ride requests, including essential details like pickup and drop locations and the estimated fare.",
+      "Once a taxi accepts a request, the passenger receives a notification confirming the ride.",
+      "The platform integrates various e-payment options, allowing passengers to conveniently pay their fare at the end of the trip through UPI applications such as Google Pay.",
+      "The live tracking functionality for monitoring both passenger and taxi locations during the trip has been developed, enhancing user safety and transparency by providing real-time updates throughout the journey.",
+  "Dynamic Fare Calculation: Calculates dynamic fares based on distance and demand, ensuring transparent pricing for passengers while optimizing earnings for drivers.",
+  "Safety Features: The system enhances safety by incorporating live location sharing, allowing passengers to share their trip status with trusted contacts during rides.",
+  "Localized Support: The platform provides local support, offering local language options for both drivers and passengers, improving communication and user experience across diverse communities."
+    ],
     publications: "",
     achievements: "",
     startupName: "",
