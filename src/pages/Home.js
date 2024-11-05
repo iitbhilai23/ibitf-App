@@ -13,6 +13,7 @@ import OurAwards from '../components/OurAwards';
 import FeaturedProjects from '../components/FeaturedProjects';
 import CollaborationSlider from '../components/Slider/CollaborationSlider';
 import VideoPage from '../components/VideoPage';
+import ThemeticArea from '../components/ThemeticArea';
 
 
 
@@ -28,10 +29,13 @@ const Home = () => {
 
       <AboutSection />
       <VideoPage />
-      
-    \<OurAwards />
+      <FeaturedProjects />
+      <ThemeticArea />
+      <TechnologiesDevelopment />
+    <OurAwards />
    
       <Achievements />
+   
     
       <SupportBy />
       <CollaborationSlider />
