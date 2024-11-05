@@ -1,7 +1,10 @@
+
+
+
 .support-by-section {
     text-align: center;
     padding: 10px 20px 50px;
-    background-color: #fbfbfb;
+    background-color: var(--fouth-color);
   }
   
   .support-by-title {
