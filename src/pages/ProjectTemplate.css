@@ -142,24 +142,6 @@
     position: relative; /* Allow for pseudo-elements */
 }
 
-.startUp-text::before, .startUp-text::after {
-    content: "";
-    position: absolute;
-    width: 190px;
-    height: 4px;
-    background: linear-gradient(40deg, #6a0dad, #cd179d 80%);
-    top: 50%;
-    transform: translateY(-50%);
-    animation: slideIn 2s ease-in-out;
-}
-
-.startUp-text::before {
-    left: -200px; /* Line to the left */
-}
-
-.startUp-text::after {
-    right: -200px; /* Line to the right */
-}
 
 @keyframes fadeIn {
     0% { opacity: 0; }

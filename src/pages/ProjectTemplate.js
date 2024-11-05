@@ -106,7 +106,8 @@ const ProjectTemplate = () => {
             // height: "50vh",
             borderRadius: "20px",
             boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
-            padding: "30px", // Add padding for content
+            // padding: "30px", // Add padding for content
+            textAlign: "justify",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
