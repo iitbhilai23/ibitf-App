@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { pagesConfig } from '../constants/pagesConfig';
 import { Tabs, Tab, Box, Grid, MenuItem, Select, Typography, Paper, Card, TextField } from '@mui/material';
@@ -14,8 +14,8 @@ const ProjectsList = () => {
   const [activeTab, setActiveTab] = useState(initialTab);
   const [selectedSubCategory, setSelectedSubCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState(''); // State for search term
+  const targetRef = useRef(null);
 
-  
   useEffect(() => {
     // Update URL query params when the active tab changes
     const params = new URLSearchParams();
@@ -25,11 +25,15 @@ const ProjectsList = () => {
 
   const handleTabChange = (event, newTab) => {
     setActiveTab(newTab);
-    setSelectedSubCategory(''); // Reset subCategory when switching tabs
+    setSelectedSubCategory('');
   };
 
-  const handleSubCategoryChange = (event) => {
-    setSelectedSubCategory(event.target.value);
+  const handleSubCategoryClick = (subCategory) => {
+    setSelectedSubCategory(subCategory);
+    targetRef.current?.scrollIntoView({
+      behavior: "smooth", block: "start"
+
+    });
   };
 
   const handleSearchChange = (event) => {
@@ -44,9 +48,20 @@ const ProjectsList = () => {
         title.toLowerCase().includes(searchTerm) // Filter based on search term
     );
 
-  const subCategories = [...new Set(pagesConfig
+  const subCategories = pagesConfig
     .filter(({ category }) => category === activeTab)
-    .map(({ subCategory }) => subCategory))];
+    .reduce((acc, { subCategory, schemeFullForm }) => {
+      // Find if the subCategory already exists in the accumulator array
+      const existingSubCategory = acc.find(item => item.subCategory === subCategory);
+
+      if (existingSubCategory) {
+        existingSubCategory.count += 1;
+      } else {
+        acc.push({ subCategory, schemeFullForm, count: 1 });
+      }
+
+      return acc;
+    }, []);
 
 
   const subCategoryDetails = {
@@ -115,9 +130,7 @@ const ProjectsList = () => {
               backgroundColor: "background.paper",
               "& .MuiTab-root.Mui-selected": {
                 color: "#6a0dad",
-                // background:"#d0d0d0;"
                 background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)"
-                // background:"#f0f8ff"
               },
               "& .MuiTabs-indicator": {
                 backgroundColor: "#6a0dad",
@@ -130,34 +143,40 @@ const ProjectsList = () => {
         </Box>
 
         <Box sx={styles.search}>
-          <TextField
-            variant="outlined"
-            placeholder="Search..."
-            value={searchTerm}
-            onChange={handleSearchChange}
-            sx={styles.searchField}
-          />
-          {subCategories.length > 0 && (
-            <Box sx={styles.dropdownContainer}>
-
-              <Select
-                value={selectedSubCategory}
-                onChange={handleSubCategoryChange}
-                displayEmpty
-                variant="outlined"
-                sx={styles.dropdown}
-              >
-                <MenuItem value="" sx={{ fontWeight: '400', fontFamily: 'Roboto, sans-serif' }}>
-                  <em>ALL</em>
-                </MenuItem>
-                {subCategories.map((subCat, index) => (
-                  <MenuItem key={index} value={subCat} sx={{ fontWeight: '300', fontFamily: 'Roboto, sans-serif' }}>
-                    {subCat?.toUpperCase()}
-                  </MenuItem>
-                ))}
-              </Select>
-            </Box>
-          )}
+          {/* Subcategory Cards */}
+          <div className='projects-cards-clicked'>
+            <Grid container spacing={8}>
+              {subCategories.map((subCat, index) => (
+                <Grid item xs={12} sm={4} md={4} key={index}>
+                  <Card
+                    onClick={() => handleSubCategoryClick(subCat?.subCategory)}
+                    sx={{
+                      // minHeight: "175px",
+                      padding: "20px",
+                      cursor: "pointer",
+                      backgroundColor: selectedSubCategory === subCat?.subCategory ? "#c3cfe2" : "#ffffff",
+                      transition: "background-color 0.3s",
+                      '&:hover': {
+                        background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+                        transform: "translateY(-5px)",
+                        boxShadow: "#f5f7fa 0px 0px 0px, #c3cfe2 0px 0px 13px",
+                        transition: "transform 1s ease",
+                      },
+                      borderRadius: "12px",
+                      border: selectedSubCategory === subCat ? "1px solid #c3cfe2" : "none",
+                      textAlign: "center",
+                    }}
+                  >
+                    <span style={styles.clickedCardsTxt}>
+                      <span style={{ fontWeight: 600, fontSize: "35px", color: "#000000" }}><Counter endValue={subCat?.count} /></span>
+                      <span>{subCat?.subCategory?.toUpperCase()}</span>
+                      <span style={{ fontSize: "14px", fontWeight: 600 }}>{subCat?.schemeFullForm}</span>
+                    </span>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </div>
         </Box>
 
         {selectedSubCategory && subCategoryDetails[selectedSubCategory] && (
@@ -180,26 +199,37 @@ const ProjectsList = () => {
             )}
           </Paper>
         )}
-
-        {/* Search Panel */}
-        <Box sx={styles.searchContainer}>
-
+        <Box sx={{display:"flex",justifyContent:"end", margin:"20px 20px"}}>
+          {selectedSubCategory && (
+            <TextField
+              variant="outlined"
+              placeholder="Search..."
+              value={searchTerm}
+              onChange={handleSearchChange}
+              sx={styles.searchField}
+            />
+          )}
         </Box>
-        <div className='card-cnt-list' style={styles.cardCnt}>
-          <Grid container spacing={3} sx={styles.gridContainer}>
-            {filteredProjects.map(({ title, path, description, id }, index) => (
-              <Grid item xs={12} sm={6} md={2.4} key={id}>
-                <Link to={path} style={styles.cardLink}>
-                  <CountCard
-                    title={title}
-                    onClick={() => console.log(`Clicked on ${title}`)}
-                    height="130px"
-                    color_num={(index % 4) + 1}
-                  />
-                </Link>
+
+        <div ref={targetRef} style={{ minHeight: "50px" }}>
+          {selectedSubCategory && (
+            <div className='card-cnt-list' style={styles.cardCnt} >
+              <Grid container spacing={3} sx={styles.gridContainer}>
+                {filteredProjects.map(({ title, path, description, id }, index) => (
+                  <Grid item xs={12} sm={6} md={2.4} key={id}>
+                    <Link to={path} style={styles.cardLink}>
+                      <CountCard
+                        title={title}
+                        onClick={() => console.log(`Clicked on ${title}`)}
+                        height="130px"
+                        color_num={(index % 4) + 1}
+                      />
+                    </Link>
+                  </Grid>
+                ))}
               </Grid>
-            ))}
-          </Grid>
+            </div>
+          )}
         </div>
       </Card>
     </Box>
@@ -210,14 +240,13 @@ const ProjectsList = () => {
 const styles = {
   search: {
     display: "flex",
-    justifyContent: 'space-between',
+    flexDirection: 'column',
   },
   container: {
     padding: '20px 20px',
     margin: '0 auto',
     height: "100%",
     overflowY: "auto",
-    // maxWidth: "1200px"
   },
   title: {
     fontSize: '26px',
@@ -264,17 +293,23 @@ const styles = {
     justifyContent: 'flex-start',
     marginBottom: '20px',
   },
+  clickedCardsTxt: {
+    fontSize: "24px",
+    fontWeight: 600,
+    color: "#6a0dad",
+    textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px"
+  },
   searchField: {
-    width: '280px',
-    height: '40px', // Reduced height
+    width: '250px',
+    height: '40px',
     borderRadius: '10px',
-    marginLeft: '20px',
     justifyContent: 'center',
-    backgroundColor: '#fff',
     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
     border: '1px solid #ccc', // Light border
     fontSize: '16px', // Increase font size for readability
-    outline: 'none', // Remove the default outline
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
         border: 'none', // Remove the default border
@@ -285,30 +320,28 @@ const styles = {
       height: '100%', // Ensure input height fills the field
     },
     '&:focus-within': {
-      backgroundColor: '#fff', // White background when focused
       border: '1px solid #3f51b5', // Blue border on focus for visibility
-      boxShadow: '0px 0px 10px rgba(63, 81, 181, 0.2)', // Glow effect on focus
+      boxShadow: '0px 0px 5px rgba(63, 81, 181, 0.2)', // Glow effect on focus
     },
   },
 
   gridContainer: {
-    paddingLeft: '20px',
-    paddingRight: '20px',
+    padding: '0 20px 10px 20px',
     marginTop: "5px"
   },
   cardLink: {
     textDecoration: 'none',
   },
   cardCnt: {
-    height: "70vh",
-    overflowY: "auto"
-
+    maxHeight: "70vh",
+    overflowY: "auto",
+    padding: "10px"
   },
   fullWidthCard: {
     padding: '30px',
-    backgroundColor: '#f5f5f5',
+    background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
     borderRadius: '8px',
-    margin: "0 20px",
+    margin: "20px 20px 0 20px",
 
   },
   fullWidthCardTitle: {
@@ -330,3 +363,34 @@ const styles = {
 };
 
 export default ProjectsList;
+
+
+
+const Counter = ({ endValue }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (typeof endValue === 'string') {
+      // Directly set the count to the string value
+      setCount(endValue);
+      return;
+    }
+
+    // Counting animation for numeric values
+    let start = 0;
+    const increment = endValue / 100;
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= endValue) {
+        setCount(endValue);
+        clearInterval(timer);
+      } else {
+        setCount(Math.ceil(start));
+      }
+    }, 20);
+
+    return () => clearInterval(timer);
+  }, [endValue]);
+
+  return <span>{count.toLocaleString()}</span>;
+};

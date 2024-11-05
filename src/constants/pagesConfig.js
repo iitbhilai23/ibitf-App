@@ -28,6 +28,7 @@ export const pagesConfig = [
     publications: "",
     achievements: "",
     startupName: "",
+    schemeFullForm: "Vidya Samiksha Kendra",
   },
   {
     title: "Collaborative learning for Early Detection of Frauds in Fintech",
@@ -48,6 +49,7 @@ export const pagesConfig = [
     publications: "",
     achievements: "",
     startupName: "Whitenet Explorer Pvt Ltd",
+    schemeFullForm: "Entrepreneur in Residence",
   },
   {
     title:
@@ -109,6 +111,7 @@ export const pagesConfig = [
     publications: "",
     achievements: "",
     startupName: "Vishwa Prayag Technology Pvt. Ltd",
+    schemeFullForm: "Promotion and Acceleration of Young and Aspiring technology entrepreneurs",
   },
   {
     title: "Smart Cleaner: Automatic Clean the Smart Contract",
@@ -390,6 +393,7 @@ export const pagesConfig = [
     publications: "",
     achievements: "",
     startupName: "",
+    schemeFullForm: "Technology Business Incubators",
   },
   {
     title:
@@ -606,6 +610,7 @@ export const pagesConfig = [
     publications: "",
     achievements: "",
     startupName: "Arbobine Pvt. Ltd.",
+    schemeFullForm: "Tribal Area Sub Plan",
   },
   {
     title:
@@ -1535,6 +1540,7 @@ export const pagesConfig = [
     publications: "",
     achievements: "",
     startupName: "",
+    schemeFullForm: "Technology Development",
   },
   {
     title:

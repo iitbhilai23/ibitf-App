@@ -212,6 +212,9 @@ body {
   .footer-section {
     text-align: center;
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-button {
@@ -1410,4 +1413,15 @@ body::-webkit-scrollbar-thumb:hover {
   .career-table td::before {
     margin-bottom: 4px;
   }
+}
+.projects-cards-clicked{
+
+  padding: 0 170px;
+}
+@media (max-width: 1040px) {
+
+.projects-cards-clicked{
+  padding: unset;
+}
+
 }
