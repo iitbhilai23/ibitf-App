@@ -958,6 +958,101 @@ videoPage: {
   description: "The President of India appreciates IIT Bhilai Innovation and Technology Foundation for its impactful work in Fintech, Agritech, and Healtech.",
   videoThumbnail: require('../assets/Images/Video.jpeg'),  // Update with the actual path to the thumbnail
   videoUrl: "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1" // YouTube video URL
-}
+},
+jobListings: [
+  {
+    title: "Project Manager/Project Associate",
+    positions: "03",
+    qualifications: "Phd or MBA/ME/MTech BE/BTech",
+    experience:
+      "4 years of relevant experience BE/BTech with minimum 7 years of relevant experience",
+    contractPeriod:
+      "89 Days and may be extendable depending upon the performance",
+    ageLimit: "Preferably below 40 years but not exceeding 45 years.",
+    location: "IIT Bhilai",
+    lastDate: "16th October 2024",
+    downloadLink: require("../assets/PDF/career/01Advertise.pdf"),
+    applyLink: "#",
+    applyText: "Apply Now",
+  },
+  {
+    title: "Project Associate (under MTS rules)",
+    positions: "03",
+    qualifications:
+      "Master’s Degree in Science/ Commerce /Computer Science/Computer Applications/ IT or Bachelor’s Degree in Engineering OR Bachelor's Degree in Science/ Computer Science/ Commerce/ Computer Applications/IT",
+    experience: " 2 years relevant experience/ 4 years relevant experience",
+    contractPeriod: "89 Days (extendable)",
+    ageLimit: "Up to 45 years",
+    location: "IBITF, IIT Bhilai",
+    lastDate: "18 October 2024",
+    downloadLink: require("../assets/PDF/career/02Advertise.pdf"),
+    applyLink: "#",
+    applyText: "Apply Now",
+  },
+  {
+    title: "Recruitment of various Project positions of VSK",
+    positions: "22",
+    qualifications:
+      "Master’s Degree in Finance/Economics or Chartered Accountant",
+    experience: "Minimum 3 years of relevant experience",
+    contractPeriod: "1 Year (extendable)",
+    ageLimit: "Up to 45 years",
+    location: "IIT Bhilai",
+    lastDate: "17th October 2024",
+    downloadLink: require("../assets/PDF/career/03Advertise.pdf"),
+    applyLink: "#",
+    applyText: "Apply Now",
+  },
+  {
+    title: "Outreach Consultant",
+    positions: "01",
+    qualifications:
+      "Bachelor’s degree required; Master’s degree preferred",
+    experience: "2-4 years of relevant professional experience in HR, Marketing, Promotions, non-profits, communications, Outreach, public service, or other relevant fields.",
+    contractPeriod: "5 months (Extendable according up to 1 Year based on performance & Outcome)",
+    ageLimit: "Up to 45 years",
+    location: "IBITF Bhilai",
+    lastDate: "13th November 2023",
+    downloadLink: require("../assets/PDF/career/04Advertise.pdf"),
+    applyLink: "#",
+    applyText: "Apply Now",
+  },
+],
+
+selectedCandidates: [
+  {
+    title:
+      "Project Consultant (Finance cum Legal)/Project Associate(Accounts)/Project Assistant",
+    positions: "--",
+    interviewDate: "01.08.2024",
+    remarks: "Finalized",
+    contactPerson: "HR Manager, hr@iitbhilai.ac.in",
+    downloadLink: require("../assets/PDF/career/01Shortlisted.pdf"),
+  },
+  {
+    title: "Project Manager",
+    positions: "01",
+    interviewDate: "September 24th, 2024",
+    remarks: "Finalized",
+    contactPerson: "HR Manager, hr@iitbhilai.ac.in",
+    downloadLink: require("../assets/PDF/career/02Shortlisted.pdf"),
+  },
+  {
+    title: "Technical Support Engineer",
+    positions: "03",
+    interviewDate: "9 May, 2024",
+    remarks: "Finalized",
+    contactPerson: "HR Manager, hr@iitbhilai.ac.in",
+    downloadLink: require("../assets/PDF/career/03Shortlisted.pdf"),
+  },
+  {
+    title: "Project Manager / Senior Software Developer",
+    positions: "02",
+    interviewDate: " 11th April, 2024",
+    remarks: "Finalized",
+    contactPerson: "HR Manager, hr@iitbhilai.ac.in",
+    downloadLink: require("../assets/PDF/career/04Shortlisted.pdf"),
+  },
+],
 
 };
