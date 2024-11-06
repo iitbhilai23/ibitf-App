@@ -1127,7 +1127,7 @@ export const siteContent = {
       title: "Bhoomicam",
       description:
         "Revolutionising Agriculture with AI and Satellite Technology: Bhoomicam: A versatile smartphone app ‘Bhoomicam,’ that empowers farmers to input crop information, creating a digital database linking land parcels and satellite imagery. The tool aims to geo-enable farms, integrate AI with satellite data for crop monitoring, and offer personalized recommendations for increasing the quality and quantity of crop production.",
-      route: "/BhoomiCam",
+      route: "/BhoomiCam", 
     },
     {
       image: require("../assets/project_features/ices.jpeg"),

@@ -2940,7 +2940,7 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
         heading: "Building Financial Confidence",
         description:
           "The core objective of the workshop was to build financial confidence among the youth. The engaging format and interactive sessions ensured that participants left the workshop with a solid understanding of making smart financial decisions. The workshop broke down complex financial concepts into easy-to-understand modules, focusing on empowering young people to take control of their financial futures.Participants learned how to create and manage a budget, effectively save and invest for the future, and handle debt responsibly. They also explored more advanced topics like cryptocurrency, peer-to-peer lending, and the potential of blockchain in transforming the financial world.",
-      },
+      }, 
 
       {
         heading: "A Path to Financial Independence",

@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        
+         
         {/* About Section */}
         <div className="footer-section about">
           <h2>
