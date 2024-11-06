@@ -1123,7 +1123,7 @@ export const siteContent = {
   ],
 
   videoPage: {
-    title: "Hon'ble President Applauds IIT Bhilai Innovation",
+    title: "The Hon'ble President of India Applauds Our Innovation",
     description:
       "The President of India appreciates IIT Bhilai Innovation and Technology Foundation for its impactful work in Fintech, Agritech, and Healtech.",
     videoThumbnail: require("../assets/Images/Video.jpeg"), // Update with the actual path to the thumbnail

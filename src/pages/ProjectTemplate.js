@@ -342,37 +342,48 @@ const ProjectTemplate = () => {
         {currentPage.achievements !== "" &&
           currentPage.category !== "event" && (
             <>
-              <Box
-                sx={{
-                  // height: "50vh",
-                  borderRadius: "20px",
-                  boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
-                  padding: "30px", // Add padding for content
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  textAlign: "start",
-                }}
-              >
-                <div className="obj-cls">
-                  Achievements
-                  <div style={styles.divider}></div>
-                </div>
-                <div className="obj-container">
-                  <div className="obj-img">
-                    <img
-                      src={AchievementLogo}
-                      alt="project objective logo"
-                      style={styles.image}
-                    />
-                  </div>
-                  <span style={styles.description}  className="project-desc">
-                    {currentPage.achievements}
-                  </span>
-                </div>
-              </Box>
-            </>
+  <Box
+    sx={{
+      borderRadius: "20px",
+      boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+      padding: "30px", // Add padding for content
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      textAlign: "start",
+    }}
+  >
+    <div className="obj-cls">
+      Achievements
+      <div style={styles.divider}></div>
+    </div>
+    
+    <div className="obj-container-achiv">
+      {Array.isArray(currentPage.achievements) ? (
+        currentPage.achievements.map((achievement, index) => (
+          <div key={index} className="obj-item">
+            <div className="obj-img-achv">
+              <img
+                src={require(`../${achievement.image || ""}`)}
+                alt={`Achievement ${index + 1}`}
+                style={styles.image}
+              />
+            </div>
+            <span style={styles.description} className="project-desc">
+              {achievement.description}
+            </span>
+          </div>
+        ))
+      ) : (
+        <span style={styles.description} className="project-desc">
+          {currentPage.achievements}
+        </span>
+      )}
+    </div>
+  </Box>
+</>
+
           )}
         {currentPage.startupName !== "" && currentPage.category !== "event" && (
           <>
@@ -433,6 +444,14 @@ const styles = {
     lineHeight: "1.5",
     width: "70%",
   }, 
+
+  descriptionAchiv: {
+    fontSize: "1em",
+    color: "#7f8c8d",
+    lineHeight: "1.5",
+    width: "70%",
+  }, 
+
   boxDescription: {
     fontSize: "1em",
     color: "#7f8c8d",

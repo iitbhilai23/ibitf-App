@@ -1213,19 +1213,30 @@ export const pagesConfig = [
     images: [],
     category: "project",
     subCategory: "TSP",
+    InstituteLogo: [
+      "assets/logo/InstituteLogo/IGKV Logo.png",
+      "assets/logo/InstituteLogo/NIC Raipur Logo.jpg",
+    ],
     piName: " Dr. D. P. Singh , Dr. Ravi R Saxena",
     date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
+    workshopIMG: [],
     technicalDetails:[
       "This technology helps to reduce the time and cost of acquiring farm implements, improve resource utilization, and promote sustainable farming practices.",
       "It enhances transparency, efficiency, and trust in the seed supply chain by providing real-time visibility into the journey of each batch of seeds.",
       "Integration of machine learning algorithms with IoT data enables predictive analytics, aiding farmers in proactive decision-making for optimal crop management."
   ],
     publications: "",
-    achievements: "",
+      achievements: [
+        { image: "assets/logo/InstituteLogo/IGKV Logo.png", description: "Achievement description 1" },
+        { image: "assets/logo/InstituteLogo/NIC Raipur Logo.jpg", description: "Achievement description 2" },
+      ],
+      // achievements: "Single achievement description as a string.",
+    achievementsIMG: ["assets/ProjectImages/objectives/obj5.png"],
     startupName: "",
+    startupLogo: [],
   },
 
   {
