@@ -370,6 +370,10 @@ export const pagesConfig = [
     duration: "2 Year",
     category: "project",
     subCategory: "PRAYAS",
+    InstituteLogo: [
+      "assets/Images/iitbhilai.png",
+      "assets/logo/InstituteLogo/Aiims Raipur.png",
+    ], 
     piName: "Dr. Debendra K Tripathy",
     piInstitute:"All India Institute Of Medical Sciences, Raipur",
     date: "From :- 22/2/2024  -  To :- 21/2/2026 ",
@@ -393,6 +397,11 @@ export const pagesConfig = [
     duration: "2 Year",
     category: "project",
     subCategory: "TBI",
+    InstituteLogo: [
+      "assets/Images/iitbhilai.png",
+      "assets/logo/InstituteLogo/idbrt.png",
+      "assets/logo/InstituteLogo/IIT Roorkee.svg",
+    ], 
     piName: "Dr. Mridula Verma",
     piInstitute:"IDBRT",
     date: "From :- 29/3/2022  -  To :- 28/3/2024 ",
@@ -435,6 +444,9 @@ export const pagesConfig = [
     duration: "2 Year",
     category: "project",
     subCategory: "TBI",
+    InstituteLogo: [
+      "assets/Images/iitbhilai.png",
+    ], 
     piName:
       "Prof. Santosh Biswas",
     piInstitute: "Indian Institue of Technology, Bhilai",
@@ -522,6 +534,9 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TBI",
     piName: "Siddhartha Khare",
+    InstituteLogo: [
+      "assets/logo/InstituteLogo/IIT Roorkee.svg",
+    ],
     piInstitute: "Indian Institue of Technology, Roorkee",
     date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
@@ -618,6 +633,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TSP",
     piName: "Dr. Marpe Sora",
+    piInstitute: "Rajiv Gandhi University, Arunachal Pradesh",
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj4.png",
     workshop: "",
