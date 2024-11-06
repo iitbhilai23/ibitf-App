@@ -8,7 +8,40 @@ import Project7 from "../assets/PDF/proposal/Project7.pdf";
 import Project8 from "../assets/PDF/proposal/Project8.pdf";
 import Project9 from "../assets/PDF/proposal/Project9.pdf";
 import Project10 from "../assets/PDF/proposal/Project10.pdf";
-import { FaLightbulb, FaFlask, FaPeopleArrows, FaGraduationCap, FaGlobe } from 'react-icons/fa';
+import {
+  FaLightbulb,
+  FaFlask,
+  FaPeopleArrows,
+  FaGraduationCap,
+  FaGlobe,
+} from "react-icons/fa";
+import {
+  Business,
+  Support,
+  School,
+  Laptop,
+  Work,
+  AccountBalance,
+  People,
+  BusinessCenter,
+  Payment,
+  Computer,
+  Devices,
+  Agriculture,
+  Satellite,
+  Eco,
+  Drone,
+  HealthAndSafety,
+  Emergency,
+  LocalHospital,
+  SupervisedUserCircle,
+  Group
+} from '@mui/icons-material';
+import AgricultureIcon from '@mui/icons-material/Agriculture'; 
+
+
+import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive'; 
+
 
 export const siteContent = {
   navbar: {
@@ -247,7 +280,7 @@ export const siteContent = {
         route: "/IndigenousMedicinalPlants",
         image: require("../assets/VectorIMG/meditech.jpg"),
       },
-    ], 
+    ],
 
     technologiesDomain: [
       {
@@ -1087,43 +1120,47 @@ export const siteContent = {
       title: "Accessible banking functionalities for Divyang using Smart ATM",
       description:
         "Divyang ATM: Divyang ATM, “An Accessible Banking Solution for All,” represents an innovative approach to banking designed to make financial services more accessible, especially for visually Divyang persons. This innovative system integrates an Android application with cutting-edge features to ensure a secure and convenient banking experience.",
+      route: "/smartATM",
     },
     {
       image: require("../assets/project_features/bhoomicamp.jpeg"),
       title: "Bhoomicam",
       description:
         "Revolutionising Agriculture with AI and Satellite Technology: Bhoomicam: A versatile smartphone app ‘Bhoomicam,’ that empowers farmers to input crop information, creating a digital database linking land parcels and satellite imagery. The tool aims to geo-enable farms, integrate AI with satellite data for crop monitoring, and offer personalized recommendations for increasing the quality and quantity of crop production.",
+      route: "/BhoomiCam",
     },
     {
       image: require("../assets/project_features/ices.jpeg"),
       title: "Intelligent Emergency Care System (iECS)",
       description:
         "Intelligent Emergency Care System (iECS) Strengthening the Emergency Care Systems in Chhattisgarh through Digital Hybrid Healthcare - An AI-driven platform for doctors in remote areas to manage emergencies, offer 24x7 tele-access to emergency experts, standardize patient assessment, and provide patients with information on affordable medicines, alternative treatments, and insurance options.",
+      route: "/emergencyCare",
     },
     {
       image: require("../assets/project_features/digital_agrivillage.jpeg"),
-      // title: 'DIGITAL AGRI VILLAGE - Advancing the Digital Transformation of Agriculture in Tribal Dominating Areas of Chhattisgarh',
       title: "Digital Agri Village: Empowering Tribal Farmers in Chhattisgarh",
       description:
         "The Concept of Digital Agri-village heralds a new era in agricultural innovation, aiming to transform traditional farming landscapes into technologically advanced, interconnected hubs of sustainable growth and empowerment. At the heart of this initiative lies a comprehensive vision to revolutionize farming practices and empower Self-help groups (SHGs) and farmers through an amalgamation of cutting-edge technologies and collaborative knowledge-sharing platforms.",
+      route: "/DigitalAgriVillage",
     },
     {
       image: require("../assets/ProjectImages/vsk/04.jpeg"),
       title: "Vidya Samiksha Kendra",
       description:
         "An AI-based centralized monitoring platform designed to transform the state education system through data-driven decision-making. It offers real-time insights into school performance, infrastructure, and student demographics, enabling evidence-based policy formulation and resource allocation. This initiative fosters a more informed and responsive educational framework, contributing significantly to the overall improvement of Chhattisgarh education sector.",
+      route: "/vsk",
     },
     {
-      image: require("../assets/project_features/ices.jpeg"),
+      image: require("../assets/project_features/kyc.jpg"),
       title: "Video KYC",
       description:
-        "Revolutionising Agriculture with AI and Satellite Technology: Bhoomicam: A versatile smartphone app ‘Bhoomicam,’ that empowers farmers to input crop information, creating a digital database linking land parcels and satellite imagery. The tool aims to geo-enable farms, integrate AI with satellite data for crop monitoring, and offer personalized recommendations for increasing the quality and quantity of crop production.",
+        "This project aims to develop a blockchain-powered Video KYC framework for secure and efficient customer identity verification. It integrates machine learning models for automated identity verification and data extraction, enhancing security and user experience with a bilingual audio-visual chatbot and facial recognition technology.",
+      route: "/videoKYC",
     },
-    // Add more projects as needed
   ],
 
   videoPage: {
-    title: "Hon'ble President Applauds IIT Bhilai Innovation",
+    title: "The Hon'ble President of India Applauds Our Innovation",
     description:
       "The President of India appreciates IIT Bhilai Innovation and Technology Foundation for its impactful work in Fintech, Agritech, and Healtech.",
     videoThumbnail: require("../assets/Images/Video.jpeg"), // Update with the actual path to the thumbnail
@@ -1304,27 +1341,164 @@ export const siteContent = {
       ],
     },
   ],
-  visionMissionData :[
+  visionMissionData: [
     {
       icon: <FaLightbulb />,
-      text: 'Empowering young professionals and students to develop entrepreneurial skills',
+      text: "Empowering young professionals and students to develop entrepreneurial skills",
     },
     {
       icon: <FaFlask />,
-      text: 'Cutting-edge research and development.',
+      text: "Cutting-edge research and development.",
     },
     {
       icon: <FaPeopleArrows />,
-      text: 'Contribution towards India’s leadership position in the technology revolution.',
+      text: "Contribution towards India’s leadership position in the technology revolution.",
     },
     {
       icon: <FaGraduationCap />,
-      text: 'Capability and capacity building using HRD and skill development at various levels.',
+      text: "Capability and capacity building using HRD and skill development at various levels.",
     },
     {
       icon: <FaGlobe />,
-      text: 'Building a sustainable ecosystem with national and international collaboration.',
+      text: "Building a sustainable ecosystem with national and international collaboration.",
     },
   ],
-  
+
+  scope:[
+    {
+      heading: "Entrepreneurship and Startup Ecosystem",
+      points: [
+        {
+          subHeading: "Nationwide Innovation and Incubation Center",
+          text: "Establishing a platform to foster entrepreneurship and innovation across the country.",
+          icon: <Business />,
+        },
+        {
+          subHeading: "Support for Students, Alumni, and Faculty",
+          text: "Encouraging and nurturing startups.",
+          icon: <Support />,
+        },
+        {
+          subHeading: "Entrepreneurs-in-Residence (EIR) Programs",
+          text: "Providing mentorship, resources, and support for aspiring entrepreneurs, during their study in academic institutes.",
+          icon: <School />,
+        },
+        {
+          subHeading: "Technology Business Incubation",
+          text: "Offering infrastructure, funding, and guidance to accelerate startup growth.",
+          icon: <Laptop />,
+        },
+      ],
+    },
+    {
+      heading: "HRD and Skilling",
+      points: [
+        {
+          subHeading: "High-End Skill Development",
+          text: "Certifications, Quality Improvement Programs (QIPs), Workshops, and Self-Employment-oriented training.",
+          icon: <Work />,
+        },
+        {
+          subHeading: "Formal Education",
+          text: "UG, PG, PhD, and Post-Doctoral Fellowships.",
+          icon: <School />,
+        },
+        {
+          subHeading: "Chair Professorships",
+          text: "To promote advanced research and learning.",
+          icon: <AccountBalance />,
+        },
+        {
+          subHeading: "Opportunities for Students and Faculty",
+          text: "Opportunities for students and faculty members across academic institutions.",
+          icon: <People />,
+        },
+        {
+          subHeading: "Industry-Academia Interface",
+          text: "Strong industry-academia interface to align education with real-world fintech, agritech, and healthtech applications.",
+          icon: <BusinessCenter />,
+        },
+      ],
+    },
+    {
+      heading: "Research and Development",
+      points: [
+        {
+          subHeading: "E-Payment Systems",
+          text: "Advancing secure and seamless digital payment solutions.",
+          icon: <Payment />,
+        },
+        {
+          subHeading: "AI for Fintech",
+          text: "Leveraging artificial intelligence for data-driven financial services.",
+          icon: <Computer />,
+        },
+        {
+          subHeading: "IoT for Fintech",
+          text: "Integrating IoT solutions to enhance financial operations and security.",
+          icon: <Devices />,
+        },
+        {
+          subHeading: "Seamless Platforms for Agritech Services",
+          text: "Mobile app with voice support in regional languages for easy accessibility regarding information on pesticides, weedicides, soil and field analysis, yield estimation, Geo-fencing, etc.",
+          icon: <Agriculture />,
+        },
+        {
+          subHeading: "Geo-enabled Crop Insurance",
+          text: "Using satellite data to generate crop insurance advisories.",
+          icon: <Satellite />,
+        },
+        {
+          subHeading: "Organic Farming Practices",
+          text: "Scientific study and standardization of indigenous knowledge-based organic farming practices.",
+          icon: <AgricultureIcon />,
+        },
+        {
+          subHeading: "Drone-based Precision Agriculture",
+          text: "Implementing drone technology to enhance agricultural precision and efficiency.",
+          icon: <AirplanemodeActiveIcon />,
+        },
+        {
+          subHeading: "Seamless Platform for Healthtech Services",
+          text: "Mobile app in regional languages for easy consultation with doctors, availability of medicines, diagnostics, etc.",
+          icon: <HealthAndSafety />,
+        },
+        {
+          subHeading: "Intelligent Emergency Care System",
+          text: "Strengthening emergency care systems in remote areas through Digital Hybrid Healthcare.",
+          icon: <Emergency />,
+        },
+        {
+          subHeading: "Clinical Study of Indigenous Medical Practices",
+          text: "Conducting clinical studies and standardizing indigenous medical practices.",
+          icon: <LocalHospital />,
+        },
+      ],
+    },
+    {
+      heading: "Strategic Collaborations and Partnerships",
+      points: [
+        {
+          subHeading: "National and International Educational Institutes",
+          text: "Fostering academic exchange programs and research collaborations.",
+          icon: <School />,
+        },
+        {
+          subHeading: "Mentorship for Startups",
+          text: "Guiding startups with industry expertise and support.",
+          icon: <SupervisedUserCircle />,
+        },
+        {
+          subHeading: "Partnerships with Key Organizations",
+          text: "Collaborating with UIDAI, GSTN, NPCI, CDAC, SAIL, NIC, T-Hub, IDRBT, and international laboratories/universities, including Siegen University, Germany; University of Illinois Urbana-Champaign, USA; University of Missouri, USA.",
+          icon: <Group />,
+        },
+        {
+          subHeading: "Support for MSMEs and Startups",
+          text: "Promoting innovation and growth through tailored programs and initiatives.",
+          icon: <Business />,
+        },
+      ],
+    },
+  ]
 };

@@ -226,19 +226,39 @@ const ProjectTemplate = () => {
                 textAlign: "start",
               }}
             >
+              <div>
               <div className="obj-cls">
                 Work Shop Details
                 <div style={styles.divider}></div>
               </div>
               <div className="obj-container">
-                <div className="obj-img">
+                {/* <div className="obj-img">
                   <img
                     src={workshopLogo}
                     alt="project objective logo"
                     style={styles.image}
                   />
+                </div> */}
+                <span style={styles.Workshopdescription} className="project-desc">{renderDescription(currentPage.workshop)}</span>
                 </div>
-                <span style={styles.description} className="project-desc">{currentPage.workshop}</span>
+                <div style={styles.imageContainer}>
+                {currentPage.workshopIMG?.map((image, index) => (
+          <div
+            key={index}
+            style={styles.workshopimageWrapper}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.transform = "scale(1.05)")
+            }
+            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+          >
+            <img
+              src={require(`../${image || ""}`)}
+              alt={`${currentPage.title} image ${index + 1}`}
+              style={styles.image}
+            />
+          </div>
+        ))}
+        </div>
               </div>
             </Box>
           </>
@@ -341,37 +361,48 @@ const ProjectTemplate = () => {
         {currentPage.achievements !== "" &&
           currentPage.category !== "event" && (
             <>
-              <Box
-                sx={{
-                  // height: "50vh",
-                  borderRadius: "20px",
-                  boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
-                  padding: "30px", // Add padding for content
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  textAlign: "start",
-                }}
-              >
-                <div className="obj-cls">
-                  Achievements
-                  <div style={styles.divider}></div>
-                </div>
-                <div className="obj-container">
-                  <div className="obj-img">
-                    <img
-                      src={AchievementLogo}
-                      alt="project objective logo"
-                      style={styles.image}
-                    />
-                  </div>
-                  <span style={styles.description} className="project-desc">
-                    {currentPage.achievements}
-                  </span>
-                </div>
-              </Box>
-            </>
+  <Box
+    sx={{
+      borderRadius: "20px",
+      boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+      padding: "30px", // Add padding for content
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      textAlign: "start",
+    }}
+  >
+    <div className="obj-cls">
+      Achievements
+      <div style={styles.divider}></div>
+    </div>
+    
+    <div className="obj-container-achiv">
+      {Array.isArray(currentPage.achievements) ? (
+        currentPage.achievements.map((achievement, index) => (
+          <div key={index} className="obj-item">
+            <div className="obj-img-achv">
+              <img
+                src={require(`../${achievement.image || ""}`)}
+                alt={`Achievement ${index + 1}`}
+                style={styles.image}
+              />
+            </div>
+            <span style={styles.description} className="project-desc">
+              {achievement.description}
+            </span>
+          </div>
+        ))
+      ) : (
+        <span style={styles.description} className="project-desc">
+          {currentPage.achievements}
+        </span>
+      )}
+    </div>
+  </Box>
+</>
+
           )}
         {currentPage.startupName !== "" && currentPage.category !== "event" && (
           <>
@@ -443,7 +474,22 @@ const styles = {
     color: "#7f8c8d",
     lineHeight: "1.5",
     width: "70%",
-  },
+  }, 
+
+  Workshopdescription: {
+    fontSize: "1em",
+    color: "#7f8c8d",
+    lineHeight: "1.5",
+    width: "90%",
+  }, 
+
+  descriptionAchiv: {
+    fontSize: "1em",
+    color: "#7f8c8d",
+    lineHeight: "1.5",
+    width: "70%",
+  }, 
+
   boxDescription: {
     fontSize: "1em",
     color: "#7f8c8d",
@@ -484,6 +530,17 @@ const styles = {
     transition: "transform 0.3s ease",
     // border: "1px solid #6a0dad",
     // backgroundColor: "rgba(58, 16, 120, 0.2)",
+  },
+  workshopimageWrapper: {
+    width: "260px",
+    height: "260px",
+    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+    borderRadius: "15px 15px 15px 15px",
+    overflow: "hidden",
+    transition: "transform 0.3s ease",
+    border: "1px solid #6a0dad",
+    backgroundColor: "rgba(58, 16, 120, 0.2)",
+    marginTop: "20px"
   },
   image: {
     width: "100%",
