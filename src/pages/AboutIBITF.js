@@ -16,7 +16,7 @@ function AboutIBITF() {
       <section className="about-hero">
         <h1>{title}</h1>
         <p>{description}</p>
-      </section>
+      </section> 
       <Journey />
       {/* <section className="nodal-center">
         <h2>{nodalCenter.title}</h2>

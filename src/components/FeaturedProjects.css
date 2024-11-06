@@ -40,7 +40,7 @@
     width: fit-content;
     padding-left: calc(50% - 0 * 200px); /* Center the 4 cards initially */
     box-sizing: border-box;
-    
+    margin-bottom:0.5rem;
 }
 
 .project-card {

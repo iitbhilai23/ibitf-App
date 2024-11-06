@@ -240,7 +240,7 @@ const ProjectTemplate = () => {
                     style={styles.image}
                   />
                 </div> */}
-                <span style={styles.Workshopdescription} className="project-desc">{currentPage.workshop}</span>
+                <span style={styles.Workshopdescription} className="project-desc">{renderDescription(currentPage.workshop)}</span>
                 </div>
                 <div style={styles.imageContainer}>
                 {currentPage.workshopIMG?.map((image, index) => (
