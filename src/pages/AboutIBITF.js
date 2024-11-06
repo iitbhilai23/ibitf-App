@@ -16,17 +16,19 @@ function AboutIBITF() {
         <h1>{title}</h1>
         <p>{description}</p>
       </section>
-      <VisionMission />
-      <VisionCard />
-      {/* Nodal Center Section */}
+      <Journey />
       <section className="nodal-center">
         <h2>{nodalCenter.title}</h2>
         <p>{nodalCenter.description}</p>
       </section>
+      <VisionMission />
+      <VisionCard />
+      {/* Nodal Center Section */}
+      
 
       {/* Vision Section */}
     
-      <Journey />
+     
       <Objective />
     
     </div>

@@ -187,7 +187,7 @@
 /*Journey Page*/
 
 .main-journey-card {
-  background-color: #f5f7fa;
+  background-color: #f7f7f7;
   padding: 2rem;
   border-radius: 12px;
   max-width: 100%;
@@ -205,13 +205,14 @@
 }
 
 .journey-main-text {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 2.8rem;
+  text-align: justify;
 }
 
 .small-cards-container {
@@ -410,7 +411,7 @@
 }
 /* VisionMissionCard.css */
 .vision-mission-container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;

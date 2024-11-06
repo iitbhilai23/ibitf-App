@@ -163,6 +163,7 @@ const ProjectsList = () => {
                         transition: "transform 1s ease",
                       },
                       borderRadius: "12px",
+                      height: "20vh",
                       border: selectedSubCategory === subCat ? "1px solid #c3cfe2" : "none",
                       textAlign: "center",
                     }}
