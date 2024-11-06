@@ -427,7 +427,7 @@ Divyang ATM, “An Accessible Banking Solution for All,” represents an innovat
 The technology eliminates the need for physical PIN entry by utilizing mobile app-based voice commands and QR code scanning. This touch-free approach enhances security and provides a smooth and accessible user experience. The AI camera-based rotating display, Braille print-out, and voice-based instructions further support users, catering to their specific needs and improving usability.
 
 The Divyang ATM has a significant socio-economic impact by fostering financial inclusion and promoting self-reliance among Divyang individuals. It reduces fraud and enhances security, making it easier for users with disabilities to manage their finances independently. By providing a more inclusive banking solution, it supports the broader goal of integrating all individuals into the financial ecosystem.`,
-    images: [],
+    images: ["assets/objective/28.png","assets/objective/29.png"],
     duration: "2 Year",
     category: "project",
     subCategory: "TBI",
