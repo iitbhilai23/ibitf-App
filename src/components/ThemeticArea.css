@@ -1,7 +1,7 @@
 .technologies-development {
     text-align: center;
     padding: 20px 0;
-    background: linear-gradient(135deg, #f3f4f7, #ffffff);
+    background-color: var(--fifth-color);
   }
   
   .technologies-title {

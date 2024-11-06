@@ -19,7 +19,7 @@ import Thematic from './pages/Thematic';
 import Schemes from './pages/Schemes';
 import Blogs from './pages/Blogs';
 import CallForProposals from './pages/CallForProposal';
-import ScrollToTop from './components/ScrollToTopButton/ScrollToTopButton';
+import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
 
