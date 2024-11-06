@@ -19,7 +19,10 @@ import Thematic from './pages/Thematic';
 import Schemes from './pages/Schemes';
 import Blogs from './pages/Blogs';
 import CallForProposals from './pages/CallForProposal';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTopButton/ScrollToTopButton';
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
+
+
 
 const App = () => {
   return (
@@ -55,6 +58,7 @@ const App = () => {
         ))}
       </Routes>
       <Footer />
+      <ScrollToTopButton />
     </Router>
   );
 };
