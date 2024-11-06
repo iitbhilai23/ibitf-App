@@ -370,15 +370,16 @@ export const pagesConfig = [
     duration: "2 Year",
     category: "project",
     subCategory: "PRAYAS",
-    piName: "Prof (Dr) Debendra K Tripathy",
+    piName: "Dr. Debendra K Tripathy",
+    piInstitute:"All India Institute Of Medical Sciences, Raipur",
     date: "From :- 22/2/2024  -  To :- 21/2/2026 ",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
     technicalDetails: "",
     publications: "",
-    achievements:  [
+    achievements: [
       { image: "assets/achievement/9.png", description: "Dr. Keshav Baliram Hedgewar Arogya Shri Award (2024) for “Digitizing Healthcare Information” conferred to the project team in the Future of Healthcare Forum 2024 in New Delhi." },
-     
+
     ],
     startupName: "",
   },
@@ -392,7 +393,8 @@ export const pagesConfig = [
     duration: "2 Year",
     category: "project",
     subCategory: "TBI",
-    piName: "Dr. Rajarshree Pal",
+    piName: "Dr. Mridula Verma",
+    piInstitute:"IDBRT",
     date: "From :- 29/3/2022  -  To :- 28/3/2024 ",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
@@ -429,12 +431,13 @@ export const pagesConfig = [
     component: "smartATM",
     description:
       `“An Accessible Banking Solution for All”/nDivyang ATM, “An Accessible Banking Solution for All,” represents an innovative approach to banking designed to make financial services more accessible, especially for visually Divyang persons. This innovative system integrates an Android application with cutting-edge features to ensure a secure and convenient banking experience. Key functionalities include card verification, face recognition, QR code generation, SIM verification, and voice-based user input. The ATM is also equipped with Braille printed slips and cash dispensing capabilities, making it easier for users to manage their finances independently./nThe technology eliminates the need for physical PIN entry by utilizing mobile app-based voice commands and QR code scanning. This touch-free approach enhances security and provides a smooth and accessible user experience. The AI camera-based rotating display, Braille print-out, and voice-based instructions further support users, catering to their specific needs and improving usability./nThe Divyang ATM has a significant socio-economic impact by fostering financial inclusion and promoting self-reliance among Divyang individuals. It reduces fraud and enhances security, making it easier for users with disabilities to manage their finances independently. By providing a more inclusive banking solution, it supports the broader goal of integrating all individuals into the financial ecosystem.`,
-    images: ["assets/objective/28.png","assets/objective/29.png"],
+    images: ["assets/objective/28.png", "assets/objective/29.png"],
     duration: "2 Year",
     category: "project",
     subCategory: "TBI",
     piName:
-      "Prof. Santosh Biswas , Mr. Rudra Dutta Tiwari ,Mr. Arif khan, Mr. Pankaj Kumar",
+      "Prof. Santosh Biswas",
+    piInstitute: "Indian Institue of Technology, Bhilai",
     date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
@@ -442,7 +445,7 @@ export const pagesConfig = [
     publications: "",
     startupName: "RecogX init",
     startupLogo: 'assets/StaticImages/startup/recog.png',
-    achievements:  [
+    achievements: [
       { image: "assets/achievement/8.png", description: "The Divyang ATM has been successfully installed at IIT Bhilai and National Association For The Blind (Prerna Bhavan), Raipur, C.G for comprehensive testing and validation. The ATM's features, including the AI camera-based rotating display, Braille print-outs, voice-based instructions, UPI-based cash withdrawal, and the Divyang mobile application for ATM transactions, have been thoroughly tested and validated by Divyang individuals, confirming its ability to meet their needs and enhance their banking experience." },
       { image: "assets/achievement/7.png", description: `Recogx Pvt. Ltd. has been awarded by the prestigious "Making India Employable Rising Star Award 2024"` },
     ],
@@ -519,6 +522,7 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TBI",
     piName: "Siddhartha Khare",
+    piInstitute: "Indian Institue of Technology, Roorkee",
     date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -526,10 +530,10 @@ export const pagesConfig = [
     publications: "",
     startupName: "BhoomiCam Pvt. Ltd.",
     startupLogo: 'assets/StaticImages/startup/bhoomicamp.png',
-    achievements:[
+    achievements: [
       { image: "assets/achievement/10.png", description: "Bhoomicam, has been honored with the prestigious Rising Start Award at the Making India Employable Conference and Awards 2024 held in Mumbai." },
       { image: "assets/achievement/11.png", description: "BhoomiCam Pvt. Ltd. Start-up has been honored with the prestigious Best Geospatial Stratup Award at the National Geospatial awards 2024, organized by FOSSEE (GIS), held in VMCC, IIT Bombay under the aegies of the National Mission on Education, Government of India." },
-     
+
     ],
   },
   {
@@ -1233,12 +1237,13 @@ export const pagesConfig = [
       "assets/logo/InstituteLogo/NIC Raipur Logo.jpg",
     ],
     piName: " Dr. D. P. Singh , Dr. Ravi R Saxena",
+    piInstitute: "Indira Gandhi KrishiVishwavidyalaya, Raipur",
     date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: `IIT Bhilai Innovation and Technology Foundation and Indira Gandhi Krishi Vishwavidyalaya jointly organized a “Digital Agri Village” workshop on 8th May 2024. The workshop was inaugurated by Padma Shri Phoolbasan Bai Yadav. The aim of this workshop is to elaborate on the innovative use of drones in agriculture to showcase the capabilities of drones in precision agriculture and provide training to empower local women in utilizing drones for various agricultural applications./nThe workshop had live demonstrations of drone technology for spraying services, seed sowing, and other agricultural practices. Participants had the opportunity to learn about the benefits of using drones in agriculture, including increased efficiency, reduced costs, and improved crop yields.`,
-    workshopIMG: ["assets/workshop/IMG_7054.JPG","assets/workshop/IMG_7045.JPG","assets/workshop/1.png","assets/workshop/2.png","assets/workshop/3.png"],
-    technicalDetails:[
+    workshopIMG: ["assets/workshop/IMG_7054.JPG", "assets/workshop/IMG_7045.JPG", "assets/workshop/1.png", "assets/workshop/2.png", "assets/workshop/3.png"],
+    technicalDetails: [
       "This technology helps to reduce the time and cost of acquiring farm implements, improve resource utilization, and promote sustainable farming practices.",
       "It enhances transparency, efficiency, and trust in the seed supply chain by providing real-time visibility into the journey of each batch of seeds.",
       "Integration of machine learning algorithms with IoT data enables predictive analytics, aiding farmers in proactive decision-making for optimal crop management."
@@ -1246,11 +1251,11 @@ export const pagesConfig = [
     publications: "",
     startupName: "Tadoba",
     startupLogo: "assets/StaticImages/startup/tadoba.png",
-      achievements: [
-        { image: "assets/achievement/4.png", description: "Awarded First Prize in Innovation Fair 2024 Organized by CCOST & IGKV, Raipur at Jagdalpur." },
-        { image: "assets/achievement/5.png", description: "Awarded Certificate of Appreciation in Innovation Fair, Kisan Mela & Exhibition 2024" },
-      ],
-      // achievements: "Single achievement description as a string.",
+    achievements: [
+      { image: "assets/achievement/4.png", description: "Awarded First Prize in Innovation Fair 2024 Organized by CCOST & IGKV, Raipur at Jagdalpur." },
+      { image: "assets/achievement/5.png", description: "Awarded Certificate of Appreciation in Innovation Fair, Kisan Mela & Exhibition 2024" },
+    ],
+    // achievements: "Single achievement description as a string.",
     achievementsIMG: ["assets/ProjectImages/objectives/obj5.png"],
     startupName: "",
     startupLogo: [],
@@ -1278,7 +1283,7 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
-    
+
     technicalDetails: [
       "Launched a mobile app to facilitate real-time communication between beneficiaries, academia, and healthcare partners, as well as disseminate health-related information to the community.",
       "The app empowers healthcare workers to communicate in the Dantewada region seamlessly. The idea is to sensitize healthcare workers so that they can translate medical advice to the remote population.",
