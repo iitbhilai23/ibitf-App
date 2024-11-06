@@ -1,11 +1,12 @@
 import React from "react";
 import { siteContent } from "../constants/content";
 import "../styles/main.css"; // Your custom CSS
-import VisionMission from "../components/VisionMission";
+//import VisionMission from "../components/VisionMission";
 import Objective from "../components/Objective";
 import Journey from "../components/Journey";
 import Achievements from "../components/Achievements";
 import VisionCard from "../components/VisionCard";
+import Scope from "../components/Scope";
 
 function AboutIBITF() {
   const { title, description, nodalCenter, vision } = siteContent.aboutPage;
@@ -17,11 +18,11 @@ function AboutIBITF() {
         <p>{description}</p>
       </section>
       <Journey />
-      <section className="nodal-center">
+      {/* <section className="nodal-center">
         <h2>{nodalCenter.title}</h2>
         <p>{nodalCenter.description}</p>
-      </section>
-      <VisionMission />
+      </section> */}
+
       <VisionCard />
       {/* Nodal Center Section,,,,,, */}
       
@@ -30,6 +31,7 @@ function AboutIBITF() {
     
      
       <Objective />
+      <Scope />
     
     </div>
   );

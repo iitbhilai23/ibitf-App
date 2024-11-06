@@ -132,7 +132,7 @@
   max-width: 1200px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem; /* Reduced padding for better spacing */
+  padding: 1rem; 
   background-color: #f4f6f9;
   display: flex;
   flex-direction: column;
@@ -142,7 +142,7 @@
   font-size: 2rem;
   color: #4a3f93;
   font-weight: 700;
-  margin-bottom: 0.5rem; /* Reduced margin between heading and text */
+  margin-bottom: 0.5rem; /* Reduced margin between heading and text */        
   width: 100%;
 }
 
@@ -416,7 +416,12 @@
   padding: 20px;
   text-align: center;
 }
-
+.vision-mission-heading {
+  color: #4a3f93; 
+  font-size: 2rem;  
+  text-align: center; 
+  margin-bottom: 20px;  
+}
 .title {
   font-size: 2rem;
   color: #4a3f93; 
@@ -470,3 +475,158 @@
     font-size: 1.5rem;
   }
 }
+
+/*Scope Section*/
+
+/* Container Styling */
+.scope-container {
+  padding: 3rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  animation: fadeIn 1s ease-in-out;
+  background: #f8f9fa;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Ensure vertical stacking */
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Align content at the top */
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  box-sizing: border-box; /* Include padding in height/width calculation */
+}
+
+/* Main Heading */
+.main-heading {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #4a3f93;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  animation: slideInDown 0.8s ease;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  background: linear-gradient(145deg, #4a3f93, #6a56b3);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; /* Center cards horizontally */
+  width: 100%;
+}
+
+/* Point Cards */
+.point-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Adjust the width to avoid overlap */
+  color: #4a3f93;
+  transition: all 0.3s ease;
+}
+
+.point-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.point-icon {
+  font-size: 3rem;
+  color: #4a3f93;
+}
+
+.point-info {
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  color: #4a3f93;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .point-card {
+    width: 45%; /* Adjust card width on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .scope-container {
+    padding: 2rem;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .point-card {
+    width: 100%; 
+  }
+
+  .sub-heading {
+    font-size: 1.4rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
