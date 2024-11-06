@@ -2,120 +2,408 @@
 
 .about-outer-container {
   width: 100%;
-  background-color:var(--fouth-color);
+  background-color: var(--fouth-color);
 }
 
 .about-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 60px 20px;
-    max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 20px;
+  max-width: 1200px;
 
-    margin: 0 auto;
- 
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+  animation: fadeInLeft 0.8s ease-in-out;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.highlight {
+  color: var(--primary-color); /* Orange color for "We" */
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-button {
+  padding: 12px 25px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: var(--third-color);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInRight 0.8s ease-in-out;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 5px soldi #9d8282 !important;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframe animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .about-text {
-    flex: 1;
-    padding-right: 20px;
-    animation: fadeInLeft 0.8s ease-in-out;
+    padding-right: 0;
   }
-  
-  .about-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .highlight {
-    color: var(--primary-color); /* Orange color for "We" */
-  }
-  
-  .about-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  .about-button {
-    padding: 12px 25px;
-    background-color:var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .about-button:hover {
-    background-color: var(--third-color);
-    transform: scale(1.05);
-    color: #fff;
-  }
-  
-  .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeInRight 0.8s ease-in-out;
-  }
-  
-  .about-image img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    border: 5px soldi #9d8282 !important;
-    
 
+  .about-image {
+    margin-top: 20px;
   }
-  
-  .about-image img:hover {
-    transform: scale(1.05);
+}
+
+/*Vision Card**/
+
+.vm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.vm-card {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem; /* Reduced padding for better spacing */
+  background-color: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.vm-heading {
+  font-size: 2rem;
+  color: #4a3f93;
+  font-weight: 700;
+  margin-bottom: 0.5rem; /* Reduced margin between heading and text */
+  width: 100%;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.vm-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .vm-card {
+    padding: 1.5rem; /* Adjusted for better spacing on medium screens */
   }
-  
-  /* Keyframe animations */
-  @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+
+  .vm-heading {
+    font-size: 1.8rem;
   }
-  
-  @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      transform: translateX(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+
+  .vm-text {
+    font-size: 1rem;
   }
-  
-  /* Responsive styling */
-  @media (max-width: 768px) {
-    .about-section {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-text {
-      padding-right: 0;
-    }
-  
-    .about-image {
-      margin-top: 20px;
-    }
+}
+
+@media (max-width: 480px) {
+  .vm-heading {
+    font-size: 1.5rem;
   }
-  
+
+  .vm-text {
+    font-size: 0.9rem;
+  }
+}
+
+/*Journey Page*/
+
+.main-journey-card {
+  background-color: #f5f7fa;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-x: auto;
+}
+
+.journey-title {
+  font-size: 2rem;
+  color: #4a3f93;
+  margin-bottom: 1rem;
+}
+
+.journey-main-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2.8rem;
+}
+
+.small-cards-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.small-cards-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.small-cards-container::-webkit-scrollbar-thumb {
+  background-color: #4a3f93;
+  border-radius: 4px;
+}
+
+.small-journey-card {
+  background-color: #4a3f93;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 180px;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.small-journey-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.journey-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 0.75rem solid transparent;
+  border-right: 0.75rem solid transparent;
+  border-top: 0.75rem solid #4a3f93;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .journey-title {
+    font-size: 1.8rem;
+  }
+
+  .journey-main-text {
+    font-size: 1rem;
+  }
+
+  .small-journey-card {
+    width: 150px;
+    min-width: 150px;
+    padding: 0.8rem;
+  }
+
+  .journey-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .journey-title {
+    font-size: 1.5rem;
+  }
+
+  .journey-main-text {
+    font-size: 0.95rem;
+  }
+
+  .small-journey-card {
+    width: 130px;
+    min-width: 130px;
+    padding: 0.6rem;
+  }
+
+  .journey-description {
+    font-size: 0.8rem;
+  }
+}
+
+/**Objective Page**/
+
+.objectives-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.objectives-title {
+  font-size: 2.5rem;
+  color: #4a3f93;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.objectives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.objective-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.objective-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.objective-heading {
+  font-size: 1.8rem;
+  color: #4a3f93;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; /* Align icon and text */
+}
+
+.objective-icon {
+  margin-right: 10px; /* Space between icon and heading text */
+  color: #4a3f93; /* Icon color */
+  font-size: 1.5rem; /* Adjust icon size */
+}
+
+.objective-subheading {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.objective-point {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.objective-point::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4a3f93;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .objectives-title {
+    font-size: 2rem;
+  }
+
+  .objective-heading {
+    font-size: 1.5rem;
+  }
+
+  .objective-point {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .objectives-title {
+    font-size: 1.5rem;
+  }
+
+  .objective-heading {
+    font-size: 1.3rem;
+  }
+
+  .objective-point {
+    font-size: 0.9rem;
+  }
+}

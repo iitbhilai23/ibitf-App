@@ -852,8 +852,7 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
-  {
+   {
     title: "Model Digital Training Center for Women",
     path: "/training",
     component: "DigitalTraining",
@@ -922,7 +921,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
   {
     title:
       "AI assisted end to end Fintech assistance solutions for farming system for oil seeds (mustard, sunflower, etc.) cultivation in Mizoram",
@@ -974,7 +972,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
   {
     title:
       "“Mao language Automatic speech recognition (ASR)” under the Tribal Area Sub Plan (TSP)",
@@ -995,7 +992,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
   {
     title:
       "“UAV Assisted Emergency Resource Allocation for Remote Tribal People in Disaster for Bastar areas of Chhattisgarh” under the Tribal Area Sub Plan (TSP)",
@@ -1016,7 +1012,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
   {
     title:
       "Design and Development of Blockchain System for Monitoring and Protecting of Scheduled Tribal Land Records of Srikakulam, Visakhapatnam, Adilabad, Mahbubnagar regions of Andhra Pradesh and Telangana",
@@ -1037,7 +1032,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
   {
     title:
       "Development of cost analysis-based tools for enhancing the accessibility of medicine in the tribal population of Chhattisgarh",
@@ -1058,7 +1052,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
   {
     title:
       "Development of Rongmei/Kabui, English and Manipuri Multilingual Electronic Dictionary",
@@ -1079,7 +1072,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
   {
     title:
       "Development of IoT based Smart Compact Energy Meter (ISCEM) for Monitoring and Controlling the Power Quality Issues in a Smart Building",
@@ -1110,7 +1102,6 @@ export const pagesConfig = [
     achievements: "",
     startupName: "",
   },
-
   {
     title:
       "Economic Upliftment of the Tribes Residing in Balrampur District Through their Cultural Heritage",
@@ -1227,7 +1218,7 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
-    technicalDetails: [
+    technicalDetails:[
       "This technology helps to reduce the time and cost of acquiring farm implements, improve resource utilization, and promote sustainable farming practices.",
       "It enhances transparency, efficiency, and trust in the seed supply chain by providing real-time visibility into the journey of each batch of seeds.",
       "Integration of machine learning algorithms with IoT data enables predictive analytics, aiding farmers in proactive decision-making for optimal crop management."
@@ -3101,7 +3092,6 @@ National Service Scheme - IITBhilai Entit Consultancy Services Pvt Ltd Amit Agra
         description:
           "The SMART-ER system leverages AI to provide faster, more accurate diagnostics in emergency scenarios, which can be the difference between life and death. The go-live at AIIMS Raipur is a pioneering step forward in utilizing AI for real-time medical diagnostics in emergency care. This system aids doctors by providing clinical insights and predictive analysis, helping them make quick, informed decisions.The launch event demonstrated how the CDSS works in real-time, giving medical staff a powerful tool to improve patient outcomes during critical heart attacks. The successful implementation of this system will not only save lives but also bridge the gap in healthcare access in remote areas, where time and resources are often limited",
       },
-
       {
         heading: "Scaling Up through Startups",
         description:
