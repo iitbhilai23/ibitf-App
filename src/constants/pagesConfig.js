@@ -367,6 +367,10 @@ export const pagesConfig = [
     category: "project",
     subCategory: "PRAYAS",
     piName: "Prof (Dr) Debendra K Tripathy",
+    InstituteLogo: [
+      "assets/Images/iitbhilai.png",
+      "assets/logo/InstituteLogo/Aiims Raipur.png",
+    ], 
     date: "From :- 22/2/2024  -  To :- 21/2/2026 ",
     objImg: "assets/ProjectImages/objectives/obj5.png",
     workshop: "",
@@ -386,6 +390,11 @@ export const pagesConfig = [
     category: "project",
     subCategory: "TBI",
     piName: "Dr. Rajarshree Pal",
+    InstituteLogo: [
+      "assets/Images/iitbhilai.png",
+      "assets/logo/InstituteLogo/idbrt.png",
+      "assets/logo/InstituteLogo/IIT Roorkee.svg",
+    ], 
     date: "From :- 29/3/2022  -  To :- 28/3/2024 ",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
@@ -431,8 +440,10 @@ The Divyang ATM has a significant socio-economic impact by fostering financial i
     duration: "2 Year",
     category: "project",
     subCategory: "TBI",
-    piName:
-      "Prof. Santosh Biswas , Mr. Rudra Dutta Tiwari ,Mr. Arif khan, Mr. Pankaj Kumar",
+    piName:"Prof. Santosh Biswas , Mr. Rudra Dutta Tiwari ,Mr. Arif khan, Mr. Pankaj Kumar",
+    InstituteLogo: [
+      "assets/Images/iitbhilai.png",
+    ], 
     date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
     objImg: "assets/ProjectImages/objectives/obj3.png",
     workshop: "",
@@ -513,6 +524,9 @@ The Divyang ATM has a significant socio-economic impact by fostering financial i
     category: "project",
     subCategory: "TBI",
     piName: "Siddhartha Khare",
+    InstituteLogo: [
+      "assets/logo/InstituteLogo/IIT Roorkee.svg",
+    ],
     date: "From :- 30/3/2023  -  To :- 29/3/2025 ",
     objImg: "assets/ProjectImages/objectives/obj2.png",
     workshop: "",
@@ -604,6 +618,7 @@ The Divyang ATM has a significant socio-economic impact by fostering financial i
     category: "project",
     subCategory: "TSP",
     piName: "Dr. Marpe Sora",
+    piInstitute: "Rajiv Gandhi University, Arunachal Pradesh",
     date: "From :- 14/11/2023  -  To :- 13/11/2025",
     objImg: "assets/ProjectImages/objectives/obj4.png",
     workshop: "",
