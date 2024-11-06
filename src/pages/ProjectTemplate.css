@@ -105,6 +105,18 @@
 
 }
 
+.obj-img-achv {
+    height: 18em;
+    max-width: 60em;
+    /* width: 50%; */
+    border-radius: 100px;
+    /* border: 2px solid #6a0dad; Make border visible and consistent */
+    transition: transform 0.3s ease; /* Smooth image zoom on hover */
+    background-color: rgba(58, 16, 120, 0.2);
+    margin: 0px 20px;
+
+}
+
 .obj-img:hover {
     transform: scale(1.05); /* Slight zoom on hover for interaction */
 }
@@ -188,6 +200,14 @@
     .obj-container {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .obj-container-achiv {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 15px;
         margin-top: 10px;
     }
