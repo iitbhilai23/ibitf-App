@@ -16,7 +16,7 @@ const TechnologiesDevelopment = () => {
   return (
     <>
       <div className="technologies-development">
-        <h2 className="technologies-title">technologies Domain</h2>
+        <h2 className="technologies-title">Technology Domain</h2>
         <section className="cards">
           {technologiesDomain.map((technologiesDomain, index) => (
             <div key={index} className="card">

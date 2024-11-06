@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        
+         
         {/* About Section */}
         <div className="footer-section about">
           <h2>
@@ -40,7 +40,7 @@ const Footer = () => {
 
         {/* Services Section */}
         <div className="footer-section services">
-          <h3>Services</h3>
+          <h3>Programs & Initiatives</h3>
           <ul>
             {services.map((service, index) => (
               <li key={index}><a href="#">{service}</a></li>
@@ -59,14 +59,14 @@ const Footer = () => {
         </div>
 
         {/* Support Section */}
-        <div className="footer-section support">
+        {/* <div className="footer-section support">
           <h3>Support</h3>
           <ul>
             {support.map((item, index) => (
               <li key={index}><a href="#">{item}</a></li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
 
       {/* Footer Text */}

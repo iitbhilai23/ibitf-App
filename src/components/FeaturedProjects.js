@@ -7,43 +7,37 @@ const CARD_WIDTH = 200; // Width of each card
 const VISIBLE_CARDS = 4; // Number of cards visible at once
 
 const FeaturedProjects = () => {
-    const [index, setIndex] = useState(VISIBLE_CARDS); // Start from the centered set of cards
+    const [index, setIndex] = useState(VISIBLE_CARDS);
     const { featuredProjects } = siteContent;
 
-    // If there are only 5 cards, clone enough cards to enable seamless infinite scrolling
     const clonedProjects = [
-        ...featuredProjects.slice(-VISIBLE_CARDS), // Clone last 4 items at the start
+        ...featuredProjects.slice(-VISIBLE_CARDS),
         ...featuredProjects,
-        ...featuredProjects.slice(0, VISIBLE_CARDS) // Clone first 4 items at the end
+        ...featuredProjects.slice(0, VISIBLE_CARDS),
     ];
 
     useEffect(() => {
         const interval = setInterval(() => {
             handleNext();
-        }, 3000); // Adjust the time interval for speed
+        }, 3000);
         return () => clearInterval(interval);
     }, [index]);
 
     const handleNext = () => {
-        // Move one card forward
         setIndex((prevIndex) => prevIndex + 1);
     };
 
     const handlePrev = () => {
-        // Move one card backward
         setIndex((prevIndex) => prevIndex - 1);
     };
 
-    // Handle seamless looping
     useEffect(() => {
         if (index === clonedProjects.length - VISIBLE_CARDS) {
-            // Reset index to start after transition ends
             setTimeout(() => {
                 setIndex(VISIBLE_CARDS);
-            }, 500); // Delay to match transition duration
+            }, 500);
         }
         if (index === 0) {
-            // Jump to the end when scrolling backward from the start
             setTimeout(() => {
                 setIndex(clonedProjects.length - VISIBLE_CARDS * 2);
             }, 500);
@@ -72,7 +66,7 @@ const FeaturedProjects = () => {
                                 <p className="project-description">
                                     {project.description.length > 80 ? `${project.description.slice(0, 80)}...` : project.description}
                                 </p>
-                                <Link to={`/project/${project.id}`} className="read-more-button">
+                                <Link to={project.route} className="read-more-button">
                                     Read More
                                 </Link>
                             </div>
