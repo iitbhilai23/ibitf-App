@@ -16,7 +16,7 @@ const Journey = () => {
             )}
           </div>
         ))}
-      </div>
+      </div> 
     </div>
   );
 };

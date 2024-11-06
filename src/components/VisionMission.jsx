@@ -19,7 +19,7 @@ const VisionMission = () => {
           <p key={`mission-${index}`} className="vm-text">
             {item.text}
           </p>
-        ))}
+        ))} 
       </div>
     </div>
   );

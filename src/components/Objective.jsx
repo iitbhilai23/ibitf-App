@@ -14,7 +14,7 @@ const iconMapping = {
   Collaborations: <FaHandshake />,
   "Research & Development": <FaClipboardList />,
 };
-
+ 
 const ObjectivesPage = () => {
   return (
     <div className="objectives-container">

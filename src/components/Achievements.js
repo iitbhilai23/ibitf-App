@@ -16,7 +16,7 @@ const achievementsData = [
 
 // Counter component to handle counting animation or display string directly
 const Counter = ({ endValue, startCounting }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0); 
 
   useEffect(() => {
     if (!startCounting) return;
