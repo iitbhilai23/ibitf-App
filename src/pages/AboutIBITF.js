@@ -4,6 +4,8 @@ import "../styles/main.css"; // Your custom CSS
 import VisionMission from "../components/VisionMission";
 import Objective from "../components/Objective";
 import Journey from "../components/Journey";
+import Achievements from "../components/Achievements";
+import VisionCard from "../components/VisionCard";
 
 function AboutIBITF() {
   const { title, description, nodalCenter, vision } = siteContent.aboutPage;
@@ -15,6 +17,7 @@ function AboutIBITF() {
         <p>{description}</p>
       </section>
       <VisionMission />
+      <VisionCard />
       {/* Nodal Center Section */}
       <section className="nodal-center">
         <h2>{nodalCenter.title}</h2>
@@ -22,9 +25,10 @@ function AboutIBITF() {
       </section>
 
       {/* Vision Section */}
-
+    
       <Journey />
       <Objective />
+    
     </div>
   );
 }

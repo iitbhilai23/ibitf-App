@@ -8,6 +8,7 @@ import Project7 from "../assets/PDF/proposal/Project7.pdf";
 import Project8 from "../assets/PDF/proposal/Project8.pdf";
 import Project9 from "../assets/PDF/proposal/Project9.pdf";
 import Project10 from "../assets/PDF/proposal/Project10.pdf";
+import { FaLightbulb, FaFlask, FaPeopleArrows, FaGraduationCap, FaGlobe } from 'react-icons/fa';
 
 export const siteContent = {
   navbar: {
@@ -1303,4 +1304,27 @@ export const siteContent = {
       ],
     },
   ],
+  visionMissionData :[
+    {
+      icon: <FaLightbulb />,
+      text: 'Empowering young professionals and students to develop entrepreneurial skills',
+    },
+    {
+      icon: <FaFlask />,
+      text: 'Cutting-edge research and development.',
+    },
+    {
+      icon: <FaPeopleArrows />,
+      text: 'Contribution towards India’s leadership position in the technology revolution.',
+    },
+    {
+      icon: <FaGraduationCap />,
+      text: 'Capability and capacity building using HRD and skill development at various levels.',
+    },
+    {
+      icon: <FaGlobe />,
+      text: 'Building a sustainable ecosystem with national and international collaboration.',
+    },
+  ],
+  
 };
