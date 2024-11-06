@@ -254,7 +254,7 @@ export const siteContent = {
         description:
           "An e-payment system enables financial transactions or payments for goods and services to be made electronically, without the need for physical cheques or cash. It is a key component of any Fintech application.",
         // image: 'assets/service1.jpg'
-        route: "/aiFintech",
+        route: "/DigitalPayment",
         image: require("../assets/VectorIMG/E-Payment.jpeg"),
       },
       {
