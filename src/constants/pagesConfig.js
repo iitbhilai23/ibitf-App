@@ -362,7 +362,9 @@ export const pagesConfig = [
     component: "emergencyCare",
     description:
       "This project aims to develop a user-friendly interface with AI-integrated support for healthcare providers in remote areas, specifically targeting timely management of emergencies like heart attacks. It includes setting up 24/7 tele-access to emergency experts, optimizing digital tools for patient assessments and communication, and enhancing STEMI patient care through real-time consultations. Additionally, it focuses on informing patients about affordable medications and insurance options while facilitating knowledge transfer among healthcare professionals.",
-    images: ["assets/ProjectImages/pi_imagess/Dr.Devendra.png"],
+    images: ["assets/ProjectImages/pi_imagess/Dr.Devendra.png","assets/objective/1.png",
+      "assets/objective/2.png","assets/objective/3.png"
+    ],
     duration: "2 Year",
     category: "project",
     subCategory: "PRAYAS",
@@ -372,7 +374,10 @@ export const pagesConfig = [
     workshop: "",
     technicalDetails: "",
     publications: "",
-    achievements: "",
+    achievements:  [
+      { image: "assets/achievement/9.png", description: "Dr. Keshav Baliram Hedgewar Arogya Shri Award (2024) for “Digitizing Healthcare Information” conferred to the project team in the Future of Healthcare Forum 2024 in New Delhi." },
+     
+    ],
     startupName: "",
   },
   {
@@ -421,12 +426,7 @@ export const pagesConfig = [
     path: "/smartATM",
     component: "smartATM",
     description:
-      `“An Accessible Banking Solution for All”
-Divyang ATM, “An Accessible Banking Solution for All,” represents an innovative approach to banking designed to make financial services more accessible, especially for visually Divyang persons. This innovative system integrates an Android application with cutting-edge features to ensure a secure and convenient banking experience. Key functionalities include card verification, face recognition, QR code generation, SIM verification, and voice-based user input. The ATM is also equipped with Braille printed slips and cash dispensing capabilities, making it easier for users to manage their finances independently.
-
-The technology eliminates the need for physical PIN entry by utilizing mobile app-based voice commands and QR code scanning. This touch-free approach enhances security and provides a smooth and accessible user experience. The AI camera-based rotating display, Braille print-out, and voice-based instructions further support users, catering to their specific needs and improving usability.
-
-The Divyang ATM has a significant socio-economic impact by fostering financial inclusion and promoting self-reliance among Divyang individuals. It reduces fraud and enhances security, making it easier for users with disabilities to manage their finances independently. By providing a more inclusive banking solution, it supports the broader goal of integrating all individuals into the financial ecosystem.`,
+      `“An Accessible Banking Solution for All”/nDivyang ATM, “An Accessible Banking Solution for All,” represents an innovative approach to banking designed to make financial services more accessible, especially for visually Divyang persons. This innovative system integrates an Android application with cutting-edge features to ensure a secure and convenient banking experience. Key functionalities include card verification, face recognition, QR code generation, SIM verification, and voice-based user input. The ATM is also equipped with Braille printed slips and cash dispensing capabilities, making it easier for users to manage their finances independently./nThe technology eliminates the need for physical PIN entry by utilizing mobile app-based voice commands and QR code scanning. This touch-free approach enhances security and provides a smooth and accessible user experience. The AI camera-based rotating display, Braille print-out, and voice-based instructions further support users, catering to their specific needs and improving usability./nThe Divyang ATM has a significant socio-economic impact by fostering financial inclusion and promoting self-reliance among Divyang individuals. It reduces fraud and enhances security, making it easier for users with disabilities to manage their finances independently. By providing a more inclusive banking solution, it supports the broader goal of integrating all individuals into the financial ecosystem.`,
     images: ["assets/objective/28.png","assets/objective/29.png"],
     duration: "2 Year",
     category: "project",
@@ -438,7 +438,10 @@ The Divyang ATM has a significant socio-economic impact by fostering financial i
     workshop: "",
     technicalDetails: "",
     publications: "",
-    achievements: "",
+    achievements:  [
+      { image: "assets/achievement/8.png", description: "The Divyang ATM has been successfully installed at IIT Bhilai and National Association For The Blind (Prerna Bhavan), Raipur, C.G for comprehensive testing and validation. The ATM's features, including the AI camera-based rotating display, Braille print-outs, voice-based instructions, UPI-based cash withdrawal, and the Divyang mobile application for ATM transactions, have been thoroughly tested and validated by Divyang individuals, confirming its ability to meet their needs and enhance their banking experience." },
+      { image: "assets/achievement/7.png", description: `Recogx Pvt. Ltd. has been awarded by the prestigious "Making India Employable Rising Star Award 2024"` },
+    ],
     startupName: "",
   },
   {
@@ -518,8 +521,12 @@ The Divyang ATM has a significant socio-economic impact by fostering financial i
     workshop: "",
     technicalDetails: "",
     publications: "",
-    achievements:
-      "Selected among the top 5 startups in the Indian Geospatial Industry under the esteemed GW Startup Catalyst program. /n • Won first prize of AABTonics 2022 /n • Bronze award winner for ICON-ISRS Contest 2022 held at HICC Hyderabad during GeoSmart India conference. Award received from former ISRO chairman Dr. A.S. Kiran Kumar. /n • Workshop conducted in collaboration with Cognizance, IIT Roorkee on Application of GIS. A hands-on introductory training for those who are new to GIS and want to use QGIS and other plugins for GIS related work. /n • Bhoomicam and BhoomiFresh Application live on playstore. /n • Webtool now available at sense.bhoomicam.com /n • Successfully launched Bhoomicam application in Drone Seva Launch event in IIT Roorkee conducted by Bhoomicam. /n • Using Sentinel hub API for Webtool.",
+    achievements:[
+      { image: "assets/achievement/10.png", description: "Bhoomicam, has been honored with the prestigious Rising Start Award at the Making India Employable Conference and Awards 2024 held in Mumbai." },
+      { image: "assets/achievement/11.png", description: "BhoomiCam Pvt. Ltd. Start-up has been honored with the prestigious Best Geospatial Stratup Award at the National Geospatial awards 2024, organized by FOSSEE (GIS), held in VMCC, IIT Bombay under the aegies of the National Mission on Education, Government of India." },
+     
+    ],
+      
     startupName: "",
   },
   {
