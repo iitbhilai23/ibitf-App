@@ -421,7 +421,12 @@ export const pagesConfig = [
     path: "/smartATM",
     component: "smartATM",
     description:
-      "The fellowship aims to provide an AI based ATM solution for the visually impaired. This project is currently under the mentorship of Dr. Santosh Biswas along with the mentorship of TIH. It is currently a team of 4students which includes me, Satvik Vemuganti, Aditya Sankhla and Tushar Bansal. This ATM solution will single-handedly let blind people access ATMs without any help from others. This will also include various levels of security checks like face recognition, Geotagging and voice recognition.The solution includes the interface to be used in the ATM, a mobile app to be used by the user. The ATM software is built using Java while the app is built using Flutter. Other technologies like CNN and Geotagging are used for various features that are included in the system.",
+      `“An Accessible Banking Solution for All”
+Divyang ATM, “An Accessible Banking Solution for All,” represents an innovative approach to banking designed to make financial services more accessible, especially for visually Divyang persons. This innovative system integrates an Android application with cutting-edge features to ensure a secure and convenient banking experience. Key functionalities include card verification, face recognition, QR code generation, SIM verification, and voice-based user input. The ATM is also equipped with Braille printed slips and cash dispensing capabilities, making it easier for users to manage their finances independently.
+
+The technology eliminates the need for physical PIN entry by utilizing mobile app-based voice commands and QR code scanning. This touch-free approach enhances security and provides a smooth and accessible user experience. The AI camera-based rotating display, Braille print-out, and voice-based instructions further support users, catering to their specific needs and improving usability.
+
+The Divyang ATM has a significant socio-economic impact by fostering financial inclusion and promoting self-reliance among Divyang individuals. It reduces fraud and enhances security, making it easier for users with disabilities to manage their finances independently. By providing a more inclusive banking solution, it supports the broader goal of integrating all individuals into the financial ecosystem.`,
     images: [],
     duration: "2 Year",
     category: "project",
@@ -1199,7 +1204,7 @@ export const pagesConfig = [
 
   {
     title:
-      "“Digital Agri Village - Advancing the Digital Transformation of Agriculture in Tribal Dominating Areas of Chhattisgarh” under the Tribal Area Sub plan (TSP)",
+      "“Digital Agri Village - Advancing the Digital Transformation of Agriculture in Tribal Dominating Areas of Chhattisgarh”",
     path: "/DigitalAgriVillage",
     component: "DigitalAgriVillage",
     description:
@@ -1221,8 +1226,8 @@ export const pagesConfig = [
     date: "From :- 09/01/2024  -  To :- 08/01/2026 ",
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj5.png",
-    workshop: "",
-    workshopIMG: [],
+    workshop: `IIT Bhilai Innovation and Technology Foundation and Indira Gandhi Krishi Vishwavidyalaya jointly organized a “Digital Agri Village” workshop on 8th May 2024. The workshop was inaugurated by Padma Shri Phoolbasan Bai Yadav. The aim of this workshop is to elaborate on the innovative use of drones in agriculture to showcase the capabilities of drones in precision agriculture and provide training to empower local women in utilizing drones for various agricultural applications./nThe workshop had live demonstrations of drone technology for spraying services, seed sowing, and other agricultural practices. Participants had the opportunity to learn about the benefits of using drones in agriculture, including increased efficiency, reduced costs, and improved crop yields.`,
+    workshopIMG: ["assets/workshop/IMG_7054.JPG","assets/workshop/IMG_7045.JPG","assets/workshop/1.png","assets/workshop/2.png","assets/workshop/3.png"],
     technicalDetails:[
       "This technology helps to reduce the time and cost of acquiring farm implements, improve resource utilization, and promote sustainable farming practices.",
       "It enhances transparency, efficiency, and trust in the seed supply chain by providing real-time visibility into the journey of each batch of seeds.",
@@ -1230,8 +1235,8 @@ export const pagesConfig = [
   ],
     publications: "",
       achievements: [
-        { image: "assets/logo/InstituteLogo/IGKV Logo.png", description: "Achievement description 1" },
-        { image: "assets/logo/InstituteLogo/NIC Raipur Logo.jpg", description: "Achievement description 2" },
+        { image: "assets/achievement/4.png", description: "Awarded First Prize in Innovation Fair 2024 Organized by CCOST & IGKV, Raipur at Jagdalpur." },
+        { image: "assets/achievement/5.png", description: "Awarded Certificate of Appreciation in Innovation Fair, Kisan Mela & Exhibition 2024" },
       ],
       // achievements: "Single achievement description as a string.",
     achievementsIMG: ["assets/ProjectImages/objectives/obj5.png"],
@@ -1261,6 +1266,7 @@ export const pagesConfig = [
     duration: "2 Year",
     objImg: "assets/ProjectImages/objectives/obj1.png",
     workshop: "",
+    
     technicalDetails: [
       "Launched a mobile app to facilitate real-time communication between beneficiaries, academia, and healthcare partners, as well as disseminate health-related information to the community.",
       "The app empowers healthcare workers to communicate in the Dantewada region seamlessly. The idea is to sensitize healthcare workers so that they can translate medical advice to the remote population.",
