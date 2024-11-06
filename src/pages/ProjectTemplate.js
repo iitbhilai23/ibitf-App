@@ -74,9 +74,9 @@ const ProjectTemplate = () => {
         <div className={currentPage.category !== "event" ? "pi-section" : ""}>
           <div className="piNameSection">
             <div className="pi-side">
-            <span className="pi">PI</span>
+              <span className="pi">PI</span>
             </div>
-            <div style={{marginLeft: "10px"}}>
+            <div style={{ marginLeft: "10px" }}>
               <span className="pi-name">{currentPage.piName}</span>
               <br />
               <span className="pi-name">{currentPage?.piInstitute}</span>
@@ -103,10 +103,9 @@ const ProjectTemplate = () => {
         <Box
           sx={{
             backgroundColor: "#EEEDEB", // Reduced opacity
-            // height: "50vh",
+            padding: "20px",
             borderRadius: "20px",
             boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
-            // padding: "30px", // Add padding for content
             textAlign: "justify",
             display: "flex",
             flexDirection: "column",
@@ -149,30 +148,30 @@ const ProjectTemplate = () => {
               </span>
             )} */}
             {Array.isArray(currentPage.description) ? (
-  typeof currentPage.description[0] === "string" ? (
-    // If description is an array of strings, render each as a bullet point
-    <ul style={styles.sectionList}>
-      {currentPage.description.map((item, index) => (
-        <li key={index} style={styles.sectionItem}>
-          {item}
-        </li>
-      ))}
-    </ul>
-  ) : (
-    // If description is an array of objects, render each with heading and description
-    currentPage.description.map((section, index) => (
-      <div key={index} style={styles.section}>
-        <h2 style={styles.sectionHeading}>{section.heading}</h2>
-        <p style={styles.sectionDescription}>{section.description}</p>
-      </div>
-    ))
-  )
-) : (
-  // If description is a single string, render it normally
-  <span style={styles.boxDescription}>
-    {renderDescription(currentPage.description)}
-  </span>
-)}
+              typeof currentPage.description[0] === "string" ? (
+                // If description is an array of strings, render each as a bullet point
+                <ul style={styles.sectionList}>
+                  {currentPage.description.map((item, index) => (
+                    <li key={index} style={styles.sectionItem}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                // If description is an array of objects, render each with heading and description
+                currentPage.description.map((section, index) => (
+                  <div key={index} style={styles.section}>
+                    <h2 style={styles.sectionHeading}>{section.heading}</h2>
+                    <p style={styles.sectionDescription}>{section.description}</p>
+                  </div>
+                ))
+              )
+            ) : (
+              // If description is a single string, render it normally
+              <span style={styles.boxDescription}>
+                {renderDescription(currentPage.description)}
+              </span>
+            )}
 
             {/* {currentPage.category !== "event" && (
             <div className="obj-img">
@@ -285,33 +284,33 @@ const ProjectTemplate = () => {
                   <div style={styles.divider}></div>
                 </div>
                 <div className="obj-container">
-                  <span style={styles.description}  className="project-desc">
+                  <span style={styles.description} className="project-desc">
                     {/* {renderDescription(currentPage.technicalDetails)} */}
                     {Array.isArray(currentPage.description) ? (
-  typeof currentPage.description[0] === "string" ? (
-    // If description is an array of strings, render each as a bullet point
-    <ul style={styles.sectionList}>
-      {currentPage.technicalDetails.map((item, index) => (
-        <li key={index} style={styles.sectionItem}>
-          {item}
-        </li>
-      ))}
-    </ul>
-  ) : (
-    // If description is an array of objects, render each with heading and description
-    currentPage.description.map((section, index) => (
-      <div key={index} style={styles.section}>
-        <h2 style={styles.sectionHeading}>{section.heading}</h2>
-        <p style={styles.sectionDescription}>{section.description}</p>
-      </div>
-    ))
-  )
-) : (
-  // If description is a single string, render it normally
-  <span style={styles.boxDescription}>
-    {renderDescription(currentPage.technicalDetails)}
-  </span>
-)}
+                      typeof currentPage.description[0] === "string" ? (
+                        // If description is an array of strings, render each as a bullet point
+                        <ul style={styles.sectionList}>
+                          {currentPage.technicalDetails.map((item, index) => (
+                            <li key={index} style={styles.sectionItem}>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        // If description is an array of objects, render each with heading and description
+                        currentPage.description.map((section, index) => (
+                          <div key={index} style={styles.section}>
+                            <h2 style={styles.sectionHeading}>{section.heading}</h2>
+                            <p style={styles.sectionDescription}>{section.description}</p>
+                          </div>
+                        ))
+                      )
+                    ) : (
+                      // If description is a single string, render it normally
+                      <span style={styles.boxDescription}>
+                        {renderDescription(currentPage.technicalDetails)}
+                      </span>
+                    )}
                   </span>
                   <div className="obj-img">
                     <img
@@ -352,7 +351,7 @@ const ProjectTemplate = () => {
                       style={styles.image}
                     />
                   </div>
-                  <span style={styles.description}  className="project-desc">
+                  <span style={styles.description} className="project-desc">
                     {renderDescription(currentPage.publications)}
                   </span>
                 </div>
@@ -420,12 +419,24 @@ const ProjectTemplate = () => {
                 textAlign: "center",
               }}
             >
-              <div className="obj-cls">
-                Startup Name
-                {/* <div style={styles.divider}></div> */}
-              </div>
-              <div className="startUp-text">
-                <span>{currentPage.startupName}</span>
+              <div className="startup-main-cnt">
+                <div>
+                  <div className="obj-cls">
+                    Startup Name
+                    <div style={styles.divider}></div>
+                  </div>
+                  <div className="startUp-text">
+                    <span>{currentPage.startupName}</span>
+                  </div>
+                </div>
+                {currentPage.startupLogo && (
+                  <>
+                    <div className="vertical-divider"></div>
+                    <div className="startup-img-cnt">
+                      <img src={require(`../${currentPage.startupLogo}`)} alt="logo startup" className="startup-img" />
+                    </div>
+                  </>
+                )}
               </div>
             </Box>
           </>
@@ -455,7 +466,7 @@ const styles = {
     width: "50%",
     height: "3px",
     backgroundColor: "#6a0dad",
-    margin: "15px auto",
+    margin: "10px auto 10px",
     borderRadius: "4px",
   },
   description: {
@@ -552,7 +563,7 @@ const styles = {
     // textDecoration: "underline",
   },
 
-  sectionList : {
+  sectionList: {
     textAlign: "start"
   },
   sectionDescription: {

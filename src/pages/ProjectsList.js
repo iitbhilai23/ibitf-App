@@ -10,11 +10,12 @@ const ProjectsList = () => {
 
   const queryParams = new URLSearchParams(location.search);
   const initialTab = queryParams.get('tab') || 'project';
- 
+
   const [activeTab, setActiveTab] = useState(initialTab);
   const [selectedSubCategory, setSelectedSubCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState(''); // State for search term
   const targetRef = useRef(null);
+
 
   useEffect(() => {
     // Update URL query params when the active tab changes
@@ -97,7 +98,26 @@ const ProjectsList = () => {
     },
     TSP: {
       title: 'Tribal Area Sub Plan (TSP)',
-      description: 'The primary objective of the Tribal Area Sub-Plan (TSP) is to significantly enhance the livelihoods of Scheduled Tribe (ST) communities by integrating advanced financial technologies. This initiative aims to address the specific challenges faced by these communities through the strategic deployment of cutting-edge technologies such as Artificial Intelligence/Machine Learning (AI/ML), Internet of Things (IoT), Blockchain, and E-Payments. ',
+      subHead: 'About The Scheme',
+      description: 'The primary objective of the Tribal Area Sub-Plan (TSP) is to significantly enhance the livelihoods of Scheduled Tribe (ST) communities by integrating advanced financial technologies. This initiative aims to address the specific challenges faced by these communities through the strategic deployment of cutting-edge technologies such as Artificial Intelligence/Machine Learning (AI/ML), Internet of Things (IoT), Blockchain, and E-Payments.',
+      subTxt: 'By focusing on critical areas including FinTech, HealthTech and AgirTech. The scheme aims to accomplish the following:',
+      text1: [
+        'Quality of Life: Enhance living conditions with innovative technologies, ensuring  individuals experience better living standards and growth opportunities.',
+        'Empower Communities: Strengthen communities through training and skill development, fostering social entrepreneurship and local development.',
+        'Economic Stability: Promote sustainable economic growth, financial inclusion, and support for microenterprises and small-scale agriculture using fintech solutions.',
+        'Access to Services: Improve access and quality of essential services like healthcare, education, and energy through digital technologies.',
+      ],
+      subTxt2: "Under the Tribal Area Sub Plan Scheme of the Government of India:-",
+      text2: [
+        'IBITF has funded 54 projects across the country, with 36 ongoing projects in the Northeast region, 13 ongoing projects in Chhattisgarh, and 05 ongoing projects in other states.',
+        'The initiative has supported over 23 women entrepreneurs, highlighting the program’s commitment to gender inclusion and the economic empowerment of women in tribal areas.',
+        'A High-Performance Computing (HPC)/GPU facility has been established at IIT Bhilai, which can be utilized by all projects. Individual projects operational at remote locations could share the High-Performance Computing (HPC)/GPU facility support/Cloud Servers provided by IBITF.',
+      ],
+      projectImg: [
+        'assets/ProjectImages/tsp/22.jpeg',
+        'assets/ProjectImages/tsp/23.png',
+        'assets/ProjectImages/tsp/24.png'
+      ]
     },
     TD: {
       title: 'Technology Development (TD)',
@@ -182,14 +202,17 @@ const ProjectsList = () => {
 
         {selectedSubCategory && subCategoryDetails[selectedSubCategory] && (
           <Paper elevation={3} sx={styles.fullWidthCard}>
-            <Typography variant="h6" sx={styles.fullWidthCardTitle}>
+            <Typography variant="h4" sx={styles.fullWidthCardTitle}>
               {subCategoryDetails[selectedSubCategory]?.title}
             </Typography>
             <Typography variant="body1" sx={styles.fullWidthCardText}>
               {subCategoryDetails[selectedSubCategory]?.description}
+            </Typography><br />
+            <Typography variant="h5" sx={styles.fullWidthCardText}>
+              {subCategoryDetails[selectedSubCategory]?.subHead}
             </Typography>
             {/* Display bullet points if they exist */}
-            {subCategoryDetails[selectedSubCategory]?.bulletPoints && (
+            {/* {subCategoryDetails[selectedSubCategory]?.bulletPoints && (
               <ul style={styles.bulletPointsList}>
                 {subCategoryDetails[selectedSubCategory]?.bulletPoints.map((point, index) => (
                   <li key={index} style={styles.bulletPoint}>
@@ -197,10 +220,42 @@ const ProjectsList = () => {
                   </li>
                 ))}
               </ul>
+            )} */}
+            <ul style={styles.sectionList}>
+              {subCategoryDetails[selectedSubCategory]?.text1?.map((item, index) => (
+                <li key={index} style={styles.sectionItem}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            {selectedSubCategory === 'TSP' && (
+              <div style={styles.tspImageCnt}>
+                <img src={require(`../${subCategoryDetails[selectedSubCategory]?.projectImg[0]}`)} alt='Tsp image' style={styles.tspImage} />
+              </div>
+            )}
+            <Typography variant="h5" sx={styles.fullWidthCardText}>
+              {subCategoryDetails[selectedSubCategory]?.subTxt2}
+            </Typography>
+            <ul style={styles.sectionList}>
+              {subCategoryDetails[selectedSubCategory]?.text2?.map((item, index) => (
+                <li key={index} style={styles.sectionItem}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            {selectedSubCategory === 'TSP' && (
+              <div style={styles.tspImageCnt2}>
+                <div style={styles.tspImageCnt}>
+                  <img src={require(`../${subCategoryDetails[selectedSubCategory]?.projectImg[1]}`)} alt='Tsp image' style={styles.tspImage} />
+                </div>
+                <div style={styles.tspImageCnt}>
+                  <img src={require(`../${subCategoryDetails[selectedSubCategory]?.projectImg[2]}`)} alt='Tsp image' style={styles.tspImage} />
+                </div>
+              </div>
             )}
           </Paper>
         )}
-        <Box sx={{display:"flex",justifyContent:"end", margin:"20px 20px"}}>
+        <Box sx={{ display: "flex", justifyContent: "end", margin: "20px 20px" }}>
           {selectedSubCategory && (
             <TextField
               variant="outlined"
@@ -361,6 +416,26 @@ const styles = {
     color: '#555',
     marginBottom: '5px',
   },
+  tspImageCnt: {
+    width:"100%",
+    maxWidth: "400px",
+    height: "300px",
+    margin: "0 auto 10px",
+    borderRadius: "12px",
+    background: " rgba(58, 16, 120, 0.2)",
+    border: "1px solid #6a0dad",
+    boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
+  },
+  tspImageCnt2: {
+    display: "flex",
+    flexDirection: 'row',
+    gap: "10px",
+  },
+  tspImage: {
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
+  }
 };
 
 export default ProjectsList;
