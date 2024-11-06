@@ -106,15 +106,15 @@
 }
 
 .obj-img-achv {
-    height: 18em;
-    max-width: 60em;
+    height: 14em;
+    /* max-width: 60em; */
     /* width: 50%; */
     border-radius: 100px;
     /* border: 2px solid #6a0dad; Make border visible and consistent */
     transition: transform 0.3s ease; /* Smooth image zoom on hover */
-    background-color: rgba(58, 16, 120, 0.2);
+    /* background-color: rgba(58, 16, 120, 0.2); */
     margin: 0px 20px;
-
+    margin-bottom: 20px;
 }
 
 .obj-img:hover {
