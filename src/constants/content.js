@@ -227,14 +227,14 @@ export const siteContent = {
       { name: "Instagram", url: "https://instagram.com" },
       { name: "LinkedIn", url: "https://linkedin.com" },
     ],
-    links: ["About Us", "Blog posts", "Services", "Contact us"],
-    services: [
-      "Web Design",
-      "Development",
-      "Marketing Plans",
-      "Digital Services",
+    links: ["Home", "About us", "Career", "Contact us"],
+     services : [
+      "Thematic Area",
+      "Schemes",
+      "Call for Proposals",
+      "Blogs",
     ],
-    info: ["Offline SEO", "Development", "Growth Hacking", "Branding"],
+    info: ["IIT Bhilai", "About Ibitf", "Projects", "Team"],
     support: ["FAQ", "Help", "Privacy Policy", "Terms"],
   },
 
