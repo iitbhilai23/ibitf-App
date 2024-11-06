@@ -247,7 +247,7 @@ export const siteContent = {
         route: "/IndigenousMedicinalPlants",
         image: require("../assets/VectorIMG/meditech.jpg"),
       },
-    ],
+    ], 
 
     technologiesDomain: [
       {

@@ -12,7 +12,7 @@ const VisionCard = () => {
             <div className="icon">{item.icon}</div>
             <p>{item.text}</p>
           </div>
-        ))}
+        ))} 
       </div>
     </div>
   );

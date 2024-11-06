@@ -11,7 +11,7 @@ const VisionMission = () => {
           <p key={`vision-${index}`} className="vm-text">
             {item.text}
           </p>
-        ))}
+        ))} 
       </div>
       <div className="vm-card">
         <h2 className="vm-heading right">Mission</h2>
