@@ -621,7 +621,7 @@ export const siteContent = {
         img: require("../assets/thematic/blockchain.png"),
       },
       {
-        title: "Artificail Intelligence",
+        title: "Artificial Intelligence",
         desc: "Application of AI techniques to the Fintech arena facilitate predicting market trends, customized financial advices to enrich user experience, enhancing security, credit risk assessment, valuation modeling etc.",
         subdescription: [
           {
