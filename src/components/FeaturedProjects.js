@@ -64,7 +64,8 @@ const FeaturedProjects = () => {
                             <div className="project-content">
                                 <h3 className="project-title">{project.title}</h3>
                                 <p className="project-description">
-                                    {project.description.length > 80 ? `${project.description.slice(0, 80)}...` : project.description}
+                                {project.description.length > 80 ? `${project.description.slice(0, 80)}...` : project.description}
+                                {/* {project.description} */}
                                 </p>
                                 <Link to={project.route} className="read-more-button">
                                     Read More
