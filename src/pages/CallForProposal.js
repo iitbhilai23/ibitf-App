@@ -9,7 +9,6 @@ const CallForProposals = () => {
     const { pdfLink, url } = button;
 
     if (pdfLink) {
-      
       window.open(pdfLink, '_blank');
     } else if (url) {
       

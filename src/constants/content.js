@@ -4,8 +4,8 @@ import tbiScheme from "../assets/PDF/proposal/tbiScheme.pdf";
 import chairProfessor from "../assets/PDF/proposal/chairProfessor.pdf";
 import fellowship from "../assets/PDF/proposal/Faculty_Fellowship4.pdf";
 import doctoralFellowship from "../assets/PDF/proposal/doctrolFellowship6.pdf";
-import Project7 from "../assets/PDF/proposal/Project7.pdf";
-import Project8 from "../assets/PDF/proposal/Project8.pdf";
+import Project0707 from "../assets/PDF/proposal/Project7.pdf";
+import Project2107 from "../assets/PDF/proposal/Project8.pdf";
 import Project9 from "../assets/PDF/proposal/Project9.pdf";
 import Project10 from "../assets/PDF/proposal/Project10.pdf";
 import {
@@ -774,7 +774,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink:"", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
@@ -792,7 +792,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", 
+          pdfLink: card2pdf, 
         },
         {
           text: "Submit Your Proposal",
@@ -810,7 +810,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink: tbiScheme, 
         },
         {
           text: "Submit Your Proposal",
@@ -829,7 +829,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink: fellowship, 
         },
         {
           text: "Submit Your Proposal",
@@ -846,7 +846,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink: chairProfessor, // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
@@ -864,7 +864,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink: doctoralFellowship, // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
@@ -883,7 +883,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink: Project0707, // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
@@ -901,7 +901,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink: Project2107, // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
@@ -919,7 +919,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink: Project9, // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
@@ -937,7 +937,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+          pdfLink: Project10, // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
