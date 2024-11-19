@@ -764,222 +764,184 @@ export const siteContent = {
     },
   ],
   cardDataForCFP: [
+
+    {
+      id: 1,
+    
+      mainHeading: "Call for Proposals: Social Impact Startups/Projects",
+      description: "",
+      lastDate: "This is a rolling advertisement",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
+        },
+        {
+          text: "Submit Your Proposal",
+          url: "https://google.com/", // Replace with the actual URL
+        },
+      ],
+    },
     {
       id: 2,
+  
       mainHeading: "Special Call for Proposals for Scheduled Tribes (ST)",
-      subHeading: "Special Call for Proposals for Scheduled Tribes (ST)",
       description:
         "IBITF invites applications for conducting training programmes, workshops, conferences under Scheduled Tribe in Fintech Area.",
       lastDate: "This is a rolling advertisement",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: card2pdf,
+          pdfLink: "path_to_your_pdf_file.pdf", 
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://google.com/", 
         },
       ],
     },
     {
       id: 3,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call for Proposals for TBI Scheme",
+    
+      mainHeading: "Call for Proposals for TBI Scheme",
       description:
         "Proposals are invited by IBITF under the Technology Business Incubator schemes.",
       lastDate: "This is a rolling advertisement",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: tbiScheme,
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://google.com/", // Replace with the actual URL
         },
       ],
     },
 
     {
       id: 4,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call for Proposals for Faculty Fellowship",
+     
+      mainHeading: "Call for Proposals for Faculty Fellowship",
       description:
         "Proposals are invited by IBITF under the faculty fellowship scheme.",
       lastDate: "",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: fellowship,
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://google.com/", // Replace with the actual URL
         },
       ],
     },
     {
       id: 5,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call for Proposals for Chair Professor",
+      
+      mainHeading: "Call for Proposals for Chair Professor",
       description: "Proposals are invited by IBITF to join as Chair Professor.",
       lastDate: "",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: chairProfessor,
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://google.com/", // Replace with the actual URL
         },
       ],
     },
     {
       id: 6,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
+     
+      mainHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
       description:
         "Proposals are invited by IBITF under the Post Doctoral Fellowship schemes.",
       lastDate: "This is a rolling advertisement",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: doctoralFellowship,
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://google.com/", // Replace with the actual URL
         },
       ],
     },
-    {
-      id: 1,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call for Proposals: Social Impact Startups/Projects",
-      description: "",
-      lastDate: "This is a rolling advertisement",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          action: "action1",
-          pdfLink: SpecialCall,
-        },
-        {
-          text: "Submit your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Application Submission",
-          body: "Please find my application attached.",
-        },
-      ],
-    },
+    
     {
       id: 7,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
+    
+      mainHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
       description:
         "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
       lastDate: "This is a rolling advertisement",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: Project7,
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
         },
       ],
     },
     {
       id: 8,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call for Proposal for Fellowships",
+      
+      mainHeading: "Call for Proposal for Fellowships",
       description:
         "Proposals are invited by IBITF for BTech, MTech & PhD Fellowships.",
       lastDate: "This is a rolling advertisement",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: Project8,
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
         },
       ],
     },
     {
       id: 9,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call for Proposal under Virtual Incubation (VI)",
+     
+      mainHeading: "Call for Proposal under Virtual Incubation (VI)",
       description:
         "Eligibility criteria : All start-ups operating in the FinTech area, incorporated by January 2022, and incubated in TIHs/Incubation Centres/Startup Hubs located in Institutes of Higher Learning/Established by State/Central Government.IBITF could offer up to INR 50 lakhs in funding support (in exceptional cases the support could be up to INR 1.0 cr depending on the DPR) over two years based on the business model and project proposal in the area of FinTech.",
       lastDate: "",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: Project9,
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
         },
       ],
     },
     {
       id: 10,
-      mainHeading: "Open Call for Proposals (Rolling Advertisement Proposals)",
-      subHeading: "Call For Proposals for Technology Development in FinTech",
+      
+      mainHeading: "Call For Proposals for Technology Development in FinTech",
       description:
         "Inviting Researchers from the institutions of Higher Learning (Centrally/state Funded Institutions of higher learning or NAAC Accredited Institution with Grade A).",
       lastDate: "",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          action: "action3",
-          pdfLink: Project10,
+          pdfLink: "path_to_your_pdf_file.pdf", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
-          action: "email",
-          email: "tih@iitbhilai.ac.in",
-          subject: "Inquiry About Proposal",
-          body: "I have some questions regarding the proposal.",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
         },
       ],
     },
