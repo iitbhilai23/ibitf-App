@@ -801,6 +801,25 @@ body {
   gap: 20px;
 }
 
+.schemes-heading {
+  text-align: center;
+  color: #000; 
+  font-size: 1.8rem; 
+  margin-bottom: 20px; 
+  font-weight: bold;
+  position: relative; 
+}
+
+.schemes-heading::after {
+  content: '';
+  display: block;
+  width: 100px; 
+  height: 3px; 
+  background-color: #6a0dad; 
+  margin: 10px auto 0; 
+}
+
+
 .card-scheme {
   background: #ffffff;
   border-radius: 10px;
