@@ -833,7 +833,7 @@ export const siteContent = {
         },
         {
           text: "Submit Your Proposal",
-          url: "https://google.com/", // Replace with the actual URL
+          url: "https://docs.google.com/forms/d/e/1FAIpQLScczCpJZUPOq9rtUC3qF8wGRlu4I0cVWoP7nDR0fyRNufxAuQ/viewform?usp=sf_link", // Replace with the actual URL
         },
       ],
     },
@@ -868,7 +868,7 @@ export const siteContent = {
         },
         {
           text: "Submit Your Proposal",
-          url: "https://google.com/", // Replace with the actual URL
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSei8Aa6l-4opSeaY2E61ssWtm_YLEZqZgkCfg70KaFkEFI6tw/viewform?usp=sf_link", // Replace with the actual URL
         },
       ],
     },
@@ -905,7 +905,7 @@ export const siteContent = {
         },
         {
           text: "Submit Your Proposal",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSc-6YXbMYw0T196GXQGoYS0AyPb5Og5Tu94s_yvkvsNFs0ATA/viewform", // Replace with the actual URL
         },
       ],
     },
