@@ -5,13 +5,13 @@ import { FiActivity, FiFileText, FiTrendingUp, FiUsers, FiDollarSign, FiBox, FiU
 // Define the data array with icons and titles
 const achievementsData = [
   { icon: <FiActivity />, title: "Projects", count: 94 },
-  { icon: <FiFileText />, title: "MOU's", count: 28 },
+  { icon: <FiFileText />, title: "Fellowships", count: 28 },
   { icon: <FiTrendingUp />, title: "Startups", count: 25 },
   { icon: <FiUsers />, title: "Workshops", count: 105 },
-  { icon: <FiDollarSign />, title: "Revenue Generated", count: "14.56 Cr" }, // String value
+  { icon: <FiDollarSign />, title: "Revenue Generated", count: "12.12 Cr" }, // String value
   { icon: <FiBox />, title: "Products Deployed", count: 7 },
   { icon: <FiUserCheck />, title: "Manpower Trained", count: 3759 },
-  { icon: <FiBriefcase />, title: "Direct Jobs", count: 350 },
+  { icon: <FiBriefcase />, title: "Direct Jobs", count: 280 },
 ];
 
 // Counter component to handle counting animation or display string directly
