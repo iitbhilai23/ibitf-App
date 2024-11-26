@@ -630,7 +630,7 @@ export const siteContent = {
               "Feature selection and ranking",
               "Prediction models",
               "Handling dynamic data",
-              "Handling unstructured data",
+              "Handling unstructured data ",
             ],
           },
           {
