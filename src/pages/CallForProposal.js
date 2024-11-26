@@ -6,12 +6,14 @@ const CallForProposals = () => {
   const { cardDataForCFP } = siteContent;
 
   const handleButtonClick = (button) => {
-    const { pdfLink, email, subject, body } = button;
+    const { pdfLink, url } = button;
+
     if (pdfLink) {
+      
       window.open(pdfLink, '_blank');
-    } else if (email) {
-      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject || '')}&body=${encodeURIComponent(body || '')}`;
-      window.location.href = mailtoLink;
+    } else if (url) {
+      
+      window.open(url, '_blank');
     } else {
       console.log('Button clicked with no action.');
     }
@@ -24,7 +26,7 @@ const CallForProposals = () => {
         {cardDataForCFP.map((card) => (
           <div key={card.id} className="cardArea">
             <div className="card-content">
-              {card.subHeading && <h4 className="card-subheading">{card.subHeading}</h4>}
+              {card.mainHeading && <h4 className="card-subheading">{card.mainHeading}</h4>}
               <p className="card-description">{card.description}</p>
               <p className="last-date">{card.lastDate}</p>
             </div>
