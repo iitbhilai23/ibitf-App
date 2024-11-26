@@ -5,45 +5,62 @@ import { FiActivity, FiFileText, FiTrendingUp, FiUsers, FiDollarSign, FiBox, FiU
 // Define the data array with icons and titles
 const achievementsData = [
   { icon: <FiActivity />, title: "Projects", count: 94 },
-  { icon: <FiFileText />, title: "MOU's", count: 28 },
+  { icon: <FiFileText />, title: "Fellowships", count: "100+" },
   { icon: <FiTrendingUp />, title: "Startups", count: 25 },
   { icon: <FiUsers />, title: "Workshops", count: 105 },
-  { icon: <FiDollarSign />, title: "Revenue Generated", count: "14.56 Cr" }, // String value
+  { icon: <FiDollarSign />, title: "Revenue Generated", count: "12.12 Cr" }, // String value
   { icon: <FiBox />, title: "Products Deployed", count: 7 },
   { icon: <FiUserCheck />, title: "Manpower Trained", count: 3759 },
-  { icon: <FiBriefcase />, title: "Direct Jobs", count: 350 },
+  { icon: <FiBriefcase />, title: "Direct Jobs", count: 280 },
 ];
 
-// Counter component to handle counting animation or display string directly
 const Counter = ({ endValue, startCounting }) => {
-  const [count, setCount] = useState(0); 
+  const [count, setCount] = useState(0);
+  const [isStringCount, setIsStringCount] = useState(false);
 
   useEffect(() => {
+    let timer;  
     if (!startCounting) return;
 
-    if (typeof endValue === 'string') {
+    if (typeof endValue === 'string' && endValue.includes('+')) {
+      const numericValue = parseInt(endValue.replace('+', ''), 10);
+      setIsStringCount(true);
+      let start = 0;
+      const increment = numericValue / 100;
+      timer = setInterval(() => {
+        start += increment;
+        if (start >= numericValue) {
+          setCount(numericValue);
+          clearInterval(timer);
+        } else {
+          setCount(Math.ceil(start));
+        }
+      }, 20);
+    } else if (typeof endValue === 'string') {
       setCount(endValue);
-      return;
+    } else {
+      let start = 0;
+      const increment = endValue / 100;
+      timer = setInterval(() => {
+        start += increment;
+        if (start >= endValue) {
+          setCount(endValue);
+          clearInterval(timer);
+        } else {
+          setCount(Math.ceil(start));
+        }
+      }, 20);
     }
-
-    // Counting animation for numeric values
-    let start = 0;
-    const increment = endValue / 100;
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= endValue) {
-        setCount(endValue);
+    return () => {
+      if (timer) {
         clearInterval(timer);
-      } else {
-        setCount(Math.ceil(start));
       }
-    }, 20);
-
-    return () => clearInterval(timer);
+    };
   }, [endValue, startCounting]);
 
-  return <span>{count.toLocaleString()}</span>;
+  return <span>{isStringCount ? `${count}+` : count.toLocaleString()}</span>;
 };
+
 
 // Achievements component with grid display and intersection observer
 const Achievements = () => {
