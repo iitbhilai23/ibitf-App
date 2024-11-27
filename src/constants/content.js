@@ -964,24 +964,24 @@ export const siteContent = {
         },
       ],
     },
-    {
-      id: 12,
+    // {
+    //   id: 12,
       
-      mainHeading: "Call For Proposals for Technology Development in FinTech",
-      description:
-        "Inviting Researchers from the institutions of Higher Learning (Centrally/state Funded Institutions of higher learning or NAAC Accredited Institution with Grade A).",
-      lastDate: "",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: Project10, // Replace with actual PDF URL
-        },
-        {
-          text: "Submit Your Proposal",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
-        },
-      ],
-    },
+    //   mainHeading: "Call For Proposals for Technology Development in FinTech",
+    //   description:
+    //     "Inviting Researchers from the institutions of Higher Learning (Centrally/state Funded Institutions of higher learning or NAAC Accredited Institution with Grade A).",
+    //   lastDate: "",
+    //   buttons: [
+    //     {
+    //       text: "Detailed Call for Proposal",
+    //       pdfLink: Project10, // Replace with actual PDF URL
+    //     },
+    //     {
+    //       text: "Submit Your Proposal",
+    //       url: "https://example.com/submit-proposal", // Replace with the actual URL
+    //     },
+    //   ],
+    // },
   
   ],
   CollaborationBy: {
