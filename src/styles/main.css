@@ -436,78 +436,6 @@ body {
 
 
 
-/* for career page design  */
-
-.career-page {
-  margin: 0 auto;
-  padding: 25px 40px;
-
-  background-color: #f9f9f9;
-}
-
-.career-page h2 {
-  text-align: center;
-  color: #4d3e90;
-  margin-bottom: 20px;
-}
-
-.career-page p {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #0f0f0f;
-  margin-bottom: 40px;
-}
-
-.career-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 50px;
-  box-shadow: 2px 4px 5px 0px lightgray;
-
-}
-
-.career-table th {
-  background-color: #6a0dad;
-  color: white;
-  font-size: 0.9rem;
-  padding: 14px 15px;
-  text-align: left;
-  text-transform: capitalize;
-  letter-spacing: 0.6px;
-}
-
-.career-table td {
-  padding: 8px 15px;
-  text-align: left;
-  background-color: #fff;
-  color: #333;
-  font-size: 0.9rem;
-}
-
-.career-table tr:nth-child(even) td {
-  background-color: #f3f3f3;
-}
-
-.career-table tr:nth-child(odd) td {
-  background-color: #ffffff;
-}
-
-.career-table tr:hover td {
-  background-color: #e6e6e6;
-}
-
-.apply-link,
-.download-link {
-  color: #e63946;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.apply-link:hover,
-.download-link:hover {
-  text-decoration: underline;
-}
-
 
 
 /* AboutIIT Page design */
@@ -1312,49 +1240,93 @@ body::-webkit-scrollbar-thumb:hover {
  }
 }
 
-/* career-page */
+
+/* for career page design  */
 
 .career-page {
-  padding: 20px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 25px 40px;
+
+  background-color: #f9f9f9;
 }
 
 .career-page h2 {
-  font-size: 2rem;
+  text-align: center;
+  color: #4d3e90;
+  margin-bottom: 20px;
 }
 
 .career-page p {
-  font-size: 1rem;
-  margin: 10px 0;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0f0f0f;
+  margin-bottom: 40px;
 }
 
 .career-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin-bottom: 50px;
+  box-shadow: 2px 4px 5px 0px lightgray;
+
+}
+
+/* .career-table th {
+  background-color: #6a0dad;
+  color: white;
+  font-size: 0.9rem;
+  padding: 14px 15px;
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: 0.6px;
+}
+
+.career-table td {
+  padding: 8px 15px;
+  text-align: left;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+} */
+.career-table th {
+  background-color: #6a0dad;
+  color: white;
+  border: 0.5px solid #7246af !important;
 }
 
 .career-table th,
 .career-table td {
-  padding: 15px;
+  padding: 15px 10px !important;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: 1px solid #ddd;
 }
 
-.career-table th {
-  background-color: var(--primary-color);
-  color: #fff;
+.career-table tr:nth-child(even) td {
+  background-color: #f3f3f3;
 }
 
-.career-table .download-link,
-.career-table .apply-link {
+.career-table tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+.career-table tr:hover td {
+  background-color: #e6e6e6;
+}
+
+.apply-link,
+.download-link {
   color: #e63946;
+  font-weight: bold;
   text-decoration: none;
 }
-.career-table-container{
-  overflow-x: auto;
+
+.apply-link:hover,
+.download-link:hover {
+  text-decoration: underline;
 }
+
 @media (max-width: 1024px) {
   .career-page h2 {
     font-size: 1.8rem;
@@ -1421,6 +1393,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+
 @media (max-width: 480px) {
   .career-page h2 {
     font-size: 1.4rem;
@@ -1440,6 +1413,12 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 4px;
   }
 }
+
+
+
+
+
+
 .projects-cards-clicked{
 
   padding: 0 170px;

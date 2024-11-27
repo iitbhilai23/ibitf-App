@@ -1201,7 +1201,7 @@ export const siteContent = {
       title: "Project Associate (under MTS rules)",
       positions: "02",
       qualifications:
-        "Master’s or Bachelor's Degree in Science/ Commerce /Computer Science/Computer Applications/ IT or Bachelor’s Degree in Engineering",
+        "Master’s/Bachelor’s in Science, Commerce, CS, IT, or Engineering.",
       experience: "As Per Advertisement Attached",
       contractPeriod: "89 Days (extendable)",
       ageLimit: "Up to 45 years",
@@ -1216,7 +1216,7 @@ export const siteContent = {
       title: "Recruitment of various Project positions at IBITF",
       positions: "05",
       qualifications:
-        "MTech/BTech M.Sc/M.C.A/ME/MS in Computer Science , Bachelor in Commerce/BSc",
+        "MTech/BTech, M.Sc/MCA, ME/MS in Computer Science, or B.Com/BSc.",
       experience: "As Per Advertisement Attached",
       contractPeriod: "1 Year",
       ageLimit: "Up to 45 years",
@@ -1259,7 +1259,7 @@ export const siteContent = {
       title: "Recruitment of various Project positions of VSK",
       positions: "22",
       qualifications:
-        "Master’s Degree in Finance/Economics or Chartered Accountant",
+        "Master’s in Finance/Economics or Chartered Accountant",
       experience: "As Per Advertisement Attached",
       contractPeriod: "1 Year (extendable)",
       ageLimit: "Up to 45 years",
