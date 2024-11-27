@@ -765,7 +765,7 @@ export const siteContent = {
     {
       id: 14,
 
-      mainHeading: " Call For Proposal Under the CPS- SSS(Seed Support System)",
+      mainHeading: "Call For Proposal Under the CPS- SSS(Seed Support System)",
       description:
         " Seed Support System (SSS) is a scheme under IBITF funded by the National Mission- Interdisciplinary Cyber-Physical System (NM-ICPS), Department of Science and Technology (DST) that provides financial assistance to start-ups with promising ideas, innovations, and technologies. A wide gap exists in financial support required by technology-driven start-ups in their initial phase, which is not being addressed properly. ",
       lastDate: "",
@@ -782,9 +782,8 @@ export const siteContent = {
     },
     {
       id: 13,
-
       mainHeading:
-        " Invites Call For Proposal Under the CPS- DIAL(Dedicated Innovation Accelerator)",
+        "Call For Proposal Under the CPS- DIAL(Dedicated Innovation Accelerator)",
       description:
         "Accelerators are post-incubation initiatives linked to existing incubators, aimed at supplementing and lementing the scaling-up of startups. It aims to focus on directing targeted resources to help startups to validate product ideas, engage with customers, and scale their operations while enhancing the incubators' ongoing activities. Accelerators also helps in realizing and deciding whether to create a scalable start-up from a very nascent stage. The basic objectives of DIAL involve",
       lastDate: "",
@@ -1223,7 +1222,7 @@ export const siteContent = {
       ageLimit: "Up to 45 years",
       location: "IBITF Bhilai",
       lastDate: "11th December 2024",
-      downloadLink: require("../assets/PDF/career/Advertisement_November_2024..docx.pdf"),
+      downloadLink: require("../assets/PDF/career/AdvertiseNovember.pdf"),
       applyLink:
         "https://docs.google.com/forms/d/1KevUcGv9Rz2BdIfMjrEgp92dIV-WyfodEkHSU4Tvkg8/viewform",
       applyText: "Apply Now",
