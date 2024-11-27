@@ -4,12 +4,15 @@ import tbiScheme from "../assets/PDF/proposal/tbiScheme.pdf";
 import chairProfessor from "../assets/PDF/proposal/chairProfessor.pdf";
 import fellowship from "../assets/PDF/proposal/Faculty_Fellowship4.pdf";
 import doctoralFellowship from "../assets/PDF/proposal/doctrolFellowship6.pdf";
-import Project0707 from "../assets/PDF/proposal/Project7.pdf";
+import Project0707 from "../assets/PDF/proposal/CallforProposalPRAYAS-Start-UpsandEIRscheme.pdf";
 import Project2107 from "../assets/PDF/proposal/Project8.pdf";
 import Project9 from "../assets/PDF/proposal/Project9.pdf";
 import Project10 from "../assets/PDF/proposal/Project10.pdf";
 import Project11 from "../assets/PDF/proposal/Call_for_Proposals_for_TBI_Scheme.2107.pdf";
 import Project12 from "../assets/PDF/proposal/Call_for_Proposal_for_Technology_Development.0707.pdf";
+import Project14 from "../assets/PDF/proposal/CFP-SSS.pdf";
+import Project13 from "../assets/PDF/proposal/CFP-DIAL.pdf";
+
 import {
   FaLightbulb,
   FaFlask,
@@ -37,13 +40,11 @@ import {
   Emergency,
   LocalHospital,
   SupervisedUserCircle,
-  Group
-} from '@mui/icons-material';
-import AgricultureIcon from '@mui/icons-material/Agriculture'; 
+  Group,
+} from "@mui/icons-material";
+import AgricultureIcon from "@mui/icons-material/Agriculture";
 
-
-import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive'; 
-
+import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 
 export const siteContent = {
   navbar: {
@@ -230,12 +231,7 @@ export const siteContent = {
       { name: "LinkedIn", url: "https://linkedin.com" },
     ],
     links: ["Home", "About us", "Career", "Contact us"],
-     services : [
-      "Thematic Area",
-      "Schemes",
-      "Call for Proposals",
-      "Blogs",
-    ],
+    services: ["Thematic Area", "Schemes", "Call for Proposals", "Blogs"],
     info: ["IIT Bhilai", "About Ibitf", "Projects", "Team"],
     support: ["FAQ", "Help", "Privacy Policy", "Terms"],
   },
@@ -766,10 +762,46 @@ export const siteContent = {
     },
   ],
   cardDataForCFP: [
+    {
+      id: 14,
 
+      mainHeading: " Call For Proposal Under the CPS- SSS(Seed Support System)",
+      description:
+        " Seed Support System (SSS) is a scheme under IBITF funded by the National Mission- Interdisciplinary Cyber-Physical System (NM-ICPS), Department of Science and Technology (DST) that provides financial assistance to start-ups with promising ideas, innovations, and technologies. A wide gap exists in financial support required by technology-driven start-ups in their initial phase, which is not being addressed properly. ",
+      lastDate: "",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: Project14, // Replace with actual PDF URL
+        },
+        {
+          text: "Submit Your Proposal",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
+        },
+      ],
+    },
+    {
+      id: 13,
+
+      mainHeading:
+        " Invites Call For Proposal Under the CPS- DIAL(Dedicated Innovation Accelerator)",
+      description:
+        "Accelerators are post-incubation initiatives linked to existing incubators, aimed at supplementing and lementing the scaling-up of startups. It aims to focus on directing targeted resources to help startups to validate product ideas, engage with customers, and scale their operations while enhancing the incubators' ongoing activities. Accelerators also helps in realizing and deciding whether to create a scalable start-up from a very nascent stage. The basic objectives of DIAL involve",
+      lastDate: "",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: Project13, // Replace with actual PDF URL
+        },
+        {
+          text: "Submit Your Proposal",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
+        },
+      ],
+    },
     {
       id: 1,
-      
+
       mainHeading: "Call For Proposal for Technology Business Incubator Scheme",
       description:
         " Department of Science and Technology (DST), Government of India (GoI) has launched National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) which aims to create a strong foundation and a seamless ecosystem for CPS technologies by coordinating and integrating nationwide efforts.",
@@ -804,11 +836,11 @@ export const siteContent = {
     },
     {
       id: 3,
-    
+
       mainHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
       description:
         "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
-      lastDate: "This is a rolling advertisement",
+      lastDate: "",
       buttons: [
         {
           text: "Detailed Call for Proposal",
@@ -822,7 +854,7 @@ export const siteContent = {
     },
     {
       id: 4,
-     
+
       mainHeading: "Call for Proposal under Virtual Incubation (VI)",
       description:
         "Eligibility criteria : All start-ups operating in the FinTech area, incorporated by January 2022, and incubated in TIHs/Incubation Centres/Startup Hubs located in Institutes of Higher Learning/Established by State/Central Government.IBITF could offer up to INR 50 lakhs in funding support (in exceptional cases the support could be up to INR 1.0 cr depending on the DPR) over two years based on the business model and project proposal in the area of FinTech.",
@@ -840,14 +872,14 @@ export const siteContent = {
     },
     {
       id: 5,
-    
+
       mainHeading: "Call for Proposal Social Impact Startups/Projects",
       description: "",
       lastDate: "This is a rolling advertisement",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink:"", // Replace with actual PDF URL
+          pdfLink: "", // Replace with actual PDF URL
         },
         {
           text: "Submit Your Proposal",
@@ -857,7 +889,7 @@ export const siteContent = {
     },
     {
       id: 6,
-  
+
       mainHeading: "Call for Proposal for Scheduled Tribes (ST)",
       description:
         "IBITF invites applications for conducting training programmes, workshops, conferences under Scheduled Tribe in Fintech Area.",
@@ -865,17 +897,17 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: card2pdf, 
+          pdfLink: card2pdf,
         },
         {
           text: "Submit Your Proposal",
-          url: "https://google.com/", 
+          url: "https://google.com/",
         },
       ],
     },
     // {
     //   id: 5,
-    
+
     //   mainHeading: "Call for Proposals for TBI Scheme",
     //   description:
     //     "Proposals are invited by IBITF under the Technology Business Incubator schemes.",
@@ -883,7 +915,7 @@ export const siteContent = {
     //   buttons: [
     //     {
     //       text: "Detailed Call for Proposal",
-    //       pdfLink: tbiScheme, 
+    //       pdfLink: tbiScheme,
     //     },
     //     {
     //       text: "Submit Your Proposal",
@@ -894,7 +926,7 @@ export const siteContent = {
 
     {
       id: 7,
-     
+
       mainHeading: "Call for Proposal for Faculty Fellowship",
       description:
         "Proposals are invited by IBITF under the faculty fellowship scheme.",
@@ -902,7 +934,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: fellowship, 
+          pdfLink: fellowship,
         },
         {
           text: "Submit Your Proposal",
@@ -912,7 +944,7 @@ export const siteContent = {
     },
     {
       id: 8,
-      
+
       mainHeading: "Call for Proposal for Chair Professor",
       description: "Proposals are invited by IBITF to join as Chair Professor.",
       lastDate: "",
@@ -929,7 +961,7 @@ export const siteContent = {
     },
     {
       id: 9,
-     
+
       mainHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
       description:
         "Proposals are invited by IBITF under the Post Doctoral Fellowship schemes.",
@@ -945,10 +977,10 @@ export const siteContent = {
         },
       ],
     },
-    
+
     {
       id: 10,
-      
+
       mainHeading: "Call for Proposal for Fellowships",
       description:
         "Proposals are invited by IBITF for BTech, MTech & PhD Fellowships.",
@@ -966,7 +998,7 @@ export const siteContent = {
     },
     // {
     //   id: 11,
-      
+
     //   mainHeading: "Call For Proposals for Technology Development in FinTech",
     //   description:
     //     "Inviting Researchers from the institutions of Higher Learning (Centrally/state Funded Institutions of higher learning or NAAC Accredited Institution with Grade A).",
@@ -982,7 +1014,6 @@ export const siteContent = {
     //     },
     //   ],
     // },
-  
   ],
   CollaborationBy: {
     title: "Supported By",
@@ -1126,7 +1157,7 @@ export const siteContent = {
       title: "Bhoomicam",
       description:
         "Revolutionising Agriculture with AI and Satellite Technology: Bhoomicam: A versatile smartphone app ‘Bhoomicam,’ that empowers farmers to input crop information, creating a digital database linking land parcels and satellite imagery. The tool aims to geo-enable farms, integrate AI with satellite data for crop monitoring, and offer personalized recommendations for increasing the quality and quantity of crop production.",
-      route: "/BhoomiCam", 
+      route: "/BhoomiCam",
     },
     {
       image: require("../assets/project_features/ices.jpeg"),
@@ -1168,26 +1199,40 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Project Associate (under MTS rules)",
+      positions: "02",
+      qualifications:
+        "Master’s or Bachelor's Degree in Science/ Commerce /Computer Science/Computer Applications/ IT or Bachelor’s Degree in Engineering",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "89 Days (extendable)",
+      ageLimit: "Up to 45 years",
+      location: "IBITF, IIT Bhilai",
+      lastDate: "11th December 2024",
+      downloadLink: require("../assets/PDF/career/MTS_november(1)2024.pdf"),
+      applyLink:
+        "https://docs.google.com/forms/d/1jgE7uJRr1Mjpa9wtws_dmlfhwD0-JwmVFTPOxTE5EgA/viewform",
+      applyText: "Apply Now",
+    },
+    {
       title: "Recruitment of various Project positions at IBITF",
       positions: "05",
-      qualifications: "MTech/BTech M.Sc/M.C.A/ME/MS in Computer Science , Bachelor in Commerce/BSc",
-      experience:
-        "As Per Advertisement Attached",
-      contractPeriod:
-        "1 Year",
+      qualifications:
+        "MTech/BTech M.Sc/M.C.A/ME/MS in Computer Science , Bachelor in Commerce/BSc",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "1 Year",
       ageLimit: "Up to 45 years",
       location: "IBITF Bhilai",
       lastDate: "11th December 2024",
       downloadLink: require("../assets/PDF/career/Advertisement_November_2024..docx.pdf"),
-      applyLink: "#",
+      applyLink:
+        "https://docs.google.com/forms/d/1KevUcGv9Rz2BdIfMjrEgp92dIV-WyfodEkHSU4Tvkg8/viewform",
       applyText: "Apply Now",
     },
     {
       title: "Project Manager/Project Associate",
       positions: "03",
       qualifications: "Phd or MBA/ME/MTech BE/BTech",
-      experience:
-     "As Per Advertisement Attached",
+      experience: "As Per Advertisement Attached",
       contractPeriod:
         "89 Days and may be extendable depending upon the performance",
       ageLimit: "Preferably below 40 years but not exceeding 45 years.",
@@ -1197,26 +1242,26 @@ export const siteContent = {
       applyLink: "#",
       applyText: "Apply Now",
     },
-    {
-      title: "Project Associate (under MTS rules)",
-      positions: "03",
-      qualifications:
-        "Master’s or Bachelor's Degree in Science/ Commerce /Computer Science/Computer Applications/ IT or Bachelor’s Degree in Engineering",
-      experience: "As Per Advertisement Attached",
-      contractPeriod: "89 Days (extendable)",
-      ageLimit: "Up to 45 years",
-      location: "IBITF, IIT Bhilai",
-      lastDate: "18 October 2024",
-      downloadLink: require("../assets/PDF/career/02Advertise.pdf"),
-      applyLink: "#",
-      applyText: "Apply Now",
-    },
+    // {
+    //   title: "Project Associate (under MTS rules)",
+    //   positions: "03",
+    //   qualifications:
+    //     "Master’s or Bachelor's Degree in Science/ Commerce /Computer Science/Computer Applications/ IT or Bachelor’s Degree in Engineering",
+    //   experience: "As Per Advertisement Attached",
+    //   contractPeriod: "89 Days (extendable)",
+    //   ageLimit: "Up to 45 years",
+    //   location: "IBITF, IIT Bhilai",
+    //   lastDate: "18 October 2024",
+    //   downloadLink: require("../assets/PDF/career/02Advertise.pdf"),
+    //   applyLink: "#",
+    //   applyText: "Apply Now",
+    // },
     {
       title: "Recruitment of various Project positions of VSK",
       positions: "22",
       qualifications:
         "Master’s Degree in Finance/Economics or Chartered Accountant",
-      experience:"As Per Advertisement Attached",
+      experience: "As Per Advertisement Attached",
       contractPeriod: "1 Year (extendable)",
       ageLimit: "Up to 45 years",
       location: "IIT Bhilai",
@@ -1378,7 +1423,7 @@ export const siteContent = {
     },
   ],
 
-  scope:[
+  scope: [
     {
       heading: "Entrepreneurship and Startup Ecosystem",
       points: [
@@ -1514,5 +1559,5 @@ export const siteContent = {
         },
       ],
     },
-  ]
+  ],
 };
