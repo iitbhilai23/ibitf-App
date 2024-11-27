@@ -1207,7 +1207,7 @@ export const siteContent = {
       ageLimit: "Up to 45 years",
       location: "IBITF, IIT Bhilai",
       lastDate: "11th December 2024",
-      downloadLink: require("../assets/PDF/career/MTS_november(1)2024.pdf"),
+      downloadLink: require("../assets/PDF/career/MTSnovember2024.pdf"),
       applyLink:
         "https://docs.google.com/forms/d/1jgE7uJRr1Mjpa9wtws_dmlfhwD0-JwmVFTPOxTE5EgA/viewform",
       applyText: "Apply Now",
