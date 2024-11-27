@@ -792,8 +792,7 @@ body {
 
 
 
-/* schemes */
-.card-stack {
+.card-stack1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -819,7 +818,6 @@ body {
   margin: 10px auto 0; 
 }
 
-
 .card-scheme {
   background: #ffffff;
   border-radius: 10px;
@@ -830,7 +828,8 @@ body {
   box-shadow: #6a0dad 0px 1px 1px 0.2px;
 }
 
-.card:hover {
+/* Corrected hover selector to .card-scheme */
+.card-scheme:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -860,9 +859,9 @@ body {
 @media (max-width: 768px) {
   .card-scheme {
     width: 90%;
-   
   }
 }
+
 
 
 /* for Blog page design code here */
