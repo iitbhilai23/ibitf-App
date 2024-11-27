@@ -8,6 +8,8 @@ import Project0707 from "../assets/PDF/proposal/Project7.pdf";
 import Project2107 from "../assets/PDF/proposal/Project8.pdf";
 import Project9 from "../assets/PDF/proposal/Project9.pdf";
 import Project10 from "../assets/PDF/proposal/Project10.pdf";
+import Project11 from "../assets/PDF/proposal/Call_for_Proposals_for_TBI_Scheme.2107.pdf";
+import Project12 from "../assets/PDF/proposal/Call_for_Proposal_for_Technology_Development.0707.pdf";
 import {
   FaLightbulb,
   FaFlask,
@@ -767,8 +769,79 @@ export const siteContent = {
 
     {
       id: 1,
+      
+      mainHeading: "Call For Proposal for Technology Business Incubator Scheme",
+      description:
+        " Department of Science and Technology (DST), Government of India (GoI) has launched National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) which aims to create a strong foundation and a seamless ecosystem for CPS technologies by coordinating and integrating nationwide efforts.",
+      lastDate: "",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: Project11, // Replace with actual PDF URL
+        },
+        {
+          text: "Submit Your Proposal",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
+        },
+      ],
+    },
+    {
+      id: 2,
+      mainHeading: "Call For Proposal for Technology Development in FinTech",
+      description:
+        "The Department of Science and Technology, under its National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS), has funded IIT Bhilai to host the Technology Innovation Hub (TIH) for the Financial Technologies (FINTECH) area.",
+      lastDate: "",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: Project12, // Replace with actual PDF URL
+        },
+        {
+          text: "Submit Your Proposal",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
+        },
+      ],
+    },
+    {
+      id: 3,
     
-      mainHeading: "Call for Proposals: Social Impact Startups/Projects",
+      mainHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
+      description:
+        "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
+      lastDate: "This is a rolling advertisement",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: Project0707, // Replace with actual PDF URL
+        },
+        {
+          text: "Submit Your Proposal",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
+        },
+      ],
+    },
+    {
+      id: 4,
+     
+      mainHeading: "Call for Proposal under Virtual Incubation (VI)",
+      description:
+        "Eligibility criteria : All start-ups operating in the FinTech area, incorporated by January 2022, and incubated in TIHs/Incubation Centres/Startup Hubs located in Institutes of Higher Learning/Established by State/Central Government.IBITF could offer up to INR 50 lakhs in funding support (in exceptional cases the support could be up to INR 1.0 cr depending on the DPR) over two years based on the business model and project proposal in the area of FinTech.",
+      lastDate: "",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: Project9, // Replace with actual PDF URL
+        },
+        {
+          text: "Submit Your Proposal",
+          url: "https://example.com/submit-proposal", // Replace with the actual URL
+        },
+      ],
+    },
+    {
+      id: 5,
+    
+      mainHeading: "Call for Proposal Social Impact Startups/Projects",
       description: "",
       lastDate: "This is a rolling advertisement",
       buttons: [
@@ -783,9 +856,9 @@ export const siteContent = {
       ],
     },
     {
-      id: 2,
+      id: 6,
   
-      mainHeading: "Special Call for Proposals for Scheduled Tribes (ST)",
+      mainHeading: "Call for Proposal for Scheduled Tribes (ST)",
       description:
         "IBITF invites applications for conducting training programmes, workshops, conferences under Scheduled Tribe in Fintech Area.",
       lastDate: "This is a rolling advertisement",
@@ -800,29 +873,29 @@ export const siteContent = {
         },
       ],
     },
-    {
-      id: 3,
+    // {
+    //   id: 5,
     
-      mainHeading: "Call for Proposals for TBI Scheme",
-      description:
-        "Proposals are invited by IBITF under the Technology Business Incubator schemes.",
-      lastDate: "This is a rolling advertisement",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: tbiScheme, 
-        },
-        {
-          text: "Submit Your Proposal",
-          url: "https://google.com/", // Replace with the actual URL
-        },
-      ],
-    },
+    //   mainHeading: "Call for Proposals for TBI Scheme",
+    //   description:
+    //     "Proposals are invited by IBITF under the Technology Business Incubator schemes.",
+    //   lastDate: "This is a rolling advertisement",
+    //   buttons: [
+    //     {
+    //       text: "Detailed Call for Proposal",
+    //       pdfLink: tbiScheme, 
+    //     },
+    //     {
+    //       text: "Submit Your Proposal",
+    //       url: "https://google.com/", // Replace with the actual URL
+    //     },
+    //   ],
+    // },
 
     {
-      id: 4,
+      id: 7,
      
-      mainHeading: "Call for Proposals for Faculty Fellowship",
+      mainHeading: "Call for Proposal for Faculty Fellowship",
       description:
         "Proposals are invited by IBITF under the faculty fellowship scheme.",
       lastDate: "",
@@ -838,9 +911,9 @@ export const siteContent = {
       ],
     },
     {
-      id: 5,
+      id: 8,
       
-      mainHeading: "Call for Proposals for Chair Professor",
+      mainHeading: "Call for Proposal for Chair Professor",
       description: "Proposals are invited by IBITF to join as Chair Professor.",
       lastDate: "",
       buttons: [
@@ -855,7 +928,7 @@ export const siteContent = {
       ],
     },
     {
-      id: 6,
+      id: 9,
      
       mainHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
       description:
@@ -874,25 +947,7 @@ export const siteContent = {
     },
     
     {
-      id: 7,
-    
-      mainHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
-      description:
-        "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
-      lastDate: "This is a rolling advertisement",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: Project0707, // Replace with actual PDF URL
-        },
-        {
-          text: "Submit Your Proposal",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
-        },
-      ],
-    },
-    {
-      id: 8,
+      id: 10,
       
       mainHeading: "Call for Proposal for Fellowships",
       description:
@@ -909,44 +964,26 @@ export const siteContent = {
         },
       ],
     },
-    {
-      id: 9,
-     
-      mainHeading: "Call for Proposal under Virtual Incubation (VI)",
-      description:
-        "Eligibility criteria : All start-ups operating in the FinTech area, incorporated by January 2022, and incubated in TIHs/Incubation Centres/Startup Hubs located in Institutes of Higher Learning/Established by State/Central Government.IBITF could offer up to INR 50 lakhs in funding support (in exceptional cases the support could be up to INR 1.0 cr depending on the DPR) over two years based on the business model and project proposal in the area of FinTech.",
-      lastDate: "",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: Project9, // Replace with actual PDF URL
-        },
-        {
-          text: "Submit Your Proposal",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
-        },
-      ],
-    },
-    {
-      id: 10,
+    // {
+    //   id: 11,
       
-      mainHeading: "Call For Proposals for Technology Development in FinTech",
-      description:
-        "Inviting Researchers from the institutions of Higher Learning (Centrally/state Funded Institutions of higher learning or NAAC Accredited Institution with Grade A).",
-      lastDate: "",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: Project10, // Replace with actual PDF URL
-        },
-        {
-          text: "Submit Your Proposal",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
-        },
-      ],
-    },
+    //   mainHeading: "Call For Proposals for Technology Development in FinTech",
+    //   description:
+    //     "Inviting Researchers from the institutions of Higher Learning (Centrally/state Funded Institutions of higher learning or NAAC Accredited Institution with Grade A).",
+    //   lastDate: "",
+    //   buttons: [
+    //     {
+    //       text: "Detailed Call for Proposal",
+    //       pdfLink: Project10, // Replace with actual PDF URL
+    //     },
+    //     {
+    //       text: "Submit Your Proposal",
+    //       url: "https://example.com/submit-proposal", // Replace with the actual URL
+    //     },
+    //   ],
+    // },
+  
   ],
-
   CollaborationBy: {
     title: "Supported By",
     logos: [
@@ -1131,11 +1168,26 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Recruitment of various Project positions at IBITF",
+      positions: "05",
+      qualifications: "MTech/BTech M.Sc/M.C.A/ME/MS in Computer Science , Bachelor in Commerce/BSc",
+      experience:
+        "As Per Advertisement Attached",
+      contractPeriod:
+        "1 Year",
+      ageLimit: "Up to 45 years",
+      location: "IBITF Bhilai",
+      lastDate: "11th December 2024",
+      downloadLink: require("../assets/PDF/career/Advertisement_November_2024..docx.pdf"),
+      applyLink: "#",
+      applyText: "Apply Now",
+    },
+    {
       title: "Project Manager/Project Associate",
       positions: "03",
       qualifications: "Phd or MBA/ME/MTech BE/BTech",
       experience:
-        "4 years of relevant experience BE/BTech with minimum 7 years of relevant experience",
+     "As Per Advertisement Attached",
       contractPeriod:
         "89 Days and may be extendable depending upon the performance",
       ageLimit: "Preferably below 40 years but not exceeding 45 years.",
@@ -1149,8 +1201,8 @@ export const siteContent = {
       title: "Project Associate (under MTS rules)",
       positions: "03",
       qualifications:
-        "Master’s Degree in Science/ Commerce /Computer Science/Computer Applications/ IT or Bachelor’s Degree in Engineering OR Bachelor's Degree in Science/ Computer Science/ Commerce/ Computer Applications/IT",
-      experience: " 2 years relevant experience/ 4 years relevant experience",
+        "Master’s or Bachelor's Degree in Science/ Commerce /Computer Science/Computer Applications/ IT or Bachelor’s Degree in Engineering",
+      experience: "As Per Advertisement Attached",
       contractPeriod: "89 Days (extendable)",
       ageLimit: "Up to 45 years",
       location: "IBITF, IIT Bhilai",
@@ -1164,7 +1216,7 @@ export const siteContent = {
       positions: "22",
       qualifications:
         "Master’s Degree in Finance/Economics or Chartered Accountant",
-      experience: "Minimum 3 years of relevant experience",
+      experience:"As Per Advertisement Attached",
       contractPeriod: "1 Year (extendable)",
       ageLimit: "Up to 45 years",
       location: "IIT Bhilai",
@@ -1173,21 +1225,21 @@ export const siteContent = {
       applyLink: "#",
       applyText: "Apply Now",
     },
-    {
-      title: "Outreach Consultant",
-      positions: "01",
-      qualifications: "Bachelor’s degree required; Master’s degree preferred",
-      experience:
-        "2-4 years of relevant professional experience in HR, Marketing, Promotions, non-profits, communications, Outreach, public service, or other relevant fields.",
-      contractPeriod:
-        "5 months (Extendable according up to 1 Year based on performance & Outcome)",
-      ageLimit: "Up to 45 years",
-      location: "IBITF Bhilai",
-      lastDate: "13th November 2023",
-      downloadLink: require("../assets/PDF/career/04Advertise.pdf"),
-      applyLink: "#",
-      applyText: "Apply Now",
-    },
+    // {
+    //   title: "Outreach Consultant",
+    //   positions: "01",
+    //   qualifications: "Bachelor’s degree required; Master’s degree preferred",
+    //   experience:
+    //   "As Per Advertisement Attached",
+    //   contractPeriod:
+    //     "5 months (Extendable according up to 1 Year based on performance & Outcome)",
+    //   ageLimit: "Up to 45 years",
+    //   location: "IBITF Bhilai",
+    //   lastDate: "13th November 2023",
+    //   downloadLink: require("../assets/PDF/career/04Advertise.pdf"),
+    //   applyLink: "#",
+    //   applyText: "Apply Now",
+    // },
   ],
 
   selectedCandidates: [
