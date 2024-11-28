@@ -1271,24 +1271,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
-/* .career-table th {
-  background-color: #6a0dad;
-  color: white;
-  font-size: 0.9rem;
-  padding: 14px 15px;
-  text-align: left;
-  text-transform: capitalize;
-  letter-spacing: 0.6px;
-}
-
-.career-table td {
-  padding: 8px 15px;
-  text-align: left;
-  background-color: #fff;
-  color: #333;
-  font-size: 0.9rem;
-  border: 1px solid #ddd;
-} */
 .career-table th {
   background-color: #6a0dad;
   color: white;
