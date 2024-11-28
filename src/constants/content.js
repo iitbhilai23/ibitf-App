@@ -11,7 +11,7 @@ import Project10 from "../assets/PDF/proposal/Project10.pdf";
 import Project11 from "../assets/PDF/proposal/Call_for_Proposals_for_TBI_Scheme.2107.pdf";
 import Project12 from "../assets/PDF/proposal/Call_for_Proposal_for_Technology_Development.0707.pdf";
 import Project14 from "../assets/PDF/proposal/CFP-SSS.pdf";
-import Project13 from "../assets/PDF/proposal/CFP-DIAL.pdf";
+import Project13 from "../assets/PDF/proposal/CFP_DIAL.pdf";
 
 import {
   FaLightbulb,
