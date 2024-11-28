@@ -415,7 +415,7 @@ export const siteContent = {
     members: [
       {
         name: "Prof. Rajiv Prakash",
-        designation: "Director IIT Bhilai & Chariman",
+        designation: "Director IIT Bhilai & Chairman",
         image: require("../assets/TeamImg/director.png"),
       },
       {
