@@ -1049,6 +1049,21 @@ body {
   position: relative;
 }
 
+/* // new code here Submit call proposal  */
+
+.applyNow-button {
+  background-color: #6a0dad; /* Blue color */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
 .card-buttons::before {
   content: '';
   position: absolute;

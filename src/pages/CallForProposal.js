@@ -31,13 +31,25 @@ const CallForProposals = () => {
             </div>
             <div className="card-buttons-list">
               {card.buttons.map((button, index) => (
-                <button
+                // <button
+                //   key={index}
+                //   className="card-buttons"
+                //   onClick={() => handleButtonClick(button)}
+                // >
+                //   {button.text}
+                // </button>
+
+<button
                   key={index}
-                  className="card-buttons"
+                  className={`card-buttons ${
+                    button.text === "Apply Now" ? "applyNow-button" : ""
+                  }`}
                   onClick={() => handleButtonClick(button)}
                 >
                   {button.text}
                 </button>
+
+                
               ))}
             </div>
           </div>

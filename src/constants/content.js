@@ -775,7 +775,7 @@ export const siteContent = {
           pdfLink: Project14, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
+          text: "Apply Now",
           url: "https://example.com/submit-proposal", // Replace with the actual URL
         },
       ],
@@ -793,7 +793,7 @@ export const siteContent = {
           pdfLink: Project13, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
+          text: "Apply Now",
           url: "https://example.com/submit-proposal", // Replace with the actual URL
         },
       ],
@@ -811,8 +811,8 @@ export const siteContent = {
           pdfLink: Project11, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/2808/1/apply", // Replace with the actual URL
         },
       ],
     },
@@ -828,8 +828,8 @@ export const siteContent = {
           pdfLink: Project12, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/2845/1/apply", // Replace with the actual URL
         },
       ],
     },
@@ -846,8 +846,8 @@ export const siteContent = {
           pdfLink: Project0707, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/2846/1/apply", // Replace with the actual URL
         },
       ],
     },
@@ -864,7 +864,7 @@ export const siteContent = {
           pdfLink: Project9, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
+          text: "Apply Now",
           url: "https://example.com/submit-proposal", // Replace with the actual URL
         },
       ],
@@ -881,7 +881,7 @@ export const siteContent = {
           pdfLink: "", // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
+          text: "Apply Now",
           url: "https://google.com/", // Replace with the actual URL
         },
       ],
@@ -899,7 +899,7 @@ export const siteContent = {
           pdfLink: card2pdf,
         },
         {
-          text: "Submit Your Proposal",
+          text: "Apply Now",
           url: "https://google.com/",
         },
       ],
@@ -936,8 +936,8 @@ export const siteContent = {
           pdfLink: fellowship,
         },
         {
-          text: "Submit Your Proposal",
-          url: "https://docs.google.com/forms/d/e/1FAIpQLScczCpJZUPOq9rtUC3qF8wGRlu4I0cVWoP7nDR0fyRNufxAuQ/viewform?usp=sf_link", // Replace with the actual URL
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/2848/1/apply", // Replace with the actual URL
         },
       ],
     },
@@ -953,8 +953,8 @@ export const siteContent = {
           pdfLink: chairProfessor, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
-          url: "https://google.com/", // Replace with the actual URL
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/2847/1/apply", // Replace with the actual URL
         },
       ],
     },
@@ -971,8 +971,8 @@ export const siteContent = {
           pdfLink: doctoralFellowship, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSei8Aa6l-4opSeaY2E61ssWtm_YLEZqZgkCfg70KaFkEFI6tw/viewform?usp=sf_link", // Replace with the actual URL
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/2849/1/apply", // Replace with the actual URL
         },
       ],
     },
@@ -990,8 +990,8 @@ export const siteContent = {
           pdfLink: Project2107, // Replace with actual PDF URL
         },
         {
-          text: "Submit Your Proposal",
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSc-6YXbMYw0T196GXQGoYS0AyPb5Og5Tu94s_yvkvsNFs0ATA/viewform", // Replace with the actual URL
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/2850/1/apply", // Replace with the actual URL
         },
       ],
     },
