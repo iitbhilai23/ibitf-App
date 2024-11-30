@@ -33,10 +33,7 @@ const App = () => {
     <Router>
      <ScrollToTop/> 
       <Navbar />
-
-
-
-      {/* for Popup component */}
+      {/* for Popupbox component */}
       <Popup show={showPopup} closePopup={closePopup} />
 
       <Routes>
