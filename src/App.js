@@ -1,5 +1,5 @@
 
-import React, { Suspense, lazy } from 'react';
+import React, { useState,Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -21,19 +21,29 @@ import Blogs from './pages/Blogs';
 import CallForProposals from './pages/CallForProposal';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
-
-
-
+import Popup from './components/popup/Popup';
 const App = () => {
+  const [showPopup, setShowPopup] = useState(true); 
+
+
+  const closePopup = () => {
+    setShowPopup(false); 
+  };
   return (
     <Router>
      <ScrollToTop/> 
       <Navbar />
+
+
+
+      {/* for Popup component */}
+      <Popup show={showPopup} closePopup={closePopup} />
+
       <Routes>
         {/* Static Routes */}
         <Route path="/*" element={<Home />} />
         {/* <Route path="/about us" element={<About />} /> */}
-        <Route path="/about-ibitf" element={<AboutIBITF />} />Organizational Structure
+        <Route path="/about-ibitf" element={<AboutIBITF />} />
         <Route path="/organizational-structure" element={<OrgStructure />} />
         <Route path="/schemes" element={<Schemes />} />
         <Route path="/services" element={<Services />} /> 
