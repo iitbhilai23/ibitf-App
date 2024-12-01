@@ -1082,6 +1082,26 @@ export const siteContent = {
 
   sliderImages: [
     {
+      url: require("../assets/slider/01.jpg"),
+      title: "Two-Day Workshop on “Rasayan Mukt Jahar Mukt Tikau Kheti” at IIT Bhilai",
+    },
+    {
+      url: require("../assets/slider/02.jpeg"),
+      title: "IIT Bhilai Hosts “Baapi Na Uwat” Youth Leadership Workshop to Transform Communities Through Yuvodaya Volunteers of Dantewada",
+    },
+    {
+      url: require("../assets/slider/03.jpeg"),
+      title: "Demonstration of Digi Agri Village to Honourable Governor",
+    },
+    {
+      url: require("../assets/slider/04.jpeg"),
+      title: "two-day workshop on “Marketplace Literacy” workshop on July 29th and 30th, 2024",
+    },
+    {
+      url: require("../assets/slider/05.jpeg"),
+      title: "Inagauration of Smart ER",
+    },
+    {
       url: require("../assets/slider/1.jpg"),
       title:
         "The Divyang ATM has been successfully installed at the National Association For The Blind (Prerna Bhavan), Raipur, C.G., for comprehensive testing and validation.",
@@ -1100,10 +1120,11 @@ export const siteContent = {
       url: require("../assets/slider/2.jpeg"),
       title: "Drone Didi Workshop at IIT Bhilai",
     },
-    // { url: require('../assets/slider/image5.jpg'), title: 'Image 5 Title' },
+   
+    
   ],
 
-  // Aboutsection content page
+  
 
   AboutSection: {
     title: "Innovation and Technology Foundation ",

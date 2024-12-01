@@ -48,4 +48,30 @@
 .close-button:hover {
   background: #ff2c2c;
 }
+/* Responsive Design for Mobile */
+@media only screen and (max-width: 768px) {
+  .popup-box {
+    width: 90%;
+    padding: 15px;
+  }
 
+  .popup-content h2 {
+    font-size: 20px; /* Smaller font for heading */
+  }
+
+  .popup-content p {
+    font-size: 14px; /* Smaller font for text */
+  }
+
+  .popup-image {
+    margin-bottom: 10px; /* Reduce spacing */
+  }
+
+  .close-button {
+    top: 5px; /* Adjust close button position */
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+}
