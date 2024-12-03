@@ -1181,7 +1181,7 @@ export const siteContent = {
     },
     {
       image: require("../assets/project_features/ices.jpeg"),
-      title: "Intelligent Emergency Care System (iECS)",
+      title: "Intelligent Emergency Care System (iECS)" ,
       description:
         "Intelligent Emergency Care System (iECS) Strengthening the Emergency Care Systems in Chhattisgarh through Digital Hybrid Healthcare - An AI-driven platform for doctors in remote areas to manage emergencies, offer 24x7 tele-access to emergency experts, standardize patient assessment, and provide patients with information on affordable medicines, alternative treatments, and insurance options.",
       route: "/emergencyCare",
