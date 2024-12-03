@@ -1219,6 +1219,20 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Project Manager/Project Associate",
+      positions: "03",
+      qualifications: "Phd or MBA/ME/MTech BE/BTech",
+      experience: "As Per Advertisement Attached",
+      contractPeriod:
+        "89 Days and may be extendable depending upon the performance",
+      ageLimit: "Preferably below 40 years but not exceeding 45 years.",
+      location: "IIT Bhilai",
+      lastDate: "10th December 2024",   
+      downloadLink: require("../assets/PDF/career/01Advertise.pdf"),
+      applyLink: "#",
+      applyText: "Apply Now",
+    },
+    {
       title: "Project Associate (under MTS rules)",
       positions: "02",
       qualifications:
