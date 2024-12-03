@@ -776,7 +776,7 @@ export const siteContent = {
         },
         {
           text: "Apply Now",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
+          url: "https://tihiitbhilai.accubate.app/ext/form/2877/1/apply", // Replace with the actual URL
         },
       ],
     },
@@ -794,7 +794,7 @@ export const siteContent = {
         },
         {
           text: "Apply Now",
-          url: "https://example.com/submit-proposal", // Replace with the actual URL
+          url: "https://tihiitbhilai.accubate.app/ext/form/2874/1/apply", // Replace with the actual URL
         },
       ],
     },
