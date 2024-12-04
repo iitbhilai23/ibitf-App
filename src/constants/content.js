@@ -1229,7 +1229,7 @@ export const siteContent = {
       location: "IIT Bhilai",
       lastDate: "10th December 2024",   
       downloadLink: require("../assets/PDF/career/01Advertise.pdf"),
-      applyLink: "#",
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSebCl0XSlsIonj_qHVWyM9dqaIPqW09p1rbfwqs41-uVtxKNw/viewform",
       applyText: "Apply Now",
     },
     {

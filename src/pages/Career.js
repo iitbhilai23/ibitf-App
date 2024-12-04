@@ -43,7 +43,7 @@ const Career = () => {
                 </a>
               </td>
               <td data-label="Apply">
-                <a href={job.applyLink} className="apply-link">{job.applyText}</a>
+                <a href={job.applyLink} className="apply-link" target='_blank'>{job.applyText}</a>
               </td>
             </tr>
           ))}
