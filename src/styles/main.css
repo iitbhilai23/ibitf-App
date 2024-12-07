@@ -1427,3 +1427,13 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 }
+
+
+
+
+/* For Call for proposal page deadline code here */
+.last-date {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}

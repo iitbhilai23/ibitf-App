@@ -768,7 +768,7 @@ export const siteContent = {
       mainHeading: "Call For Proposal Under the CPS- SSS(Seed Support System)",
       description:
         " Seed Support System (SSS) is a scheme under IBITF funded by the National Mission- Interdisciplinary Cyber-Physical System (NM-ICPS), Department of Science and Technology (DST) that provides financial assistance to start-ups with promising ideas, innovations, and technologies. A wide gap exists in financial support required by technology-driven start-ups in their initial phase, which is not being addressed properly. ",
-      lastDate: "",
+      lastDate: "Extended deadline for project proposal submission: 17th December",
       buttons: [
         {
           text: "Detailed Call for Proposal",
@@ -786,7 +786,7 @@ export const siteContent = {
         "Call For Proposal Under the CPS- DIAL(Dedicated Innovation Accelerator)",
       description:
         "Accelerators are post-incubation initiatives linked to existing incubators, aimed at supplementing and lementing the scaling-up of startups. It aims to focus on directing targeted resources to help startups to validate product ideas, engage with customers, and scale their operations while enhancing the incubators' ongoing activities. Accelerators also helps in realizing and deciding whether to create a scalable start-up from a very nascent stage. The basic objectives of DIAL involve",
-      lastDate: "",
+      lastDate: "Extended deadline for project proposal submission: 17th December",
       buttons: [
         {
           text: "Detailed Call for Proposal",
@@ -839,7 +839,7 @@ export const siteContent = {
       mainHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
       description:
         "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
-      lastDate: "",
+      lastDate: "Extended deadline for project proposal submission: 17th December",
       buttons: [
         {
           text: "Detailed Call for Proposal",
@@ -892,7 +892,7 @@ export const siteContent = {
       mainHeading: "Call for Proposal for Scheduled Tribes (ST)",
       description:
         "IBITF invites applications for conducting training programmes, workshops, conferences under Scheduled Tribe in Fintech Area.",
-      lastDate: "This is a rolling advertisement",
+      // lastDate: "This is a rolling advertisement",
       buttons: [
         {
           text: "Detailed Call for Proposal",
@@ -1276,20 +1276,7 @@ export const siteContent = {
       applyLink: "#",
       applyText: "Apply Now",
     },
-    // {
-    //   title: "Project Associate (under MTS rules)",
-    //   positions: "03",
-    //   qualifications:
-    //     "Master’s or Bachelor's Degree in Science/ Commerce /Computer Science/Computer Applications/ IT or Bachelor’s Degree in Engineering",
-    //   experience: "As Per Advertisement Attached",
-    //   contractPeriod: "89 Days (extendable)",
-    //   ageLimit: "Up to 45 years",
-    //   location: "IBITF, IIT Bhilai",
-    //   lastDate: "18 October 2024",
-    //   downloadLink: require("../assets/PDF/career/02Advertise.pdf"),
-    //   applyLink: "#",
-    //   applyText: "Apply Now",
-    // },
+   
     {
       title: "Recruitment of various Project positions of VSK",
       positions: "22",
@@ -1304,21 +1291,7 @@ export const siteContent = {
       applyLink: "#",
       applyText: "Apply Now",
     },
-    // {
-    //   title: "Outreach Consultant",
-    //   positions: "01",
-    //   qualifications: "Bachelor’s degree required; Master’s degree preferred",
-    //   experience:
-    //   "As Per Advertisement Attached",
-    //   contractPeriod:
-    //     "5 months (Extendable according up to 1 Year based on performance & Outcome)",
-    //   ageLimit: "Up to 45 years",
-    //   location: "IBITF Bhilai",
-    //   lastDate: "13th November 2023",
-    //   downloadLink: require("../assets/PDF/career/04Advertise.pdf"),
-    //   applyLink: "#",
-    //   applyText: "Apply Now",
-    // },
+
   ],
 
   selectedCandidates: [
