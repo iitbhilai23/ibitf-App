@@ -11,7 +11,6 @@ const Popup = ({ show, closePopup }) => {
   const openHackathonLink = () => {
     window.open("https://tihiitbhilai.accubate.app/ext/form/2982/1/apply"); 
   };
-
   const handleCloseClick = (event) => {
     event.stopPropagation(); 
     closePopup(); 
