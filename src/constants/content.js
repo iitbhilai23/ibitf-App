@@ -1297,7 +1297,7 @@ export const siteContent = {
   selectedCandidates: [
     {
       title: "Senior Software Developer",
-      positions: "02",
+      positions: "01",
       interviewDate: "To be Announced",
       remarks: "Finalized",
       contactPerson: "HR Manager, hr@iitbhilai.ac.in",
