@@ -1296,6 +1296,14 @@ export const siteContent = {
 
   selectedCandidates: [
     {
+      title: "Senior Software Developer",
+      positions: "02",
+      interviewDate: "To be Annoounced",
+      remarks: "Finalized",
+      contactPerson: "HR Manager, hr@iitbhilai.ac.in",
+      downloadLink: require("../assets/PDF/career/Provisonal_Shortlisting.pdf"),
+    },
+    {
       title:
         "Project Consultant (Finance cum Legal)/Project Associate(Accounts)/Project Assistant",
       positions: "--",
