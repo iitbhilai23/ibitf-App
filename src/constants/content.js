@@ -1298,7 +1298,7 @@ export const siteContent = {
     {
       title: "Senior Software Developer",
       positions: "02",
-      interviewDate: "To be Annoounced",
+      interviewDate: "To be Announced",
       remarks: "Finalized",
       contactPerson: "HR Manager, hr@iitbhilai.ac.in",
       downloadLink: require("../assets/PDF/career/Provisonal_Shortlisting.pdf"),
