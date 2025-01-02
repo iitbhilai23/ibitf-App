@@ -1295,14 +1295,14 @@ export const siteContent = {
   ],
 
   selectedCandidates: [
-    // {
-    //   title: "Senior Software Developer",
-    //   positions: "01",
-    //   interviewDate: "To be Announced",
-    //   remarks: "Finalized",
-    //   contactPerson: "HR Manager, hr@iitbhilai.ac.in",
-    //   downloadLink: require("../assets/PDF/career/Provisonal_Shortlisting.pdf"),
-    // },
+    {
+      title: "Senior Software Developer and Project Engineer",
+      positions: "03",
+      interviewDate: "To be Announced",
+      remarks: "Finalized",
+      contactPerson: "HR Manager, hr@iitbhilai.ac.in",
+      downloadLink: require("../assets/PDF/career/Provisonal_Shortlisting.pdf"),
+    },
     {
       title:
         "Project Consultant (Finance cum Legal)/Project Associate(Accounts)/Project Assistant",
