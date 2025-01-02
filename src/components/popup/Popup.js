@@ -35,6 +35,7 @@ const Popup = ({ show, closePopup }) => {
   );
 };
 
+
 export default Popup;
 
 
