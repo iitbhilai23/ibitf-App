@@ -3,7 +3,7 @@
 
 import React from "react";
 import "./Popup.css";
-import PopImage from '../../assets/popup/Hackathon-PMAY.jpeg';
+import PopImage from '../../assets/popup/EXPERT_TALK.jpg';
 
 const Popup = ({ show, closePopup }) => {
   if (!show) return null;
@@ -24,7 +24,7 @@ const Popup = ({ show, closePopup }) => {
             src={PopImage}
             alt="Popup"
             className="popup-image"
-            onClick={openHackathonLink}  // Only trigger the link when clicking the image
+            onClick={openHackathonLink}  
           />
           <button className="close-button" onClick={handleCloseClick}>
             &times;

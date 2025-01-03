@@ -28,19 +28,77 @@
 
 .close-button {
   position: absolute;
-  top: -24px;
-  right: -15px;
-  font-size: 50px;
-  background: transparent;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  background: #c70e0e;
   border: none;
-  color: #c70e0e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   z-index: 1001;
+  outline: none;
 }
 
+.close-button::before, .close-button::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
 
+.close-button::before {
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  transform: rotate(-45deg);
+}
 
 .image-container {
   position: relative;
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .popup-box {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .close-button {
+    width: 35px;
+    height: 35px;
+    top: -18px;
+    right: -18px;
+  }
+
+  .close-button::before, .close-button::after {
+    width: 18px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .close-button {
+    width: 30px;
+    height: 30px;
+    top: -14px;
+    right: -14px;
+  }
+
+  .close-button::before, .close-button::after {
+    width: 15px;
+    height: 2px;
+  }
 }
