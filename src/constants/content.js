@@ -1219,6 +1219,20 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Project Associate",
+      positions: "01",
+      qualifications: "Bachelor's/Master's degree in Engineering, Technology, Management or related fields",
+      experience: "As Per Advertisement Attached",
+      contractPeriod:
+        "89 Days and may be extendable depending upon the performance",
+      ageLimit: "Age shall not exceed 35 years ",
+      location: "IIT Bhilai",
+      lastDate: "22nd January 2025",   
+      downloadLink: require("../assets/PDF/career/Project_Associate16JAN.pdf"),
+      applyLink: "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1EHB2IWivwoLZmGMu6mVvc-y6DFVFsJBPfftfJxVy9m4%2Fviewform&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1EHB2IWivwoLZmGMu6mVvc-y6DFVFsJBPfftfJxVy9m4%2Fviewform&ifkv=AVdkyDn9HJwRe2ugp7520CwEOX3bSP3sLrSj1BcbdhzR8tUSox-kVJ3kJa7B_XB5SCGEzsk-auy8Eg&ltmpl=forms&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1692979787%3A1737027136531745&ddm=1",
+      applyText: "Apply Now",
+    },
+    {
       title: "Project Manager/Project Associate",
       positions: "03",
       qualifications: "Phd or MBA/ME/MTech BE/BTech",
