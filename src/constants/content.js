@@ -1219,6 +1219,19 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Recruitment of various Project positions of VSK",
+      positions: "03",
+      qualifications: "MTech/BTech, M.Sc/MCA, ME/MS in Computer Science. Proficiency in  Word, Excel, PowerPoint etc.",
+      experience: "As Per Advertisement Attached",
+      contractPeriod:"1 Year",
+      ageLimit: "Maximum Age 35 years(as on date of application)",
+      location: "IIT Bhilai",
+      lastDate: "24th January 2025",   
+      downloadLink: require("../assets/PDF/career/VSK-Staff.pdf"),
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSduz-xbjwR1jzWkCm5PA4qhC_qAW8v7K8OazCwueBfru6uD8A/viewform",
+      applyText: "Apply Now",
+    },
+    {
       title: "Project Associate",
       positions: "01",
       qualifications: "Bachelor's/Master's degree in Engineering, Technology, Management or related fields",
