@@ -20,7 +20,7 @@ const Career = () => {
             <th>Experience</th>
             <th>Contract Period</th>
             <th>Age Limit</th>
-            <th>Location</th>
+            {/* <th>Location</th> */}
             <th>Last Date</th>
             <th>Advertisement</th>
             <th>Apply</th>
@@ -35,7 +35,7 @@ const Career = () => {
               <td data-label="Experience">{job.experience}</td>
               <td data-label="Contract Period">{job.contractPeriod}</td>
               <td data-label="Age Limit">{job.ageLimit}</td>
-              <td data-label="Location">{job.location}</td>
+              {/* <td data-label="Location">{job.location}</td> */}
               <td data-label="Last Date">{job.lastDate}</td>
               <td data-label="Advertisement">
                 <a href={job.downloadLink} className="download-link" target="_blank" rel="noopener noreferrer">

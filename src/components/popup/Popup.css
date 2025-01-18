@@ -1,4 +1,4 @@
-/* .popup-overlay {
+.popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,14 +16,15 @@
   background-color: white;
   padding: 10px;
   border-radius: 8px;
-  width: 60%;
-  max-width: 800px;
+  width: auto;
+  max-width: 600px;
   box-sizing: border-box;
 }
 
 .popup-image {
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  height: 660px !important;
 }
 
 .close-button {
@@ -101,7 +102,7 @@
     width: 15px;
     height: 2px;
   }
-} */
+} 
 
 
 
