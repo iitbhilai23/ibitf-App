@@ -1223,7 +1223,7 @@ export const siteContent = {
       positions: "01",
       qualifications: "CA/CS, Master’s degree in Finance/economics or relevant field. A law degree with any above qualifications shall attract additional weightage.",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year",
+      contractPeriod:"1 Year (extendable)",
       ageLimit: "Maximum Age 50 years",
       location: "IIT Bhilai",
       lastDate: "9th February 2025",   
