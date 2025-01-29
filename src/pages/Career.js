@@ -85,6 +85,7 @@ const Career = () => {
       </div>
     </div>
   );
+  
 };
 
 export default Career;
