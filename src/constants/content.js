@@ -1219,6 +1219,19 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Recruitment of Project Consultant(Finance cum Legal)",
+      positions: "01",
+      qualifications: "CA/CS, Master’s degree in Finance/economics or relevant field. A law degree with any above qualifications shall attract additional weightage.",
+      experience: "As Per Advertisement Attached",
+      contractPeriod:"1 Year",
+      ageLimit: "Maximum Age 50 years",
+      location: "IIT Bhilai",
+      lastDate: "9th February 2025",   
+      downloadLink: require("../assets/PDF/career/ProjectConsultant.pdf"),
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSeYOrS3jLLk9M8YUVPVhUxNP5ghg_5FijCet5GofVXobYpLlQ/viewform",
+      applyText: "Apply Now",
+    },
+    {
       title: "Recruitment of various Project positions of VSK",
       positions: "03",
       qualifications: "MTech/BTech, M.Sc/MCA, ME/MS in Computer Science. Proficiency in  Word, Excel, PowerPoint etc.",
