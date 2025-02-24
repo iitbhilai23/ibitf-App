@@ -12,6 +12,7 @@ import Project11 from "../assets/PDF/proposal/Call_for_Proposals_for_TBI_Scheme.
 import Project12 from "../assets/PDF/proposal/Call_for_Proposal_for_Technology_Development.0707.pdf";
 import Project14 from "../assets/PDF/proposal/CFP-SSS.pdf";
 import Project13 from "../assets/PDF/proposal/CFP_DIAL.pdf";
+import Project15 from "../assets/PDF/proposal/Empanalment-of-Chartered-Accountant-at-IBITF.pdf";
 
 import {
   FaLightbulb,
@@ -762,6 +763,24 @@ export const siteContent = {
     },
   ],
   cardDataForCFP: [
+    {
+      id: 15,
+
+      mainHeading: "Request for Expression of Interest from Chartered Accountants.",
+      description:
+        "",
+        lastDate: "Extended deadline for project proposal submission: 3rd March 2025",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: Project15, // Replace with actual PDF URL
+        },
+        {
+          text: "Apply Now",
+          url: "#", // Replace with the actual URL
+        },
+      ],
+    },
     {
       id: 14,
 
