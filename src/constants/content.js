@@ -777,7 +777,7 @@ export const siteContent = {
         },
         {
           text: "Apply Now",
-          url: "#", // Replace with the actual URL
+          url: "mailto:your-email@example.com?subject=Proposal%20Application&body=I%20would%20like%20to%20apply%20for%20the%20project.", // Replace with the actual URL
         },
       ],
     },
