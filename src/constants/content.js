@@ -1238,6 +1238,19 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Recruitment of FinteQ-Quantum-Safe Financial Transaction Framework",
+      positions: "01",
+      qualifications: "Bachelor's/Master's degree in Engineering,Technology,Management or related fields",
+      experience: "As Per Advertisement Attached",
+      contractPeriod:"89 Days",
+      ageLimit: "Maximum Age 35 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "4th March 2025",   
+      downloadLink: require("../assets/PDF/career/FinteQ2025.pdf"),
+      applyLink: "",
+      applyText: "Apply Now",
+    },
+    {
       title: "Recruitment of Project Consultant(Finance cum Legal)",
       positions: "01",
       qualifications: "CA/CS, Master’s degree in Finance/economics or relevant field. A law degree with any above qualifications shall attract additional weightage.",
