@@ -13,7 +13,7 @@ import Project12 from "../assets/PDF/proposal/Call_for_Proposal_for_Technology_D
 import Project14 from "../assets/PDF/proposal/CFP-SSS.pdf";
 import Project13 from "../assets/PDF/proposal/CFP_DIAL.pdf";
 import Project15 from "../assets/PDF/proposal/Empanalment-of-Chartered-Accountant-at-IBITF.pdf";
-
+import CA from "../assets/PDF/proposal/CA.pdf"; 
 import {
   FaLightbulb,
   FaFlask,
@@ -769,16 +769,22 @@ export const siteContent = {
       mainHeading: "Request for Expression of Interest from Chartered Accountants.",
       description:
         "",
-        lastDate: "Extended deadline for project proposal submission: 3rd March 2025",
+        lastDate: "Extended deadline for project proposal submission: 5th March 2025",
       buttons: [
+        {
+          text: "Corrigendum",
+          url: CA, 
+        },
         {
           text: "Detailed Call for Proposal",
           pdfLink: Project15, // Replace with actual PDF URL
+          corrigendum:Project15
         },
         {
           text: "Apply Now",
           url: "mailto:your-email@example.com?subject=Proposal%20Application&body=I%20would%20like%20to%20apply%20for%20the%20project.", // Replace with the actual URL
         },
+       
       ],
     },
     {

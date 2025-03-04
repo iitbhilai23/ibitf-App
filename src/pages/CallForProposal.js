@@ -6,7 +6,7 @@ const CallForProposals = () => {
   const { cardDataForCFP } = siteContent;
 
   const handleButtonClick = (button) => {
-    const { pdfLink, url } = button;
+    const { pdfLink, url, } = button;
 
     if (pdfLink) {
       window.open(pdfLink, '_blank');
