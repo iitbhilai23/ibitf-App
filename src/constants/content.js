@@ -967,8 +967,8 @@ export const siteContent = {
       ],
     },
     {
+      
       id: 8,
-
       mainHeading: "Call for Proposal for Chair Professor",
       description: "Proposals are invited by IBITF to join as Chair Professor.",
       lastDate: "",
