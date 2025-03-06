@@ -1,7 +1,7 @@
 import React from "react";
 import "./Popup.css";
 
-import popupPdf from "../../assets/popup/ibitf_fintech_boot_handout.jpg";
+import popupPdf from "../../assets/popup/popup3.jpeg";
 
 
 const Popup = ({ show, closePopup }) => {

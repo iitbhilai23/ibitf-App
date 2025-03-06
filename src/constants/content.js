@@ -44,7 +44,6 @@ import {
   Group,
 } from "@mui/icons-material";
 import AgricultureIcon from "@mui/icons-material/Agriculture";
-
 import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 
 export const siteContent = {
@@ -117,10 +116,6 @@ export const siteContent = {
              The ultimate goal is to augment or replace the traditional functioning of the financial sectors,
               in order to improve user experience, and to make transactions better in terms of security, 
               accessibility, speed and efficiency 
-
-
-
-
               Entrepreneurs are key to develop important innovative solutions for complex societal challenges.
                Entrepreneurship and innovation are relevant in many different sustainable business contexts,
                specifically in emerging technical fields like Fintech. 

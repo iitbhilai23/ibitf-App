@@ -23,18 +23,19 @@ import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 import Popup from './components/popup/Popup';
 const App = () => {
+
   const [showPopup, setShowPopup] = useState(true); 
-
-
+  
   const closePopup = () => {
     setShowPopup(false); 
   };
+  
   return (
     <Router>
      <ScrollToTop/> 
       <Navbar />
       {/* for Popupbox component */}
-      {/* <Popup show={showPopup} closePopup={closePopup} /> */}
+      <Popup show={showPopup} closePopup={closePopup} />
 
       <Routes>
         {/* Static Routes */}
