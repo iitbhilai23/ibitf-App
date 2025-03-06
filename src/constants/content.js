@@ -1248,7 +1248,7 @@ export const siteContent = {
       location: "IBITF IIT Bhilai",
       lastDate: "14th March 2025",   
       downloadLink: require("../assets/PDF/career/FinteQ2025.pdf"),
-      applyLink: "",
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScnSsusZToX2ihguO_4sRQLV3w0sjjJvokfScdAMCtBZTYLgw/viewform",
       applyText: "Apply Now",
     },
     {
