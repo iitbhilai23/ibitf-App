@@ -1,15 +1,15 @@
 import React from "react";
 import "./Popup.css";
 
-import popupPdf from "../../assets/popup/ibitf_fintech_boot_handout.jpg";
+import popupPdf from "../../assets/popup/genisis-2.jpg";
 
 
 const Popup = ({ show, closePopup }) => {
   if (!show) return null;
 
-//   const openHackathonLink = () => {
-//     window.open("https://tihiitbhilai.accubate.app/ext/form/2982/1/apply"); 
-//   };
+  // const openHackathonLink = () => {
+  //   window.open("https://tihiitbhilai.accubate.app/ext/form/2982/1/apply"); 
+  // };
   const handleCloseClick = (event) => {
     event.stopPropagation(); 
     closePopup(); 
