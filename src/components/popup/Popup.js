@@ -1,7 +1,7 @@
 import React from "react";
 import "./Popup.css";
 
-import popupPdf from "../../assets/popup/genisis-2.jpg";
+import popupPdf from "../../assets/popup/popup3.jpeg";
 
 
 const Popup = ({ show, closePopup }) => {
@@ -23,7 +23,6 @@ const Popup = ({ show, closePopup }) => {
             src={popupPdf}
             alt="Popup"
       
-            
             className="popup-image"
             // onClick={openHackathonLink}  
           />
