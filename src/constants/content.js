@@ -859,7 +859,9 @@ export const siteContent = {
       mainHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
       description:
         "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
-      lastDate: "Extended deadline for project proposal submission: 17th December",
+        lastDate:"Extended deadline for project proposal submission:16th March",
+        // lastDate: "The second closure is open from 10th to 16th March",
+    
       buttons: [
         {
           text: "Detailed Call for Proposal",

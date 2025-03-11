@@ -47,6 +47,7 @@ const CallForProposals = () => {
               >
                 {card.lastDate || "No deadline specified"}
               </p>
+          
             </div>
             <div className="card-buttons-list">
               {card.buttons.map((button, index) => (
