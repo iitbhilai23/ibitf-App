@@ -35,7 +35,7 @@ const App = () => {
      <ScrollToTop/> 
       <Navbar />
       {/* for Popupbox component */}
-      <Popup show={showPopup} closePopup={closePopup} />
+      {/* <Popup show={showPopup} closePopup={closePopup} /> */}
 
       <Routes>
         {/* Static Routes */}
