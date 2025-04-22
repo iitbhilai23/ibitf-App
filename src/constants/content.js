@@ -1241,16 +1241,16 @@ export const siteContent = {
   },
   jobListings: [
     {
-      title: "Recruitment of various Project positions of IBITF",
-      positions: "13",
-      qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
+      title: "Recruitment of various Project positions of VSK Project",
+      positions: "04",
+      qualifications: "Bachelor's/Master's degree in Engineering, M.Sc. (IT/CS) or MCA ,Technology,Management or related fields",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year/89 Days",
+      contractPeriod:"1 Year",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "6th April 2025",   
-      downloadLink: require("../assets/PDF/career/Advt_April25_TIH.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSd6kBZXX5sIHy6obqvmmQRIrbCMDcXg4TSb-QXsu74DRfoxZw/viewform",
+      lastDate: "27th April 2025",   
+      downloadLink: require("../assets/PDF/career/VSK2025.pdf"),
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSeeDs2spmQb25x8c6nbTukDqSGQAKLDQsYWaGby1ePTFxrjcw/viewform",
       applyText: "Apply Now",
     },
     {
