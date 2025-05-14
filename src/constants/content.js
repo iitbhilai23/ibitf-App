@@ -1230,7 +1230,6 @@ export const siteContent = {
       route: "/videoKYC",
     },
   ],
-
   videoPage: {
     title: "The Hon'ble President of India Applauds Our Innovation",
     description:
@@ -1248,7 +1247,7 @@ export const siteContent = {
       contractPeriod:"1 Year",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "28th April 2025",   
+      lastDate: "15th April 2025",   
       downloadLink: require("../assets/PDF/career/VSK2025V2.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSeeDs2spmQb25x8c6nbTukDqSGQAKLDQsYWaGby1ePTFxrjcw/viewform",
       applyText: "Apply Now",
