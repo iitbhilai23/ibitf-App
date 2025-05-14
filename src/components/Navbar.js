@@ -108,7 +108,7 @@ const Navbar = () => {
                       <li key={subIndex} className={isActive ? 'active' : ''}>
                         {isIndustryPDF ? (
                           <a
-                            href={require("../assets/PDF/industry_partners/Partners.pdf")}
+                            href={require("../assets/PDF/industry_partners/Partners_modified.pdf")}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => {
