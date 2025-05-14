@@ -80,7 +80,7 @@ const Navbar = () => {
                 {item.label} <i className={`fas fa-caret-${openSubmenuIndex === index ? 'up' : 'down'}`}></i>
               </span>
 
-              <div className={`mega-menu ${openSubmenuIndex === index ? 'active' : ''}`}>
+              {/* <div className={`mega-menu ${openSubmenuIndex === index ? 'active' : ''}`}>
                 <ul>
                   {item.submenu.map((submenuItem, subIndex) => (
                     <li key={subIndex} className={location.pathname === `/${submenuItem.toLowerCase().replace(/\s+/g, '-')}` ? 'active' : ''}>
@@ -95,6 +95,43 @@ const Navbar = () => {
                       </Link>
                     </li>
                   ))}
+                </ul>
+              </div> */}
+              <div className={`mega-menu ${openSubmenuIndex === index ? 'active' : ''}`}>
+                <ul>
+                  {item.submenu.map((submenuItem, subIndex) => {
+                    const urlFriendly = submenuItem.toLowerCase().replace(/\s+/g, '-');
+                    const isActive = location.pathname === `/${urlFriendly}`;
+                    const isIndustryPDF = submenuItem === "Industries Partners";
+
+                    return (
+                      <li key={subIndex} className={isActive ? 'active' : ''}>
+                        {isIndustryPDF ? (
+                          <a
+                            href={require("../assets/PDF/industry_partners/Partners.pdf")}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => {
+                              setIsMobile(false);
+                              setOpenSubmenuIndex(null);
+                            }}
+                          >
+                            {submenuItem}
+                          </a>
+                        ) : (
+                          <Link
+                            to={`/${urlFriendly}`}
+                            onClick={() => {
+                              setIsMobile(false);
+                              setOpenSubmenuIndex(null);
+                            }}
+                          >
+                            {submenuItem}
+                          </Link>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </li>
