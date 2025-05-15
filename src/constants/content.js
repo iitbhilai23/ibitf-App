@@ -54,7 +54,7 @@ export const siteContent = {
       "Home",
       {
         label: "About Us",
-        submenu: ["About IBITF", "Organizational Structure", "Industries Partners"],
+        submenu: ["About IBITF", "Organizational Structure"],
       },
       {
         label: "Programs & Initiatives",
