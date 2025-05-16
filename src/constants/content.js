@@ -1142,11 +1142,7 @@ export const siteContent = {
       url: require("../assets/slider/2.jpeg"),
       title: "Drone Didi Workshop at IIT Bhilai",
     },
-   
-    
   ],
-
-  
 
   AboutSection: {
     title: "Innovation and Technology Foundation ",
