@@ -54,7 +54,7 @@ export const siteContent = {
       "Home",
       {
         label: "About Us",
-        submenu: ["About IBITF", "Organizational Structure", "Industries Partners"],
+        submenu: ["About IBITF", "Organizational Structure"],
       },
       {
         label: "Programs & Initiatives",
@@ -505,11 +505,11 @@ export const siteContent = {
         designation: "Project Associate, IBITF",
         image: require("../assets/TeamImg/sujata.png"),
       },
-      {
-        name: "Ms. Richa Bhoi",
-        designation: "Project Assistant, IBITF",
-        image: require("../assets/TeamImg/Richa.jpeg"),
-      },
+      // {
+      //   name: "Ms. Richa Bhoi",
+      //   designation: "Project Assistant, IBITF",
+      //   image: require("../assets/TeamImg/Richa.jpeg"),
+      // },
       {
         name: "Ms. Aanchal Sahu",
         designation: "Project Assistant, IBITF",
