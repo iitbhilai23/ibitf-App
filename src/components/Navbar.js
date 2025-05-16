@@ -103,6 +103,7 @@ const Navbar = () => {
                     const urlFriendly = submenuItem.toLowerCase().replace(/\s+/g, '-');
                     const isActive = location.pathname === `/${urlFriendly}`;
                     const isIndustryPDF = submenuItem === "Industries Partners";
+                    const isProjectPDF = submenuItem === "Project List";
 
                     return (
                       <li key={subIndex} className={isActive ? 'active' : ''}>
@@ -118,7 +119,23 @@ const Navbar = () => {
                           >
                             {submenuItem}
                           </a>
-                        ) : (
+                        )  :
+                        
+                        isProjectPDF ? (
+                          <a
+                            href={require("../assets/PDF/project_list/Projects_List.pdf")}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => {
+                              setIsMobile(false);
+                              setOpenSubmenuIndex(null);
+                            }}
+                          >
+                            {submenuItem}
+                          </a>
+                        ) 
+                        :
+                         (
                           <Link
                             to={`/${urlFriendly}`}
                             onClick={() => {
