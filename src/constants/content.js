@@ -500,11 +500,22 @@ export const siteContent = {
         designation: "Project Associate, IBITF",
         image: require("../assets/TeamImg/nidhi.png"),
       },
-      {
-        name: "Mrs. K Sujata",
-        designation: "Project Associate, IBITF",
-        image: require("../assets/TeamImg/sujata.png"),
+        {
+        name: "Mr. Nem Singh",
+        designation: "Project Associate(account), IBITF",
+        image: require("../assets/TeamImg/NemSingh.jpeg"),
       },
+       {
+        name: "Mr. Santosh Kumar Sahu",
+        designation: "Project Associate(MTS), IBITF",
+        image: require("../assets/TeamImg/SantoshKumarSahu.jpeg"),
+      },
+     
+      // {
+      //   name: "Mrs. K Sujata",
+      //   designation: "Project Associate, IBITF",
+      //   image: require("../assets/TeamImg/sujata.png"),
+      // },
       // {
       //   name: "Ms. Richa Bhoi",
       //   designation: "Project Assistant, IBITF",
@@ -530,10 +541,25 @@ export const siteContent = {
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/AnchalBarchhiha.jpg"),
       },
+       {
+        name: "Mr. Tomesh Sahu",
+        designation: "Project Assistant, IBITF",
+        image: require("../assets/TeamImg/TomeshSahu.jpeg"),
+      },
+        {
+        name: "Mr. Gaurav Kumar",
+        designation: "Project Assistant, IBITF",
+        image: require("../assets/TeamImg/GauravKumar.jpeg"),
+      },
       {
         name: "Mr. Domeshwar",
         designation: "Project Attendent, IBITF",
         image: require("../assets/TeamImg/domesh24.jpeg"),
+      },
+       {
+        name: "Mr. Shailesh",
+        designation: "Project Attendent, IBITF",
+        image: require("../assets/TeamImg/Shailesh.jpeg"),
       },
     ],
   },
