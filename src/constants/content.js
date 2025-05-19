@@ -1097,7 +1097,7 @@ export const siteContent = {
       require("../assets/Images/ibitf.png"), // Image 1
     ],
   },
-  
+
 
   // Awards component contents
   awards: [
@@ -1272,7 +1272,7 @@ export const siteContent = {
       contractPeriod:"1 Year",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "17th April 2025",   
+      lastDate: "20th April 2025",   
       downloadLink: require("../assets/PDF/career/VSK2025V2.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSeeDs2spmQb25x8c6nbTukDqSGQAKLDQsYWaGby1ePTFxrjcw/viewform",
       applyText: "Apply Now",
