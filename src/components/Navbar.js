@@ -109,7 +109,7 @@ const Navbar = () => {
                       <li key={subIndex} className={isActive ? 'active' : ''}>
                         {isIndustryPDF ? (
                           <a
-                            href={require("../assets/PDF/industry_partners/Partners_modified.pdf")}
+                            href={require("../assets/PDF/industry_partners/IndustryPartnersNew.pdf")}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => {
@@ -123,7 +123,7 @@ const Navbar = () => {
                         
                         isProjectPDF ? (
                           <a
-                            href={require("../assets/PDF/project_list/Projects_List.pdf")}
+                            href={require("../assets/PDF/project_list/ProjectListNew.pdf")}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => {
