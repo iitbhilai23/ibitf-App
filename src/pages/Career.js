@@ -51,7 +51,7 @@ const Career = () => {
       </table>
      </div>
 
-      <h2>Selected Candidates - Recruitment Results</h2>
+      <h2>Shortlisted/Not Shortlisted applicants Candidates - Recruitment Results</h2>
       <p>Download the PDF to see the list of selected candidates for the following positions:</p>
       <div className='career-table-container'>
       <table className="career-table">
@@ -62,7 +62,7 @@ const Career = () => {
             <th>Interview Date</th>
             <th>Remarks / Status</th>
             <th>Contact Person</th>
-            <th>Selected Candidates PDF</th>
+            <th>Shortlisted/Not Shortlisted</th>
           </tr>
         </thead>
         <tbody>

@@ -1260,7 +1260,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .career-page {
   margin: 0 auto;
-  padding: 25px 40px;
+  padding: 15px 40px;
 
   background-color: #f9f9f9;
 }
@@ -1268,20 +1268,20 @@ body::-webkit-scrollbar-thumb:hover {
 .career-page h2 {
   text-align: center;
   color: #4d3e90;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .career-page p {
   text-align: center;
   font-size: 1.1rem;
   color: #0f0f0f;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .career-table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   box-shadow: 2px 4px 5px 0px lightgray;
 
 }
@@ -1294,9 +1294,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .career-table th,
 .career-table td {
-  padding: 15px 10px !important;
+  padding: 10px 10px !important;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border: 1px solid #ddd;
 }
 
