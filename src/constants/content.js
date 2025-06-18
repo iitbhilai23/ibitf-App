@@ -487,7 +487,7 @@ export const siteContent = {
       },
       {
         name: "Mrs. Pratibha Dongre",
-        designation: "Project Associate, IBITF",
+        designation: "Project Engineer, IBITF",
         image: require("../assets/TeamImg/pratibha.jpg"),
       },
       {

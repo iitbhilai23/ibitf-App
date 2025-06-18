@@ -1,7 +1,7 @@
 import React from "react";
 import "./Popup.css";
 
-import popupPdf from "../../assets/popup/popup3.jpeg";
+import popupPdf from "../../assets/popup/18may.jpeg";
 
 
 const Popup = ({ show, closePopup }) => {
