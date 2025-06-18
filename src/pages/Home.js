@@ -1,8 +1,6 @@
 import React from 'react';
 import { siteContent } from '../constants/content';
-
 import Card from '../components/Card';
-
 import Achievements from '../components/Achievements';
 import AboutSection from '../components/AboutSection';
 import TribalAreaPlan from '../components/TribalAreaPlan';
