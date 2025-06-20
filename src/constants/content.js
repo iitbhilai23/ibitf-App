@@ -511,16 +511,6 @@ export const siteContent = {
         image: require("../assets/TeamImg/SantoshKumarSahu.jpeg"),
       },
      
-      // {
-      //   name: "Mrs. K Sujata",
-      //   designation: "Project Associate, IBITF",
-      //   image: require("../assets/TeamImg/sujata.png"),
-      // },
-      // {
-      //   name: "Ms. Richa Bhoi",
-      //   designation: "Project Assistant, IBITF",
-      //   image: require("../assets/TeamImg/Richa.jpeg"),
-      // },
       {
         name: "Ms. Aanchal Sahu",
         designation: "Project Assistant, IBITF",
@@ -952,24 +942,7 @@ export const siteContent = {
         },
       ],
     },
-    // {
-    //   id: 5,
 
-    //   mainHeading: "Call for Proposals for TBI Scheme",
-    //   description:
-    //     "Proposals are invited by IBITF under the Technology Business Incubator schemes.",
-    //   lastDate: "This is a rolling advertisement",
-    //   buttons: [
-    //     {
-    //       text: "Detailed Call for Proposal",
-    //       pdfLink: tbiScheme,
-    //     },
-    //     {
-    //       text: "Submit Your Proposal",
-    //       url: "https://google.com/", // Replace with the actual URL
-    //     },
-    //   ],
-    // },
 
     {
       id: 7,
@@ -1043,24 +1016,7 @@ export const siteContent = {
         },
       ],
     },
-    // {
-    //   id: 11,
-
-    //   mainHeading: "Call For Proposals for Technology Development in FinTech",
-    //   description:
-    //     "Inviting Researchers from the institutions of Higher Learning (Centrally/state Funded Institutions of higher learning or NAAC Accredited Institution with Grade A).",
-    //   lastDate: "",
-    //   buttons: [
-    //     {
-    //       text: "Detailed Call for Proposal",
-    //       pdfLink: Project10, // Replace with actual PDF URL
-    //     },
-    //     {
-    //       text: "Submit Your Proposal",
-    //       url: "https://example.com/submit-proposal", // Replace with the actual URL
-    //     },
-    //   ],
-    // },
+   
   ],
   CollaborationBy: {
     title: "Supported By",
@@ -1456,15 +1412,6 @@ export const siteContent = {
       contactPerson: "HR Manager, tih@iitbhilai.ac.in",
       downloadLink: require("../assets/PDF/career/Provisonal_Shortlisting.pdf"),
     },
-    // {
-    //   title:
-    //     "Project Consultant (Finance cum Legal)/Project Associate(Accounts)/Project Assistant",
-    //   positions: "--",
-    //   interviewDate: "01.08.2024",
-    //   remarks: "Finalized",
-    //   contactPerson: "HR Manager, hr@iitbhilai.ac.in",
-    //   downloadLink: require("../assets/PDF/career/01Shortlisted.pdf"),
-    // },
    
   ],
 
