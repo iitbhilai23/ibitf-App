@@ -22,7 +22,6 @@ const Popup = ({ show, closePopup }) => {
           <img
             src={popupPdf}
             alt="Popup"
-      
             className="popup-image"
             // onClick={openHackathonLink}  
           />
