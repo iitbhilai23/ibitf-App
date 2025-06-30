@@ -1221,7 +1221,19 @@ export const siteContent = {
   },
   jobListings: [
 
-
+    {
+      title: "Recruitment of various Project positions of FinteQ- quantum-Safe Financial Transaction Framework",
+      positions: "03",
+      qualifications: "Bachelor's/Master's degree in Engineering, M.Sc. (IT/CS) or MCA ,Technology,Management or related fields",
+      experience: "As Per Advertisement Attached",
+      contractPeriod:"89 Days",
+      ageLimit: "Maximum Age 45 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "8th June 2025",   
+      downloadLink: require("../assets/PDF/career/Fintech30-6-25.pdf"),
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScnSsusZToX2ihguO_4sRQLV3w0sjjJvokfScdAMCtBZTYLgw/viewform",
+      applyText: "Apply Now",
+    },
     {
       title: "Recruitment of various Project positions of VSK Project",
       positions: "04",
@@ -1246,19 +1258,6 @@ export const siteContent = {
       lastDate: "6th April 2025",   
       downloadLink: require("../assets/PDF/career/Advt_April25_TIH.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSd6kBZXX5sIHy6obqvmmQRIrbCMDcXg4TSb-QXsu74DRfoxZw/viewform",
-      applyText: "Apply Now",
-    },
-    {
-      title: "Recruitment of FinteQ-Quantum-Safe Financial Transaction Framework",
-      positions: "01",
-      qualifications: "Bachelor's/Master's degree in Engineering,Technology,Management or related fields",
-      experience: "As Per Advertisement Attached",
-      contractPeriod:"89 Days",
-      ageLimit: "Maximum Age 35 years",
-      location: "IBITF IIT Bhilai",
-      lastDate: "14th March 2025",   
-      downloadLink: require("../assets/PDF/career/FinteQ2025.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScnSsusZToX2ihguO_4sRQLV3w0sjjJvokfScdAMCtBZTYLgw/viewform",
       applyText: "Apply Now",
     },
     {
