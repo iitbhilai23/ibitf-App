@@ -24,7 +24,8 @@
 .popup-image {
   width: 100%;
   /* height: auto; */
-  height: 660px !important;
+  height: 640px !important;
+  cursor: pointer;
 }
 
 .close-button {
