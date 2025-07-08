@@ -22,6 +22,7 @@ import CallForProposals from './pages/CallForProposal';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 import Popup from './components/popup/Popup';
+import IncubationServices from './components/IncubationServices';
 const App = () => {
 
   const [showPopup, setShowPopup] = useState(true); 
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/services" element={<Services />} /> 
         <Route path="/Projects" element={<ProjectsList />} />
         <Route path="/career" element={<Career />} />
+        <Route path='/incubation-services' element={<IncubationServices/>}/>
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/team" element={<Team />} />
         <Route path="/thematic-areas" element={<Thematic />} />
