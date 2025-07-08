@@ -227,7 +227,7 @@ export const siteContent = {
       { name: "LinkedIn", url: "https://linkedin.com" },
     ],
     links: ["Home", "About us", "Career", "Contact us"],
-    services: ["Thematic Area", "Schemes", "Call for Proposals", "Blogs"],
+    services: ["Thematic Area", "Schemes", "Call for Proposals", "Blogs","Startup Support Services"],
     info: ["IIT Bhilai", "About Ibitf", "Projects", "Team"],
     support: ["FAQ", "Help", "Privacy Policy", "Terms"],
   },

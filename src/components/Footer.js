@@ -5,14 +5,16 @@ import React from 'react';
 import { siteContent } from '../constants/content';
 import '../styles/main.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
-  const { footerlogo, text, about, socials, links, services, info, support } = siteContent.footer;
+  const { footerlogo, text, about, socials, links, services, info, support, services2 } = siteContent.footer;
+  const navigate = useNavigate();
 
   return (
     <footer className="footer">
       <div className="footer-content">
-         
+
         {/* About Section */}
         <div className="footer-section about">
           <h2>
@@ -43,7 +45,7 @@ const Footer = () => {
           <h3>Programs & Initiatives</h3>
           <ul>
             {services.map((service, index) => (
-              <li key={index}><a href="#">{service}</a></li>
+              <li key={index}><a href="/incubation-services">{service}</a></li>
             ))}
           </ul>
         </div>
@@ -58,6 +60,15 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* <div className="footer-section info">
+          <h3>More Info</h3>
+          <ul>
+            {services2.map((item, index) => (
+              <li key={index}><a href="incubation-services">{item}</a></li>
+            ))}
+          </ul>
+        </div> */}
+
         {/* Support Section */}
         {/* <div className="footer-section support">
           <h3>Support</h3>
@@ -70,6 +81,27 @@ const Footer = () => {
       </div>
 
       {/* Footer Text */}
+      {/* <div className="footer-section services">
+        <h3>Programs & Initiatives</h3>
+        <ul>
+          {services.map((service, index) => (
+            <li key={index}>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (service === 'Startup Support Services') {
+                    navigate('/services');
+                  }
+                }}
+              >
+                {service}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div> */}
+
       <div className="footer-bottom">
         <p>{text}</p>
       </div>
