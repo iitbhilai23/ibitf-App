@@ -14,7 +14,7 @@ const IncubationServices = () => {
             Explore insights and documentation for our financial and banking
             services collaboration.
           </p>
-          <a href={SSS1} target="_blank" rel="noopener noreferrer" className="glass-button">
+          <a href={SSS2} target="_blank" rel="noopener noreferrer" className="glass-button">
             View PDF
           </a>
         </div>
@@ -23,7 +23,7 @@ const IncubationServices = () => {
           <p>
             Access legal compliance guidelines and CA partnership resources.
           </p>
-          <a href={SSS2} target="_blank" rel="noopener noreferrer" className="glass-button">
+          <a href={SSS1} target="_blank" rel="noopener noreferrer" className="glass-button">
             View PDF
           </a>
         </div>
