@@ -780,7 +780,7 @@ export const siteContent = {
       mainHeading: "Request for Expression of Interest from Chartered Accountants.",
       description:
         "",
-        lastDate: "Deadline for proposal submission: 14th August 2025.",
+        lastDate: "Deadline for project proposal submission: 14th August 2025",
       buttons: [
       
         {
