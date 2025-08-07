@@ -14,6 +14,10 @@ import Project14 from "../assets/PDF/proposal/CFP-SSS.pdf";
 import Project13 from "../assets/PDF/proposal/CFP_DIAL.pdf";
 import Project15 from "../assets/PDF/proposal/Empanalment-of-Chartered-Accountant-at-IBITF.pdf";
 import CA2 from "../assets/PDF/proposal/CA2.pdf"; 
+import PG from "../assets/PDF/Fellwoship_Project/PG_Fellowship.pdf";
+import UG from "../assets/PDF/Fellwoship_Project/UG_Fellowship.pdf";
+import Doctoral_Fellowship from "../assets/PDF/Fellwoship_Project/Doctoral_Fellowship.pdf";
+import PostDoctoral_Fellowship from "../assets/PDF/Fellwoship_Project/Post_Doctoral_Fellowship.pdf";
 import {
   FaLightbulb,
   FaFlask,
@@ -54,7 +58,7 @@ export const siteContent = {
       "Home",
       {
         label: "About Us",
-        submenu: ["About IBITF", "Organizational Structure","Industries Partners","Project List"],
+        submenu: ["About IBITF", "Organizational Structure","Industries Partners","Project List","Awarded Fellowship"],
       },
       {
         label: "Programs & Initiatives",
@@ -507,7 +511,7 @@ export const siteContent = {
       },
        {
         name: "Mr. Santosh Kumar Sahu",
-        designation: "Project Associate(MTS), IBITF",
+        designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/SantoshKumarSahu.jpeg"),
       },
      
@@ -1670,6 +1674,32 @@ export const siteContent = {
           icon: <Business />,
         },
       ],
+    },
+  ],
+  projectData : [
+    {
+      title: 'UG',
+      description: 'Kickstart your research journey with our Undergraduate fellowships, offering early exposure to high-impact projects and mentorship.',
+      icon: '🎓',
+      pdf: UG 
+    },
+    {
+      title: 'PG',
+      description: 'Deepen your specialization with our Postgraduate fellowships, designed for advanced study and significant contributions in your field.',
+      icon: '🔬',
+      pdf: PG
+    },
+    {
+      title: 'Doctoral',
+      description: 'Pursue groundbreaking research with our Doctoral (Ph.D.) fellowships, providing full support for producing a transformative thesis.',
+      icon: '📜',
+      pdf: Doctoral_Fellowship
+    },
+    {
+      title: 'Post Doctoral',
+      description: 'Collaborate with leading experts as a Post-Doctoral fellow, driving innovation and publishing pioneering work in your discipline.',
+      icon: '🧑‍🔬',
+      pdf: PostDoctoral_Fellowship
     },
   ],
 };
