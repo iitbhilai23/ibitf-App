@@ -4,39 +4,24 @@ import { siteContent } from '../constants/content';
 
 const TechSectors = () => {
 
-const {sectors} = siteContent;
+  const { sectors } = siteContent;
 
-
-//       description: 'Innovations in the agricultural sector.',
-//       pdf: Agritech,
-//     },
-//     {
-//       title: 'Fintech',
-//       description: 'Technology driving financial services.',
-//       pdf: Fintech,
-//     },
-//     {
-//       title: 'HealthTech',
-//       description: 'Advancements in healthcare technology.',
-//       pdf: HealthTech,
-//     },
-//   ];
   return (
-    <div className="tech-sectors-page">
-      <h1 className="page-title">Our Tech Projects</h1>
-      <div className="tech-sectors-container">
+    <div className="ts-page">
+      <h1 className="ts-title">Our Tech Projects</h1>
+      <div className="ts-container">
         {sectors.map((sector, index) => (
-          <div key={index} className="tech-card">
-            <div className="card-content">
-              <h3 className="card-title">{sector.title}</h3>
-              <p className="card-description">{sector.description}</p>
+          <div key={index} className="ts-card">
+            <div className="ts-card-content">
+              <h3 className="ts-card-title">{sector.title}</h3>
+              <p className="ts-card-description">{sector.description}</p>
             </div>
             <a
               href={sector.pdf}
               download={`${sector.title}_Project.pdf`}
-              className="card-button-link"
+              className="ts-button-link"
             >
-              <button className="card-button">Explore Project</button>
+              <button className="ts-button">Explore Project</button>
             </a>
           </div>
         ))}
