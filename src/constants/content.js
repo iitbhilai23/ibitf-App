@@ -18,6 +18,9 @@ import PG from "../assets/PDF/Fellwoship_Project/PG_Fellowship.pdf";
 import UG from "../assets/PDF/Fellwoship_Project/UG_Fellowship.pdf";
 import Doctoral_Fellowship from "../assets/PDF/Fellwoship_Project/Doctoral_Fellowship.pdf";
 import PostDoctoral_Fellowship from "../assets/PDF/Fellwoship_Project/Post_Doctoral_Fellowship.pdf";
+import Agritech from '../assets/PDF/tech_projects/Agritech.pdf';
+import Fintech from '../assets/PDF/tech_projects/Fintech.pdf';
+import HealthTech from '../assets/PDF/tech_projects/HealthTech.pdf';
 import {
   FaLightbulb,
   FaFlask,
@@ -58,7 +61,7 @@ export const siteContent = {
       "Home",
       {
         label: "About Us",
-        submenu: ["About IBITF", "Organizational Structure","Industries Partners","Project List","Awarded Fellowship"],
+        submenu: ["About IBITF", "Organizational Structure","Industries Partners","Project List","Awarded Fellowship","Tech Sectors"],
       },
       {
         label: "Programs & Initiatives",
@@ -1516,6 +1519,24 @@ export const siteContent = {
       ],
     },
   ],
+   sectors : [
+      {
+        title: 'Agritech',
+        description: 'Innovations in the agricultural sector.',
+        pdf: Agritech,
+      },
+      {
+        title: 'Fintech',
+        description: 'Technology driving financial services.',
+        pdf: Fintech,
+      },
+      {
+        title: 'HealthTech',
+        description: 'Advancements in healthcare technology.',
+        pdf: HealthTech,
+      },
+    ],
+  
   visionMissionData: [
     {
       icon: <FaLightbulb />,

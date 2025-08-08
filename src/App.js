@@ -25,6 +25,7 @@ import Popup from './components/popup/Popup';
 import IncubationServices from './components/IncubationServices';
 import FeaturedProjects from './components/FeaturedProjects';
 import FellowshipProject from './pages/FellowshipProject';
+import TechSectors from './pages/TechSectors';
 const App = () => {
 
   const [showPopup, setShowPopup] = useState(true); 
@@ -53,6 +54,7 @@ const App = () => {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/team" element={<Team />} />
          <Route path="/awarded-fellowship" element={<FellowshipProject />} />
+         <Route path='/tech-sectors' element={<TechSectors />}/>
         <Route path="/thematic-areas" element={<Thematic />} />
         <Route path="/call-for-proposals" element={<CallForProposals />} />
         <Route path="/blogs" element={<Blogs/>}/>
