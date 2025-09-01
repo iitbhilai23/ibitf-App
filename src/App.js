@@ -21,7 +21,7 @@ import Blogs from './pages/Blogs';
 import CallForProposals from './pages/CallForProposal';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
-import Popup from './components/popup/Popup';
+// import Popup from './components/popup/Popup';
 import IncubationServices from './components/IncubationServices';
 import FeaturedProjects from './components/FeaturedProjects';
 import FellowshipProject from './pages/FellowshipProject';
@@ -39,7 +39,7 @@ const App = () => {
      <ScrollToTop/> 
       <Navbar />
       {/* for Popupbox component */}
-      <Popup show={showPopup} closePopup={closePopup} />
+      {/* <Popup show={showPopup} closePopup={closePopup} /> */}
       <Routes>
         {/* Static Routes */}
         <Route path="/*" element={<Home />} />
