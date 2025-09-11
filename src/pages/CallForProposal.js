@@ -42,12 +42,11 @@ const CallForProposals = () => {
                           "Extended deadline for project proposal submission"
                         )
                       ? "red"
-                      : "black",
+                      : "red",
                 }}
               >
                 {card.lastDate || "No deadline specified"}
               </p>
-          
             </div>
             <div className="card-buttons-list">
               {card.buttons.map((button, index) => (

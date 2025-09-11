@@ -12,6 +12,7 @@ import Project11 from "../assets/PDF/proposal/Call_for_Proposals_for_TBI_Scheme.
 import Project12 from "../assets/PDF/proposal/Call_for_Proposal_for_Technology_Development.0707.pdf";
 import Project14 from "../assets/PDF/proposal/CFP-SSS.pdf";
 import Project13 from "../assets/PDF/proposal/CFP_DIAL.pdf";
+import PDF0721 from "../assets/PDF/proposal/CFP2025.pdf";
 import Project15 from "../assets/PDF/proposal/Empanalment-of-Chartered-Accountant-at-IBITF.pdf";
 import CA2 from "../assets/PDF/proposal/CA2.pdf"; 
 import PG from "../assets/PDF/Fellwoship_Project/PG_Fellowship.pdf";
@@ -781,6 +782,27 @@ export const siteContent = {
     },
   ],
   cardDataForCFP: [
+     {
+      id: 16,
+
+      mainHeading: "Inviting Proposals for Innovation and Startup Support under IBITF Schemes Call for Proposal For various operational Schemes under IBITF",
+      description:
+        "The IIT Bhilai Innovation and Technology Foundation (IBITF) is a Section-8 not-for-profit company, established under the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) of the Department of Science and Technology (DST), Government of India. IBITF focuses on the development and deployment of projects in the Fintech domain, focusing on identifying impactful solutions leveraging emerging technologies like Blockchain, IoT, AI/ML, and e-payments, with a primary emphasis on applying these technologies to other sectors like Agriculture and HealthTech.",
+        lastDate: "Deadline for project proposal submission: 10th October 2025.",
+      buttons: [
+      
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: PDF0721, 
+      
+        },
+        {
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/9467/1/apply", 
+        },
+       
+      ],
+    },
     {
       id: 15,
 
