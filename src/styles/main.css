@@ -11,9 +11,7 @@ font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   box-sizing: border-box;
 }
-
 /* For dynamic theme color */
-
 :root {
   --primary-color: #6a0dad;
   --secondary-color: #fff;
@@ -23,8 +21,6 @@ font-family: 'Poppins', sans-serif;
 
 }
 
-
-
 /* for home page design code here */
 
 .hero {
@@ -32,15 +28,12 @@ font-family: 'Poppins', sans-serif;
   background-image: linear-gradient(rgba(30, 30, 26, 0.7), rgba(33, 29, 29, 0.9), rgba(27, 26, 27, 0.7)), url('../assets/bg.jpeg');
   color: var(--secondary-color);
 
-
   padding: 100px 80px;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;  
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-
-
 }
 .hero, p {
   font-size: 13px;
@@ -66,13 +59,7 @@ font-family: 'Poppins', sans-serif;
   
 }
 
-
-
-
-
-
 /* For Footer page design  */
-
 
 .footer {
   background: radial-gradient(circle at -8.9% 51.2%, rgb(165, 164, 164) 0%, rgb(61, 56, 62) 15.9%, rgb(18, 18, 18) 15.9%, rgb(112, 61, 114) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);

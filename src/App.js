@@ -26,6 +26,8 @@ import IncubationServices from './components/IncubationServices';
 import FeaturedProjects from './components/FeaturedProjects';
 import FellowshipProject from './pages/FellowshipProject';
 import TechSectors from './pages/TechSectors';
+import NotificationPopup from './components/NotificationPopup/NotificationPopup';
+
 const App = () => {
 
   const [showPopup, setShowPopup] = useState(true); 
@@ -39,7 +41,9 @@ const App = () => {
      <ScrollToTop/> 
       <Navbar />
       {/* for Popupbox component */}
+ 
       {/* <Popup show={showPopup} closePopup={closePopup} /> */}
+      <NotificationPopup show={showPopup} closePopup={closePopup} />
       <Routes>
         {/* Static Routes */}
         <Route path="/*" element={<Home />} />

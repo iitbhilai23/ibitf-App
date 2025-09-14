@@ -98,6 +98,12 @@ export const siteContent = {
     ],
   },
 
+  NotificationPop :{
+        title:'Notification Call for Proposal',
+        message:'" Inviting Proposals for Innovation and Startup Support under IBITF Schemes "',
+        deadline:'Application Deadline: 10-10-2025'
+  },
+
   aboutPage: {
     // This is the section for the About IBITF content
     title: "IIT Bhilai Innovation and Technology Foundation (IBITF)",
