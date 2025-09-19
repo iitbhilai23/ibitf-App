@@ -31,7 +31,7 @@ const CallForProposals = () => {
     {/* Fancy Badge for First Card */}
     {index === 0 && (
       <div className="highlight-badge">
-        <span className="star">★</span> Featured
+        <span className="star">★</span> New
       </div>
     )}
 
