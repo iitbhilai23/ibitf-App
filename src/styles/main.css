@@ -1420,3 +1420,52 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: bold;
   margin-top: 5px;
 }
+
+/* Highlight first card with glow & smooth animation */
+.highlight-card {
+  border: 2px solid gold;
+  background: linear-gradient(135deg, #fffbea, #fff4d6);
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  animation: pulseGlow 2s infinite;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Fancy badge */
+/* Smaller featured badge */
+.highlight-badge {
+  position: absolute;
+  top: 8px;
+  left: -18px;
+  background: linear-gradient(90deg, gold, orange);
+  color: white;
+  font-weight: 600;
+  padding: 3px 22px;   /* reduced size */
+  transform: rotate(-10deg);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 0.75rem;  /* smaller text */
+  letter-spacing: 0.5px;
+}
+
+/* Star size adjusted */
+.highlight-badge .star {
+  margin-right: 4px;
+  font-size: 0.9rem;  /* smaller star */
+  animation: twinkle 1.5s infinite;
+}
+
+
+/* Twinkling star animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+/* Glowing pulse animation around the card */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); }
+  100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+}

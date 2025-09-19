@@ -791,7 +791,7 @@ export const siteContent = {
      {
       id: 16,
 
-      mainHeading: "Inviting Proposals for Innovation and Startup Support under IBITF Schemes Call for Proposal For various operational Schemes under IBITF",
+      mainHeading: "Inviting Proposals from Startups and Industries under various schemes of IBITF",
       description:
         "The IIT Bhilai Innovation and Technology Foundation (IBITF) is a Section-8 not-for-profit company, established under the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) of the Department of Science and Technology (DST), Government of India. IBITF focuses on the development and deployment of projects in the Fintech domain, focusing on identifying impactful solutions leveraging emerging technologies like Blockchain, IoT, AI/ML, and e-payments, with a primary emphasis on applying these technologies to other sectors like Agriculture and HealthTech.",
         lastDate: "Deadline for project proposal submission: 10th October 2025.",
@@ -815,7 +815,7 @@ export const siteContent = {
       mainHeading: "Request for Expression of Interest from Chartered Accountants.",
       description:
         "",
-        lastDate: "Deadline for project proposal submission: 14th August 2025",
+        lastDate: "",
       buttons: [
       
         {
@@ -836,7 +836,7 @@ export const siteContent = {
       mainHeading: "Call For Proposal Under the CPS- SSS(Seed Support System)",
       description:
         " Seed Support System (SSS) is a scheme under IBITF funded by the National Mission- Interdisciplinary Cyber-Physical System (NM-ICPS), Department of Science and Technology (DST) that provides financial assistance to start-ups with promising ideas, innovations, and technologies. A wide gap exists in financial support required by technology-driven start-ups in their initial phase, which is not being addressed properly. ",
-      lastDate: "Extended deadline for project proposal submission: 17th December",
+      lastDate: "",
       buttons: [
         {
           text: "Detailed Call for Proposal",
@@ -854,7 +854,7 @@ export const siteContent = {
         "Call For Proposal Under the CPS- DIAL(Dedicated Innovation Accelerator)",
       description:
         "Accelerators are post-incubation initiatives linked to existing incubators, aimed at supplementing and lementing the scaling-up of startups. It aims to focus on directing targeted resources to help startups to validate product ideas, engage with customers, and scale their operations while enhancing the incubators' ongoing activities. Accelerators also helps in realizing and deciding whether to create a scalable start-up from a very nascent stage. The basic objectives of DIAL involve",
-      lastDate: "Extended deadline for project proposal submission: 17th December",
+      lastDate: "",
       buttons: [
         {
           text: "Detailed Call for Proposal",
@@ -907,7 +907,7 @@ export const siteContent = {
       mainHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
       description:
         "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
-        lastDate:"Extended deadline for project proposal submission:16th March",
+        lastDate:"",
         // lastDate: "The second closure is open from 10th to 16th March",
     
       buttons: [
