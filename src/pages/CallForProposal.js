@@ -26,14 +26,15 @@ const CallForProposals = () => {
 {cardDataForCFP.map((card, index) => (
   <div
     key={card.id}
-    className={`cardArea ${index === 0 ? "highlight-card" : ""}`}
+    className={`cardArea ${(index === 0 || index === 1) ? "highlight-card" : ""}`}
   >
     {/* Fancy Badge for First Card */}
-    {index === 0 && (
-      <div className="highlight-badge">
-        <span className="star">★</span> New
-      </div>
-    )}
+    {(index === 0 || index === 1) && (
+  <div className="highlight-badge">
+    <span className="star">★</span> New
+  </div>
+)}
+
 
     <div className="card-content">
       {card.mainHeading && (

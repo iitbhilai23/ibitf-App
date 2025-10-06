@@ -3,7 +3,8 @@ import card2pdf from "../assets/PDF/proposal/card2.pdf";
 import tbiScheme from "../assets/PDF/proposal/tbiScheme.pdf";
 import chairProfessor from "../assets/PDF/proposal/chairProfessor.pdf";
 import fellowship from "../assets/PDF/proposal/Faculty_Fellowship4.pdf";
-import doctoralFellowship from "../assets/PDF/proposal/doctrolFellowship6.pdf";
+// import doctoralFellowship from "../assets/PDF/proposal/doctrolFellowship6.pdf";
+import doctoralFellowship from "../assets/PDF/proposal/Post-doctoral_Fellowships2025-26.pdf";
 import Project0707 from "../assets/PDF/proposal/CallforProposalPRAYAS-Start-UpsandEIRscheme.pdf";
 import Project2107 from "../assets/PDF/proposal/Project8.pdf";
 import Project9 from "../assets/PDF/proposal/Project9.pdf";
@@ -810,6 +811,24 @@ export const siteContent = {
       ],
     },
     {
+      id: 9,
+
+      mainHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
+      description:
+        "Proposals are invited by IBITF under the Post Doctoral Fellowship schemes.",
+      lastDate: "This is a rolling advertisement",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: doctoralFellowship, 
+        },
+        {
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/11250/1/apply",
+        },
+      ],
+    },
+    {
       id: 15,
 
       mainHeading: "Request for Expression of Interest from Chartered Accountants.",
@@ -1011,24 +1030,7 @@ export const siteContent = {
         },
       ],
     },
-    {
-      id: 9,
-
-      mainHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
-      description:
-        "Proposals are invited by IBITF under the Post Doctoral Fellowship schemes.",
-      lastDate: "This is a rolling advertisement",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: doctoralFellowship, // Replace with actual PDF URL
-        },
-        {
-          text: "Apply Now",
-          url: "https://tihiitbhilai.accubate.app/ext/form/2849/1/apply", // Replace with the actual URL
-        },
-      ],
-    },
+    
 
     {
       id: 10,
