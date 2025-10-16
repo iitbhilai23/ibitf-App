@@ -32,7 +32,7 @@
 .popup-content {
   background: #ffffff;
   width: 90%;
-  max-width: 530px; /* Thoda bada popup */
+  max-width: 630px; /* Thoda bada popup */
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   animation: scaleUp 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /* Smooth animation */
