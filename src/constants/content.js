@@ -850,27 +850,27 @@ export const siteContent = {
         },
       ],
     },
-    {
-      id: 15,
+    // {
+    //   id: 15,
 
-      mainHeading: "Request for Expression of Interest from Chartered Accountants.",
-      description:
-        "",
-        lastDate: "",
-      buttons: [
+    //   mainHeading: "Request for Expression of Interest from Chartered Accountants.",
+    //   description:
+    //     "",
+    //     lastDate: "",
+    //   buttons: [
       
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: CA2, // Replace with actual PDF URL
+    //     {
+    //       text: "Detailed Call for Proposal",
+    //       pdfLink: CA2, // Replace with actual PDF URL
       
-        },
-        {
-          text: "Apply Now",
-          url: "https://docs.google.com/forms/d/1qztzmUwbFeRoBlNFJzPbrPdOsssqQAJ9zQRZXoTwCsk/viewform?edit_requested=true", 
-        },
+    //     },
+    //     {
+    //       text: "Apply Now",
+    //       url: "https://docs.google.com/forms/d/1qztzmUwbFeRoBlNFJzPbrPdOsssqQAJ9zQRZXoTwCsk/viewform?edit_requested=true", 
+    //     },
        
-      ],
-    },
+    //   ],
+    // },
     {
       id: 14,
 

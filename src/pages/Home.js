@@ -17,24 +17,24 @@ import ThemeticArea from '../components/ThemeticArea';
 
 
 const Home = () => {
- 
+
 
   return (
 
     <>
-    
-    <ImageSlider images={siteContent.sliderImages} />
+
+      <ImageSlider images={siteContent.sliderImages} />
 
       <AboutSection />
       <VideoPage />
       <FeaturedProjects />
       <ThemeticArea />
       <TechnologiesDevelopment />
-    <OurAwards />
-   
+      <OurAwards />
+
       <Achievements />
-   
-    
+
+
       <SupportBy />
       <CollaborationSlider />
     </>
