@@ -55,6 +55,10 @@ import {
 } from "@mui/icons-material";
 import AgricultureIcon from "@mui/icons-material/Agriculture";
 import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
+import gen1 from "../assets/Images/CFP/gen1.jpg";
+import gen2 from "../assets/Images/CFP/gen2.jpg";
+import gen3 from "../assets/Images/CFP/gen3.jpg";
+
 
 export const siteContent = {
   navbar: {
@@ -791,7 +795,32 @@ export const siteContent = {
   ],
   cardDataForCFP: [
      {
-      id: 16,
+      id: 18,
+
+      mainHeading: "Call for Proposal for Gensis cohort 2",
+      description:
+        "GENESIS EiR Grant Program For student innovators or founders (≤2 years old) from Tier-II/III cities Focus: ICT, Electronics, and DeepTech Grant Support: Up to ₹10 Lakhs (in 2 tranches) GENESIS Pilot Fund Program For DPIIT-registered startups with an MVP or working prototype Objective: To enable pilot deployment with corporates and PSUs Funding Support: Up to ₹40 Lakhs GENESIS Matching Investment Scheme For startups seeking investment-based support to scale operations Matching fund support of up to ₹50 Lakhs",
+        lastDate: "The project proposal deadline has been extended to 10th November 2025.",
+      buttons: [
+      
+        {
+      text: "Detailed Call for Proposal",
+      pdfLink: PDF0721, 
+      images: [
+        gen1,
+        gen2,
+        gen3,
+      ],
+    },
+        {
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/3187/1/apply", 
+        },
+       
+      ],
+    },
+     {
+      id: 17,
 
       mainHeading: "Inviting Proposals from Startups and Industries under various schemes of IBITF",
       description:
