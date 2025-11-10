@@ -846,7 +846,7 @@ export const siteContent = {
       mainHeading: "Proposal for Engagement with IBITF for Students, Researchers, Professionals, and Industry experts",
       description:
         "The IIT Bhilai Innovation and Technology Foundation (IBITF) is a Section-8 not-for-profit company, established under the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) of the Department of Science and Technology (DST), Government of India. IBITF focuses on the development and deployment of projects in the Fintech domain, focusing on identifying impactful solutions leveraging emerging technologies like Blockchain, IoT, AI/ML, and e-payments, with a primary emphasis on applying these technologies to other sectors like Agriculture and HealthTech.",
-        lastDate: "Application Deadline: 27-10-2025",
+        lastDate: "The project proposal deadline has been extended to 22 November 2025.",
       buttons: [
       
         {
