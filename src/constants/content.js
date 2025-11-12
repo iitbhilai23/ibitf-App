@@ -800,7 +800,7 @@ export const siteContent = {
       mainHeading: "Call for Proposal for Gensis cohort 2",
       description:
         "GENESIS EiR Grant Program For student innovators or founders (≤2 years old) from Tier-II/III cities Focus: ICT, Electronics, and DeepTech Grant Support: Up to ₹10 Lakhs (in 2 tranches) GENESIS Pilot Fund Program For DPIIT-registered startups with an MVP or working prototype Objective: To enable pilot deployment with corporates and PSUs Funding Support: Up to ₹40 Lakhs GENESIS Matching Investment Scheme For startups seeking investment-based support to scale operations Matching fund support of up to ₹50 Lakhs",
-        lastDate: "The project proposal deadline has been extended to 10th November 2025.",
+        lastDate: "The project proposal deadline has been extended to 12th November 2025.",
       buttons: [
       
         {
