@@ -75,6 +75,7 @@ export const siteContent = {
         submenu: ["Thematic Areas", "Schemes", "Call for Proposals", "Blogs"],
       },
       "Projects",
+      "Training",
       "Team",
       "Career",
       "Contact Us",

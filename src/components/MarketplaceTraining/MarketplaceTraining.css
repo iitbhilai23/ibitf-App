@@ -1,0 +1,144 @@
+.report-container {
+  width: 75%;
+  max-width: 1000px;
+  margin: 25px auto;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.report-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6A0DAD;
+  letter-spacing: 0.3px;
+}
+
+.orange-underline {
+  height: 3px;
+  width: 140px;
+  background: #6A0DAD;
+  border-radius: 4px;
+  margin: 4px 0 14px;
+}
+
+/* TABLE */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.report-table th {
+  background: #fafafa;
+  text-align: left;
+  padding: 10px 12px;
+  font-weight: 600;
+  color: #2a2a2a;
+  font-size: 14px;
+  border-bottom: 1px solid #ececec;
+}
+
+.report-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f3f3f3;
+  font-size: 14px;
+  color: #444;
+}
+
+/* NAME STYLE */
+.school-name {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13.5px;
+  letter-spacing: 0.2px;
+  color: #3b3b3b;
+}
+
+/* COUNT PILL */
+.count-pill {
+  background: #EAD8F8;
+  color: #6A0DAD;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.count-pill.small {
+  padding: 3px 8px;
+  font-size: 12px;
+}
+
+/* BUTTON */
+.details-btn {
+  background: #f9f2ff;
+  border: 1px solid #D2B6E6;
+  color: #6A0DAD;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.details-btn:hover {
+  background: #EAD8F8;
+}
+
+/* EXPANDED ROW */
+.expand-row td {
+  background: #fdfaff;
+  animation: fadeIn 0.25s ease;
+  padding: 12px 10px;
+}
+
+/* INNER TABLE */
+.inner-table {
+  width: 100%;
+  margin-top: 8px;
+  border-collapse: collapse;
+}
+
+.inner-table th {
+  background: #f3e6ff;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a2a71;
+}
+
+.inner-table td {
+  padding: 10px;
+  border-bottom: 1px solid #EAD8F8;
+  font-size: 13px;
+  color: #4a4a4a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .report-container {
+    width: 92%;
+  }
+
+  .report-table th,
+  .report-table td {
+    padding: 8px;
+    font-size: 12.5px;
+  }
+
+  .details-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

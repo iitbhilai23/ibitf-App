@@ -27,6 +27,7 @@ import FeaturedProjects from './components/FeaturedProjects';
 import FellowshipProject from './pages/FellowshipProject';
 import TechSectors from './pages/TechSectors';
 import NotificationPopup from './components/NotificationPopup/NotificationPopup';
+import Training from './pages/Training';
 
 const App = () => {
 
@@ -43,7 +44,6 @@ const App = () => {
      <ScrollToTop/> 
       <Navbar />
       {/* for Popupbox component */}
- 
       {/* <Popup show={showPopup} closePopup={closePopup} /> */}
       <NotificationPopup show={showPopup} closePopup={closePopup} />
       <Routes>
@@ -59,6 +59,7 @@ const App = () => {
         <Route path='/incubation-services' element={<IncubationServices/>}/>
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/team" element={<Team />} />
+        <Route path='/training'element={<Training/>}/>
          <Route path="/awarded-fellowship" element={<FellowshipProject />} />
          <Route path='/tech-sectors' element={<TechSectors />}/>
         <Route path="/thematic-areas" element={<Thematic />} />
