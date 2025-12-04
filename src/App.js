@@ -45,7 +45,7 @@ const App = () => {
       <Navbar />
       {/* for Popupbox component */}
       {/* <Popup show={showPopup} closePopup={closePopup} /> */}
-      <NotificationPopup show={showPopup} closePopup={closePopup} />
+      {/* <NotificationPopup show={showPopup} closePopup={closePopup} /> */}
       <Routes>
         {/* Static Routes */}
         <Route path="/*" element={<Home />} />
