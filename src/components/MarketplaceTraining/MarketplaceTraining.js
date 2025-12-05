@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CountUp from "react-countup";
-import TableExports from "./TableExports";
+import TableExports from "./Common/TableExports";
 import styles from "./MarketplaceTraining.module.css";
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
-import TrainingChart from "./TrainingChart";
+import TrainingChart from "./TrainingChart/TrainingChart";
 
 const MarketplaceTraining = () => {
   const BASE_URL = process.env.REACT_APP_URL;
-
+  
   const [trainers, setTrainers] = useState([]);
   const [trainings, setTrainings] = useState([]);
   const [participants, setParticipants] = useState([]);
@@ -45,8 +45,6 @@ const MarketplaceTraining = () => {
     training_id: "Training ID"
   };
 
-  const COLORS = ['#667eea', '#764ba2', '#f56565', '#48bb78', '#ed8936', '#9f7aea', '#38b2ac', '#ed64a6'];
-
   const fetchAll = async () => {
     setLoading(true);
     setChartLoading(true);
@@ -65,7 +63,6 @@ const MarketplaceTraining = () => {
       setTrainings(trainingsData);
       setParticipants(participantsData);
 
-
     } catch (err) {
       console.log(err);
     } finally {
@@ -73,8 +70,6 @@ const MarketplaceTraining = () => {
       setChartLoading(false);
     }
   };
-
-
 
   useEffect(() => {
     fetchAll();
@@ -109,7 +104,6 @@ const MarketplaceTraining = () => {
     setSearch(""); 
   };
 
-  // Calculate statistics
   const totalParticipants = trainings.reduce((sum, training) => sum + (training.participants || 0), 0);
   const avgParticipantsPerTraining = trainings.length > 0 ? (totalParticipants / trainings.length).toFixed(1) : 0;
   const mostActiveDistrict = 'DURG';
@@ -125,7 +119,6 @@ const MarketplaceTraining = () => {
           <p>Manage and view trainers, trainings, and participants.</p>
         </div>
 
-              {/* Statistics Summary */}
         <div className={styles.statsContainer}>
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
@@ -179,8 +172,10 @@ const MarketplaceTraining = () => {
               <p><CountUp start={0} end={totalParticipants} duration={2} /></p>
             </div>
           </div>
-        </div>
+        </div>  
 
+   <TrainingChart />
+   
         <div className={styles.cardGrid}>
           <div className={styles.card} onClick={() => handleTabClick("trainers")}>
             <div className={styles.cardIcon}>
@@ -190,7 +185,7 @@ const MarketplaceTraining = () => {
                 <line x1="20" y1="8" x2="20" y2="14"></line>
                 <line x1="23" y1="11" x2="17" y2="11"></line>
               </svg>
-            </div>
+            </div>    
             <h2>Total Trainers</h2>
             <p><CountUp start={0} end={trainers.length} duration={2} /></p>
           </div>
@@ -219,8 +214,7 @@ const MarketplaceTraining = () => {
             <p><CountUp start={0} end={participants.length} duration={2} /></p>
           </div>
         </div>
-               
-   <TrainingChart />
+  
         {selected && (
           <div className={`${styles.tableContainer} ${styles.tableContainerVisible}`}>
             <div className={styles.tableHeader}>

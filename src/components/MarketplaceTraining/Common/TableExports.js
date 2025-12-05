@@ -2,12 +2,11 @@ import React from "react";
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-import logo from "../../assets/logo/ibitf.png"; 
-import styles from "./MarketplaceTraining.module.css"; 
+import logo from "../../../assets/logo/ibitf.png"; 
+import styles from "../MarketplaceTraining.module.css"; 
 
 const TableExports = ({ data, columns, labelMap, filename }) => {
 
-  // Excel Export
   const downloadExcel = () => {
     const worksheetData = data.map((row) => {
       let filtered = {};

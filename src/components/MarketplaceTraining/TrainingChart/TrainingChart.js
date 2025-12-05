@@ -15,7 +15,19 @@ import {
   Legend,
   LineChart,
   Line,
-  ComposedChart
+  ComposedChart,
+  ReferenceLine,
+  LabelList,
+  RadialBarChart,
+  RadialBar,
+  Treemap,
+  ScatterChart,
+  Scatter,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Radar
 } from 'recharts';
 import { 
   FiTrendingUp, 
@@ -97,7 +109,6 @@ const qualificationDataDummy = [
   { name: "PhD", value: 8, avgRating: 4.8 },
 ];
 
-// Filter Hook (unchanged)
 const useFilteredData = (data, filters) => {
   return useMemo(() => {
     let filtered = [...data];
@@ -123,7 +134,6 @@ const useFilteredData = (data, filters) => {
   }, [data, filters]);
 };
 
-// Summary Stats Hook (unchanged)
 const useSummaryStats = (monthlyData, districtData, categoryData) => {
   return useMemo(() => {
     const totalTrainings = monthlyData.reduce((sum, i) => sum + (i.trainings || 0), 0);
@@ -148,17 +158,23 @@ const useSummaryStats = (monthlyData, districtData, categoryData) => {
   }, [monthlyData, districtData, categoryData]);
 };
 
-// Tooltip (unchanged)
 const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload) {
+  if (active && payload && payload.length) {
     return (
       <div className={styles.customTooltip}>
         <p className={styles.tooltipLabel}>{label}</p>
         {payload.map((item, i) => (
-          <p key={i} className={styles.tooltipValue}>
+          <p key={i} className={styles.tooltipValue} style={{ color: item.color }}>
             {item.name}: {item.value}
+            {item.dataKey === 'growth' && '%'}
+            {item.dataKey === 'avgRating' && ' ⭐'}
           </p>
         ))}
+        {payload[0]?.payload?.trend !== undefined && (
+          <p className={styles.tooltipTrend}>
+            Trend: {payload[0].payload.trend > 0 ? '+' : ''}{payload[0].payload.trend}%
+          </p>
+        )}
       </div>
     );
   }
@@ -309,7 +325,6 @@ const FilterControls = ({ filters, setFilters, onExport, onRefresh, onClose }) =
   );
 };
 
-// MAIN COMPONENT - Modified
 const TrainingChart = () => {
   const [selectedChart, setSelectedChart] = useState("trends");
 
@@ -368,6 +383,24 @@ const TrainingChart = () => {
     }
   };
 
+  // Calculate average for reference line
+  const avgTrainings = filteredMonthlyData.reduce((sum, item) => sum + item.trainings, 0) / filteredMonthlyData.length;
+  const avgParticipants = filteredMonthlyData.reduce((sum, item) => sum + item.participants, 0) / filteredMonthlyData.length;
+
+  // Prepare data for radial chart
+  const radialData = filteredDistrictData.map(item => ({
+    name: item.name,
+    value: item.value,
+    fill: COLORS.chartPalette[filteredDistrictData.indexOf(item) % COLORS.chartPalette.length]
+  }));
+
+  // Prepare data for radar chart
+  const radarData = filteredCategoryData.map(item => ({
+    category: item.name,
+    value: item.value,
+    fullMark: 40
+  }));
+
   return (
     <div className={styles.chartsContainer}>
       <div className={styles.dashboardHeader}>
@@ -416,14 +449,45 @@ const TrainingChart = () => {
               {/* -------- TRENDS CHART -------- */}
               {selectedChart === "trends" && (
                 <ResponsiveContainer width="100%" height={400}>
-                  <AreaChart data={filteredMonthlyData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="month" />
-                    <YAxis />
+                  <AreaChart data={filteredMonthlyData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                    <defs>
+                      <linearGradient id="colorTrainings" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor={COLORS.primary} stopOpacity={0.8}/>
+                        <stop offset="95%" stopColor={COLORS.primary} stopOpacity={0.1}/>
+                      </linearGradient>
+                      <linearGradient id="colorParticipants" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor={COLORS.secondary} stopOpacity={0.8}/>
+                        <stop offset="95%" stopColor={COLORS.secondary} stopOpacity={0.1}/>
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                    <XAxis dataKey="month" tick={{ fontSize: 12 }} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 12 }} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 12 }} />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
-                    <Area type="monotone" dataKey="trainings" stroke={COLORS.primary} fill={COLORS.primary} />
-                    <Area type="monotone" dataKey="participants" stroke={COLORS.secondary} fill={COLORS.secondary} />
+                    <ReferenceLine yAxisId="left" y={avgTrainings} stroke={COLORS.primary} strokeDasharray="5 5" label="Avg Trainings" />
+                    <ReferenceLine yAxisId="right" y={avgParticipants} stroke={COLORS.secondary} strokeDasharray="5 5" label="Avg Participants" />
+                    <Area 
+                      yAxisId="left"
+                      type="monotone" 
+                      dataKey="trainings" 
+                      stroke={COLORS.primary} 
+                      fillOpacity={1} 
+                      fill="url(#colorTrainings)"
+                      animationDuration={1000}
+                      strokeWidth={2}
+                    />
+                    <Area 
+                      yAxisId="right"
+                      type="monotone" 
+                      dataKey="participants" 
+                      stroke={COLORS.secondary} 
+                      fillOpacity={1} 
+                      fill="url(#colorParticipants)"
+                      animationDuration={1000}
+                      strokeWidth={2}
+                    />
                   </AreaChart>
                 </ResponsiveContainer>
               )}
@@ -431,13 +495,27 @@ const TrainingChart = () => {
               {/* -------- DISTRICTS -------- */}
               {selectedChart === "districts" && (
                 <ResponsiveContainer width="100%" height={400}>
-                  <BarChart data={filteredDistrictData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
+                  <BarChart data={filteredDistrictData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                    <XAxis dataKey="name" tick={{ fontSize: 12 }} />
+                    <YAxis tick={{ fontSize: 12 }} />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
-                    <Bar dataKey="value" fill={COLORS.primary} />
+                    <Bar 
+                      dataKey="value" 
+                      fill={COLORS.primary}
+                      animationDuration={1000}
+                      radius={[8, 8, 0, 0]}
+                    >
+                      <LabelList dataKey="value" position="top" />
+                      {filteredDistrictData.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={
+                          entry.growth > 10 ? COLORS.success : 
+                          entry.growth > 5 ? COLORS.warning : 
+                          COLORS.primary
+                        } />
+                      ))}
+                    </Bar>
                   </BarChart>
                 </ResponsiveContainer>
               )}
@@ -446,12 +524,23 @@ const TrainingChart = () => {
               {selectedChart === "categories" && (
                 <ResponsiveContainer width="100%" height={400}>
                   <PieChart>
-                    <Pie data={filteredCategoryData} dataKey="value" outerRadius={130} label>
-                      {filteredCategoryData.map((e, i) => (
-                        <Cell key={i} fill={COLORS.chartPalette[i % COLORS.chartPalette.length]} />
+                    <Pie
+                      data={filteredCategoryData}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                      outerRadius={120}
+                      fill="#8884d8"
+                      dataKey="value"
+                      animationBegin={0}
+                      animationDuration={800}
+                    >
+                      {filteredCategoryData.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS.chartPalette[index % COLORS.chartPalette.length]} />
                       ))}
                     </Pie>
-                    <Tooltip />
+                    <Tooltip content={<CustomTooltip />} />
                     <Legend />
                   </PieChart>
                 </ResponsiveContainer>
@@ -460,13 +549,31 @@ const TrainingChart = () => {
               {/* -------- QUALIFICATION -------- */}
               {selectedChart === "qualifications" && (
                 <ResponsiveContainer width="100%" height={400}>
-                  <BarChart data={filteredQualificationData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
+                  <BarChart data={filteredQualificationData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                    <XAxis dataKey="name" tick={{ fontSize: 12 }} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 12 }} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 12 }} />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
-                    <Bar dataKey="value" fill={COLORS.secondary} />
+                    <Bar 
+                      yAxisId="left"
+                      dataKey="value" 
+                      fill={COLORS.secondary}
+                      animationDuration={1000}
+                      radius={[8, 8, 0, 0]}
+                    >
+                      <LabelList dataKey="value" position="top" />
+                    </Bar>
+                    <Line 
+                      yAxisId="right"
+                      type="monotone" 
+                      dataKey="avgRating" 
+                      stroke={COLORS.warning} 
+                      strokeWidth={3}
+                      dot={{ fill: COLORS.warning, r: 6 }}
+                      activeDot={{ r: 8 }}
+                    />
                   </BarChart>
                 </ResponsiveContainer>
               )}
@@ -474,15 +581,32 @@ const TrainingChart = () => {
               {/* -------- COMPARISON -------- */}
               {selectedChart === "comparison" && (
                 <ResponsiveContainer width="100%" height={400}>
-                  <ComposedChart data={filteredDistrictData.slice(0,5)}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis yAxisId="left" />
-                    <YAxis yAxisId="right" orientation="right" />
+                  <ComposedChart data={filteredDistrictData.slice(0,5)} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                    <XAxis dataKey="name" tick={{ fontSize: 12 }} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 12 }} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 12 }} />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
-                    <Bar dataKey="value" fill={COLORS.primary} yAxisId="left" />
-                    <Line type="monotone" dataKey="growth" stroke={COLORS.secondary} yAxisId="right" />
+                    <Bar 
+                      yAxisId="left"
+                      dataKey="value" 
+                      fill={COLORS.primary}
+                      animationDuration={1000}
+                      radius={[8, 8, 0, 0]}
+                    >
+                      <LabelList dataKey="value" position="top" />
+                    </Bar>
+                    <Line 
+                      yAxisId="right"
+                      type="monotone" 
+                      dataKey="growth" 
+                      stroke={COLORS.accent} 
+                      strokeWidth={3}
+                      dot={{ fill: COLORS.accent, r: 6 }}
+                      activeDot={{ r: 8 }}
+                    />
+                    <ReferenceLine yAxisId="right" y={10} stroke={COLORS.warning} strokeDasharray="5 5" label="Target Growth" />
                   </ComposedChart>
                 </ResponsiveContainer>
               )}
