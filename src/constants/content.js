@@ -1321,6 +1321,19 @@ export const siteContent = {
     },
 
 {
+      title: "Recruitment for Project position of Vidya Samiksha Kendra (VSK)",
+      positions: "1",
+      qualifications: "Experience in data entry and record management.Familiarity with MS Office, Excel and database software. ",
+      experience: "As Per Advertisement Attached",
+      contractPeriod:"4 months",
+      ageLimit: "Maximum Age 45 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "Walk In Interview",   
+      downloadLink: require("../assets/PDF/career/ADV0721.pdf"),
+      // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
+      applyText: "Walk In",
+    },
+{
       title: "Recruitment of various Project positions of IBITF",
       positions: "8",
       qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
