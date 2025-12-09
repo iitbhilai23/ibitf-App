@@ -4,7 +4,7 @@ import tbiScheme from "../assets/PDF/proposal/tbiScheme.pdf";
 import chairProfessor from "../assets/PDF/proposal/chairProfessor.pdf";
 import fellowship from "../assets/PDF/proposal/Faculty_Fellowship4.pdf";
 // import doctoralFellowship from "../assets/PDF/proposal/doctrolFellowship6.pdf";
-import doctoralFellowship from "../assets/PDF/proposal/Post-doctoral_Fellowships2025-26.pdf";
+import doctoralFellowship from "../assets/PDF/proposal/PG26.pdf";
 import Project0707 from "../assets/PDF/proposal/CallforProposalPRAYAS-Start-UpsandEIRscheme.pdf";
 import Project2107 from "../assets/PDF/proposal/Project8.pdf";
 import Project9 from "../assets/PDF/proposal/Project9.pdf";
@@ -24,6 +24,7 @@ import PostDoctoral_Fellowship from "../assets/PDF/Fellwoship_Project/Post_Docto
 import Agritech from '../assets/PDF/tech_projects/Agritech.pdf';
 import Fintech from '../assets/PDF/tech_projects/Fintech.pdf';
 import HealthTech from '../assets/PDF/tech_projects/HealthTech.pdf';
+import newFellowShip from '../assets/PDF/proposal/CFPfellowship072122139.pdf';
 import {
   FaLightbulb,
   FaFlask,
@@ -801,6 +802,42 @@ export const siteContent = {
     },
   ],
   cardDataForCFP: [
+      {
+      id: 19,
+
+      mainHeading: "Call for Proposal for DOCTORAL, UG, PG FELLOWSHIP",
+      description:
+        "IBITF offers fellowship programs for Doctoral, Post-Graduate, and Undergraduate students to support research, innovation, and DeepTech prototype development. Candidates work under faculty mentorship on projects aligned with IBITF’s thematic areas.",
+      lastDate: "The project proposal deadline has been extended to 9th January 2026.",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: newFellowShip, 
+        },
+        {
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/17123/1/apply",
+        },
+      ],
+    },
+       {
+      id: 9,
+
+      mainHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
+      description:
+        "IIT Bhilai Innovation and Technology Foundation (IBITF) invites applications for the Post-Doctoral Fellowship Program supporting high-potential researchers working on prototype development, innovation, and frontier DeepTech domains. Fellows collaborate with experts to build impactful technology solutions.",
+      lastDate: "The project proposal deadline has been extended to 31st December 2025.",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: doctoralFellowship, 
+        },
+        {
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/11250/1/apply",
+        },
+      ],
+    },
      {
       id: 18,
 
@@ -868,24 +905,7 @@ export const siteContent = {
        
       ],
     },
-    {
-      id: 9,
-
-      mainHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
-      description:
-        "Proposals are invited by IBITF under the Post Doctoral Fellowship schemes.",
-      lastDate: "This is a rolling advertisement",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: doctoralFellowship, 
-        },
-        {
-          text: "Apply Now",
-          url: "https://tihiitbhilai.accubate.app/ext/form/11250/1/apply",
-        },
-      ],
-    },
+    
     // {
     //   id: 15,
 
