@@ -27,6 +27,7 @@ import FeaturedProjects from './components/FeaturedProjects';
 import FellowshipProject from './pages/FellowshipProject';
 import TechSectors from './pages/TechSectors';
 import NotificationPopup from './components/NotificationPopup/NotificationPopup';
+import Eoi from './components/Eoi';
 
 const App = () => {
 
@@ -63,6 +64,7 @@ const App = () => {
          <Route path='/tech-sectors' element={<TechSectors />}/>
         <Route path="/thematic-areas" element={<Thematic />} />
         <Route path="/call-for-proposals" element={<CallForProposals />} />
+        <Route path='expression-of-intrest' element={<Eoi />}/>
         <Route path="/blogs" element={<Blogs/>}/>
         {/* Dynamic Routes for each page based on pagesConfig */}
         {pagesConfig.map(({ path }, index) => (

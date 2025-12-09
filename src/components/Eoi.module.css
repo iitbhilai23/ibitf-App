@@ -1,0 +1,144 @@
+/* Heading Container */
+.headingContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.headingContainer h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: relative;
+  color: #272727;
+}
+
+.headingContainer h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #6a0dad;
+  margin: 8px auto 0;
+}
+
+/* Card Layout */
+.cardList {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 55px; /* Bottom spacing */
+}
+
+/* Highlighted Fancy Card */
+.cardArea {
+  width: 90%;
+  max-width: 650px;
+  
+  /* Gold highlight theme */
+  background: linear-gradient(135deg, #fffbea, #fff4d6);
+  border-radius: 12px;
+  border: 2px solid gold;
+  padding: 25px;
+  position: relative;
+
+  /* Glow Animation & Hover */
+  animation: pulseGlow 2.5s infinite;
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.cardArea:hover {
+  transform: translateY(-5px);
+  border-color: #6a0dad;  /* Purple hover border */
+  box-shadow: 0 10px 25px rgba(106, 0, 173, 0.25);
+}
+
+/* Badge - Fancy Tilted Featured Label */
+.highlightBadge {
+  position: absolute;
+  top: 8px;
+  left: -18px;
+  background: linear-gradient(90deg, gold, orange);
+  color: white;
+  font-weight: 600;
+  padding: 3px 22px;
+  transform: rotate(-10deg);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+/* Star animation */
+.star {
+  margin-right: 4px;
+  font-size: 0.9rem;
+  animation: twinkle 1.5s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+/* Glowing pulse animation */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); }
+  100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+}
+
+/* Content Area */
+.cardContent {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.eoiTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6a0dad;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.eoiText {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttonList {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cardButton {
+  background-color: white;
+  color: #6a0dad;
+  border: 2px solid #6a0dad;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.cardButton:hover {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.applyNow {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+}
+
+.applyNow:hover {
+  background-color: #530c93;
+}
