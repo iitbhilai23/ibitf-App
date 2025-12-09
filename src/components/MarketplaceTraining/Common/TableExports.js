@@ -1,69 +1,64 @@
+// Common/TableExports.js
 import React from "react";
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-import logo from "../../../assets/logo/ibitf.png"; 
-import styles from "../MarketplaceTraining.module.css"; 
 
-const TableExports = ({ data, columns, labelMap, filename }) => {
-
+const TableExports = ({ data = [], columns = [], labelMap = {}, filename = "export" }) => {
   const downloadExcel = () => {
-    const worksheetData = data.map((row) => {
-      let filtered = {};
-      columns.forEach((col) => {
-        filtered[labelMap[col] || col] = row[col];
-      });
-      return filtered;
+    const wsData = [columns.map(c => labelMap[c] || c)];
+    data.forEach(row => {
+      wsData.push(columns.map(c => row[c] ?? ""));
     });
+    const wb = XLSX.utils.book_new();
+    const ws = XLSX.utils.aoa_to_sheet(wsData);
+    XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+    XLSX.writeFile(wb, `${filename}.xlsx`);
+  };
 
-    const worksheet = XLSX.utils.json_to_sheet(worksheetData);
-    const workbook = XLSX.utils.book_new();
-
-    XLSX.utils.book_append_sheet(workbook, worksheet, "Sheet1");
-    XLSX.writeFile(workbook, `${filename}.xlsx`);
+  const downloadCSV = () => {
+    const csvRows = [];
+    csvRows.push(columns.map(c => `"${(labelMap[c] || c).replace(/"/g,'""')}"`).join(","));
+    data.forEach(row => {
+      const rowStr = columns.map(c => {
+        const val = row[c] ?? "";
+        return `"${String(val).replace(/"/g,'""')}"`;
+      }).join(",");
+      csvRows.push(rowStr);
+    });
+    const blob = new Blob([csvRows.join("\n")], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${filename}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
   };
 
   const downloadPDF = () => {
     const doc = new jsPDF();
-
-    const img = new Image();
-    img.src = logo;
-    doc.addImage(img, "PNG", 10, 10, 35, 18);
-
-    doc.setFontSize(16);
-    doc.text(`${filename.toUpperCase()} REPORT`, 10, 40);
-
-    const tableColumnHeaders = columns.map((col) => labelMap[col] || col);
-    const tableRows = data.map((row) =>
-      columns.map((col) => String(row[col]))
-    );
-
-    autoTable(doc, {
-      startY: 50,   
-      head: [tableColumnHeaders],
-      body: tableRows,
-    });
-
+    const head = [columns.map(c => labelMap[c] || c)];
+    const body = data.map(row => columns.map(c => String(row[c] ?? "")));
+    autoTable(doc, { head, body, startY: 10, styles: { fontSize: 8 } });
     doc.save(`${filename}.pdf`);
   };
 
   return (
-    <div className={styles.exportButtons}>
-      <button
-        className={`${styles.btn} ${styles.excelBtn}`}
-        onClick={downloadExcel}
-      >
-        Excel
-      </button>
-
-      <button
-        className={`${styles.btn} ${styles.pdfBtn}`}
-        onClick={downloadPDF}
-      >
-        PDF
-      </button>
+    <div style={{ display: "flex", gap: 8 }}>
+      <button onClick={downloadExcel} style={btnStyle}>Excel</button>
+      <button onClick={downloadCSV} style={btnStyle}>CSV</button>
+      <button onClick={downloadPDF} style={btnStyle}>PDF</button>
     </div>
   );
+};
+
+const btnStyle = {
+  padding: "8px 10px",
+  borderRadius: 8,
+  border: "1px solid rgba(15,23,42,0.06)",
+  background: "#fff",
+  cursor: "pointer",
+  fontWeight: 600
 };
 
 export default TableExports;

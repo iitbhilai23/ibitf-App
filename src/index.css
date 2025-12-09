@@ -23,3 +23,24 @@ body {
 .card-cnt-list::-webkit-scrollbar-thumb:hover {
   background-color: #9c51c0;
 }
+
+
+
+
+.block-tooltip {
+  background: #166534;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.district-tooltip {
+  background: #1e293b;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}

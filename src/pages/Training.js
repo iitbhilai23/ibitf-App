@@ -1,5 +1,5 @@
 import React from 'react'
-import MarketplaceTraining from '../components/MarketplaceTraining/MarketplaceTraining'
+import MarketplaceTraining from '../components/MarketplaceTraining/TrainingChart/MarketplaceTraining'
 
 const Training = () => {
   return (

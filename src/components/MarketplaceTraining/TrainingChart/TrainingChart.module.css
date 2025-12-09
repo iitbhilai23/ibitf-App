@@ -289,6 +289,8 @@
 
 .filterSection {
   margin-bottom: 1.5rem;
+  overflow: hidden;
+  
 }
 
 .filterSection:last-child {
