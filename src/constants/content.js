@@ -107,7 +107,7 @@ export const siteContent = {
 
   EOI:{
     pdfFile:require("../assets/PDF/Blogs/EOI1.pdf"),
-    heading:"EOI for Processing Machinery, Livelihood Technologies & Value-Addition Solutions in Chhattisgarh",
+    heading:"For Submission of Innovative Ideas and Designs for Processing Machinery, Livelihood Technologies & Value-Addition Solutions for Tribal and Forest-Based Economies in Chhattisgarh",
     content:"This EOI invites submissions of innovative tools, technologies, and value-addition solutions aimed at strengthening tribal livelihoods in Chhattisgarh. The focus includes processing machinery, rural enterprise solutions, and technologies that support income generation, employment, and sustainable development.",
   },
 
