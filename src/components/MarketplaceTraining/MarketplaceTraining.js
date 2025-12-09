@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef, useMemo } from "react";
 import axios from "axios";
 import CountUp from "react-countup";
-import TableExports from "../Common/TableExports";
+import TableExports from "./Common/TableExports";
 import styles from "./Marketplace.module.css";
-import TrainingChart from "./TrainingChart";
+import TrainingChart from "./TrainingChart/TrainingChart";
 
 // IMPORT STANDALONE MAP
-import ChhattisgarhMap from "../Common/ChhattisgarhMap";
+import ChhattisgarhMap from "./Common/ChhattisgarhMap";
 
 export default function MarketplaceTraining() {
   const BASE_URL = process.env.REACT_APP_URL;
