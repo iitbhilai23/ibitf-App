@@ -33,11 +33,12 @@
 .cardArea {
   width: 90%;
   max-width: 650px;
-  
-  /* Gold highlight theme */
-  background: linear-gradient(135deg, #fffbea, #fff4d6);
+
+  /* Very light yellow card background */
+  background: linear-gradient(135deg, #fffdf7, #fffefb);
+
   border-radius: 12px;
-  border: 2px solid gold;
+  border: 2px solid gold; /* Yellow border */
   padding: 25px;
   position: relative;
 
