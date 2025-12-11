@@ -1336,6 +1336,20 @@ export const siteContent = {
   jobListings: [
 
     {
+      title: "Recruitment Re-advertisement for an Advisor Legal Project positions at IBITF",
+      positions: "1",
+      qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
+      experience: "As Per Advertisement Attached",
+      contractPeriod:"1 Year",
+      ageLimit: "Maximum Age 58 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "19 December 2025",   
+      downloadLink: require("../assets/PDF/career/Advisor.pdf"),
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
+      applyText: "Apply Now",
+    },
+
+    {
       title: "Recruitment of various Project positions of FinteQ- quantum-Safe Financial Transaction Framework",
       positions: "02",
       qualifications: "Bachelor's/Master's degree in Engineering, M.Sc. (IT/CS) or MCA ,Technology,Management or related fields",
@@ -1361,19 +1375,6 @@ export const siteContent = {
       downloadLink: require("../assets/PDF/career/ADV0721.pdf"),
       // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
       applyText: "Walk In",
-    },
-{
-      title: "Recruitment of various Project positions of IBITF",
-      positions: "8",
-      qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
-      experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year",
-      ageLimit: "Maximum Age 45 years",
-      location: "IBITF IIT Bhilai",
-      lastDate: "22 November 2025",   
-      downloadLink: require("../assets/PDF/career/11Nov25@Advertise1.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
-      applyText: "Apply Now",
     },
     
  {
