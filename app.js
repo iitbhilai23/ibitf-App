@@ -4,7 +4,6 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-
 // React app for serve static files
 app.use(express.static(path.join(__dirname, 'build')));
 
