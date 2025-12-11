@@ -533,41 +533,43 @@ export const siteContent = {
         designation: "Project Associate(account), IBITF",
         image: require("../assets/TeamImg/NemSingh.jpeg"),
       },
+      {
+        name: "Ms. Nidhi Gahine",
+        designation: "Project Associate, IBITF",
+        image: require("../assets/TeamImg/Nidhi_Gahine.jpeg"),
+      },
+      
+        {
+        name: "Ms. Sonali Patle",
+        designation: "Project Assistant, IBITF",
+        image: require("../assets/TeamImg/sonali.jpg"),
+      },
+       {
+        name: "Ms. Aanchal Sahu",
+        designation: "Project Assistant, IBITF",
+        image: require("../assets/TeamImg/Aanchal_sahu.jpeg"),
+      },
        {
         name: "Mr. Santosh Kumar Sahu",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/SantoshKumarSahu.jpeg"),
       },
-     
-      {
-        name: "Ms. Aanchal Sahu",
-        designation: "Project Assistant, IBITF",
-        image: require("../assets/TeamImg/Aanchal_sahu.jpeg"),
-      },
-      {
-        name: "Ms. Sonali Patle",
-        designation: "Project Assistant, IBITF",
-        image: require("../assets/TeamImg/sonali.jpg"),
-      },
+    
       {
         name: "Mr. Lala Ram",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/Lalaram.jpg"),
       },
-      {
-        name: "Ms. Aanchal Barchhiha",
-        designation: "Project Assistant, IBITF",
-        image: require("../assets/TeamImg/AnchalBarchhiha.jpg"),
-      },
+      
        {
         name: "Mr. Tomesh Sahu",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/TomeshSahu.jpeg"),
       },
         {
-        name: "Mr. Gaurav Kumar",
+        name: "Mr. Dhanvir Kaushik",
         designation: "Project Assistant, IBITF",
-        image: require("../assets/TeamImg/GauravKumar.jpeg"),
+        image: require("../assets/TeamImg/Dhanvir.jpeg"),
       },
       {
         name: "Mr. Domeshwar",

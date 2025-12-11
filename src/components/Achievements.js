@@ -4,13 +4,13 @@ import { FiActivity, FiFileText, FiTrendingUp, FiUsers, FiDollarSign, FiBox, FiU
 
 // Define the data array with icons and titles
 const achievementsData = [
-  { icon: <FiActivity />, title: "Projects", count: 94 },
-  { icon: <FiFileText />, title: "Fellowships", count: "100+" },
-  { icon: <FiTrendingUp />, title: "Startups", count: 25 },
+  { icon: <FiActivity />, title: "Projects", count: "127+" },
+  { icon: <FiFileText />, title: "Fellowships", count: "150+" },
+  { icon: <FiTrendingUp />, title: "Startups", count: 36 },
   { icon: <FiUsers />, title: "Workshops", count: 105 },
   { icon: <FiDollarSign />, title: "Revenue Generated", count: "12.12 Cr" }, // String value
-  { icon: <FiBox />, title: "Products Deployed", count: 7 },
-  { icon: <FiUserCheck />, title: "Manpower Trained", count: 3759 },
+  { icon: <FiBox />, title: "Products Deployed", count: 12 },
+  { icon: <FiUserCheck />, title: "Manpower Trained", count: "8000+" },
   { icon: <FiBriefcase />, title: "Direct Jobs", count: 280 },
 ];
 
