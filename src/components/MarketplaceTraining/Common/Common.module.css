@@ -1,6 +1,4 @@
-/* ============================= */
-/* GENERAL MAP + UI STYLES */
-/* ============================= */
+
 
 .mapWrapper {
   width: 100%;
@@ -8,7 +6,7 @@
   position: relative;
 }
 
-/* Makes hover transitions smooth */
+
 .leaflet-container .leaflet-interactive {
   transition: 
     stroke 200ms ease,
@@ -17,9 +15,6 @@
     fill 200ms ease;
 }
 
-/* ============================= */
-/* DISTRICT TOOLTIP (HIGHLY VISIBLE) */
-/* ============================= */
 
 .district-tooltip {
   background: #0a68ff !important;
@@ -34,14 +29,10 @@
   z-index: 999999;
 }
 
-/* Tooltip arrow fix */
+
 .district-tooltip.leaflet-tooltip-top:before {
   border-top-color: #0a68ff !important;
 }
-
-/* ============================= */
-/* BLOCK TOOLTIP */
-/* ============================= */
 
 .block-tooltip {
   background: #166534 !important;
@@ -58,9 +49,6 @@
   border-top-color: #166534 !important;
 }
 
-/* ============================= */
-/* SIDEBAR LIST STYLING */
-/* ============================= */
 
 .sidebarBox {
   padding: 12px;
@@ -86,9 +74,7 @@
   font-size: 14px;
 }
 
-/* ============================= */
-/* BUTTONS */
-/* ============================= */
+
 
 .mapButton {
   padding: 8px 14px;
@@ -136,10 +122,6 @@
 }
 
 
-
-/***/
-
-/* Common.module.css - map + small UI utilities */
 
 .cg-map-search {
   position: absolute;
@@ -220,11 +202,10 @@
   box-shadow: 0 6px 14px rgba(2,6,23,0.24);
 }
 
-/* subtle hover outline animation for district polygons */
+
 .leaflet-container .leaflet-interactive {
   transition: stroke 220ms cubic-bezier(.2,.9,.2,1), stroke-width 220ms cubic-bezier(.2,.9,.2,1), fill-opacity 220ms cubic-bezier(.2,.9,.2,1);
 }
 
-/* suggestion scrollbar */
 .cg-suggestions::-webkit-scrollbar { width: 8px; }
 .cg-suggestions::-webkit-scrollbar-thumb { background: rgba(2,6,23,0.06); border-radius: 8px; }

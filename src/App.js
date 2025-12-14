@@ -37,8 +37,6 @@ const App = () => {
     setShowPopup(false); 
   };
 
-
-  
   return (
     <Router>
      <ScrollToTop/> 
