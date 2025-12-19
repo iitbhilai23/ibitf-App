@@ -889,7 +889,7 @@ export const pagesConfig = [
   },
   {
     title: "Model Digital Training Center for Women",
-    path: "/training",
+    path: "/modeltraining",
     component: "DigitalTraining",
     description:
       "Imparting proper practical knowledge of computer system operation and hands-on training for desktop applications and tools like MS-Word, Excel, Powerpoint etc.Imparting hands-on training for Internet usage – searching, e-mailing, booking tickets etc.Imparting awareness and usage of E-commerce and Digital Marketing. Implementing mini-projects where they can advertise and sell their native products like handloom or handicrafts.Imparting financial literacy regarding banking, digital payments, UPI payment, etc.",

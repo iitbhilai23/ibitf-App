@@ -77,6 +77,7 @@ export const siteContent = {
       },
      
       "Projects",
+      "Training",
       "Team",
       "Career",
       "Contact Us",

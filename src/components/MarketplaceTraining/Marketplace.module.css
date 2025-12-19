@@ -1,0 +1,148 @@
+.dashboardContainer {
+  padding: 20px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* CARDS */
+.topCards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardIcon {
+  font-size: 26px;
+}
+
+.cardTitle {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.cardValue {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* 50-50 LAYOUT */
+.row5050 {
+  display: flex;
+  gap: 20px;
+}
+
+.leftPanel {
+  width: 50%;
+}
+
+.rightPanel {
+  width: 50%;
+}
+
+/* PANEL */
+.panel {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.panelHeader {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panelTitle {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.panelContent {
+  padding: 16px;
+}
+
+/* TABS */
+.tabGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #e2e8f0;
+  border: none;
+}
+
+.tabActive {
+  background: #1976d2;
+  color: white;
+}
+
+/* TABLE */
+.tableWrapper {
+  max-height: 330px;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background: #f1f5f9;
+  padding: 10px;
+}
+
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.globalSearchInput {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* MAP PANEL */
+.mapShell {
+  height: 500px;
+  padding: 10px;
+  background: #fff;
+}
