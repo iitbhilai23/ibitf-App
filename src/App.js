@@ -29,6 +29,7 @@ import TechSectors from './pages/TechSectors';
 import NotificationPopup from './components/NotificationPopup/NotificationPopup';
 import Eoi from './components/Eoi';
 import Training from './pages/Training';
+import MarketMainContainer from './components/MarketLiteracy/MarketMainContainer';
 
 const App = () => {
 
@@ -65,6 +66,7 @@ const App = () => {
         <Route path="/call-for-proposals" element={<CallForProposals />} />
         <Route path='expression-of-intrest' element={<Eoi />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/market-place-literacy" element={<MarketMainContainer />} />
         {/* Dynamic Routes for each page based on pagesConfig */}
         {pagesConfig.map(({ path }, index) => (
           <Route

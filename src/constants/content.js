@@ -16,7 +16,7 @@ import Project13 from "../assets/PDF/proposal/CFP_DIAL.pdf";
 import PDF0721 from "../assets/PDF/proposal/CFP2025.pdf";
 import PDFv1 from "../assets/PDF/proposal/Copy of Proposal for Engagement with IBITF-v1 .pdf";
 import Project15 from "../assets/PDF/proposal/Empanalment-of-Chartered-Accountant-at-IBITF.pdf";
-import CA2 from "../assets/PDF/proposal/CA2.pdf"; 
+import CA2 from "../assets/PDF/proposal/CA2.pdf";
 import PG from "../assets/PDF/Fellwoship_Project/PG_Fellowship.pdf";
 import UG from "../assets/PDF/Fellwoship_Project/UG_Fellowship.pdf";
 import Doctoral_Fellowship from "../assets/PDF/Fellwoship_Project/Doctoral_Fellowship.pdf";
@@ -59,6 +59,9 @@ import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 import gen1 from "../assets/Images/CFP/gen1.jpg";
 import gen2 from "../assets/Images/CFP/gen2.jpg";
 import gen3 from "../assets/Images/CFP/gen3.jpg";
+import iitLogo from "../assets/marketPlace/iit_bhilai_bg.jpeg";
+import mlpLogo from "../assets/marketPlace/mlp.jpeg";
+import dkLogo from "../assets/marketPlace/dk_foundation.jpeg";
 
 
 export const siteContent = {
@@ -69,13 +72,12 @@ export const siteContent = {
       "Home",
       {
         label: "About Us",
-        submenu: ["About IBITF", "Organizational Structure","Industries Partners","Project List","Awarded Fellowship","Tech Sectors"],
+        submenu: ["About IBITF", "Organizational Structure", "Industries Partners", "Project List", "Awarded Fellowship", "Tech Sectors"],
       },
       {
         label: "Programs & Initiatives",
-        submenu: [ "Expression of Intrest","Thematic Areas", "Schemes", "Call for Proposals", "Blogs"],
+        submenu: ["Expression of Intrest", "Thematic Areas", "Schemes", "Call for Proposals", "Blogs", "Market Place Literacy"],
       },
-     
       "Projects",
       "Training",
       "Team",
@@ -83,6 +85,15 @@ export const siteContent = {
       "Contact Us",
     ],
   },
+
+  MarketLiteracy: {
+    partners: [
+      { src: iitLogo, alt: "Indian Institute of Technology Bhilai", label: "Academic Partner" },
+      { src: mlpLogo, alt: "Marketplace Literacy Project", label: "Knowledge Partner" },
+      { src: dkLogo, alt: "D.K. Kim Foundation - Loyola Marymount University", label: "Supporting Partner" }
+    ]
+  },
+
   Blogs: {
     cardData: [
       {
@@ -107,16 +118,16 @@ export const siteContent = {
     ],
   },
 
-  EOI:{
-    pdfFile:require("../assets/PDF/Blogs/EOI1.pdf"),
-    heading:"For Submission of Innovative Ideas and Designs for Processing Machinery, Livelihood Technologies & Value-Addition Solutions for Tribal and Forest-Based Economies in Chhattisgarh",
-    content:"This EOI invites submissions of innovative tools, technologies, and value-addition solutions aimed at strengthening tribal livelihoods in Chhattisgarh. The focus includes processing machinery, rural enterprise solutions, and technologies that support income generation, employment, and sustainable development.",
+  EOI: {
+    pdfFile: require("../assets/PDF/Blogs/EOI1.pdf"),
+    heading: "For Submission of Innovative Ideas and Designs for Processing Machinery, Livelihood Technologies & Value-Addition Solutions for Tribal and Forest-Based Economies in Chhattisgarh",
+    content: "This EOI invites submissions of innovative tools, technologies, and value-addition solutions aimed at strengthening tribal livelihoods in Chhattisgarh. The focus includes processing machinery, rural enterprise solutions, and technologies that support income generation, employment, and sustainable development.",
   },
 
-  NotificationPop :{
-        title:'Notification Call for Proposal',
-        message:'" Inviting Proposals for Innovation and Startup Support under IBITF Schemes "',
-        deadline: 'Application Deadline Extended: 27-10-2025'
+  NotificationPop: {
+    title: 'Notification Call for Proposal',
+    message: '" Inviting Proposals for Innovation and Startup Support under IBITF Schemes "',
+    deadline: 'Application Deadline Extended: 27-10-2025'
   },
 
   aboutPage: {
@@ -256,7 +267,7 @@ export const siteContent = {
       { name: "LinkedIn", url: "https://linkedin.com" },
     ],
     links: ["Home", "About us", "Career", "Contact us"],
-    services: ["Thematic Area", "Schemes", "Call for Proposals", "Blogs","Startup Support Services"],
+    services: ["Thematic Area", "Schemes", "Call for Proposals", "Blogs", "Startup Support Services"],
     info: ["IIT Bhilai", "About Ibitf", "Projects", "Team"],
     support: ["FAQ", "Help", "Privacy Policy", "Terms"],
   },
@@ -529,7 +540,7 @@ export const siteContent = {
         designation: "Project Associate, IBITF",
         image: require("../assets/TeamImg/nidhi.png"),
       },
-        {
+      {
         name: "Mr. Nem Singh",
         designation: "Project Associate(account), IBITF",
         image: require("../assets/TeamImg/NemSingh.jpeg"),
@@ -539,35 +550,35 @@ export const siteContent = {
         designation: "Project Associate, IBITF",
         image: require("../assets/TeamImg/Nidhi_Gahine.jpeg"),
       },
-      
-        {
+
+      {
         name: "Ms. Sonali Patle",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/sonali.jpg"),
       },
-       {
+      {
         name: "Ms. Aanchal Sahu",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/Aanchal_sahu.jpeg"),
       },
-       {
+      {
         name: "Mr. Santosh Kumar Sahu",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/SantoshKumarSahu.jpeg"),
       },
-    
+
       {
         name: "Mr. Lala Ram",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/Lalaram.jpg"),
       },
-      
-       {
+
+      {
         name: "Mr. Tomesh Sahu",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/TomeshSahu.jpeg"),
       },
-        {
+      {
         name: "Mr. Dhanvir Kaushik",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/Dhanvir.jpeg"),
@@ -577,7 +588,7 @@ export const siteContent = {
         designation: "Project Attendent, IBITF",
         image: require("../assets/TeamImg/domesh24.jpeg"),
       },
-       {
+      {
         name: "Mr. Shailesh",
         designation: "Project Attendent, IBITF",
         image: require("../assets/TeamImg/Shailesh.jpeg"),
@@ -805,7 +816,7 @@ export const siteContent = {
     },
   ],
   cardDataForCFP: [
-      {
+    {
       id: 19,
 
       mainHeading: "Call for Proposal for DOCTORAL, UG, PG FELLOWSHIP",
@@ -815,7 +826,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: newFellowShip, 
+          pdfLink: newFellowShip,
         },
         {
           text: "Apply Now",
@@ -823,7 +834,7 @@ export const siteContent = {
         },
       ],
     },
-       {
+    {
       id: 9,
 
       mainHeading: "Call for Proposal for POST DOCTORAL FELLOWSHIP",
@@ -833,7 +844,7 @@ export const siteContent = {
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: doctoralFellowship, 
+          pdfLink: doctoralFellowship,
         },
         {
           text: "Apply Now",
@@ -841,50 +852,50 @@ export const siteContent = {
         },
       ],
     },
-     {
+    {
       id: 18,
 
       mainHeading: "Call for Proposal for Gensis cohort 2",
       description:
         "GENESIS EiR Grant Program For student innovators or founders (≤2 years old) from Tier-II/III cities Focus: ICT, Electronics, and DeepTech Grant Support: Up to ₹10 Lakhs (in 2 tranches) GENESIS Pilot Fund Program For DPIIT-registered startups with an MVP or working prototype Objective: To enable pilot deployment with corporates and PSUs Funding Support: Up to ₹40 Lakhs GENESIS Matching Investment Scheme For startups seeking investment-based support to scale operations Matching fund support of up to ₹50 Lakhs",
-        lastDate: "The project proposal deadline has been extended to 13th November 2025 13:00 hrs.",
+      lastDate: "The project proposal deadline has been extended to 13th November 2025 13:00 hrs.",
       buttons: [
-      
+
         {
-      text: "Detailed Call for Proposal",
-      pdfLink: PDF0721, 
-      images: [
-        gen1,
-        gen2,
-        gen3,
-      ],
-    },
+          text: "Detailed Call for Proposal",
+          pdfLink: PDF0721,
+          images: [
+            gen1,
+            gen2,
+            gen3,
+          ],
+        },
         {
           text: "Apply Now",
-          url: "https://tihiitbhilai.accubate.app/ext/form/3187/1/apply", 
+          url: "https://tihiitbhilai.accubate.app/ext/form/3187/1/apply",
         },
-       
+
       ],
     },
-     {
+    {
       id: 17,
 
       mainHeading: "Inviting Proposals from Startups and Industries under various schemes of IBITF",
       description:
         "The IIT Bhilai Innovation and Technology Foundation (IBITF) is a Section-8 not-for-profit company, established under the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) of the Department of Science and Technology (DST), Government of India. IBITF focuses on the development and deployment of projects in the Fintech domain, focusing on identifying impactful solutions leveraging emerging technologies like Blockchain, IoT, AI/ML, and e-payments, with a primary emphasis on applying these technologies to other sectors like Agriculture and HealthTech.",
-        lastDate: "The project proposal deadline has been extended to 27th October 2025.",
+      lastDate: "The project proposal deadline has been extended to 27th October 2025.",
       buttons: [
-      
+
         {
           text: "Detailed Call for Proposal",
-          pdfLink: PDF0721, 
-      
+          pdfLink: PDF0721,
+
         },
         {
           text: "Apply Now",
-          url: "https://tihiitbhilai.accubate.app/ext/form/9467/1/apply", 
+          url: "https://tihiitbhilai.accubate.app/ext/form/9467/1/apply",
         },
-       
+
       ],
     },
     {
@@ -893,22 +904,22 @@ export const siteContent = {
       mainHeading: "Proposal for Engagement with IBITF for Students, Researchers, Professionals, and Industry experts",
       description:
         "The IIT Bhilai Innovation and Technology Foundation (IBITF) is a Section-8 not-for-profit company, established under the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) of the Department of Science and Technology (DST), Government of India. IBITF focuses on the development and deployment of projects in the Fintech domain, focusing on identifying impactful solutions leveraging emerging technologies like Blockchain, IoT, AI/ML, and e-payments, with a primary emphasis on applying these technologies to other sectors like Agriculture and HealthTech.",
-        lastDate: "The project proposal deadline has been extended to 22 November 2025.",
+      lastDate: "The project proposal deadline has been extended to 22 November 2025.",
       buttons: [
-      
+
         {
           text: "Detailed Call for Proposal",
-          pdfLink: PDFv1, 
-      
+          pdfLink: PDFv1,
+
         },
         {
           text: "Apply Now",
-          url: "https://tihiitbhilai.accubate.app/ext/form/10292/1/apply", 
+          url: "https://tihiitbhilai.accubate.app/ext/form/10292/1/apply",
         },
-       
+
       ],
     },
-    
+
     // {
     //   id: 15,
 
@@ -917,17 +928,17 @@ export const siteContent = {
     //     "",
     //     lastDate: "",
     //   buttons: [
-      
+
     //     {
     //       text: "Detailed Call for Proposal",
     //       pdfLink: CA2, // Replace with actual PDF URL
-      
+
     //     },
     //     {
     //       text: "Apply Now",
     //       url: "https://docs.google.com/forms/d/1qztzmUwbFeRoBlNFJzPbrPdOsssqQAJ9zQRZXoTwCsk/viewform?edit_requested=true", 
     //     },
-       
+
     //   ],
     // },
     {
@@ -1007,9 +1018,9 @@ export const siteContent = {
       mainHeading: "Call for Proposal under PRAYAS, Start-Ups and EIR scheme",
       description:
         "Project proposals are invited by IBITF under the following schemes aligned with the thematic areas. Promotion and Acceleration of Young and Aspiring technology entrepreneurs (PRAYAS),Start-Ups and Entrepreneur in Residence (EIR),Virtual Incubation (VI)",
-        lastDate:"",
-        // lastDate: "The second closure is open from 10th to 16th March",
-    
+      lastDate: "",
+      // lastDate: "The second closure is open from 10th to 16th March",
+
       buttons: [
         {
           text: "Detailed Call for Proposal",
@@ -1095,7 +1106,7 @@ export const siteContent = {
       ],
     },
     {
-      
+
       id: 8,
       mainHeading: "Call for Proposal for Chair Professor",
       description: "Proposals are invited by IBITF to join as Chair Professor.",
@@ -1111,7 +1122,7 @@ export const siteContent = {
         },
       ],
     },
-    
+
 
     {
       id: 10,
@@ -1131,7 +1142,7 @@ export const siteContent = {
         },
       ],
     },
-   
+
   ],
   CollaborationBy: {
     title: "Supported By",
@@ -1297,7 +1308,7 @@ export const siteContent = {
     },
     {
       image: require("../assets/project_features/ices.jpeg"),
-      title: "Intelligent Emergency Care System (iECS)" ,
+      title: "Intelligent Emergency Care System (iECS)",
       description:
         "Intelligent Emergency Care System (iECS) Strengthening the Emergency Care Systems in Chhattisgarh through Digital Hybrid Healthcare - An AI-driven platform for doctors in remote areas to manage emergencies, offer 24x7 tele-access to emergency experts, standardize patient assessment, and provide patients with information on affordable medicines, alternative treatments, and insurance options.",
       route: "/emergencyCare",
@@ -1341,10 +1352,10 @@ export const siteContent = {
       positions: "1",
       qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year",
+      contractPeriod: "1 Year",
       ageLimit: "Maximum Age 58 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "19 December 2025",   
+      lastDate: "19 December 2025",
       downloadLink: require("../assets/PDF/career/Advertisement_Advisor_Legal(19-12-25).pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
       applyText: "Apply Now",
@@ -1355,38 +1366,38 @@ export const siteContent = {
       positions: "02",
       qualifications: "Bachelor's/Master's degree in Engineering, M.Sc. (IT/CS) or MCA ,Technology,Management or related fields",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"6 Months",
+      contractPeriod: "6 Months",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "12th Dec 2025",   
+      lastDate: "12th Dec 2025",
       downloadLink: require("../assets/PDF/career/Fintech03-12-25@.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSd90EBzgvqOHKMneaG5Hv_1_g5Z2D7yiyOGTR9dtPgB-OwIGQ/viewform",
       applyText: "Apply Now",
     },
 
-{
+    {
       title: "Recruitment for Project position of Vidya Samiksha Kendra (VSK)",
       positions: "1",
       qualifications: "Experience in data entry and record management.Familiarity with MS Office, Excel and database software. ",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"4 months",
+      contractPeriod: "4 months",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "Walk In Interview",   
+      lastDate: "Walk In Interview",
       downloadLink: require("../assets/PDF/career/ADV0721.pdf"),
       // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
       applyText: "Walk In",
     },
-    
- {
+
+    {
       title: "Recruitment of various Project positions of IBITF",
       positions: "4",
       qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management,law, or related fields",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year",
+      contractPeriod: "1 Year",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "11th AugUST 2025",   
+      lastDate: "11th AugUST 2025",
       downloadLink: require("../assets/PDF/career/IBITF-Aug2025.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSd6kBZXX5sIHy6obqvmmQRIrbCMDcXg4TSb-QXsu74DRfoxZw/viewform",
       applyText: "Apply Now",
@@ -1397,10 +1408,10 @@ export const siteContent = {
       positions: "05",
       qualifications: "Bachelor's or Master's degree in Eng., M.Sc. (IT/CS), MCA, B.Com, B.A., M.Com, M.A., or any other related field",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year",
+      contractPeriod: "1 Year",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "Walk In Interview",   
+      lastDate: "Walk In Interview",
       downloadLink: require("../assets/PDF/career/VSK-TE2025.pdf"),
       // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSeeDs2spmQb25x8c6nbTukDqSGQAKLDQsYWaGby1ePTFxrjcw/viewform",
       applyText: "Apply Now",
@@ -1410,10 +1421,10 @@ export const siteContent = {
       positions: "04",
       qualifications: "Bachelor's/Master's degree in Engineering, M.Sc. (IT/CS) or MCA ,Technology,Management or related fields",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year",
+      contractPeriod: "1 Year",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "27th April 2025",   
+      lastDate: "27th April 2025",
       downloadLink: require("../assets/PDF/career/VSK2025V2.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSeeDs2spmQb25x8c6nbTukDqSGQAKLDQsYWaGby1ePTFxrjcw/viewform",
       applyText: "Apply Now",
@@ -1423,10 +1434,10 @@ export const siteContent = {
       positions: "13",
       qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year/89 Days",
+      contractPeriod: "1 Year/89 Days",
       ageLimit: "Maximum Age 45 years",
       location: "IBITF IIT Bhilai",
-      lastDate: "6th April 2025",   
+      lastDate: "6th April 2025",
       downloadLink: require("../assets/PDF/career/Advt_April25_TIH.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSd6kBZXX5sIHy6obqvmmQRIrbCMDcXg4TSb-QXsu74DRfoxZw/viewform",
       applyText: "Apply Now",
@@ -1436,10 +1447,10 @@ export const siteContent = {
       positions: "01",
       qualifications: "CA/CS, Master’s degree in Finance/economics or relevant field. A law degree with any above qualifications shall attract additional weightage.",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year (extendable)",
+      contractPeriod: "1 Year (extendable)",
       ageLimit: "Maximum Age 50 years",
       location: "IIT Bhilai",
-      lastDate: "9th February 2025",   
+      lastDate: "9th February 2025",
       downloadLink: require("../assets/PDF/career/ProjectConsultant.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSeYOrS3jLLk9M8YUVPVhUxNP5ghg_5FijCet5GofVXobYpLlQ/viewform",
       applyText: "Apply Now",
@@ -1449,10 +1460,10 @@ export const siteContent = {
       positions: "03",
       qualifications: "MTech/BTech, M.Sc/MCA, ME/MS in Computer Science. Proficiency in  Word, Excel, PowerPoint etc.",
       experience: "As Per Advertisement Attached",
-      contractPeriod:"1 Year",
+      contractPeriod: "1 Year",
       ageLimit: "Maximum Age 35 years(as on date of application)",
       location: "IIT Bhilai",
-      lastDate: "24th January 2025",   
+      lastDate: "24th January 2025",
       downloadLink: require("../assets/PDF/career/VSK-Staff.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSduz-xbjwR1jzWkCm5PA4qhC_qAW8v7K8OazCwueBfru6uD8A/viewform",
       applyText: "Apply Now",
@@ -1466,7 +1477,7 @@ export const siteContent = {
         "89 Days and may be extendable depending upon the performance",
       ageLimit: "Age shall not exceed 35 years ",
       location: "IIT Bhilai",
-      lastDate: "22nd January 2025",   
+      lastDate: "22nd January 2025",
       downloadLink: require("../assets/PDF/career/Project_Associate16JAN.pdf"),
       applyLink: "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1EHB2IWivwoLZmGMu6mVvc-y6DFVFsJBPfftfJxVy9m4%2Fviewform&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1EHB2IWivwoLZmGMu6mVvc-y6DFVFsJBPfftfJxVy9m4%2Fviewform&ifkv=AVdkyDn9HJwRe2ugp7520CwEOX3bSP3sLrSj1BcbdhzR8tUSox-kVJ3kJa7B_XB5SCGEzsk-auy8Eg&ltmpl=forms&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1692979787%3A1737027136531745&ddm=1",
       applyText: "Apply Now",
@@ -1480,7 +1491,7 @@ export const siteContent = {
         "89 Days and may be extendable depending upon the performance",
       ageLimit: "Preferably below 40 years but not exceeding 45 years.",
       location: "IIT Bhilai",
-      lastDate: "10th December 2024",   
+      lastDate: "10th December 2024",
       downloadLink: require("../assets/PDF/career/01Advertise.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSebCl0XSlsIonj_qHVWyM9dqaIPqW09p1rbfwqs41-uVtxKNw/viewform",
       applyText: "Apply Now",
@@ -1529,12 +1540,12 @@ export const siteContent = {
     //   applyLink: "#",
     //   applyText: "Apply Now",
     // },
-   
-   
+
+
   ],
 
   selectedCandidates: [
-      {
+    {
       title: "Provisional List of Shortlisted/Not Shortlisted applicants for the post of Technical Manager",
       positions: "01",
       interviewDate: "To be Announced",
@@ -1542,7 +1553,7 @@ export const siteContent = {
       contactPerson: "HR Manager, tih@iitbhilai.ac.in",
       downloadLink: require("../assets/PDF/career/Technical-Manager-VSK-web-upload-approval.pdf"),
     },
-     {
+    {
       title: "Provisional List of Shortlisted/Not Shortlisted applicants for the post of Project Assistant",
       positions: "02",
       interviewDate: "To be Announced",
@@ -1550,7 +1561,7 @@ export const siteContent = {
       contactPerson: "HR Manager, tih@iitbhilai.ac.in",
       downloadLink: require("../assets/PDF/career/Project-Assistant-web-upload-approval-withresult.pdf"),
     },
-     {
+    {
       title: "Provisional List of Shortlisted/Not Shortlisted applicants for the post of Accounts and Operational",
       positions: "01",
       interviewDate: "To be Announced",
@@ -1566,7 +1577,7 @@ export const siteContent = {
       contactPerson: "HR Manager, tih@iitbhilai.ac.in",
       downloadLink: require("../assets/PDF/career/Advisor-Finance25-05-25.pdf"),
     },
-     {
+    {
       title: "List of Shortlisted/Not Shortlisted applicants for the post of Senior Software Developer",
       positions: "01",
       interviewDate: "To be Announced",
@@ -1574,7 +1585,7 @@ export const siteContent = {
       contactPerson: "HR Manager, tih@iitbhilai.ac.in",
       downloadLink: require("../assets/PDF/career/Senior-Software-Developer25-5-25.pdf"),
     },
-     {
+    {
       title: "List of Shortlisted/Not Shortlisted applicants for the post of Project Engineer",
       positions: "01",
       interviewDate: "To be Announced",
@@ -1606,7 +1617,7 @@ export const siteContent = {
     //   contactPerson: "HR Manager, tih@iitbhilai.ac.in",
     //   downloadLink: require("../assets/PDF/career/Provisonal_Shortlisting.pdf"),
     // },
-   
+
   ],
 
   vision: [
@@ -1686,24 +1697,24 @@ export const siteContent = {
       ],
     },
   ],
-   sectors : [
-      {
-        title: 'Agritech',
-        description: 'Innovations in the agricultural sector.',
-        pdf: Agritech,
-      },
-      {
-        title: 'Fintech',
-        description: 'Technology driving financial services.',
-        pdf: Fintech,
-      },
-      {
-        title: 'HealthTech',
-        description: 'Advancements in healthcare technology.',
-        pdf: HealthTech,
-      },
-    ],
-  
+  sectors: [
+    {
+      title: 'Agritech',
+      description: 'Innovations in the agricultural sector.',
+      pdf: Agritech,
+    },
+    {
+      title: 'Fintech',
+      description: 'Technology driving financial services.',
+      pdf: Fintech,
+    },
+    {
+      title: 'HealthTech',
+      description: 'Advancements in healthcare technology.',
+      pdf: HealthTech,
+    },
+  ],
+
   visionMissionData: [
     {
       icon: <FaLightbulb />,
@@ -1864,12 +1875,12 @@ export const siteContent = {
       ],
     },
   ],
-  projectData : [
+  projectData: [
     {
       title: 'UG',
       description: 'Kickstart your research journey with our Undergraduate fellowships, offering early exposure to high-impact projects and mentorship.',
       icon: '🎓',
-      pdf: UG 
+      pdf: UG
     },
     {
       title: 'PG',
