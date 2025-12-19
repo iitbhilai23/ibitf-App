@@ -1344,7 +1344,7 @@ export const siteContent = {
       ageLimit: "Maximum Age 58 years",
       location: "IBITF IIT Bhilai",
       lastDate: "19 December 2025",   
-      downloadLink: require("../assets/PDF/career/Advisor.pdf"),
+      downloadLink: require("../assets/PDF/career/Advertisement_Advisor_Legal(19-12-25).pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
       applyText: "Apply Now",
     },
