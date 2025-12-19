@@ -1336,7 +1336,6 @@ export const siteContent = {
     },
   ],
 
-
   videoPage: {
     title: "The Hon'ble President of India Applauds Our Innovation",
     description:
