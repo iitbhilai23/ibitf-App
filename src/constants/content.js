@@ -79,7 +79,7 @@ export const siteContent = {
         submenu: ["Expression of Intrest", "Thematic Areas", "Schemes", "Call for Proposals", "Blogs", "Market Place Literacy"],
       },
       "Projects",
-      "Training",
+      // "Training",
       "Team",
       "Career",
       "Contact Us",
