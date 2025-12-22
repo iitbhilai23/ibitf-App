@@ -4,6 +4,8 @@ import MarketStatsCard from "./MarketStatsCard";
 import MarketPartnerLogos from "./MarketPartnerLogos";
 import marketGif from "../../assets/marketPlace/market_gif.mp4";
 import villageImg from "../../assets/workshop/3.png";
+import train_01 from "../../assets/marketPlace/train_01.jpeg";
+import train_02 from "../../assets/marketPlace/train_02.jpeg";
 import { useState } from "react";
 
 const MarketHeroSection = () => {
@@ -259,12 +261,17 @@ const MarketHeroSection = () => {
                                     }
                                 }}
                             >
-                                <video
+                                {/* <video
                                     src={marketGif}
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                /> */}
+                                <img
+                                    src={train_01}
+                                    alt="Rural village community"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />
                             </Paper>
@@ -301,7 +308,7 @@ const MarketHeroSection = () => {
                                 }}
                             >
                                 <img
-                                    src={villageImg}
+                                    src={train_02}
                                     alt="Rural village community"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />
