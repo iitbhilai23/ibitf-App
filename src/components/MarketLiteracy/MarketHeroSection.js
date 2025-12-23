@@ -131,7 +131,7 @@ const MarketHeroSection = () => {
                             <Box sx={{ position: 'relative', zIndex: 1, height: '100%', display: 'flex', flexDirection: 'column', gap: 2 }}> {/* Reduced gap to 2 to fit more items */}
                                 <MarketStatsCard
                                     title="Total Training"
-                                    count={383}
+                                    count={399}
                                     delay={0}
                                     icon={<Award size={32} strokeWidth={1.5} />}
                                     isActive={activeCard === 0}
@@ -140,7 +140,7 @@ const MarketHeroSection = () => {
                                 />
                                 <MarketStatsCard
                                     title="Total Trainers"
-                                    count={108}
+                                    count={110}
                                     delay={100}
                                     icon={<Users size={32} strokeWidth={1.5} />}
                                     isActive={activeCard === 1}
@@ -149,7 +149,7 @@ const MarketHeroSection = () => {
                                 />
                                 <MarketStatsCard
                                     title="Total Participants"
-                                    count={9863}
+                                    count={10081}
                                     delay={200}
                                     icon={<Globe size={32} strokeWidth={1.5} />}
                                     isActive={activeCard === 2}
