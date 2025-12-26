@@ -1357,7 +1357,7 @@ export const siteContent = {
       location: "IBITF IIT Bhilai",
       lastDate: "06 January 2026",
       downloadLink: require("../assets/PDF/career/BMC.pdf"),
-      applyLink: "",
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdoUk5S7BCqBVoy79v1TmGlAMB3VQIyPZzLtEhTHGd2NbTVVQ/viewform",
       applyText: "Apply Now",
     },
 
