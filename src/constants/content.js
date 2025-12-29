@@ -1346,6 +1346,21 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [
+
+     {
+      title: "Recruitment Re-advertisement for an Advisor Legal Project positions at IBITF",
+      positions: "1",
+      qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "1 Year",
+      ageLimit: "Maximum Age 58 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "06 January 2026",
+      downloadLink: require("../assets/PDF/career/Advertisement_Jan_26.pdf"),
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
+      applyText: "Apply Now",
+    },
+
     
     {
       title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS Based Property Tax",
@@ -1358,20 +1373,6 @@ export const siteContent = {
       lastDate: "06 January 2026",
       downloadLink: require("../assets/PDF/career/BMC.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdoUk5S7BCqBVoy79v1TmGlAMB3VQIyPZzLtEhTHGd2NbTVVQ/viewform",
-      applyText: "Apply Now",
-    },
-
-    {
-      title: "Recruitment Re-advertisement for an Advisor Legal Project positions at IBITF",
-      positions: "1",
-      qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
-      experience: "As Per Advertisement Attached",
-      contractPeriod: "1 Year",
-      ageLimit: "Maximum Age 58 years",
-      location: "IBITF IIT Bhilai",
-      lastDate: "19 December 2025",
-      downloadLink: require("../assets/PDF/career/Advertisement_Advisor_Legal(19-12-25).pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
       applyText: "Apply Now",
     },
 
