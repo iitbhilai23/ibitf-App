@@ -1344,8 +1344,7 @@ export const siteContent = {
     videoUrl:
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
-  jobListings: [
-        
+  jobListings: [ 
     {
       title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS Based Property Tax",
       positions: "8",
