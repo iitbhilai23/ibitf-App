@@ -63,7 +63,6 @@ import iitLogo from "../assets/marketPlace/iit_bhilai_bg.jpeg";
 import mlpLogo from "../assets/marketPlace/mlp.jpeg";
 import dkLogo from "../assets/marketPlace/dk_foundation.jpeg";
 
-
 export const siteContent = {
   navbar: {
     // logo: 'assets/iit.png',ti
@@ -1373,9 +1372,6 @@ export const siteContent = {
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
       applyText: "Apply Now",
     },
-
-
-
     {
       title: "Recruitment of various Project positions of FinteQ- quantum-Safe Financial Transaction Framework",
       positions: "02",
