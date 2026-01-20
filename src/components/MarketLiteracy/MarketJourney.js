@@ -37,50 +37,60 @@ const MarketJourney = () => {
                                     width: 4,
                                     height: 64,
                                     borderRadius: 2,
-                                    background: theme => `linear-gradient(to bottom, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`
+                                    background: theme =>
+                                        `linear-gradient(to bottom, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`
                                 }}
                             />
                             <Box>
                                 <Typography variant="body2" color="text.secondary" fontWeight="medium">
                                     Started On
                                 </Typography>
-                                <Typography variant="h5" color="primary.main" fontWeight="bold" fontFamily='"Playfair Display", serif'>
+                                <Typography
+                                    variant="h5"
+                                    color="primary.main"
+                                    fontWeight="bold"
+                                    fontFamily='"Playfair Display", serif'
+                                >
                                     29th July 2024
                                 </Typography>
                             </Box>
                         </Box>
 
-                        <Typography variant="body1" paragraph sx={{ fontSize: '1.125rem', color: 'text.primary', mb: 3 }}>
+                        <Typography
+                            variant="body1"
+                            paragraph
+                            sx={{ fontSize: '1.125rem', color: 'text.primary', mb: 3 }}
+                        >
                             The journey of Marketplace Literacy (MPL) in Chhattisgarh began on 29th July 2024, ignited by a powerful vision: to empower women across the state with essential marketplace skills, enabling them to participate confidently, not only as informed consumers but also as emerging entrepreneurs.
                         </Typography>
 
                         <Typography variant="body1" color="text.secondary">
                             At the heart of this movement stands the unwavering dedication of Prof. Madhu Vishwanath, a pioneer who has been teaching Marketplace Literacy for over two decades, reaching more than 1,00,000 women across four continents. His commitment, combined with IIT Bhilai’s strong vision to scale this initiative within Chhattisgarh, laid a strong foundation for a transformative statewide movement.
                         </Typography>
+
                         {showMore && (
                             <Typography variant="body1" color="text.secondary" sx={{ mt: 2 }}>
                                 Equally inspiring is the determination of the women themselves. SHG women leaders traveled from distances as far as 500 kilometers, dedicating two full days to learning, sharing, and preparing themselves to take this knowledge back to their communities. Their enthusiasm turned training halls into spaces of energy, curiosity, and purpose.
                                 <br /><br />
-                                Since July 2024, Marketplace Literacy has grown rapidly across the state. To date, over 11,000 women from more than 300 villages across 5+ districts of Chhattisgarh have been trained through 03 phases of Educator Training and 03 phases of Pilot Training. This expansion reflects not just numbers, but a growing movement of informed, confident women shaping their economic futures.
+                                Since July 2024, Marketplace Literacy has grown rapidly across the state. To date, over 11,000 women from more than 300 villages across 5+ districts of Chhattisgarh have been trained through 03 phases of Educator Training and 03 phases of Pilot Training.
                                 <br /><br />
-                                To strengthen and sustain this impact, the IIT Bhilai team developed a comprehensive digital dashboard that tracks and digitizes the entire training program. The dashboard offers an analytical view of the initiative, allowing anyone to explore training locations, and training photographs, bringing transparency, accountability, and visibility to grassroots empowerment.
-                                <br /><br />
-                                The training follows a powerful Train-the-Trainer (ToT) model, creating a cascading ripple effect. Women trained directly by Prof. Madhu Vishwanath, who are Self-Help Group (SHG) leaders, have emerged as confident and capable Marketplace Literacy educators. They now train their own SHG members and extend the learning to neighboring villages, multiplying the reach organically.
-                                <br /><br />
-                                Today, over 100 committed educators are actively teaching Marketplace Literacy across Chhattisgarh. Each session sparks awareness, confidence, and independence, proving that when women are equipped with the right knowledge, they don't just learn; they lead, they teach, and they transform communities.
-                                <br /><br />
-                                <strong>This is not just a program.</strong>
-                                <br />
-                                <strong>This is a movement.</strong>
-                                <br />
-                                A movement driven by knowledge, fueled by dedication, and carried forward by empowered women.
+                                Today, over 100 committed educators are actively teaching Marketplace Literacy across Chhattisgarh.
                             </Typography>
                         )}
 
                         <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
                             <Button
                                 variant="contained"
-                                onClick={() => setShowMore(!showMore)}
+                                onClick={() => {
+                                    if (!showMore) {
+                                        window.open(
+                                            "https://www.ibitf.co.in/ml/login",
+                                            "_blank"
+                                        );
+                                        return; // 🚫 stop toggle — no confusion
+                                    }
+                                    setShowMore(false);
+                                }}
                                 sx={{
                                     borderRadius: 50,
                                     px: 4,
