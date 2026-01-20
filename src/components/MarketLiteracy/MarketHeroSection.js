@@ -175,28 +175,31 @@ const MarketHeroSection = () => {
                                     onMouseLeave={() => setActiveCard(null)}
                                 />
                                 <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
-                                    <Button
-                                        variant="contained"
-                                        size="large"
-                                        href="#"
-                                        sx={{
-                                            borderRadius: 50,
-                                            px: 4,
-                                            background: 'linear-gradient(90deg, #D4AF37 0%, #2E8B57 100%)',
-                                            textTransform: 'none',
-                                            fontSize: '1.1rem',
-                                            fontWeight: 600,
-                                            boxShadow: '0 8px 20px rgba(46, 139, 87, 0.3)',
-                                            '&:hover': {
-                                                background: 'linear-gradient(90deg, #C59237 0%, #257849 100%)',
-                                                transform: 'translateY(-2px)',
-                                                boxShadow: '0 12px 24px rgba(46, 139, 87, 0.4)',
-                                            },
-                                            transition: 'all 0.3s ease'
-                                        }}
-                                    >
-                                        Explore More
-                                    </Button>
+                                <Button
+    variant="contained"
+    component="a"
+    href="https://www.ibitf.co.in/ml/login"
+    target="_blank"
+    rel="noopener noreferrer"
+    sx={{
+        borderRadius: 50,
+        px: 4,
+        background: 'linear-gradient(90deg, #D4AF37 0%, #2E8B57 100%)',
+        textTransform: 'none',
+        fontSize: '1rem',
+        fontWeight: 600,
+        boxShadow: '0 4px 12px rgba(46, 139, 87, 0.3)',
+        '&:hover': {
+            background: 'linear-gradient(90deg, #C59237 0%, #257849 100%)',
+            transform: 'translateY(-2px)',
+            boxShadow: '0 6px 16px rgba(46, 139, 87, 0.4)',
+        },
+        transition: 'all 0.3s ease'
+    }}
+>
+    Explore More
+</Button>
+
                                 </Box>
                             </Box>
 
