@@ -128,77 +128,94 @@ const MarketHeroSection = () => {
                                 }}
                             />
 
-                            <Box sx={{ position: 'relative', zIndex: 1, height: '100%', display: 'flex', flexDirection: 'column', gap: 2 }}> {/* Reduced gap to 2 to fit more items */}
+                            <Box
+                                sx={{
+                                    position: "relative",
+                                    zIndex: 1,
+                                    height: "100%",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: 2,
+                                }}
+                            >
                                 <MarketStatsCard
-                                    title="Total Training"
-                                    count={399}
+                                    title="Total Trainings"
+                                    count={450}
                                     delay={0}
                                     icon={<Award size={32} strokeWidth={1.5} />}
                                     isActive={activeCard === 0}
                                     onMouseEnter={() => setActiveCard(0)}
                                     onMouseLeave={() => setActiveCard(null)}
                                 />
+
                                 <MarketStatsCard
                                     title="Total Trainers"
-                                    count={110}
+                                    count={150}
                                     delay={100}
                                     icon={<Users size={32} strokeWidth={1.5} />}
                                     isActive={activeCard === 1}
                                     onMouseEnter={() => setActiveCard(1)}
                                     onMouseLeave={() => setActiveCard(null)}
                                 />
+
                                 <MarketStatsCard
                                     title="Total Participants"
-                                    count={10081}
+                                    count={15500}
                                     delay={200}
                                     icon={<Globe size={32} strokeWidth={1.5} />}
                                     isActive={activeCard === 2}
                                     onMouseEnter={() => setActiveCard(2)}
                                     onMouseLeave={() => setActiveCard(null)}
                                 />
+
                                 <MarketStatsCard
                                     title="Total Districts"
-                                    count={5}
+                                    count={12}
                                     delay={300}
                                     icon={<Building2 size={32} strokeWidth={1.5} />}
                                     isActive={activeCard === 3}
                                     onMouseEnter={() => setActiveCard(3)}
                                     onMouseLeave={() => setActiveCard(null)}
                                 />
+
                                 <MarketStatsCard
                                     title="Total Blocks"
-                                    count={30}
+                                    count={35}
                                     delay={400}
                                     icon={<MapPin size={32} strokeWidth={1.5} />}
                                     isActive={activeCard === 4}
                                     onMouseEnter={() => setActiveCard(4)}
                                     onMouseLeave={() => setActiveCard(null)}
                                 />
-                                <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
+
+                                <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
                                     <Button
                                         variant="contained"
-                                        size="large"
+                                        component="a"
                                         href="https://www.ibitf.co.in/ml/login"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         sx={{
                                             borderRadius: 50,
                                             px: 4,
-                                            background: 'linear-gradient(90deg, #D4AF37 0%, #2E8B57 100%)',
-                                            textTransform: 'none',
-                                            fontSize: '1.1rem',
+                                            background: "linear-gradient(90deg, #D4AF37 0%, #2E8B57 100%)",
+                                            textTransform: "none",
+                                            fontSize: "1rem",
                                             fontWeight: 600,
-                                            boxShadow: '0 8px 20px rgba(46, 139, 87, 0.3)',
-                                            '&:hover': {
-                                                background: 'linear-gradient(90deg, #C59237 0%, #257849 100%)',
-                                                transform: 'translateY(-2px)',
-                                                boxShadow: '0 12px 24px rgba(46, 139, 87, 0.4)',
+                                            boxShadow: "0 4px 12px rgba(46, 139, 87, 0.3)",
+                                            "&:hover": {
+                                                background: "linear-gradient(90deg, #C59237 0%, #257849 100%)",
+                                                transform: "translateY(-2px)",
+                                                boxShadow: "0 6px 16px rgba(46, 139, 87, 0.4)",
                                             },
-                                            transition: 'all 0.3s ease'
+                                            transition: "all 0.3s ease",
                                         }}
                                     >
                                         Explore More
                                     </Button>
                                 </Box>
                             </Box>
+
 
                             {/* Floating action button */}
                             <Box
