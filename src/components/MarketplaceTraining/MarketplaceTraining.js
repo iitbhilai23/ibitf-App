@@ -1,62 +1,29 @@
-import React, { useEffect, useState, useRef, useMemo } from "react";
-import axios from "axios";
+
+
+import React, { useState } from "react";
+// Removed axios as it is no longer needed
 import CountUp from "react-countup";
 import TableExports from "./Common/TableExports";
 import styles from "./Marketplace.module.css";
 import TrainingChart from "./TrainingChart/TrainingChart";
-
-// IMPORT STANDALONE MAP
 import ChhattisgarhMap from "./Common/ChhattisgarhMap";
 
 export default function MarketplaceTraining() {
-  const BASE_URL = process.env.REACT_APP_URL;
-
-  const [trainers, setTrainers] = useState([]);
-  const [trainings, setTrainings] = useState([]);
-  const [participants, setParticipants] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // Removed BASE_URL and data fetching states (trainers, trainings, participants)
   const [search, setSearch] = useState("");
-
   const [selectedChart, setSelectedChart] = useState("trends");
 
-  const statistics = useMemo(() => {
-    const totalParticipants = trainings.reduce(
-      (s, t) => s + (t.participants || 0),
-      0
-    );
-    const avgParticipants =
-      trainings.length > 0 ? totalParticipants / trainings.length : 0;
+  // Removed statistics calculation logic
 
-    return { totalParticipants, avgParticipants };
-  }, [trainings]);
+  // Removed fetchAll function
 
-  // FETCH ALL DATA
-  const fetchAll = async () => {
-    setLoading(true);
-    try {
-      const [t1, t2, t3] = await Promise.all([
-        axios.get(`${BASE_URL}/trainings/trainers`),
-        axios.get(`${BASE_URL}/trainings/getTrainings`),
-        axios.get(`${BASE_URL}/trainings/getAllParticipants`),
-      ]);
-
-      setTrainers(t1.data.data || []);
-      setTrainings(t2.data.data || []);
-      setParticipants(t3.data.data || []);
-    } catch (err) {
-      console.log(err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchAll();
-  }, []);
+  // Removed useEffect
 
   // TABLE DATA HANDLING
-  let tableData = trainings;
-  let tableKeys = tableData.length > 0 ? Object.keys(tableData[0]) : [];
+  // Data is now empty since API is removed. 
+  // The layout remains, but the table will show no data.
+  const tableData = [];
+  const tableKeys = [];
 
   const filteredData = tableData.filter((row) =>
     Object.values(row).some((v) =>
@@ -77,38 +44,58 @@ export default function MarketplaceTraining() {
         <div className={styles.headerRight}></div>
       </header>
 
-      {/* TOP CARDS */}
-      <section className={styles.topCards}>
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>👤</div>
-          <div className={styles.cardBody}>
-            <div className={styles.cardTitle}>Total Trainers</div>
-            <div className={styles.cardValue}>
-              <CountUp end={trainers.length} duration={1.5} />
-            </div>
-          </div>
-        </div>
+   {/* TOP CARDS */}
+{/* TOP CARDS */}
+<section className={styles.topCards}>
+  
+  {/* Trainings Card */}
+  <div className={styles.card}>
+    <div className={styles.cardIcon}>📘</div>
+    <div className={styles.cardBody}>
+      <div className={styles.cardTitle}>Trainings</div>
+      <div className={styles.cardValue}>450+</div>
+    </div>
+  </div>
 
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>📘</div>
-          <div className={styles.cardBody}>
-            <div className={styles.cardTitle}>Total Trainings</div>
-            <div className={styles.cardValue}>
-              <CountUp end={trainings.length} duration={1.5} />
-            </div>
-          </div>
-        </div>
+  {/* Trainers Card */}
+  <div className={styles.card}>
+    <div className={styles.cardIcon}>👤</div>
+    <div className={styles.cardBody}>
+      <div className={styles.cardTitle}>Trainers</div>
+      <div className={styles.cardValue}>150+</div>
+    </div>
+  </div>
 
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>👥</div>
-          <div className={styles.cardBody}>
-            <div className={styles.cardTitle}>Total Participants</div>
-            <div className={styles.cardValue}>
-              <CountUp end={participants.length} duration={1.5} />
-            </div>
-          </div>
-        </div>
-      </section>
+  {/* Participants Card */}
+  <div className={styles.card}>
+    <div className={styles.cardIcon}>👥</div>
+    <div className={styles.cardBody}>
+      <div className={styles.cardTitle}>Participants</div>
+      <div className={styles.cardValue}>15500+</div>
+    </div>
+  </div>
+
+  {/* Districts Card */}
+  <div className={styles.card}>
+    <div className={styles.cardIcon}>📍</div>
+    <div className={styles.cardBody}>
+      <div className={styles.cardTitle}>Districts</div>
+      <div className={styles.cardValue}>12+</div>
+    </div>
+  </div>
+
+  {/* Blocks Card */}
+  <div className={styles.card}>
+    <div className={styles.cardIcon}>🏘️</div>
+    <div className={styles.cardBody}>
+      <div className={styles.cardTitle}>Blocks</div>
+      <div className={styles.cardValue}>35+</div>
+    </div>
+  </div>
+
+</section>
+
+
 
       {/* CHART + MAP (50%-50%) */}
       <section className={styles.row5050}>
@@ -167,9 +154,8 @@ export default function MarketplaceTraining() {
             </div>
 
             <div className={styles.tableWrapper}>
-              {loading ? (
-                <div className={styles.loading}>Loading...</div>
-              ) : (
+              {/* Since data is hardcoded to empty array, we show a message or empty table */}
+              {tableData.length > 0 ? (
                 <table className={styles.table}>
                   <thead>
                     <tr>
@@ -189,6 +175,10 @@ export default function MarketplaceTraining() {
                     ))}
                   </tbody>
                 </table>
+              ) : (
+                <div style={{ padding: "20px", textAlign: "center", color: "#888" }}>
+                  No records found
+                </div>
               )}
             </div>
           </div>
