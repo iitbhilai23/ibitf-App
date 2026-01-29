@@ -191,10 +191,8 @@ const MarketHeroSection = () => {
                                 <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
                                     <Button
                                         variant="contained"
-                                        component="a"
+                                        size="large"
                                         href="https://www.ibitf.co.in/ml/login"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
                                         sx={{
                                             borderRadius: 50,
                                             px: 4,
