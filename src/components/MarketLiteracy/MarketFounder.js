@@ -12,6 +12,7 @@ const MarketFounder = () => {
                         fontWeight="bold"
                         sx={{ fontFamily: '"Playfair Display", serif', fontSize: { xs: '1.5rem', md: '2.5rem' } }}
                     >
+                        
                         Meet the
                         <Box
                             component="span"
