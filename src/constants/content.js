@@ -822,7 +822,7 @@ export const siteContent = {
       mainHeading: "Call for Proposal Under Tribal Area Sub Plan (CFP-TSP) Scheme",
       description:
         "The IIT Bhilai Innovation and Technology Foundation (IBITF) invites proposals under its Tribal Area Sub-Plan (TSP) scheme to support tribal-centric and tribal-led innovations using advanced technologies such as AI/ML, IoT, Blockchain, and digital payments. The program focuses on sectors like FinTech, AgriTech, HealthTech, Energy, and Transport to improve livelihoods, income generation, and value addition for Scheduled Tribe (ST) communities. In previous cohorts, IBITF supported 54 projects across multiple states, leading to national-level recognition, job creation, women entrepreneurship, large-scale skill development, and deployment of scalable, field-tested technology solutions.",
-      lastDate: "The project proposal deadline has been extended to 30th January 2026.",
+      lastDate: "The project proposal deadline has been extended to 6th February 2026.",
       buttons: [
         {
           text: "Detailed Call for Proposal",
