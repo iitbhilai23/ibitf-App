@@ -1,7 +1,10 @@
+
+
+
 import React from 'react';
 import { siteContent } from '../constants/content';
-import { IoIosMail } from 'react-icons/io'
-import { FaLocationDot } from 'react-icons/fa6'
+import { IoIosMail } from 'react-icons/io';
+import { FaLocationDot, FaPhone } from 'react-icons/fa6'; // Imported FaPhone
 
 const IITMap = () => {
   return (
@@ -40,6 +43,20 @@ const IITMap = () => {
               {siteContent.contactDetails.address}
             </span>
           </div>
+
+          {/* --- Fixed Phone Number Section --- */}
+          <div style={styles.detailItem}>
+            <span style={styles.icon}>
+              <FaPhone />
+            </span>
+            <span>
+              <strong style={styles.detailTitle}>Phone Number</strong>
+              <br />
+              {siteContent.contactDetails.phone}
+            </span>
+          </div>
+          {/* --------------------------------- */}
+
         </div>
       </div>
       <div style={styles.mapContainer} className='map-container'>

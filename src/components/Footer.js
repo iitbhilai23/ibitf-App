@@ -6,6 +6,7 @@ import { siteContent } from '../constants/content';
 import '../styles/main.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { footerlogo, text, about, socials, links, services, info, support, services2 } = siteContent.footer;
@@ -35,7 +36,9 @@ const Footer = () => {
           <h3>Links</h3>
           <ul>
             {links.map((link, index) => (
-              <li key={index}><a href="#">{link}</a></li>
+              <li key={index}>
+                <Link to={link.path}>{link.label}</Link>
+              </li>
             ))}
           </ul>
         </div>

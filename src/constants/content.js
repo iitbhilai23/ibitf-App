@@ -266,7 +266,13 @@ export const siteContent = {
       { name: "Instagram", url: "https://instagram.com" },
       { name: "LinkedIn", url: "https://linkedin.com" },
     ],
-    links: ["Home", "About us", "Career", "Contact us"],
+     links : [
+  { label: "Home", path: "/" },
+  { label: "About us", path: "/about-ibitf" },
+  { label: "Career", path: "/career" },
+  { label: "Contact us", path: "/contact-us" }
+],
+
     services: ["Thematic Area", "Schemes", "Call for Proposals", "Blogs", "Startup Support Services"],
     info: ["IIT Bhilai", "About Ibitf", "Projects", "Team"],
     support: ["FAQ", "Help", "Privacy Policy", "Terms"],
