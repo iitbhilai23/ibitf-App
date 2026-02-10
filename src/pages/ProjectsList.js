@@ -4,6 +4,7 @@ import { pagesConfig } from '../constants/pagesConfig';
 import { Tabs, Tab, Box, Grid, MenuItem, Select, Typography, Paper, Card, TextField } from '@mui/material';
 import CountCard from '../components/CountCard';
 import ProjectListPDF from '../assets/PDF/project_list/ProjectListNew.pdf';
+import MouPDF from '../assets/PDF/Mou/MoU.pdf'; // Imported the MOU PDF
 
 const ProjectsList = () => {
   const location = useLocation();
@@ -24,21 +25,16 @@ const ProjectsList = () => {
     navigate({ search: params.toString() });
   }, [activeTab, navigate]);
 
-  // const handleTabChange = (event, newTab) => {
-  //   setActiveTab(newTab);
-  //   setSelectedSubCategory('');
-  // };
- 
   const handleTabChange = (event, newTab) => {
-  if (newTab === 'project-list') {
-    // Using the imported asset ensures the correct path is used in development and production
-    window.open(ProjectListPDF, '_blank');
-    return;
-  }
+    if (newTab === 'project-list') {
+      // Using the imported asset ensures the correct path is used in development and production
+      window.open(ProjectListPDF, '_blank');
+      return;
+    }
 
-  setActiveTab(newTab);
-  setSelectedSubCategory('');
-};
+    setActiveTab(newTab);
+    setSelectedSubCategory('');
+  };
 
   const handleSubCategoryClick = (subCategory) => {
     setSelectedSubCategory(subCategory);
@@ -171,6 +167,7 @@ const ProjectsList = () => {
             <Tab label="Projects" value="project" sx={styles.tab} />
             <Tab label="Events" value="event" sx={styles.tab} />
               <Tab label="Project List" value="project-list" sx={styles.tab} />
+               {/* <Tab label="Start-ups" value="project-list" sx={styles.tab} /> */}
           </Tabs>
         </Box>
 
@@ -178,36 +175,57 @@ const ProjectsList = () => {
           {/* Subcategory Cards */}
           <div className='projects-cards-clicked'>
             <Grid container spacing={8}>
-              {subCategories.map((subCat, index) => (
-                <Grid item xs={12} sm={4} md={4} key={index}>
-                  <Card
-                    onClick={() => handleSubCategoryClick(subCat?.subCategory)}
-                    sx={{
-                      // minHeight: "175px",
-                      padding: "20px",
-                      cursor: "pointer",
-                      backgroundColor: selectedSubCategory === subCat?.subCategory ? "#c3cfe2" : "#ffffff",
-                      transition: "background-color 0.3s",
-                      '&:hover': {
-                        background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
-                        transform: "translateY(-5px)",
-                        boxShadow: "#f5f7fa 0px 0px 0px, #c3cfe2 0px 0px 13px",
-                        transition: "transform 1s ease",
-                      },
-                      borderRadius: "12px",
-                      height: "20vh",
-                      border: selectedSubCategory === subCat ? "1px solid #c3cfe2" : "none",
-                      textAlign: "center",
-                    }}
-                  >
-                    <span style={styles.clickedCardsTxt}>
-                      <span style={{ fontWeight: 600, fontSize: "35px", color: "#000000" }}><Counter endValue={subCat?.count} /></span>
-                      <span>{subCat?.subCategory?.toUpperCase()}</span>
-                      <span style={{ fontSize: "14px", fontWeight: 600 }}>{subCat?.schemeFullForm}</span>
-                    </span>
-                  </Card>
-                </Grid>
-              ))}
+              {subCategories.map((subCat, index) => {
+                
+                // --- MODIFICATION STARTS HERE ---
+                // Check if this is the MOU card. Ensure 'MOU' matches the case in your pagesConfig (e.g. 'Mou')
+                const isMou = subCat?.subCategory === 'MOU';
+                
+                // Override count to 39 if it is MOU, otherwise use original count
+                const displayCount = isMou ? 39 : subCat?.count;
+                // --- MODIFICATION ENDS HERE ---
+
+                return (
+                  <Grid item xs={12} sm={4} md={4} key={index}>
+                    <Card
+                      onClick={() => {
+                        if (isMou) {
+                          // Open PDF if it is MOU
+                          window.open(MouPDF, '_blank');
+                        } else {
+                          // Default behavior for others
+                          handleSubCategoryClick(subCat?.subCategory);
+                        }
+                      }}
+                      sx={{
+                        padding: "20px",
+                        cursor: "pointer",
+                        backgroundColor: (selectedSubCategory === subCat?.subCategory && !isMou) ? "#c3cfe2" : "#ffffff",
+                        transition: "background-color 0.3s",
+                        '&:hover': {
+                          background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+                          transform: "translateY(-5px)",
+                          boxShadow: "#f5f7fa 0px 0px 0px, #c3cfe2 0px 0px 13px",
+                          transition: "transform 1s ease",
+                        },
+                        borderRadius: "12px",
+                        height: "20vh",
+                        border: selectedSubCategory === subCat ? "1px solid #c3cfe2" : "none",
+                        textAlign: "center",
+                      }}
+                    >
+                      <span style={styles.clickedCardsTxt}>
+                        <span style={{ fontWeight: 600, fontSize: "35px", color: "#000000" }}>
+                          {/* Pass the potentially overridden count */}
+                          <Counter endValue={displayCount} /> 
+                        </span>
+                        <span>{subCat?.subCategory?.toUpperCase()}</span>
+                        <span style={{ fontSize: "14px", fontWeight: 600 }}>{subCat?.schemeFullForm}</span>
+                      </span>
+                    </Card>
+                  </Grid>
+                );
+              })}
             </Grid>
           </div>
         </Box>
@@ -223,16 +241,6 @@ const ProjectsList = () => {
             <Typography variant="h5" sx={styles.fullWidthCardText}>
               {subCategoryDetails[selectedSubCategory]?.subHead}
             </Typography>
-            {/* Display bullet points if they exist */}
-            {/* {subCategoryDetails[selectedSubCategory]?.bulletPoints && (
-              <ul style={styles.bulletPointsList}>
-                {subCategoryDetails[selectedSubCategory]?.bulletPoints.map((point, index) => (
-                  <li key={index} style={styles.bulletPoint}>
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            )} */}
             <ul style={styles.sectionList}>
               {subCategoryDetails[selectedSubCategory]?.text1?.map((item, index) => (
                 <li key={index} style={styles.sectionItem}>
