@@ -72,7 +72,7 @@ export const siteContent = {
       "Home",
       {
         label: "About Us",
-        submenu: ["About IBITF", "Organizational Structure", "Industries Partners", "Project List", "Awarded Fellowship", "Tech Sectors"],
+        submenu: ["About IBITF", "Organizational Structure", "Industries Partners", "Awarded Fellowship", "Tech Sectors"],
       },
       {
         label: "Programs & Initiatives",

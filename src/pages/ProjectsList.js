@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { pagesConfig } from '../constants/pagesConfig';
 import { Tabs, Tab, Box, Grid, MenuItem, Select, Typography, Paper, Card, TextField } from '@mui/material';
 import CountCard from '../components/CountCard';
+import ProjectListPDF from '../assets/PDF/project_list/ProjectListNew.pdf';
 
 const ProjectsList = () => {
   const location = useLocation();
@@ -10,7 +11,6 @@ const ProjectsList = () => {
 
   const queryParams = new URLSearchParams(location.search);
   const initialTab = queryParams.get('tab') || 'project';
-
   const [activeTab, setActiveTab] = useState(initialTab);
   const [selectedSubCategory, setSelectedSubCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState(''); // State for search term
@@ -24,10 +24,21 @@ const ProjectsList = () => {
     navigate({ search: params.toString() });
   }, [activeTab, navigate]);
 
+  // const handleTabChange = (event, newTab) => {
+  //   setActiveTab(newTab);
+  //   setSelectedSubCategory('');
+  // };
+ 
   const handleTabChange = (event, newTab) => {
-    setActiveTab(newTab);
-    setSelectedSubCategory('');
-  };
+  if (newTab === 'project-list') {
+    // Using the imported asset ensures the correct path is used in development and production
+    window.open(ProjectListPDF, '_blank');
+    return;
+  }
+
+  setActiveTab(newTab);
+  setSelectedSubCategory('');
+};
 
   const handleSubCategoryClick = (subCategory) => {
     setSelectedSubCategory(subCategory);
@@ -159,6 +170,7 @@ const ProjectsList = () => {
           >
             <Tab label="Projects" value="project" sx={styles.tab} />
             <Tab label="Events" value="event" sx={styles.tab} />
+              <Tab label="Project List" value="project-list" sx={styles.tab} />
           </Tabs>
         </Box>
 
