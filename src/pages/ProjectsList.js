@@ -1,10 +1,12 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { pagesConfig } from '../constants/pagesConfig';
 import { Tabs, Tab, Box, Grid, MenuItem, Select, Typography, Paper, Card, TextField } from '@mui/material';
 import CountCard from '../components/CountCard';
 import ProjectListPDF from '../assets/PDF/project_list/ProjectListNew.pdf';
-import MouPDF from '../assets/PDF/Mou/MoU.pdf'; // Imported the MOU PDF
+import MouPDF from '../assets/PDF/Mou/MoU.pdf'; 
+import Startups from '../assets/PDF/Startups/Startups2025.pdf';
 
 const ProjectsList = () => {
   const location = useLocation();
@@ -31,6 +33,13 @@ const ProjectsList = () => {
       window.open(ProjectListPDF, '_blank');
       return;
     }
+
+    // --- ADDED SECTION FOR STARTUPS TAB ---
+    if (newTab === 'startups') {
+      window.open(Startups, '_blank');
+      return;
+    }
+    // ---------------------------------------
 
     setActiveTab(newTab);
     setSelectedSubCategory('');
@@ -166,8 +175,9 @@ const ProjectsList = () => {
           >
             <Tab label="Projects" value="project" sx={styles.tab} />
             <Tab label="Events" value="event" sx={styles.tab} />
-              <Tab label="Project List" value="project-list" sx={styles.tab} />
-               {/* <Tab label="Start-ups" value="project-list" sx={styles.tab} /> */}
+            <Tab label="Project List" value="project-list" sx={styles.tab} />
+            {/* --- ADDED STARTUPS TAB --- */}
+            <Tab label="Startups" value="startups" sx={styles.tab} />
           </Tabs>
         </Box>
 
