@@ -38,7 +38,7 @@
   background: linear-gradient(135deg, #fffdf7, #fffefb);
 
   border-radius: 12px;
-  border: 2px solid gold; /* Yellow border */
+  border: 2px solid #6A0DAD;
   padding: 25px;
   position: relative;
 
@@ -83,11 +83,11 @@
 }
 
 /* Glowing pulse animation */
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
-  50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); }
-  100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
-}
+/* @keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px #6A0DAD; }
+  50% { box-shadow: 0 0 25px #6A0DAD; }
+  100% { box-shadow: 0 0 10px #6A0DAD; }
+} */
 
 /* Content Area */
 .cardContent {
