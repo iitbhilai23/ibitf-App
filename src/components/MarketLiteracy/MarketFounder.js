@@ -22,6 +22,7 @@ const MarketFounder = () => {
                                 ml: 1
                             }}
                         >
+                            
                             Founder
                         </Box>
                     </Typography>
