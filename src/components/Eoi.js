@@ -23,10 +23,7 @@ const Eoi = () => {
 
       <div className={styles.cardList}>
         <div className={styles.cardArea}>
-          
-          <div className={styles.highlightBadge}>
-            <span className={styles.star}>★</span> New
-          </div>
+        
 
           <div className={styles.cardContent}>
             <h4 className={styles.eoiTitle}>{EOI.heading}</h4>
