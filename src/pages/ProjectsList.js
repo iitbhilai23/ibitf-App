@@ -139,6 +139,16 @@ const ProjectsList = () => {
       title: 'Technology Development (TD)',
       description: 'Our Technology Development projects focus on fostering cutting-edge solutions that shape the future of industries and society. We aim to push the boundaries of what is possible by creating efficient, scalable, and impactful technological innovations that meet the needs of modern challenges',
     },
+        DIAL: {
+      title: 'Design Innovation & Advanced Laboratory (DIAL)',
+      description: 'The DIAL initiative focuses on establishing a state-of-the-art facility dedicated to fostering innovation in design, prototyping, and advanced manufacturing. It aims to bridge the gap between conceptual ideas and market-ready products by providing students, startups, and entrepreneurs with access to cutting-edge tools, modern machinery, and expert mentorship in product design.',
+      bulletPoints: [
+        'Provide infrastructure for rapid prototyping, including 3D printing, CNC machining, and PCB design.',
+        'Foster a culture of design thinking and innovation to solve complex engineering problems.',
+        'Support startups and students in translating abstract concepts into functional, testable prototypes.',
+        'Facilitate interdisciplinary collaboration by providing a shared workspace for designers, engineers, and domain experts.'
+      ],
+    },
   };
 
   return (
@@ -276,10 +286,10 @@ const ProjectsList = () => {
             {selectedSubCategory === 'TSP' && (
               <div style={styles.tspImageCnt2}>
                 <div style={styles.tspImageCnt}>
-                  <img src={require(`../${subCategoryDetails[selectedSubCategory]?.projectImg[1]}`)} alt='Tsp image' style={styles.tspImage} />
+                  <img src={require(`../${subCategoryDetails[selectedSubCategory]?.projectImg[1]}`)} alt="Tspimage" style={styles.tspImage} />
                 </div>
                 <div style={styles.tspImageCnt}>
-                  <img src={require(`../${subCategoryDetails[selectedSubCategory]?.projectImg[2]}`)} alt='Tsp image' style={styles.tspImage} />
+                  <img src={require(`../${subCategoryDetails[selectedSubCategory]?.projectImg[2]}`)} alt="Tspimage" style={styles.tspImage} />
                 </div>
               </div>
             )}
