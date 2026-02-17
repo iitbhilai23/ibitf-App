@@ -9,6 +9,7 @@ import { defaultColors } from './DefaultColors';
 const createGradient = (color, angle = 135) => {
     return `linear-gradient(${angle}deg,  ${color.darker} 0%, ${color.base} 50%, ${color.lighter} 100%);`;
   };
+
 function getColorByNumber(colorNum) {
   const colorKeys = Object.keys(defaultColors);
   const selectedColor = defaultColors[colorKeys[colorNum - 1]];
@@ -23,6 +24,7 @@ function getColorByNumber(colorNum) {
       darker: selectedColor.darker,
   };
 }
+
 function GradientCircularProgress(color1,color2) {
     return (
       <React.Fragment>
@@ -38,14 +40,14 @@ function GradientCircularProgress(color1,color2) {
       </React.Fragment>
     );
   }
-export default function CountCard({ title, isActive, onClick, height, enabled = true, color_num, loading = false,makeActive=false,color_shade="base" }) {
-    
+
+export default function CountCard({ title, isActive, onClick, height, enabled = true, color_num, loading = false, makeActive=false, color_shade="base" }) {
     
     const color = getColorByNumber(color_num);
     const backgroundColor = color_num ? color[color_shade] : 'inherit';
     const hoverColor = color_num ? color[color_shade] : 'inherit';
-
     const textColor = color_num ? '#FFFFFF' : 'inherit';
+    
     if(makeActive){
         enabled = true;
         isActive="active";
@@ -67,44 +69,47 @@ export default function CountCard({ title, isActive, onClick, height, enabled = 
     transition: 'all 0.5s ease',
     position: 'relative',
     alignItems: "center",
-    background: 'linear-gradient(135deg, #6a0dad 30%, #8a2be2 100%)', // Gradient for modern feel
-    // backgroundColor: 'rgba(58, 16, 120, 0.8)',
-    // backgroundImage: "linear-gradient(135deg, rgba(58, 16, 120, 0.8) 30%, rgba(255, 64, 129, 0.7) 100%)",
+    background: 'linear-gradient(135deg, #6a0dad 30%, #8a2be2 100%)',
     color: "#ffffff",
-    boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.4)', // Subtle shadow for depth
+    boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.4)',
     '&:hover': {
-      backgroundColor: 'linear-gradient(135deg, #8a2be2 30%, #6a0dad 100%)', // Inverted gradient on hover
-      transform: 'scale(1.03)', // Slightly larger on hover
-      boxShadow: '0px 12px 24px rgba(0, 0, 0, 0.7)', // More pronounced shadow on hover
+      backgroundColor: 'linear-gradient(135deg, #8a2be2 30%, #6a0dad 100%)',
+      transform: 'scale(1.03)',
+      boxShadow: '0px 12px 24px rgba(0, 0, 0, 0.7)',
       color: "#6a0dad",
     },
-    borderRadius: "16px", // Rounded corners for modern look
+    borderRadius: "16px",
     overflow: 'hidden',
-    border: isActive ? '2px solid #ffffff' : 'none', // Border for active state
+    border: isActive ? '2px solid #ffffff' : 'none',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s',
   }}
 >
   <Tooltip title={title} placement="top-start" arrow>
-    <>
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <Typography
         className={isActive ? 'active' : ''}
         variant="subtitle2"
         sx={{
-        //   fontWeight: 'bold',
-          whiteSpace: 'wrap',
-          fontSize: '11px', // Increased font size for better readability
-        //   textTransform: 'uppercase', // Modern text style
-          letterSpacing: '1px', // Adds spacing for modern look
+          fontWeight: 'bold',
+          fontSize: '13px', 
+          letterSpacing: '0.5px',
+          textTransform: 'uppercase',
+          display: '-webkit-box',
+          WebkitLineClamp: 2, 
+          WebkitBoxOrient: 'vertical',
+          overflow: 'hidden',
+          padding: '0 5px', 
         }}
       >
         {title}
       </Typography>
+
       {loading ? (
         <GradientCircularProgress />
       ) : (
         <></>
       )}
-    </>
+    </div>
   </Tooltip>
 </Card>
 

@@ -820,6 +820,15 @@ export const siteContent = {
         "To build a vibrant network of start-up ecosystems facilitating mentorship, technical and R&D related suggestions, financial support etc., by establishing a network between academia and industries, mainly involving the collaborators of the IBITF.",
       ],
     },
+        {
+      title: "Dedicated Innovation Accelerators (DIAL)",
+      description:
+        "Accelerators are a post-incubation initiative linked with the existing incubators to supplement and complement the scaling up of a start-up. It aims to direct focused resources for a start-up to validate product ideas and engage with customers for scaling up and boosting the incubator’s existing activities. Accelerators also help in realizing and deciding whether to create a scalable start-up from a very nascent stage. The basic objectives of DIAL involve:",
+      objectives: [
+        "Fast track growth of potential start-ups through monitoring and networking.",
+        "Attract mentors, expert, academicians and investors through structure accelerator programs.",
+      ],
+    },
   ],
   cardDataForCFP: [
      {

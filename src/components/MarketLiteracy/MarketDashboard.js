@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Typography, Button, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup, GeoJSON, useMap } from 'react-leaflet';
@@ -65,7 +64,7 @@ const THEME = {
     }
 };
 
-const MarketHeroSection = () => {
+const MarketDashboard = () => {
     const [data, setData] = useState(null);
     const [viewData, setViewData] = useState(null);
     const [locationsData, setLocationsData] = useState([]);
@@ -215,42 +214,6 @@ const MarketHeroSection = () => {
             background: THEME.bgGradient,
             overflowX: "hidden",
         }}>
-            <Box sx={{ textAlign: 'center', mb: 2, opacity: 0, animation: 'fadeIn 0.8s ease-out forwards' }}>
-                <style>
-                    {`
-              @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(20px); }
-                to { opacity: 1; transform: translateY(0); }
-              }
-            `}
-                </style>
-                <Typography
-                    variant="h2"
-                    component="h1"
-                    fontWeight="700"
-                    color="text.primary"
-                    gutterBottom
-                    sx={{ fontSize: { xs: '2.5rem', md: '3.5rem' } }}
-                >
-                    Marketplace Literacy <Box component="span" sx={{
-                        background: "linear-gradient(90deg, #D4AF37 0%, #2E8B57 50%, #1976d2 100%)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent"
-                    }}>Chhattisgarh</Box>
-                </Typography>
-                <Typography
-                    variant="h6"
-                    color="text.secondary"
-                    sx={{
-                        maxWidth: 700,
-                        mx: 'auto',
-                        fontSize: { xs: '1rem', md: '1.1rem' },
-                        fontWeight: 400
-                    }}
-                >
-                    Empowering women through financial education and entrepreneurship skills
-                </Typography>
-            </Box>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: THEME.gap.md }}>
                 <div>
                     <h1 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#0f172a', margin: 0, letterSpacing: '-0.02em' }}>
@@ -346,34 +309,16 @@ const getTabStyle = (isActive, gradient) => ({
     letterSpacing: '0.01em'
 });
 
-// const MapResizer = ({ trigger }) => {
-//     const map = useMap();
-//     useEffect(() => {
-//         const resizeTimeout = setTimeout(() => {
-//             map.invalidateSize();
-//         }, 100);
-//         return () => clearTimeout(resizeTimeout);
-//     }, [trigger, map]);
-//     return null;
-// };
 const MapResizer = ({ trigger }) => {
     const map = useMap();
-
     useEffect(() => {
-        if (!map) return;
-
-        const timeout = setTimeout(() => {
-            if (map._container) {   // ✅ Prevent undefined _leaflet_pos error
-                map.invalidateSize();
-            }
-        }, 400);   // slightly increased delay for safety
-
-        return () => clearTimeout(timeout);
+        const resizeTimeout = setTimeout(() => {
+            map.invalidateSize();
+        }, 100);
+        return () => clearTimeout(resizeTimeout);
     }, [trigger, map]);
-
     return null;
 };
-
 
 // ===== TRAINING LOCATION MAP COMPONENT =====
 const TraineeLocationMap = ({ trainingLocations }) => {
@@ -391,13 +336,30 @@ const TraineeLocationMap = ({ trainingLocations }) => {
         return lat >= MIN_LAT && lat <= MAX_LAT && lng >= MIN_LNG && lng <= MAX_LNG;
     };
 
+    // Debug: Log raw data
+    useEffect(() => {
+        console.log('=== TraineeLocationMap Props ===');
+        console.log('trainingLocations count:', trainingLocations?.length);
+        if (trainingLocations?.length > 0) {
+            console.log('First item:', trainingLocations[0]);
+            console.log('location_details:', trainingLocations[0]?.location_details);
+        }
+    }, [trainingLocations]);
+
     // Filter valid training locations from API data
     const validTrainingLocations = (trainingLocations || []).filter(training => {
         const lat = Number(training?.location_details?.latitude);
         const lng = Number(training?.location_details?.longitude);
         const isValid = !isNaN(lat) && !isNaN(lng) && isWithinCG(lat, lng);
+
+        if (!isValid) {
+            console.log(`Invalid coords for "${training?.subject_name}": lat=${lat}, lng=${lng}`);
+        }
+
         return isValid;
     });
+
+    console.log('Valid Training Locations Count:', validTrainingLocations.length);
 
     useEffect(() => {
         setGeoJsonData(cgGeoJson);
@@ -452,7 +414,6 @@ const TraineeLocationMap = ({ trainingLocations }) => {
         boxShadow: isFullScreen ? 'none' : '0 4px 20px rgba(0, 0, 0, 0.05)',
         padding: isFullScreen ? 0 : THEME.pad.lg,
         overflow: 'hidden',
-        boxSizing: 'border-box',
         ...(isFullScreen ? {
             position: 'fixed',
             top: 0,
@@ -732,45 +693,22 @@ const TraineeLocationMap = ({ trainingLocations }) => {
 const MapBoundsAdjuster = ({ geoJsonData, trigger }) => {
     const map = useMap();
 
-    // useEffect(() => {
-    //     if (!map || !geoJsonData) return;
-
-    //     const layer = L.geoJSON(geoJsonData);
-    //     const bounds = layer.getBounds();
-    //     if (!bounds.isValid()) return;
-
-    //     setTimeout(() => {
-    //         map.invalidateSize();
-    //         map.fitBounds(bounds, {
-    //             paddingTopLeft: [20, 40],
-    //             paddingBottomRight: [160, 40],
-    //             maxZoom: 8
-    //         });
-    //     }, 300);
-    // }, [geoJsonData, trigger, map]);
-
     useEffect(() => {
         if (!map || !geoJsonData) return;
-        if (!map._container) return;   // ✅ Critical safety check
 
         const layer = L.geoJSON(geoJsonData);
         const bounds = layer.getBounds();
         if (!bounds.isValid()) return;
 
-        const timeout = setTimeout(() => {
-            if (map._container) {
-                map.invalidateSize();
-                map.fitBounds(bounds, {
-                    paddingTopLeft: [20, 40],
-                    paddingBottomRight: [160, 40],
-                    maxZoom: 8
-                });
-            }
-        }, 400);
-
-        return () => clearTimeout(timeout);
+        setTimeout(() => {
+            map.invalidateSize();
+            map.fitBounds(bounds, {
+                paddingTopLeft: [20, 40],
+                paddingBottomRight: [160, 40],
+                maxZoom: 8
+            });
+        }, 300);
     }, [geoJsonData, trigger, map]);
-
 
     return null;
 };
@@ -778,7 +716,7 @@ const MapBoundsAdjuster = ({ geoJsonData, trigger }) => {
 // ===== SUB COMPONENTS =====
 
 const SummaryTab = ({ summary, viewData, locationsData, trainingLocations }) => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: THEME.gap.md }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: THEME.gap.sm }}>
         {/* Top Stats Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: THEME.gap.md }}>
             <StatCard title="Total Trainings" value={summary?.total_trainings || 0} icon={BookOpen} gradient={THEME.gradients.kpiA} />
@@ -791,32 +729,6 @@ const SummaryTab = ({ summary, viewData, locationsData, trainingLocations }) => 
         <div style={{ width: '100%', height: '460px' }}>
             <TraineeLocationMap trainingLocations={trainingLocations} />
         </div>
-
-        {/* BUTTON ADDED BELOW MAP WITH INCREASED MARGIN TOP */}
-        <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
-            <Button
-                variant="contained"
-                size="large"
-                href="https://www.ibitf.co.in/ml/login"
-                sx={{
-                    borderRadius: 50,
-                    px: 4,
-                    background: "linear-gradient(90deg, #D4AF37 0%, #2E8B57 100%)",
-                    textTransform: "none",
-                    fontSize: "1rem",
-                    fontWeight: 600,
-                    boxShadow: "0 4px 12px rgba(46, 139, 87, 0.3)",
-                    "&:hover": {
-                        background: "linear-gradient(90deg, #C59237 0%, #257849 100%)",
-                        transform: "translateY(-2px)",
-                        boxShadow: "0 6px 16px rgba(46, 139, 87, 0.4)",
-                    },
-                    transition: "all 0.3s ease",
-                }}
-            >
-                Explore More
-            </Button>
-        </Box>
     </div>
 );
 
@@ -940,7 +852,6 @@ const DetailedTab = ({ viewData }) => (
             )}
         </div>
     </div>
-
 );
 
 const StatCard = ({ title, value, icon: Icon, gradient }) => {
@@ -1036,533 +947,46 @@ const StatCard = ({ title, value, icon: Icon, gradient }) => {
     );
 };
 
-export default MarketHeroSection;
+const TrainingStatusCard = ({ viewData, summary }) => (
+    <div style={{
+        background: 'linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%)',
+        borderRadius: '16px',
+        padding: '3px',
+        boxShadow: '0 4px 12px rgba(79, 70, 229, 0.08)',
+        height: '100%'
+    }}>
+        <div style={{ background: '#ffffff', borderRadius: '13px', padding: THEME.pad.lg, height: '100%', boxSizing: 'border-box' }}>
+            <h3 style={{ fontWeight: '700', color: '#3730a3', marginBottom: THEME.pad.md, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: THEME.gap.sm }}>
+                <BarChart2 color={THEME.primary} /> Training Status
+            </h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: THEME.gap.sm }}>
+                {['Scheduled', 'Ongoing', 'Completed', 'Cancelled'].map((status, i) => {
+                    const key = status.toLowerCase();
+                    const val = viewData?.by_status?.[key] || 0;
+                    const colors = [THEME.primary, THEME.warning, THEME.success, THEME.danger];
+                    const c = colors[i];
+                    const total = summary?.total_trainings || 1;
+                    const pct = Math.round((val / total) * 100);
 
-// import { Box, Container, Typography, Grid, Paper, useTheme, Button } from "@mui/material";
-// import { Users, MapPin, Building2, TrendingUp, Award, Globe } from "lucide-react";
-// import MarketStatsCard from "./MarketStatsCard";
-// import MarketPartnerLogos from "./MarketPartnerLogos";
-// import marketGif from "../../assets/marketPlace/market_gif.mp4";
-// import villageImg from "../../assets/workshop/3.png";
-// import train_01 from "../../assets/marketPlace/train_01.jpeg";
-// import train_02 from "../../assets/marketPlace/train_02.jpeg";
-// import { useState } from "react";
+                    return (
+                        <div key={i} style={{
+                            display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: `${THEME.pad.sm} ${THEME.pad.md}`,
+                            background: '#f8fafc', borderRadius: '8px', border: '1px solid #f3f4f6'
+                        }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: THEME.gap.sm }}>
+                                <div style={{ width: '8px', height: '8px', borderRadius: '4px', background: c }}></div>
+                                <span style={{ fontWeight: '600', color: '#1e293b', fontSize: '0.9rem' }}>{status}</span>
+                            </div>
+                            <div style={{ textAlign: 'right' }}>
+                                <div style={{ fontWeight: '800', color: '#0f172a', fontSize: '1.1rem', letterSpacing: '-0.01em' }}>{val}</div>
+                                <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: '600', marginTop: '1px' }}>{pct}%</div>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </div>
+    </div>
+);
 
-// const MarketHeroSection = () => {
-//     const theme = useTheme();
-//     const [activeCard, setActiveCard] = useState(null);
-//     const [isHovered, setIsHovered] = useState(false);
-
-//     return (
-//         <Box component="section" sx={{ py: { xs: 2, md: 4 }, p: 2, bgcolor: 'background.default', overflow: 'hidden', position: 'relative' }}>
-//             {/* Background decoration */}
-//             <Box
-//                 sx={{
-//                     position: 'absolute',
-//                     top: -100,
-//                     right: -100,
-//                     width: 400,
-//                     height: 400,
-//                     borderRadius: '50%',
-//                     background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(46, 139, 87, 0.1) 50%, rgba(25, 118, 210, 0.1) 100%)',
-//                     zIndex: 0,
-//                 }}
-//             />
-//             <Box
-//                 sx={{
-//                     position: 'absolute',
-//                     bottom: -150,
-//                     left: -150,
-//                     width: 500,
-//                     height: 500,
-//                     borderRadius: '50%',
-//                     background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(46, 139, 87, 0.05) 50%, rgba(25, 118, 210, 0.05) 100%)',
-//                     zIndex: 0,
-//                 }}
-//             />
-
-//             <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1 }}>
-//                 <Box sx={{ textAlign: 'center', mb: 6, opacity: 0, animation: 'fadeIn 0.8s ease-out forwards' }}>
-//                     <style>
-//                         {`
-//               @keyframes fadeIn {
-//                 from { opacity: 0; transform: translateY(20px); }
-//                 to { opacity: 1; transform: translateY(0); }
-//               }
-//             `}
-//                     </style>
-//                     <Typography
-//                         variant="h2"
-//                         component="h1"
-//                         fontWeight="700"
-//                         color="text.primary"
-//                         gutterBottom
-//                         sx={{ fontSize: { xs: '2.5rem', md: '3.5rem' } }}
-//                     >
-//                         Marketplace Literacy <Box component="span" sx={{
-//                             background: "linear-gradient(90deg, #D4AF37 0%, #2E8B57 50%, #1976d2 100%)",
-//                             WebkitBackgroundClip: "text",
-//                             WebkitTextFillColor: "transparent"
-//                         }}>Chhattisgarh</Box>
-//                     </Typography>
-//                     <Typography
-//                         variant="h6"
-//                         color="text.secondary"
-//                         sx={{
-//                             maxWidth: 700,
-//                             mx: 'auto',
-//                             fontSize: { xs: '1rem', md: '1.1rem' },
-//                             fontWeight: 400
-//                         }}
-//                     >
-//                         Empowering women through financial education and entrepreneurship skills
-//                     </Typography>
-//                 </Box>
-
-//                 {/* <Grid container spacing={4} alignItems="stretch">
-//                     <Grid item xs={12} lg={5}>
-//                         {/* Enhanced Stats Cards Container */}
-//                 {/* <Box
-//                             sx={{
-//                                 position: 'relative',
-//                                 height: '100%',
-//                                 display: 'flex',
-//                                 flexDirection: 'column',
-//                                 gap: 3
-//                             }}
-//                             onMouseEnter={() => setIsHovered(true)}
-//                             onMouseLeave={() => setIsHovered(false)}
-//                         > */}
-//                 {/* Decorative background for the cards container */}
-//                 {/* <Box
-//                                 sx={{
-//                                     position: 'absolute',
-//                                     top: 0,
-//                                     left: 0,
-//                                     width: '100%',
-//                                     height: '100%',
-//                                     borderRadius: 3,
-//                                     background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(46, 139, 87, 0.05) 50%, rgba(25, 118, 210, 0.05) 100%)',
-//                                     transform: isHovered ? 'scale(1.02)' : 'scale(1)',
-//                                     transition: 'transform 0.5s ease',
-//                                     zIndex: 0
-//                                 }}
-//                             /> */}
-
-//                 {/* Connection lines between cards */}
-//                 {/* <Box
-//                                 sx={{
-//                                     position: 'absolute',
-//                                     top: '33%',
-//                                     left: '50%',
-//                                     transform: 'translateX(-50%)',
-//                                     width: '2px',
-//                                     height: '34%',
-//                                     background: `linear-gradient(to bottom,
-//                                         ${theme.palette.primary.main} 0%,
-//                                         ${theme.palette.secondary.main} 50%,
-//                                         ${theme.palette.info.main} 100%)`,
-//                                     opacity: isHovered ? 0.7 : 0.3,
-//                                     transition: 'opacity 0.5s ease',
-//                                     zIndex: 0
-//                                 }}
-//                             />
-
-//                             <Box
-//                                 sx={{
-//                                     position: "relative",
-//                                     zIndex: 1,
-//                                     height: "100%",
-//                                     display: "flex",
-//                                     flexDirection: "column",
-//                                     gap: 2,
-//                                 }}
-//                             >
-//                                 <MarketStatsCard
-//                                     title="Total Trainings"
-//                                     count={450}
-//                                     delay={0}
-//                                     icon={<Award size={32} strokeWidth={1.5} />}
-//                                     isActive={activeCard === 0}
-//                                     onMouseEnter={() => setActiveCard(0)}
-//                                     onMouseLeave={() => setActiveCard(null)}
-//                                 />
-
-//                                 <MarketStatsCard
-//                                     title="Total Trainers"
-//                                     count={150}
-//                                     delay={100}
-//                                     icon={<Users size={32} strokeWidth={1.5} />}
-//                                     isActive={activeCard === 1}
-//                                     onMouseEnter={() => setActiveCard(1)}
-//                                     onMouseLeave={() => setActiveCard(null)}
-//                                 />
-
-//                                 <MarketStatsCard
-//                                     title="Total Participants"
-//                                     count={15500}
-//                                     delay={200}
-//                                     icon={<Globe size={32} strokeWidth={1.5} />}
-//                                     isActive={activeCard === 2}
-//                                     onMouseEnter={() => setActiveCard(2)}
-//                                     onMouseLeave={() => setActiveCard(null)}
-//                                 />
-
-//                                 <MarketStatsCard
-//                                     title="Total Districts"
-//                                     count={12}
-//                                     delay={300}
-//                                     icon={<Building2 size={32} strokeWidth={1.5} />}
-//                                     isActive={activeCard === 3}
-//                                     onMouseEnter={() => setActiveCard(3)}
-//                                     onMouseLeave={() => setActiveCard(null)}
-//                                 />
-
-//                                 <MarketStatsCard
-//                                     title="Total Blocks"
-//                                     count={35}
-//                                     delay={400}
-//                                     icon={<MapPin size={32} strokeWidth={1.5} />}
-//                                     isActive={activeCard === 4}
-//                                     onMouseEnter={() => setActiveCard(4)}
-//                                     onMouseLeave={() => setActiveCard(null)}
-//                                 />
-
-// <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
-//     <Button
-//         variant="contained"
-//         size="large"
-//         href="https://www.ibitf.co.in/ml/login"
-//         sx={{
-//             borderRadius: 50,
-//             px: 4,
-//             background: "linear-gradient(90deg, #D4AF37 0%, #2E8B57 100%)",
-//             textTransform: "none",
-//             fontSize: "1rem",
-//             fontWeight: 600,
-//             boxShadow: "0 4px 12px rgba(46, 139, 87, 0.3)",
-//             "&:hover": {
-//                 background: "linear-gradient(90deg, #C59237 0%, #257849 100%)",
-//                 transform: "translateY(-2px)",
-//                 boxShadow: "0 6px 16px rgba(46, 139, 87, 0.4)",
-//             },
-//             transition: "all 0.3s ease",
-//         }}
-//     >
-//         Explore More
-//     </Button>
-// </Box>
-//                             </Box> */}
-
-
-//                 {/* Floating action button */}
-//                 {/* <Box
-//                                 sx={{
-//                                     position: 'absolute',
-//                                     bottom: -20,
-//                                     right: -20,
-//                                     width: 60,
-//                                     height: 60,
-//                                     borderRadius: '50%',
-//                                     background: 'linear-gradient(135deg, #D4AF37 0%, #2E8B57 50%, #1976d2 100%)',
-//                                     display: 'flex',
-//                                     alignItems: 'center',
-//                                     justifyContent: 'center',
-//                                     boxShadow: '0 10px 20px -5px rgba(0,0,0,0.2)',
-//                                     transform: isHovered ? 'scale(1.1) rotate(15deg)' : 'scale(1) rotate(0)',
-//                                     transition: 'transform 0.3s ease',
-//                                     cursor: 'pointer',
-//                                     zIndex: 2
-//                                 }}
-//                             >
-//                                 <TrendingUp size={28} color="white" />
-//                             </Box> */}
-//                 {/* </Box>
-//                     </Grid> */}
-
-//                 {/* Right Side - Images */}
-//                 {/* <Grid item xs={12} lg={7}>
-//                         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, height: '100%' }}> */}
-//                 {/* <MarketPartnerLogos /> */}
-
-//                 {/* Top Image (Video) */}
-//                 {/* <Paper
-//                                 elevation={0}
-//                                 sx={{
-//                                     height: 300,
-//                                     borderRadius: 4,
-//                                     overflow: 'hidden',
-//                                     boxShadow: '0 10px 40px -10px rgba(0,0,0,0.1)',
-//                                     animation: 'fadeIn 0.8s ease-out forwards 0.4s',
-//                                     opacity: 0,
-//                                     position: 'relative',
-//                                     '&:hover': {
-//                                         '&:after': {
-//                                             opacity: 1,
-//                                         },
-//                                         transform: 'scale(1.02)',
-//                                         transition: 'transform 0.3s ease',
-//                                     },
-//                                     '&:after': {
-//                                         content: '""',
-//                                         position: 'absolute',
-//                                         top: 0,
-//                                         left: 0,
-//                                         width: '100%',
-//                                         height: '100%',
-//                                         background: 'linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50%)',
-//                                         opacity: 0,
-//                                         transition: 'opacity 0.3s ease',
-//                                     }
-//                                 }}
-//                             >
-//                                 <video
-//                                     src={marketGif}
-//                                     autoPlay
-//                                     loop
-//                                     muted
-//                                     playsInline
-//                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-//                                 />
-//                                 <img
-//                                     src={train_01}
-//                                     alt="Rural village community"
-//                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-//                                 />
-//                             </Paper> */}
-
-//                 {/* Bottom Image (Village) */}
-//                 {/* <Paper
-//                                 elevation={0}
-//                                 sx={{
-//                                     height: 300,
-//                                     borderRadius: 4,
-//                                     overflow: 'hidden',
-//                                     boxShadow: '0 10px 40px -10px rgba(0,0,0,0.1)',
-//                                     animation: 'fadeIn 0.8s ease-out forwards 0.6s',
-//                                     opacity: 0,
-//                                     position: 'relative',
-//                                     '&:hover': {
-//                                         '&:after': {
-//                                             opacity: 1,
-//                                         },
-//                                         transform: 'scale(1.02)',
-//                                         transition: 'transform 0.3s ease',
-//                                     },
-//                                     '&:after': {
-//                                         content: '""',
-//                                         position: 'absolute',
-//                                         top: 0,
-//                                         left: 0,
-//                                         width: '100%',
-//                                         height: '100%',
-//                                         background: 'linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50%)',
-//                                         opacity: 0,
-//                                         transition: 'opacity 0.3s ease',
-//                                     }
-//                                 }}
-//                             >
-//                                 <img
-//                                     src={train_02}
-//                                     alt="Rural village community"
-//                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-//                                 />
-//                             </Paper> */}
-//                 {/* </Box>
-//                     </Grid>
-//                 </Grid> */}
-//             </Container>
-//         </Box>
-//     );
-// };
-
-// export default MarketHeroSection;
-
-
-// // import { Box, Container, Typography, Grid, Paper } from "@mui/material";
-// // import { Users, MapPin, Building2 } from "lucide-react";
-// // import MarketStatsCard from "./MarketStatsCard";
-// // import MarketPartnerLogos from "./MarketPartnerLogos";
-// // import marketGif from "../../assets/marketPlace/market_gif.mp4";
-// // import villageImg from "../../assets/workshop/3.png";
-
-// // const MarketHeroSection = () => {
-// //     return (
-// //         <Box component="section" sx={{ py: { xs: 6, md: 10 }, bgcolor: 'background.default', overflow: 'hidden', position: 'relative' }}>
-// //             {/* Background decoration */}
-// //             <Box
-// //                 sx={{
-// //                     position: 'absolute',
-// //                     top: -100,
-// //                     right: -100,
-// //                     width: 400,
-// //                     height: 400,
-// //                     borderRadius: '50%',
-// //                     background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(46, 139, 87, 0.1) 50%, rgba(25, 118, 210, 0.1) 100%)',
-// //                     zIndex: 0,
-// //                 }}
-// //             />
-// //             <Box
-// //                 sx={{
-// //                     position: 'absolute',
-// //                     bottom: -150,
-// //                     left: -150,
-// //                     width: 500,
-// //                     height: 500,
-// //                     borderRadius: '50%',
-// //                     background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(46, 139, 87, 0.05) 50%, rgba(25, 118, 210, 0.05) 100%)',
-// //                     zIndex: 0,
-// //                 }}
-// //             />
-
-// //             <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1 }}>
-// //                 <Box sx={{ textAlign: 'center', mb: 6, opacity: 0, animation: 'fadeIn 0.8s ease-out forwards' }}>
-// //                     <style>
-// //                         {`
-// //               @keyframes fadeIn {
-// //                 from { opacity: 0; transform: translateY(20px); }
-// //                 to { opacity: 1; transform: translateY(0); }
-// //               }
-// //             `}
-// //                     </style>
-// //                     <Typography
-// //                         variant="h2"
-// //                         component="h1"
-// //                         fontWeight="700"
-// //                         color="text.primary"
-// //                         gutterBottom
-// //                         sx={{ fontSize: { xs: '2.5rem', md: '3.5rem' } }}
-// //                     >
-// //                         Marketplace Literacy <Box component="span" sx={{
-// //                             background: "linear-gradient(90deg, #D4AF37 0%, #2E8B57 50%, #1976d2 100%)",
-// //                             WebkitBackgroundClip: "text",
-// //                             WebkitTextFillColor: "transparent"
-// //                         }}>Chhattisgarh</Box>
-// //                     </Typography>
-// //                     <Typography
-// //                         variant="h6"
-// //                         color="text.secondary"
-// //                         sx={{
-// //                             maxWidth: 700,
-// //                             mx: 'auto',
-// //                             fontSize: { xs: '1rem', md: '1.1rem' },
-// //                             fontWeight: 400
-// //                         }}
-// //                     >
-// //                         Empowering women through financial education and entrepreneurship skills
-// //                     </Typography>
-// //                 </Box>
-
-// //                 <Grid container spacing={4} alignItems="stretch">
-// //                     <Grid item xs={12} lg={5}>
-// //                         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, height: '100%' }}>
-// //                             <MarketStatsCard
-// //                                 title="Women Trained"
-// //                                 count={2500}
-// //                                 delay={0}
-// //                                 icon={<Users size={32} strokeWidth={1.5} />}
-// //                             />
-// //                             <MarketStatsCard
-// //                                 title="Confidence Villages"
-// //                                 count={85}
-// //                                 delay={200}
-// //                                 icon={<MapPin size={32} strokeWidth={1.5} />}
-// //                             />
-// //                             <MarketStatsCard
-// //                                 title="Districts Covered"
-// //                                 count={12}
-// //                                 delay={400}
-// //                                 icon={<Building2 size={32} strokeWidth={1.5} />}
-// //                             />
-// //                         </Box>
-// //                     </Grid>
-
-// //                     {/* Right Side - Images */}
-// //                     <Grid item xs={12} lg={7}>
-// //                         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, height: '100%' }}>
-// //                             <MarketPartnerLogos />
-
-// //                             {/* Top Image (Video) */}
-// //                             <Paper
-// //                                 elevation={0}
-// //                                 sx={{
-// //                                     height: 300,
-// //                                     borderRadius: 4,
-// //                                     overflow: 'hidden',
-// //                                     boxShadow: '0 10px 40px -10px rgba(0,0,0,0.1)',
-// //                                     animation: 'fadeIn 0.8s ease-out forwards 0.4s',
-// //                                     opacity: 0,
-// //                                     position: 'relative',
-// //                                     '&:hover': {
-// //                                         '&:after': {
-// //                                             opacity: 1,
-// //                                         }
-// //                                     },
-// //                                     '&:after': {
-// //                                         content: '""',
-// //                                         position: 'absolute',
-// //                                         top: 0,
-// //                                         left: 0,
-// //                                         width: '100%',
-// //                                         height: '100%',
-// //                                         background: 'linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50%)',
-// //                                         opacity: 0,
-// //                                         transition: 'opacity 0.3s ease',
-// //                                     }
-// //                                 }}
-// //                             >
-// //                                 <video
-// //                                     src={marketGif}
-// //                                     autoPlay
-// //                                     loop
-// //                                     muted
-// //                                     playsInline
-// //                                     style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-// //                                 />
-// //                             </Paper>
-
-// //                             {/* Bottom Image (Village) */}
-// //                             <Paper
-// //                                 elevation={0}
-// //                                 sx={{
-// //                                     height: 300,
-// //                                     borderRadius: 4,
-// //                                     overflow: 'hidden',
-// //                                     boxShadow: '0 10px 40px -10px rgba(0,0,0,0.1)',
-// //                                     animation: 'fadeIn 0.8s ease-out forwards 0.6s',
-// //                                     opacity: 0,
-// //                                     position: 'relative',
-// //                                     '&:hover': {
-// //                                         '&:after': {
-// //                                             opacity: 1,
-// //                                         }
-// //                                     },
-// //                                     '&:after': {
-// //                                         content: '""',
-// //                                         position: 'absolute',
-// //                                         top: 0,
-// //                                         left: 0,
-// //                                         width: '100%',
-// //                                         height: '100%',
-// //                                         background: 'linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50%)',
-// //                                         opacity: 0,
-// //                                         transition: 'opacity 0.3s ease',
-// //                                     }
-// //                                 }}
-// //                             >
-// //                                 <img
-// //                                     src={villageImg}
-// //                                     alt="Rural village community"
-// //                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-// //                                 />
-// //                             </Paper>
-// //                         </Box>
-// //                     </Grid>
-// //                 </Grid>
-// //             </Container>
-// //         </Box>
-// //     );
-// // };
-
-// // export default MarketHeroSection;
-
+export default MarketDashboard;
