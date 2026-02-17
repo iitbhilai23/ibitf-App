@@ -335,8 +335,8 @@ component: "AgroFiberUtilization",
               {
     title:
       "Transforming Healthcare Access Through AI-Driven Diagnostics Application and Mobile Health Solutions.",
-    path: "/",
-    component: "",
+    path: "/mobilehealthsolution",
+    component: "mobilehealthsolution",
     description:
       "This project aims to develop AI-based multi-disease diagnostic models designed to identify conditions such as tuberculosis, malaria, leukemia, diabetes, and hypertension. By implementing multi-modal data processing, the system integrates diverse data sources—including blood smears, X-rays, ECGs, and lab test results—to improve diagnostic accuracy. The initiative involves conducting real-world validation and pilot deployment across both urban hospitals and rural clinics to ensure broad accessibility. Furthermore, the project aims to enhance healthcare affordability for low-income populations through insurance-backed AI diagnostics and supports continuous patient care through telemedicine subscription models that enable monitoring and expert consultations.",
     images: [],
