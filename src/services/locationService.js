@@ -29,7 +29,7 @@ export const locationService = {
         ...filters,    // village, block, district override allowed
       };
 
-      const response = await api.get('/locations', { params });
+      const response = await api.get('/public/locations', { params });
       return response.data;
     } catch (error) {
       console.error('Get locations error:', error);
@@ -38,15 +38,15 @@ export const locationService = {
   },
 
   create: async (data) => {
-    const response = await api.post('/locations', data);
+    const response = await api.post('/public/locations', data);
     return response.data;
   },
   update: async (id, data) => {
-    const response = await api.put(`/locations/${id}`, data);
+    const response = await api.put(`/public/locations/${id}`, data);
     return response.data;
   },
   delete: async (id) => {
-    await api.delete(`/locations/${id}`);
+    await api.delete(`/public/locations/${id}`);
     return true;
   }
 };

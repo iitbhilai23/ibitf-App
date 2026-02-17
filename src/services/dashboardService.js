@@ -5,7 +5,7 @@ export const dashboardService = {
 
   getDistricts: async () => {
     try {
-      const response = await api.get('/reports/districts');
+      const response = await api.get('/public/districts');
       return response.data;
     } catch (error) {
       console.error("District Fetch Error:", error);
@@ -15,7 +15,7 @@ export const dashboardService = {
 
   getBlocksByDistrict: async (district_cd) => {
     if (!district_cd) return [];
-    const res = await api.get('/reports/blocks', {
+    const res = await api.get('/public/blocks', {
       params: { district_cd }
     });
     return res.data;
