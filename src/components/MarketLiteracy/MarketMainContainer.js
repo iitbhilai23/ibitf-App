@@ -2,14 +2,12 @@ import { Box } from "@mui/material";
 import MarketHeroSection from "./MarketHeroSection";
 import MarketJourney from "./MarketJourney";
 import MarketFounder from "./MarketFounder";
-import MarketDashboard from "./MarketDashboard";
 
 const MarketMainContainer = () => {
     return (
         <Box component="main" sx={{ minHeight: '100vh' }}>
             {/* <MarketPartnerLogos /> */}
             <MarketHeroSection />
-            <MarketDashboard />
             <MarketJourney />
             <MarketFounder />
 
