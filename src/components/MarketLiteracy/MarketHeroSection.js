@@ -79,10 +79,10 @@ const MarketHeroSection = () => {
                     </Typography>
                 </Box>
 
-                <Grid container spacing={4} alignItems="stretch">
+                {/* <Grid container spacing={4} alignItems="stretch">
                     <Grid item xs={12} lg={5}>
                         {/* Enhanced Stats Cards Container */}
-                        <Box
+                {/* <Box
                             sx={{
                                 position: 'relative',
                                 height: '100%',
@@ -92,9 +92,9 @@ const MarketHeroSection = () => {
                             }}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
-                        >
-                            {/* Decorative background for the cards container */}
-                            <Box
+                        > */}
+                {/* Decorative background for the cards container */}
+                {/* <Box
                                 sx={{
                                     position: 'absolute',
                                     top: 0,
@@ -107,10 +107,10 @@ const MarketHeroSection = () => {
                                     transition: 'transform 0.5s ease',
                                     zIndex: 0
                                 }}
-                            />
+                            /> */}
 
-                            {/* Connection lines between cards */}
-                            <Box
+                {/* Connection lines between cards */}
+                {/* <Box
                                 sx={{
                                     position: 'absolute',
                                     top: '33%',
@@ -212,11 +212,11 @@ const MarketHeroSection = () => {
                                         Explore More
                                     </Button>
                                 </Box>
-                            </Box>
+                            </Box> */}
 
 
-                            {/* Floating action button */}
-                            <Box
+                {/* Floating action button */}
+                {/* <Box
                                 sx={{
                                     position: 'absolute',
                                     bottom: -20,
@@ -236,17 +236,17 @@ const MarketHeroSection = () => {
                                 }}
                             >
                                 <TrendingUp size={28} color="white" />
-                            </Box>
-                        </Box>
-                    </Grid>
+                            </Box> */}
+                {/* </Box>
+                    </Grid> */}
 
-                    {/* Right Side - Images */}
-                    <Grid item xs={12} lg={7}>
-                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, height: '100%' }}>
-                            <MarketPartnerLogos />
+                {/* Right Side - Images */}
+                {/* <Grid item xs={12} lg={7}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, height: '100%' }}> */}
+                {/* <MarketPartnerLogos /> */}
 
-                            {/* Top Image (Video) */}
-                            <Paper
+                {/* Top Image (Video) */}
+                {/* <Paper
                                 elevation={0}
                                 sx={{
                                     height: 300,
@@ -276,23 +276,23 @@ const MarketHeroSection = () => {
                                     }
                                 }}
                             >
-                                {/* <video
+                                <video
                                     src={marketGif}
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                /> */}
+                                />
                                 <img
                                     src={train_01}
                                     alt="Rural village community"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />
-                            </Paper>
+                            </Paper> */}
 
-                            {/* Bottom Image (Village) */}
-                            <Paper
+                {/* Bottom Image (Village) */}
+                {/* <Paper
                                 elevation={0}
                                 sx={{
                                     height: 300,
@@ -327,10 +327,10 @@ const MarketHeroSection = () => {
                                     alt="Rural village community"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />
-                            </Paper>
-                        </Box>
+                            </Paper> */}
+                {/* </Box>
                     </Grid>
-                </Grid>
+                </Grid> */}
             </Container>
         </Box>
     );
