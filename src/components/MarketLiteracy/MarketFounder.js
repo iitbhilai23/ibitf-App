@@ -27,6 +27,7 @@ const MarketFounder = () => {
                     </Typography>
                 </Box>
 
+
                 <Box sx={{ maxWidth: 'md', mx: 'auto' }}>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         {/* Founder Image */}
