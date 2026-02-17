@@ -21,8 +21,7 @@ const MarketFounder = () => {
                                 WebkitTextFillColor: 'transparent',
                                 ml: 1
                             }}
-                        >
-                            
+                        >   
                             Founder
                         </Box>
                     </Typography>
