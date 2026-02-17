@@ -65,7 +65,7 @@ const MarketJourney = () => {
                         </Typography>
 
                         <Typography variant="body1" color="text.secondary">
-                            At the heart of this movement stands the unwavering dedication of Prof. Madhu Vishwanath, a pioneer who has been teaching Marketplace Literacy for over two decades, reaching more than 1,00,000 women across four continents. His commitment, combined with IIT Bhilai’s strong vision to scale this initiative within Chhattisgarh, laid a strong foundation for a transformative statewide movement.
+                            At the heart of this movement stands the unwavering dedication of Prof. Madhu Viswanathan, a pioneer who has been teaching Marketplace Literacy for over two decades, reaching more than 1,00,000 women across four continents. His commitment, combined with IIT Bhilai’s strong vision to scale this initiative within Chhattisgarh, laid a strong foundation for a transformative statewide movement.
                         </Typography>
 
                         {showMore && (
