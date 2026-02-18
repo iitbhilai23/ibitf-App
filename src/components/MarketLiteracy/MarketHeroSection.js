@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Box, Typography, Button, Select, MenuItem } from '@mui/material';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { MapContainer, TileLayer, Marker, Popup, GeoJSON, useMap, Tooltip } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, GeoJSON, useMap } from 'react-leaflet';
 import { dashboardService } from '../../services/dashboardService';
 import { locationService } from '../../services/locationService';
 import { trainingService } from '../../services/trainingService';
-import { Users, BookOpen, MapPin, Calendar, Filter, TrendingUp, Table, User, Map as MapIcon, Maximize, Minimize, House } from 'lucide-react';
+import { Users, BookOpen, MapPin, Calendar, Filter, TrendingUp, Table, User, Map as MapIcon, Maximize, Minimize, House, X } from 'lucide-react';
 import cgGeoJson from '../../assets/cg.json';
 
 const THEME = {
@@ -140,7 +140,7 @@ const MarketHeroSection = () => {
                     Empowering women through financial education and entrepreneurship skills
                 </Typography>
             </Box>
-            
+
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: THEME.gap.md }}>
                 <div><h1 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#0f172a', margin: 0, letterSpacing: '-0.02em' }}>Dashboard Overview</h1></div>
                 <div style={{ display: 'flex', gap: THEME.gap.xs, padding: '4px', background: '#ffffff', borderRadius: '10px', border: '1px solid #f3f4f6' }}>
@@ -197,11 +197,11 @@ const MapResizer = ({ trigger }) => {
     return null;
 };
 
-// ===== TRAINING LOCATION MAP COMPONENT =====
-// ===== TRAINING LOCATION MAP COMPONENT =====
+// ===== UPDATED TRAINING LOCATION MAP COMPONENT =====
 const TraineeLocationMap = ({ trainingLocations }) => {
     const [geoJsonData, setGeoJsonData] = useState(null);
     const [isFullScreen, setIsFullScreen] = useState(false);
+    const [selectedTraining, setSelectedTraining] = useState(null); // State for modal
 
     const MIN_LAT = 17.5; const MAX_LAT = 24.0; const MIN_LNG = 79.5; const MAX_LNG = 85.0;
     const isWithinCG = (lat, lng) => lat >= MIN_LAT && lat <= MAX_LAT && lng >= MIN_LNG && lng <= MAX_LNG;
@@ -251,43 +251,11 @@ const TraineeLocationMap = ({ trainingLocations }) => {
 
     return (
         <div style={containerStyle}>
-            {/* Modern Centered Tooltip Styles */}
-            <style>
-                {`
-                    .modern-tooltip-card {
-                        background: transparent !important;
-                        border: none !important;
-                        box-shadow: none !important;
-                        padding: 0 !important;
-                        transition: opacity 0.2s ease-in-out !important;
-                    }
-                    .leaflet-tooltip-center::before {
-                        display: none !important;
-                    }
-                    
-                    @keyframes cardPopIn {
-                        0% { transform: scale(0.8) translate(-50%, -50%); opacity: 0; }
-                        100% { transform: scale(1) translate(-50%, -50%); opacity: 1; }
-                    }
-                    
-                    .tooltip-inner-content {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        animation: cardPopIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-                        background: rgba(255, 255, 255, 0.85);
-                        backdrop-filter: blur(16px);
-                        -webkit-backdrop-filter: blur(16px);
-                        border: 1px solid rgba(255, 255, 255, 0.6);
-                        box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-                        border-radius: 20px;
-                        overflow: hidden;
-                        min-width: 280px;
-                        pointer-events: none;
-                    }
-                `}
-            </style>
+            {/* Animation Styles */}
+            <style>{`
+                @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+                @keyframes scaleIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+            `}</style>
 
             {!isFullScreen && (
                 <>
@@ -317,143 +285,147 @@ const TraineeLocationMap = ({ trainingLocations }) => {
                     const lat = Number(training.location_details?.latitude);
                     const lng = Number(training.location_details?.longitude);
                     const statusColor = getStatusColor(training.status);
-                    const statusStyle = getStatusStyle(training.status);
-                    const profileImage = training.trainer_profile_image
-                        ? training.trainer_profile_image.trim()
-                        : `https://ui-avatars.com/api/?name=${encodeURIComponent(training.trainer_name || 'Trainer')}&background=7b3f99&color=fff&size=100`;
-
+                    
                     return (
-                        <Marker key={`training-${training.id || i}`} position={[lat, lng]} icon={createCustomIcon(statusColor)}>
-                            
-                            {/* FULL DETAILS CENTERED HOVER CARD */}
-                            <Tooltip direction="center" offset={[0, 0]} opacity={1} className="modern-tooltip-card" permanent={false}>
-                                <div className="tooltip-inner-content">
-                                    {/* Header with Image & Name */}
-                                    <div style={{
-                                        background: 'linear-gradient(135deg, #7b3f99 0%, #5a2b7a 100%)',
-                                        padding: '24px 20px 35px 20px', // Increased bottom padding slightly
-                                        borderRadius: '20px 20px 0 0',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        alignItems: 'center',
-                                        textAlign: 'center'
-                                    }}>
-                                        {/* INCREASED IMAGE SIZE HERE */}
-                                        <img 
-                                            src={profileImage} 
-                                            alt="Profile" 
-                                            style={{ 
-                                                width: '85px', 
-                                                height: '85px', 
-                                                borderRadius: '50%', 
-                                                border: '4px solid rgba(255,255,255,0.5)', 
-                                                boxShadow: '0 8px 20px rgba(0,0,0,0.25)',
-                                                objectFit: 'cover',
-                                                marginBottom: '12px'
-                                            }} 
-                                        />
-                                        <h3 style={{ margin: 0, color: '#fff', fontSize: '1.15rem', fontWeight: '700', lineHeight: 1.2 }}>
-                                            {training.trainer_name || 'Unknown Trainer'}
-                                        </h3>
-                                        <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.8)', marginTop: '4px', fontWeight: '500' }}>
-                                            Training Instructor
-                                        </span>
-                                    </div>
-                                    
-                                    {/* Details Body */}
-                                    <div style={{ padding: '16px', background: 'rgba(255,255,255,0.9)' }}>
-                                        
-                                        {/* Subject */}
-                                        <div style={{ marginBottom: '12px' }}>
-                                            <div style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: '600', marginBottom: '4px' }}>
-                                                Subject
-                                            </div>
-                                            <div style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1e293b' }}>
-                                                {training.subject_name || 'N/A'}
-                                            </div>
-                                        </div>
-
-                                        {/* Location */}
-                                        <div style={{ marginBottom: '12px' }}>
-                                            <div style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: '600', marginBottom: '4px' }}>
-                                                Location
-                                            </div>
-                                            <div style={{ display: 'flex', alignItems: 'start', gap: '6px' }}>
-                                                <MapPin size={14} color="#9647bb" style={{ marginTop: '2px', flexShrink: 0 }} />
-                                                <div>
-                                                    <div style={{ fontWeight: '600', color: '#334155', fontSize: '0.9rem' }}>
-                                                        {training.location_details?.village || 'N/A'}
-                                                    </div>
-                                                    <div style={{ fontSize: '0.8rem', color: '#64748b' }}>
-                                                        {[training.location_details?.block, training.location_details?.district].filter(Boolean).join(', ')}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        {/* Status */}
-                                        <div style={{ marginBottom: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                            <div style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: '600' }}>
-                                                Status
-                                            </div>
-                                            <span style={{ ...statusStyle, padding: '4px 10px', borderRadius: '20px', fontSize: '0.7rem', fontWeight: '700', textTransform: 'uppercase' }}>
-                                                {training.status || 'Unknown'}
-                                            </span>
-                                        </div>
-
-                                        {/* Divider */}
-                                        <div style={{ height: '1px', background: '#e2e8f0', margin: '12px 0' }}></div>
-
-                                        {/* Footer Stats */}
-                                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#475569', fontSize: '0.8rem', fontWeight: '500' }}>
-                                                <Calendar size={14} />
-                                                <span>{training.start_date ? new Date(training.start_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '-'}</span>
-                                            </div>
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#475569', fontSize: '0.8rem', fontWeight: '500' }}>
-                                                <Users size={14} />
-                                                <span>{training.total_participants || 0} Participants</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Tooltip>
-
-                            <Popup maxWidth={300}>
-                                <div style={{ minWidth: '260px', padding: '0', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-                                    <div style={{ background: 'linear-gradient(135deg, #7b3f99 0%, #5a2b7a 100%)', padding: '16px', borderRadius: '12px 12px 0 0', display: 'flex', alignItems: 'center', gap: '14px' }}>
-                                        <img src={profileImage} alt={training.trainer_name || 'Trainer'} style={{ width: '54px', height: '54px', borderRadius: '50%', border: '3px solid rgba(255,255,255,0.3)', objectFit: 'cover', boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }} />
-                                        <div style={{ flex: 1 }}>
-                                            <div style={{ fontSize: '1rem', fontWeight: '700', color: '#fff', marginBottom: '3px', lineHeight: '1.2' }}> {training.trainer_name || 'Unknown Trainer'} </div>
-                                            <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.8)', fontWeight: '500' }}> Training Instructor </div>
-                                        </div>
-                                    </div>
-                                    <div style={{ padding: '14px 16px' }}>
-                                        <div style={{ marginBottom: '12px' }}>
-                                            <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '4px' }}> Subject </div>
-                                            <div style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1e293b' }}> {training.subject_name || 'N/A'} </div>
-                                        </div>
-                                        <div style={{ marginBottom: '12px' }}>
-                                            <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '6px' }}> Location </div>
-                                            <div style={{ fontSize: '0.85rem', color: '#475569', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-                                                <MapPin size={15} style={{ marginTop: '2px', flexShrink: 0, color: '#9647bb' }} />
-                                                <div>
-                                                    <div style={{ fontWeight: '600', color: '#1e293b' }}> {training.location_details?.village || 'N/A'} </div>
-                                                    <div style={{ color: '#64748b', fontSize: '0.8rem' }}> {[training.location_details?.block, training.location_details?.district, training.location_details?.state].filter(Boolean).join(', ')} </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style={{ marginBottom: '12px' }}>
-                                            <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '6px' }}> Status </div>
-                                            <span style={{ padding: '5px 12px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.03em', ...statusStyle }}> {training.status || 'Unknown'} </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Popup>
-                        </Marker>
+                        <Marker 
+                            key={`training-${training.id || i}`} 
+                            position={[lat, lng]} 
+                            icon={createCustomIcon(statusColor)}
+                            eventHandlers={{
+                                click: () => {
+                                    setSelectedTraining(training);
+                                }
+                            }}
+                        />
                     );
                 })}
             </MapContainer>
+
+            {/* MODAL OVERLAY - Centered Profile Card */}
+            {selectedTraining && (
+                <div style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    backgroundColor: 'rgba(15, 23, 42, 0.4)', // Lighter overlay color
+                    backdropFilter: 'blur(5px)', // DECREASED BLUR
+                    WebkitBackdropFilter: 'blur(5px)', // DECREASED BLUR
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    zIndex: 10000, // Higher than map fullscreen
+                    animation: 'fadeIn 0.3s ease-out'
+                }} onClick={() => setSelectedTraining(null)}>
+                    
+                    <div style={{
+                        background: '#ffffff',
+                        borderRadius: '24px',
+                        width: '100%',
+                        maxWidth: '380px',
+                        boxShadow: '0 20px 50px rgba(0,0,0,0.25)',
+                        position: 'relative',
+                        overflow: 'hidden',
+                        animation: 'scaleIn 0.3s ease-out'
+                    }} onClick={(e) => e.stopPropagation()}>
+                        
+                        {/* Close Button */}
+                        <button 
+                            onClick={() => setSelectedTraining(null)}
+                            style={{
+                                position: 'absolute',
+                                top: '16px',
+                                right: '16px',
+                                background: 'rgba(255,255,255,0.9)',
+                                border: 'none',
+                                borderRadius: '50%',
+                                width: '32px',
+                                height: '32px',
+                                cursor: 'pointer',
+                                zIndex: 10,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
+                                transition: 'transform 0.2s'
+                            }}
+                        >
+                            <X size={18} color="#334155" />
+                        </button>
+
+                        {/* Profile Content */}
+                        <div style={{ padding: '24px', textAlign: 'center' }}>
+                             {/* Image */}
+                             <div style={{
+                                 width: '120px',
+                                 height: '120px',
+                                 borderRadius: '50%',
+                                 border: '4px solid white',
+                                 boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                                 margin: '0 auto 20px',
+                                 overflow: 'hidden',
+                                 background: '#f1f5f9'
+                             }}>
+                                 <img 
+                                    src={selectedTraining.trainer_profile_image || `https://ui-avatars.com/api/?name=${encodeURIComponent(selectedTraining.trainer_name || 'Trainer')}&background=7b3f99&color=fff&size=200`}
+                                    alt="Profile"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                 />
+                             </div>
+
+                             <h3 style={{ margin: 0, color: '#1e293b', fontSize: '1.3rem', fontWeight: '700' }}>
+                                 {selectedTraining.trainer_name || 'Unknown Trainer'}
+                             </h3>
+                             <span style={{ fontSize: '0.9rem', color: '#64748b', fontWeight: '500' }}>
+                                 Training Instructor
+                             </span>
+
+                             <div style={{ marginTop: '24px', textAlign: 'left' }}>
+                                {/* Subject */}
+                                <div style={{ background: '#f8fafc', padding: '14px', borderRadius: '14px', marginBottom: '12px' }}>
+                                    <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase', marginBottom: '4px' }}>
+                                        Subject
+                                    </div>
+                                    <div style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                        <BookOpen size={16} color="#9647bb" />
+                                        {selectedTraining.subject_name || 'N/A'}
+                                    </div>
+                                </div>
+
+                                {/* Location */}
+                                <div style={{ background: '#f8fafc', padding: '14px', borderRadius: '14px', marginBottom: '12px' }}>
+                                    <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase', marginBottom: '6px' }}>
+                                        Location
+                                    </div>
+                                    <div style={{ display: 'flex', alignItems: 'start', gap: '8px' }}>
+                                        <MapPin size={16} color="#9647bb" style={{ marginTop: '2px' }} />
+                                        <div>
+                                            <div style={{ fontWeight: '600', color: '#334155', fontSize: '0.95rem' }}>
+                                                {selectedTraining.location_details?.village || 'N/A'}
+                                            </div>
+                                            <div style={{ fontSize: '0.85rem', color: '#64748b' }}>
+                                                {[selectedTraining.location_details?.block, selectedTraining.location_details?.district].filter(Boolean).join(', ')}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Status & Participants */}
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                     <span style={{ ...getStatusStyle(selectedTraining.status), padding: '6px 14px', borderRadius: '20px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>
+                                        {selectedTraining.status || 'Unknown'}
+                                    </span>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#475569', fontSize: '0.85rem', fontWeight: '500' }}>
+                                        <Users size={16} />
+                                        <span>{selectedTraining.total_participants || 0} Participants</span>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
