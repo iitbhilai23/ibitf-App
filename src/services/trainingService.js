@@ -10,7 +10,7 @@ export const trainingService = {
         ...filters,
       };
 
-      const response = await api.get('/public/trainings', { params });
+      const response = await api.get('/trainings', { params });
       return response.data;
     } catch (error) {
       console.error('Get trainings error:', error);
@@ -18,18 +18,7 @@ export const trainingService = {
     }
   },
 
-  getAll: async (filters = {}) => {
-    try {
-
-      const response = await api.get('/public/trainings', { params: filters });
-     // console.log('Get trainings response:', response);
-      return response.data;
-    } catch (error) {
-      console.error('Get trainings error:', error);
-      throw error;
-    }
-  },
-
+ 
 
   getById: async (id) => {
     try {

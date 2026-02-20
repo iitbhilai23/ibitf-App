@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+
+import React, { useState, useEffect, useMemo } from 'react';
 import { Box, Typography, Button, Select, MenuItem } from '@mui/material';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -6,7 +7,7 @@ import { MapContainer, TileLayer, Marker, GeoJSON, useMap } from 'react-leaflet'
 import { dashboardService } from '../../services/dashboardService';
 import { locationService } from '../../services/locationService';
 import { trainingService } from '../../services/trainingService';
-import { Users, BookOpen, MapPin, Calendar, Filter, TrendingUp, Table, User, Map as MapIcon, Maximize, Minimize, House, X } from 'lucide-react';
+import { Users, BookOpen, MapPin, Calendar, Filter, TrendingUp, Table, User, Map as MapIcon, Maximize, Minimize, House, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import cgGeoJson from '../../assets/cg.json';
 
 const THEME = {
@@ -99,16 +100,33 @@ const MarketHeroSection = () => {
         fetchMapLocation();
     }, []);
 
+    // FIX 1: Added 'limit: 1000' and dependencies [filters] to load all data
     useEffect(() => {
         const fetchTrainingsForMap = async () => {
             try {
-                const trainings = await trainingService.getAll();
+                // Construct params strictly to match Backend DTO and ensure limit is high
+                const params = {
+                    limit: 1000,
+                    district_cd: filters.district_cd || undefined,
+                    block_cd: filters.block_cd || undefined,
+                    status: filters.status || undefined,
+                    // Map frontend names to backend names
+                    start_date_from: filters.start_date || undefined,
+                    start_date_to: filters.end_date || undefined
+                };
+
+                // Clean out undefined values
+                const cleanParams = Object.fromEntries(
+                    Object.entries(params).filter(([_, v]) => v !== undefined && v !== '')
+                );
+
+                const trainings = await trainingService.getAll(cleanParams);
                 const trainingData = Array.isArray(trainings) ? trainings : trainings?.data || [];
                 setTrainingLocations(trainingData);
             } catch (error) { console.error("Error fetching trainings for map:", error); }
         };
         fetchTrainingsForMap();
-    }, []);
+    }, [filters]); // Re-fetch whenever filters change to update map
 
     const handleFilterChange = (e) => {
         const { name, value } = e.target;
@@ -141,174 +159,41 @@ const MarketHeroSection = () => {
                 </Typography>
             </Box>
 
-            {/* <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: THEME.gap.md }}>
-                <div><h1 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#0f172a', margin: 0, letterSpacing: '-0.02em' }}>Dashboard Overview</h1></div>
-                <div style={{ display: 'flex', gap: THEME.gap.xs, padding: '4px', background: '#ffffff', borderRadius: '10px', border: '1px solid #f3f4f6' }}>
-                    <button onClick={() => setActiveTab('summary')} style={{ ...getTabStyle(activeTab === 'summary', THEME.gradients.primary) }}><TrendingUp size={18} /> <span>Summary</span></button>
-                    <button onClick={() => setActiveTab('detailed')} style={{ ...getTabStyle(activeTab === 'detailed', THEME.gradients.primary) }}><Table size={18} /> <span>Detailed View</span></button>
-                </div>
-            </div> */}
-
             {/* ===== FILTERS ===== */}
-{/* Wrapper to center the entire component on the page */}
-<Box sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
-  <div
-    style={{
-      ...THEME.glass,
-      // Ensure the bar fills the container but doesn't stretch infinitely
-      width: '100%',
-      maxWidth: '1200px',
-      // Center the items *inside* the filter bar
-      justifyContent: 'center',
-      padding: `${THEME.pad.sm} ${THEME.pad.md}`,
-      display: 'flex',
-      flexWrap: 'wrap',
-      alignItems: 'center',
-      gap: THEME.gap.sm,
-      // Fallback centering for the div itself
-      margin: '0 auto'
-    }}
-  >
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: THEME.gap.xs,
-        paddingRight: THEME.pad.sm,
-        borderRight: '1px solid #f3f4f6',
-        color: THEME.primary,
-        fontWeight: '700',
-        letterSpacing: '0.05em',
-        textTransform: 'uppercase',
-        fontSize: '0.8rem'
-      }}
-    >
-      <Filter size={16} /> Filters
-    </div>
-
-    <Select
-      name="district_cd"
-      value={filters.district_cd}
-      onChange={handleFilterChange}
-      displayEmpty
-      size="small"
-      sx={selectSx}
-      MenuProps={{
-        PaperProps: {
-          sx: {
-            maxHeight: 300,
-            mt: 0.5,
-            borderRadius: '8px',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
-          }
-        }
-      }}
-    >
-      <MenuItem value="">All Districts</MenuItem>
-      {districts.map((d) => (
-        <MenuItem key={d.district_cd} value={d.district_cd}>
-          {d.district_name}
-        </MenuItem>
-      ))}
-    </Select>
-
-    <Select
-      name="block_cd"
-      value={filters.block_cd}
-      onChange={handleFilterChange}
-      displayEmpty
-      size="small"
-      sx={selectSx}
-      MenuProps={{
-        PaperProps: {
-          sx: {
-            maxHeight: 300,
-            mt: 0.5,
-            borderRadius: '8px',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
-          }
-        }
-      }}
-    >
-      <MenuItem value="">All Blocks</MenuItem>
-      {blocks.map((b) => (
-        <MenuItem key={b.block_cd} value={b.block_cd}>
-          {b.block_name}
-        </MenuItem>
-      ))}
-    </Select>
-
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: THEME.gap.xs
-      }}
-    >
-      <Calendar size={16} style={{ color: '#94a3b8' }} />
-      <input
-        type="date"
-        name="start_date"
-        style={THEME.input}
-        onChange={handleFilterChange}
-        value={filters.start_date}
-      />
-      <span
-        style={{
-          color: '#94a3b8',
-          fontWeight: '600',
-          fontSize: '0.85rem',
-          margin: `0 ${THEME.gap.xs}`
-        }}
-      >
-        to
-      </span>
-      <input
-        type="date"
-        name="end_date"
-        style={THEME.input}
-        onChange={handleFilterChange}
-        value={filters.end_date}
-      />
-    </div>
-
-    <Select
-      name="status"
-      value={filters.status}
-      onChange={handleFilterChange}
-      displayEmpty
-      size="small"
-      sx={selectSx}
-      MenuProps={{
-        PaperProps: {
-          sx: {
-            maxHeight: 300,
-            mt: 0.5,
-            borderRadius: '8px',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
-          }
-        }
-      }}
-    >
-      <MenuItem value="">All Status</MenuItem>
-      <MenuItem value="completed">Completed</MenuItem>
-      <MenuItem value="ongoing">Ongoing</MenuItem>
-      <MenuItem value="scheduled">Scheduled</MenuItem>
-      <MenuItem value="cancelled">Cancelled</MenuItem>
-    </Select>
-  </div>
-</Box>
-
+            <Box sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
+                <div style={{ ...THEME.glass, width: '100%', maxWidth: '1200px', justifyContent: 'center', padding: `${THEME.pad.sm} ${THEME.pad.md}`, display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: THEME.gap.sm, margin: '0 auto' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: THEME.gap.xs, paddingRight: THEME.pad.sm, borderRight: '1px solid #f3f4f6', color: THEME.primary, fontWeight: '700', letterSpacing: '0.05em', textTransform: 'uppercase', fontSize: '0.8rem' }}>
+                        <Filter size={16} /> Filters
+                    </div>
+                    <Select name="district_cd" value={filters.district_cd} onChange={handleFilterChange} displayEmpty size="small" sx={selectSx} MenuProps={{ PaperProps: { sx: { maxHeight: 300, mt: 0.5, borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' } } }}>
+                        <MenuItem value="">All Districts</MenuItem>
+                        {districts.map((d) => (<MenuItem key={d.district_cd} value={d.district_cd}>{d.district_name}</MenuItem>))}
+                    </Select>
+                    <Select name="block_cd" value={filters.block_cd} onChange={handleFilterChange} displayEmpty size="small" sx={selectSx} disabled={!filters.district_cd} MenuProps={{ PaperProps: { sx: { maxHeight: 300, mt: 0.5, borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' } } }}>
+                        <MenuItem value="">All Blocks</MenuItem>
+                        {blocks.map((b) => (<MenuItem key={b.block_cd} value={b.block_cd}>{b.block_name}</MenuItem>))}
+                    </Select>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: THEME.gap.xs }}>
+                        <Calendar size={16} style={{ color: '#94a3b8' }} />
+                        <input type="date" name="start_date" style={THEME.input} onChange={handleFilterChange} value={filters.start_date} />
+                        <span style={{ color: '#94a3b8', fontWeight: '600', fontSize: '0.85rem', margin: `0 ${THEME.gap.xs}` }}>to</span>
+                        <input type="date" name="end_date" style={THEME.input} onChange={handleFilterChange} value={filters.end_date} />
+                    </div>
+                    <Select name="status" value={filters.status} onChange={handleFilterChange} displayEmpty size="small" sx={selectSx} MenuProps={{ PaperProps: { sx: { maxHeight: 300, mt: 0.5, borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' } } }}>
+                        <MenuItem value="">All Status</MenuItem>
+                        <MenuItem value="completed">Completed</MenuItem>
+                        <MenuItem value="ongoing">Ongoing</MenuItem>
+                        <MenuItem value="scheduled">Scheduled</MenuItem>
+                        <MenuItem value="cancelled">Cancelled</MenuItem>
+                    </Select>
+                </div>
+            </Box>
 
             {activeTab === 'summary' && <SummaryTab summary={data} viewData={viewData} locationsData={locationsData} trainingLocations={trainingLocations} />}
             {activeTab === 'detailed' && <DetailedTab viewData={viewData} />}
         </div>
     );
 };
-
-const getTabStyle = (isActive, gradient) => ({
-    display: 'flex', alignItems: 'center', gap: THEME.gap.xs, padding: `8px ${THEME.pad.md}`, border: 'none', borderRadius: '8px', fontSize: '0.9rem', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease-in-out', background: isActive ? gradient : 'transparent', color: isActive ? 'white' : '#64748b', letterSpacing: '0.01em'
-});
 
 const MapResizer = ({ trigger }) => {
     const map = useMap();
@@ -320,11 +205,11 @@ const MapResizer = ({ trigger }) => {
     return null;
 };
 
-// ===== UPDATED TRAINING LOCATION MAP COMPONENT =====
+// ===== TRAINING LOCATION MAP COMPONENT (FIXED FOR LIMIT & GROUPING) =====
 const TraineeLocationMap = ({ trainingLocations }) => {
     const [geoJsonData, setGeoJsonData] = useState(null);
     const [isFullScreen, setIsFullScreen] = useState(false);
-    const [selectedTraining, setSelectedTraining] = useState(null); // State for modal
+    const [selectedTraining, setSelectedTraining] = useState(null);
 
     const MIN_LAT = 17.5; const MAX_LAT = 24.0; const MIN_LNG = 79.5; const MAX_LNG = 85.0;
     const isWithinCG = (lat, lng) => lat >= MIN_LAT && lat <= MAX_LAT && lng >= MIN_LNG && lng <= MAX_LNG;
@@ -335,16 +220,49 @@ const TraineeLocationMap = ({ trainingLocations }) => {
         return !isNaN(lat) && !isNaN(lng) && isWithinCG(lat, lng);
     });
 
+    const totalTrainings = validTrainingLocations.length;
+
     useEffect(() => { setGeoJsonData(cgGeoJson); }, []);
 
-    const createCustomIcon = (color = '#9647bb') =>
+    // FIX 2: UseMemo for grouping to prevent re-renders and ensure stability
+    const groupedLocations = useMemo(() => {
+        return validTrainingLocations.reduce((acc, training) => {
+            const lat = Number(training.location_details?.latitude);
+            const lng = Number(training.location_details?.longitude);
+            const key = `${lat}-${lng}`;
+
+            if (!acc[key]) {
+                acc[key] = { lat, lng, trainings: [] };
+            }
+
+            acc[key].trainings.push(training);
+            return acc;
+        }, {});
+    }, [validTrainingLocations]);
+
+    const createCustomIcon = (count, color = '#7b3f99') =>
         L.divIcon({
             className: 'custom-div-icon',
-            html: `<div style="position: relative; width: 26px; height: 36px;">
-              <div style="position: absolute; top: 0; left: 50%; width: 24px; height: 24px; background: ${color}; border-radius: 50% 50% 50% 0; transform: translateX(-50%) rotate(-45deg); box-shadow: 0 4px 12px ${color}4D; border: 2px solid rgba(255,255,255,0.9);"></div>
-              <div style="position: absolute; top: 7px; left: 50%; width: 10px; height: 10px; background: #fff; border-radius: 50%; transform: translateX(-50%);"></div>
-            </div>`,
-            iconSize: [26, 36], iconAnchor: [13, 36]
+            html: `
+                <div style="
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background: ${color};
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: 700;
+                    font-size: 14px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                    border: 3px solid white;
+                ">
+                    ${count}
+                </div>
+            `,
+            iconSize: [36, 36],
+            iconAnchor: [18, 18]
         });
 
     const getStatusColor = (status) => {
@@ -374,7 +292,6 @@ const TraineeLocationMap = ({ trainingLocations }) => {
 
     return (
         <div style={containerStyle}>
-            {/* Animation Styles */}
             <style>{`
                 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
                 @keyframes scaleIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
@@ -389,7 +306,7 @@ const TraineeLocationMap = ({ trainingLocations }) => {
 
             <div style={{ position: 'absolute', top: '10px', left: '10px', zIndex: 1000, background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(8px)', padding: '10px 16px', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', border: '1px solid rgba(255,255,255,0.8)', display: 'flex', alignItems: 'center', gap: '8px', pointerEvents: 'auto' }}>
                 <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#9647bb', border: '2px solid white' }}></div>
-                <div style={{ fontSize: '0.85rem', fontWeight: '700', color: '#1e293b' }}>Training Locations ({validTrainingLocations.length})</div>
+                <div style={{ fontSize: '0.85rem', fontWeight: '700', color: '#1e293b' }}>Total Trainings ({totalTrainings})</div>
             </div>
 
             <div style={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1000, pointerEvents: 'auto' }}>
@@ -404,19 +321,20 @@ const TraineeLocationMap = ({ trainingLocations }) => {
                 <MapResizer trigger={isFullScreen} />
                 {geoJsonData && <GeoJSON data={geoJsonData} style={{ color: THEME.primary, weight: 2, fillOpacity: 0.05 }} />}
 
-                {validTrainingLocations.map((training, i) => {
-                    const lat = Number(training.location_details?.latitude);
-                    const lng = Number(training.location_details?.longitude);
-                    const statusColor = getStatusColor(training.status);
-                    
+                {Object.values(groupedLocations).map((location, i) => {
+                    const trainings = location.trainings;
+                    const count = trainings.length;
+                    // Use first training status color (optional)
+                    const statusColor = getStatusColor(trainings[0]?.status);
+
                     return (
-                        <Marker 
-                            key={`training-${training.id || i}`} 
-                            position={[lat, lng]} 
-                            icon={createCustomIcon(statusColor)}
+                        <Marker
+                            key={`group-${i}`}
+                            position={[location.lat, location.lng]}
+                            icon={createCustomIcon(count, statusColor)}
                             eventHandlers={{
                                 click: () => {
-                                    setSelectedTraining(training);
+                                    setSelectedTraining(trainings); // pass array
                                 }
                             }}
                         />
@@ -424,127 +342,80 @@ const TraineeLocationMap = ({ trainingLocations }) => {
                 })}
             </MapContainer>
 
-            {/* MODAL OVERLAY - Centered Profile Card */}
-            {selectedTraining && (
-                <div style={{
-                    position: 'fixed',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    backgroundColor: 'rgba(15, 23, 42, 0.4)', // Lighter overlay color
-                    backdropFilter: 'blur(5px)', // DECREASED BLUR
-                    WebkitBackdropFilter: 'blur(5px)', // DECREASED BLUR
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    zIndex: 10000, // Higher than map fullscreen
-                    animation: 'fadeIn 0.3s ease-out'
-                }} onClick={() => setSelectedTraining(null)}>
-                    
-                    <div style={{
-                        background: '#ffffff',
-                        borderRadius: '24px',
-                        width: '100%',
-                        maxWidth: '380px',
-                        boxShadow: '0 20px 50px rgba(0,0,0,0.25)',
-                        position: 'relative',
-                        overflow: 'hidden',
-                        animation: 'scaleIn 0.3s ease-out'
-                    }} onClick={(e) => e.stopPropagation()}>
-                        
+            {/* MODAL OVERLAY - Centered List Card */}
+            {Array.isArray(selectedTraining) && selectedTraining.length > 0 && (
+                <div
+                    style={{
+                        position: 'fixed', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.4)',
+                        backdropFilter: 'blur(5px)', WebkitBackdropFilter: 'blur(5px)',
+                        display: 'flex', justifyContent: 'center', alignItems: 'center',
+                        zIndex: 10000, animation: 'fadeIn 0.3s ease-out'
+                    }}
+                    onClick={() => setSelectedTraining(null)}
+                >
+                    <div
+                        style={{
+                            background: '#ffffff', borderRadius: '24px', width: '100%', maxWidth: '420px', maxHeight: '80vh', overflowY: 'auto',
+                            boxShadow: '0 20px 50px rgba(0,0,0,0.25)', position: 'relative',
+                            animation: 'scaleIn 0.3s ease-out'
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         {/* Close Button */}
-                        <button 
+                        <button
                             onClick={() => setSelectedTraining(null)}
                             style={{
-                                position: 'absolute',
-                                top: '16px',
-                                right: '16px',
-                                background: 'rgba(255,255,255,0.9)',
-                                border: 'none',
-                                borderRadius: '50%',
-                                width: '32px',
-                                height: '32px',
-                                cursor: 'pointer',
-                                zIndex: 10,
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-                                transition: 'transform 0.2s'
+                                position: 'absolute', top: '16px', right: '16px', background: 'rgba(255,255,255,0.9)',
+                                border: 'none', borderRadius: '50%', width: '32px', height: '32px', cursor: 'pointer',
+                                zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
                             }}
                         >
                             <X size={18} color="#334155" />
                         </button>
 
-                        {/* Profile Content */}
-                        <div style={{ padding: '24px', textAlign: 'center' }}>
-                             {/* Image */}
-                             <div style={{
-                                 width: '120px',
-                                 height: '120px',
-                                 borderRadius: '50%',
-                                 border: '4px solid white',
-                                 boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                                 margin: '0 auto 20px',
-                                 overflow: 'hidden',
-                                 background: '#f1f5f9'
-                             }}>
-                                 <img 
-                                    src={selectedTraining.trainer_profile_image || `https://ui-avatars.com/api/?name=${encodeURIComponent(selectedTraining.trainer_name || 'Trainer')}&background=7b3f99&color=fff&size=200`}
-                                    alt="Profile"
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                 />
-                             </div>
+                        <div style={{ padding: '24px' }}>
+                            {/* Header */}
+                            <h3 style={{ margin: '0 0 16px 0', color: '#1e293b', fontSize: '1.2rem', fontWeight: '700' }}>
+                                Trainings at This Location ({selectedTraining.length})
+                            </h3>
 
-                             <h3 style={{ margin: 0, color: '#1e293b', fontSize: '1.3rem', fontWeight: '700' }}>
-                                 {selectedTraining.trainer_name || 'Unknown Trainer'}
-                             </h3>
-                             <span style={{ fontSize: '0.9rem', color: '#64748b', fontWeight: '500' }}>
-                                 Training Instructor
-                             </span>
-
-                             <div style={{ marginTop: '24px', textAlign: 'left' }}>
-                                {/* Subject */}
-                                <div style={{ background: '#f8fafc', padding: '14px', borderRadius: '14px', marginBottom: '12px' }}>
-                                    <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase', marginBottom: '4px' }}>
-                                        Subject
-                                    </div>
-                                    <div style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                        <BookOpen size={16} color="#9647bb" />
-                                        {selectedTraining.subject_name || 'N/A'}
-                                    </div>
-                                </div>
-
-                                {/* Location */}
-                                <div style={{ background: '#f8fafc', padding: '14px', borderRadius: '14px', marginBottom: '12px' }}>
-                                    <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase', marginBottom: '6px' }}>
-                                        Location
-                                    </div>
-                                    <div style={{ display: 'flex', alignItems: 'start', gap: '8px' }}>
-                                        <MapPin size={16} color="#9647bb" style={{ marginTop: '2px' }} />
-                                        <div>
-                                            <div style={{ fontWeight: '600', color: '#334155', fontSize: '0.95rem' }}>
-                                                {selectedTraining.location_details?.village || 'N/A'}
-                                            </div>
-                                            <div style={{ fontSize: '0.85rem', color: '#64748b' }}>
-                                                {[selectedTraining.location_details?.block, selectedTraining.location_details?.district].filter(Boolean).join(', ')}
-                                            </div>
+                            {/* Common Location Info */}
+                            <div style={{ background: '#f8fafc', padding: '14px', borderRadius: '14px', marginBottom: '20px' }}>
+                                <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase', marginBottom: '6px' }}>Location</div>
+                                <div style={{ display: 'flex', alignItems: 'start', gap: '8px' }}>
+                                    <MapPin size={16} color="#9647bb" style={{ marginTop: '2px' }} />
+                                    <div>
+                                        <div style={{ fontWeight: '600', color: '#334155', fontSize: '0.95rem' }}>
+                                            {selectedTraining[0]?.location_details?.village || 'N/A'}
+                                        </div>
+                                        <div style={{ fontSize: '0.85rem', color: '#64748b' }}>
+                                            {[selectedTraining[0]?.location_details?.block, selectedTraining[0]?.location_details?.district].filter(Boolean).join(', ')}
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                {/* Status & Participants */}
-                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                     <span style={{ ...getStatusStyle(selectedTraining.status), padding: '6px 14px', borderRadius: '20px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>
-                                        {selectedTraining.status || 'Unknown'}
-                                    </span>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#475569', fontSize: '0.85rem', fontWeight: '500' }}>
-                                        <Users size={16} />
-                                        <span>{selectedTraining.total_participants || 0} Participants</span>
+                            {/* List All Trainings */}
+                            {selectedTraining.map((training, index) => (
+                                <div key={training.id || index} style={{ padding: '14px', borderRadius: '14px', background: '#ffffff', border: '1px solid #e5e7eb', marginBottom: '12px' }}>
+                                    <div style={{ fontWeight: '700', color: '#1e293b', marginBottom: '4px' }}>
+                                        {training.subject_name || 'N/A'}
+                                    </div>
+                                    <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>
+                                        Trainer: {training.trainer_name || 'Unknown'}
+                                    </div>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                        <span style={{ ...getStatusStyle(training.status), padding: '4px 10px', borderRadius: '12px', fontSize: '0.7rem', fontWeight: '700', textTransform: 'uppercase' }}>
+                                            {training.status}
+                                        </span>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: '#475569' }}>
+                                            <Users size={14} />
+                                            {training.total_participants || 0}
+                                        </div>
                                     </div>
                                 </div>
-                             </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -623,4 +494,3 @@ const StatCard = ({ title, value, icon: Icon, gradient }) => {
 };
 
 export default MarketHeroSection;
-
