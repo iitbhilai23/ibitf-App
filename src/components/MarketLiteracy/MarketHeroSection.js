@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Box, Typography, Select, MenuItem } from '@mui/material';
+import { Box, Typography, Select, MenuItem,Button } from '@mui/material';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker, GeoJSON, useMap } from 'react-leaflet';
@@ -405,6 +405,11 @@ const SummaryTab = ({ summary, viewData, locationsData, trainingLocations }) => 
     <div style={{ width: '100%', height: '560px', marginTop: '8px', borderRadius: '20px', overflow: 'hidden' }}>
       <TraineeLocationMap trainingLocations={trainingLocations} />
     </div>
+    <Box sx={{ display: "flex", justifyContent: "center", mt: 1 }}>
+      <Button variant="contained" size="large" href="https://www.ibitf.co.in/ml/login" sx={{ borderRadius: 50, px: 4, background: "linear-gradient(90deg, #D4AF37 0%, #2E8B57 100%)", textTransform: "none", fontSize: "1rem", fontWeight: 600, boxShadow: "0 4px 12px rgba(46, 139, 87, 0.3)", "&:hover": { background: "linear-gradient(90deg, #C59237 0%, #257849 100%)", transform: "translateY(-2px)", boxShadow: "0 6px 16px rgba(46, 139, 87, 0.4)" }, transition: "all 0.3s ease" }}>
+        Explore More
+      </Button>
+    </Box>
   </div>
 );
 
