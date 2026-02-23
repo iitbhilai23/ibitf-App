@@ -10,19 +10,7 @@ export const trainingService = {
         ...filters,
       };
 
-      const response = await api.get('/public/trainings', { params });
-      return response.data;
-    } catch (error) {
-      console.error('Get trainings error:', error);
-      throw error;
-    }
-  },
-
-  getAll: async (filters = {}) => {
-    try {
-
-      const response = await api.get('/public/trainings', { params: filters });
-     // console.log('Get trainings response:', response);
+      const response = await api.get('/trainings', { params });
       return response.data;
     } catch (error) {
       console.error('Get trainings error:', error);
@@ -33,7 +21,7 @@ export const trainingService = {
 
   getById: async (id) => {
     try {
-      const response = await api.get(`/public/trainings/${id}/details`);
+      const response = await api.get(`/trainings/${id}/details`);
       return response.data;
     } catch (error) {
       console.error('Get training by ID error:', error);
@@ -43,7 +31,7 @@ export const trainingService = {
 
   create: async (data) => {
     try {
-      const response = await api.post('/public/trainings', data);
+      const response = await api.post('/trainings', data);
       return response.data;
     } catch (error) {
       console.error('Create training error:', error);
@@ -53,7 +41,7 @@ export const trainingService = {
 
   update: async (id, data) => {
     try {
-      const response = await api.put(`/public/trainings/${id}`, data);
+      const response = await api.put(`/trainings/${id}`, data);
       return response.data;
     } catch (error) {
       console.error('Update training error:', error);
@@ -63,7 +51,7 @@ export const trainingService = {
 
   delete: async (id) => {
     try {
-      await api.delete(`/public/trainings/${id}`);
+      await api.delete(`/trainings/${id}`);
       return true;
     } catch (error) {
       console.error('Delete training error:', error);
