@@ -1379,6 +1379,19 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [ 
+      {
+      title: "Recruitment of various Project positions of FinteQ- quantum-Safe Financial Transaction Framework",
+      positions: "2",
+      qualifications: "Bachelor's/Master's degree in Engineering, M.Sc. (IT/CS) or MCA ,Technology,Management or related fields",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "6 Months",
+      ageLimit: "Maximum Age 45 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "07th March 2026",
+      downloadLink: require("../assets/PDF/career/Fintech2026.pdf"),
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSd90EBzgvqOHKMneaG5Hv_1_g5Z2D7yiyOGTR9dtPgB-OwIGQ/viewform",
+      applyText: "Apply Now",
+    },
     {
       title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS Based Property Tax",
       positions: "8",
@@ -1405,19 +1418,7 @@ export const siteContent = {
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
       applyText: "Apply Now",
     },
-    {
-      title: "Recruitment of various Project positions of FinteQ- quantum-Safe Financial Transaction Framework",
-      positions: "02",
-      qualifications: "Bachelor's/Master's degree in Engineering, M.Sc. (IT/CS) or MCA ,Technology,Management or related fields",
-      experience: "As Per Advertisement Attached",
-      contractPeriod: "6 Months",
-      ageLimit: "Maximum Age 45 years",
-      location: "IBITF IIT Bhilai",
-      lastDate: "12th Dec 2025",
-      downloadLink: require("../assets/PDF/career/Fintech03-12-25@.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSd90EBzgvqOHKMneaG5Hv_1_g5Z2D7yiyOGTR9dtPgB-OwIGQ/viewform",
-      applyText: "Apply Now",
-    },
+  
 
     {
       title: "Recruitment for Project position of Vidya Samiksha Kendra (VSK)",
