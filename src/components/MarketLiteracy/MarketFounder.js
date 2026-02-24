@@ -21,11 +21,12 @@ const MarketFounder = () => {
                                 WebkitTextFillColor: 'transparent',
                                 ml: 1
                             }}
-                        >
+                        >   
                             Founder
                         </Box>
                     </Typography>
                 </Box>
+
 
                 <Box sx={{ maxWidth: 'md', mx: 'auto' }}>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

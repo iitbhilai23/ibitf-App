@@ -6,8 +6,6 @@ import './ThemeticArea.css';
 const ThemeticArea = () => {
   const { ThemeticArea } = siteContent.home;
   const navigate = useNavigate();
-  
-
   const handleReadMore = (path) => {
     navigate(path);
 
