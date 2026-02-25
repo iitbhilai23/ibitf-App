@@ -5,6 +5,7 @@ import './VideoPage.css';
 import { siteContent } from '../constants/content';
 
 const VideoPage = () => {
+    
     const [isModalOpen, setIsModalOpen] = useState(false);
     const { title, description, videoThumbnail, videoUrl } = siteContent.videoPage;
 
