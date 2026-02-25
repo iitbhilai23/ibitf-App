@@ -53,11 +53,11 @@ const CallForProposals = () => {
             key={card.id}
             className={`cardArea ${index < 1 ? "highlight-card" : ""}`}
           >
-            {/* {index < 1  && (
-              // <div className="highlight-badge">
-              //   <span className="star">★</span> New
-              // </div>
-            )} */}
+            {index < 1  && (
+              <div className="highlight-badge">
+                <span className="star">★</span> New
+              </div>
+            )}
 
             <div className="card-content">
               {card.mainHeading && (

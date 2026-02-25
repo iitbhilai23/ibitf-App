@@ -1426,7 +1426,7 @@ body::-webkit-scrollbar-thumb:hover {
   border: 2px solid #ffffff;
   background: linear-gradient(135deg, #fffbea, #fff4d6);
   position: relative;
-  /* box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
   animation: pulseGlow 2s infinite;
   border-radius: 12px;
   overflow: hidden;
@@ -1438,7 +1438,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   top: 8px;
   left: -18px;
-  /* background: linear-gradient(90deg, gold, orange); */
+  background: linear-gradient(90deg, gold, orange);
   color: white;
   font-weight: 600;
   padding: 3px 22px;   /* reduced size */
@@ -1464,8 +1464,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Glowing pulse animation around the card */
-/* @keyframes pulseGlow {
+@keyframes pulseGlow {
   0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
   50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); }
   100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
-} */
+}
