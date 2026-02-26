@@ -585,7 +585,7 @@ export const siteContent = {
         image: require("../assets/TeamImg/TomeshSahu.jpeg"),
       },
       {
-        name: "Mr. Dhanvir Kaushik",
+        name: "Mr. Danvir Kaushik",
         designation: "Project Assistant, IBITF",
         image: require("../assets/TeamImg/Dhanvir.jpeg"),
       },
