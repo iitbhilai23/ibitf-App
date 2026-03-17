@@ -1083,23 +1083,23 @@ export const siteContent = {
         },
       ],
     },
-    {
-      id: 5,
+    // {
+    //   id: 5,
 
-      mainHeading: "Call for Proposal Social Impact Startups/Projects",
-      description: "",
-      lastDate: "This is a rolling advertisement",
-      buttons: [
-        {
-          text: "Detailed Call for Proposal",
-          pdfLink: "", // Replace with actual PDF URL
-        },
-        {
-          text: "Apply Now",
-          url: "https://google.com/", // Replace with the actual URL
-        },
-      ],
-    },
+    //   mainHeading: "Call for Proposal Social Impact Startups/Projects",
+    //   description: "",
+    //   lastDate: "This is a rolling advertisement",
+    //   buttons: [
+    //     {
+    //       text: "Detailed Call for Proposal",
+    //       pdfLink: "", // Replace with actual PDF URL
+    //     },
+    //     {
+    //       text: "Apply Now",
+    //       url: "https://google.com/", // Replace with the actual URL
+    //     },
+    //   ],
+    // },
     {
       id: 6,
 

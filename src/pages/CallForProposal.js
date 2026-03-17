@@ -51,11 +51,11 @@ const CallForProposals = () => {
         {cardDataForCFP.map((card, index) => (
           <div
             key={card.id}
-            className={`cardArea ${index < 1 ? "highlight-card" : ""}`}
+            className={`cardArea ${index < 1 ? "" : ""}`}
           >
             {index < 1  && (
-              <div className="highlight-badge">
-                <span className="star">★</span> New
+              <div className="">
+                <span className="star"></span> 
               </div>
             )}
 
