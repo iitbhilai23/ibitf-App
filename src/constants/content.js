@@ -485,11 +485,11 @@ export const siteContent = {
         designation: "Mission Director of NM-ICPS & DST, Member",
         image: require("../assets/TeamImg/Ekta.jpg"),
       },
-      {
-        name: "Mr. Prashant Mathur",
-        designation: "Chief Executive Officer, IBITF",
-        image: require("../assets/TeamImg/ceo.jpeg"),
-      },
+      // {
+      //   name: "Mr. Prashant Mathur",
+      //   designation: "Chief Executive Officer, IBITF",
+      //   image: require("../assets/TeamImg/ceo.jpeg"),
+      // },
       {
         name: "Padma Shri Phoolbasan Bai Yadav",
         designation: "Founder, Maa Bamleshwari Janhit Kare Samiti",
@@ -516,11 +516,11 @@ export const siteContent = {
   team: {
     title: "Meet Our Team",
     members: [
-      {
-        name: "Mr. Prashant Mathur",
-        designation: "Chief Executive Officer, IBITF",
-        image: require("../assets/TeamImg/ceo.jpeg"),
-      },
+      // {
+      //   name: "Mr. Prashant Mathur",
+      //   designation: "Chief Executive Officer, IBITF",
+      //   image: require("../assets/TeamImg/ceo.jpeg"),
+      // },
       {
         name: "Prof. Santosh Biswas",
         designation: "Dean of R&D, Project Director (IBITF)",
@@ -1400,8 +1400,8 @@ export const siteContent = {
       contractPeriod: "6 Months",
       ageLimit: "Maximum Age 45 years (Age relaxation applicable)",
       location: "IBITF IIT Bhilai",
-      lastDate: "19 January 2026",
-      downloadLink: require("../assets/PDF/career/19Jan.pdf"),
+      lastDate: "26 April 2026",
+      downloadLink: require("../assets/PDF/career/BMC.docx.pdf"),
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdoUk5S7BCqBVoy79v1TmGlAMB3VQIyPZzLtEhTHGd2NbTVVQ/viewform",
       applyText: "Apply Now",
     },
