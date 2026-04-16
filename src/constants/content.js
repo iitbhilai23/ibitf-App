@@ -485,11 +485,11 @@ export const siteContent = {
         designation: "Mission Director of NM-ICPS & DST, Member",
         image: require("../assets/TeamImg/Ekta.jpg"),
       },
-      // {
-      //   name: "Mr. Prashant Mathur",
-      //   designation: "Chief Executive Officer, IBITF",
-      //   image: require("../assets/TeamImg/ceo.jpeg"),
-      // },
+  {
+  name: "To Be Announced",
+  designation: "Chief Executive Officer, IBITF",
+  image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+},
       {
         name: "Padma Shri Phoolbasan Bai Yadav",
         designation: "Founder, Maa Bamleshwari Janhit Kare Samiti",
@@ -516,11 +516,11 @@ export const siteContent = {
   team: {
     title: "Meet Our Team",
     members: [
-      // {
-      //   name: "Mr. Prashant Mathur",
-      //   designation: "Chief Executive Officer, IBITF",
-      //   image: require("../assets/TeamImg/ceo.jpeg"),
-      // },
+     {
+  name: "To Be Announced",
+  designation: "Chief Executive Officer, IBITF",
+  image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+},
       {
         name: "Prof. Santosh Biswas",
         designation: "Dean of R&D, Project Director (IBITF)",
@@ -541,11 +541,11 @@ export const siteContent = {
         designation: "Project Associate, IBITF",
         image: require("../assets/TeamImg/preeti.png"),
       },
-      {
-        name: "Mrs. Nidhi Trivedi",
-        designation: "Project Associate, IBITF",
-        image: require("../assets/TeamImg/nidhi.png"),
-      },
+      // {
+      //   name: "Mrs. Nidhi Trivedi",
+      //   designation: "Project Associate, IBITF",
+      //   image: require("../assets/TeamImg/nidhi.png"),
+      // },
       {
         name: "Mr. Nem Singh",
         designation: "Project Associate(account), IBITF",
