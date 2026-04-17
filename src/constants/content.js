@@ -266,12 +266,12 @@ export const siteContent = {
       { name: "Instagram", url: "https://instagram.com" },
       { name: "LinkedIn", url: "https://linkedin.com" },
     ],
-     links : [
-  { label: "Home", path: "/" },
-  { label: "About us", path: "/about-ibitf" },
-  { label: "Career", path: "/career" },
-  { label: "Contact us", path: "/contact-us" }
-],
+    links: [
+      { label: "Home", path: "/" },
+      { label: "About us", path: "/about-ibitf" },
+      { label: "Career", path: "/career" },
+      { label: "Contact us", path: "/contact-us" }
+    ],
 
     services: ["Thematic Area", "Schemes", "Call for Proposals", "Blogs", "Startup Support Services"],
     info: ["IIT Bhilai", "About Ibitf", "Projects", "Team"],
@@ -410,7 +410,7 @@ export const siteContent = {
         image: require("../assets/TeamImg/santosh.jpeg"),
       },
       {
-        name: "Dr. Souradyuti Paul",
+        name: "Prof. Souradyuti Paul",
         designation: "Associate professor,  Dept. of EECS IIT Bhilai",
         image: require("../assets/TeamImg/PaulSir.jpeg"),
       },
@@ -485,11 +485,11 @@ export const siteContent = {
         designation: "Mission Director of NM-ICPS & DST, Member",
         image: require("../assets/TeamImg/Ekta.jpg"),
       },
-  {
-  name: "To Be Announced",
-  designation: "Chief Executive Officer, IBITF",
-  image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-},
+      {
+        name: "Prof. Souradyuti Paul",
+        designation: "Associate professor,  Dept. of EECS IIT Bhilai",
+        image: require("../assets/TeamImg/PaulSir.jpeg"),
+      },
       {
         name: "Padma Shri Phoolbasan Bai Yadav",
         designation: "Founder, Maa Bamleshwari Janhit Kare Samiti",
@@ -516,11 +516,11 @@ export const siteContent = {
   team: {
     title: "Meet Our Team",
     members: [
-     {
-  name: "To Be Announced",
-  designation: "Chief Executive Officer, IBITF",
-  image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-},
+      {
+        name: "Prof. Souradyuti Paul",
+        designation: "Interim Chief Executive Officer (CEO), IBITF",
+        image: require("../assets/TeamImg/PaulSir.jpeg"),
+      },
       {
         name: "Prof. Santosh Biswas",
         designation: "Dean of R&D, Project Director (IBITF)",
@@ -820,7 +820,7 @@ export const siteContent = {
         "To build a vibrant network of start-up ecosystems facilitating mentorship, technical and R&D related suggestions, financial support etc., by establishing a network between academia and industries, mainly involving the collaborators of the IBITF.",
       ],
     },
-        {
+    {
       title: "Dedicated Innovation Accelerators (DIAL)",
       description:
         "Accelerators are a post-incubation initiative linked with the existing incubators to supplement and complement the scaling up of a start-up. It aims to direct focused resources for a start-up to validate product ideas and engage with customers for scaling up and boosting the incubator’s existing activities. Accelerators also help in realizing and deciding whether to create a scalable start-up from a very nascent stage. The basic objectives of DIAL involve:",
@@ -831,7 +831,7 @@ export const siteContent = {
     },
   ],
   cardDataForCFP: [
-     {
+    {
       id: 19,
 
       mainHeading: "Call for Proposal Under Tribal Area Sub Plan (CFP-TSP) Scheme",
@@ -1378,8 +1378,8 @@ export const siteContent = {
     videoUrl:
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
-  jobListings: [ 
-      {
+  jobListings: [
+    {
       title: "Recruitment of various Project positions of FinteQ- quantum-Safe Financial Transaction Framework",
       positions: "2",
       qualifications: "Bachelor's/Master's degree in Engineering, M.Sc. (IT/CS) or MCA ,Technology,Management or related fields",
@@ -1394,7 +1394,7 @@ export const siteContent = {
     },
     {
       title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS Based Property Tax",
-      positions: "8",
+      positions: "4",
       qualifications: "MTech/ME/MS OR BTech/BE OR MSc CS/IT OR MCA/Graduation in any discipline OR Diploma in Engineering",
       experience: "As Per Advertisement Attached",
       contractPeriod: "6 Months",
@@ -1402,10 +1402,10 @@ export const siteContent = {
       location: "IBITF IIT Bhilai",
       lastDate: "26 April 2026",
       downloadLink: require("../assets/PDF/career/BMC.docx.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdoUk5S7BCqBVoy79v1TmGlAMB3VQIyPZzLtEhTHGd2NbTVVQ/viewform",
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdPFRsC9-YvfvMT_eZsxaWSPIOEVSMvc7flF0zHLtXy6lSjQA/viewform",
       applyText: "Apply Now",
     },
-     {
+    {
       title: "Recruitment Re-advertisement for an Advisor Legal Project positions at IBITF",
       positions: "1",
       qualifications: "Bachelor's/Master's degree in Engineering, Technology,Management or related fields",
@@ -1418,7 +1418,7 @@ export const siteContent = {
       applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScSuIirBGzqQWFYpHSd5_12pohvsyHalJQ0VFd4UNLiuQvKig/viewform",
       applyText: "Apply Now",
     },
-  
+
 
     {
       title: "Recruitment for Project position of Vidya Samiksha Kendra (VSK)",
