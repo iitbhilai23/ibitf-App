@@ -1378,20 +1378,20 @@ export const siteContent = {
     videoUrl:
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
-  // jobListings: [
-  //       {
-  //     title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS Based Property Tax",
-  //     positions: "4",
-  //     qualifications: "MTech/ME/MS OR BTech/BE OR MSc CS/IT OR MCA/Graduation in any discipline OR Diploma in Engineering",
-  //     experience: "As Per Advertisement Attached",
-  //     contractPeriod: "6 Months",
-  //     ageLimit: "Maximum Age 45 years (Age relaxation applicable)",
-  //     location: "IBITF IIT Bhilai",
-  //     lastDate: "26 April 2026",
-  //     downloadLink: require("../assets/PDF/career/BMC.docx.pdf"),
-  //     applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdPFRsC9-YvfvMT_eZsxaWSPIOEVSMvc7flF0zHLtXy6lSjQA/viewform",
-  //     applyText: "Apply Now",
-  //   },
+  jobListings: [
+    //     {
+    //   title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS Based Property Tax",
+    //   positions: "4",
+    //   qualifications: "MTech/ME/MS OR BTech/BE OR MSc CS/IT OR MCA/Graduation in any discipline OR Diploma in Engineering",
+    //   experience: "As Per Advertisement Attached",
+    //   contractPeriod: "6 Months",
+    //   ageLimit: "Maximum Age 45 years (Age relaxation applicable)",
+    //   location: "IBITF IIT Bhilai",
+    //   lastDate: "26 April 2026",
+    //   downloadLink: require("../assets/PDF/career/BMC.docx.pdf"),
+    //   applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdPFRsC9-YvfvMT_eZsxaWSPIOEVSMvc7flF0zHLtXy6lSjQA/viewform",
+    //   applyText: "Apply Now",
+    // },
     {
       title: "Recruitment of various Project positions of FinteQ- quantum-Safe Financial Transaction Framework",
       positions: "2",
