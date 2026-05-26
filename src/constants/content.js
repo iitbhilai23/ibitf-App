@@ -1390,7 +1390,8 @@ export const siteContent = {
       location: "IBITF IIT Bhilai",
       lastDate: "22 May 2026, 17:30 hrs (IST)",
       downloadLink: require("../assets/PDF/career/CEO_CTO_Advertisement.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSfHBsqrBtr8r-SDYd0sPZIlv1JlvfOZX4GWmEvdC_hdjUGtMA/viewform",
+      applyLink: "#",
+      // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSfHBsqrBtr8r-SDYd0sPZIlv1JlvfOZX4GWmEvdC_hdjUGtMA/viewform",
       applyText: "Apply Now",
     },
 
