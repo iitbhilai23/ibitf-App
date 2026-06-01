@@ -1380,6 +1380,21 @@ export const siteContent = {
   },
   jobListings: [
 
+        {
+      title: "Recruitment of Environmental  Expert  under  the  project titled  'A  Concept  Plan  on  Rejuvenation  of  the  Tandula  River,  Balod  District, Chhattisgarh'",
+      positions: "1",
+      qualifications: "Master's Degree in Environmental Science, Environmental Engineering, Ecology, Natural Resource Management, Water Resources Management, or allied disciplines from a recognized University/Institute",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "6 months",
+      ageLimit: " ",
+      location: "IBITF IIT Bhilai",
+      lastDate: " 4th June 2026",
+      downloadLink: require("../assets/PDF/career/TANDULAPROJECT.pdf"),
+      applyLink: "#",
+      // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSfHBsqrBtr8r-SDYd0sPZIlv1JlvfOZX4GWmEvdC_hdjUGtMA/viewform",
+      applyText: "Apply Now",
+    },
+
     {
       title: "Recruitment of Chief Executive Officer (CEO) and Chief Technology Officer (CTO) at IIT Bhilai Innovation and Technology Foundation (IBITF)",
       positions: "2",
