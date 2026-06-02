@@ -1379,7 +1379,6 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [
-
         {
       title: "Recruitment of Environmental  Expert  under  the  project titled  'A  Concept  Plan  on  Rejuvenation  of  the  Tandula  River,  Balod  District, Chhattisgarh'",
       positions: "1",
@@ -1388,10 +1387,9 @@ export const siteContent = {
       contractPeriod: "6 months",
       ageLimit: " ",
       location: "IBITF IIT Bhilai",
-      lastDate: " 4th June 2026",
+      lastDate: " Before 5th June 2026",
       downloadLink: require("../assets/PDF/career/TANDULAPROJECT.pdf"),
-      applyLink: "#",
-      // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSfHBsqrBtr8r-SDYd0sPZIlv1JlvfOZX4GWmEvdC_hdjUGtMA/viewform",
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdlTkiDadnBRc62wlOjLsYfr1KelTdwQhH1TwQEgELEN2S3Wg/viewform",
       applyText: "Apply Now",
     },
 
