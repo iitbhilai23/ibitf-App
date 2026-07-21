@@ -1379,6 +1379,20 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [
+    {
+      title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS-Based Property Tax for Bhilai Municipal Corporation, Bhilai",
+      positions: "5",
+      qualifications: "Software Developer: MTech/ME/MS OR B.Tech/B.E. OR M.Sc. CS/IT OR M.C.A. | Field Assistant (Survey & GIS Support Trainee): ITI/Diploma/Graduate in IT, Civil, Survey, Geography, GIS, or related fields; Freshers eligible",
+      experience: "Software Developer: Relevant experience in software development, application development & system implementation. Field Assistant: Freshers can apply; field survey/DGPS/GIS experience preferred",
+      contractPeriod: "89 Days",
+      ageLimit: "Software Developer: Preferred 40 years | Field Assistant: Preferred 35 years (Age Relaxation can be considered)",
+      location: "IBITF, IIT Bhilai or at site",
+      lastDate: "23 July 2026",
+      downloadLink: require("../assets/PDF/career/BMC2.docx.pdf"),
+      applyLink: "https://www.ibitf.co.in/",
+      applyText: "Apply Now",
+    },
+
         {
       title: "Recruitment of Environmental  Expert  under  the  project titled  'A  Concept  Plan  on  Rejuvenation  of  the  Tandula  River,  Balod  District, Chhattisgarh'",
       positions: "1",
