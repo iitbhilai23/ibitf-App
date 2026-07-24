@@ -1389,7 +1389,7 @@ export const siteContent = {
       location: "IBITF, IIT Bhilai",
       lastDate: "27 July 2026",
       downloadLink: require("../assets/PDF/career/_AdvertisementforFinteQproject.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSd90EBzgvqOHKMneaG5Hv_1_g5Z2D7yiyOGTR9dtPgB-OwIGQ/viewform",
+      applyLink: "https://docs.google.com/forms/d/1c2ZKTjN51rvX5TJdzYwzF0GeFbSqzvw6J83aB2vHZiY/edit",
       applyText: "Apply Now",
     },
     {
