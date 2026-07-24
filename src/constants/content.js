@@ -1380,6 +1380,19 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Recruitment for various Project positions (Project Manager & Project Associate) for FinteQ Project",
+      positions: "2",
+      qualifications: "Project Manager: Ph.D. or MBA/ME/M.Tech with 3 years of relevant experience or B.E./B.Tech with 5 years of relevant experience. UG/PG degrees should be in Computer Science/IT/ECE or related disciplines. | Project Associate: Master's or Bachelor's degree in Science, Engineering, or Technology in Computer Science or related areas.",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "89 Days",
+      ageLimit: "Project Manager: Maximum Age 45 years | Project Associate: Maximum Age 30 years",
+      location: "IBITF, IIT Bhilai",
+      lastDate: "27 July 2026",
+      downloadLink: require("../assets/PDF/career/_AdvertisementforFinteQproject.pdf"),
+      applyLink: "#",
+      applyText: "Apply Now",
+    },
+    {
       title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS-Based Property Tax for Bhilai Municipal Corporation, Bhilai",
       positions: "5",
       qualifications: "Software Developer: MTech/ME/MS OR B.Tech/B.E. OR M.Sc. CS/IT OR M.C.A. | Field Assistant (Survey & GIS Support Trainee): ITI/Diploma/Graduate in IT, Civil, Survey, Geography, GIS, or related fields; Freshers eligible",
