@@ -1380,6 +1380,19 @@ export const siteContent = {
   },
   jobListings: [
     {
+  title: "Recruitment for the Position of Software Developer for the Project on Smart Mapping for Smarter Revenue: GIS-Based Property Tax for Bhilai Municipal Corporation, Bhilai",
+  positions: "1",
+  qualifications: "MTech/ME/MS OR B.Tech/B.E. OR M.Sc. CS/IT OR M.C.A.",
+  experience: "Relevant experience in software development, application development & system implementation",
+  contractPeriod: "89 Days",
+  ageLimit: "Preferred 40 years (Age Relaxation can be considered)",
+  location: "IBITF, IIT Bhilai or at site",
+  lastDate: "31 July 2026",
+  downloadLink: require("../assets/PDF/career/BMC.docx.pdf"),
+  applyLink: "https://docs.google.com/forms/d/1DrzR7CCl6Mph4kHMQKJynAnIoCcyUc4WZtB0wp3zrMQ/edit",
+  applyText: "Apply Now",
+},
+    {
       title: "Recruitment for various Project positions (Project Manager & Project Associate) for FinteQ Project",
       positions: "2",
       qualifications: "Project Manager: Ph.D. or MBA/ME/M.Tech with 3 years of relevant experience or B.E./B.Tech with 5 years of relevant experience. UG/PG degrees should be in Computer Science/IT/ECE or related disciplines. | Project Associate: Master's or Bachelor's degree in Science, Engineering, or Technology in Computer Science or related areas.",
@@ -1392,20 +1405,6 @@ export const siteContent = {
       applyLink: "https://docs.google.com/forms/d/1c2ZKTjN51rvX5TJdzYwzF0GeFbSqzvw6J83aB2vHZiY/edit",
       applyText: "Apply Now",
     },
-    {
-      title: "Recruitment of various positions for Project on Smart Mapping for Smarter Revenue: GIS-Based Property Tax for Bhilai Municipal Corporation, Bhilai",
-      positions: "5",
-      qualifications: "Software Developer: MTech/ME/MS OR B.Tech/B.E. OR M.Sc. CS/IT OR M.C.A. | Field Assistant (Survey & GIS Support Trainee): ITI/Diploma/Graduate in IT, Civil, Survey, Geography, GIS, or related fields; Freshers eligible",
-      experience: "Software Developer: Relevant experience in software development, application development & system implementation. Field Assistant: Freshers can apply; field survey/DGPS/GIS experience preferred",
-      contractPeriod: "89 Days",
-      ageLimit: "Software Developer: Preferred 40 years | Field Assistant: Preferred 35 years (Age Relaxation can be considered)",
-      location: "IBITF, IIT Bhilai or at site",
-      lastDate: "23 July 2026",
-      downloadLink: require("../assets/PDF/career/BMC2.docx.pdf"),
-      applyLink: "https://docs.google.com/forms/d/1DrzR7CCl6Mph4kHMQKJynAnIoCcyUc4WZtB0wp3zrMQ/edit",
-      applyText: "Apply Now",
-    },
-
         {
       title: "Recruitment of Environmental  Expert  under  the  project titled  'A  Concept  Plan  on  Rejuvenation  of  the  Tandula  River,  Balod  District, Chhattisgarh'",
       positions: "1",
