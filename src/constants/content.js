@@ -1379,19 +1379,19 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [
-    // {
-    //   title: "Recruitment for various Project positions for Tribal Research and Innovation Park at Dantewada",
-    //   positions: "9",
-    //   qualifications: "As Per Advertisement Attached",
-    //   experience: "As Per Advertisement Attached",
-    //   contractPeriod: "1 Year",
-    //   ageLimit: "As Per Advertisement Attached",
-    //   location: "Dantewada / IBITF, IIT Bhilai",
-    //   lastDate: "07 August 2026",
-    //   downloadLink: require("../assets/PDF/career/_Advertisement_Dantewada.pdf"),
-    //   applyLink: "#",
-    //   applyText: "Apply Now",
-    // },
+    {
+      title: "Recruitment for various Project positions for Tribal Research and Innovation Park at Dantewada",
+      positions: "9",
+      qualifications: "MTech/ME/MS OR B.Tech/B.E. OR M.Sc. CS/IT OR M.C.A.",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "1 Year",
+      ageLimit: "As Per Advertisement Attached",
+      location: "Dantewada / IBITF, IIT Bhilai",
+      lastDate: "07 August 2026",
+      downloadLink: require("../assets/PDF/career/_Advertisement_Dantewada.pdf"),
+      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdm-UDPI-GjbFJa9Xrwo4QmVr0Hb2IoVfcNaBdQAmnigjsqAw/viewform?usp=publish-editor",
+      applyText: "Apply Now",
+    },
     {
       title: "Recruitment for the Position of Software Developer for the Project on Smart Mapping for Smarter Revenue: GIS-Based Property Tax for Bhilai Municipal Corporation, Bhilai",
       positions: "1",
