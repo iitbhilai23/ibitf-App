@@ -2,14 +2,17 @@ import axios from 'axios';
 
 const api = axios.create({
     //   baseURL: import.meta.env.VITE_API_URL,
-    baseURL: process.env.REACT_APP_API_URL,
+    // Support the legacy REACT_APP_URL setting used by existing deployments.
+    // Without a base URL Axios sends requests to the React dev server, which
+    // makes API routes such as /dashboard/training-stats return a 404.
+    baseURL: process.env.REACT_APP_API_URL || process.env.REACT_APP_URL,
     headers: {
         // ❌ REMOVED Content-Type (VERY IMPORTANT)
         // 'x-api-key': import.meta.env.VITE_API_KEY,
         'x-api-key': process.env.REACT_APP_API_KEY,
     },
 });
-console.log("API URL:", process.env.REACT_APP_API_URL);
+console.log("API URL:", process.env.REACT_APP_API_URL || process.env.REACT_APP_URL);
 
 api.interceptors.request.use(
     (config) => {

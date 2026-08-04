@@ -3,11 +3,13 @@ import React from 'react';
 
 const AnimatedCard = ({ name, designation, image }) => {
   return (
-    <div className="animated-card">
-      <img src={image} alt={name} className="team-image" />
+    <article className="animated-card">
+      <div className="team-image-frame">
+        <img src={image} alt={`Portrait of ${name}`} className="team-image" />
+      </div>
       <h3>{name}</h3>
       <p>{designation}</p>
-    </div>
+    </article>
   );
 };
 

@@ -12,6 +12,7 @@ import FeaturedProjects from '../components/FeaturedProjects';
 import CollaborationSlider from '../components/Slider/CollaborationSlider';
 import VideoPage from '../components/VideoPage';
 import ThemeticArea from '../components/ThemeticArea';
+import PhotoGallery from '../components/PhotoGallery';
 
 
 
@@ -30,6 +31,7 @@ const Home = () => {
       <FeaturedProjects />
       <ThemeticArea />
       <TechnologiesDevelopment />
+      <PhotoGallery />
       <OurAwards />
 
       <Achievements />
