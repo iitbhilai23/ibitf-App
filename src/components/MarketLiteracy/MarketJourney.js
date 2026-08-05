@@ -1,9 +1,6 @@
 import { Box, Container, Typography, Paper, Button } from "@mui/material";
-import { useState } from "react";
 
 const MarketJourney = () => {
-    const [showMore, setShowMore] = useState(false);
-
     return (
         <Box component="section" sx={{ py: { xs: 7, md: 11 }, bgcolor: '#f8fafc' }}>
             <Container maxWidth="lg">
@@ -72,20 +69,11 @@ const MarketJourney = () => {
                             At the heart of this movement stands the unwavering dedication of Prof. Madhu Viswanathan, a pioneer who has been teaching Marketplace Literacy for over two decades, reaching more than 1,00,000 women across four continents. His commitment, combined with IIT Bhilai’s strong vision to scale this initiative within Chhattisgarh, laid a strong foundation for a transformative statewide movement.
                         </Typography>
 
-                        {showMore && (
-                            <Typography variant="body1" color="text.secondary" sx={{ mt: 2, lineHeight: 1.8 }}>
-                                Equally inspiring is the determination of the women themselves. SHG women leaders traveled from distances as far as 500 kilometers, dedicating two full days to learning, sharing, and preparing themselves to take this knowledge back to their communities. Their enthusiasm turned training halls into spaces of energy, curiosity, and purpose.
-                                <br /><br />
-                                Since July 2024, Marketplace Literacy has grown rapidly across the state. To date, over 11,000 women from more than 300 villages across 5+ districts of Chhattisgarh have been trained through 03 phases of Educator Training and 03 phases of Pilot Training.
-                                <br /><br />
-                                Today, over 100 committed educators are actively teaching Marketplace Literacy across Chhattisgarh.
-                            </Typography>
-                        )}
-
                         <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
                             <Button
                                 variant="contained"
-                                onClick={() => setShowMore(!showMore)}
+                                component="a"
+                                href="https://www.ibitf.co.in/ml/login"
                                 sx={{
                                     borderRadius: 2,
                                     px: 4,
@@ -102,7 +90,7 @@ const MarketJourney = () => {
                                     transition: 'all 0.3s ease'
                                 }}
                             >
-                                {showMore ? 'Read Less' : 'Read More'}
+                                Know More
                             </Button>
                         </Box>
                     </Paper>
