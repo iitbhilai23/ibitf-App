@@ -49,7 +49,7 @@ import {
   Eco,
   Drone,
   HealthAndSafety,
-  Emergency,
+  EmergencyShare as Emergency,
   LocalHospital,
   SupervisedUserCircle,
   Group,
