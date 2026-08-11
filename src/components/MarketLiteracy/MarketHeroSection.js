@@ -710,7 +710,7 @@ const TraineeLocationMap = ({ trainingLocations, focusTarget, markerColor, activ
       `}</style>
 
       {/* Map Control: Info Badge */}
-      <div style={{ position: 'absolute', top: '15px', left: '15px', zIndex: 1000, background: 'rgba(255, 255, 255, 0.95)', padding: '9px 14px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid #e2e8f0' }}>
+      <div style={{ position: 'absolute', top: '15px', left: '15px', zIndex: 900, background: 'rgba(255, 255, 255, 0.95)', padding: '9px 14px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid #e2e8f0' }}>
         <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: MARKER_COLOR, boxShadow: `0 0 0 4px ${MARKER_COLOR}1f` }}></div>
         <div>
           <div style={{ fontSize: '0.85rem', fontWeight: '700', color: '#1e293b' }}>Chhattisgarh</div>
@@ -721,7 +721,7 @@ const TraineeLocationMap = ({ trainingLocations, focusTarget, markerColor, activ
       {/* NEW: Active phase legend — shows only when a training type filter is applied */}
       {activeTrainingType && (
         <div style={{
-          position: 'absolute', top: '68px', left: '15px', zIndex: 1000,
+          position: 'absolute', top: '68px', left: '15px', zIndex: 900,
           background: 'rgba(255, 255, 255, 0.95)', padding: '7px 14px', borderRadius: '10px',
           boxShadow: '0 4px 20px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', gap: '8px',
           border: '1px solid #e2e8f0'
@@ -732,7 +732,7 @@ const TraineeLocationMap = ({ trainingLocations, focusTarget, markerColor, activ
       )}
 
       {/* Map Control: Fullscreen */}
-      <div style={{ position: 'absolute', top: '15px', right: '15px', zIndex: 1000 }}>
+      <div style={{ position: 'absolute', top: '15px', right: '15px', zIndex: 900 }}>
         <button onClick={() => setIsFullScreen(!isFullScreen)} style={{ background: 'white', border: '1px solid #f1f5f9', borderRadius: '10px', padding: '8px', cursor: 'pointer', boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
           {isFullScreen ? <Minimize size={18} color="#64748b" /> : <Maximize size={18} color="#64748b" />}
         </button>
