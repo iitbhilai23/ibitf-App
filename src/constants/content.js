@@ -1379,6 +1379,20 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [
+     {
+      title: "Recruitment of Technical Support Engineer positions of VSK Project",
+      positions: "05",
+      qualifications: "Bachelor's or Master's degree in Eng., M.Sc. (IT/CS), MCA, B.Com, B.A., M.Com, M.A., or any other related field",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "6 Month",
+      ageLimit: "Age may berelaxed based on GOI guidelines of category/work experience",
+      location: "IBITF IIT Bhilai",
+      lastDate: "17th August 2026 (Monday).",
+      downloadLink: require("../assets/PDF/career/VSK_TE26.pdf"),
+      applyLink: "https://docs.google.com/forms/d/15AT9YSScTmazH3erYMR1i2keRlbgcaJFIXSNZeqCWXQ/viewform?edit_requested=true",
+      applyText: "Apply Now",
+    },
+
     {
       title: "Recruitment for various Project positions for Tribal Research and Innovation Park at Dantewada",
       positions: "9",
@@ -1517,19 +1531,7 @@ export const siteContent = {
       applyText: "Apply Now",
     },
 
-    {
-      title: "Recruitment of various Project positions of VSK Project",
-      positions: "05",
-      qualifications: "Bachelor's or Master's degree in Eng., M.Sc. (IT/CS), MCA, B.Com, B.A., M.Com, M.A., or any other related field",
-      experience: "As Per Advertisement Attached",
-      contractPeriod: "1 Year",
-      ageLimit: "Maximum Age 45 years",
-      location: "IBITF IIT Bhilai",
-      lastDate: "Walk In Interview",
-      downloadLink: require("../assets/PDF/career/VSK-TE2025.pdf"),
-      // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSeeDs2spmQb25x8c6nbTukDqSGQAKLDQsYWaGby1ePTFxrjcw/viewform",
-      applyText: "Apply Now",
-    },
+   
     {
       title: "Recruitment of various Project positions of VSK Project",
       positions: "04",
