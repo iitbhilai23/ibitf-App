@@ -1141,7 +1141,7 @@ const TraineeLocationMap = ({ trainingLocations, focusTarget, markerColor, activ
                             {training.total_participants ||
                               training.actual_participants ||
                               0}{" "}
-                            Trainees
+                            Participants
                           </div>
                         </div>
 

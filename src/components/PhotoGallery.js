@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowUpRight, ImageOff, X } from 'lucide-react';
+import { ArrowUpRight, X } from 'lucide-react';
 import galleryService from '../services/galleryService';
 import './PhotoGallery.css';
 
@@ -26,29 +26,70 @@ const PhotoGallery = ({
   description,
   initialPhotoCount,
   variant,
+  fallbackPhotos = [],
 }) => {
   const [photos, setPhotos] = useState([]);
   const [status, setStatus] = useState('loading');
   const [activePhoto, setActivePhoto] = useState(null);
   const [showAll, setShowAll] = useState(false);
+  const removeBrokenPhoto = (photoKey) => {
+    setPhotos((current) => current.filter((item) => {
+      const key = item?._id || item?.id || getImageUrl(item);
+      return key !== photoKey;
+    }));
+  };
 
   useEffect(() => {
     let isCurrent = true;
 
     const loadGallery = async () => {
       try {
-        const response = await galleryService.getPublicGallery();
+        const firstResponse = await galleryService.getPublicGallery({ page: 1, limit: 50 });
         if (!isCurrent) return;
-        setPhotos(getGalleryItems(response));
+        const firstItems = getGalleryItems(firstResponse);
+        const totalPages = Number(firstResponse?.totalPages || firstResponse?.meta?.totalPages || 1);
+        let allItems = [...firstItems];
+
+        if (totalPages > 1) {
+          const nextPageRequests = Array.from({ length: totalPages - 1 }, (_, index) =>
+            galleryService.getPublicGallery({ page: index + 2, limit: 50 })
+          );
+          const nextResponses = await Promise.all(nextPageRequests);
+          if (!isCurrent) return;
+          nextResponses.forEach((response) => {
+            allItems.push(...getGalleryItems(response));
+          });
+        }
+
+        const seen = new Set();
+        const uniqueItems = allItems.filter((item) => {
+          const key = item?._id || item?.id || item?.image || item?.imageUrl || item?.url;
+          if (!key) return false;
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+
+        const usableItems = uniqueItems.filter((item) => Boolean(getImageUrl(item)));
+        const usableFallbackItems = fallbackPhotos.filter((item) => Boolean(getImageUrl(item)));
+
+        setPhotos(usableItems.length > 0 ? usableItems : usableFallbackItems);
         setStatus('ready');
       } catch (error) {
-        if (isCurrent) setStatus('error');
+        if (!isCurrent) return;
+        const usableFallbackItems = fallbackPhotos.filter((item) => Boolean(getImageUrl(item)));
+        if (usableFallbackItems.length > 0) {
+          setPhotos(usableFallbackItems);
+          setStatus('ready');
+          return;
+        }
+        setStatus('error');
       }
     };
 
     loadGallery();
     return () => { isCurrent = false; };
-  }, []);
+  }, [fallbackPhotos]);
 
   if (status === 'error' || (status === 'ready' && photos.length === 0)) return null;
 
@@ -77,14 +118,20 @@ const PhotoGallery = ({
           {visiblePhotos.map((photo, index) => {
             const imageUrl = getImageUrl(photo);
             const title = photo?.title || photo?.name || photo?.caption || `IBITF moment ${index + 1}`;
+            const photoKey = photo?._id || photo?.id || imageUrl || `${title}-${index}`;
             return (
               <button
                 className={`photo-gallery__item photo-gallery__item--${(index % 5) + 1}`}
-                key={photo?._id || photo?.id || `${imageUrl}-${index}`}
+                key={photoKey}
                 onClick={() => setActivePhoto({ imageUrl, title })}
                 type="button"
               >
-                {imageUrl ? <img src={imageUrl} alt={title} loading="lazy" /> : <ImageOff aria-hidden="true" />}
+                <img
+                  src={imageUrl}
+                  alt={title}
+                  loading="lazy"
+                  onError={() => removeBrokenPhoto(photoKey)}
+                />
                 <span className="photo-gallery__overlay"><span>{title}</span><ArrowUpRight size={20} /></span>
               </button>
             );

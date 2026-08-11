@@ -3,6 +3,34 @@ import MarketHeroSection from "./MarketHeroSection";
 import MarketJourney from "./MarketJourney";
 import MarketFounder from "./MarketFounder";
 import PhotoGallery from "../PhotoGallery";
+import MarketplaceLiteracy1 from "../../assets/StaticImages/Workshop/MarketplaceLiteracy.png";
+import MarketplaceLiteracy2 from "../../assets/StaticImages/Workshop/MarketplaceLiteracy1.png";
+import MarketPhoto1 from "../../assets/StaticImages/Workshop/market1.png";
+import MarketPhoto2 from "../../assets/StaticImages/Workshop/market2.png";
+import MarketPhoto3 from "../../assets/StaticImages/Workshop/market3.png";
+
+const marketplaceTraineePhotos = [
+    {
+        image: MarketplaceLiteracy1,
+        title: "Marketplace Literacy workshop",
+    },
+    {
+        image: MarketplaceLiteracy2,
+        title: "Trainees in action",
+    },
+    {
+        image: MarketPhoto1,
+        title: "Hands-on learning session",
+    },
+    {
+        image: MarketPhoto2,
+        title: "Guided marketplace training",
+    },
+    {
+        image: MarketPhoto3,
+        title: "Community participants",
+    },
+];
 
 const MarketMainContainer = () => {
     return (
@@ -21,6 +49,7 @@ const MarketMainContainer = () => {
                 description="Since July 2024, Marketplace Literacy has been empowering women across Chhattisgarh with the skills and confidence to participate as informed consumers and emerging entrepreneurs."
                 initialPhotoCount={5}
                 variant="marketplace"
+                fallbackPhotos={marketplaceTraineePhotos}
             />
             <MarketFounder />
 
