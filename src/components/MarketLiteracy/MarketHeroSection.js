@@ -419,7 +419,7 @@ const MarketHeroSection = () => {
                 }
                 return (
                   <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#0f172a', fontWeight: 600 }}>
-                    {/* NEW: small color swatch showing the active phase color */}
+    
                     <span
                       style={{
                         width: 10,
