@@ -47,9 +47,9 @@ const MarketMainContainer = () => {
                 eyebrow="Marketplace Literacy in Chhattisgarh"
                 heading="Our Trainees in Action"
                 description="Since July 2024, Marketplace Literacy has been empowering women across Chhattisgarh with the skills and confidence to participate as informed consumers and emerging entrepreneurs."
+                photos={marketplaceTraineePhotos}
                 initialPhotoCount={5}
                 variant="marketplace"
-                fallbackPhotos={marketplaceTraineePhotos}
             />
             <MarketFounder />
 

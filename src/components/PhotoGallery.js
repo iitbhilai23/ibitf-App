@@ -12,12 +12,43 @@ const getGalleryItems = (payload) => {
 };
 
 const getImageUrl = (item) => {
-  const path = item?.image || item?.imageUrl || item?.url || item?.photo || item?.file;
-  if (!path || /^https?:\/\//i.test(path) || path.startsWith('data:')) return path;
+  if (!item) return '';
+
+  const path = typeof item === 'string'
+    ? item
+    : (item?.image || item?.imageUrl || item?.url || item?.photo || item?.file);
+
+  if (!path || typeof path !== 'string') return '';
+
+  // Local Webpack bundled assets, data/blob URIs, and full URLs should be returned as-is
+  if (
+    /^https?:\/\//i.test(path) ||
+    path.startsWith('data:') ||
+    path.startsWith('blob:') ||
+    path.startsWith('/static/') ||
+    path.startsWith('static/')
+  ) {
+    return path;
+  }
 
   const apiUrl = process.env.REACT_APP_API_URL || process.env.REACT_APP_URL || '';
+  if (!apiUrl) return path;
+
+  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+
+  // If path already starts with /ml-api/ (e.g. /ml-api/uploads/trainers/Aarti%20Sahu.jpeg)
+  if (cleanPath.startsWith('/ml-api/')) {
+    try {
+      const hostOrigin = new URL(apiUrl).origin;
+      return `${hostOrigin}${cleanPath}`;
+    } catch (e) {
+      const baseHost = apiUrl.split('/ml-api')[0];
+      return `${baseHost}${cleanPath}`;
+    }
+  }
+
   const origin = apiUrl.replace(/\/api\/?$/, '');
-  return `${origin}${path.startsWith('/') ? path : `/${path}`}`;
+  return `${origin}${cleanPath}`;
 };
 
 const PhotoGallery = ({
@@ -26,12 +57,14 @@ const PhotoGallery = ({
   description,
   initialPhotoCount,
   variant,
-  fallbackPhotos = [],
 }) => {
   const [photos, setPhotos] = useState([]);
   const [status, setStatus] = useState('loading');
   const [activePhoto, setActivePhoto] = useState(null);
   const [showAll, setShowAll] = useState(false);
+
+
+
   const removeBrokenPhoto = (photoKey) => {
     setPhotos((current) => current.filter((item) => {
       const key = item?._id || item?.id || getImageUrl(item);
@@ -71,25 +104,19 @@ const PhotoGallery = ({
         });
 
         const usableItems = uniqueItems.filter((item) => Boolean(getImageUrl(item)));
-        const usableFallbackItems = fallbackPhotos.filter((item) => Boolean(getImageUrl(item)));
-
-        setPhotos(usableItems.length > 0 ? usableItems : usableFallbackItems);
+        setPhotos(usableItems);
         setStatus('ready');
       } catch (error) {
         if (!isCurrent) return;
-        const usableFallbackItems = fallbackPhotos.filter((item) => Boolean(getImageUrl(item)));
-        if (usableFallbackItems.length > 0) {
-          setPhotos(usableFallbackItems);
-          setStatus('ready');
-          return;
-        }
+        // If fetching fails, show no images
+        setPhotos([]);
         setStatus('error');
       }
     };
 
     loadGallery();
     return () => { isCurrent = false; };
-  }, [fallbackPhotos]);
+  }, []);
 
   if (status === 'error' || (status === 'ready' && photos.length === 0)) return null;
 
