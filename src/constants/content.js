@@ -26,6 +26,8 @@ import Fintech from '../assets/PDF/tech_projects/Fintech.pdf';
 import HealthTech from '../assets/PDF/tech_projects/HealthTech.pdf';
 import newFellowShip from '../assets/PDF/proposal/CFPfellowship072122139.pdf';
 import Genesis from '../assets/PDF/proposal/GENESIS3.pdf'
+import SbifLeap from '../assets/PDF/proposal/SBIFLEAP.pdf'
+
 import {
   FaLightbulb,
   FaFlask,
@@ -832,6 +834,23 @@ export const siteContent = {
     },
   ],
   cardDataForCFP: [
+    {
+      id: 21,
+
+      mainHeading: "SBIF LEAP: Innovators for Bharat Pan-India Incubation Programme for Start-ups",
+      description:
+        "IIT Bhilai Innovation and Technology Foundation (IBITF), with funding support from SBI Foundation, invites applications under SBIF LEAP: Innovators for Bharat, a Pan-India incubation programme supporting technology-driven start-ups and innovators in FinTech, AgriTech and HealthTech. The programme aims to support TRL 3 and above innovations addressing real-world challenges, with a focus on scalability, sustainability and measurable social impact.",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: SbifLeap,
+        },
+        {
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/24180/1/apply",
+        },
+      ],
+    },
     {
       id: 20,
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Popup.css";
-import popupPdf from "../../assets/popup/Genesis.jpeg";
+import popupPdf from "../../assets/popup/Genesis&Sbi.png";
 
 const Popup = ({ show, closePopup }) => {
   if (!show) return null;
