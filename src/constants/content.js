@@ -25,6 +25,7 @@ import Agritech from '../assets/PDF/tech_projects/Agritech.pdf';
 import Fintech from '../assets/PDF/tech_projects/Fintech.pdf';
 import HealthTech from '../assets/PDF/tech_projects/HealthTech.pdf';
 import newFellowShip from '../assets/PDF/proposal/CFPfellowship072122139.pdf';
+import Genesis from '../assets/PDF/proposal/GENESIS3.pdf'
 import {
   FaLightbulb,
   FaFlask,
@@ -832,6 +833,23 @@ export const siteContent = {
   ],
   cardDataForCFP: [
     {
+      id: 20,
+
+      mainHeading: "GENESIS Entrepreneur-in-Residence (EIR) – Cohort 3.0",
+      description:
+        "Supported by MeitY Startup Hub (MSH), GENESIS EIR Cohort 3.0 aims to support early-stage innovators, entrepreneurs, and startup founders from Tier-II and Tier-III cities developing innovative technology-led solutions. Key Domains: AI/ML, IoT, DeepTech, ICT, Electronics, VLSI/Semiconductors, Cybersecurity, Blockchain, Quantum Computing, AR/VR & Spatial Technologies, and other emerging technologies. Program Benefits: Financial support of up to ₹10 lakh, Physical incubation support, Technical & business mentoring, Support for PoCs, prototypes and MVPs, Technology and market validation support Who Can Apply? Indian citizens who are early-stage innovators, entrepreneurs, or startup founders/co-founders, meeting the prescribed eligibility criteria. Eligible innovations should generally be at TRL-1 to TRL-4. Applicants seeking incubation at IIT Bhilai Innovation and Technology Foundation (IBITF) are encouraged to select IBITF as their preferred incubation centre.",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: Genesis,
+        },
+        {
+          text: "Apply Now",
+          url: "https://meitystartuphub.accubate.app/ext/form/23966/1/apply?source=IIT",
+        },
+      ],
+    },
+    {
       id: 19,
 
       mainHeading: "Call for Proposal Under Tribal Area Sub Plan (CFP-TSP) Scheme",
@@ -1379,7 +1397,7 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [
-     {
+    {
       title: "Recruitment of Technical Support Engineer positions of VSK Project",
       positions: "05",
       qualifications: "Bachelor's or Master's degree in Eng., M.Sc. (IT/CS), MCA, B.Com, B.A., M.Com, M.A., or any other related field",
@@ -1403,7 +1421,7 @@ export const siteContent = {
       location: "Dantewada / IBITF, IIT Bhilai",
       lastDate: "07 August 2026",
       downloadLink: require("../assets/PDF/career/_Advertisement_Dantewada.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdm-UDPI-GjbFJa9Xrwo4QmVr0Hb2IoVfcNaBdQAmnigjsqAw/viewform?usp=publish-editor",
+      // applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdm-UDPI-GjbFJa9Xrwo4QmVr0Hb2IoVfcNaBdQAmnigjsqAw/viewform?usp=publish-editor",
       applyText: "Apply Now",
     },
     {
@@ -1432,7 +1450,7 @@ export const siteContent = {
       applyLink: "https://docs.google.com/forms/d/1c2ZKTjN51rvX5TJdzYwzF0GeFbSqzvw6J83aB2vHZiY/edit",
       applyText: "Apply Now",
     },
-        {
+    {
       title: "Recruitment of Environmental  Expert  under  the  project titled  'A  Concept  Plan  on  Rejuvenation  of  the  Tandula  River,  Balod  District, Chhattisgarh'",
       positions: "1",
       qualifications: "Master's Degree in Environmental Science, Environmental Engineering, Ecology, Natural Resource Management, Water Resources Management, or allied disciplines from a recognized University/Institute",
@@ -1531,7 +1549,7 @@ export const siteContent = {
       applyText: "Apply Now",
     },
 
-   
+
     {
       title: "Recruitment of various Project positions of VSK Project",
       positions: "04",

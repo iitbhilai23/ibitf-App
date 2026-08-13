@@ -1,16 +1,16 @@
 import React from "react";
 import "./Popup.css";
-import popupPdf from "../../assets/popup/18may.png";
+import popupPdf from "../../assets/popup/Genesis.jpeg";
 
 const Popup = ({ show, closePopup }) => {
   if (!show) return null;
-  
-  const openHackathonLink = () => {
-    window.open("https://sustainableindia.org"); 
-  };
+
+  // const openHackathonLink = () => {
+  //   window.open("https://sustainableindia.org");
+  // };
   const handleCloseClick = (event) => {
-    event.stopPropagation(); 
-    closePopup(); 
+    event.stopPropagation();
+    closePopup();
   };
 
   return (
@@ -21,7 +21,7 @@ const Popup = ({ show, closePopup }) => {
             src={popupPdf}
             alt="Popup"
             className="popup-image"
-            onClick={openHackathonLink}  
+          // onClick={openHackathonLink}
           />
           <button className="close-button" onClick={handleCloseClick}>
             &times;
