@@ -51,11 +51,17 @@ const CallForProposals = () => {
         {cardDataForCFP.map((card, index) => (
           <div
             key={card.id}
-            className={`cardArea ${index < 1 ? "" : ""}`}
+            className={`cardArea ${card.id === 20 ? "genesis-highlight" : ""}`}
           >
-            {index < 1  && (
+            {index < 1 && (
               <div className="">
-                <span className="star"></span> 
+                <span className="star"></span>{" "}
+              </div>
+            )}
+
+            {card.id === 20 && (
+              <div className="genesis-ribbon">
+                <span>★★★</span>
               </div>
             )}
 
@@ -73,9 +79,8 @@ const CallForProposals = () => {
               {card.buttons.map((button, index) => (
                 <button
                   key={index}
-                  className={`card-buttons ${
-                    button.text === "Apply Now" ? "applyNow-button" : ""
-                  }`}
+                  className={`card-buttons ${button.text === "Apply Now" ? "applyNow-button" : ""
+                    }`}
                   onClick={() => handleButtonClick(button)}
                 >
                   {button.text}
