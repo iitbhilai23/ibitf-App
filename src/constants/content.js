@@ -1426,7 +1426,7 @@ export const siteContent = {
       location: "IBITF IIT Bhilai",
       lastDate: "24th August 2026",
       downloadLink: require("../assets/PDF/career/SBIApprovalS.pdf"),
-      applyLink: "https://www.ibitf.co.in/career",
+      applyLink: "",
       applyText: "Apply Now",
     },
     {
