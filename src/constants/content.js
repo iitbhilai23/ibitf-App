@@ -1417,6 +1417,19 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Recruitment for various posts (Finance & Admin, Technical Associate, Outreach Associate, Data Analytics) at IBITF",
+      positions: "06",
+      qualifications: "Finance & Admin: B.Com/BBA (5 yrs exp) or M.Com (4 yrs exp) or CA (3 yrs exp) | Technical Associate: B.Tech/B.E. (3 yrs exp) or MTech/ME/MS/MCA in CSE/IT (2 yrs exp) | Outreach Associate: B.Tech/B.E. (3 yrs exp) or M.Tech/M.E./M.S. (2 yrs exp) | Data Analytics: Bachelor's (3 yrs exp) or Master's in Statistics/Data Science/Computer Applications (2 yrs exp)",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "1 Year",
+      ageLimit: "Maximum Age 45 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "24th August 2026",
+      downloadLink: require("../assets/PDF/career/SBIApprovalS.pdf"),
+      applyLink: "https://www.ibitf.co.in/career",
+      applyText: "Apply Now",
+    },
+    {
       title: "Recruitment of Technical Support Engineer positions of VSK Project",
       positions: "05",
       qualifications: "Bachelor's or Master's degree in Eng., M.Sc. (IT/CS), MCA, B.Com, B.A., M.Com, M.A., or any other related field",
