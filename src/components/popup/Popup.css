@@ -1,229 +1,273 @@
-/* ════════════════════════════════════
-   Popup — Modern Clean Design
-   ════════════════════════════════════ */
+/* ============================
+   Keyframes
+============================ */
+@keyframes popupOverlayIn {
+  from {
+    opacity: 0;
+  }
 
-/* ── Overlay ── */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popupBoxIn {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes imgEnter {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes imgExit {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* ============================
+   Overlay
+============================ */
 .popup-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(30, 10, 60, 0.68);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(10, 5, 25, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+
+  z-index: 1050;
   padding: 20px;
   box-sizing: border-box;
-  animation: overlayIn 0.3s ease;
+  animation: popupOverlayIn 0.3s ease;
 }
 
-@keyframes overlayIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* ── Box ── */
+/* ============================
+   Popup Box  (no black bg!)
+============================ */
 .popup-box {
   position: relative;
-  background: #ffffff;
-  border-radius: 18px;
   width: 100%;
-  max-width: 660px;
-  box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(255,255,255,0.08);
+  max-width: 680px;
+  border-radius: 18px;
   overflow: hidden;
-  animation: boxIn 0.35s cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  /* Glassmorphism card */
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow:
+    0 32px 80px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+
+  animation: popupBoxIn 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  box-sizing: border-box;
 }
 
-@keyframes boxIn {
-  from { opacity: 0; transform: scale(0.88) translateY(24px); }
-  to   { opacity: 1; transform: scale(1)    translateY(0); }
+/* ============================
+   Image Wrapper
+============================ */
+.popup-img-wrap {
+  width: 100%;
+  line-height: 0;
 }
 
-/* ── Header ── */
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 18px 10px;
-  border-bottom: 1px solid #f0f0f0;
+.popup-img-wrap.popup-img-enter {
+  animation: imgEnter 0.32s ease forwards;
 }
 
-.popup-label {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #6a0dad;
-  background: rgba(106, 13, 173, 0.08);
-  padding: 4px 12px;
-  border-radius: 20px;
+.popup-img-wrap.popup-img-exit {
+  animation: imgExit 0.28s ease forwards;
 }
 
-.popup-close {
-  width: 32px;
-  height: 32px;
-  border: none;
+.popup-image {
+  width: 100%;
+  max-height: 76vh;
+  object-fit: contain;
+  display: block;
+  border-radius: 18px 18px 0 0;
+}
+
+/* ============================
+   Close Button
+============================ */
+.popup-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  background: #f4f4f6;
-  color: #555;
+  border: none;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
-  flex-shrink: 0;
+
+  transition: background 0.2s, transform 0.2s;
 }
 
-.popup-close svg {
-  width: 16px;
-  height: 16px;
+.popup-close-btn:hover {
+  background: rgba(220, 50, 50, 0.75);
+  transform: scale(1.12) rotate(90deg);
 }
 
-.popup-close:hover {
-  background: #e8e8ec;
-  color: #111;
-  transform: rotate(90deg);
-}
-
-/* ── Progress bar ── */
-.popup-progress-track {
-  height: 3px;
-  background: #f0f0f0;
-  width: 100%;
-}
-
-.popup-progress-bar {
-  height: 100%;
-  background: linear-gradient(90deg, #6a0dad, #d4af37);
-  transition: width 0.05s linear;
-  border-radius: 0 2px 2px 0;
-}
-
-/* ── Slider ── */
-.popup-slider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  background: linear-gradient(135deg, #f3eeff, #ede4ff);
-}
-
-/* ── Image wrap (clips sliding animation) ── */
-.popup-image-wrap {
-  width: 100%;
-  height: 480px;
-  overflow: hidden;
-  position: relative;
-}
-
-/* ── Image ── */
-.popup-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background: transparent;
-}
-
-/* Slide-in animations (old node unmounts via key change — no exit needed) */
-@keyframes slideFromRight {
-  from { opacity: 0; transform: translateX(55px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes slideFromLeft {
-  from { opacity: 0; transform: translateX(-55px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-.popup-image.slide-from-right { animation: slideFromRight 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
-.popup-image.slide-from-left  { animation: slideFromLeft  0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
-
-/* ── Arrow buttons ── */
+/* ============================
+   Arrow Buttons
+============================ */
 .popup-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 38px;
-  height: 38px;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  transform: translateY(-60%);
+  z-index: 5;
+
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
   color: #fff;
+  font-size: 1.8rem;
+  line-height: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  z-index: 5;
-  transition: background 0.2s, transform 0.2s;
-  backdrop-filter: blur(6px);
-}
 
-.popup-arrow svg {
-  width: 18px;
-  height: 18px;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .popup-arrow:hover {
-  background: rgba(255, 255, 255, 0.28);
-  transform: translateY(-50%) scale(1.1);
+  background: rgba(255, 255, 255, 0.32);
+  transform: translateY(-60%) scale(1.1);
 }
 
-.popup-arrow--prev { left: 12px; }
-.popup-arrow--next { right: 12px; }
+.popup-arrow-left {
+  left: 12px;
+}
 
-/* ── Dots ── */
+.popup-arrow-right {
+  right: 12px;
+}
+
+/* ============================
+   Dot Indicators
+============================ */
 .popup-dots {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 8px;
-  padding: 14px 0 16px;
-  background: #fff;
+  padding: 10px 0 6px;
 }
 
 .popup-dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   border: none;
-  background: #ddd;
-  cursor: pointer;
   padding: 0;
-  transition: background 0.3s, transform 0.3s, width 0.3s;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.25s, transform 0.25s, width 0.25s;
 }
 
-.popup-dot--active {
-  background: #6a0dad;
-  width: 22px;
+.popup-dot-active {
+  background: #fff;
+  width: 24px;
   border-radius: 4px;
   transform: none;
 }
 
-/* ── Responsive ── */
+/* ============================
+   Progress Bar
+============================ */
+.popup-progress {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 0;
+}
+
+.popup-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  border-radius: 2px;
+  width: 0%;
+  animation: progressFill linear forwards;
+}
+
+/* ============================
+   Responsive
+============================ */
 @media (max-width: 600px) {
-  .popup-box {
-    border-radius: 14px;
-    max-width: 100%;
+  .popup-overlay {
+    padding: 14px;
   }
 
-  .popup-image-wrap {
-    height: 280px;
+  .popup-box {
+    border-radius: 14px;
+  }
+
+  .popup-image {
+    max-height: 62vh;
+    border-radius: 14px 14px 0 0;
   }
 
   .popup-arrow {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.4rem;
   }
 
-  .popup-arrow svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .popup-label {
-    font-size: 0.72rem;
+  .popup-close-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
   }
 }
