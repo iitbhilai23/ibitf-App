@@ -11,7 +11,7 @@ const SLIDES = [
 const AUTO_SLIDE_MS = 5000;
 
 const popupImages = [popupImage2, popupImage1];
-const AUTO_SWITCH_MS = 3500;
+const AUTO_SWITCH_MS = 3600;
 
 const Popup = ({ show, closePopup }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
