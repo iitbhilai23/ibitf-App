@@ -1426,7 +1426,7 @@ export const siteContent = {
       location: "IBITF IIT Bhilai",
       lastDate: "24th August 2026",
       downloadLink: require("../assets/PDF/career/SBIApprovalS.pdf"),
-      applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSdfPPxHON_7yXR5ryAUXuyyGq0I-nnuRmQ1vF11GExwSIL6kw/viewform",
+      applyLink: "https://tihiitbhilai.accubate.app/ext/form/24203/1/apply",
       applyText: "Apply Now",
     },
     {
