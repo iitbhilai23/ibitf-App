@@ -51,7 +51,8 @@ const CallForProposals = () => {
         {cardDataForCFP.map((card, index) => (
           <div
             key={card.id}
-            className={`cardArea ${card.id === 20 ? "genesis-highlight" : ""}`}
+            //className={`cardArea ${card.id === 20 ? "genesis-highlight" : ""}`}
+            className={`cardArea ${[20, 21].includes(card.id) ? "genesis-highlight" : ""}`}
           >
             {index < 1 && (
               <div className="">
@@ -59,7 +60,12 @@ const CallForProposals = () => {
               </div>
             )}
 
-            {card.id === 20 && (
+            {/* {card.id === 20 && (
+              <div className="genesis-ribbon">
+                <span>★★★</span>
+              </div>
+            )} */}
+            {[20, 21].includes(card.id) && (
               <div className="genesis-ribbon">
                 <span>★★★</span>
               </div>
