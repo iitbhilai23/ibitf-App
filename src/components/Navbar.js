@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { siteContent } from '../constants/content';
 import { Link, useLocation } from 'react-router-dom';
-import './Navbar.css'; 
+import './Navbar.css';
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -103,6 +103,7 @@ const Navbar = () => {
                     const urlFriendly = submenuItem.toLowerCase().replace(/\s+/g, '-');
                     const isActive = location.pathname === `/${urlFriendly}`;
                     const isIndustryPDF = submenuItem === "Industries Partners";
+                    const isMagazinePDF = submenuItem === "Magazine";
                     const isProjectPDF = submenuItem === "Project List";
 
                     return (
@@ -119,33 +120,47 @@ const Navbar = () => {
                           >
                             {submenuItem}
                           </a>
-                        )  :
-                        
-                        isProjectPDF ? (
-                          <a
-                            href={require("../assets/PDF/project_list/ProjectListNew.pdf")}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => {
-                              setIsMobile(false);
-                              setOpenSubmenuIndex(null);
-                            }}
-                          >
-                            {submenuItem}
-                          </a>
-                        ) 
-                        :
-                         (
-                          <Link
-                            to={`/${urlFriendly}`}
-                            onClick={() => {
-                              setIsMobile(false);
-                              setOpenSubmenuIndex(null);
-                            }}
-                          >
-                            {submenuItem}
-                          </Link>
-                        )}
+                        ) :
+
+                          isProjectPDF ? (
+                            <a
+                              href={require("../assets/PDF/project_list/ProjectListNew.pdf")}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => {
+                                setIsMobile(false);
+                                setOpenSubmenuIndex(null);
+                              }}
+                            >
+                              {submenuItem}
+                            </a>
+                          )
+                            //:
+                            // isMagazinePDF ? (
+                            //   <a href={require("../assets/PDF/magazine/Magazine-Test-Issue.pdf")}
+                            //     target="_blank"
+                            //     rel="noopener noreferrer"
+                            //     onClick={() => {
+                            //       setIsMobile(false);
+                            //       setOpenSubmenuIndex(null);
+                            //     }}
+                            //   >
+                            //     {submenuItem}
+
+                            //   </a>
+                            // )
+                            :
+                            (
+                              <Link
+                                to={`/${urlFriendly}`}
+                                onClick={() => {
+                                  setIsMobile(false);
+                                  setOpenSubmenuIndex(null);
+                                }}
+                              >
+                                {submenuItem}
+                              </Link>
+                            )}
                       </li>
                     );
                   })}
