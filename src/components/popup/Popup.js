@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./Popup.css";
 
-import popupImage1 from "../../assets/popup/Genesis.jpeg";
+import popupImage1 from "../../assets/popup/GenesisLatest.jpeg";
 import popupImage2 from "../../assets/popup/sbileaf.jpeg";
 
 const SLIDES = [

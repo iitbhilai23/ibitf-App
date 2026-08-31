@@ -25,7 +25,7 @@ import Agritech from '../assets/PDF/tech_projects/Agritech.pdf';
 import Fintech from '../assets/PDF/tech_projects/Fintech.pdf';
 import HealthTech from '../assets/PDF/tech_projects/HealthTech.pdf';
 import newFellowShip from '../assets/PDF/proposal/CFPfellowship072122139.pdf';
-import Genesis from '../assets/PDF/proposal/GENESIS3.pdf'
+import GenesisLatest from '../assets/PDF/proposal/GenesisLatest.pdf'
 import SbifLeap from '../assets/PDF/proposal/SBIFLEAP.pdf'
 
 import {
@@ -836,18 +836,17 @@ export const siteContent = {
   cardDataForCFP: [
     {
       id: 20,
-
-      mainHeading: "GENESIS Entrepreneur-in-Residence (EIR) – Cohort 3.0",
+      mainHeading: "GENESIS Investment 2.0 offers support of up to ₹50 lakh!",
       description:
-        "Supported by MeitY Startup Hub (MSH), GENESIS EIR Cohort 3.0 aims to support early-stage innovators, entrepreneurs, and startup founders from Tier-II and Tier-III cities developing innovative technology-led solutions. Key Domains: AI/ML, IoT, DeepTech, ICT, Electronics, VLSI/Semiconductors, Cybersecurity, Blockchain, Quantum Computing, AR/VR & Spatial Technologies, and other emerging technologies. Program Benefits: Financial support of up to ₹10 lakh, Physical incubation support, Technical & business mentoring, Support for PoCs, prototypes and MVPs, Technology and market validation support Who Can Apply? Indian citizens who are early-stage innovators, entrepreneurs, or startup founders/co-founders, meeting the prescribed eligibility criteria. Eligible innovations should generally be at TRL-1 to TRL-4. Applicants seeking incubation at IIT Bhilai Innovation and Technology Foundation (IBITF) are encouraged to select IBITF as their preferred incubation centre.",
+        "eligible technology-driven startups 1:1 matching investment support against qualifying external/private investment.\n\nYou may be eligible if your startup is:\n1. An Indian Private Limited Company\n2. Based in a Tier-II or Tier-III city\n3. DPIIT-recognised\n4. Technology-based and market-ready\n5. Backed by eligible external investment\n\nStartups with revenue and granted patents/IP will be preferred.\n\nApplications are open. Scan the QR code to submit your details for eligibility assessment and preliminary screening.\n\n#GENESISInvestment #MeitYStartupHub #StartupFunding #IndianStartups #DeepTech #TechnologyStartups #Tier2Startups #Tier3Startups #IBITF",
       buttons: [
         {
           text: "Detailed Call for Proposal",
-          pdfLink: Genesis,
+          pdfLink: GenesisLatest,
         },
         {
           text: "Apply Now",
-          url: "https://meitystartuphub.accubate.app/ext/form/23966/1/apply?source=IIT",
+          url: "https://mshportal.meity.gov.in/ext/form/24189/1/apply",
         },
       ],
     },

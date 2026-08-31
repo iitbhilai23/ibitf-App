@@ -75,7 +75,7 @@ const CallForProposals = () => {
               {card.mainHeading && (
                 <h4 className="card-subheading">{card.mainHeading}</h4>
               )}
-              <p className="card-description">{card.description}</p>
+              <p className="card-description" style={{ whiteSpace: "pre-line" }}>{card.description}</p>
               <p className="last-date" style={{ color: "red" }}>
                 {card.lastDate || ""}
               </p>
