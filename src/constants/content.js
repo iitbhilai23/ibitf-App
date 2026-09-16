@@ -1416,6 +1416,19 @@ export const siteContent = {
   },
   jobListings: [
     {
+      title: "Advertisement under the Vidya Samiksha Kendra project at IBITF",
+      positions: "02",
+      qualifications: "M.Tech/ME/MS in Computer Science and  Engineering/Information technology Or B. Tech/ B.E. in Computer Science and Engineering/  Information Technology Or MCA/MSC CS",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "89 Days",
+      ageLimit: "Maximum Age 55 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "20th September 2026",
+      downloadLink: require("../assets/PDF/career/VSK_Sep26.pdf"),
+      applyLink: "https://tihiitbhilai.accubate.app/ext/form/24385/1/apply",
+      applyText: "Apply Now",
+    },
+    {
       title: "Recruitment for various posts (Finance & Admin, Technical Associate, Outreach Associate, Data Analytics) at IBITF",
       positions: "06",
       qualifications: "Finance & Admin: B.Com/BBA (5 yrs exp) or M.Com (4 yrs exp) or CA (3 yrs exp) | Technical Associate: B.Tech/B.E. (3 yrs exp) or MTech/ME/MS/MCA in CSE/IT (2 yrs exp) | Outreach Associate: B.Tech/B.E. (3 yrs exp) or M.Tech/M.E./M.S. (2 yrs exp) | Data Analytics: Bachelor's (3 yrs exp) or Master's in Statistics/Data Science/Computer Applications (2 yrs exp)",
