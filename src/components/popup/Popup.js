@@ -1,16 +1,18 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./Popup.css";
 
-import popupImage1 from "../../assets/popup/GenesisLatest.jpeg";
-import popupImage2 from "../../assets/popup/sbileaf.jpeg";
+//import popupImage1 from "../../assets/popup/GenesisLatest.jpeg";
+//import popupImage2 from "../../assets/popup/sbileaf.jpeg";
+import popupImage3 from "../../assets/popup/cfptsp26ext.jpeg";
 
 const SLIDES = [
-  { src: popupImage1, alt: "Genesis EIR Cohort 3.0", label: "Genesis EIR · Cohort 3.0" },
-  { src: popupImage2, alt: "SBIF LEAP Programme", label: "SBIF LEAP Programme" },
+//  { src: popupImage1, alt: "Genesis EIR Cohort 3.0", label: "Genesis EIR · Cohort 3.0" },
+//  { src: popupImage2, alt: "SBIF LEAP Programme", label: "SBIF LEAP Programme" },
+  { src: popupImage3, alt: "Call for Proposal", label: "CFP TSP 2026" },
 ];
 const AUTO_SLIDE_MS = 5000;
 
-const popupImages = [popupImage2, popupImage1];
+const popupImages = [popupImage3];
 const AUTO_SWITCH_MS = 2000;
 
 const Popup = ({ show, closePopup }) => {

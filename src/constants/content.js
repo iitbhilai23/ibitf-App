@@ -27,6 +27,8 @@ import HealthTech from '../assets/PDF/tech_projects/HealthTech.pdf';
 import newFellowShip from '../assets/PDF/proposal/CFPfellowship072122139.pdf';
 import GenesisLatest from '../assets/PDF/proposal/GenesisLatest.pdf'
 import SbifLeap from '../assets/PDF/proposal/SBIFLEAP.pdf'
+import CFPTSP2026 from '../assets/PDF/proposal/CFPTSP2026.pdf'
+import CFPIBITFScheme from '../assets/PDF/proposal/CFPISS2026.pdf'
 
 import {
   FaLightbulb,
@@ -835,6 +837,42 @@ export const siteContent = {
   ],
   cardDataForCFP: [
     {
+      id: 23,
+
+      mainHeading: "Call for Proposal (CFP-2026) for Innovation and Startup Support under IBITF Schemes",
+      description:
+        "The IIT Bhilai Innovation and Technology Foundation (IBITF) invites proposals from startups, entrepreneurs, technology innovators and industry, working on innovative and technology-driven solutions in the areas of FinTech, AgriTech, HealthTech, and other emerging technologies aligned with IBITF’s mandate. Through this Call for Proposals, IBITF aims to identify and support high-potential startups and innovative solutions that have the potential to address real-world challenges, strengthen existing technologies, and achieve product development, deployment, and commercialization. Selected proposals will be provided appropriate support through funding assistance, technical and domain mentorship, industry connect, incubation support, and opportunities for market and ecosystem linkages, subject to the applicable scheme provisions and availability of funds. IBITF particularly encourages startups and innovators with market-ready or near-market technologies, scalable business models, strong technical capabilities, and potential for meaningful social and economic impact to participate in the Call. Selected startups may be provided access to office space at IT Park, Durg, subject to availability and applicable terms, to facilitate engagement with IBITF and access to mentorship, networking, industry interaction, and the wider innovation ecosystem. and providing opportunities for collaboration, mentorship, networking, industry interaction, and access to the wider innovation ecosystem. The Call aims to build a strong pipeline of innovative startups and technology solutions and facilitate their journey from innovation to product development, deployment, and commercialization.",
+//      lastDate: "The project proposal submission deadline to 31st October 2026.",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: CFPIBITFScheme,
+        },
+        {
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/24560/1/apply",
+        },
+      ],
+    },
+    {
+      id: 22,
+
+      mainHeading: "Call for Proposal Under Tribal Area Sub Plan (CFP-TSP) Scheme",
+      description:
+        " The IIT Bhilai Innovation and Technology Foundation (IBITF) invites proposals under the Tribal Area Sub-Plan (TSP) scheme, designed to nurture tribal-centric/tribal-led innovation, entrepreneurship, and technology commercialization. The CFP is designed to support the rapid productization, deployment, and commercialization of technology-driven solutions, beneficial for the ST community at large, under the core thematic areas of IBITF, including Fintech applications, Agritech, HealthTech, Transport, Energy, and others. The scheme encourages collaboration among startups, industry, and academia, while providing financial assistance, expert mentorship, and access to a national network of stakeholders.",
+//      lastDate: "The project proposal submission deadline to 31st October 2026.",
+      buttons: [
+        {
+          text: "Detailed Call for Proposal",
+          pdfLink: CFPTSP2026,
+        },
+        {
+          text: "Apply Now",
+          url: "https://tihiitbhilai.accubate.app/ext/form/24422/1/apply",
+        },
+      ],
+    },
+    {
       id: 20,
       mainHeading: "GENESIS Investment 2.0 offers support of up to ₹50 lakh!",
       description:
@@ -1415,6 +1453,32 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [
+    {
+      title: "Advertisement for recruitment for various posts at IIT Bhilai Innovation and Technology Foundation (IBITF)",
+      positions: "01",
+      qualifications: "M.Tech/ME/MS in Computer Science and  Engineering/Information technology Or B. Tech/ B.E. in Computer Science and Engineering/  Information Technology Or MCA/MSC CS",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "1 Year",
+      ageLimit: "Maximum Age 45 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "18th October 2026",
+      downloadLink: require("../assets/PDF/career/TA_SBILEAP_Oct26.pdf"),
+      applyLink: "https://tihiitbhilai.accubate.app/ext/form/24552/1/apply",
+      applyText: "Apply Now",
+    },
+    {
+      title: "Advertisement for recruitment for various posts at IIT Bhilai Innovation and Technology Foundation (IBITF)",
+      positions: "04",
+      qualifications: "Bachelor's Degree in Engineering/Technology/Management/Business Administration/Commerce/Science/Social Science Or relevant experience",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "1 year",
+      ageLimit: "Maximum Age 35 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "26th October 2026",
+      downloadLink: require("../assets/PDF/career/IBITF_151026.pdf"),
+      applyLink: "https://tihiitbhilai.accubate.app/ext/form/24561/1/apply",
+      applyText: "Apply Now",
+    },
     {
       title: "Advertisement under the Vidya Samiksha Kendra project at IBITF",
       positions: "02",
