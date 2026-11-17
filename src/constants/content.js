@@ -124,11 +124,15 @@ export const siteContent = {
   },
 
   EOI: {
-    pdfFile: require("../assets/PDF/Blogs/EOI1.pdf"),
-    heading: "For Submission of Innovative Ideas and Designs for Processing Machinery, Livelihood Technologies & Value-Addition Solutions for Tribal and Forest-Based Economies in Chhattisgarh",
-    content: "This EOI invites submissions of innovative tools, technologies, and value-addition solutions aimed at strengthening tribal livelihoods in Chhattisgarh. The focus includes processing machinery, rural enterprise solutions, and technologies that support income generation, employment, and sustainable development.",
-  },
-
+    pdfFile: require("../assets/PDF/Blogs/EOI2.pdf"),
+    heading: "EoI for Partnering With IIT Bhilai Innovation And Technology Foundation (IBITF) to Build The Future-Ready Workforce Industry-Oriented Training & Technology Skill Development Programmes",
+    content: "Focus Areas: Drone & UAV Technologies|Start-up Development, Business Strategy & Compliance | Cybersecurity | Secure Software Development | Sustainable Engineering | Autonomous Systems & Robotics| Cloud & Edge Computing| Sustainable Engineering & Green Technologies| Advanced Manufacturing| Defence Strategies & Modern Trends | Other Emerging Technologies",
+},
+//	{
+//    pdfFile: require("../assets/PDF/Blogs/EOI1.pdf"),
+//    heading: "For Submission of Innovative Ideas and Designs for Processing Machinery, Livelihood Technologies & Value-Addition Solutions for Tribal and Forest-Based Economies in Chhattisgarh",
+//    content: "This EOI invites submissions of innovative tools, technologies, and value-addition solutions aimed at strengthening tribal livelihoods in Chhattisgarh. The focus includes processing machinery, rural enterprise solutions, and technologies that support income generation, employment, and sustainable development.",
+//  },
   NotificationPop: {
     title: 'Notification Call for Proposal',
     message: '" Inviting Proposals for Innovation and Startup Support under IBITF Schemes "',
@@ -530,6 +534,11 @@ export const siteContent = {
         name: "Prof. Santosh Biswas",
         designation: "Dean of R&D, Project Director (IBITF)",
         image: require("../assets/TeamImg/santosh.jpeg"),
+      },
+      {
+        name: "Mr. Subhash Pandey",
+        designation: "Legal Advisor, IBITF",
+        image: require("../assets/TeamImg/subhashpandey.jpeg"),
       },
       {
         name: "Mr. Avijit Mahato",
@@ -1453,6 +1462,19 @@ export const siteContent = {
       "https://www.youtube.com/embed/uW1wla5z6vc?si=4SWs_TIRX32Vgv8G&amp;start=260&end=360&autoplay=1", // YouTube video URL
   },
   jobListings: [
+    {
+      title: "Advertisement for recruitment for three(03) posts at IIT Bhilai Innovation and Technology Foundation (IBITF)",
+      positions: "03",
+      qualifications: "Bachelor's  or Masters in Engineering/Management/Rural Technology/Social Science/ or any relevant discipline from a recognized University/Institute or equivalent.",
+      experience: "As Per Advertisement Attached",
+      contractPeriod: "1 Year",
+      ageLimit: "Maximum Age 45 years",
+      location: "IBITF IIT Bhilai",
+      lastDate: "22nd November 2026",
+      downloadLink: require("../assets/PDF/career/16Nov24814.pdf"),
+      applyLink: "https://tihiitbhilai.accubate.app/ext/form/24814/1/apply",
+      applyText: "Apply Now",
+    },
     {
       title: "Advertisement for recruitment for various posts at IIT Bhilai Innovation and Technology Foundation (IBITF)",
       positions: "01",
